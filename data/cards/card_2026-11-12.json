@@ -10,7 +10,7 @@
     "away": "Washington Commanders",
     "time": "Thu 7:15 PM CT",
     "start": "2026-11-13T01:15Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NYG -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -57,6 +57,11 @@
       "status": "Out"
      },
      {
+      "player": "Treylon Burks",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
       "player": "Colson Yankoff",
       "pos": "TE",
       "status": "Out"
@@ -93,10 +98,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 9.4,
-     "gust": 24.2,
+     "wind": 9.3,
+     "gust": 23.7,
      "rain": 62,
-     "temp": 48.2,
+     "temp": 48.0,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -151,7 +156,7 @@
     "away": "Memphis Tigers",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MEM -4.5",
     "home_line": 4.5,
     "home_line_open": 6.0,
@@ -270,7 +275,7 @@
     "away": "Louisiana Ragin' Cajuns",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-13T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UL -10.5",
     "home_line": 10.5,
     "home_line_open": 10.5,
@@ -394,7 +399,7 @@
     "away": "Charlotte Hornets",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-13T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PHX -6.5",
     "home_line": -6.5,
     "home_line_open": -7.5,
@@ -518,7 +523,7 @@
     "away": "Detroit Pistons",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DET -10.5",
     "home_line": 10.5,
     "home_line_open": 9.5,
@@ -660,7 +665,7 @@
     "away": "Dallas Mavericks",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIN -5.5",
     "home_line": -5.5,
     "home_line_open": -4.5,
@@ -715,11 +720,6 @@
       "player": "Sergio de Larrea",
       "pos": "F",
       "status": "Out"
-     },
-     {
-      "player": "Morez Johnson Jr.",
-      "pos": "F",
-      "status": "Day-To-Day"
      }
     ],
     "stars": [
@@ -795,18 +795,18 @@
     "away": "Toronto Raptors",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
-    "line": "PHI -8.5",
-    "home_line": -8.5,
+    "book": "Draft Kings",
+    "line": "PHI -7.5",
+    "home_line": -7.5,
     "home_line_open": -9.5,
     "spread_odds": [
-     -118,
-     -103
+     -112,
+     -107
     ],
-    "total": 224.5,
+    "total": 223.5,
     "total_open": 221.5,
-    "home_ml": -298,
-    "away_ml": 242,
+    "home_ml": -270,
+    "away_ml": 221,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 2.0,
@@ -899,7 +899,7 @@
     ],
     "factors": [
      "Rest: Raptors 1 day(s), 76ers 2 day(s)",
-     "Line moved 1 pts toward Toronto Raptors since open (-9.5 to -8.5 home)",
+     "Line moved 2 pts toward Toronto Raptors since open (-9.5 to -7.5 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
@@ -907,43 +907,42 @@
      "Our side has less rest"
     ],
     "invalidation": [
-     "Line moves past +8.3",
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 222.8,
     "veto_sides": [
      "game"
     ],
-    "gap_a": -6.5,
-    "gap_b": -4.7,
-    "gap_min": 4.7,
-    "pick": "Toronto Raptors +8.5",
-    "price": -118,
+    "gap_a": -5.5,
+    "gap_b": -3.7,
+    "gap_min": 5.5,
+    "pick": "Toronto Raptors +7.5",
+    "price": -112,
     "side": "away",
     "fair_line": 2.9,
-    "playable_to": 8.3,
-    "sim_cover": 0.672,
+    "playable_to": null,
+    "sim_cover": 0.643,
     "test_record": {
      "w": 57,
      "l": 68,
      "n": 125,
      "win": 0.456
     },
-    "models_agree": true,
-    "one_model": false,
+    "models_agree": false,
+    "one_model": true,
     "veto": true,
-    "conf": 3.8,
+    "conf": 2.9,
     "components": {
-     "efficiency": 0.52,
+     "efficiency": 0.61,
      "veto": 0.0,
-     "models": 1.5,
+     "models": 0.5,
      "starters": 0.75,
      "coaching": 0.5,
      "against": 0.3,
      "price": 0.0,
      "situational": 0.2
     },
-    "total_gap": -1.7
+    "total_gap": -0.7
    }
   ],
   "n_past": 170,
@@ -960,7 +959,7 @@
     "away": "Cal State Bakersfield Roadrunners",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CSUB -9.5",
     "home_line": 9.5,
     "home_line_open": 6.5,
@@ -1067,7 +1066,7 @@
     "away": "Southern Jaguars",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MINN -26.5",
     "home_line": -26.5,
     "home_line_open": -24.5,
@@ -1174,7 +1173,7 @@
     "away": "Maryland Eastern Shore Hawks",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "URI -23.5",
     "home_line": -23.5,
     "home_line_open": -23.5,
@@ -1281,7 +1280,7 @@
     "away": "Montana State Bobcats",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-13T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BYU -21.5",
     "home_line": -21.5,
     "home_line_open": -24.5,
@@ -1389,7 +1388,7 @@
     "away": "Oklahoma State Cowboys",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TA&M -8.5",
     "home_line": -8.5,
     "home_line_open": -7.5,
@@ -1495,7 +1494,7 @@
     "away": "UC Riverside Highlanders",
     "time": "Thu 9:00 PM CT",
     "start": "2026-11-13T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SJSU -8.5",
     "home_line": -8.5,
     "home_line_open": -8.5,
@@ -1597,7 +1596,7 @@
     "away": "Western Michigan Broncos",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WMU -2.5",
     "home_line": 2.5,
     "home_line_open": -1.5,
@@ -1701,7 +1700,7 @@
     "away": "Loyola Maryland Greyhounds",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TOW -13.5",
     "home_line": -13.5,
     "home_line_open": -14.5,
@@ -1807,7 +1806,7 @@
     "away": "Canisius Golden Griffins",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BRWN -12.5",
     "home_line": -12.5,
     "home_line_open": -13.5,
@@ -1912,7 +1911,7 @@
     "away": "Southern Utah Thunderbirds",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HPU -22.5",
     "home_line": -22.5,
     "home_line_open": -20.5,
@@ -2021,7 +2020,7 @@
     "away": "Monmouth Hawks",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "QUIN -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -2123,7 +2122,7 @@
     "away": "Niagara Purple Eagles",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BGSU -14.5",
     "home_line": -14.5,
     "home_line_open": -15.5,
@@ -2228,7 +2227,7 @@
     "away": "West Florida Argonauts",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "AAMU -4.5",
     "home_line": -4.5,
     "home_line_open": -8.5,
@@ -2236,7 +2235,7 @@
      -108,
      -112
     ],
-    "total": 146.5,
+    "total": 145.5,
     "total_open": 147.5,
     "home_ml": -225,
     "away_ml": 185,
@@ -2323,8 +2322,8 @@
      "price": 0.0,
      "situational": 0.5
     },
-    "total_gap": 7.8,
-    "total_lean": "Over 146.5 (season scoring says 154.3) - WATCH only, totals have no past-games test yet"
+    "total_gap": 8.8,
+    "total_lean": "Over 145.5 (season scoring says 154.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401911239",
@@ -2334,7 +2333,7 @@
     "away": "Richmond Spiders",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "RICH -2.5",
     "home_line": 2.5,
     "home_line_open": 3.5,
@@ -2437,7 +2436,7 @@
     "away": "New Mexico State Aggies",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-13T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UTEP -5.5",
     "home_line": -5.5,
     "home_line_open": -3.5,
@@ -2542,7 +2541,7 @@
     "away": "Central Connecticut Blue Devils",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SHU -6.5",
     "home_line": -6.5,
     "home_line_open": -5.5,
@@ -2648,7 +2647,7 @@
     "away": "Stetson Hatters",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HOW -8.5",
     "home_line": -8.5,
     "home_line_open": -10.5,
@@ -2752,7 +2751,7 @@
     "away": "Mercer Bears",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WVU -24.5",
     "home_line": -24.5,
     "home_line_open": -26.5,
@@ -3203,7 +3202,7 @@
     "away": "Colorado Avalanche",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "OTT -118",
     "home_line": -118.0,
     "home_line_open": 1.5,
@@ -3311,116 +3310,6 @@
     "stake": 0
    },
    {
-    "id": "401892699",
-    "sport": "NHL",
-    "game": "Detroit Red Wings @ Florida Panthers",
-    "home": "Florida Panthers",
-    "away": "Detroit Red Wings",
-    "time": "Thu 6:30 PM CT",
-    "start": "2026-11-13T00:30Z",
-    "book": "DraftKings",
-    "line": "FLA -205",
-    "home_line": -205.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -155,
-     130
-    ],
-    "total": 5.5,
-    "total_open": 5.5,
-    "home_ml": -205,
-    "away_ml": 170,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.5,
-    "model_b": 0.4,
-    "games_played": [
-     17,
-     16
-    ],
-    "neutral": false,
-    "records": [
-     "7-9-3",
-     "10-7-2"
-    ],
-    "venue": "Amerant Bank Arena",
-    "tv": "Disney+, ESPN+, Hulu",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Lucas Raymond",
-      "Viktor Arvidsson"
-     ],
-     [
-      "Brady Tkachuk",
-      "Matthew Tkachuk"
-     ]
-    ],
-    "goalies": [
-     "John Gibson",
-     "Akira Schmid"
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but this kind of pick won 47.3% over 332 past games (needs 53.5%+ over 200+).",
-    "flags": [],
-    "factors": [
-     "Rest: Wings 2 day(s), Panthers 2 day(s)",
-     "Line moved 203.5 pts toward Florida Panthers since open (-1.5 to -205 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past +141 (our fair price)"
-    ],
-    "total_model": 6.2,
-    "gap_a": -5.1,
-    "gap_b": -6.7,
-    "win_prob": [
-     0.414,
-     0.586
-    ],
-    "market_prob": [
-     0.355,
-     0.645
-    ],
-    "pick": "Detroit Red Wings ML (+170)",
-    "price": 170,
-    "side": "away",
-    "gap_min": 5.1,
-    "fair_line": 141,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "conf": 7.0,
-    "components": {
-     "efficiency": 0.51,
-     "veto": 1.5,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5
-    },
-    "stake": 0
-   },
-   {
     "id": "401892696",
     "sport": "NHL",
     "game": "Montreal Canadiens @ Boston Bruins",
@@ -3428,7 +3317,7 @@
     "away": "Montreal Canadiens",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BOS -125",
     "home_line": -125.0,
     "home_line_open": -1.5,
@@ -3539,13 +3428,13 @@
     "away": "Tampa Bay Lightning",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TB -105",
     "home_line": 105.0,
     "home_line_open": 1.5,
     "spread_odds": [
-     230,
-     -285
+     210,
+     -258
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -3663,7 +3552,7 @@
     "away": "Washington Capitals",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NJ -155",
     "home_line": -155.0,
     "home_line_open": -1.5,
@@ -3785,7 +3674,7 @@
     "away": "Winnipeg Jets",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DAL -162",
     "home_line": -162.0,
     "home_line_open": -1.5,
@@ -3903,7 +3792,7 @@
     "away": "Minnesota Wild",
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIN -180",
     "home_line": 180.0,
     "home_line_open": 1.5,
@@ -4022,7 +3911,7 @@
     "away": "New York Islanders",
     "time": "Thu 9:00 PM CT",
     "start": "2026-11-13T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LA -125",
     "home_line": -125.0,
     "home_line_open": -1.5,
@@ -4144,7 +4033,7 @@
     "away": "Buffalo Sabres",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BUF -155",
     "home_line": 155.0,
     "home_line_open": 1.5,
@@ -4249,6 +4138,115 @@
     }
    },
    {
+    "id": "401892699",
+    "sport": "NHL",
+    "game": "Detroit Red Wings @ Florida Panthers",
+    "home": "Florida Panthers",
+    "away": "Detroit Red Wings",
+    "time": "Thu 6:30 PM CT",
+    "start": "2026-11-13T00:30Z",
+    "book": "Draft Kings",
+    "line": "FLA -185",
+    "home_line": -185.0,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -166,
+     140
+    ],
+    "total": 5.5,
+    "total_open": 5.5,
+    "home_ml": -185,
+    "away_ml": 154,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.5,
+    "model_b": 0.4,
+    "games_played": [
+     17,
+     16
+    ],
+    "neutral": false,
+    "records": [
+     "7-9-3",
+     "10-7-2"
+    ],
+    "venue": "Amerant Bank Arena",
+    "tv": "Disney+, ESPN+, Hulu",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Lucas Raymond",
+      "Viktor Arvidsson"
+     ],
+     [
+      "Brady Tkachuk",
+      "Matthew Tkachuk"
+     ]
+    ],
+    "goalies": [
+     "John Gibson",
+     "Akira Schmid"
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Wings 2 day(s), Panthers 2 day(s)",
+     "Line moved 183.5 pts toward Florida Panthers since open (-1.5 to -185 home)",
+     "Indoors - weather does not matter",
+     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A different goalie starts for either team",
+     "Price moves past +141 (our fair price)"
+    ],
+    "total_model": 6.2,
+    "gap_a": -2.8,
+    "gap_b": -4.5,
+    "win_prob": [
+     0.414,
+     0.586
+    ],
+    "market_prob": [
+     0.378,
+     0.622
+    ],
+    "pick": "Detroit Red Wings ML (+154)",
+    "price": 154,
+    "side": "away",
+    "gap_min": 4.5,
+    "fair_line": 141,
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "test_record": {
+     "w": 157,
+     "l": 175,
+     "n": 332,
+     "win": 0.473,
+     "units": -9.79,
+     "roi": -0.029
+    },
+    "conf": 5.5,
+    "components": {
+     "efficiency": 0.45,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5
+    }
+   },
+   {
     "id": "401892704",
     "sport": "NHL",
     "game": "St. Louis Blues @ Utah Mammoth",
@@ -4256,7 +4254,7 @@
     "away": "St. Louis Blues",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-13T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "STL -130",
     "home_line": 130.0,
     "home_line_open": -1.5,
