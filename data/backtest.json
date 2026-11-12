@@ -1,0 +1,114 @@
+{
+ "CFB": {
+  "P4vP4 Sat": {
+   "w": 120,
+   "l": 121,
+   "n": 241,
+   "win": 0.498
+  },
+  "P4vP4 Midweek": {
+   "w": 12,
+   "l": 10,
+   "n": 22,
+   "win": 0.545
+  },
+  "G5/mixed Sat": {
+   "w": 133,
+   "l": 135,
+   "n": 268,
+   "win": 0.496
+  },
+  "G5/mixed Midweek": {
+   "w": 20,
+   "l": 18,
+   "n": 38,
+   "win": 0.526
+  }
+ },
+ "NFL": {
+  "Sun": {
+   "w": 66,
+   "l": 74,
+   "n": 140,
+   "win": 0.471
+  },
+  "Prime/other": {
+   "w": 11,
+   "l": 24,
+   "n": 35,
+   "win": 0.314
+  }
+ },
+ "by_gap": {
+  "CFB": {
+   "0-3": {
+    "w": 397,
+    "l": 365,
+    "n": 762,
+    "win": 0.521
+   },
+   "3-5": {
+    "w": 179,
+    "l": 184,
+    "n": 363,
+    "win": 0.493
+   },
+   "5-7": {
+    "w": 129,
+    "l": 129,
+    "n": 258,
+    "win": 0.5
+   },
+   "7-+": {
+    "w": 209,
+    "l": 218,
+    "n": 427,
+    "win": 0.489
+   }
+  },
+  "NFL": {
+   "0-3": {
+    "w": 198,
+    "l": 178,
+    "n": 376,
+    "win": 0.527
+   },
+   "3-5": {
+    "w": 98,
+    "l": 82,
+    "n": 180,
+    "win": 0.544
+   },
+   "5-+": {
+    "w": 84,
+    "l": 102,
+    "n": 186,
+    "win": 0.452
+   }
+  }
+ },
+ "overall": {
+  "CFB": {
+   "w": 285,
+   "l": 284,
+   "n": 569,
+   "win": 0.501
+  },
+  "NFL": {
+   "w": 77,
+   "l": 98,
+   "n": 175,
+   "win": 0.44
+  }
+ },
+ "n": {
+  "CFB": 1830,
+  "NFL": 760
+ },
+ "calibration_cfb": null,
+ "notes": [
+  "CFB: 2023-2025 regular seasons, weeks 4+, ESPN BET line. Point-in-time models only (ratings from games already played + last-8 margins).",
+  "NFL: 2023 to 2026 week 9, weeks 4+, closing line (nflverse).",
+  "Break-even against a -110 price is 52.4%. A kind of pick needs 53.5%+ over 200+ games before the card will put cash on it."
+ ]
+}
