@@ -1,30 +1,51 @@
 name: board
 on:
   schedule:
-    - cron: "0 14 * * *"   # 8:00 AM CT - morning card
-    - cron: "0 23 * * *"   # 5:00 PM CT - injury/line refresh before evening games
-    - cron: "0 6 * * *"    # 12:00 AM CT - grade the night's finals
-  workflow_dispatch: {}
+    - cron: "10 13-23 * * *"   # every hour 7 AM - 5 PM CT (8 AM-6 PM during daylight time)
+    - cron: "10 0-6 * * *"     # every hour 6 PM - midnight CT; the last runs grade the night's finals
+  workflow_dispatch:
+    inputs:
+      weekly:
+        description: "Force the weekly report"
+        type: boolean
+        default: false
+  issue_comment:
+    types: [created]
+  issues:
+    types: [opened]
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: board
   cancel-in-progress: false
 jobs:
   run:
+    # issue events only count when they come from the owner - anyone else is ignored
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.sender.login == 'jjuliancastroc-beep'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TZ: America/Chicago
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: TZ=America/Chicago python -m board.run
+      - name: Self-test
+        run: python -m unittest tests.test_core -v
+      - name: Apply your commands
+        if: github.event_name == 'issue_comment' || github.event_name == 'issues'
+        run: python -m board.commands
+      - name: Build the Board
+        run: python -m board.run ${{ inputs.weekly && '--weekly' || '' }}
       - name: Save results
         run: |
           git config user.name "board-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data docs
-          git diff --cached --quiet || git commit -m "Board update $(TZ=America/Chicago date '+%Y-%m-%d %H:%M CT')"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "Board update $(date '+%Y-%m-%d %H:%M CT')"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done

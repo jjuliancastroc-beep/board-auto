@@ -1,9 +1,14 @@
-["Two models per game. Football and college basketball: ESPN's power index (FPI/BPI) and an opponent-adjusted ratings model built only from games already played. NBA and NHL: the ratings model and each team's last 10 games.",
+[
+ "Two models per game. Football and college basketball: ESPN's power index (FPI/BPI) and an opponent-adjusted ratings model built only from games already played. NBA and NHL: the ratings model and each team's last 10 games.",
  "A game gets a call only when both models land on the same side by at least the bar: 3 points in football, 4.5 in basketball, 5 win-probability points in hockey. One model alone is a WATCH, never a bet.",
  "Automatic pass: the two models are 10+ points apart. Any model 7+ points from the market is a re-check warning, not a reason to bet.",
- "Cash requires three things: both models agree, confidence 7.0+, and the past-games test shows that kind of pick won 53.5%+ over 200+ games. Otherwise it is PAPER: tracked and graded, $0.",
+ "Cash requires four things: both models agree, confidence 7.0+, the past-games test shows that kind of pick won 53.5%+ over 200+ games (or 100+ live paper picks), and you approve that sport. Otherwise it is PAPER: tracked and graded, $0.",
  "L-1112-1 (your call, 11/12): no $25 single on midweek or small-conference college football. Those need 8.0+.",
  "Units never change on their own: $50 at 8.0+, $25 at 7.0-7.9, $15 parlays, 2 tickets per game, $180 day cap, stop at -$150. Never chase.",
  "The first line logged for a pick is the one it is graded on. Every pick is also compared with the closing line, so we can see whether we got a good number.",
  "Line movement is used only as a price check, never as a reason to bet.",
- "Props are not on this page yet: ESPN's free feed has no prop lines."]
+ "Before every game the Board re-checks open picks. It can only say PULL (line moved past the playable number, or a new QB/star/goalie doubt) - it never adds a bet or raises a stake. Cash pulls email you.",
+ "You change settings by commenting on a GitHub issue: bankroll, skip, approve, unapprove, goal. Only your account counts.",
+ "Cash picks are counted as placed unless you comment 'skip'. Max 3 cash singles and 2 parlays a day; extra cash picks drop to paper.",
+ "Props stay in their own section and are not automated: ESPN's free feed has no prop lines."
+]
