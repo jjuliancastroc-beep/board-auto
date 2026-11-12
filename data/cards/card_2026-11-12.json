@@ -86,18 +86,18 @@
     "flags": [],
     "factors": [
      "Rest: Commanders 4 day(s), Giants 4 day(s)",
-     "Kickoff forecast: wind 9 mph (gusts 9), 51F, rain chance 75%"
+     "Kickoff forecast: wind 9 mph (gusts 24), 48F, rain chance 62%"
     ],
     "against": [],
     "invalidation": [
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 9.0,
-     "gust": 9.0,
-     "rain": 75,
-     "temp": 51,
-     "src": "NWS"
+     "wind": 9.4,
+     "gust": 24.2,
+     "rain": 62,
+     "temp": 48.2,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Showers",
@@ -152,12 +152,12 @@
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-13T01:00Z",
     "book": "DraftKings",
-    "line": "MEM -4",
-    "home_line": 4.0,
+    "line": "MEM -4.5",
+    "home_line": 4.5,
     "home_line_open": 6.0,
     "spread_odds": [
-     -112,
-     -108
+     -108,
+     -112
     ],
     "total": 50.5,
     "total_open": 49.5,
@@ -208,8 +208,8 @@
     ],
     "factors": [
      "Rest: Tigers 12 day(s), Bulls 6 day(s)",
-     "Line moved 2 pts toward South Florida Bulls since open (+6 to +4 home)",
-     "Kickoff forecast: wind 3 mph (gusts 3), 73F, rain chance 4%"
+     "Line moved 1.5 pts toward South Florida Bulls since open (+6 to +4.5 home)",
+     "Kickoff forecast: wind 4 mph (gusts 13), 70F, rain chance 0%"
     ],
     "against": [
      "Market moved away from this side since open"
@@ -220,26 +220,26 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 3.0,
-     "gust": 3.0,
-     "rain": 4,
-     "temp": 73,
-     "src": "NWS"
+     "wind": 4.2,
+     "gust": 12.8,
+     "rain": 0,
+     "temp": 70.1,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Partly cloudy",
      "temp": 72
     },
     "total_model": 51.1,
-    "gap_a": 0.8,
-    "gap_b": 4.3,
-    "gap_min": 4.3,
-    "pick": "South Florida Bulls +4",
-    "price": -108,
+    "gap_a": 1.3,
+    "gap_b": 4.8,
+    "gap_min": 4.8,
+    "pick": "South Florida Bulls +4.5",
+    "price": -112,
     "side": "home",
     "fair_line": 1.5,
     "playable_to": null,
-    "sim_cover": 0.563,
+    "sim_cover": 0.575,
     "test_record": {
      "w": 20,
      "l": 18,
@@ -251,7 +251,7 @@
     "veto": false,
     "conf": 6.9,
     "components": {
-     "efficiency": 1.44,
+     "efficiency": 1.61,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -327,7 +327,7 @@
     ],
     "factors": [
      "Rest: Cajuns 5 day(s), Warhawks 5 day(s)",
-     "Kickoff forecast: wind 5 mph (gusts 5), 57F, rain chance 0%"
+     "Kickoff forecast: wind 5 mph (gusts 15), 62F, rain chance 0%"
     ],
     "against": [],
     "invalidation": [
@@ -336,11 +336,11 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 5.0,
-     "gust": 5.0,
+     "wind": 5.4,
+     "gust": 15.4,
      "rain": 0,
-     "temp": 57,
-     "src": "NWS"
+     "temp": 61.5,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Clear",
@@ -796,17 +796,17 @@
     "time": "Thu 6:00 PM CT",
     "start": "2026-11-13T00:00Z",
     "book": "DraftKings",
-    "line": "PHI -7.5",
-    "home_line": -7.5,
+    "line": "PHI -8.5",
+    "home_line": -8.5,
     "home_line_open": -9.5,
     "spread_odds": [
-     -112,
-     -107
+     -118,
+     -103
     ],
-    "total": 223.5,
+    "total": 224.5,
     "total_open": 221.5,
-    "home_ml": -270,
-    "away_ml": 221,
+    "home_ml": -298,
+    "away_ml": 242,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 2.0,
@@ -899,7 +899,7 @@
     ],
     "factors": [
      "Rest: Raptors 1 day(s), 76ers 2 day(s)",
-     "Line moved 2 pts toward Toronto Raptors since open (-9.5 to -7.5 home)",
+     "Line moved 1 pts toward Toronto Raptors since open (-9.5 to -8.5 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
@@ -907,42 +907,43 @@
      "Our side has less rest"
     ],
     "invalidation": [
+     "Line moves past +8.3",
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 222.8,
     "veto_sides": [
      "game"
     ],
-    "gap_a": -5.5,
-    "gap_b": -3.7,
-    "gap_min": 5.5,
-    "pick": "Toronto Raptors +7.5",
-    "price": -112,
+    "gap_a": -6.5,
+    "gap_b": -4.7,
+    "gap_min": 4.7,
+    "pick": "Toronto Raptors +8.5",
+    "price": -118,
     "side": "away",
     "fair_line": 2.9,
-    "playable_to": null,
-    "sim_cover": 0.643,
+    "playable_to": 8.3,
+    "sim_cover": 0.672,
     "test_record": {
      "w": 57,
      "l": 68,
      "n": 125,
      "win": 0.456
     },
-    "models_agree": false,
-    "one_model": true,
+    "models_agree": true,
+    "one_model": false,
     "veto": true,
-    "conf": 2.9,
+    "conf": 3.8,
     "components": {
-     "efficiency": 0.61,
+     "efficiency": 0.52,
      "veto": 0.0,
-     "models": 0.5,
+     "models": 1.5,
      "starters": 0.75,
      "coaching": 0.5,
      "against": 0.3,
      "price": 0.0,
      "situational": 0.2
     },
-    "total_gap": -0.7
+    "total_gap": -1.7
    }
   ],
   "n_past": 170,
@@ -1589,109 +1590,6 @@
     "total_gap": 1.5
    },
    {
-    "id": "401917176",
-    "sport": "CBB",
-    "game": "Mercyhurst Lakers @ Penn State Nittany Lions",
-    "home": "Penn State Nittany Lions",
-    "away": "Mercyhurst Lakers",
-    "time": "Thu 5:30 PM CT",
-    "start": "2026-11-12T23:30Z",
-    "book": "DraftKings",
-    "line": "PSU -20.5",
-    "home_line": -20.5,
-    "home_line_open": -20.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 145.5,
-    "total_open": 147.5,
-    "home_ml": -5000,
-    "away_ml": 1800,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 18.5,
-    "model_b": 9.2,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "1-2",
-     "2-1"
-    ],
-    "venue": "Bryce Jordan Center",
-    "tv": "B1G+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Deraje Agbaosi",
-      "Jake Lemelman"
-     ],
-     [
-      "Dasonte Bowen",
-      "Ivan Juric",
-      "Roko Prkacin"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Lakers 5 day(s), Lions 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.2,
-    "gap_a": -2.0,
-    "gap_b": -11.3,
-    "gap_min": 11.3,
-    "pick": "Mercyhurst Lakers +20.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 13.9,
-    "playable_to": null,
-    "sim_cover": 0.726,
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5
-    },
-    "total_gap": 4.7
-   },
-   {
     "id": "401928818",
     "sport": "CBB",
     "game": "Western Michigan Broncos @ Purdue Fort Wayne Mastodons",
@@ -2128,10 +2026,10 @@
     "home_line": -1.5,
     "home_line_open": -1.5,
     "spread_odds": [
-     -115,
-     -105
+     -120,
+     100
     ],
-    "total": 144.5,
+    "total": 143.5,
     "total_open": 145.5,
     "home_ml": -115,
     "away_ml": -105,
@@ -2190,7 +2088,7 @@
     "gap_b": 3.5,
     "gap_min": 3.5,
     "pick": "Quinnipiac Bobcats -1.5",
-    "price": -105,
+    "price": 100,
     "side": "home",
     "fair_line": -3.5,
     "playable_to": null,
@@ -2215,7 +2113,7 @@
      "price": 0.0,
      "situational": 0.5
     },
-    "total_gap": 0.3
+    "total_gap": 1.3
    },
    {
     "id": "401911013",
@@ -2847,113 +2745,6 @@
     "total_gap": 0.0
    },
    {
-    "id": "401916288",
-    "sport": "CBB",
-    "game": "Tennessee Tech Golden Eagles @ Indiana Hoosiers",
-    "home": "Indiana Hoosiers",
-    "away": "Tennessee Tech Golden Eagles",
-    "time": "Thu 5:30 PM CT",
-    "start": "2026-11-12T23:30Z",
-    "book": "DraftKings",
-    "line": "IU -24.5",
-    "home_line": -24.5,
-    "home_line_open": -25.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 168.5,
-    "total_open": 166.5,
-    "home_ml": -6500,
-    "away_ml": 2000,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 21.6,
-    "model_b": 6.8,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "2-1",
-     "3-0"
-    ],
-    "venue": "Simon Skjodt Assembly Hall",
-    "tv": "BTN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Caleb Sanders",
-      "Ty Owens"
-     ],
-     [
-      "Darren Harris",
-      "Markus Burton",
-      "Samet Yigitoglu"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     3
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Eagles 4 day(s), Hoosiers 3 day(s)",
-     "Line moved 1 pts toward Tennessee Tech Golden Eagles since open (-25.5 to -24.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 174.0,
-    "gap_a": -2.9,
-    "gap_b": -17.7,
-    "gap_min": 17.7,
-    "pick": "Tennessee Tech Golden Eagles +24.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 14.2,
-    "playable_to": null,
-    "sim_cover": 0.826,
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 4.7,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5
-    },
-    "total_gap": 5.5
-   },
-   {
     "id": "401921768",
     "sport": "CBB",
     "game": "Mercer Bears @ West Virginia Mountaineers",
@@ -3509,6 +3300,116 @@
     "conf": 7.2,
     "components": {
      "efficiency": 0.65,
+     "veto": 1.5,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5
+    },
+    "stake": 0
+   },
+   {
+    "id": "401892699",
+    "sport": "NHL",
+    "game": "Detroit Red Wings @ Florida Panthers",
+    "home": "Florida Panthers",
+    "away": "Detroit Red Wings",
+    "time": "Thu 6:30 PM CT",
+    "start": "2026-11-13T00:30Z",
+    "book": "DraftKings",
+    "line": "FLA -205",
+    "home_line": -205.0,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -155,
+     130
+    ],
+    "total": 5.5,
+    "total_open": 5.5,
+    "home_ml": -205,
+    "away_ml": 170,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.5,
+    "model_b": 0.4,
+    "games_played": [
+     17,
+     16
+    ],
+    "neutral": false,
+    "records": [
+     "7-9-3",
+     "10-7-2"
+    ],
+    "venue": "Amerant Bank Arena",
+    "tv": "Disney+, ESPN+, Hulu",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Lucas Raymond",
+      "Viktor Arvidsson"
+     ],
+     [
+      "Brady Tkachuk",
+      "Matthew Tkachuk"
+     ]
+    ],
+    "goalies": [
+     "John Gibson",
+     "Akira Schmid"
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but this kind of pick won 47.3% over 332 past games (needs 53.5%+ over 200+).",
+    "flags": [],
+    "factors": [
+     "Rest: Wings 2 day(s), Panthers 2 day(s)",
+     "Line moved 203.5 pts toward Florida Panthers since open (-1.5 to -205 home)",
+     "Indoors - weather does not matter",
+     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A different goalie starts for either team",
+     "Price moves past +141 (our fair price)"
+    ],
+    "total_model": 6.2,
+    "gap_a": -5.1,
+    "gap_b": -6.7,
+    "win_prob": [
+     0.414,
+     0.586
+    ],
+    "market_prob": [
+     0.355,
+     0.645
+    ],
+    "pick": "Detroit Red Wings ML (+170)",
+    "price": 170,
+    "side": "away",
+    "gap_min": 5.1,
+    "fair_line": 141,
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "test_record": {
+     "w": 157,
+     "l": 175,
+     "n": 332,
+     "win": 0.473,
+     "units": -9.79,
+     "roi": -0.029
+    },
+    "conf": 7.0,
+    "components": {
+     "efficiency": 0.51,
      "veto": 1.5,
      "models": 1.5,
      "starters": 1.5,
@@ -4345,115 +4246,6 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.2
-    }
-   },
-   {
-    "id": "401892699",
-    "sport": "NHL",
-    "game": "Detroit Red Wings @ Florida Panthers",
-    "home": "Florida Panthers",
-    "away": "Detroit Red Wings",
-    "time": "Thu 6:30 PM CT",
-    "start": "2026-11-13T00:30Z",
-    "book": "DraftKings",
-    "line": "FLA -185",
-    "home_line": -185.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -166,
-     140
-    ],
-    "total": 5.5,
-    "total_open": 5.5,
-    "home_ml": -185,
-    "away_ml": 154,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.5,
-    "model_b": 0.4,
-    "games_played": [
-     17,
-     16
-    ],
-    "neutral": false,
-    "records": [
-     "7-9-3",
-     "10-7-2"
-    ],
-    "venue": "Amerant Bank Arena",
-    "tv": "Disney+, ESPN+, Hulu",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Lucas Raymond",
-      "Viktor Arvidsson"
-     ],
-     [
-      "Brady Tkachuk",
-      "Matthew Tkachuk"
-     ]
-    ],
-    "goalies": [
-     "John Gibson",
-     "Akira Schmid"
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Wings 2 day(s), Panthers 2 day(s)",
-     "Line moved 183.5 pts toward Florida Panthers since open (-1.5 to -185 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past +141 (our fair price)"
-    ],
-    "total_model": 6.2,
-    "gap_a": -2.8,
-    "gap_b": -4.5,
-    "win_prob": [
-     0.414,
-     0.586
-    ],
-    "market_prob": [
-     0.378,
-     0.622
-    ],
-    "pick": "Detroit Red Wings ML (+154)",
-    "price": 154,
-    "side": "away",
-    "gap_min": 4.5,
-    "fair_line": 141,
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.45,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5
     }
    },
    {

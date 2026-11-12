@@ -1400,5 +1400,74 @@
   "review_log": [
    "11/12 05:31 PM: checked line and injuries - no change"
   ]
+ },
+ {
+  "id": "401892699",
+  "sport": "NHL",
+  "game": "Detroit Red Wings @ Florida Panthers",
+  "home": "Florida Panthers",
+  "away": "Detroit Red Wings",
+  "start": "2026-11-13T00:30Z",
+  "pick": "Detroit Red Wings ML (+170)",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 7.0,
+  "components": {
+   "efficiency": 0.51,
+   "veto": 1.5,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5
+  },
+  "gap_a": -5.1,
+  "gap_b": -6.7,
+  "gap_min": 5.1,
+  "price": 170,
+  "fair_line": 141,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -205.0,
+  "home_ml": -205,
+  "away_ml": 170,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "A different goalie starts for either team",
+   "Price moves past +141 (our fair price)"
+  ],
+  "reason": "Both models agree, but this kind of pick won 47.3% over 332 past games (needs 53.5%+ over 200+).",
+  "model_a": 0.5,
+  "model_b": 0.4,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 157,
+   "l": 175,
+   "n": 332,
+   "win": 0.473,
+   "units": -9.79,
+   "roi": -0.029
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   "John Gibson",
+   "Akira Schmid"
+  ],
+  "date": "2026-11-12",
+  "line_at_pick": "FLA -205",
+  "logged_at": "17:33",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/12 05:33 PM: checked line and injuries - no change"
+  ]
  }
 ]
