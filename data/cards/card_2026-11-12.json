@@ -332,7 +332,7 @@
     ],
     "factors": [
      "Rest: Cajuns 5 day(s), Warhawks 5 day(s)",
-     "Kickoff forecast: wind 5 mph (gusts 15), 62F, rain chance 0%"
+     "Kickoff forecast: wind 5 mph (gusts 15), 61F, rain chance 0%"
     ],
     "against": [],
     "invalidation": [
@@ -341,10 +341,10 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 5.4,
-     "gust": 15.4,
+     "wind": 4.9,
+     "gust": 14.8,
      "rain": 0,
-     "temp": 61.5,
+     "temp": 61.4,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -2429,111 +2429,6 @@
     "total_gap": 5.3
    },
    {
-    "id": "401911533",
-    "sport": "CBB",
-    "game": "New Mexico State Aggies @ UTEP Miners",
-    "home": "UTEP Miners",
-    "away": "New Mexico State Aggies",
-    "time": "Thu 8:00 PM CT",
-    "start": "2026-11-13T02:00Z",
-    "book": "Draft Kings",
-    "line": "UTEP -5.5",
-    "home_line": -5.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 144.5,
-    "total_open": 143.5,
-    "home_ml": -218,
-    "away_ml": 180,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 4.4,
-    "model_b": 6.3,
-    "games_played": [
-     2,
-     2
-    ],
-    "neutral": false,
-    "records": [
-     "1-1",
-     "1-1"
-    ],
-    "venue": "Don Haskins Center",
-    "tv": "MW+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Gabe Pickens",
-      "Mark Lavrenov"
-     ],
-     [
-      "Cam McDaniels",
-      "Reese Miller",
-      "Youssouf Traore"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     4
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Aggies 5 day(s), Miners 4 day(s)",
-     "Line moved 2 pts toward UTEP Miners since open (-3.5 to -5.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 153.8,
-    "gap_a": -1.1,
-    "gap_b": 0.8,
-    "gap_min": 1.1,
-    "pick": "New Mexico State Aggies +5.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 5.3,
-    "playable_to": null,
-    "sim_cover": 0.505,
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.1,
-    "components": {
-     "efficiency": 0.12,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5
-    },
-    "total_gap": 9.3,
-    "total_lean": "Over 144.5 (season scoring says 153.8) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401924876",
     "sport": "CBB",
     "game": "Central Connecticut Blue Devils @ Sacred Heart Pioneers",
@@ -2742,6 +2637,112 @@
      "situational": 0.5
     },
     "total_gap": 0.0
+   },
+   {
+    "id": "401911533",
+    "sport": "CBB",
+    "game": "New Mexico State Aggies @ UTEP Miners",
+    "home": "UTEP Miners",
+    "away": "New Mexico State Aggies",
+    "time": "Thu 8:00 PM CT",
+    "start": "2026-11-13T02:00Z",
+    "book": "Draft Kings",
+    "line": "UTEP -4.5",
+    "home_line": -4.5,
+    "home_line_open": -3.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 145.5,
+    "total_open": 143.5,
+    "home_ml": -218,
+    "away_ml": 180,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 4.4,
+    "model_b": 6.3,
+    "games_played": [
+     2,
+     2
+    ],
+    "neutral": false,
+    "records": [
+     "1-1",
+     "1-1"
+    ],
+    "venue": "Don Haskins Center",
+    "tv": "MW+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Gabe Pickens",
+      "Mark Lavrenov"
+     ],
+     [
+      "Cam McDaniels",
+      "Reese Miller",
+      "Youssouf Traore"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     5,
+     4
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Aggies 5 day(s), Miners 4 day(s)",
+     "Line moved 1 pts toward UTEP Miners since open (-3.5 to -4.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 153.8,
+    "gap_a": -0.1,
+    "gap_b": 1.8,
+    "gap_min": 1.8,
+    "pick": "UTEP Miners -4.5",
+    "price": -115,
+    "side": "home",
+    "fair_line": -5.3,
+    "playable_to": null,
+    "sim_cover": 0.531,
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 4.8,
+    "components": {
+     "efficiency": 0.2,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5
+    },
+    "total_gap": 8.3,
+    "total_lean": "Over 145.5 (season scoring says 153.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921768",
@@ -3310,6 +3311,116 @@
     "stake": 0
    },
    {
+    "id": "401892699",
+    "sport": "NHL",
+    "game": "Detroit Red Wings @ Florida Panthers",
+    "home": "Florida Panthers",
+    "away": "Detroit Red Wings",
+    "time": "Thu 6:30 PM CT",
+    "start": "2026-11-13T00:30Z",
+    "book": "Draft Kings",
+    "line": "FLA -205",
+    "home_line": -205.0,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -155,
+     130
+    ],
+    "total": 5.5,
+    "total_open": 5.5,
+    "home_ml": -205,
+    "away_ml": 170,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.5,
+    "model_b": 0.4,
+    "games_played": [
+     17,
+     16
+    ],
+    "neutral": false,
+    "records": [
+     "7-9-3",
+     "10-7-2"
+    ],
+    "venue": "Amerant Bank Arena",
+    "tv": "Disney+, ESPN+, Hulu",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Lucas Raymond",
+      "Viktor Arvidsson"
+     ],
+     [
+      "Brady Tkachuk",
+      "Matthew Tkachuk"
+     ]
+    ],
+    "goalies": [
+     "John Gibson",
+     "Akira Schmid"
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but this kind of pick won 47.3% over 332 past games (needs 53.5%+ over 200+).",
+    "flags": [],
+    "factors": [
+     "Rest: Wings 2 day(s), Panthers 2 day(s)",
+     "Line moved 203.5 pts toward Florida Panthers since open (-1.5 to -205 home)",
+     "Indoors - weather does not matter",
+     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A different goalie starts for either team",
+     "Price moves past +141 (our fair price)"
+    ],
+    "total_model": 6.2,
+    "gap_a": -5.1,
+    "gap_b": -6.7,
+    "win_prob": [
+     0.414,
+     0.586
+    ],
+    "market_prob": [
+     0.355,
+     0.645
+    ],
+    "pick": "Detroit Red Wings ML (+170)",
+    "price": 170,
+    "side": "away",
+    "gap_min": 5.1,
+    "fair_line": 141,
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "test_record": {
+     "w": 157,
+     "l": 175,
+     "n": 332,
+     "win": 0.473,
+     "units": -9.79,
+     "roi": -0.029
+    },
+    "conf": 7.0,
+    "components": {
+     "efficiency": 0.51,
+     "veto": 1.5,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5
+    },
+    "stake": 0
+   },
+   {
     "id": "401892696",
     "sport": "NHL",
     "game": "Montreal Canadiens @ Boston Bruins",
@@ -3433,8 +3544,8 @@
     "home_line": 105.0,
     "home_line_open": 1.5,
     "spread_odds": [
-     210,
-     -258
+     230,
+     -285
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -4135,115 +4246,6 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.2
-    }
-   },
-   {
-    "id": "401892699",
-    "sport": "NHL",
-    "game": "Detroit Red Wings @ Florida Panthers",
-    "home": "Florida Panthers",
-    "away": "Detroit Red Wings",
-    "time": "Thu 6:30 PM CT",
-    "start": "2026-11-13T00:30Z",
-    "book": "Draft Kings",
-    "line": "FLA -185",
-    "home_line": -185.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -166,
-     140
-    ],
-    "total": 5.5,
-    "total_open": 5.5,
-    "home_ml": -185,
-    "away_ml": 154,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.5,
-    "model_b": 0.4,
-    "games_played": [
-     17,
-     16
-    ],
-    "neutral": false,
-    "records": [
-     "7-9-3",
-     "10-7-2"
-    ],
-    "venue": "Amerant Bank Arena",
-    "tv": "Disney+, ESPN+, Hulu",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Lucas Raymond",
-      "Viktor Arvidsson"
-     ],
-     [
-      "Brady Tkachuk",
-      "Matthew Tkachuk"
-     ]
-    ],
-    "goalies": [
-     "John Gibson",
-     "Akira Schmid"
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Wings 2 day(s), Panthers 2 day(s)",
-     "Line moved 183.5 pts toward Florida Panthers since open (-1.5 to -185 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: John Gibson (Wings), Akira Schmid (Panthers)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past +141 (our fair price)"
-    ],
-    "total_model": 6.2,
-    "gap_a": -2.8,
-    "gap_b": -4.5,
-    "win_prob": [
-     0.414,
-     0.586
-    ],
-    "market_prob": [
-     0.378,
-     0.622
-    ],
-    "pick": "Detroit Red Wings ML (+154)",
-    "price": 154,
-    "side": "away",
-    "gap_min": 4.5,
-    "fair_line": 141,
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.45,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5
     }
    },
    {
