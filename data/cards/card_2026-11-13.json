@@ -73,7 +73,7 @@
     "factors": [
      "Rest: Cougars 6 day(s), Buffaloes 6 day(s)",
      "Line moved 3 pts toward Colorado Buffaloes since open (+10.5 to +7.5 home)",
-     "Kickoff forecast: wind 7 mph (gusts 8), 49F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 5), 47F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -85,11 +85,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 6.9,
-     "gust": 8.3,
+     "wind": 5.0,
+     "gust": 5.0,
      "rain": 0,
-     "temp": 48.9,
-     "src": "Open-Meteo"
+     "temp": 47,
+     "src": "NWS"
     },
     "weather": {
      "text": "Mostly clear",
@@ -193,7 +193,7 @@
     "factors": [
      "Rest: Illini 7 day(s), Bruins 6 day(s)",
      "Line moved 2 pts toward Illinois Fighting Illini since open (-12.5 to -10.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 5), 60F, rain chance 21%"
+     "Kickoff forecast: wind 10 mph (gusts 10), 62F, rain chance 76%"
     ],
     "against": [
      "Market moved away from this side since open"
@@ -204,11 +204,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 1.7,
-     "gust": 4.7,
-     "rain": 21,
-     "temp": 60.2,
-     "src": "Open-Meteo"
+     "wind": 10.0,
+     "gust": 10.0,
+     "rain": 76,
+     "temp": 62,
+     "src": "NWS"
     },
     "weather": {
      "text": "Intermittent clouds",
@@ -311,7 +311,7 @@
     ],
     "factors": [
      "Rest: Seminoles 6 day(s), Panthers 13 day(s)",
-     "Kickoff forecast: wind 4 mph (gusts 13), 34F, rain chance 2%"
+     "Kickoff forecast: wind 7 mph (gusts 7), 39F, rain chance 17%"
     ],
     "against": [],
     "invalidation": [
@@ -320,11 +320,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 3.8,
-     "gust": 13.4,
-     "rain": 2,
-     "temp": 34.4,
-     "src": "Open-Meteo"
+     "wind": 7.0,
+     "gust": 7.0,
+     "rain": 17,
+     "temp": 39,
+     "src": "NWS"
     },
     "weather": {
      "text": "Rain and snow",
@@ -1484,13 +1484,13 @@
     "away": "Atlanta Hawks",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-14T01:00Z",
-    "book": "DraftKings",
-    "line": "ATL -6.5",
-    "home_line": 6.5,
+    "book": "Draft Kings",
+    "line": "ATL -7.5",
+    "home_line": 7.5,
     "home_line_open": 6.5,
     "spread_odds": [
-     -118,
-     -103
+     -103,
+     -118
     ],
     "total": 245.5,
     "total_open": 246.5,
@@ -1587,7 +1587,9 @@
     ],
     "factors": [
      "Rest: Hawks 4 day(s), Bulls 2 day(s)",
-     "Indoors - weather does not matter"
+     "Line moved 1 pts toward Atlanta Hawks since open (+6.5 to +7.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
     "invalidation": [
@@ -1597,15 +1599,15 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": 1.6,
-    "gap_b": -1.8,
-    "gap_min": 1.8,
-    "pick": "Atlanta Hawks -6.5",
+    "gap_a": 2.6,
+    "gap_b": -0.8,
+    "gap_min": 2.6,
+    "pick": "Chicago Bulls +7.5",
     "price": -118,
-    "side": "away",
-    "fair_line": -6.6,
+    "side": "home",
+    "fair_line": 6.6,
     "playable_to": null,
-    "sim_cover": 0.503,
+    "sim_cover": 0.528,
     "test_record": {
      "w": 57,
      "l": 68,
@@ -1617,7 +1619,7 @@
     "veto": true,
     "conf": 3.0,
     "components": {
-     "efficiency": 0.2,
+     "efficiency": 0.29,
      "veto": 0.0,
      "models": 0.0,
      "starters": 0.75,
@@ -2512,8 +2514,8 @@
     ],
     "total": 131.5,
     "total_open": 132.5,
-    "home_ml": -355,
-    "away_ml": 280,
+    "home_ml": -360,
+    "away_ml": 285,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.3,
@@ -5222,8 +5224,8 @@
     "home_line": -4.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 147.5,
     "total_open": 149.5,
@@ -5286,7 +5288,7 @@
     "gap_b": -3.5,
     "gap_min": 4.5,
     "pick": "Clemson Tigers -4.5",
-    "price": -112,
+    "price": -108,
     "side": "home",
     "fair_line": -5.0,
     "playable_to": null,
