@@ -21,6 +21,7 @@ def main():
         except Exception as e:
             traceback.print_exc(); c = {"sport": sport, "games": [], "note": f"Build failed: {e}"}
         cards.append(c); print(sport, len(c["games"]), "games", sum(1 for r in c["games"] if r["decision"] in ("CASH", "PAPER")), "calls")
+    grade.lock_mains(cards, date)
     enforce_caps(cards)
     save(f"cards/card_{date}.json", cards)
     picks = grade.log_picks(cards, date)
@@ -32,7 +33,7 @@ def main():
     for c in cards:
         for r in c["games"]:
             if r["decision"] == "CASH":
-                notify.send(f"cash-{date}-{r['id']}", f"Cash pick: {r['pick']} ${r['stake']}", [f"{r['game']} - {r['time']}", f"Price {r.get('price')}, fair {r.get('fair_line')}, playable to {r.get('playable_to')}", r["reason"], "Pull if: " + "; ".join(r["invalidation"])])
+                notify.send(f"cash-{date}-{r['id']}", f"Main: {r['pick']} ${r['stake']}", [f"{r['game']} - {r['time']}", f"Price {r.get('price')}, fair {r.get('fair_line')}, playable to {r.get('playable_to')}", r["reason"], "Pull if: " + "; ".join(r["invalidation"])])
     for p in pulls:
         if p["decision"] == "CASH":
             notify.send(f"pull-{p['date']}-{p['id']}", f"PULL: {p['pick']}", [p["review_log"][-1]])
@@ -45,6 +46,8 @@ def main():
         tmr = (datetime.datetime.strptime(date, "%Y-%m-%d") + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         pr = props.build([date, tmr], cards_by_id={r["id"]: r for c in cards for r in c["games"]})
         props.log(pr["props"]); props.log_lines(pr["props"])
+        if pr.get("ok"):
+            pr["card"] = props.card(pr["props"], date)
         if not pr.get("ok"):
             hl["notes"].append("Props: " + pr.get("note", "Underdog feed did not load."))
         else:
@@ -60,14 +63,15 @@ def main():
 
 
 def enforce_caps(cards):
-    """Max 3 cash singles, 2 tickets per game, $180 day cap - extra cash picks drop to paper."""
-    cash = sorted([r for c in cards for r in c["games"] if r["decision"] == "CASH"], key=lambda r: -r["conf"])
-    total = 0
-    for i, r in enumerate(cash):
-        if i >= 3 or total + r["stake"] > 150:  # leave room for two $15 parlays under $180
-            r["decision"] = "PAPER"; r["stake"] = 0; r["reason"] += " Dropped to paper by the day cap."
+    """Max 3 mains, 2 tickets per game, $150 for singles so two $15 parlays fit under $180. Locked mains count first;
+    extra cash picks drop to paper."""
+    cash = sorted([r for c in cards for r in c["games"] if r["decision"] == "CASH"], key=lambda r: (not r.get("locked"), -r["conf"]))
+    total = 0; n = 0
+    for r in cash:
+        if not r.get("locked") and (n >= 3 or total + r["stake"] > 150):
+            r["decision"] = "PAPER"; r["stake"] = 0; r["reason"] += " Dropped to paper by the day cap (3 mains, $150)."
         else:
-            total += r["stake"]
+            total += r["stake"]; n += 1
 
 
 if __name__ == "__main__":

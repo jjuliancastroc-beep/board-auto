@@ -59,5 +59,60 @@ class Props(unittest.TestCase):
         assert props.weight({"n": 10}) == 0.35
 
 
+
+class OldSetup(unittest.TestCase):
+    def test_history_nudge_is_small(self):
+        from board import history
+        history._cache["rows"] = [(history.today_ct(), ["spread fav"], True, "t")] * 500
+        r = history.record(["spread fav"])
+        assert 0 < r["adj"] <= 0.5
+        history._cache["rows"] = [(history.today_ct(), ["spread fav"], False, "t")] * 500
+        assert -0.5 <= history.record(["spread fav"])["adj"] < 0
+        history._cache["rows"] = [(history.today_ct(), ["spread fav"], True, "t")] * 3 + [(history.today_ct(), ["spread fav"], False, "t")] * 2
+        assert abs(history.record(["spread fav"])["adj"]) < 0.1  # 3-2 barely moves it
+        history._cache["rows"] = [("2020-01-01", ["spread fav"], True, "t")] * 500
+        assert history.record(["spread fav"])["adj"] == 0.0  # older than 60 days doesn't count
+        history.reset()
+
+    def test_mains_need_approval_and_cap(self):
+        from board import card, run
+        base = {"pick": "X -3", "flags": [], "veto": False, "models_agree": True, "one_model": False, "test_record": {"win": 0.5, "n": 300}}
+        r = dict(base, conf=8.2); card.finalize(r, "NBA", {"cash_approved": ["NBA"]})
+        assert r["decision"] == "CASH" and r["stake"] == 50
+        r = dict(base, conf=7.4); card.finalize(r, "NBA", {"cash_approved": ["NBA"]})
+        assert r["decision"] == "CASH" and r["stake"] == 25
+        r = dict(base, conf=8.2); card.finalize(r, "CBB", {"cash_approved": ["NBA"]})
+        assert r["decision"] == "PAPER"
+        r = dict(base, conf=7.4, flags=["L-1112-1: midweek"]); card.finalize(r, "CFB", {"cash_approved": ["CFB"]})
+        assert r["decision"] == "PAPER"
+        rows = [{"decision": "CASH", "stake": 50, "conf": 9 - i * 0.1, "reason": ""} for i in range(5)]
+        run.enforce_caps([{"games": rows}])
+        assert sum(1 for x in rows if x["decision"] == "CASH") == 3 and sum(x["stake"] for x in rows) <= 150
+
+    def test_props_card_shape(self):
+        import datetime
+        from board import props, common
+        start = (common.now_ct() + datetime.timedelta(hours=3)).isoformat()
+        mk = lambda i, call, ev, conf: {"id": f"d|{i}|points", "date": "2099-01-01", "pick": f"P{i} Higher 10.5 Points", "player": f"P{i}", "sport": "NBA",
+                                        "game": "A @ B", "event_id": ev, "stat": "points", "side": "higher", "line": 10.5, "p": 0.6, "mkt": 0.5, "edge": 10,
+                                        "conf": conf, "playable_to": 11.5, "start": start, "time": "x", "call": call}
+        pr = [mk(i, "PLAY", f"e{i}", 8 - i * 0.1) for i in range(6)] + [mk(10 + i, "LEAN", f"e{i}", 6) for i in range(6)]
+        saved = common.load("props_card.json", {})
+        try:
+            pc = props.card(pr, "2099-01-01")
+            assert len(pc["singles"]) == 3 and len(pc["parlays"]) == 2
+            ids = [x["id"] for x in pc["singles"]] + [x["id"] for e in pc["parlays"] for x in e["legs"]]
+            assert len(ids) == len(set(ids))
+            per = {}
+            for x in pc["singles"] + [x for e in pc["parlays"] for x in e["legs"]]:
+                per[x["event_id"]] = per.get(x["event_id"], 0) + 1
+            assert max(per.values()) <= 2
+            pr2 = [dict(x, call="PASS", reason="gone") if x["id"] == pc["singles"][0]["id"] else x for x in pr]
+            pc2 = props.card(pr2, "2099-01-01")
+            assert pc2["singles"][0]["status"] == "PULL" and len(pc2["singles"]) == 3
+        finally:
+            common.save("props_card.json", saved)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -6,21 +6,49 @@ from . import espn
 
 KEEP = ("id", "sport", "game", "home", "away", "start", "pick", "decision", "stake", "conf", "components", "gap_a", "gap_b", "gap_min",
         "price", "fair_line", "playable_to", "side", "home_line", "home_ml", "away_ml", "flags", "against", "invalidation", "reason",
-        "model_a", "model_b", "model_a_name", "model_b_name", "test_record", "tier", "day", "book", "goalies")
+        "model_a", "model_b", "model_a_name", "model_b_name", "test_record", "tier", "day", "book", "goalies", "history")
 
 
 def log_picks(cards, date):
+    """Log every call once. A logged paper/watch pick is upgraded to a main if it reaches CASH before the game
+    starts. A main is never downgraded here - only a PULL from the pre-game review or your 'skip' takes it out."""
     picks = load("picks.json", [])
-    have = {(p["date"], p["id"]) for p in picks}
-    now = now_ct().strftime("%H:%M")
+    have = {(p["date"], p["id"]): p for p in picks}
+    now = now_ct(); hm = now.strftime("%H:%M")
     for c in cards:
         for r in c["games"]:
-            if r["decision"] in ("CASH", "PAPER", "WATCH") and (date, r["id"]) not in have:
+            if r["decision"] not in ("CASH", "PAPER", "WATCH"):
+                continue
+            old = have.get((date, r["id"]))
+            if old is None:
                 p = {k: r.get(k) for k in KEEP}
-                p.update(date=date, line_at_pick=r.get("line"), logged_at=now, result=None, final=None, close=None, clv=None, review="HOLD", review_log=[])
-                picks.append(p); have.add((date, r["id"]))
+                p.update(date=date, line_at_pick=r.get("line"), logged_at=hm, result=None, final=None, close=None, clv=None, review="HOLD", review_log=[])
+                picks.append(p); have[(date, r["id"])] = p
+            elif r["decision"] == "CASH" and old["decision"] != "CASH" and old["result"] is None and ct_time(old["start"]) > now:
+                for k in KEEP:
+                    old[k] = r.get(k)
+                old.update(line_at_pick=r.get("line"), logged_at=hm)
+                old["review_log"] = (old.get("review_log") or []) + [f"{hm} upgraded to main ({r['pick']}, conf {r['conf']})"]
     save("picks.json", picks)
     return picks
+
+
+def lock_mains(cards, date):
+    """Mains already logged today stay mains with the same pick and stake (they are on your Capped card)."""
+    locked = {p["id"]: p for p in load("picks.json", []) if p["date"] == date and p["decision"] == "CASH" and not p.get("skipped")}
+    for c in cards:
+        for r in c["games"]:
+            p = locked.get(r["id"])
+            if not p:
+                continue
+            if r.get("decision") != "CASH" or r.get("pick") != p["pick"]:
+                r["now_says"] = f"{r.get('decision')} {r.get('pick') or ''} {r.get('conf') or ''}".strip()
+            for k in ("pick", "stake", "conf", "components", "side", "fair_line", "playable_to", "test_record", "history"):
+                if p.get(k) is not None:
+                    r[k] = p[k]
+            r["decision"] = "CASH"; r["locked"] = True
+            r["reason"] = f"Locked as a main at {p.get('logged_at')}. " + (p.get("reason") or "")
+    return locked
 
 
 def _pick_team_line(p):
@@ -106,17 +134,28 @@ def grade_parlays(picks):
 
 def build_parlays(cards, date, picks):
     """Two parlays max, each using only ONE confident pick (7.0+) plus one 5.5-6.9 leg from a different game.
-    Paper unless the confident leg is a cash pick."""
+    $15 when the confident leg is a main, paper otherwise. A $15 parlay is locked once made; paper ones rebuild each run."""
     pars = load("parlays.json", [])
-    if any(x["date"] == date for x in pars):
-        return [x for x in pars if x["date"] == date]
-    rows = [r for c in cards for r in c["games"] if r["decision"] in ("CASH", "PAPER") and r.get("price")]
-    anchors = sorted([r for r in rows if r["conf"] >= 7.0], key=lambda r: -r["conf"])
+    today = [x for x in pars if x["date"] == date]
+    keep = [x for x in today if x["decision"] == "CASH"]
+    if len(keep) >= 2:
+        return today
+    pars = [x for x in pars if not (x["date"] == date and x["decision"] != "CASH")]
+    rows = [r for c in cards for r in c["games"] if r["decision"] in ("CASH", "PAPER") and r.get("price") and r.get("pick")]
+    now = now_ct()
+    rows = [r for r in rows if not r.get("start") or ct_time(r["start"]) > now]
+    anchors = sorted([r for r in rows if r["conf"] >= 7.0], key=lambda r: (r["decision"] != "CASH", -r["conf"]))
     legs = sorted([r for r in rows if 5.5 <= r["conf"] < 7.0], key=lambda r: -r["conf"])
-    out = []; used = set()
+    used = {i for x in keep for i in x["legs"]}
+    old = [p for p in load("history_old.json", []) if "parlay" in p["b"]]
+    ow = sum(1 for p in old if p["r"] == "W")
+    hist = f" Our parlay record on the old Board: {ow}-{len(old) - ow} - parlays have been our weakest bet, so they stay $15." if old else ""
+    out = list(keep)
     for a in anchors:
         if len(out) == 2:
             break
+        if a["id"] in used:
+            continue
         leg = next((l for l in legs if l["id"] != a["id"] and l["id"] not in used), None)
         if not leg:
             break
@@ -125,8 +164,9 @@ def build_parlays(cards, date, picks):
         am = round((dec - 1) * 100)
         out.append({"date": date, "name": f"Parlay {len(out) + 1}", "legs": [a["id"], leg["id"]], "picks": [a["pick"], leg["pick"]],
                     "price": f"+{am}", "decision": "CASH" if a["decision"] == "CASH" else "PAPER", "stake": 15 if a["decision"] == "CASH" else 0,
-                    "why": f"Anchor {a['pick']} ({a['conf']}) + leg {leg['pick']} ({leg['conf']}). Only one confident pick per parlay.", "result": None})
-    pars.extend(out); save("parlays.json", pars)
+                    "why": f"Anchor {a['pick']} ({a['conf']}) + leg {leg['pick']} ({leg['conf']}). Only one confident pick per parlay." + hist,
+                    "result": None, "made_at": now.strftime("%H:%M")})
+    pars.extend(x for x in out if x not in keep); save("parlays.json", pars)
     return out
 
 

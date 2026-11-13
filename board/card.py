@@ -4,12 +4,15 @@ Each game: two models vs the DraftKings line ESPN shows, plus the factors the Bo
 injuries (QB / star players), rest and back-to-backs, weather and wind (outdoor football), NHL starting goalies,
 line movement since open, key numbers, totals. Then the Board's rules decide CASH / PAPER / WATCH / PASS.
 
-CASH needs ALL of: both models agree past the bar, confidence 7.0+, no veto, the past-games test for that kind of
-pick won 53.5%+ over 200+ games, AND you approved that sport for cash (data/settings.json "cash_approved").
+MAIN (cash, Capped card) needs ALL of: both models agree past the bar, confidence 7.0+ (8.0+ for midweek/G5 CFB,
+rule L-1112-1), no veto, and the sport is on your cash list (data/settings.json "cash_approved"; football and NBA by
+default, CBB/NHL stay paper until you graduate them). Up to 3 mains a day, $50 at 8.0+, $25 at 7.0-7.9.
+The past-games test still feeds confidence (a failing test halves the efficiency points and zeroes price),
+and our own recent record nudges it by at most +/-0.5 (board/history.py).
 """
 import datetime
 from .common import SPORTS, POWER_CONF, ct_time, american_to_prob, norm_cdf, load
-from . import espn, model
+from . import espn, model, history
 
 UNITS = {"8": 50, "7": 25}
 CASH_GATE = {"min_games": 200, "min_win": 0.535}  # break-even at -110 is 52.4%; we want a cushion
@@ -69,6 +72,7 @@ def build(sport, date, bt, btl, settings):
     past = espn.season_results(sport, date)
     R = model.ridge_ratings(past, cfg["hfa"], cfg["cap"], cfg["lam"])
     L = model.last_n(past, cfg["cap"], 10 if sport in ("NBA", "NHL") else 8)
+    F5 = model.last_n(past, cfg["cap"], 5)
     P = espn.power_index(sport) if cfg["power"] else {}
     gp = model.games_played(past)
     TT = team_totals(past)
@@ -96,6 +100,7 @@ def build(sport, date, bt, btl, settings):
                "inj_home": key_injuries(inj, g["home"]), "inj_away": key_injuries(inj, g["away"]),
                "stars": [g.get("aleaders") or [], g.get("hleaders") or []], "goalies": [g.get("agoalie"), g.get("hgoalie")],
                "rest": [rest_days(past, g["aid"], g["date"]), rest_days(past, g["hid"], g["date"])],
+               "form5": [round(F5[g["aid"]][0], 1) if F5.get(g["aid"], (0, 0))[1] >= 4 else None, round(F5[g["hid"]][0], 1) if F5.get(g["hid"], (0, 0))[1] >= 4 else None],
                "decision": "PASS", "reason": "", "flags": [], "factors": [], "against": [], "invalidation": []}
         if sport == "CFB":
             row["tier"] = cfb_tier(g); row["day"] = cfb_day(g)
@@ -216,6 +221,15 @@ def screen_spread(row, g, mA, mB, cfg, sport, bt, btl):
             ag.append("Our side has less rest")
     if both and abs(gA) < abs(gB) * 0.5:
         ag.append("One model is only barely past the bar")
+    fa, fh = row.get("form5") or [None, None]
+    if fa is not None and fh is not None:
+        mine, theirs = (fh, fa) if side_home else (fa, fh)
+        gap5 = mine - theirs
+        if gap5 <= -bar:
+            ag.append(f"Last 5 games point the other way (our side {mine:+.1f} a game, theirs {theirs:+.1f})")
+        elif gap5 >= bar:
+            row["factors"].append(f"Last 5 games agree (our side {mine:+.1f} a game, theirs {theirs:+.1f})")
+    row["history"] = history.record(history.main_buckets(sport, row["pick"]))
     rec = bucket_record(sport, g, bt, btl)
     row["test_record"] = rec
     row["models_agree"] = both
@@ -247,6 +261,7 @@ def screen_nhl(row, g, mA, mB, cfg, btl):
         row["flags"].append("A model is 12+ win-chance points from the market - re-check warning, not a reason to bet")
     row["models_agree"] = both; row["one_model"] = (max(abs(eA), abs(eB)) >= bar) and not both; row["veto"] = False
     row["test_record"] = (btl.get("NHL") or {}).get("both_agree")
+    row["history"] = history.record(history.main_buckets("NHL", row["pick"]))
     row["conf"], row["components"] = confidence(row, gap_min / 2, bar / 2, both)
     row["invalidation"] = ["A different goalie starts for either team", f"Price moves past {row['fair_line']:+d} (our fair price)"]
 
@@ -279,8 +294,9 @@ def confidence(row, gap_min, bar, both):
     coaching = 0.5  # not measured automatically - held at neutral
     situational = 0.5 if not any("back-to-back" in x for x in fl) else 0.2
     comps = {"efficiency": round(eff, 2), "veto": veto, "models": models, "starters": round(starters, 2), "coaching": coaching,
-             "against": round(against, 2), "price": price, "situational": situational}
-    total = round(sum(comps.values()), 1)
+             "against": round(against, 2), "price": price, "situational": situational,
+             "our history": (row.get("history") or {}).get("adj", 0.0)}
+    total = round(max(0.0, min(10.0, sum(comps.values()))), 1)
     if not both:
         total = min(total, 6.9)  # one model alone is never a single
     return total, comps
@@ -304,7 +320,6 @@ def finalize(row, sport, settings):
         return
     conf = row["conf"]; rec = row.get("test_record")
     approved = sport in (settings.get("cash_approved") or [])
-    tested = bool(rec) and rec.get("n", 0) >= CASH_GATE["min_games"] and rec.get("win", 0) >= CASH_GATE["min_win"]
     l1112 = any(f.startswith("L-1112-1") for f in row["flags"]) and conf < 8.0
     if row.get("veto"):
         row["decision"] = "PASS"; row["reason"] = "Veto: " + "; ".join(x for x in row["flags"] if x.startswith(("QB", "Star", "Models 10+")))
@@ -313,20 +328,17 @@ def finalize(row, sport, settings):
         row["decision"] = "WATCH" if row["one_model"] else "PASS"
         row["reason"] = "Only one model clears the bar - never a bet by itself." if row["one_model"] else "Neither model clears the bar."
         return
-    if tested and approved and conf >= 7.0 and not l1112:
+    test = f" Past-games test for this kind of pick: {rec['win'] * 100:.1f}% over {rec['n']}." if rec and rec.get("n") else " No past-games test for this kind of pick."
+    if approved and conf >= 7.0 and not l1112:
         row["decision"] = "CASH"; row["stake"] = UNITS["8"] if conf >= 8.0 else UNITS["7"]
-        row["reason"] = f"Both models clear the bar and this kind of pick won {rec['win'] * 100:.1f}% over {rec['n']} past games."
+        row["reason"] = f"Both models clear the bar, confidence {conf}." + test
         return
     row["decision"] = "PAPER" if conf >= 5.5 else "WATCH"; row["stake"] = 0
     why = []
-    if not rec:
-        why.append("no past-games test for this kind of pick")
-    elif not tested:
-        why.append(f"this kind of pick won {rec['win'] * 100:.1f}% over {rec['n']} past games (needs 53.5%+ over 200+)")
-    if tested and not approved:
-        why.append(f"{sport} is not approved for cash yet - your call")
+    if not approved:
+        why.append(f"{sport} is a paper sport until you graduate it ('approve {sport}')")
     if conf < 7.0:
         why.append(f"confidence {conf} is under 7.0")
     if l1112:
-        why.append("L-1112-1")
-    row["reason"] = "Both models agree, but " + "; ".join(why) + "."
+        why.append("L-1112-1 (midweek or small-conference CFB needs 8.0+)")
+    row["reason"] = "Both models agree, but " + "; ".join(why) + "." + test

@@ -72,18 +72,20 @@ function pickCard(r){
 function today(){
   const cash = ALL.filter(r => r.decision === "CASH"), paper = ALL.filter(r => r.decision === "PAPER");
   const B = D.bank; let h = `<div class="kpi"><div><span class="mute">Bankroll</span><b>$${B.now.toFixed(2)}</b><span class="mute">goal $${B.goal.toLocaleString()}</span></div>
-  <div><span class="mute">Today's cash</span><b>${cash.length ? "$" + cash.reduce((a,r)=>a+r.stake,0) : "Pass"}</b><span class="mute">${cash.length} single(s), ${D.parlays.filter(p=>p.decision==="CASH").length} parlay(s)</span></div>
+  <div><span class="mute">Today's mains</span><b>${cash.length ? "$" + cash.reduce((a,r)=>a+r.stake,0) : "Pass"}</b><span class="mute">${cash.length} single(s), ${D.parlays.filter(p=>p.decision==="CASH").length} parlay(s)</span></div>
   <div><span class="mute">Paper picks today</span><b>${paper.length}</b><span class="mute">tracked, $0</span></div>
   <div><span class="mute">System check</span><b class="${D.health.ok ? "W" : "L"}">${D.health.ok ? "All good" : "Needs a look"}</b><span class="mute">${esc(D.health.time)}</span></div></div>`;
   const goal = Math.min(1, B.now / B.goal); h += `<div class="bar"><i style="width:${(goal*100).toFixed(1)}%"></i></div><div class="mute">${pct(goal)} of the way to $${B.goal.toLocaleString()}</div>`;
-  h += `<div class="card"><div class="big">${cash.length ? "Cash card" : "Pass on cash today"}</div><div class="mute">${esc(D.why_pass)}</div></div>`;
+  h += `<div class="card"><div class="big">${cash.length ? "Mains (" + cash.length + " of 3)" : "No mains today - pass"}</div><div class="mute">${cash.length ? "Counted as placed (Capped card) unless you comment 'skip' on one. $50 at 8.0+, $25 at 7.0-7.9." : esc(D.why_pass)}</div></div>`;
   cash.forEach(r => h += pickCard(r));
   const pl = Object.keys(D.pulls||{}); if (pl.length) h += `<h3>Pull alerts</h3>` + pl.map(id => `<div class="card"><span class="tag PULL">PULL</span> ${esc(D.pulls[id])}</div>`).join("");
   if (D.parlays.length) h += `<h3>Parlays</h3>` + D.parlays.map(p => `<div class="card"><div class="row"><div class="big">${esc(p.name)}: ${p.picks.map(esc).join(" + ")}</div><span class="tag ${p.decision}">${p.decision}${p.stake ? " $"+p.stake : ""} ${esc(p.price)}</span></div><div class="mute">${esc(p.why)}</div></div>`).join("");
   const P = D.props || {}; const pt = (P.calls||[]).filter(x => x.date === P.today);
-  h += `<div class="card click" id="goprops"><div class="row"><b>Props</b><span class="tag">separate</span></div><div class="mute">${pt.filter(x=>x.call==="PLAY").length} plays, ${pt.filter(x=>x.call==="LEAN").length} leans from ${P.n_lines||0} Underdog lines - see the Props tab. Not part of the cash card.</div></div>`;
-  h += `<h3>Top paper picks</h3>`; paper.sort((a,b)=>b.conf-a.conf).slice(0,5).forEach(r => h += pickCard(r));
-  h += `<h3>By sport</h3><div class="card"><table><tr><th>Sport</th><th>Games</th><th>Cash</th><th>Paper</th><th>Watch</th></tr>${D.cards.map(c => `<tr class="click" data-sport="${c.sport}"><td>${c.sport}</td><td>${c.games.length}</td><td>${c.games.filter(r=>r.decision==="CASH").length}</td><td>${c.games.filter(r=>r.decision==="PAPER").length}</td><td>${c.games.filter(r=>r.decision==="WATCH").length}</td></tr>`).join("")}</table></div>`;
+  const PCt = P.card || {singles: [], parlays: []};
+  h += `<div class="card click" id="goprops"><div class="row"><b>Props card</b><span class="tag">separate</span></div>${PCt.singles.map(x => `<div>${x.status==="PULL" ? '<span class="tag PULL">PULL</span> ' : ""}${esc(x.pick)} <span class="mute">$15</span></div>`).join("")}${PCt.parlays.map(e => `<div>${e.status==="PULL" ? '<span class="tag PULL">PULL</span> ' : ""}${e.legs.map(x=>esc(x.pick)).join(" + ")} <span class="mute">parlay $15</span></div>`).join("")}<div class="mute">${PCt.singles.length} singles, ${PCt.parlays.length} parlays. ${pt.filter(x=>x.call==="PLAY").length} plays, ${pt.filter(x=>x.call==="LEAN").length} leans from ${P.n_lines||0} Underdog lines - tap for the Props tab.</div></div>`;
+  const top = ALL.filter(r => r.pick && r.decision !== "PASS").sort((a,b) => ({CASH:0,PAPER:1,WATCH:2}[a.decision] - {CASH:0,PAPER:1,WATCH:2}[b.decision]) || (b.conf||0) - (a.conf||0)).slice(0,10);
+  h += `<h3>Top 10</h3><div class="card"><div class="mute">Best calls across every sport. Mains are marked; the rest are paper (tracked, $0) or watch.</div><table><tr><th>#</th><th>Pick</th><th>Call</th></tr>${top.map((r,i) => `<tr class="click" data-game="${r.id}"><td>${i+1}</td><td>${esc(r.pick)}${r.decision==="CASH" ? ' <span class="tag CASH">MAIN</span>' : ""}<div class="mute">${r.sport} - ${esc(r.time)}${r.history && r.history.adj ? " - our record " + (r.history.adj>0?"+":"") + r.history.adj : ""}</div></td><td class="n">${tag(r)}</td></tr>`).join("") || '<tr><td colspan="3" class="mute">Nothing today.</td></tr>'}</table></div>`;
+  h += `<h3>By sport</h3><div class="card"><table><tr><th>Sport</th><th>Games</th><th>Mains</th><th>Paper</th><th>Watch</th></tr>${D.cards.map(c => `<tr class="click" data-sport="${c.sport}"><td>${c.sport}</td><td>${c.games.length}</td><td>${c.games.filter(r=>r.decision==="CASH").length}</td><td>${c.games.filter(r=>r.decision==="PAPER").length}</td><td>${c.games.filter(r=>r.decision==="WATCH").length}</td></tr>`).join("")}</table></div>`;
   return h;
 }
 function board(){
@@ -102,7 +104,7 @@ function cardTab(){
   return h;
 }
 function detail(r){
-  const comp = r.components || {}; const W = {efficiency:2,veto:1.5,models:1.5,starters:1.5,coaching:1,against:1,price:1,situational:0.5};
+  const comp = r.components || {}; const W = {efficiency:2,veto:1.5,models:1.5,starters:1.5,coaching:1,against:1,price:1,situational:0.5,"our history":0.5};
   const inj = (list, team) => (list||[]).map(x => `${esc(x.player)}${x.pos ? " ("+esc(x.pos)+")" : ""} - ${esc(x.status)}`).join("<br>") || "Nothing listed";
   let h = `<button class="pill" id="bk">Back to ${r.sport} card</button><div class="card"><div class="row"><div><div class="big">${esc(r.pick || r.game)}</div><div class="mute">${esc(r.game)} - ${esc(r.time)}${r.tv ? " - " + esc(r.tv) : ""}${r.venue ? " - " + esc(r.venue) : ""}</div></div><div>${tag(r)}</div></div>
   <p><b>In plain words:</b> ${esc(plain(r))} ${esc(r.reason)}</p>
@@ -118,7 +120,7 @@ function detail(r){
   <tr><td>Records</td><td class="n">${esc(short(r.away))} ${esc(r.records?.[0] || "-")}, ${esc(short(r.home))} ${esc(r.records?.[1] || "-")}</td></tr>
   <tr><td>Past-games test</td><td class="n">${rec(r.test_record)}</td></tr></table>
   <div class="mute">Gap = how far a model is from the line. The bar is ${D.bars[r.sport]} ${r.sport==="NHL"?"win-chance points":"points"}. Sim cover chance comes from the models, and the past-games test showed those run hot - trust the test record more.</div></div>
-  <div class="box"><b>Confidence ${r.conf ?? "-"}</b>${Object.keys(W).map(k => `<div class="row mute" style="margin-top:4px"><span>${k}</span><span>${comp[k] ?? "-"} / ${W[k]}</span></div><div class="bar"><i style="width:${((comp[k]||0)/W[k]*100).toFixed(0)}%"></i></div>`).join("")}</div></div>
+  <div class="box"><b>Confidence ${r.conf ?? "-"}</b>${Object.keys(W).map(k => `<div class="row mute" style="margin-top:4px"><span>${k}</span><span>${comp[k] ?? "-"} / ${W[k]}</span></div><div class="bar"><i style="width:${Math.max(0,Math.min(100,(comp[k]||0)/W[k]*100)).toFixed(0)}%"></i></div>`).join("")}${r.history ? `<div class="mute" style="margin-top:6px">${esc(r.history.text)}</div>` : ""}</div></div>
   ${r.total_lean ? `<p class="flag">${esc(r.total_lean)}</p>` : ""}
   <h3>Why it could work</h3>${(r.factors||[]).map(f => `<div class="pro">${esc(f)}</div>`).join("") || '<div class="mute">-</div>'}
   <h3>What's against it</h3>${(r.against||[]).map(f => `<div class="ag">${esc(f)}</div>`).join("") || '<div class="mute">Nothing flagged</div>'}
@@ -132,8 +134,8 @@ function detail(r){
   return h;
 }
 function confTab(){
-  const W = [["efficiency",2,"How far both models are past the bar"],["veto",1.5,"No veto (QB/star doubt, models 10+ apart); 7+ from market costs 0.5"],["models",1.5,"Both models agree (1.5) or only one (0.5)"],["starters",1.5,"Drops for each QB / star / goalie flag"],["coaching",1,"Not measured automatically - held near neutral"],["against",1,"Drops for each factor against the pick (line move, key number, rest)"],["price",1,"Past-games test record for this kind of pick"],["situational",0.5,"Back-to-backs and schedule spots"]];
-  let h = `<div class="card"><b>The scorecard (max 10)</b><table><tr><th>Part</th><th>Max</th><th>What fills it</th></tr>${W.map(w => `<tr><td>${w[0]}</td><td>${w[1]}</td><td class="mute">${w[2]}</td></tr>`).join("")}</table><p class="mute">8.0+ = $50 single. 7.0-7.9 = $25 single. 5.5-6.9 = parlay leg or paper. Under 5.5 = pass. Confidence alone never makes a pick cash - the past-games test and your approval do.</p></div>`;
+  const W = [["efficiency",2,"How far both models are past the bar"],["veto",1.5,"No veto (QB/star doubt, models 10+ apart); 7+ from market costs 0.5"],["models",1.5,"Both models agree (1.5) or only one (0.5)"],["starters",1.5,"Drops for each QB / star / goalie flag"],["coaching",1,"Not measured automatically - held near neutral"],["against",1,"Drops for each factor against the pick (line move, key number, rest)"],["price",1,"Past-games test record for this kind of pick"],["situational",0.5,"Back-to-backs and schedule spots"],["our history","+/-0.5","Our own record on this kind of pick (old Board + this one), last 60 days, recent counts more, pulled toward break-even so a streak can't take over"]];
+  let h = `<div class="card"><b>The scorecard (max 10)</b><table><tr><th>Part</th><th>Max</th><th>What fills it</th></tr>${W.map(w => `<tr><td>${w[0]}</td><td>${w[1]}</td><td class="mute">${w[2]}</td></tr>`).join("")}</table><p class="mute">8.0+ = $50 single. 7.0-7.9 = $25 single. 5.5-6.9 = parlay leg or paper. Under 5.5 = pass. A main needs both models agreeing, 7.0+, no veto, and an approved sport (football and NBA now; CBB/NHL paper until you approve them). Midweek or small-conference CFB needs 8.0+.</p></div>`;
   h += `<div class="card"><b>Is confidence telling the truth?</b><div class="mute">Every graded pick, by confidence band. Higher bands should win more. If they don't, the scorecard needs fixing.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th><th>Beat close</th></tr>${D.tiers.map(t => `<tr><td>${t.band}</td><td>${t.w}-${t.l}</td><td>${t.win == null ? "-" : pct(t.win)}</td><td>${t.clv_n ? t.clv_beat + "/" + t.clv_n : "-"}</td></tr>`).join("")}</table></div>`;
   return h;
 }
@@ -190,7 +192,7 @@ function lineRows(){
 }
 function propDetail(x){
   const L = x.line, up = x.side === "higher";
-  const comp = Object.entries(x.components || {}), MAX = {"data":2,"hit rates":1.5,"vs Underdog":1.5,"role":1,"availability":1,"matchup":1,"sample":1,"test record":1};
+  const comp = Object.entries(x.components || {}), MAX = {"data":2,"hit rates":1.5,"vs Underdog":1.5,"role":1,"availability":1,"matchup":1,"sample":1,"test record":1,"our history":0.5};
   let h = `<button class="pill" id="pbk">Back to props</button>
   <div class="card"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.team)} - ${esc(x.game)} - ${esc(x.time)}</div></div><div>${pTag(x)}</div></div>
   <p>${esc(x.reason)}</p>
@@ -205,8 +207,10 @@ function propDetail(x){
   <tr><td>Home / away</td><td></td><td class="n">${x.avgs.home ?? "-"} / ${x.avgs.away ?? "-"}</td></tr></table></div>
   <div class="card"><b>Role and game</b><table><tr><td>${esc(x.role.label)}</td><td class="n">last 5 ${x.role.L5 ?? "-"} vs season ${x.role.season ?? "-"} (${sgn(x.role.chg)}%)</td></tr>
   <tr><td>Expected ${esc(x.role.label.toLowerCase())}</td><td class="n">${x.role.exp ?? "-"}</td></tr>
+  <tr><td>Opponent on this stat</td><td class="n">${x.opp_f && x.opp_f[0] ? sgn(x.opp_f[0]) + "% (" + x.opp_f[1] + " games)" : "About average"}</td></tr>
+  ${x.cv ? `<tr><td>Swing (boom-or-bust)</td><td class="n">${Math.round(x.cv*100)}%${x.cv > 0.6 ? " - high" : ""}</td></tr>` : ""}
   ${x.env ? `<tr><td>Team expected to score</td><td class="n">${x.env.implied ?? "-"} (season avg ${x.env.team_avg ? x.env.team_avg.toFixed(1) : "-"})</td></tr><tr><td>Game total / spread</td><td class="n">${x.env.total ?? "-"} / ${x.env.spread != null ? sgn(x.env.spread) : "-"}</td></tr>` : ""}</table></div>
-  <div class="card"><b>Confidence ${x.conf} / 10</b>${comp.map(([k,v]) => `<div class="row" style="margin-top:6px"><span>${esc(k)}</span><span class="mute">${v} / ${MAX[k]}</span></div><div class="bar"><i style="width:${Math.min(100, v/MAX[k]*100)}%"></i></div>`).join("")}
+  <div class="card"><b>Confidence ${x.conf} / 10</b>${comp.map(([k,v]) => `<div class="row" style="margin-top:6px"><span>${esc(k)}</span><span class="mute">${v} / ${MAX[k]}</span></div><div class="bar"><i style="width:${Math.max(0, Math.min(100, v/MAX[k]*100))}%"></i></div>`).join("")}${x.history ? `<div class="mute" style="margin-top:6px">${esc(x.history.text)}</div>` : ""}
   <div class="mute" style="margin-top:6px">"Test record" stays 0 until 200 graded prop calls hit 53%+. That keeps every prop below 9.0 until there is proof.</div></div>
   <div class="card"><b>Why</b>${x.for.map(f => `<div class="pro">For: ${esc(f)}</div>`).join("")}${x.against.map(f => `<div class="ag">Against: ${esc(f)}</div>`).join("")}${x.flags.map(f => `<div class="flag">Flag: ${esc(f)}</div>`).join("")}
   <div style="margin-top:6px"><b>Pull if:</b> ${(x.invalidation||[]).map(esc).join("; ")}</div></div>
@@ -221,15 +225,24 @@ function propsTab(){
   if (propId) { const x = P.calls.find(c => c.id === propId); if (x) return propDetail(x); }
   const C = P.calib || {}, R = P.record || {};
   let h = `<div class="card"><b>Player props</b><p>Every hour the Board pulls Underdog's board and checks each line against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. It then compares our chance to Underdog's own price.</p>
-  <p class="mute">Payouts: a 2-pick pays 3x, so each pick needs about 58%. A 3-pick pays 6x, so each needs about 55%. Steep sides (Underdog already above 62%) are skipped. Props are kept apart from the cash card. Tell the Board if you put one in ("placed Bey").</p>
+  <p class="mute">Payouts: a 2-pick pays 3x, so each pick needs about 58%. A 3-pick pays 6x, so each needs about 55%. Steep sides (Underdog already above 62%) are skipped. Deep checks too: what each opponent gives up on that stat, boom-or-bust players, and our own record on that kind of prop (a small nudge, max 0.5). Props are kept apart from the main card. Up to 10 plays a day; the card is 3 singles + 2 parlays at $15. Tell the Board if you put one in ("placed Bey").</p>
   <p class="flag">Not proven yet. Underdog's lines are sharp and our numbers often disagree with them, so for now we only trust our number ${Math.round((C.weight ?? 0.35)*100)}% and Underdog's ${Math.round((1-(C.weight ?? 0.35))*100)}%. After 2,000 graded lines the Board sets that split from results.</p>
   <div class="mute">${esc(P.note || "")}</div></div>`;
   h += `<div class="sel">${(P.dates||[]).map(d => `<button class="pill ${d===pday?"on":""}" data-pday="${d}">${d === P.today ? "Today" : "Tomorrow"}</button>`).join("")}</div>`;
   const sp = ["All", ...new Set(P.calls.concat([]).map(c => c.sport))];
   h += `<div class="sel">${sp.map(s => `<button class="pill ${s===psport?"on":""}" data-psport="${s}">${s}</button>`).join("")}</div>`;
   const day = P.calls.filter(c => c.date === pday && (psport === "All" || c.sport === psport));
-  const en = (P.entries||{})[pday] || [];
-  h += `<h3>Entries</h3>` + (en.length ? en.map(e => `<div class="card"><div class="big">${esc(e.name)}: ${e.picks.map(esc).join(" + ")}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs 33.3% at 3x). ${esc(e.why)}</div></div>`).join("") : `<div class="card mute">No entry today - need a PLAY and a LEAN from different games.</div>`);
+  const PC = P.card || {singles: [], parlays: []}, CR = P.card_record || {singles:[0,0], parlays:[0,0]};
+  const st = x => x.status === "PULL" ? `<span class="tag PULL">PULL</span>` : (x.result ? `<span class="tag ${x.result==="Won"?"W":x.result==="Lost"?"L":""}">${esc(x.result)}</span>` : `<span class="tag PAPER">$15</span>`);
+  if (pday === P.today) {
+    h += `<h3>Prop singles (${PC.singles.length} of 3)</h3><div class="mute" style="margin:-4px 0 8px">$15 each, best plays from different games. Paper until you say "placed Name". Singles record ${CR.singles[0]}-${CR.singles[1]}.</div>` +
+      (PC.singles.map(x => `<div class="card click" data-prop="${x.id}"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.game)} - ${esc(x.time)} - ours ${pct(x.p)} vs Underdog ${pct(x.mkt)} - conf ${x.conf}</div></div>${st(x)}</div>${x.status==="PULL" ? `<div class="ag">Pull: ${esc(x.pull_why)}</div>` : ""}${x.line_now != null && x.line_now !== x.line ? `<div class="flag">Line now ${x.line_now}</div>` : ""}</div>`).join("") || `<div class="card mute">No prop single yet - nothing has cleared PLAY. Slots fill later as lines post.</div>`);
+    h += `<h3>Prop parlays (${PC.parlays.length} of 2)</h3><div class="mute" style="margin:-4px 0 8px">$15 each, 2-pick at 3x: one PLAY plus one LEAN from a different game. Parlay record ${CR.parlays[0]}-${CR.parlays[1]}.</div>` +
+      (PC.parlays.map(e => `<div class="card"><div class="row"><div class="big">${esc(e.name)}: ${e.legs.map(x => esc(x.pick)).join(" + ")}</div>${st(e)}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs 33.3% at 3x). ${esc(e.why)}</div>${e.status==="PULL" ? `<div class="ag">Pull: ${esc(e.pull_why)}</div>` : ""}</div>`).join("") || `<div class="card mute">No prop parlay yet - needs a PLAY and a LEAN from different games.</div>`);
+  } else {
+    const en = (P.entries||{})[pday] || [];
+    h += `<h3>Early look - parlays</h3>` + (en.length ? en.map(e => `<div class="card"><div class="big">${esc(e.name)}: ${e.picks.map(esc).join(" + ")}</div><div class="mute">Both hit about ${pct(e.chance)}. ${esc(e.why)} The card for this day locks on the day.</div></div>`).join("") : `<div class="card mute">Nothing yet.</div>`);
+  }
   const plays = day.filter(c => c.call === "PLAY"), leans = day.filter(c => c.call === "LEAN");
   h += `<h3>Plays (${plays.length})</h3>` + (plays.map(propCard).join("") || `<div class="card mute">Pass - no prop cleared the bar.</div>`);
   h += `<h3>Leans - legs only (${leans.length})</h3>` + (leans.map(propCard).join("") || `<div class="card mute">None.</div>`);
@@ -272,15 +285,47 @@ def props_data(pr, date):
     dates = pr.get("dates") or [date]
     return {"today": date, "dates": dates, "calls": calls, "lines": lines, "n_lines": len([l for l in lines if l[0] == date]), "note": pr.get("note"),
             "entries": {d: P.entries(pr["props"], d) for d in dates}, "record": P.record(book), "calib": load("props_calib.json", {}),
-            "recent": [b for b in book if b.get("result") in ("Won", "Lost", "Push", "Void")][-30:][::-1]}
+            "recent": [b for b in book if b.get("result") in ("Won", "Lost", "Push", "Void")][-30:][::-1],
+            "card": prop_card(date, book), "card_record": prop_card_record(book)}
+
+
+def prop_card(date, book):
+    pc = (load("props_card.json", {}) or {}).get(date) or {"singles": [], "parlays": []}
+    res = {b["id"]: b.get("result") for b in book}
+    for it in pc["singles"] + [x for e in pc["parlays"] for x in e["legs"]]:
+        it["result"] = res.get(it["id"])
+    return pc
+
+
+def prop_card_record(book):
+    """Props card record (singles and 2-pick parlays), paper $15 each. Win pays 1x (-110 style isn't used on Underdog;
+    a single 'pick' is shown win/loss only), a 2-pick parlay pays 3x."""
+    res = {b["id"]: b.get("result") for b in book}
+    out = {"singles": [0, 0], "parlays": [0, 0]}
+    for d, pc in (load("props_card.json", {}) or {}).items():
+        for it in pc["singles"]:
+            if it.get("status") == "PULL":
+                continue
+            r = res.get(it["id"])
+            if r in ("Won", "Lost"):
+                out["singles"][r == "Lost"] += 1
+        for e in pc["parlays"]:
+            if e.get("status") == "PULL":
+                continue
+            rs = [res.get(x["id"]) for x in e["legs"]]
+            if "Lost" in rs:
+                out["parlays"][1] += 1
+            elif all(r == "Won" for r in rs):
+                out["parlays"][0] += 1
+    return out
 
 
 def render(cards, picks, pars, bt, btl, st, hl, pr=None):
     now = now_ct(); date = now.strftime("%Y-%m-%d")
     pulls = {p["id"]: f"{p['pick']}: {p['review_log'][-1]}" for p in picks if p.get("review") == "PULL" and p["result"] is None}
     cash = [r for c in cards for r in c["games"] if r["decision"] == "CASH"]
-    why = ("Cash picks below." if cash else
-           "No pick passed every gate: both models agree, confidence 7.0+, the past-games test, and your approval for that sport. Paper picks are still graded so the record builds.")
+    why = ("Mains below." if cash else
+           "No pick passed every gate for a main: both models agree, confidence 7.0+ (8.0+ for midweek or small-conference CFB), no veto, and a sport you've approved (football and NBA). Paper picks are still graded so the record builds.")
     data = {"updated": now.strftime("%a %b %-d, %-I:%M %p CT"), "cards": cards, "picks": picks[-1500:], "parlays": [x for x in pars if x["date"] == date], "all_parlays": pars[-200:],
             "summary": grade.summary(picks), "tiers": grade.tiers(picks), "bt": bt, "btl": btl, "grad": review.graduation(picks, bt, btl, st),
             "bank": {"now": grade.bankroll(picks, st), "goal": st.get("goal", 10000)}, "health": hl, "pulls": pulls, "why_pass": why,

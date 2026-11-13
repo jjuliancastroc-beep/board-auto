@@ -17,7 +17,7 @@ Props are their own section: tracked and graded, never part of the main card or 
 import math, re, unicodedata, datetime, statistics
 from concurrent.futures import ThreadPoolExecutor
 from .common import get, load, save, now_ct, ct_time, SPORTS, american_to_prob
-from . import espn
+from . import espn, history
 
 UD_URL = "https://api.underdogfantasy.com/v1/over_under_lines"
 GL_URL = "https://site.web.api.espn.com/apis/common/v3/sports/{path}/athletes/{aid}/gamelog{q}"
@@ -246,6 +246,12 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
         adj *= 0.97; out["flags"].append("Back-to-back: minutes usually dip a little")
     if ctx.get("blowout") and group in ("B",):
         adj *= 0.97; out["flags"].append(f"Spread {ctx['spread']:+g}: blowout risk could cut starters' minutes")
+    of, on = ctx.get("opp_factor") or (1.0, 0)
+    if abs(of - 1) >= 0.03:
+        up = of > 1
+        out["opp_note"] = f"Opponents get {abs(of - 1) * 100:.0f}% {'more' if up else 'fewer'} {label.lower()} than usual vs {ctx.get('opp')} (from {on} player-games this season)"
+    out["opp_f"] = [round((of - 1) * 100), on]
+    adj *= of
     mu *= adj
     # spread of outcomes from his own games (shrunk toward the stat default)
     allv = vc + vp
@@ -299,6 +305,12 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
     if abs(env - 1) >= 0.02 and kind != "def":
         up = env > 1
         (out["for"] if up == (side == "higher") else out["against"]).append(f"Team expected to score {ctx['implied']:.1f} vs its {ctx['team_avg']:.1f} average")
+    if out.get("opp_note"):
+        (out["for"] if (of > 1) == (side == "higher") else out["against"]).append(out["opp_note"])
+    cv = (statistics.pstdev(allv) / m0) if len(allv) >= 5 and m0 and m0 > 0 else 0
+    out["cv"] = round(cv, 2)
+    if cv > 0.6:
+        out["flags"].append(f"Boom-or-bust: his games on this stat swing a lot (typical miss {cv * 100:.0f}% of his average)")
     st_ = (ath.get("status") or "").lower()
     if st_ in ("out", "doubtful", "suspension"):
         out.update(call="PASS", conf=0, reason=f"Listed {ath['status']}.", p=p); return out
@@ -320,11 +332,15 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
     comp["vs Underdog"] = 1.5 if edge >= 8 else 1.0 if edge >= 5 else 0.5 if edge >= 3 else 0.0
     comp["role"] = 0.5 if abs(role_chg) < 0.1 else (1.0 if (role_chg > 0) == (side == "higher") else 0.0)
     comp["availability"] = 0.3 if st_ in ("questionable", "day-to-day") else 1.0
-    comp["matchup"] = 0.5 if abs(env - 1) < 0.02 or kind == "def" else (1.0 if (env > 1) == (side == "higher") else 0.0)
+    mf = (1.0 if kind == "def" else env) * of
+    comp["matchup"] = 0.5 if abs(mf - 1) < 0.02 else (1.0 if (mf > 1) == (side == "higher") else 0.0)
     comp["sample"] = 1.0 if nc >= 10 else 0.6 if nc >= 5 else 0.2
     tr = ctx.get("test") or {}
     comp["test record"] = 1.0 if tr.get("n", 0) >= 200 and tr.get("win", 0) >= 0.55 else 0.5 if tr.get("n", 0) >= 200 and tr.get("win", 0) >= 0.53 else 0.0
-    conf = round(sum(comp.values()) - (0.5 if edge >= 15 else 0) - (0.25 if ctx.get("b2b") and group == "B" else 0) - (0.25 if ctx.get("blowout") else 0), 1)
+    out["history"] = history.record(history.prop_buckets(sport, stat, side), center=0.55)
+    comp["our history"] = out["history"]["adj"]
+    conf = round(sum(comp.values()) - (0.25 if cv > 0.6 else 0) - (0.5 if edge >= 15 else 0) - (0.25 if ctx.get("b2b") and group == "B" else 0) - (0.25 if ctx.get("blowout") else 0), 1)
+    conf = max(0.0, min(10.0, conf))
     if len(cur) < (4 if group == "F" else 5):
         conf = min(conf, 6.4)  # too few games this season to be a PLAY
     out["components"] = comp; out["conf"] = conf
@@ -444,6 +460,7 @@ def build(dates, cards_by_id=None):
     with ThreadPoolExecutor(8) as ex:
         list(ex.map(fetch_log, {(a["id"], l["sport"]) for l, a, g in jobs}))
     calib = load("props_calib.json", {}); W = weight(calib); test = calib.get("calls") or {}
+    opp_f = opponent_factors(jobs, cache["logs"])
     out = []
     for l, a, g in jobs:
         lg = cache["logs"].get(a["id"]) or {"cur": [], "prev": []}
@@ -464,6 +481,7 @@ def build(dates, cards_by_id=None):
         ctx["b2b"] = (rest[1] if home else rest[0]) == 1 if rest else False
         leaders = set((g.get("hleaders") if home else g.get("aleaders")) or [])
         ctx["w"] = W; ctx["test"] = test
+        ctx["opp_factor"] = opp_f.get((l["sport"], l["stat"], ctx["opp_id"]), (1.0, 0))
         ctx["teammates_out"] = [r["player"] for r in inj.get(l["sport"], {}).get(a["team"], []) if str(r.get("status", "")).lower() == "out" and r["player"] in leaders and norm(r["player"]) != norm(a["name"])]
         try:
             row = evaluate(l, a, lg["cur"], lg["prev"], ctx)
@@ -494,6 +512,38 @@ def build(dates, cards_by_id=None):
     matched = len(jobs); total = len(want)
     return {"ok": True, "props": out, "dates": dates, "lines": total, "matched": matched,
             "note": f"{total} Underdog lines for these days; {matched} matched to ESPN players and graded."}
+
+
+def opponent_factors(jobs, logs, k=40):
+    """How much each opponent gives up on each stat, from every game log we pulled this run.
+    For each player-game vs that opponent: what he did / his own season average. Pulled toward 1.0 by 40 phantom games,
+    capped at +/-10%, so one blowout can't swing it."""
+    acc = {}; seen = set()
+    for l, a, g in jobs:
+        key = (a["id"], l["stat"])
+        if key in seen:
+            continue
+        seen.add(key)
+        group = GROUP[l["sport"]]
+        if l["stat"] not in STATS[group]:
+            continue
+        fields = STATS[group][l["stat"]][1]
+        cur = [x for x in (logs.get(a["id"]) or {}).get("cur", []) if played(x, group, l["stat"])]
+        if len(cur) < 4:
+            continue
+        vals = [sum(x["s"].get(f, 0) for f in fields) for x in cur]
+        m = sum(vals) / len(vals)
+        if m <= 0:
+            continue
+        for x, v in zip(cur, vals):
+            if x.get("opp_id"):
+                t = acc.setdefault((l["sport"], l["stat"], x["opp_id"]), [0.0, 0.0, 0])
+                t[0] += v; t[1] += m; t[2] += 1
+    out = {}
+    for key, (act, exp, n) in acc.items():
+        raw = act / exp if exp > 0 else 1.0
+        out[key] = (round(max(0.9, min(1.1, 1 + (raw - 1) * n / (n + k))), 3), n)
+    return out
 
 
 def slim(games):
@@ -593,6 +643,87 @@ def entries(props, date):
         out.append({"name": f"Entry {len(out) + 1}", "picks": [a["pick"], b["pick"]], "ids": [a["id"], b["id"]],
                     "chance": round(a["p"] * b["p"], 3), "why": f"Anchor {a['pick']} ({a['conf']}) + leg {b['pick']} ({b['conf']}). Different games, one confident pick."})
     return out
+
+
+PROP_STAKE = 15
+
+
+def card(props, date):
+    """Props card, same shape as the main card: up to 3 prop singles + 2 prop parlays (2-pick), $15 each.
+    Singles = best PLAYs from different games. Parlays = one PLAY anchor + one LEAN leg from a different game.
+    Max 2 tickets per game. Once an item is on the card it stays (locked); if it goes bad before the game
+    (call drops to PASS, he's out, or the line moves past playable) it's marked PULL with the reason.
+    Open slots fill later in the day as lines post. Paper until you say 'placed <name>'."""
+    allc = load("props_card.json", {})
+    pc = allc.get(date) or {"singles": [], "parlays": []}
+    now = now_ct(); hm = now.strftime("%H:%M")
+    day = {p["id"]: p for p in props if p.get("date") == date}
+    # re-check locked items
+    for it in pc["singles"] + [x for e in pc["parlays"] for x in e["legs"]]:
+        cur = day.get(it["id"])
+        started = ct_time(it["start"]) <= now
+        if started or it.get("status") == "PULL":
+            continue
+        why = None
+        if cur is None:
+            why = "Line came off Underdog's board - he may be out or limited"
+        elif cur.get("call") == "PASS":
+            why = "Now a pass: " + (cur.get("reason") or "")
+        elif cur.get("side") != it["side"]:
+            why = f"Our numbers flipped to the other side ({cur.get('pick')})"
+        elif cur.get("line") != it["line"]:
+            pt = it.get("playable_to")
+            past = pt is not None and ((it["side"] == "higher" and cur["line"] > pt) or (it["side"] == "lower" and cur["line"] < pt))
+            it["line_now"] = cur["line"]
+            if past:
+                why = f"Line moved to {cur['line']:g}, past playable {pt:g}"
+        if why:
+            it["status"] = "PULL"; it["pull_why"] = why; it["pulled_at"] = hm
+    for e in pc["parlays"]:
+        if any(x.get("status") == "PULL" for x in e["legs"]):
+            e["status"] = "PULL"; e["pull_why"] = next(x["pull_why"] for x in e["legs"] if x.get("status") == "PULL")
+    games = {}
+    for it in pc["singles"]:
+        games[it["event_id"]] = games.get(it["event_id"], 0) + 1
+    for e in pc["parlays"]:
+        for x in e["legs"]:
+            games[x["event_id"]] = games.get(x["event_id"], 0) + 1
+    used = {it["id"] for it in pc["singles"]} | {x["id"] for e in pc["parlays"] for x in e["legs"]}
+    players = {it["player"] for it in pc["singles"]} | {x["player"] for e in pc["parlays"] for x in e["legs"]}
+    live = [p for p in day.values() if ct_time(p["start"]) > now and p["id"] not in used and p["player"] not in players]
+    plays = sorted([p for p in live if p["call"] == "PLAY"], key=lambda p: (-p["conf"], -p["edge"]))
+    leans = sorted([p for p in live if p["call"] == "LEAN" and 5.5 <= p["conf"] < 7.0], key=lambda p: (-p["conf"], -p["edge"]))  # one confident pick per parlay
+    def item(p):
+        return {k: p.get(k) for k in ("id", "pick", "player", "sport", "game", "event_id", "stat", "side", "line", "p", "mkt", "edge", "conf",
+                                         "playable_to", "start", "time")} | {"added_at": hm, "status": "OPEN"}
+    # singles get the top PLAYs; parlays anchor on the next PLAYs
+    for p in plays:
+        if len(pc["singles"]) >= 3:
+            break
+        if games.get(p["event_id"], 0) >= 1 or p["player"] in players:  # singles from different games
+            continue
+        pc["singles"].append(item(p) | {"stake": PROP_STAKE}); used.add(p["id"]); players.add(p["player"])
+        games[p["event_id"]] = games.get(p["event_id"], 0) + 1
+    for a in plays:
+        if len(pc["parlays"]) >= 2:
+            break
+        if a["id"] in used or a["player"] in players or games.get(a["event_id"], 0) >= 2:
+            continue
+        b = next((x for x in leans if x["id"] not in used and x["player"] not in players and x["event_id"] != a["event_id"]
+                  and games.get(x["event_id"], 0) < 2), None)
+        if not b:
+            continue
+        for x in (a, b):
+            used.add(x["id"]); players.add(x["player"]); games[x["event_id"]] = games.get(x["event_id"], 0) + 1
+        pc["parlays"].append({"name": f"Prop parlay {len(pc['parlays']) + 1}", "legs": [item(a), item(b)], "stake": PROP_STAKE,
+                              "chance": round(a["p"] * b["p"], 3), "status": "OPEN", "added_at": hm,
+                              "why": f"Anchor {a['pick']} ({a['conf']}) + leg {b['pick']} ({b['conf']}). Different games, one confident pick. Pays 3x on Underdog."})
+    allc[date] = pc
+    for d in list(allc):
+        if d < (now - datetime.timedelta(days=21)).strftime("%Y-%m-%d"):
+            allc.pop(d)
+    save("props_card.json", allc)
+    return pc
 
 
 KEEP = ("id", "date", "sport", "player", "team", "opp", "game", "event_id", "espn_id", "stat", "label", "side", "line", "pick", "proj", "p", "mkt", "edge", "conf",
