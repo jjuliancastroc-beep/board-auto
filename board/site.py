@@ -1,5 +1,5 @@
 """Render docs/index.html - one self-contained page (data inlined), rebuilt on every run.
-Tabs match the original Board: Today, Board, Card, Confidence, Record, Lab, Rules, Reviews, Requests, Streaks."""
+Tabs match the original Board: Today, Board, Card, Confidence, Record, Lab, Rules, Reviews, Requests, Props."""
 import json, os
 from .common import ROOT, load, now_ct, SPORTS
 from . import grade, review
@@ -41,7 +41,7 @@ document.getElementById("upd").textContent = `Updated ${D.updated}. Runs by itse
 const root = document.documentElement; if (localStorage.theme === "light") root.classList.add("light");
 document.getElementById("theme").onclick = () => { root.classList.toggle("light"); localStorage.theme = root.classList.contains("light") ? "light" : "dark"; };
 const ALL = D.cards.flatMap(c => c.games);
-const TABS = {Today: today, Board: board, Card: cardTab, Confidence: confTab, Record: record, Lab: lab, Rules: rules, Reviews: reviews, Requests: requests, Streaks: streaks};
+const TABS = {Today: today, Board: board, Card: cardTab, Confidence: confTab, Record: record, Lab: lab, Rules: rules, Reviews: reviews, Requests: requests, Props: propsTab};
 let cur = location.hash.slice(1) || "Today", sport = (D.cards.slice().sort((a,b) => b.games.filter(r=>r.decision!=="PASS").length - a.games.filter(r=>r.decision!=="PASS").length)[0] || {}).sport || "NFL", gameId = null, recFilter = "cash";
 const nav = document.getElementById("nav");
 Object.keys(TABS).forEach(t => { const b = document.createElement("button"); b.textContent = t; b.onclick = () => { cur = t; gameId = null; location.hash = t; draw(); }; nav.appendChild(b); });
@@ -51,6 +51,12 @@ function bind(){
   document.querySelectorAll("[data-sport]").forEach(e => e.onclick = () => { sport = e.dataset.sport; gameId = null; draw(); });
   document.querySelectorAll("[data-rf]").forEach(e => e.onclick = () => { recFilter = e.dataset.rf; draw(); });
   const bk = document.getElementById("bk"); if (bk) bk.onclick = () => { gameId = null; draw(); };
+  const gp = document.getElementById("goprops"); if (gp) gp.onclick = () => { cur = "Props"; location.hash = "Props"; draw(); };
+  document.querySelectorAll("[data-prop]").forEach(e => e.onclick = () => { propId = e.dataset.prop; draw(); window.scrollTo(0,0); });
+  document.querySelectorAll("[data-pday]").forEach(e => e.onclick = () => { pday = e.dataset.pday; draw(); });
+  document.querySelectorAll("[data-psport]").forEach(e => e.onclick = () => { psport = e.dataset.psport; draw(); });
+  const pb = document.getElementById("pbk"); if (pb) pb.onclick = () => { propId = null; draw(); };
+  const q = document.getElementById("pq"); if (q) q.oninput = () => { pq = q.value; document.getElementById("plines").innerHTML = lineRows(); };
 }
 function tag(r){ const pulled = (D.pulls||{})[r.id]; return `<span class="tag ${pulled ? "PULL" : r.decision}">${pulled ? "PULL" : r.decision}${r.stake ? " $" + r.stake : ""}</span>${r.conf ? ` <span class="tag">${r.conf}</span>` : ""}`; }
 function plain(r){
@@ -74,6 +80,8 @@ function today(){
   cash.forEach(r => h += pickCard(r));
   const pl = Object.keys(D.pulls||{}); if (pl.length) h += `<h3>Pull alerts</h3>` + pl.map(id => `<div class="card"><span class="tag PULL">PULL</span> ${esc(D.pulls[id])}</div>`).join("");
   if (D.parlays.length) h += `<h3>Parlays</h3>` + D.parlays.map(p => `<div class="card"><div class="row"><div class="big">${esc(p.name)}: ${p.picks.map(esc).join(" + ")}</div><span class="tag ${p.decision}">${p.decision}${p.stake ? " $"+p.stake : ""} ${esc(p.price)}</span></div><div class="mute">${esc(p.why)}</div></div>`).join("");
+  const P = D.props || {}; const pt = (P.calls||[]).filter(x => x.date === P.today);
+  h += `<div class="card click" id="goprops"><div class="row"><b>Props</b><span class="tag">separate</span></div><div class="mute">${pt.filter(x=>x.call==="PLAY").length} plays, ${pt.filter(x=>x.call==="LEAN").length} leans from ${P.n_lines||0} Underdog lines - see the Props tab. Not part of the cash card.</div></div>`;
   h += `<h3>Top paper picks</h3>`; paper.sort((a,b)=>b.conf-a.conf).slice(0,5).forEach(r => h += pickCard(r));
   h += `<h3>By sport</h3><div class="card"><table><tr><th>Sport</th><th>Games</th><th>Cash</th><th>Paper</th><th>Watch</th></tr>${D.cards.map(c => `<tr class="click" data-sport="${c.sport}"><td>${c.sport}</td><td>${c.games.length}</td><td>${c.games.filter(r=>r.decision==="CASH").length}</td><td>${c.games.filter(r=>r.decision==="PAPER").length}</td><td>${c.games.filter(r=>r.decision==="WATCH").length}</td></tr>`).join("")}</table></div>`;
   return h;
@@ -165,13 +173,86 @@ function requests(){
   <table>${D.commands.map(c => `<tr><td class="n"><b>${esc(c[0])}</b></td><td class="mute">${esc(c[1])}</td></tr>`).join("")}</table></div>
   <div class="card"><b>Recent requests</b>${D.requests.slice().reverse().map(r => `<div style="margin-top:6px"><span class="mute">${esc(r.date)}</span> ${esc(r.text)}<div class="pro">${r.result.map(esc).join(" ")}</div></div>`).join("") || '<div class="mute">None yet.</div>'}</div>`;
 }
-function streaks(){ return `<div class="card"><b>Props and streaks</b><p>Not automated yet. ESPN's free feed has no player-prop lines, so props stay a separate section you ask me about. To automate them, the Board needs a prop odds feed (The Odds API has a free key, but props cost extra per game).</p></div>`; }
+let propId = null, pday = null, psport = "All", pq = "";
+const hr = x => x && x[1] ? `${x[0]}/${x[1]}` : "-";
+const hrc = x => x && x[1] ? (x[0]/x[1] >= 0.6 ? "W" : x[0]/x[1] < 0.45 ? "L" : "") : "";
+function pTag(x){ return `<span class="tag ${x.call==="PLAY"?"CASH":x.call==="LEAN"?"PAPER":"PASS"}">${x.call}</span> <span class="tag">${x.conf ?? "-"}</span>`; }
+function propCard(x){
+  return `<div class="card click" data-prop="${esc(x.id)}"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.game)} - ${esc(x.time)}</div></div><div>${pTag(x)}</div></div>
+  <div style="margin-top:6px">Projection <b>${x.proj}</b> vs line ${x.line}. Our chance <b>${pct(x.p)}</b>, Underdog ${pct(x.mkt)}.</div>
+  <div class="mute">Last 5 ${hr(x.hits.L5)} | last 10 ${hr(x.hits.L10)} | season ${hr(x.hits.season)} | last season ${hr(x.hits["last season"])} | vs opp ${hr(x.hits["vs opp"])}</div>
+  ${x.flags.slice(0,2).map(f => `<div class="flag">${esc(f)}</div>`).join("")}</div>`;
+}
+function lineRows(){
+  const P = D.props; const q = pq.trim().toLowerCase();
+  const rows = P.lines.filter(r => r[0] === pday && (psport === "All" || r[1] === psport) && (!q || (r[2] + " " + r[3]).toLowerCase().includes(q))).slice(0, 300);
+  return rows.map(r => `<tr><td>${esc(r[2])}<div class="mute">${esc(r[3])} ${r[4]} - ${esc(r[10])}</div></td><td class="n">${r[5] ? esc(r[5]) : "-"}</td><td class="n">${pct(r[6])}<div class="mute">UD ${pct(r[7])}</div></td><td class="n">${r[8] ?? "-"}<div class="mute">${esc(r[9])}</div></td></tr>`).join("") || `<tr><td class="mute">No lines match.</td></tr>`;
+}
+function propDetail(x){
+  const L = x.line, up = x.side === "higher";
+  const comp = Object.entries(x.components || {}), MAX = {"data":2,"hit rates":1.5,"vs Underdog":1.5,"role":1,"availability":1,"matchup":1,"sample":1,"test record":1};
+  let h = `<button class="pill" id="pbk">Back to props</button>
+  <div class="card"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.team)} - ${esc(x.game)} - ${esc(x.time)}</div></div><div>${pTag(x)}</div></div>
+  <p>${esc(x.reason)}</p>
+  <div class="mute">Underdog price: Higher ${esc(x.price?.higher ?? "-")} (pays ${esc(x.mult?.higher ?? "1")}x), Lower ${esc(x.price?.lower ?? "-")} (pays ${esc(x.mult?.lower ?? "1")}x).</div></div>
+  <div class="card"><b>The numbers</b><table>
+  <tr><td>Our projection</td><td class="n">${x.proj} (line ${L})</td></tr>
+  <tr><td>Our chance ${esc(x.side)}</td><td class="n">${pct(x.p)}</td></tr><tr><td>Underdog's chance (no-vig)</td><td class="n">${pct(x.mkt)}</td></tr>
+  <tr><td>Gap</td><td class="n">${sgn(x.edge)} pts</td></tr><tr><td>Playable to</td><td class="n">${x.playable_to ?? "-"}</td></tr>
+  <tr><td>Model alone (before leaning on Underdog)</td><td class="n">${pct(up ? x.p_raw_higher : 1 - x.p_raw_higher)}</td></tr></table></div>
+  <div class="card"><b>Hit rates (${esc(x.side)} ${L})</b><table><tr><th></th><th>Hit</th><th>Average</th></tr>
+  ${["L5","L10","season","last season","vs opp"].map(k => `<tr><td>${k === "L5" ? "Last 5" : k === "L10" ? "Last 10" : k === "vs opp" ? "vs " + esc(x.opp) : k[0].toUpperCase()+k.slice(1)}</td><td class="n ${hrc(x.hits[k])}">${hr(x.hits[k])}</td><td class="n">${x.avgs[k] ?? "-"}</td></tr>`).join("")}
+  <tr><td>Home / away</td><td></td><td class="n">${x.avgs.home ?? "-"} / ${x.avgs.away ?? "-"}</td></tr></table></div>
+  <div class="card"><b>Role and game</b><table><tr><td>${esc(x.role.label)}</td><td class="n">last 5 ${x.role.L5 ?? "-"} vs season ${x.role.season ?? "-"} (${sgn(x.role.chg)}%)</td></tr>
+  <tr><td>Expected ${esc(x.role.label.toLowerCase())}</td><td class="n">${x.role.exp ?? "-"}</td></tr>
+  ${x.env ? `<tr><td>Team expected to score</td><td class="n">${x.env.implied ?? "-"} (season avg ${x.env.team_avg ? x.env.team_avg.toFixed(1) : "-"})</td></tr><tr><td>Game total / spread</td><td class="n">${x.env.total ?? "-"} / ${x.env.spread != null ? sgn(x.env.spread) : "-"}</td></tr>` : ""}</table></div>
+  <div class="card"><b>Confidence ${x.conf} / 10</b>${comp.map(([k,v]) => `<div class="row" style="margin-top:6px"><span>${esc(k)}</span><span class="mute">${v} / ${MAX[k]}</span></div><div class="bar"><i style="width:${Math.min(100, v/MAX[k]*100)}%"></i></div>`).join("")}
+  <div class="mute" style="margin-top:6px">"Test record" stays 0 until 200 graded prop calls hit 53%+. That keeps every prop below 9.0 until there is proof.</div></div>
+  <div class="card"><b>Why</b>${x.for.map(f => `<div class="pro">For: ${esc(f)}</div>`).join("")}${x.against.map(f => `<div class="ag">Against: ${esc(f)}</div>`).join("")}${x.flags.map(f => `<div class="flag">Flag: ${esc(f)}</div>`).join("")}
+  <div style="margin-top:6px"><b>Pull if:</b> ${(x.invalidation||[]).map(esc).join("; ")}</div></div>
+  <div class="card"><b>Game log</b><table><tr><th>Date</th><th>Opp</th><th>${esc(x.role.label)}</th><th>${esc(x.label)}</th></tr>
+  ${(x.log||[]).map(g => `<tr><td>${esc(g.date)}</td><td>${esc(g.opp)}</td><td class="n">${g.role ?? "-"}</td><td class="n ${(g.v > L) === up ? "W" : "L"}">${g.v}</td></tr>`).join("")}</table>
+  <div class="mute">Green = would have hit ${esc(x.side)} ${L}.</div></div>`;
+  return h;
+}
+function propsTab(){
+  const P = D.props || {calls: [], lines: [], entries: {}, dates: []};
+  if (!pday) pday = P.today;
+  if (propId) { const x = P.calls.find(c => c.id === propId); if (x) return propDetail(x); }
+  const C = P.calib || {}, R = P.record || {};
+  let h = `<div class="card"><b>Player props</b><p>Every hour the Board pulls Underdog's board and checks each line against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. It then compares our chance to Underdog's own price.</p>
+  <p class="mute">Payouts: a 2-pick pays 3x, so each pick needs about 58%. A 3-pick pays 6x, so each needs about 55%. Steep sides (Underdog already above 62%) are skipped. Props are kept apart from the cash card. Tell the Board if you put one in ("placed Bey").</p>
+  <p class="flag">Not proven yet. Underdog's lines are sharp and our numbers often disagree with them, so for now we only trust our number ${Math.round((C.weight ?? 0.35)*100)}% and Underdog's ${Math.round((1-(C.weight ?? 0.35))*100)}%. After 2,000 graded lines the Board sets that split from results.</p>
+  <div class="mute">${esc(P.note || "")}</div></div>`;
+  h += `<div class="sel">${(P.dates||[]).map(d => `<button class="pill ${d===pday?"on":""}" data-pday="${d}">${d === P.today ? "Today" : "Tomorrow"}</button>`).join("")}</div>`;
+  const sp = ["All", ...new Set(P.calls.concat([]).map(c => c.sport))];
+  h += `<div class="sel">${sp.map(s => `<button class="pill ${s===psport?"on":""}" data-psport="${s}">${s}</button>`).join("")}</div>`;
+  const day = P.calls.filter(c => c.date === pday && (psport === "All" || c.sport === psport));
+  const en = (P.entries||{})[pday] || [];
+  h += `<h3>Entries</h3>` + (en.length ? en.map(e => `<div class="card"><div class="big">${esc(e.name)}: ${e.picks.map(esc).join(" + ")}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs 33.3% at 3x). ${esc(e.why)}</div></div>`).join("") : `<div class="card mute">No entry today - need a PLAY and a LEAN from different games.</div>`);
+  const plays = day.filter(c => c.call === "PLAY"), leans = day.filter(c => c.call === "LEAN");
+  h += `<h3>Plays (${plays.length})</h3>` + (plays.map(propCard).join("") || `<div class="card mute">Pass - no prop cleared the bar.</div>`);
+  h += `<h3>Leans - legs only (${leans.length})</h3>` + (leans.map(propCard).join("") || `<div class="card mute">None.</div>`);
+  h += `<details class="card"><summary>All lines (${P.lines.filter(r => r[0] === pday).length})</summary><input id="pq" placeholder="Search player or stat" value="${esc(pq)}" style="width:100%;margin:8px 0;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card2);color:var(--text)">
+  <table><thead><tr><th>Player / line</th><th>Lean</th><th>Ours / UD</th><th>Conf</th></tr></thead><tbody id="plines">${lineRows()}</tbody></table></details>`;
+  const RR = Object.entries(R);
+  h += `<div class="card"><b>Props record</b>${RR.length ? `<table><tr><th></th><th>W-L-P</th><th>Win %</th><th>Beat close</th></tr>${RR.map(([k,v]) => `<tr><td>${esc(k)}</td><td class="n">${v.w}-${v.l}-${v.p}</td><td class="n">${v.w+v.l ? pct(v.w/(v.w+v.l)) : "-"}</td><td class="n">${v.clv_n ? v.clv_beat + "/" + v.clv_n : "-"}</td></tr>`).join("")}</table>` : `<div class="mute">Nothing graded yet. Calls grade about 4 hours after the game.</div>`}</div>`;
+  const bins = C.bins || {};
+  h += `<div class="card"><b>Is our number better than Underdog's?</b><div class="mute">Every line on the board gets graded, not just our calls - ${C.n || 0} so far.</div>
+  ${C.n ? `<table><tr><td>Underdog's error (lower is better)</td><td class="n">${(C.brier.underdog/C.n).toFixed(4)}</td></tr><tr><td>Our blended error</td><td class="n">${(C.brier.ours/C.n).toFixed(4)}</td></tr>
+  ${["0-3","3-5","5-8","8+"].filter(k => bins[k]).map(k => `<tr><td>Our side, gap ${k} pts</td><td class="n">${bins[k][0]}-${bins[k][1]} (${pct(bins[k][0]/(bins[k][0]+bins[k][1]))})</td></tr>`).join("")}
+  ${Object.entries(C.by_sport||{}).map(([k,v]) => `<tr><td>${esc(k)} our side</td><td class="n">${v[0]}-${v[1]} (${pct(v[0]/(v[0]+v[1]))})</td></tr>`).join("")}</table>` : `<div class="mute">First grades land tomorrow morning.</div>`}</div>`;
+  const recent = (P.recent || []);
+  if (recent.length) h += `<div class="card"><b>Recent graded calls</b><table>${recent.map(b => `<tr><td>${esc(b.pick)}<div class="mute">${esc(b.date)} ${b.placed ? "- placed" : ""}</div></td><td class="n ${b.result}">${esc(b.result)}</td><td class="n">${b.actual ?? "-"}</td></tr>`).join("")}</table></div>`;
+  return h;
+}
 draw();
 </script></body></html>"""
 
 COMMANDS = [["bankroll 650", "Set the bankroll. Cash tickets add to it from today."], ["skip Raptors", "You didn't place that cash ticket - stops counting it."],
             ["approve NBA", "Let a sport have cash picks (only once its test passes). Your graduation call."], ["unapprove NBA", "Back to paper."],
-            ["goal 10000", "Change the goal."], ["help", "List commands."]]
+            ["goal 10000", "Change the goal."], ["prop Brunson over 25.5 points", "Full workup on any player line today or tomorrow."],
+            ["placed Bey", "You put that prop in - counts in the Placed props record."], ["help", "List commands."]]
 
 LAB_NOTES = [
     "Against the closing line, none of the simple team models beat the market in any sport. The market's average miss is smaller than ours everywhere.",
@@ -181,7 +262,20 @@ LAB_NOTES = [
 ]
 
 
-def render(cards, picks, pars, bt, btl, st, hl):
+def props_data(pr, date):
+    from . import props as P
+    pr = pr or {"props": []}
+    calls = [x for x in pr["props"] if x.get("call") in ("PLAY", "LEAN")]
+    lines = [[x.get("date"), x.get("sport"), x.get("player"), x.get("label") or x.get("stat"), x.get("line"), (x.get("side") or "").title() or None,
+              x.get("p"), x.get("mkt"), x.get("conf"), x.get("call"), x.get("game") or x.get("game_title")] for x in pr["props"]]
+    book = load("props.json", [])
+    dates = pr.get("dates") or [date]
+    return {"today": date, "dates": dates, "calls": calls, "lines": lines, "n_lines": len([l for l in lines if l[0] == date]), "note": pr.get("note"),
+            "entries": {d: P.entries(pr["props"], d) for d in dates}, "record": P.record(book), "calib": load("props_calib.json", {}),
+            "recent": [b for b in book if b.get("result") in ("Won", "Lost", "Push", "Void")][-30:][::-1]}
+
+
+def render(cards, picks, pars, bt, btl, st, hl, pr=None):
     now = now_ct(); date = now.strftime("%Y-%m-%d")
     pulls = {p["id"]: f"{p['pick']}: {p['review_log'][-1]}" for p in picks if p.get("review") == "PULL" and p["result"] is None}
     cash = [r for c in cards for r in c["games"] if r["decision"] == "CASH"]
@@ -192,7 +286,7 @@ def render(cards, picks, pars, bt, btl, st, hl):
             "bank": {"now": grade.bankroll(picks, st), "goal": st.get("goal", 10000)}, "health": hl, "pulls": pulls, "why_pass": why,
             "review_log": {p["id"]: p.get("review_log", []) for p in picks if p["result"] is None},
             "reviews": load("reviews.json", []), "requests": load("requests_log.json", []), "commands": COMMANDS, "lab_notes": LAB_NOTES,
-            "bars": {k: v["bar"] for k, v in SPORTS.items()}, "rules": load("rules.json", [])}
+            "bars": {k: v["bar"] for k, v in SPORTS.items()}, "rules": load("rules.json", []), "props": props_data(pr, date)}
     out = PAGE.replace("__DATA__", json.dumps(data, default=float).replace("</", "<\\/"))
     os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
     with open(os.path.join(ROOT, "docs", "index.html"), "w") as f:

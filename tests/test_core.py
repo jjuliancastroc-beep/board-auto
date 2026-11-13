@@ -46,5 +46,18 @@ class Core(unittest.TestCase):
         self.assertEqual(len(out), 2)
 
 
+class Props(unittest.TestCase):
+    def test_props_parse_and_math(self):
+        from board import props
+        assert props.parse_request("prop Jalen Brunson over 25.5 points") == ("Jalen Brunson", "higher", 25.5, "points")
+        assert props.parse_request("prop Jokic u 11.5 rebounds")[1:] == ("lower", 11.5, "rebounds")
+        assert props.parse_request("bankroll 600") is None
+        tot = sum(props.nb_cdf(k, 6.0, 1.6) - (props.nb_cdf(k - 1, 6.0, 1.6) if k else 0) for k in range(0, 80))
+        assert abs(tot - 1) < 1e-6
+        assert 0.4 < props.p_over(5.5, 6.0, 1.5) < 0.65
+        assert props.p_over(0.5, 3.0, 1.0) > 0.9 and props.p_over(30.5, 3.0, 1.0) < 0.01
+        assert props.weight({"n": 10}) == 0.35
+
+
 if __name__ == "__main__":
     unittest.main()

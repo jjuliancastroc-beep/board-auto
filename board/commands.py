@@ -5,11 +5,14 @@
   unapprove NBA         back to paper
   skip Raptors          you did NOT place that cash ticket - it stops counting toward the bankroll
   goal 10000            change the goal
+  prop Brunson over 25.5 points   full workup on any player line (today or tomorrow)
+  placed Bey            you put that prop in - it counts in the Placed props record
   help                  list commands
 """
 import os, json, sys, re
 from .common import load, save, today_ct, SPORTS
 from .notify import _api, OWNER
+from . import props
 
 
 def handle(text):
@@ -34,6 +37,16 @@ def handle(text):
             save("picks.json", picks)
             if not hit:
                 out.append(f"No cash pick matching '{arg}'.")
+        elif cmd == "prop" and arg:
+            res = props.ask(line.strip())
+            out += res or ["Format: prop <player> over|under <line> <stat>, e.g. prop Brunson over 25.5 points"]
+        elif cmd == "placed" and arg:
+            book = load("props.json", []); hit = [b for b in book if arg.lower() in (b.get("player") or "").lower()]
+            for b in hit[-1:]:
+                b["placed"] = True; out.append(f"Marked placed: {b['pick']} ({b['date']}).")
+            save("props.json", book)
+            if not hit:
+                out.append(f"No logged prop matching '{arg}'.")
         elif cmd == "help":
             out.append(__doc__)
     if out:

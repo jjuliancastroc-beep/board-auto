@@ -3,7 +3,8 @@ Usage: python -m board.run   (or --date YYYY-MM-DD, --weekly to force the weekly
 """
 import sys, traceback
 from .common import today_ct, load, save, SPORTS, now_ct
-from . import card, grade, site, review, notify
+from . import card, grade, site, review, notify, props
+import datetime
 
 
 def main():
@@ -37,9 +38,24 @@ def main():
             notify.send(f"pull-{p['date']}-{p['id']}", f"PULL: {p['pick']}", [p["review_log"][-1]])
     if not hl["ok"]:
         notify.send(f"health-{date}-{'|'.join(hl['problems'])[:80]}", "Board problem: a data feed needs a look", hl["problems"], "health")
+    # player props (separate from the cash card; you tell the Board if you put any in)
+    pr = {"props": [], "note": "Props did not run."}
+    try:
+        props.grade(); props.grade_lines()
+        tmr = (datetime.datetime.strptime(date, "%Y-%m-%d") + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+        pr = props.build([date, tmr], cards_by_id={r["id"]: r for c in cards for r in c["games"]})
+        props.log(pr["props"]); props.log_lines(pr["props"])
+        if not pr.get("ok"):
+            hl["notes"].append("Props: " + pr.get("note", "Underdog feed did not load."))
+        else:
+            hl["notes"].append("Props: " + pr["note"])
+        save("health.json", hl)
+    except Exception as e:
+        traceback.print_exc(); hl["notes"].append(f"Props failed: {e}"); save("health.json", hl)
+    print("props:", pr.get("note"))
     if wk:
         notify.send(f"weekly-{wk['week']}", wk["title"], wk["lines"], "weekly")
-    site.render(cards, load("picks.json", []), load("parlays.json", []), bt, btl, st, hl)
+    site.render(cards, load("picks.json", []), load("parlays.json", []), bt, btl, st, hl, pr)
     print("done", now_ct().strftime("%H:%M"))
 
 
