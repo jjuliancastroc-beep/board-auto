@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "10 13-23 * * *"   # every hour 7 AM - 5 PM CT (8 AM-6 PM during daylight time)
     - cron: "10 0-6 * * *"     # every hour 6 PM - midnight CT; the last runs grade the night's finals
+    - cron: "40 13-23 * * *"   # backup slot - GitHub sometimes skips scheduled runs, so each hour gets two chances
+    - cron: "40 0-6 * * *"
   workflow_dispatch:
     inputs:
       weekly:
