@@ -6028,14 +6028,16 @@
   "date": "2026-11-14",
   "line_at_pick": "TENN -1.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Tennessee Volunteers 22, Texas A&M Aggies 7",
+  "close": "TENN -1.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 1.02,
+  "pl": 0.0
  },
  {
   "id": "401856857",
@@ -6342,14 +6344,16 @@
   "date": "2026-11-14",
   "line_at_pick": "WYO -7.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Wyoming Cowboys 76, Denver Pioneers 53",
+  "close": "WYO -7.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "id": "401920307",
@@ -10021,6 +10025,86 @@
   "review": "HOLD",
   "review_log": [
    "11/14 03:35 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401909981",
+  "sport": "NBA",
+  "game": "Dallas Mavericks @ Cleveland Cavaliers",
+  "home": "Cleveland Cavaliers",
+  "away": "Dallas Mavericks",
+  "start": "2026-11-15T00:30Z",
+  "pick": "Cleveland Cavaliers +8.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.6,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.2,
+   "our history": 0.22
+  },
+  "gap_a": 10.1,
+  "gap_b": 10.9,
+  "gap_min": 10.1,
+  "price": -105,
+  "fair_line": -2.0,
+  "playable_to": 2.9,
+  "side": "home",
+  "home_line": 8.5,
+  "home_ml": 284,
+  "away_ml": -355,
+  "flags": [
+   "Cleveland Cavaliers on a back-to-back",
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Our side has less rest"
+  ],
+  "invalidation": [
+   "Line moves past +2.9",
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Both models agree, but confidence 6.6 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
+  "model_a": 1.6,
+  "model_b": 2.4,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.22,
+   "key": "spread dog",
+   "w": 68,
+   "l": 48,
+   "text": "Our record on spread dog: 68-48 (last 60 days, recent counts more) -> +0.22 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "DAL -8.5",
+  "logged_at": "17:16",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 05:16 PM: checked line and injuries - no change"
   ]
  }
 ]
