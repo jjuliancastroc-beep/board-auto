@@ -14,5 +14,6 @@
  "Our own history (old Board tickets + this Board's graded picks and props) nudges confidence by at most +/-0.5: last 60 days only, recent results count more, and the record is pulled toward break-even by 40 phantom games so a hot or cold streak can't take over.",
  "Deep checks: main picks also look at each team's last 5 games; props also look at what each opponent gives up on that stat (capped at +/-10%) and flag boom-or-bust players.",
  "What counts as placed: mains ($50/$25 singles and $15 parlays) count unless you tap \"I didn't place it\". Props and paper picks count only when you tap \"I placed this\" (or turn on 'props auto'). Placed props are tracked on their own, not in the main bankroll.",
- "A game that changes days keeps its ticket: it is not voided or re-picked, it grades when played, and it does not use one of the new day's 3 slots. Tap \"My book cancelled it\" if your book refunded it."
+ "A game that changes days keeps its ticket: it is not voided or re-picked, it grades when played, and it does not use one of the new day's 3 slots. Tap \"My book cancelled it\" if your book refunded it.",
+ "How the Board updates: it keeps its own clock inside GitHub and rebuilds about every 30 minutes, 7 AM to 3 AM CT. If the clock ever stops, any button tap or 'Refresh now' restarts it."
 ]
