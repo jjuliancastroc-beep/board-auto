@@ -21,6 +21,7 @@ def main():
         except Exception as e:
             traceback.print_exc(); c = {"sport": sport, "games": [], "note": f"Build failed: {e}"}
         cards.append(c); print(sport, len(c["games"]), "games", sum(1 for r in c["games"] if r["decision"] in ("CASH", "PAPER")), "calls")
+    grade.moved_games(cards, date)
     grade.lock_mains(cards, date)
     enforce_caps(cards)
     save(f"cards/card_{date}.json", cards)
@@ -32,8 +33,12 @@ def main():
     # emails - only what's worth one
     for c in cards:
         for r in c["games"]:
-            if r["decision"] == "CASH":
+            if r["decision"] == "CASH" and not r.get("carried"):
                 notify.send(f"cash-{date}-{r['id']}", f"Main: {r['pick']} ${r['stake']}", [f"{r['game']} - {r['time']}", f"Price {r.get('price')}, fair {r.get('fair_line')}, playable to {r.get('playable_to')}", r["reason"], "Pull if: " + "; ".join(r["invalidation"])])
+    for p in picks:
+        if p.get("moved") and p["result"] is None and grade.counts(p):
+            notify.send(f"moved-{p['id']}-{p['start'][:10]}", f"Game moved: {p['pick']}", [p["moved"], f"Your ${p['stake']} ticket still counts on the Board and will be graded when the game is played.",
+                        "Check the ticket in your book - some books cancel bets when a game changes days. If yours was cancelled, comment: skip " + p["pick"]])
     for p in pulls:
         if p["decision"] == "CASH":
             notify.send(f"pull-{p['date']}-{p['id']}", f"PULL: {p['pick']}", [p["review_log"][-1]])
@@ -48,6 +53,10 @@ def main():
         props.log(pr["props"]); props.log_lines(pr["props"])
         if pr.get("ok"):
             pr["card"] = props.card(pr["props"], date)
+            for it in pr["card"]["singles"] + pr["card"]["parlays"]:  # a prop you placed went bad before the game - tell you
+                if it.get("placed") and it.get("status") == "PULL":
+                    nm = it.get("pick") or it.get("name")
+                    notify.send(f"proppull-{date}-{nm}", f"PULL (prop): {nm}", [it.get("pull_why") or "Went bad before the game."])
         if not pr.get("ok"):
             hl["notes"].append("Props: " + pr.get("note", "Underdog feed did not load."))
         else:
@@ -68,6 +77,8 @@ def enforce_caps(cards):
     cash = sorted([r for c in cards for r in c["games"] if r["decision"] == "CASH"], key=lambda r: (not r.get("locked"), -r["conf"]))
     total = 0; n = 0
     for r in cash:
+        if r.get("carried"):
+            continue  # another day's ticket whose game moved here - doesn't use up today's slots
         if not r.get("locked") and (n >= 3 or total + r["stake"] > 150):
             r["decision"] = "PAPER"; r["stake"] = 0; r["reason"] += " Dropped to paper by the day cap (3 mains, $150)."
         else:

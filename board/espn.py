@@ -28,7 +28,7 @@ def parse_event(ev, sport):
     for side, comp in (("h", h), ("a", a)):
         pr = comp.get("probables") or []
         g[side + "goalie"] = next((x.get("athlete", {}).get("displayName") for x in pr if "Goalie" in (x.get("displayName") or "")), None)
-        g[side + "leaders"] = sorted({l["athlete"]["displayName"] for cat in comp.get("leaders") or [] for l in cat.get("leaders", [])[:1] if l.get("athlete")})
+        g[side + "leaders"] = sorted({l["athlete"]["displayName"] for cat in comp.get("leaders") or [] for l in cat.get("leaders", [])[:1] if (l.get("athlete") or {}).get("displayName")})
         rec = next((r.get("summary") for r in comp.get("records") or [] if r.get("type") in ("total", "ytd")), None)
         g[side + "record"] = rec
     o = (c.get("odds") or [None])[0]
@@ -135,6 +135,15 @@ def injuries(sport):
             rows.append({"player": ath.get("displayName"), "pos": (ath.get("position") or {}).get("abbreviation"), "status": i.get("status")})
         out[name] = rows
     return out
+
+
+def event_start(sport, event_id):
+    """When ESPN now says this game kicks off (used to catch a game that changed days)."""
+    d = get(f"https://site.api.espn.com/apis/site/v2/sports/{SPORTS[sport]['path']}/summary?event={event_id}")
+    try:
+        return d["header"]["competitions"][0]["date"]
+    except Exception:
+        return None
 
 
 def closing_line(sport, event_id):

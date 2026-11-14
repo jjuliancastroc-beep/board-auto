@@ -503,7 +503,8 @@ def build(dates, cards_by_id=None):
         if d["games"].get(r["event_id"], 0) >= 2:
             r["call"] = "PASS"; r["reason"] += " (already 2 calls in this game)"; continue
         if d[r["call"]] >= caps[r["call"]]:
-            if r["call"] == "PLAY" and d["LEAN"] < caps["LEAN"]:
+            # overflow PLAYs may take at most 15 of the 25 lean spots, so real leans (the parlay legs) are never crowded out on a big slate
+            if r["call"] == "PLAY" and d["LEAN"] < 15:
                 r["call"] = "LEAN"; r["reason"] += " (qualified as a PLAY but outside today's top 10)"
             else:
                 r["call"] = "PASS"; r["reason"] += " (outside today's top calls)"; continue
@@ -656,6 +657,7 @@ def card(props, date):
     Open slots fill later in the day as lines post. Paper until you say 'placed <name>'."""
     allc = load("props_card.json", {})
     pc = allc.get(date) or {"singles": [], "parlays": []}
+    auto = bool(load("settings.json", {}).get("props_auto"))  # 'props auto' = count the card as placed unless you skip one
     now = now_ct(); hm = now.strftime("%H:%M")
     day = {p["id"]: p for p in props if p.get("date") == date}
     # re-check locked items
@@ -695,14 +697,14 @@ def card(props, date):
     leans = sorted([p for p in live if p["call"] == "LEAN" and 5.5 <= p["conf"] < 7.0], key=lambda p: (-p["conf"], -p["edge"]))  # one confident pick per parlay
     def item(p):
         return {k: p.get(k) for k in ("id", "pick", "player", "sport", "game", "event_id", "stat", "side", "line", "p", "mkt", "edge", "conf",
-                                         "playable_to", "start", "time")} | {"added_at": hm, "status": "OPEN"}
+                                         "playable_to", "start", "time")} | {"added_at": hm, "status": "OPEN", "odds": (p.get("price") or {}).get(p.get("side"))}
     # singles get the top PLAYs; parlays anchor on the next PLAYs
     for p in plays:
         if len(pc["singles"]) >= 3:
             break
         if games.get(p["event_id"], 0) >= 1 or p["player"] in players:  # singles from different games
             continue
-        pc["singles"].append(item(p) | {"stake": PROP_STAKE}); used.add(p["id"]); players.add(p["player"])
+        pc["singles"].append(item(p) | {"stake": PROP_STAKE, "placed": auto}); used.add(p["id"]); players.add(p["player"])
         games[p["event_id"]] = games.get(p["event_id"], 0) + 1
     for a in plays:
         if len(pc["parlays"]) >= 2:
@@ -716,7 +718,7 @@ def card(props, date):
         for x in (a, b):
             used.add(x["id"]); players.add(x["player"]); games[x["event_id"]] = games.get(x["event_id"], 0) + 1
         pc["parlays"].append({"name": f"Prop parlay {len(pc['parlays']) + 1}", "legs": [item(a), item(b)], "stake": PROP_STAKE,
-                              "chance": round(a["p"] * b["p"], 3), "status": "OPEN", "added_at": hm,
+                              "chance": round(a["p"] * b["p"], 3), "status": "OPEN", "added_at": hm, "placed": auto,
                               "why": f"Anchor {a['pick']} ({a['conf']}) + leg {b['pick']} ({b['conf']}). Different games, one confident pick. Pays 3x on Underdog."})
     allc[date] = pc
     for d in list(allc):
@@ -724,6 +726,57 @@ def card(props, date):
             allc.pop(d)
     save("props_card.json", allc)
     return pc
+
+
+def _payout(odds):
+    try:
+        o = float(str(odds).replace("+", ""))
+    except (TypeError, ValueError):
+        o = -115.0  # no price saved - assume a normal one
+    return o / 100 if o > 0 else 100 / abs(o)
+
+
+def card_record(book=None, allc=None):
+    """How the props card has done: every card ticket (paper) and the ones you said you placed, with dollars.
+    Dollars are an estimate: singles at Underdog's listed price, 2-pick parlays at 3x."""
+    book = book if book is not None else load("props.json", []); allc = allc if allc is not None else load("props_card.json", {})
+    res = {b["id"]: b.get("result") for b in book}
+    z = lambda: {"w": 0, "l": 0, "pl": 0.0}
+    out = {"singles": z(), "parlays": z(), "placed": z(), "extras": z()}
+    oncard = set()
+    def add(keys, won, stake, mult):
+        for k in keys:
+            out[k]["w" if won else "l"] += 1
+            out[k]["pl"] = round(out[k]["pl"] + (stake * mult if won else -stake), 2)
+    for d, pc in allc.items():
+        for it in pc["singles"]:
+            oncard.add(it["id"])
+            r = res.get(it["id"])
+            if it.get("status") == "PULL" and not it.get("placed"):
+                continue
+            if r in ("Won", "Lost"):
+                add(["singles"] + (["placed"] if it.get("placed") else []), r == "Won", it.get("stake") or PROP_STAKE, _payout(it.get("odds")))
+        for e in pc["parlays"]:
+            if e.get("status") == "PULL" and not e.get("placed"):
+                continue
+            rs = [res.get(x["id"]) for x in e["legs"]]
+            if "Lost" in rs or all(r == "Won" for r in rs):
+                add(["parlays"] + (["placed"] if e.get("placed") else []), "Lost" not in rs, e.get("stake") or PROP_STAKE, 2.0)
+    for b in book:  # props you placed that were not on the card
+        if b.get("placed") and b["id"] not in oncard and b.get("result") in ("Won", "Lost"):
+            add(["placed", "extras"], b["result"] == "Won", b.get("placed_stake") or PROP_STAKE, _payout(b.get("odds")))
+    return out
+
+
+def bands(book=None):
+    """Is prop confidence telling the truth? Graded Board calls by the confidence they were logged at."""
+    book = book if book is not None else load("props.json", [])
+    out = []
+    for name, lo, hi in (("8.5+", 8.5, 99), ("8.0-8.4", 8.0, 8.5), ("7.0-7.9", 7.0, 8.0), ("5.5-6.9", 5.5, 7.0)):
+        sel = [b for b in book if b.get("result") in ("Won", "Lost") and b.get("source") != "your request" and lo <= (b.get("conf") or 0) < hi]
+        w = sum(1 for b in sel if b["result"] == "Won")
+        out.append({"band": name, "w": w, "l": len(sel) - w})
+    return out
 
 
 KEEP = ("id", "date", "sport", "player", "team", "opp", "game", "event_id", "espn_id", "stat", "label", "side", "line", "pick", "proj", "p", "mkt", "edge", "conf",
@@ -738,7 +791,8 @@ def log(props):
     for p in props:
         if p["call"] in ("PLAY", "LEAN") and p["id"] not in have:
             row = {k: p.get(k) for k in KEEP}
-            row.update(logged_at=now.strftime("%m/%d %I:%M %p"), close_line=p["line"], result=None, actual=None, placed=False, source="Underdog board")
+            row.update(logged_at=now.strftime("%m/%d %I:%M %p"), close_line=p["line"], result=None, actual=None, placed=False, source="Underdog board",
+                       odds=(p.get("price") or {}).get(p.get("side")))
             book.append(row); have[row["id"]] = row
     for b in book:  # keep the latest pre-game line as the close
         if b["result"] is None and b["id"] in cur and ct_time(b["start"]) > now:

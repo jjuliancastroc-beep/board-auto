@@ -4097,7 +4097,7 @@
   "game": "Ole Miss Rebels @ Oklahoma Sooners",
   "home": "Oklahoma Sooners",
   "away": "Ole Miss Rebels",
-  "start": "2026-11-14T21:15Z",
+  "start": "2026-11-15T18:00Z",
   "pick": "Ole Miss Rebels +2.5",
   "decision": "CASH",
   "stake": 25,
@@ -4165,8 +4165,11 @@
   "clv": null,
   "review": "HOLD",
   "review_log": [
-   "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+   "11/14 12:20 AM: checked line and injuries - no change",
+   "11/14 10:11 AM: Game moved to Sun 11/15 12:00 PM CT (was Sat 3:15 PM)."
+  ],
+  "moved_from": "2026-11-14T21:15Z",
+  "moved": "Game moved to Sun 11/15 12:00 PM CT (was Sat 3:15 PM)."
  },
  {
   "id": "401860916",
@@ -7114,9 +7117,10 @@
   "final": null,
   "close": null,
   "clv": null,
-  "review": "HOLD",
+  "review": "PULL",
   "review_log": [
-   "11/14 12:20 AM: checked line and injuries - no change"
+   "11/14 12:20 AM: checked line and injuries - no change",
+   "11/14 10:06 AM: PULL - line is now +10.5, past the playable number +11.5"
   ]
  },
  {
@@ -9195,9 +9199,10 @@
   "final": null,
   "close": null,
   "clv": null,
-  "review": "HOLD",
+  "review": "PULL",
   "review_log": [
-   "11/14 12:20 AM: checked line and injuries - no change"
+   "11/14 12:20 AM: checked line and injuries - no change",
+   "11/14 10:06 AM: PULL - goalie change: ['Devon Levi', 'Anthony Stolarz']"
   ]
  },
  {
@@ -9512,6 +9517,312 @@
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401858525",
+  "sport": "CFB",
+  "game": "Nebraska Cornhuskers @ Rutgers Scarlet Knights",
+  "home": "Rutgers Scarlet Knights",
+  "away": "Nebraska Cornhuskers",
+  "start": "2026-11-14T17:30Z",
+  "pick": "Rutgers Scarlet Knights +15.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.8,
+  "components": {
+   "efficiency": 0.58,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.08
+  },
+  "gap_a": -0.4,
+  "gap_b": 3.5,
+  "gap_min": 3.5,
+  "price": -115,
+  "fair_line": 14.0,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 15.5,
+  "home_ml": 490,
+  "away_ml": -675,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side -15.4 a game, theirs +0.2)"
+  ],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -15.9,
+  "model_b": -12.0,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 120,
+   "l": 121,
+   "n": 241,
+   "win": 0.498
+  },
+  "tier": "P4vP4",
+  "day": "Sat",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.08,
+   "key": "spread dog",
+   "w": 57,
+   "l": 45,
+   "text": "Our record on spread dog: 57-45 (last 60 days, recent counts more) -> +0.08 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "NEB -15.5",
+  "logged_at": "10:06",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 10:06 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401870769",
+  "sport": "CFB",
+  "game": "Kennesaw State Owls @ Sam Houston Bearkats",
+  "home": "Sam Houston Bearkats",
+  "away": "Kennesaw State Owls",
+  "start": "2026-11-14T19:00Z",
+  "pick": "Sam Houston Bearkats +7.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.8,
+  "components": {
+   "efficiency": 0.54,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.08
+  },
+  "gap_a": 1.2,
+  "gap_b": 3.3,
+  "gap_min": 3.3,
+  "price": -118,
+  "fair_line": 5.3,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 7.5,
+  "home_ml": 235,
+  "away_ml": -290,
+  "flags": [
+   "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -19.2 a game, theirs -2.8)"
+  ],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -6.3,
+  "model_b": -4.2,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 133,
+   "l": 135,
+   "n": 268,
+   "win": 0.496
+  },
+  "tier": "G5/mixed",
+  "day": "Sat",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.08,
+   "key": "spread dog",
+   "w": 57,
+   "l": 45,
+   "text": "Our record on spread dog: 57-45 (last 60 days, recent counts more) -> +0.08 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "KENN -7.5",
+  "logged_at": "10:06",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 10:06 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401858523",
+  "sport": "CFB",
+  "game": "Michigan Wolverines @ Oregon Ducks",
+  "home": "Oregon Ducks",
+  "away": "Michigan Wolverines",
+  "start": "2026-11-14T20:30Z",
+  "pick": "Oregon Ducks -10",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.8,
+  "components": {
+   "efficiency": 0.5,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.19
+  },
+  "gap_a": 3.0,
+  "gap_b": -0.4,
+  "gap_min": 3.0,
+  "price": -108,
+  "fair_line": -11.3,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -10.0,
+  "home_ml": -395,
+  "away_ml": 310,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 13.0,
+  "model_b": 9.6,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 120,
+   "l": 121,
+   "n": 241,
+   "win": 0.498
+  },
+  "tier": "P4vP4",
+  "day": "Sat",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.19,
+   "key": "spread fav",
+   "w": 24,
+   "l": 31,
+   "text": "Our record on spread fav: 24-31 (last 60 days, recent counts more) -> -0.19 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "ORE -10",
+  "logged_at": "10:06",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 10:06 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401860915",
+  "sport": "CFB",
+  "game": "Utah State Aggies @ San Diego State Aztecs",
+  "home": "San Diego State Aztecs",
+  "away": "Utah State Aggies",
+  "start": "2026-11-15T02:30Z",
+  "pick": "San Diego State Aztecs +3",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.7,
+  "components": {
+   "efficiency": 0.5,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.08
+  },
+  "gap_a": 0.2,
+  "gap_b": 3.0,
+  "gap_min": 3.0,
+  "price": -115,
+  "fair_line": 1.4,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 3.0,
+  "home_ml": 124,
+  "away_ml": -148,
+  "flags": [
+   "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -4.8 a game, theirs +0.6)"
+  ],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -2.8,
+  "model_b": 0.0,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 133,
+   "l": 135,
+   "n": 268,
+   "win": 0.496
+  },
+  "tier": "G5/mixed",
+  "day": "Sat",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.08,
+   "key": "spread dog",
+   "w": 57,
+   "l": 45,
+   "text": "Our record on spread dog: 57-45 (last 60 days, recent counts more) -> +0.08 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "USU -3",
+  "logged_at": "10:06",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 10:06 AM: checked line and injuries - no change"
   ]
  }
 ]

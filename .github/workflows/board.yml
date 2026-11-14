@@ -1,10 +1,10 @@
 name: board
 on:
   schedule:
-    - cron: "10 13-23 * * *"   # every hour 7 AM - 5 PM CT (8 AM-6 PM during daylight time)
-    - cron: "10 0-6 * * *"     # every hour 6 PM - midnight CT; the last runs grade the night's finals
-    - cron: "40 13-23 * * *"   # backup slot - GitHub sometimes skips scheduled runs, so each hour gets two chances
-    - cron: "40 0-6 * * *"
+    # GitHub's timer is unreliable (it often skips or delays a slot), so the Board asks every 10 minutes and
+    # the "Fresh enough?" step below skips the work if a build finished in the last 20 minutes.
+    - cron: "4,14,24,34,44,54 13-23 * * *"   # 7 AM - 6 PM CT
+    - cron: "4,14,24,34,44,54 0-8 * * *"     # 6 PM - 3 AM CT; the last runs grade the night's finals
   workflow_dispatch:
     inputs:
       weekly:
@@ -32,18 +32,29 @@ jobs:
       TZ: America/Chicago
     steps:
       - uses: actions/checkout@v4
+      - name: Fresh enough?
+        id: fresh
+        run: |
+          age=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          echo "last build ${age}s ago"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$age" -lt 1200 ]; then echo "skip=1" >> "$GITHUB_OUTPUT"; fi
       - uses: actions/setup-python@v5
+        if: steps.fresh.outputs.skip != '1'
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
+        if: steps.fresh.outputs.skip != '1'
       - name: Self-test
+        if: steps.fresh.outputs.skip != '1'
         run: python -m unittest tests.test_core -v
       - name: Apply your commands
-        if: github.event_name == 'issue_comment' || github.event_name == 'issues'
+        if: steps.fresh.outputs.skip != '1'
         run: python -m board.commands
       - name: Build the Board
+        if: steps.fresh.outputs.skip != '1'
         run: python -m board.run ${{ inputs.weekly && '--weekly' || '' }}
       - name: Save results
+        if: steps.fresh.outputs.skip != '1'
         run: |
           git config user.name "board-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

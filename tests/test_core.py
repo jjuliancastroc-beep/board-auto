@@ -1,3 +1,4 @@
+import datetime
 """Quick checks that run before every Board update. If any fail, the update stops and you get an email from GitHub."""
 import unittest
 from board.espn import home_line
@@ -112,6 +113,87 @@ class OldSetup(unittest.TestCase):
             assert pc2["singles"][0]["status"] == "PULL" and len(pc2["singles"]) == 3
         finally:
             common.save("props_card.json", saved)
+
+
+
+class Placed(unittest.TestCase):
+    """How the Board learns what you actually put in."""
+    def setUp(self):
+        from board import commands, common
+        self.c = commands; d = common.today_ct()
+        self.store = {
+            "props_card.json": {d: {"singles": [{"id": "a", "pick": "Davion Mitchell Higher 14.5 Points", "status": "OPEN", "stake": 15, "odds": "-112"}],
+                                    "parlays": [{"name": "Prop parlay 1", "status": "OPEN", "stake": 15, "legs": [{"id": "b", "pick": "X Lower 5.5 Points"}, {"id": "c", "pick": "Y Higher 45.5 Rush yards"}]}]}},
+            "props.json": [{"id": "a", "pick": "Davion Mitchell Higher 14.5 Points", "date": d, "placed": False, "result": "Won"},
+                           {"id": "b", "pick": "X Lower 5.5 Points", "date": d, "result": "Won"}, {"id": "c", "pick": "Y Higher 45.5 Rush yards", "date": d, "result": "Lost"},
+                           {"id": "e", "pick": "Tim Extra Lower 0.5 Steals", "date": d, "placed": False, "result": "Lost", "odds": "-120"}],
+            "picks.json": [{"date": d, "id": "g", "pick": "Lindenwood Lions +4.5", "decision": "PAPER", "stake": 0, "result": None},
+                           {"date": d, "id": "m", "pick": "Chiefs -3", "decision": "CASH", "stake": 50, "result": None}],
+            "parlays.json": [], "settings.json": {}}
+        self._l, self._s = commands.load, commands.save
+        commands.load = lambda n, default=None: self.store.get(n, default)
+        commands.save = lambda n, v: self.store.__setitem__(n, v)
+
+    def tearDown(self):
+        self.c.load, self.c.save = self._l, self._s
+
+    def test_placed_and_skip(self):
+        from board import grade, props
+        c = self.c; card = lambda: list(self.store["props_card.json"].values())[0]
+        assert "Marked placed" in c.placed("Mitchell")[0] and card()["singles"][0]["placed"] and self.store["props.json"][0]["placed"]
+        c.skip("Mitchell"); assert not card()["singles"][0]["placed"]
+        c.placed("card"); assert card()["singles"][0]["placed"] and card()["parlays"][0]["placed"]
+        c.skip("prop parlay 1"); assert not card()["parlays"][0]["placed"]
+        c.placed("prop parlay 1 $10"); assert card()["parlays"][0]["placed"] and card()["parlays"][0]["stake"] == 10
+        paper, main = self.store["picks.json"]
+        assert not grade.counts(paper) and grade.counts(main)          # mains count by default, paper does not
+        c.placed("Lindenwood $20"); assert grade.counts(paper) and paper["stake"] == 20
+        c.skip("Lindenwood"); assert not grade.counts(paper)
+        c.skip("Chiefs"); assert not grade.counts(main)
+        c.placed("Chiefs"); assert grade.counts(main) and main["stake"] == 50
+        c.placed("Tim Extra"); assert self.store["props.json"][3]["placed"]
+        assert "Nothing on the Board" in c.placed("Nobody Atall")[0]
+        r = props.card_record(self.store["props.json"], self.store["props_card.json"])
+        assert (r["singles"]["w"], r["parlays"]["l"]) == (1, 1)
+        assert (r["placed"]["w"], r["placed"]["l"]) == (1, 2)             # Mitchell won; the $10 parlay and the extra lost
+        assert r["placed"]["pl"] == round(15 * 100 / 112 - 10 - 15, 2)
+
+    def test_command_lines(self):
+        out = self.c.handle("placed Mitchell\nprops auto\nrefresh")
+        assert len(out) == 3 and self.store["settings.json"]["props_auto"] is True
+
+
+
+class Moved(unittest.TestCase):
+    """A game that changes days keeps its ticket: not voided, not doubled, not counted against the new day's slots."""
+    def test_moved_game(self):
+        from board import grade, espn, run, common
+        d = common.today_ct(); nxt = (common.now_ct() + datetime.timedelta(days=1))
+        start = (common.now_ct() + datetime.timedelta(hours=2)).astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        new = (common.now_ct() + datetime.timedelta(hours=30)).astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        store = {"picks.json": [{"date": d, "id": "9", "sport": "CFB", "pick": "Ole Miss Rebels +2.5", "decision": "CASH", "stake": 25, "conf": 7.0,
+                                 "start": start, "result": None, "logged_at": "00:20", "reason": "x"}]}
+        keep = (grade.load, grade.save, espn.event_start)
+        grade.load = lambda n, default=None: store.get(n, default); grade.save = lambda n, v: store.__setitem__(n, v)
+        espn.event_start = lambda sport, eid: new
+        try:
+            mv = grade.moved_games([{"games": []}], d)                       # the game is off today's slate
+            p = store["picks.json"][0]
+            assert len(mv) == 1 and p["start"] == new and p["moved_from"] == start and p["decision"] == "CASH" and grade.counts(p)
+            assert grade.moved_games([{"games": []}], d) == []                # second run: nothing new to say
+            d2 = nxt.strftime("%Y-%m-%d")
+            row = lambda i, conf: {"id": i, "decision": "CASH", "pick": "T" + i, "stake": 50, "conf": conf, "reason": "r", "price": -110, "start": new}
+            cards = [{"games": [{"id": "9", "decision": "PAPER", "pick": "Oklahoma Sooners -2.5", "stake": 0, "conf": 6.0, "reason": "r", "price": -110, "start": new},
+                                row("1", 8.3), row("2", 8.2), row("3", 8.1)]}]
+            grade.lock_mains(cards, d2)
+            r = cards[0]["games"][0]
+            assert r["decision"] == "CASH" and r["pick"] == "Ole Miss Rebels +2.5" and r["carried"] == d and r["stake"] == 25   # same ticket, not flipped
+            run.enforce_caps(cards)
+            assert [x["decision"] for x in cards[0]["games"]] == ["CASH"] * 4       # doesn't take one of the new day's 3 slots
+            grade.log_picks(cards, d2)
+            assert sum(1 for x in store["picks.json"] if x["id"] == "9") == 1       # not logged twice
+        finally:
+            grade.load, grade.save, espn.event_start = keep
 
 
 if __name__ == "__main__":

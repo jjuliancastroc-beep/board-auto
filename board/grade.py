@@ -15,11 +15,14 @@ def log_picks(cards, date):
     picks = load("picks.json", [])
     have = {(p["date"], p["id"]): p for p in picks}
     now = now_ct(); hm = now.strftime("%H:%M")
+    carried = {p["id"] for p in picks if p["result"] is None and p["date"] != date}
     for c in cards:
         for r in c["games"]:
             if r["decision"] not in ("CASH", "PAPER", "WATCH"):
                 continue
             old = have.get((date, r["id"]))
+            if old is None and r["id"] in carried:
+                continue  # this game moved here from another day - the ticket from that day is the only one
             if old is None:
                 p = {k: r.get(k) for k in KEEP}
                 p.update(date=date, line_at_pick=r.get("line"), logged_at=hm, result=None, final=None, close=None, clv=None, review="HOLD", review_log=[])
@@ -35,7 +38,8 @@ def log_picks(cards, date):
 
 def lock_mains(cards, date):
     """Mains already logged today stay mains with the same pick and stake (they are on your Capped card)."""
-    locked = {p["id"]: p for p in load("picks.json", []) if p["date"] == date and p["decision"] == "CASH" and not p.get("skipped")}
+    locked = {p["id"]: p for p in load("picks.json", []) if p["decision"] == "CASH" and not p.get("skipped")
+              and (p["date"] == date or (p.get("moved") and p["result"] is None))}  # a main whose game moved days is still a main
     for c in cards:
         for r in c["games"]:
             p = locked.get(r["id"])
@@ -48,7 +52,34 @@ def lock_mains(cards, date):
                     r[k] = p[k]
             r["decision"] = "CASH"; r["locked"] = True
             r["reason"] = f"Locked as a main at {p.get('logged_at')}. " + (p.get("reason") or "")
+            if p["date"] != date:
+                r["carried"] = p["date"]; r["moved"] = p.get("moved")
+                r["reason"] = f"{p['moved']} This is your {p['date'][5:].replace('-', '/')} ticket - it is not a new bet. " + r["reason"]
     return locked
+
+
+def moved_games(cards, date):
+    """A game that changes days (weather, travel) drops off today's slate. Keep the ticket, point it at the new kickoff so it
+    still gets watched and graded, and say so. Never voided here - only your 'skip' takes a main out."""
+    picks = load("picks.json", []); on = {r["id"] for c in cards for r in c["games"]}; now = now_ct(); out = []
+    for p in picks:
+        if p["result"] is not None or p["date"] != date or p["id"] in on or ct_time(p["start"]) <= now:
+            continue
+        new = espn.event_start(p["sport"], p["id"])
+        if not new or ct_time(new).strftime("%Y-%m-%d") == ct_time(p["start"]).strftime("%Y-%m-%d"):
+            continue
+        p.setdefault("moved_from", p["start"]); p["start"] = new
+        p["moved"] = f"Game moved to {ct_time(new).strftime('%a %-m/%-d %-I:%M %p CT')} (was {ct_time(p['moved_from']).strftime('%a %-I:%M %p')})."
+        p["review_log"] = (p.get("review_log") or []) + [f"{now.strftime('%m/%d %I:%M %p')}: {p['moved']}"]
+        out.append(p)
+    if out:
+        save("picks.json", picks)
+    return out
+
+
+def counts(t):
+    """Does this ticket count toward the bankroll? Mains count unless you said 'skip'. Anything else counts only if you said 'placed'."""
+    return bool(t.get("user_placed")) or (t.get("decision") == "CASH" and not t.get("skipped"))
 
 
 def _pick_team_line(p):
@@ -91,7 +122,7 @@ def grade_all():
             v = margin + ln
             p["result"] = "Won" if v > 0 else "Lost" if v < 0 else "Push"
             p["units"] = round(payout(p.get("price")) if v > 0 else (-1.0 if v < 0 else 0.0), 2)
-        p["pl"] = round((p.get("stake") or 0) * p["units"], 2) if p["decision"] == "CASH" and not p.get("skipped") else 0.0
+        p["pl"] = round((p.get("stake") or 0) * p["units"], 2) if counts(p) else 0.0
         cl = espn.closing_line(p["sport"], p["id"])
         if cl:
             p["close"] = cl.get("details") or f"ML {cl.get('home_ml')}/{cl.get('away_ml')}"
@@ -127,7 +158,7 @@ def grade_parlays(picks):
                 if l["result"] == "Won":
                     dec *= 1 + payout(l.get("price"))
             x["result"] = "Won" if dec > 1 else "Push"; x["units"] = round(dec - 1, 2)
-        x["pl"] = round(x["stake"] * x["units"], 2) if x.get("decision") == "CASH" else 0.0
+        x["pl"] = round((x.get("stake") or 0) * x["units"], 2) if counts(x) else 0.0
     save("parlays.json", pars)
     return pars
 
@@ -141,7 +172,7 @@ def build_parlays(cards, date, picks):
     if len(keep) >= 2:
         return today
     pars = [x for x in pars if not (x["date"] == date and x["decision"] != "CASH")]
-    rows = [r for c in cards for r in c["games"] if r["decision"] in ("CASH", "PAPER") and r.get("price") and r.get("pick")]
+    rows = [r for c in cards for r in c["games"] if r["decision"] in ("CASH", "PAPER") and r.get("price") and r.get("pick") and not r.get("carried")]
     now = now_ct()
     rows = [r for r in rows if not r.get("start") or ct_time(r["start"]) > now]
     anchors = sorted([r for r in rows if r["conf"] >= 7.0], key=lambda r: (r["decision"] != "CASH", -r["conf"]))
@@ -199,6 +230,6 @@ def tiers(picks):
 
 def bankroll(picks, settings):
     base = settings.get("bankroll_base", 636.23); since = settings.get("base_date", "2026-11-12")
-    pl = sum(p.get("pl") or 0 for p in picks if p["date"] >= since and p["decision"] == "CASH" and not p.get("skipped"))
-    pl += sum(x.get("pl") or 0 for x in load("parlays.json", []) if x["date"] >= since and x.get("decision") == "CASH")
+    pl = sum(p.get("pl") or 0 for p in picks if p["date"] >= since and counts(p))
+    pl += sum(x.get("pl") or 0 for x in load("parlays.json", []) if x["date"] >= since and counts(x))
     return round(base + pl, 2)
