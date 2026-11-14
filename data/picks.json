@@ -5946,14 +5946,16 @@
   "date": "2026-11-14",
   "line_at_pick": "TEM -2.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "UAB Blazers 36, Temple Owls 10",
+  "close": "TEM -2.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "id": "401856888",
@@ -6727,14 +6729,16 @@
   "date": "2026-11-14",
   "line_at_pick": "GMU -13.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "George Mason Patriots 61, Bradley Braves 62",
+  "close": "GMU -11.5",
+  "clv": 25.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.85,
+  "pl": 0.0
  },
  {
   "id": "401909534",
@@ -6886,14 +6890,16 @@
   "date": "2026-11-14",
   "line_at_pick": "STMN -7.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "St. Thomas Tommies 77, Army Black Knights 79",
+  "close": "STMN -5.5",
+  "clv": 2.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.91,
+  "pl": 0.0
  },
  {
   "id": "401911276",
@@ -7660,14 +7666,16 @@
   "date": "2026-11-14",
   "line_at_pick": "DREX -4.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Drexel Dragons 66, Maine Black Bears 64",
+  "close": "DREX -3.5",
+  "clv": 1.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.85,
+  "pl": 0.0
  },
  {
   "id": "401911392",
@@ -8976,14 +8984,16 @@
   "date": "2026-11-14",
   "line_at_pick": "CAR -375",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Seattle Kraken 1, Carolina Hurricanes 5",
+  "close": "CAR -380",
+  "clv": 0.2,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.27,
+  "pl": 0.0
  },
  {
   "id": "401892708",
@@ -9921,6 +9931,82 @@
   "review": "HOLD",
   "review_log": [
    "11/14 01:53 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401869928",
+  "sport": "CFB",
+  "game": "App State Mountaineers @ Marshall Thundering Herd",
+  "home": "Marshall Thundering Herd",
+  "away": "App State Mountaineers",
+  "start": "2026-11-14T23:00Z",
+  "pick": "App State Mountaineers +1.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.4,
+  "components": {
+   "efficiency": 0.74,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.18
+  },
+  "gap_a": -4.4,
+  "gap_b": -1.9,
+  "gap_min": 4.4,
+  "price": -118,
+  "fair_line": -1.6,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -1.5,
+  "home_ml": -115,
+  "away_ml": -105,
+  "flags": [
+   "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
+  ],
+  "against": [],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -2.9,
+  "model_b": -0.4,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 133,
+   "l": 135,
+   "n": 268,
+   "win": 0.496
+  },
+  "tier": "G5/mixed",
+  "day": "Sat",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.18,
+   "key": "spread dog",
+   "w": 63,
+   "l": 46,
+   "text": "Our record on spread dog: 63-46 (last 60 days, recent counts more) -> +0.18 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "MRSH -1.5",
+  "logged_at": "15:35",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 03:35 PM: checked line and injuries - no change"
   ]
  }
 ]
