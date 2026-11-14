@@ -43,8 +43,8 @@ const cmd = (t, label, cls) => `<a class="pill ${cls||""}" style="text-decoratio
 (function(){
   const age = Math.round((Date.now()/1000 - D.ts) / 60), hr = new Date().getHours();
   const late = age > 75 && hr >= 7;
-  document.getElementById("upd").innerHTML = `Updated ${esc(D.updated)}. Rebuilds by itself through the day, 7 AM to about 2 AM CT.` +
-    (late ? `<div class="flag" style="margin-top:6px">This page is ${age >= 120 ? Math.round(age/60) + " hours" : age + " minutes"} old - GitHub's timer is running late. ${cmd("refresh", "Refresh now")}<span class="mute">(opens GitHub - just hit Submit)</span></div>` : "");
+  document.getElementById("upd").innerHTML = `Updated ${esc(D.updated)}. Rebuilds by itself about every 30 minutes, 7 AM to 3 AM CT.` +
+    (late ? `<div class="flag" style="margin-top:6px">This page is ${age >= 120 ? Math.round(age/60) + " hours" : age + " minutes"} old - the Board's clock stalled. A refresh restarts it. ${cmd("refresh", "Refresh now")}<span class="mute">(opens GitHub - just hit Submit)</span></div>` : "");
 })();
 const root = document.documentElement; if (localStorage.theme === "light") root.classList.add("light");
 document.getElementById("theme").onclick = () => { root.classList.toggle("light"); localStorage.theme = root.classList.contains("light") ? "light" : "dark"; };
@@ -245,7 +245,7 @@ function propsTab(){
   if (!pday) pday = P.today;
   if (propId) { const x = P.calls.find(c => c.id === propId); if (x) return propDetail(x); }
   const C = P.calib || {}, R = P.record || {};
-  let h = `<div class="card"><b>Player props</b><p>Every hour the Board pulls Underdog's board and checks each line against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. It then compares our chance to Underdog's own price.</p>
+  let h = `<div class="card"><b>Player props</b><p>About every 30 minutes the Board pulls Underdog's board and checks each line against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. It then compares our chance to Underdog's own price.</p>
   <p class="mute">Payouts: a 2-pick pays 3x, so each pick needs about 58%. A 3-pick pays 6x, so each needs about 55%. Steep sides (Underdog already above 62%) are skipped. Deep checks too: what each opponent gives up on that stat, boom-or-bust players, and our own record on that kind of prop (a small nudge, max 0.5). Props are kept apart from the main card. Up to 10 plays a day; the card is 3 singles + 2 parlays at $15. Tell the Board if you put one in ("placed Bey").</p>
   ${(C.weight ?? 0.35) > 0 ? `<p class="flag">Not proven yet. Underdog's lines are sharp and our numbers often disagree with them, so for now we only trust our number ${Math.round((C.weight ?? 0.35)*100)}% and Underdog's ${Math.round((1-(C.weight ?? 0.35))*100)}%. After 2,000 graded lines the Board sets that split from results (${C.n || 0} graded so far).</p>` : `<p class="flag">Props are paused. Over ${C.n || 0} graded lines, Underdog's number beat ours, so the Board has no prop plays right now. It keeps grading every line and turns back on by itself if our number starts winning.</p>`}
   <div class="mute">${esc(P.note || "")}</div></div>`;

@@ -1,0 +1,45 @@
+name: timer
+# The Board's own clock. GitHub's built-in schedule fired only a few times a day, so this job stays awake,
+# starts a Board rebuild about every 30 minutes (7 AM - 3 AM Central), and hands off to a fresh copy of itself
+# every 5 hours. If it ever dies, the next Board run of any kind (a button tap, the backup schedule) restarts it.
+on:
+  workflow_dispatch:
+    inputs:
+      life_minutes:
+        description: "How long this copy stays awake before handing off"
+        default: "300"
+permissions:
+  actions: write
+  contents: read
+concurrency:
+  group: timer          # only one clock at a time; a second one waits its turn
+  cancel-in-progress: false
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 345
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      TZ: America/Chicago
+    steps:
+      - name: Keep time
+        run: |
+          end=$(( $(date +%s) + ${{ inputs.life_minutes || 300 }} * 60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            h=$(date +%-H)
+            if [ "$h" -ge 7 ] || [ "$h" -lt 3 ]; then
+              last=$(gh run list --workflow board.yml -L 1 --json createdAt -q '.[0].createdAt' 2>/dev/null || true)
+              age=99999; [ -n "$last" ] && age=$(( $(date +%s) - $(date -d "$last" +%s) ))
+              if [ "$age" -ge 1500 ]; then
+                echo "$(date '+%a %I:%M %p') last build ${age}s ago - starting one"
+                gh workflow run board.yml || echo "could not start a build this time"
+              fi
+            fi
+            sleep 300
+          done
+      - name: Hand off to the next clock
+        if: ${{ !cancelled() }}   # cancelling this run by hand stops the hand-off
+        run: |
+          for i in 1 2 3 4 5; do gh workflow run timer.yml && exit 0; sleep 20; done
+          echo "hand-off failed - the next Board run will restart the clock"

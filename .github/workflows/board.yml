@@ -1,10 +1,9 @@
 name: board
 on:
   schedule:
-    # GitHub's timer is unreliable (it often skips or delays a slot), so the Board asks every 10 minutes and
-    # the "Fresh enough?" step below skips the work if a build finished in the last 20 minutes.
-    - cron: "4,14,24,34,44,54 13-23 * * *"   # 7 AM - 6 PM CT
-    - cron: "4,14,24,34,44,54 0-8 * * *"     # 6 PM - 3 AM CT; the last runs grade the night's finals
+    # Backup only. The real clock is timer.yml (GitHub's own schedule proved unreliable). When one of these does fire,
+    # the "Fresh enough?" step skips the build if one finished in the last 20 minutes, and the last step restarts the clock if it died.
+    - cron: "7,37 * * * *"
   workflow_dispatch:
     inputs:
       weekly:
@@ -18,6 +17,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 concurrency:
   group: board
   cancel-in-progress: false
@@ -62,3 +62,12 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "Board update $(date '+%Y-%m-%d %H:%M CT')"
           for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
+      - name: Keep the clock alive
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          n=$(gh run list --workflow timer.yml -L 10 --json status -q '[.[] | select(.status != "completed")] | length' 2>/dev/null || echo 1)
+          echo "clocks running or waiting: $n"
+          if [ "$n" = "0" ]; then gh workflow run timer.yml && echo "clock restarted"; fi
