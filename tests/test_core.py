@@ -109,6 +109,8 @@ class OldSetup(unittest.TestCase):
                 per[x["event_id"]] = per.get(x["event_id"], 0) + 1
             assert max(per.values()) <= 2
             pr2 = [dict(x, call="PASS", reason="gone") if x["id"] == pc["singles"][0]["id"] else x for x in pr]
+            capped = [dict(x, call="PASS", capped=True, reason="squeezed off the list") if x["id"] == pc["singles"][1]["id"] else x for x in pr]
+            assert props.card(capped, "2099-01-01")["singles"][1]["status"] == "OPEN"   # squeezed off the list is not a reason to pull
             pc2 = props.card(pr2, "2099-01-01")
             assert pc2["singles"][0]["status"] == "PULL" and len(pc2["singles"]) == 3
         finally:

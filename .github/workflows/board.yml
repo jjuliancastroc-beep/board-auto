@@ -49,10 +49,10 @@ jobs:
         run: python -m unittest tests.test_core -v
       - name: Apply your commands
         if: steps.fresh.outputs.skip != '1'
-        run: python -m board.commands
+        run: python -u -m board.commands
       - name: Build the Board
         if: steps.fresh.outputs.skip != '1'
-        run: python -m board.run ${{ inputs.weekly && '--weekly' || '' }}
+        run: python -u -m board.run ${{ inputs.weekly && '--weekly' || '' }}
       - name: Save results
         if: steps.fresh.outputs.skip != '1'
         run: |

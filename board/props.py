@@ -499,15 +499,15 @@ def build(dates, cards_by_id=None):
             continue
         d = seen.setdefault(r["date"], {"PLAY": 0, "LEAN": 0, "players": set(), "games": {}})
         if r["player"] in d["players"]:
-            r["call"] = "PASS"; r["reason"] += " (already have a call on this player)"; continue
+            r["call"] = "PASS"; r["capped"] = True; r["reason"] += " (already have a call on this player)"; continue
         if d["games"].get(r["event_id"], 0) >= 2:
-            r["call"] = "PASS"; r["reason"] += " (already 2 calls in this game)"; continue
+            r["call"] = "PASS"; r["capped"] = True; r["reason"] += " (already 2 calls in this game)"; continue
         if d[r["call"]] >= caps[r["call"]]:
             # overflow PLAYs may take at most 15 of the 25 lean spots, so real leans (the parlay legs) are never crowded out on a big slate
             if r["call"] == "PLAY" and d["LEAN"] < 15:
                 r["call"] = "LEAN"; r["reason"] += " (qualified as a PLAY but outside today's top 10)"
             else:
-                r["call"] = "PASS"; r["reason"] += " (outside today's top calls)"; continue
+                r["call"] = "PASS"; r["capped"] = True; r["reason"] += " (outside today's top calls)"; continue
         d[r["call"]] += 1; d["players"].add(r["player"]); d["games"][r["event_id"]] = d["games"].get(r["event_id"], 0) + 1
     out.sort(key=lambda r: (r["date"], order.get(r["call"], 3), -(r.get("conf") or 0), -(r.get("edge") or 0)))
     matched = len(jobs); total = len(want)
@@ -669,7 +669,7 @@ def card(props, date):
         why = None
         if cur is None:
             why = "Line came off Underdog's board - he may be out or limited"
-        elif cur.get("call") == "PASS":
+        elif cur.get("call") == "PASS" and not cur.get("capped"):  # "capped" = still a good number, just squeezed off the list - not a reason to pull
             why = "Now a pass: " + (cur.get("reason") or "")
         elif cur.get("side") != it["side"]:
             why = f"Our numbers flipped to the other side ({cur.get('pick')})"
