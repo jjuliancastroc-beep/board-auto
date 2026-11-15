@@ -10,7 +10,7 @@
     "away": "Pittsburgh Steelers",
     "time": "Sun 7:20 PM CT",
     "start": "2026-11-16T01:20Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "CIN -3.5",
     "home_line": -3.5,
     "home_line_open": -3.5,
@@ -96,7 +96,7 @@
     "flags": [],
     "factors": [
      "Rest: Steelers 14 day(s), Bengals 7 day(s)",
-     "Kickoff forecast: wind 4 mph (gusts 10), 39F, rain chance 0%"
+     "Kickoff forecast: wind 5 mph (gusts 10), 41F, rain chance 0%"
     ],
     "against": [
      "Laying -3.5 - just past a key number (3)"
@@ -105,10 +105,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 4.1,
-     "gust": 10.1,
+     "wind": 5.3,
+     "gust": 9.8,
      "rain": 0,
-     "temp": 39.1,
+     "temp": 41.2,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -163,7 +163,7 @@
     "away": "Seattle Seahawks",
     "time": "Sun 3:05 PM CT",
     "start": "2026-11-15T21:05Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SEA -6.5",
     "home_line": 6.5,
     "home_line_open": 7.0,
@@ -353,7 +353,7 @@
     "away": "San Francisco 49ers",
     "time": "Sun 3:25 PM CT",
     "start": "2026-11-15T21:25Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SF -4.5",
     "home_line": 4.5,
     "home_line_open": -1.5,
@@ -420,6 +420,11 @@
     ],
     "inj_away": [
      {
+      "player": "Brandin Cooks",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
       "player": "Kurtis Rourke",
       "pos": "QB",
       "status": "Out"
@@ -427,11 +432,6 @@
      {
       "player": "Tatum Bethune",
       "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "player": "Brandin Cooks",
-      "pos": "WR",
       "status": "Out"
      },
      {
@@ -443,11 +443,6 @@
       "player": "Mike Evans",
       "pos": "WR",
       "status": "Out"
-     },
-     {
-      "player": "Trent Williams",
-      "pos": "OT",
-      "status": "Questionable"
      },
      {
       "player": "Brandon Aiyuk",
@@ -548,18 +543,18 @@
     "away": "Los Angeles Rams",
     "time": "Sun 3:05 PM CT",
     "start": "2026-11-15T21:05Z",
-    "book": "Draft Kings",
-    "line": "LAR -9.5",
-    "home_line": 9.5,
+    "book": "DraftKings",
+    "line": "LAR -10",
+    "home_line": 10.0,
     "home_line_open": 10.5,
     "spread_odds": [
-     -115,
-     -105
+     -110,
+     -110
     ],
     "total": 38.5,
     "total_open": 47.5,
-    "home_ml": 380,
-    "away_ml": -500,
+    "home_ml": 410,
+    "away_ml": -550,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": -10.3,
@@ -578,13 +573,13 @@
     "indoor": true,
     "inj_home": [
      {
-      "player": "Joey Aguilar",
-      "pos": "QB",
+      "player": "Jayden Williams",
+      "pos": "OT",
       "status": "Out"
      },
      {
-      "player": "Jayden Williams",
-      "pos": "OT",
+      "player": "Joey Aguilar",
+      "pos": "QB",
       "status": "Out"
      },
      {
@@ -610,6 +605,11 @@
     ],
     "inj_away": [
      {
+      "player": "Joe Cardona",
+      "pos": "LS",
+      "status": "Out"
+     },
+     {
       "player": "Ty Simpson",
       "pos": "QB",
       "status": "Out"
@@ -632,11 +632,6 @@
      {
       "player": "Desjuan Johnson",
       "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "player": "Joe Cardona",
-      "pos": "LS",
       "status": "Out"
      },
      {
@@ -676,7 +671,7 @@
     ],
     "factors": [
      "Rest: Rams 7 day(s), Cardinals 7 day(s)",
-     "Line moved 1 pts toward Arizona Cardinals since open (+10.5 to +9.5 home)",
+     "Line moved 0.5 pts toward Arizona Cardinals since open (+10.5 to +10 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
@@ -691,15 +686,15 @@
      "game",
      "game"
     ],
-    "gap_a": -0.8,
-    "gap_b": 4.7,
-    "gap_min": 4.7,
-    "pick": "Arizona Cardinals +9.5",
-    "price": -105,
+    "gap_a": -0.3,
+    "gap_b": 5.2,
+    "gap_min": 5.2,
+    "pick": "Arizona Cardinals +10",
+    "price": -110,
     "side": "home",
     "fair_line": 7.5,
     "playable_to": null,
-    "sim_cover": 0.56,
+    "sim_cover": 0.575,
     "history": {
      "adj": 0.25,
      "key": "spread dog",
@@ -716,9 +711,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": true,
-    "conf": 2.8,
+    "conf": 2.9,
     "components": {
-     "efficiency": 0.78,
+     "efficiency": 0.87,
      "veto": 0.0,
      "models": 0.5,
      "starters": 0.0,
@@ -744,156 +739,6 @@
   "sport": "NBA",
   "games": [
    {
-    "id": "401909987",
-    "sport": "NBA",
-    "game": "Charlotte Hornets @ LA Clippers",
-    "home": "LA Clippers",
-    "away": "Charlotte Hornets",
-    "time": "Sun 3:30 PM CT",
-    "start": "2026-11-15T21:30Z",
-    "book": "Draft Kings",
-    "line": "CHA -1.5",
-    "home_line": 1.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -104,
-     -116
-    ],
-    "total": 213.5,
-    "total_open": 215.5,
-    "home_ml": -106,
-    "away_ml": -111,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 6.0,
-    "model_b": 2.2,
-    "games_played": [
-     12,
-     11
-    ],
-    "neutral": false,
-    "records": [
-     "4-8",
-     "3-8"
-    ],
-    "venue": "Intuit Dome",
-    "tv": "ClipperVision",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Brandon Ingram",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Yanic Konan Niederhauser",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Bradley Beal",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Jordan Miller",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Kon Knueppel",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Dennis Schroder",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Brandon Miller",
-      "Grayson Allen",
-      "Moussa Diabate",
-      "Naz Reid"
-     ],
-     [
-      "Darius Garland",
-      "Rui Hachimura"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     2
-    ],
-    "form5": [
-     -12.6,
-     -2.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Hornets 3 day(s), Clippers 2 day(s)",
-     "Line moved 4 pts toward Charlotte Hornets since open (-2.5 to +1.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side -2.8 a game, theirs -12.6)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 219.0,
-    "gap_a": 7.5,
-    "gap_b": 3.7,
-    "gap_min": 7.5,
-    "pick": "LA Clippers +1.5",
-    "price": -116,
-    "side": "home",
-    "fair_line": -4.1,
-    "playable_to": null,
-    "sim_cover": 0.673,
-    "history": {
-     "adj": 0.25,
-     "key": "spread dog",
-     "w": 91,
-     "l": 64,
-     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.1,
-    "components": {
-     "efficiency": 0.83,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 5.5
-   },
-   {
     "id": "401909990",
     "sport": "NBA",
     "game": "New York Knicks @ Toronto Raptors",
@@ -901,7 +746,7 @@
     "away": "New York Knicks",
     "time": "Sun 5:00 PM CT",
     "start": "2026-11-15T23:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "NY -5.5",
     "home_line": 5.5,
     "home_line_open": 3.5,
@@ -1030,6 +875,154 @@
     "total_gap": 2.7
    },
    {
+    "id": "401909987",
+    "sport": "NBA",
+    "game": "Charlotte Hornets @ LA Clippers",
+    "home": "LA Clippers",
+    "away": "Charlotte Hornets",
+    "time": "Sun 3:30 PM CT",
+    "start": "2026-11-15T21:30Z",
+    "book": "DraftKings",
+    "line": "LAC -1.5",
+    "home_line": -1.5,
+    "home_line_open": -2.5,
+    "spread_odds": [
+     -119,
+     -101
+    ],
+    "total": 213.5,
+    "total_open": 215.5,
+    "home_ml": -110,
+    "away_ml": -108,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 6.0,
+    "model_b": 2.2,
+    "games_played": [
+     12,
+     11
+    ],
+    "neutral": false,
+    "records": [
+     "4-8",
+     "3-8"
+    ],
+    "venue": "Intuit Dome",
+    "tv": "ClipperVision",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Brandon Ingram",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Yanic Konan Niederhauser",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Bradley Beal",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Jordan Miller",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Kon Knueppel",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Dennis Schroder",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Brandon Miller",
+      "Grayson Allen",
+      "Moussa Diabate",
+      "Naz Reid"
+     ],
+     [
+      "Darius Garland",
+      "Rui Hachimura"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     2
+    ],
+    "form5": [
+     -12.6,
+     -2.8
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Hornets 3 day(s), Clippers 2 day(s)",
+     "Line moved 1 pts toward Charlotte Hornets since open (-2.5 to -1.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side -2.8 a game, theirs -12.6)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 219.0,
+    "gap_a": 4.5,
+    "gap_b": 0.7,
+    "gap_min": 4.5,
+    "pick": "LA Clippers -1.5",
+    "price": -101,
+    "side": "home",
+    "fair_line": -4.1,
+    "playable_to": null,
+    "sim_cover": 0.583,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.9,
+    "components": {
+     "efficiency": 0.5,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": 5.5
+   },
+   {
     "id": "401909991",
     "sport": "NBA",
     "game": "Houston Rockets @ Washington Wizards",
@@ -1037,7 +1030,7 @@
     "away": "Houston Rockets",
     "time": "Sun 6:00 PM CT",
     "start": "2026-11-16T00:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "HOU -8.5",
     "home_line": 8.5,
     "home_line_open": 8.5,
@@ -1185,7 +1178,7 @@
     "away": "Dallas Mavericks",
     "time": "Sun 5:00 PM CT",
     "start": "2026-11-15T23:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "BOS -14.5",
     "home_line": -14.5,
     "home_line_open": -12.5,
@@ -1339,7 +1332,7 @@
     "away": "Atlanta Hawks",
     "time": "Sun 7:00 PM CT",
     "start": "2026-11-16T01:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "ATL -8.5",
     "home_line": 8.5,
     "home_line_open": 6.5,
@@ -1369,14 +1362,14 @@
     "indoor": true,
     "inj_home": [
      {
-      "player": "Ryan Rollins",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
       "player": "Ousmane Dieng",
       "pos": "F",
       "status": "Out"
+     },
+     {
+      "player": "Ryan Rollins",
+      "pos": "G",
+      "status": "Day-To-Day"
      }
     ],
     "inj_away": [
@@ -1496,7 +1489,7 @@
     "away": "Oklahoma City Thunder",
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "OKC -10.5",
     "home_line": 10.5,
     "home_line_open": 10.5,
@@ -1649,6 +1642,165 @@
     "total_gap": 0.3
    },
    {
+    "id": "401909988",
+    "sport": "NBA",
+    "game": "San Antonio Spurs @ Utah Jazz",
+    "home": "Utah Jazz",
+    "away": "San Antonio Spurs",
+    "time": "Sun 4:00 PM CT",
+    "start": "2026-11-15T22:00Z",
+    "book": "DraftKings",
+    "line": "SA -14.5",
+    "home_line": 14.5,
+    "home_line_open": 17.5,
+    "spread_odds": [
+     -107,
+     -113
+    ],
+    "total": 223.5,
+    "total_open": 224.5,
+    "home_ml": 670,
+    "away_ml": -1040,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": -11.7,
+    "model_b": -25.6,
+    "games_played": [
+     13,
+     13
+    ],
+    "neutral": false,
+    "records": [
+     "11-2",
+     "1-12"
+    ],
+    "venue": "Delta Center",
+    "tv": "KJZZ-TV, Jazz+, DAZN SAS",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Jaxson Hayes",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Trey Alexander",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Lauri Markkanen",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jusuf Nurkic",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Jaren Jackson Jr.",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "De'Aaron Fox",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Tobias Harris",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jayden Quaintance",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Stephon Castle",
+      "Victor Wembanyama"
+     ],
+     [
+      "Ace Bailey",
+      "Keyonte George"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     19.6,
+     -11.0
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Spurs 2 day(s), Jazz 2 day(s)",
+     "Line moved 3 pts toward Utah Jazz since open (+17.5 to +14.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +19.6 a game, theirs -11.0)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 225.9,
+    "gap_a": 2.8,
+    "gap_b": -11.1,
+    "gap_min": 11.1,
+    "pick": "San Antonio Spurs -14.5",
+    "price": -107,
+    "side": "away",
+    "fair_line": -18.6,
+    "playable_to": null,
+    "sim_cover": 0.63,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": true,
+    "conf": 4.9,
+    "components": {
+     "efficiency": 1.0,
+     "veto": 0.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": 2.4
+   },
+   {
     "id": "401909986",
     "sport": "NBA",
     "game": "Los Angeles Lakers @ Phoenix Suns",
@@ -1656,7 +1808,7 @@
     "away": "Los Angeles Lakers",
     "time": "Sun 3:00 PM CT",
     "start": "2026-11-15T21:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "LAL -3.5",
     "home_line": 3.5,
     "home_line_open": 2.5,
@@ -1664,7 +1816,7 @@
      -108,
      -112
     ],
-    "total": 226.5,
+    "total": 227.5,
     "total_open": 228.5,
     "home_ml": 136,
     "away_ml": -161,
@@ -1778,170 +1930,7 @@
      "situational": 0.5,
      "our history": -0.06
     },
-    "total_gap": 5.6
-   },
-   {
-    "id": "401909988",
-    "sport": "NBA",
-    "game": "San Antonio Spurs @ Utah Jazz",
-    "home": "Utah Jazz",
-    "away": "San Antonio Spurs",
-    "time": "Sun 4:00 PM CT",
-    "start": "2026-11-15T22:00Z",
-    "book": "Draft Kings",
-    "line": "SA -15.5",
-    "home_line": 15.5,
-    "home_line_open": 17.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 224.5,
-    "total_open": 224.5,
-    "home_ml": 740,
-    "away_ml": -1180,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": -11.7,
-    "model_b": -25.6,
-    "games_played": [
-     13,
-     13
-    ],
-    "neutral": false,
-    "records": [
-     "11-2",
-     "1-12"
-    ],
-    "venue": "Delta Center",
-    "tv": "KJZZ-TV, Jazz+, DAZN SAS",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Jaxson Hayes",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Trey Alexander",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Lauri Markkanen",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jusuf Nurkic",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Jaren Jackson Jr.",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "De'Aaron Fox",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Tobias Harris",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jayden Quaintance",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "De'Aaron Fox",
-      "Victor Wembanyama"
-     ],
-     [
-      "Ace Bailey",
-      "Keyonte George"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     19.6,
-     -11.0
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Star De'Aaron Fox (San Antonio Spurs) Day-To-Day; Models 10+ points apart - automatic pass",
-    "flags": [
-     "Star De'Aaron Fox (San Antonio Spurs) Day-To-Day",
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Spurs 2 day(s), Jazz 2 day(s)",
-     "Line moved 2 pts toward Utah Jazz since open (+17.5 to +15.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +19.6 a game, theirs -11.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 225.9,
-    "veto_sides": [
-     "game"
-    ],
-    "gap_a": 3.8,
-    "gap_b": -10.1,
-    "gap_min": 10.1,
-    "pick": "San Antonio Spurs -15.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": -18.6,
-    "playable_to": null,
-    "sim_cover": 0.599,
-    "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 4.2,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 0.75,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "total_gap": 1.4
+    "total_gap": 4.6
    }
   ],
   "n_past": 188,
@@ -1958,7 +1947,7 @@
     "away": "New Haven Chargers",
     "time": "Sun 3:30 PM CT",
     "start": "2026-11-15T21:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "PSU -24.5",
     "home_line": -24.5,
     "home_line_open": -25.5,
@@ -2079,15 +2068,15 @@
     "away": "Chicago State Cougars",
     "time": "Sun 3:00 PM CT",
     "start": "2026-11-15T21:00Z",
-    "book": "Draft Kings",
-    "line": "LMU -17.5",
-    "home_line": -17.5,
+    "book": "DraftKings",
+    "line": "LMU -18.5",
+    "home_line": -18.5,
     "home_line_open": -16.5,
     "spread_odds": [
-     -105,
-     -115
+     -118,
+     -102
     ],
-    "total": 139.5,
+    "total": 138.5,
     "total_open": 141.5,
     "home_ml": -2400,
     "away_ml": 1200,
@@ -2133,14 +2122,14 @@
      4.2
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.1 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.2 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet",
      "Early season: under 5 games for a team - prior-heavy"
     ],
     "factors": [
      "Rest: Cougars 2 day(s), Lions 3 day(s)",
-     "Line moved 1 pts toward Loyola Marymount Lions since open (-16.5 to -17.5 home)",
+     "Line moved 2 pts toward Loyola Marymount Lions since open (-16.5 to -18.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -2153,15 +2142,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 153.0,
-    "gap_a": -4.6,
-    "gap_b": -12.6,
-    "gap_min": 4.6,
-    "pick": "Chicago State Cougars +17.5",
-    "price": -105,
+    "gap_a": -5.6,
+    "gap_b": -13.6,
+    "gap_min": 5.6,
+    "pick": "Chicago State Cougars +18.5",
+    "price": -118,
     "side": "away",
     "fair_line": 8.9,
     "playable_to": 17.4,
-    "sim_cover": 0.783,
+    "sim_cover": 0.809,
     "history": {
      "adj": 0.29,
      "key": "CBB spread dog",
@@ -2178,9 +2167,9 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 6.1,
+    "conf": 6.2,
     "components": {
-     "efficiency": 0.51,
+     "efficiency": 0.63,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
@@ -2190,8 +2179,8 @@
      "situational": 0.5,
      "our history": 0.29
     },
-    "total_gap": 13.5,
-    "total_lean": "Over 139.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
+    "total_gap": 14.5,
+    "total_lean": "Over 138.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
     "stake": 0
    },
    {
@@ -2202,7 +2191,7 @@
     "away": "Syracuse Orange",
     "time": "Sun 6:00 PM CT",
     "start": "2026-11-16T00:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SJU -12.5",
     "home_line": -12.5,
     "home_line_open": -12.5,
@@ -2317,7 +2306,7 @@
     "away": "Alabama State Hornets",
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SJSU -13.5",
     "home_line": -13.5,
     "home_line_open": -11.5,
@@ -2434,7 +2423,7 @@
     "away": "Idaho State Bengals",
     "time": "Sun 3:00 PM CT",
     "start": "2026-11-15T21:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SEA -15.5",
     "home_line": -15.5,
     "home_line_open": -15.5,
@@ -2542,6 +2531,123 @@
     "total_lean": "Over 143.5 (season scoring says 151.5) - WATCH only, totals have no past-games test yet"
    },
    {
+    "id": "401919825",
+    "sport": "CBB",
+    "game": "Mercyhurst Lakers @ James Madison Dukes",
+    "home": "James Madison Dukes",
+    "away": "Mercyhurst Lakers",
+    "time": "Sun 3:00 PM CT",
+    "start": "2026-11-15T21:00Z",
+    "book": "DraftKings",
+    "line": "JMU -11.5",
+    "home_line": -11.5,
+    "home_line_open": -15.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 137.5,
+    "total_open": 138.5,
+    "home_ml": -900,
+    "away_ml": 600,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 12.1,
+    "model_b": 6.2,
+    "games_played": [
+     4,
+     3
+    ],
+    "neutral": false,
+    "records": [
+     "1-3",
+     "1-2"
+    ],
+    "venue": "Atlantic Union Bank Center",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Deraje Agbaosi",
+      "Jake Lemelman"
+     ],
+     [
+      "Brandon Lee",
+      "Garrett Sundra",
+      "K.J. Windham"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     4
+    ],
+    "form5": [
+     -10.5,
+     null
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Lakers 3 day(s), Dukes 4 day(s)",
+     "Line moved 4 pts toward Mercyhurst Lakers since open (-15.5 to -11.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 143.3,
+    "gap_a": 0.6,
+    "gap_b": -5.3,
+    "gap_min": 5.3,
+    "pick": "Mercyhurst Lakers +11.5",
+    "price": -108,
+    "side": "away",
+    "fair_line": 9.2,
+    "playable_to": null,
+    "sim_cover": 0.584,
+    "history": {
+     "adj": 0.29,
+     "key": "CBB spread dog",
+     "w": 39,
+     "l": 24,
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.0,
+    "components": {
+     "efficiency": 0.59,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.29
+    },
+    "total_gap": 5.8
+   },
+   {
     "id": "401923393",
     "sport": "CBB",
     "game": "Western Michigan Broncos @ Southern Indiana Screaming Eagles",
@@ -2549,7 +2655,7 @@
     "away": "Western Michigan Broncos",
     "time": "Sun 3:30 PM CT",
     "start": "2026-11-15T21:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "WMU -6.5",
     "home_line": 6.5,
     "home_line_open": 5.5,
@@ -2667,7 +2773,7 @@
     "away": "Pepperdine Waves",
     "time": "Sun 4:00 PM CT",
     "start": "2026-11-15T22:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "ORE -13.5",
     "home_line": -13.5,
     "home_line_open": -16.5,
@@ -2785,7 +2891,7 @@
     "away": "Canisius Golden Griffins",
     "time": "Sun 4:30 PM CT",
     "start": "2026-11-15T22:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "BUF -13.5",
     "home_line": -13.5,
     "home_line_open": -15.5,
@@ -2904,7 +3010,7 @@
     "away": "Arkansas-Pine Bluff Golden Lions",
     "time": "Sun 6:00 PM CT",
     "start": "2026-11-16T00:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "USC -46.5",
     "home_line": -46.5,
     "home_line_open": -41.5,
@@ -3023,7 +3129,7 @@
     "away": "New Mexico State Aggies",
     "time": "Sun 3:00 PM CT",
     "start": "2026-11-15T21:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SDSU -12.5",
     "home_line": -12.5,
     "home_line_open": -11.5,
@@ -3140,7 +3246,7 @@
     "away": "Cal Poly Mustangs",
     "time": "Sun 5:00 PM CT",
     "start": "2026-11-15T23:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "MTST -6.5",
     "home_line": -6.5,
     "home_line_open": -7.5,
@@ -3256,7 +3362,7 @@
     "away": "Coastal Carolina Chanticleers",
     "time": "Sun 7:00 PM CT",
     "start": "2026-11-16T01:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "WIS -27.5",
     "home_line": -27.5,
     "home_line_open": -29.5,
@@ -3379,7 +3485,7 @@
     "away": "Texas State Bobcats",
     "time": "Sun 7:00 PM CT",
     "start": "2026-11-16T01:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "TXST -3.5",
     "home_line": 3.5,
     "home_line_open": 4.5,
@@ -3628,78 +3734,6 @@
     "invalidation": []
    },
    {
-    "id": "401919825",
-    "sport": "CBB",
-    "game": "Mercyhurst Lakers @ James Madison Dukes",
-    "home": "James Madison Dukes",
-    "away": "Mercyhurst Lakers",
-    "time": "Sun 3:00 PM CT",
-    "start": "2026-11-15T21:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 12.1,
-    "model_b": 6.2,
-    "games_played": [
-     4,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "1-3",
-     "1-2"
-    ],
-    "venue": "Atlantic Union Bank Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Deraje Agbaosi",
-      "Jake Lemelman"
-     ],
-     [
-      "Brandon Lee",
-      "Garrett Sundra",
-      "K.J. Windham"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     4
-    ],
-    "form5": [
-     -10.5,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Lakers 3 day(s), Dukes 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 143.3
-   },
-   {
     "id": "401929405",
     "sport": "CBB",
     "game": "Doane Tigers @ South Dakota Coyotes",
@@ -3919,7 +3953,7 @@
     "away": "Edmonton Oilers",
     "time": "Sun 6:30 PM CT",
     "start": "2026-11-16T00:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "EDM -148",
     "home_line": 148.0,
     "home_line_open": 1.5,
@@ -4045,13 +4079,13 @@
     "away": "Vancouver Canucks",
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "VGK -410",
     "home_line": -410.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     124,
-     -148
+     130,
+     -155
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -4173,7 +4207,7 @@
     "away": "Florida Panthers",
     "time": "Sun 7:00 PM CT",
     "start": "2026-11-16T01:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "DAL -130",
     "home_line": -130.0,
     "home_line_open": -1.5,
@@ -4303,7 +4337,7 @@
     "away": "Nashville Predators",
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "NSH -170",
     "home_line": 170.0,
     "home_line_open": 1.5,
@@ -4438,7 +4472,7 @@
     "away": "Calgary Flames",
     "time": "Sun 7:00 PM CT",
     "start": "2026-11-16T01:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "ANA -155",
     "home_line": -155.0,
     "home_line_open": -1.5,
