@@ -4,10 +4,14 @@ or comment on any issue in the repo. Only the repo owner's comments count.
   bankroll 650          set the bankroll to $650 (from today on, placed tickets add to it)
   approve NBA           allow mains for that sport (your graduation call)
   unapprove NBA         back to paper
-  skip Raptors          you did NOT place that ticket - it stops counting (mains, parlays, props)
+  skip Raptors          you did NOT place that ticket - it stops counting (mains, parlays, props).
+                        Parlays: "skip parlay 1" (add a day for an older one: "skip parlay 1 11/14")
   placed Mitchell       you put that pick in. Works for props, prop parlays ("placed prop parlay 1"), paper picks
                         ("placed Lindenwood $25") and main parlays ("placed parlay 1"). Add "$20" to set the amount.
   placed card           you put in today's whole props card (3 singles + 2 parlays)
+  entry $15 2.75x Vilardi + Traore    your own prop ticket, built your way (goes in "My entries", graded for you)
+  entry $15 flex 4.38/1.07 A + B + C + D    a flex: first number pays if all hit, second with one miss
+  entry 7 won $48  /  entry 7 lost  /  entry 7 remove    fix an entry
   props auto            count the props card as placed every day unless you skip one;  props manual  = back to telling it
   goal 10000            change the goal
   prop Brunson over 25.5 points   full workup on any player line (today or tomorrow)
@@ -17,7 +21,7 @@ or comment on any issue in the repo. Only the repo owner's comments count.
 import os, json, sys, re
 from .common import load, save, today_ct, SPORTS
 from .notify import _api, OWNER
-from . import props
+from . import props, entries
 
 
 def _amount(arg):
@@ -28,6 +32,21 @@ def _amount(arg):
 def _recent_cards():
     allc = load("props_card.json", {})
     return allc, sorted(allc, reverse=True)[:3]
+
+
+def _main_parlay(pars, num, day=None):
+    """Main-card parlay N: today's, or a given day ('parlay 1 11/14'), else the most recent one in the last 3 days."""
+    if day:
+        mm, dd = day.split("/"); want = [f"{today_ct()[:4]}-{int(mm):02d}-{int(dd):02d}"]
+    else:
+        import datetime
+        t = datetime.datetime.strptime(today_ct(), "%Y-%m-%d")
+        want = [(t - datetime.timedelta(days=i)).strftime("%Y-%m-%d") for i in range(4)]
+    for d in want:
+        x = next((x for x in pars if x["date"] == d and x["name"].endswith(num)), None)
+        if x:
+            return x
+    return None
 
 
 def placed(arg):
@@ -60,12 +79,12 @@ def placed(arg):
                 mark(e, f"{e['name']} ({d}): " + " + ".join(x["pick"] for x in e["legs"]))
                 save("props_card.json", allc); return out
         return [f"No prop parlay {m.group(1)} on the card."]
-    m = re.fullmatch(r"parlay (\d)", low)
+    m = re.fullmatch(r"parlay (\d)(?: (\d{1,2}/\d{1,2}))?", low)
     if m:
-        pars = load("parlays.json", []); d = today_ct()
-        x = next((x for x in pars if x["date"] == d and x["name"].endswith(m.group(1))), None)
+        pars = load("parlays.json", [])
+        x = _main_parlay(pars, m.group(1), m.group(2))
         if not x:
-            return [f"No parlay {m.group(1)} today."]
+            return [f"No parlay {m.group(1)} in the last few days."]
         x.pop("skipped", None)
         if x.get("decision") != "CASH":
             x["user_placed"] = True
@@ -73,7 +92,7 @@ def placed(arg):
         if x.get("units") is not None:
             x["pl"] = round(x["stake"] * x["units"], 2)
         save("parlays.json", pars)
-        return [f"Marked placed: {x['name']}: {' + '.join(x['picks'])} (${x['stake']:g})."]
+        return [f"Marked placed: {x['name']} ({x['date']}): {' + '.join(x['picks'])} (${x['stake']:g})."]
     for d in days:  # a single on the props card
         it = next((it for it in allc[d]["singles"] if low in it["pick"].lower()), None)
         if it:
@@ -105,7 +124,7 @@ def placed(arg):
 def skip(arg):
     """You did NOT place it. Mains and $15 parlays stop counting; props go back to paper."""
     name, _ = _amount(arg); low = name.lower()
-    m = re.fullmatch(r"(prop )?parlay (\d)", low)
+    m = re.fullmatch(r"(prop )?parlay (\d)(?: (\d{1,2}/\d{1,2}))?", low)
     if m and m.group(1):
         allc, days = _recent_cards()
         for d in days:
@@ -114,11 +133,11 @@ def skip(arg):
                 e["placed"] = False; save("props_card.json", allc); return [f"Marked not placed: {e['name']} ({d})."]
         return ["No prop parlay by that number."]
     if m:
-        pars = load("parlays.json", []); x = next((x for x in pars if x["date"] == today_ct() and x["name"].endswith(m.group(2))), None)
+        pars = load("parlays.json", []); x = _main_parlay(pars, m.group(2), m.group(3))
         if not x:
-            return ["No parlay by that number today."]
+            return ["No parlay by that number in the last few days."]
         x["skipped"] = True; x.pop("user_placed", None); x["pl"] = 0.0; save("parlays.json", pars)
-        return [f"Marked not placed: {x['name']}."]
+        return [f"Marked not placed: {x['name']} ({x['date']})."]
     picks = load("picks.json", [])
     hit = [p for p in picks if p.get("pick") and low in p["pick"].lower() and (p["decision"] == "CASH" or p.get("user_placed"))]
     if hit:
@@ -168,6 +187,8 @@ def handle(text):
             out += res or ["Format: prop <player> over|under <line> <stat>, e.g. prop Brunson over 25.5 points"]
         elif cmd == "placed" and arg:
             out += placed(arg)
+        elif cmd == "entry" and arg:
+            out += entries.command(arg)
         elif cmd == "help":
             out.append(__doc__)
     if out:

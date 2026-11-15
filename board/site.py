@@ -86,7 +86,7 @@ function today(){
   const goal = Math.min(1, B.now / B.goal); h += `<div class="bar"><i style="width:${(goal*100).toFixed(1)}%"></i></div><div class="mute">${pct(goal)} of the way to $${B.goal.toLocaleString()}</div>`;
   h += `<div class="card"><div class="big">${cash.length ? "Mains (" + cash.length + " of 3)" : "No mains today - pass"}</div><div class="mute">${cash.length ? "Counted as placed (Capped card) unless you comment 'skip' on one. $50 at 8.0+, $25 at 7.0-7.9." : esc(D.why_pass)}</div></div>`;
   cash.forEach(r => h += pickCard(r));
-  (D.moved||[]).forEach(p => h += `<div class="card"><div class="row"><div class="big">${esc(p.pick)}</div><span class="tag CASH">CASH $${p.stake}</span></div><div class="mute">${esc(p.sport)} - ${esc(p.game)}</div><div class="flag">${esc(p.moved)}</div><p style="margin:8px 0">Still counted as placed at $${p.stake} and will be graded when it is played. Check the ticket in your book - some books cancel bets when a game changes days.</p>${cmd("skip " + p.pick, "My book cancelled it")}</div>`);
+  (D.moved||[]).forEach(p => h += `<div class="card"><div class="row"><div class="big">${esc(p.pick)}</div><span class="tag CASH">CASH $${p.stake}</span></div><div class="mute">${esc(p.sport)} - ${esc(p.game)}</div><div class="flag">${esc(p.moved)}</div><p style="margin:8px 0">Still counted as placed at $${p.stake} and will be graded when it is played. ${p.book_ok ? "Your book kept the ticket open (you confirmed)." : "Check the ticket in your book - some books cancel bets when a game changes days."}</p>${p.book_ok ? "" : cmd("skip " + p.pick, "My book cancelled it")}</div>`);
   const pl = Object.keys(D.pulls||{}); if (pl.length) h += `<h3>Pull alerts</h3>` + pl.map(id => `<div class="card"><span class="tag PULL">PULL</span> ${esc(D.pulls[id])}</div>`).join("");
   if (D.parlays.length) h += `<h3>Parlays</h3>` + D.parlays.map(p => `<div class="card"><div class="row"><div class="big">${esc(p.name)}: ${p.picks.map(esc).join(" + ")}</div><span class="tag ${p.decision}">${p.decision}${p.stake ? " $"+p.stake : ""} ${esc(p.price)}</span></div><div class="mute">${esc(p.why)}</div></div>`).join("");
   const P = D.props || {}; const pt = (P.calls||[]).filter(x => x.date === P.today);
@@ -157,7 +157,7 @@ function record(){
   h += `</div><div class="sel">${[["cash","Placed (cash)"],["paper","Paper"],["all","All tracked"]].map(([k,l]) => `<button class="pill ${recFilter===k?"on":""}" data-rf="${k}">${l}</button>`).join("")}</div>`;
   const list = D.picks.filter(p => recFilter === "all" || (recFilter === "cash" ? p.decision === "CASH" : p.decision === "PAPER")).slice().reverse().slice(0, 400);
   h += `<div class="card"><table><tr><th>Date</th><th>Pick</th><th>Result</th><th>vs close</th></tr>${list.map(p => `<tr><td class="n">${esc(p.date.slice(5))}</td><td>${esc(p.pick)}<div class="mute">${p.sport} ${esc(p.decision)}${p.stake ? " $" + p.stake : ""}${p.conf ? " - " + p.conf : ""}${p.review === "PULL" ? " - PULLED" : ""}${p.skipped ? " - not placed" : ""}</div></td><td class="${esc(p.result||"")}">${esc(p.result || "Pending")}<div class="mute">${esc(p.final || "")}</div></td><td class="n">${p.clv != null ? sgn(p.clv) : "-"}<div class="mute">${esc(p.close || "")}</div></td></tr>`).join("") || '<tr><td colspan="4" class="mute">None yet</td></tr>'}</table></div>`;
-  h += `<div class="card"><b>Parlays</b><table>${D.all_parlays.slice().reverse().map(p => `<tr><td class="n">${esc(p.date.slice(5))}</td><td>${p.picks.map(esc).join(" + ")}<div class="mute">${p.decision} ${esc(p.price)}</div></td><td class="${esc(p.result||"")}">${esc(p.result || "Pending")}</td></tr>`).join("") || '<tr><td class="mute">None yet</td></tr>'}</table></div>`;
+  h += `<div class="card"><b>Parlays</b><table>${D.all_parlays.slice().reverse().map(p => `<tr><td class="n">${esc(p.date.slice(5))}</td><td>${p.picks.map(esc).join(" + ")}<div class="mute">${p.decision} ${esc(p.placed_price || p.price)}${p.skipped ? " - not placed, not counted" : p.user_placed ? " - you placed it at $" + p.stake : p.decision === "CASH" ? " - $" + p.stake : ""}${p.pl ? " - " + money(p.pl) : ""}</div>${p.note ? `<div class="mute">${esc(p.note)}</div>` : ""}</td><td class="${esc(p.result||"")}">${esc(p.result || "Pending")}</td></tr>`).join("") || '<tr><td class="mute">None yet</td></tr>'}</table></div>`;
   return h;
 }
 function lab(){
@@ -240,6 +240,19 @@ function propDetail(x){
   <div class="mute">Green = would have hit ${esc(x.side)} ${L}.</div></div>`;
   return h;
 }
+function myEntries(P, day){
+  const M = P.my || {list: [], record: {}}, r = M.record || {};
+  const top = []; day.filter(c => c.call === "PLAY").sort((a, b) => b.conf - a.conf).forEach(c => { if (top.length < 4 && !top.some(t => t.player === c.player)) top.push(c); });
+  const tag = e => e.result === "Won" || e.result === "Part" ? `<span class="tag CASH">${e.result === "Part" ? "Part win" : "Won"}${e.pl != null ? " " + money(e.pl) : ""}</span>` : e.result === "Lost" ? `<span class="tag PULL">Lost ${money(e.pl)}</span>` : e.result === "Check" ? `<span class="tag PAPER">Needs payout</span>` : `<span class="tag PAPER">Open</span>`;
+  const kind = e => e.flex ? `flex ${e.mult}x / ${e.flex}x` : (e.kind === "flex" ? "flex" : (e.mult ? e.mult + "x" : "payout not given")) + (e.est ? " (est.)" : "");
+  let h = `<div class="card"><b>My entries</b><div class="mute">The prop tickets you actually put in, built your way - singles, 2-picks, flexes. Real stakes and payouts. Separate from the main bankroll and from the Board's paper card.</div>
+  <div class="kpi"><div><span class="mute">Record</span><b>${r.w||0}-${r.l||0}</b></div><div><span class="mute">Put in</span><b>$${(r.staked||0).toFixed(2)}</b></div><div><span class="mute">Came back</span><b>$${(r.back||0).toFixed(2)}</b></div><div><span class="mute">Net</span><b class="${(r.pl||0) >= 0 ? "W" : "L"}">${money(r.pl||0)}</b></div></div>
+  ${r.open ? `<div class="mute">${r.open} still open.</div>` : ""}${r.need ? `<div class="flag">${r.need} settled but the Board needs the payout - say "entry N won $X".</div>` : ""}
+  <div>${cmd("entry $15 2.00x Player + Player", "Log a ticket")}${top.length === 4 ? cmd("entry $15 flex " + top.map(c => c.player).join(" + "), "I flexed today's top 4") : ""}</div>
+  <div class="mute" style="margin-top:6px">Tap, fix the amount, the multiplier and the names, then Submit. Flex: "flex 4.38/1.07" = pays 4.38x if all hit, 1.07x with one miss. The Board grades the legs itself.</div>
+  ${M.list.length ? `<table style="margin-top:8px">${M.list.map(e => `<tr><td><b>#${e.n}</b> <span class="mute">${esc(e.date.slice(5))}${e.app ? " - " + esc(e.app) : ""} - $${e.stake} ${kind(e)}</span><div>${e.legs.map(l => esc(l.pick) + (l.result ? ` <span class="${l.result === "Won" ? "W" : l.result === "Lost" ? "L" : "mute"}">(${l.actual != null ? l.actual + ", " : ""}${esc(l.result.toLowerCase())})</span>` : "")).join("<br>")}</div>${e.note ? `<div class="mute">${esc(e.note)}</div>` : ""}</td><td class="n">${tag(e)}</td></tr>`).join("")}</table>` : `<div class="mute" style="margin-top:8px">Nothing logged yet.</div>`}</div>`;
+  return h;
+}
 function propsTab(){
   const P = D.props || {calls: [], lines: [], entries: {}, dates: []};
   if (!pday) pday = P.today;
@@ -261,7 +274,8 @@ function propsTab(){
   const parlay = e => `<div class="card"><div class="row"><div class="big">${esc(e.name)}: ${e.legs.map(x => esc(x.pick) + (x.result ? ` <span class="${x.result==="Won"?"W":x.result==="Lost"?"L":"mute"}">(${esc(x.result.toLowerCase())})</span>` : "")).join(" + ")}</div>${st(e)}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs 33.3% at 3x). ${esc(e.why)}</div>${e.status==="PULL" ? `<div class="ag">Pull: ${esc(e.pull_why)}</div>` : ""}${pb(e, "prop " + e.name.toLowerCase().replace("prop ", ""))}</div>`;
   if (pday === P.today) {
     h += `<div class="card"><b>Today's props card</b><div class="mute">3 singles + 2 parlays, $15 each. These are the only props with an amount. ${P.auto ? "Mode: counted as placed unless you tap Undo." : "Mode: paper until you tap \"I placed this\"."}</div>${PC.singles.length || PC.parlays.length ? cmd("placed card", "I placed the whole card") : ""}
-    <table style="margin-top:8px"><tr><th></th><th>Record</th><th>$ (est.)</th></tr><tr><td>Card singles (all, paper)</td><td class="n">${wl(CR.singles)}</td><td class="n">${money(CR.singles?.pl)}</td></tr><tr><td>Card parlays (all, paper)</td><td class="n">${wl(CR.parlays)}</td><td class="n">${money(CR.parlays?.pl)}</td></tr><tr><td><b>What you placed</b></td><td class="n"><b>${wl(CR.placed)}</b></td><td class="n"><b>${money(CR.placed?.pl)}</b></td></tr></table></div>`;
+    <table style="margin-top:8px"><tr><th></th><th>Record</th><th>$ (est.)</th></tr><tr><td>Card singles (all, paper)</td><td class="n">${wl(CR.singles)}</td><td class="n">${money(CR.singles?.pl)}</td></tr><tr><td>Card parlays (all, paper)</td><td class="n">${wl(CR.parlays)}</td><td class="n">${money(CR.parlays?.pl)}</td></tr></table><div class="mute" style="margin-top:6px">What you actually put in is under "My entries" below.</div></div>`;
+    h += myEntries(P, day);
     h += `<h3>Prop singles (${PC.singles.length} of 3)</h3>` + (PC.singles.map(single).join("") || `<div class="card mute">No prop single yet - nothing has cleared PLAY. Slots fill as lines post.</div>`);
     h += `<h3>Prop parlays (${PC.parlays.length} of 2)</h3><div class="mute" style="margin:-4px 0 8px">2-pick at 3x: one PLAY plus one LEAN from a different game.</div>` + (PC.parlays.map(parlay).join("") || `<div class="card mute">No prop parlay yet - needs a PLAY and a LEAN from different games.</div>`);
     const PV = P.card_prev;
@@ -293,6 +307,8 @@ draw();
 
 COMMANDS = [["placed Mitchell", "You put that pick in. Works for props, paper picks and parlays. Add an amount if it wasn't the usual: placed Mitchell $20."],
             ["placed card", "You put in today's whole props card (3 singles + 2 parlays)."],
+            ["entry $15 2.75x Vilardi + Traore", "Your own prop ticket, built your way. It goes in My entries on the Props tab and the Board grades it. Flex: entry $15 flex 4.38/1.07 A + B + C + D."],
+            ["entry 7 won $48", "Fix an entry: 'entry 7 won $48', 'entry 7 lost' or 'entry 7 remove'."],
             ["placed prop parlay 1", "You put in that prop parlay. 'placed parlay 1' is the main-card parlay."],
             ["skip Raptors", "You did NOT place that ticket - it stops counting. Works for mains, parlays and props."],
             ["props auto", "Count the props card as placed every day unless you skip one. 'props manual' turns that off."],
@@ -310,7 +326,7 @@ LAB_NOTES = [
 
 
 def props_data(pr, date):
-    from . import props as P
+    from . import props as P, entries as E
     pr = pr or {"props": []}
     calls = [x for x in pr["props"] if x.get("call") in ("PLAY", "LEAN")]
     lines = [[x.get("date"), x.get("sport"), x.get("player"), x.get("label") or x.get("stat"), x.get("line"), (x.get("side") or "").title() or None,
@@ -323,7 +339,8 @@ def props_data(pr, date):
             "recent": [b for b in book if b.get("result") in ("Won", "Lost", "Push", "Void")][-30:][::-1],
             "card": prop_card(date, book), "card_prev": prop_card(prev, book) if prev else None, "card_record": P.card_record(book),
             "bands": P.bands(book), "auto": bool(load("settings.json", {}).get("props_auto")),
-            "placed_ids": [b["id"] for b in book if b.get("placed")]}
+            "placed_ids": [b["id"] for b in book if b.get("placed")],
+            "my": {"list": load("my_entries.json", [])[-40:][::-1], "record": E.record()}}
 
 
 def prop_card(date, book):
@@ -351,7 +368,7 @@ def render(cards, picks, pars, bt, btl, st, hl, pr=None):
             "reviews": load("reviews.json", []), "requests": load("requests_log.json", []), "commands": COMMANDS, "lab_notes": LAB_NOTES,
             "bars": {k: v["bar"] for k, v in SPORTS.items()}, "rules": load("rules.json", []), "props": props_data(pr, date),
             "repo": os.environ.get("GITHUB_REPOSITORY") or "jjuliancastroc-beep/board-auto", "ts": int(now.timestamp()), "today": date,
-            "moved": [{k: p.get(k) for k in ("id", "pick", "stake", "sport", "game", "moved", "start")} for p in picks
+            "moved": [{k: p.get(k) for k in ("id", "pick", "stake", "sport", "game", "moved", "start", "book_ok")} for p in picks
                       if p.get("moved") and p["result"] is None and grade.counts(p) and p["id"] not in {r["id"] for c in cards for r in c["games"]}],
             "skipped": {p["id"]: True for p in picks if p["date"] == date and p.get("skipped")},
             "user_placed": {p["id"]: p.get("stake") for p in picks if p["date"] == date and p.get("user_placed")}}

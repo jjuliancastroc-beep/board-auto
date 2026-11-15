@@ -3,7 +3,7 @@ Usage: python -m board.run   (or --date YYYY-MM-DD, --weekly to force the weekly
 """
 import sys, traceback
 from .common import today_ct, load, save, SPORTS, now_ct
-from . import card, grade, site, review, notify, props
+from . import card, grade, site, review, notify, props, entries
 import datetime
 
 
@@ -48,6 +48,7 @@ def main():
     pr = {"props": [], "note": "Props did not run."}
     try:
         props.grade(); props.grade_lines()
+        entries.sync(); entries.grade()  # your own prop tickets (My entries)
         tmr = (datetime.datetime.strptime(date, "%Y-%m-%d") + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         pr = props.build([date, tmr], cards_by_id={r["id"]: r for c in cards for r in c["games"]})
         props.log(pr["props"]); props.log_lines(pr["props"])

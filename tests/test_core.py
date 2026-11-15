@@ -166,6 +166,60 @@ class Placed(unittest.TestCase):
 
 
 
+class MyEntries(unittest.TestCase):
+    """Your own prop tickets: logged your way, graded from the box score, never mixed into the bankroll."""
+    def setUp(self):
+        from board import entries, commands, common
+        self.e = entries; self.c = commands; d = self.d = common.today_ct()
+        mk = lambda i, name, side, line, actual, res, call="PLAY": {"id": f"{d}|{i}|s", "player": name, "pick": f"{name} {side} {line:g} Points", "label": "Points", "side": side.lower(),
+                                                                    "line": line, "date": d, "call": call, "conf": 8.0, "actual": actual, "result": res, "odds": "-110", "placed": False}
+        self.store = {"props.json": [mk(1, "Gabe Vilardi", "Higher", 1.5, 7, "Won"), mk(2, "Nolan Traore", "Higher", 10.5, 11, "Won"), mk(3, "Neal Pionk", "Higher", 1.5, 1, "Lost"),
+                                     mk(4, "Danny Wolf", "Higher", 7.5, 7, "Lost"), mk(5, "Open Guy", "Lower", 9.5, None, None)],
+                      "props_card.json": {d: {"singles": [{"id": f"{d}|5|s", "pick": "Open Guy Lower 9.5 Points", "status": "OPEN", "stake": 15, "odds": "-110"}], "parlays": []}},
+                      "parlays.json": [{"date": d, "name": "Parlay 1", "picks": ["A", "B"], "decision": "CASH", "stake": 15, "result": "Won", "units": 2.45, "pl": 36.75}], "settings.json": {}}
+        self.keep = (common.load, common.save)
+        ld = lambda n, default=None: self.store.get(n, default); sv = lambda n, v: self.store.__setitem__(n, v)
+        for m in (entries, commands):
+            m.load = ld; m.save = sv
+
+    def tearDown(self):
+        for m in (self.e, self.c):
+            m.load, m.save = self.keep
+
+    def test_entries(self):
+        E = self.e; ents = lambda: self.store["my_entries.json"]
+        out = self.c.handle("entry $10 2.75x Vilardi + Traore")
+        assert "Entry 1 logged" in out[0] and ents()[0]["result"] == "Won" and ents()[0]["payout"] == 27.5 and ents()[0]["pl"] == 17.5
+        E.command("$15 flex 4.38/1.07 Vilardi + Traore + Pionk")          # one miss: the flex still pays its smaller number
+        assert ents()[1]["result"] == "Part" and ents()[1]["payout"] == 16.05
+        E.command("$15 1.83x Wolf points 6.5")                              # your app's line (6.5) beats the Board's (7.5): 7 points wins
+        assert ents()[2]["legs"][0]["line"] == 6.5 and ents()[2]["result"] == "Won" and ents()[2]["payout"] == 27.45
+        E.command("$15 2x Wolf + Open Guy")                                 # one leg already lost - dead, even with a leg still to play
+        assert ents()[3]["result"] == "Lost" and ents()[3]["pl"] == -15
+        E.command("$15 Somebody Else + Vilardi")                            # a pick the Board doesn't have: kept, waits for your word
+        assert ents()[4]["result"] is None and ents()[4]["legs"][0]["id"] is None
+        assert "paid $48.00" in E.command("5 won $48")[0] and ents()[4]["pl"] == 33
+        r = E.record(ents())
+        assert (r["w"], r["l"], r["pl"]) == (4, 1, round(17.5 + 1.05 + 12.45 - 15 + 33, 2))
+        E.command("4 remove"); assert len(ents()) == 4
+
+    def test_tap_becomes_entry_and_undo_removes_it(self):
+        E = self.e
+        self.c.placed("Open Guy"); E.sync()
+        ents = self.store["my_entries.json"]
+        assert len(ents) == 1 and ents[0]["source"] == "tap" and ents[0]["est"] and ents[0]["stake"] == 15
+        E.sync(); assert len(self.store["my_entries.json"]) == 1            # not doubled on the next run
+        self.c.skip("Open Guy"); E.sync(); assert self.store["my_entries.json"] == []
+
+    def test_skip_an_older_parlay(self):
+        import datetime
+        y = (datetime.datetime.strptime(self.d, "%Y-%m-%d") - datetime.timedelta(days=1))
+        self.store["parlays.json"][0]["date"] = y.strftime("%Y-%m-%d")
+        assert "Marked not placed" in self.c.skip(f"parlay 1 {y.month}/{y.day}")[0]
+        x = self.store["parlays.json"][0]; assert x["skipped"] and x["pl"] == 0.0
+        self.c.placed("parlay 1"); assert not x.get("skipped") and x["pl"] == 36.75   # finds yesterday's when today has none
+
+
 class Moved(unittest.TestCase):
     """A game that changes days keeps its ticket: not voided, not doubled, not counted against the new day's slots."""
     def test_moved_game(self):
