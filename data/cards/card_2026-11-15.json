@@ -141,11 +141,11 @@
     "playable_to": null,
     "sim_cover": 0.565,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -166,7 +166,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": -3.1
    },
@@ -305,11 +305,11 @@
     "playable_to": null,
     "sim_cover": 0.563,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -330,7 +330,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 6.9,
     "total_lean": "Over 37.5 (season scoring says 44.4) - WATCH only, totals have no past-games test yet"
@@ -807,7 +807,7 @@
     "flags": [],
     "factors": [
      "Rest: Texans 7 day(s), Browns 7 day(s)",
-     "Kickoff forecast: wind 12 mph (gusts 14), 45F, rain chance 7%"
+     "Kickoff forecast: wind 12 mph (gusts 14), 45F, rain chance 13%"
     ],
     "against": [
      "Last 5 games point the other way (our side -4.2 a game, theirs +7.6)"
@@ -818,7 +818,7 @@
     "wind": {
      "wind": 11.5,
      "gust": 14.3,
-     "rain": 7,
+     "rain": 13,
      "temp": 44.8,
      "src": "Open-Meteo"
     },
@@ -1070,6 +1070,149 @@
     "total_gap": 0.9
    },
    {
+    "id": "401873064",
+    "sport": "NFL",
+    "game": "Pittsburgh Steelers @ Cincinnati Bengals",
+    "home": "Cincinnati Bengals",
+    "away": "Pittsburgh Steelers",
+    "time": "Sun 7:20 PM CT",
+    "start": "2026-11-16T01:20Z",
+    "book": "DraftKings",
+    "line": "CIN -3.5",
+    "home_line": -3.5,
+    "home_line_open": -3.5,
+    "spread_odds": [
+     -112,
+     -108
+    ],
+    "total": 49.5,
+    "total_open": 47.5,
+    "home_ml": -185,
+    "away_ml": 154,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": 6.3,
+    "model_b": 4.7,
+    "games_played": [
+     8,
+     8
+    ],
+    "neutral": false,
+    "records": [
+     "6-2",
+     "6-2"
+    ],
+    "venue": "Paycor Stadium",
+    "tv": "NBC",
+    "indoor": false,
+    "inj_home": [
+     {
+      "player": "Kyle Dugger",
+      "pos": "S",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Derrick Harmon",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "player": "Pat Freiermuth",
+      "pos": "TE",
+      "status": "Questionable"
+     }
+    ],
+    "stars": [
+     [
+      "Aaron Rodgers",
+      "DK Metcalf",
+      "Jaylen Warren"
+     ],
+     [
+      "Chase Brown",
+      "Joe Burrow",
+      "Tee Higgins"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     14,
+     7
+    ],
+    "form5": [
+     8.6,
+     9.6
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Steelers 14 day(s), Bengals 7 day(s)",
+     "Kickoff forecast: wind 6 mph (gusts 10), 41F, rain chance 1%"
+    ],
+    "against": [
+     "Laying -3.5 - just past a key number (3)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "wind": {
+     "wind": 5.8,
+     "gust": 10.1,
+     "rain": 1,
+     "temp": 40.8,
+     "src": "Open-Meteo"
+    },
+    "weather": {
+     "text": "Partly cloudy",
+     "temp": 39
+    },
+    "total_model": 46.2,
+    "gap_a": 2.8,
+    "gap_b": 1.2,
+    "gap_min": 2.8,
+    "pick": "Cincinnati Bengals -3.5",
+    "price": -108,
+    "side": "home",
+    "fair_line": -5.5,
+    "playable_to": null,
+    "sim_cover": 0.562,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.1,
+    "components": {
+     "efficiency": 0.47,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": -3.3
+   },
+   {
     "id": "401873063",
     "sport": "NFL",
     "game": "San Francisco 49ers @ Dallas Cowboys",
@@ -1270,149 +1413,6 @@
     "total_lean": "Under 55.5 (season scoring says 51.2) - WATCH only, totals have no past-games test yet"
    },
    {
-    "id": "401873064",
-    "sport": "NFL",
-    "game": "Pittsburgh Steelers @ Cincinnati Bengals",
-    "home": "Cincinnati Bengals",
-    "away": "Pittsburgh Steelers",
-    "time": "Sun 7:20 PM CT",
-    "start": "2026-11-16T01:20Z",
-    "book": "DraftKings",
-    "line": "CIN -3.5",
-    "home_line": -3.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 49.5,
-    "total_open": 47.5,
-    "home_ml": -185,
-    "away_ml": 154,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 6.3,
-    "model_b": 4.7,
-    "games_played": [
-     8,
-     8
-    ],
-    "neutral": false,
-    "records": [
-     "6-2",
-     "6-2"
-    ],
-    "venue": "Paycor Stadium",
-    "tv": "NBC",
-    "indoor": false,
-    "inj_home": [
-     {
-      "player": "Kyle Dugger",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Derrick Harmon",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Pat Freiermuth",
-      "pos": "TE",
-      "status": "Questionable"
-     }
-    ],
-    "stars": [
-     [
-      "Aaron Rodgers",
-      "DK Metcalf",
-      "Jaylen Warren"
-     ],
-     [
-      "Chase Brown",
-      "Joe Burrow",
-      "Tee Higgins"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     14,
-     7
-    ],
-    "form5": [
-     8.6,
-     9.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Steelers 14 day(s), Bengals 7 day(s)",
-     "Kickoff forecast: wind 6 mph (gusts 10), 41F, rain chance 1%"
-    ],
-    "against": [
-     "Laying -3.5 - just past a key number (3)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "wind": {
-     "wind": 5.8,
-     "gust": 10.1,
-     "rain": 1,
-     "temp": 40.8,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "Partly cloudy",
-     "temp": 39
-    },
-    "total_model": 46.2,
-    "gap_a": 2.8,
-    "gap_b": 1.2,
-    "gap_min": 2.8,
-    "pick": "Cincinnati Bengals -3.5",
-    "price": -108,
-    "side": "home",
-    "fair_line": -5.5,
-    "playable_to": null,
-    "sim_cover": 0.562,
-    "history": {
-     "adj": -0.09,
-     "key": "spread fav",
-     "w": 33,
-     "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.0,
-    "components": {
-     "efficiency": 0.47,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.09
-    },
-    "total_gap": -3.3
-   },
-   {
     "id": "401873057",
     "sport": "NFL",
     "game": "Jacksonville Jaguars @ Tennessee Titans",
@@ -1538,11 +1538,11 @@
     "playable_to": null,
     "sim_cover": 0.508,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -1563,7 +1563,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": -3.2
    },
@@ -1739,11 +1739,11 @@
     "playable_to": null,
     "sim_cover": 0.509,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -1754,7 +1754,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 4.4,
+    "conf": 4.5,
     "components": {
      "efficiency": 0.23,
      "veto": 1.5,
@@ -1764,7 +1764,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": -0.3
    },
@@ -2223,7 +2223,7 @@
     "factors": [
      "Rest: Rebels 8 day(s), Sooners 8 day(s)",
      "Line moved 1.5 pts toward Ole Miss Rebels since open (-4 to -2.5 home)",
-     "Kickoff forecast: wind 9 mph (gusts 14), 43F, rain chance 82%",
+     "Kickoff forecast: wind 9 mph (gusts 14), 43F, rain chance 85%",
      "Last 5 games agree (our side +9.8 a game, theirs +0.4)"
     ],
     "against": [
@@ -2238,7 +2238,7 @@
     "wind": {
      "wind": 9.1,
      "gust": 13.9,
-     "rain": 82,
+     "rain": 85,
      "temp": 42.9,
      "src": "Open-Meteo"
     },
@@ -2291,7 +2291,7 @@
     "moved": "Game moved to Sun 11/15 12:00 PM CT (was Sat 3:15 PM)."
    }
   ],
-  "n_past": 749,
+  "n_past": 751,
   "model_note": "FPI and an opponent-adjusted ratings model from every FBS game this season. Checks QB status, weather and wind, conference tier and weekday (L-1112-1), key numbers."
  },
  {
@@ -2416,11 +2416,11 @@
     "playable_to": null,
     "sim_cover": 0.583,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -2441,7 +2441,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 3.5
    },
@@ -2458,8 +2458,8 @@
     "home_line": 4.5,
     "home_line_open": 3.5,
     "spread_odds": [
-     -110,
-     -110
+     -106,
+     -115
     ],
     "total": 217.5,
     "total_open": 217.5,
@@ -2546,17 +2546,17 @@
     "gap_b": -4.7,
     "gap_min": 4.7,
     "pick": "New York Knicks -4.5",
-    "price": -110,
+    "price": -106,
     "side": "away",
     "fair_line": -4.6,
     "playable_to": null,
     "sim_cover": 0.502,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -2577,7 +2577,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 2.7
    },
@@ -2835,11 +2835,11 @@
     "playable_to": null,
     "sim_cover": 0.559,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -2850,7 +2850,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.1,
+    "conf": 5.2,
     "components": {
      "efficiency": 0.23,
      "veto": 1.5,
@@ -2860,7 +2860,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 5.6
    },
@@ -3313,11 +3313,11 @@
     "playable_to": null,
     "sim_cover": 0.531,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -3338,7 +3338,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 2.2
    },
@@ -3355,10 +3355,10 @@
     "home_line": 17.5,
     "home_line_open": 17.5,
     "spread_odds": [
-     -105,
-     -115
+     null,
+     null
     ],
-    "total": 223.5,
+    "total": 224.5,
     "total_open": 224.5,
     "home_ml": 850,
     "away_ml": -1460,
@@ -3459,17 +3459,17 @@
     "gap_b": -8.1,
     "gap_min": 8.1,
     "pick": "San Antonio Spurs -17.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": -18.6,
     "playable_to": null,
     "sim_cover": 0.536,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -3490,9 +3490,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
-    "total_gap": 2.4
+    "total_gap": 1.4
    },
    {
     "id": "401909985",
@@ -4864,13 +4864,13 @@
     "home_line": 2.5,
     "home_line_open": 3.5,
     "spread_odds": [
-     -118,
-     -102
+     -110,
+     -110
     ],
-    "total": 146.5,
+    "total": 145.5,
     "total_open": 147.5,
-    "home_ml": 120,
-    "away_ml": -142,
+    "home_ml": 124,
+    "away_ml": -148,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 2.4,
@@ -4933,7 +4933,7 @@
     "gap_b": 1.7,
     "gap_min": 4.9,
     "pick": "Holy Cross Crusaders +2.5",
-    "price": -102,
+    "price": -110,
     "side": "home",
     "fair_line": -0.8,
     "playable_to": null,
@@ -4966,7 +4966,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": 3.7
+    "total_gap": 4.7
    },
    {
     "id": "401921168",
@@ -5056,11 +5056,11 @@
     "playable_to": null,
     "sim_cover": 0.62,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5081,7 +5081,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": 10.6,
     "total_lean": "Over 145.5 (season scoring says 156.1) - WATCH only, totals have no past-games test yet"
@@ -5645,11 +5645,11 @@
     "playable_to": null,
     "sim_cover": 0.626,
     "history": {
-     "adj": -0.09,
+     "adj": -0.06,
      "key": "spread fav",
-     "w": 33,
+     "w": 34,
      "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5670,7 +5670,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.09
+     "our history": -0.06
     },
     "total_gap": -0.2
    },
@@ -6045,7 +6045,7 @@
      -102,
      -118
     ],
-    "total": 142.5,
+    "total": 143.5,
     "total_open": 143.5,
     "home_ml": -950,
     "away_ml": 625,
@@ -6143,8 +6143,8 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": 10.8,
-    "total_lean": "Over 142.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
+    "total_gap": 9.8,
+    "total_lean": "Over 143.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920124",
@@ -6606,52 +6606,51 @@
     "total_gap": 2.1
    },
    {
-    "id": "401920235",
+    "id": "401912210",
     "sport": "CBB",
-    "game": "Dartmouth Big Green @ Boston University Terriers",
-    "home": "Boston University Terriers",
-    "away": "Dartmouth Big Green",
+    "game": "Harvard Crimson @ American University Eagles",
+    "home": "American University Eagles",
+    "away": "Harvard Crimson",
     "time": "Sun 12:00 PM CT",
     "start": "2026-11-15T18:00Z",
     "book": "DraftKings",
-    "line": "BU -3.5",
-    "home_line": -3.5,
-    "home_line_open": -3.5,
+    "line": "AMER -1.5",
+    "home_line": -1.5,
+    "home_line_open": -1.5,
     "spread_odds": [
-     -115,
-     -105
+     -125,
+     105
     ],
-    "total": 143.5,
-    "total_open": 145.5,
-    "home_ml": -148,
-    "away_ml": 124,
+    "total": 132.5,
+    "total_open": 131.5,
+    "home_ml": -112,
+    "away_ml": -108,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": 3.0,
-    "model_b": 2.2,
+    "model_a": 5.2,
+    "model_b": -1.6,
     "games_played": [
      4,
-     4
+     3
     ],
     "neutral": false,
     "records": [
-     "3-1",
-     "3-1"
+     "2-2",
+     "1-2"
     ],
-    "venue": "Case Gym",
-    "tv": "ESPN+, Patriot League TV",
+    "venue": "Bender Arena",
+    "tv": "ESPN+",
     "indoor": true,
     "inj_home": [],
     "inj_away": [],
     "stars": [
      [
-      "Cameron McNamee",
-      "Landon Williams"
+      "Ben Eisendrath",
+      "Thomas Batties II"
      ],
      [
-      "Azmar Abdullah",
-      "Kyrone Alexander",
-      "Michelangelo Oberti"
+      "Julen Iturbe",
+      "Madden Collins"
      ]
     ],
     "goalies": [
@@ -6659,12 +6658,12 @@
      null
     ],
     "rest": [
-     4,
-     3
+     2,
+     4
     ],
     "form5": [
-     9.8,
-     5.5
+     3.0,
+     null
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
@@ -6672,29 +6671,29 @@
      "Early season: under 5 games for a team - prior-heavy"
     ],
     "factors": [
-     "Rest: Green 4 day(s), Terriers 3 day(s)",
+     "Rest: Crimson 2 day(s), Eagles 4 day(s)",
      "Indoors - weather does not matter"
     ],
     "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
-    "total_model": 152.0,
-    "gap_a": -0.5,
-    "gap_b": -1.3,
-    "gap_min": 1.3,
-    "pick": "Dartmouth Big Green +3.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 2.6,
+    "total_model": 133.8,
+    "gap_a": 3.7,
+    "gap_b": -3.1,
+    "gap_min": 3.7,
+    "pick": "American University Eagles -1.5",
+    "price": 105,
+    "side": "home",
+    "fair_line": -1.8,
     "playable_to": null,
-    "sim_cover": 0.532,
+    "sim_cover": 0.512,
     "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6707,7 +6706,7 @@
     "veto": false,
     "conf": 5.4,
     "components": {
-     "efficiency": 0.14,
+     "efficiency": 0.42,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
@@ -6715,10 +6714,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": -0.06
     },
-    "total_gap": 8.5,
-    "total_lean": "Over 143.5 (season scoring says 152.0) - WATCH only, totals have no past-games test yet"
+    "total_gap": 1.3
    },
    {
     "id": "401911251",
@@ -6736,7 +6734,7 @@
      -118,
      -102
     ],
-    "total": 163.5,
+    "total": 162.5,
     "total_open": 163.5,
     "home_ml": -258,
     "away_ml": 210,
@@ -6834,8 +6832,8 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": -7.8,
-    "total_lean": "Under 163.5 (season scoring says 155.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": -6.8,
+    "total_lean": "Under 162.5 (season scoring says 155.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401926073",
@@ -6954,119 +6952,6 @@
     },
     "total_gap": 7.3,
     "total_lean": "Over 157.5 (season scoring says 164.8) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401912210",
-    "sport": "CBB",
-    "game": "Harvard Crimson @ American University Eagles",
-    "home": "American University Eagles",
-    "away": "Harvard Crimson",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "DraftKings",
-    "line": "AMER -1.5",
-    "home_line": -1.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -125,
-     105
-    ],
-    "total": 131.5,
-    "total_open": 131.5,
-    "home_ml": -112,
-    "away_ml": -108,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 5.2,
-    "model_b": -1.6,
-    "games_played": [
-     4,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "2-2",
-     "1-2"
-    ],
-    "venue": "Bender Arena",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Ben Eisendrath",
-      "Thomas Batties II"
-     ],
-     [
-      "Julen Iturbe",
-      "Madden Collins"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     4
-    ],
-    "form5": [
-     3.0,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Crimson 2 day(s), Eagles 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 133.8,
-    "gap_a": 3.7,
-    "gap_b": -3.1,
-    "gap_min": 3.7,
-    "pick": "American University Eagles -1.5",
-    "price": 105,
-    "side": "home",
-    "fair_line": -1.8,
-    "playable_to": null,
-    "sim_cover": 0.512,
-    "history": {
-     "adj": -0.09,
-     "key": "spread fav",
-     "w": 33,
-     "l": 37,
-     "text": "Our record on spread fav: 33-37 (last 60 days, recent counts more) -> -0.09 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.42,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.09
-    },
-    "total_gap": 2.3
    },
    {
     "id": "401918453",
@@ -7438,8 +7323,8 @@
     ],
     "total": 147.5,
     "total_open": 147.5,
-    "home_ml": -100000,
-    "away_ml": 5000,
+    "home_ml": -50000,
+    "away_ml": 4000,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 21.8,
@@ -7660,6 +7545,123 @@
     },
     "total_gap": 6.3,
     "total_lean": "Over 146.5 (season scoring says 152.8) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401920235",
+    "sport": "CBB",
+    "game": "Dartmouth Big Green @ Boston University Terriers",
+    "home": "Boston University Terriers",
+    "away": "Dartmouth Big Green",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "DraftKings",
+    "line": "BU -2.5",
+    "home_line": -2.5,
+    "home_line_open": -3.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 143.5,
+    "total_open": 145.5,
+    "home_ml": -148,
+    "away_ml": 124,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 3.0,
+    "model_b": 2.2,
+    "games_played": [
+     4,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "3-1",
+     "3-1"
+    ],
+    "venue": "Case Gym",
+    "tv": "ESPN+, Patriot League TV",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Cameron McNamee",
+      "Landon Williams"
+     ],
+     [
+      "Azmar Abdullah",
+      "Kyrone Alexander",
+      "Michelangelo Oberti"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     3
+    ],
+    "form5": [
+     9.8,
+     5.5
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Green 4 day(s), Terriers 3 day(s)",
+     "Line moved 1 pts toward Dartmouth Big Green since open (-3.5 to -2.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 152.0,
+    "gap_a": 0.5,
+    "gap_b": -0.3,
+    "gap_min": 0.5,
+    "pick": "Boston University Terriers -2.5",
+    "price": -112,
+    "side": "home",
+    "fair_line": -2.6,
+    "playable_to": null,
+    "sim_cover": 0.504,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.0,
+    "components": {
+     "efficiency": 0.06,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": 8.5,
+    "total_lean": "Over 143.5 (season scoring says 152.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920065",
