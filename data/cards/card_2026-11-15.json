@@ -3,390 +3,6 @@
   "sport": "NFL",
   "games": [
    {
-    "id": "401873061",
-    "sport": "NFL",
-    "game": "Los Angeles Rams @ Arizona Cardinals",
-    "home": "Arizona Cardinals",
-    "away": "Los Angeles Rams",
-    "time": "Sun 3:05 PM CT",
-    "start": "2026-11-15T21:05Z",
-    "book": "Draft Kings",
-    "line": "LAR -9.5",
-    "home_line": 9.5,
-    "home_line_open": 10.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 38.5,
-    "total_open": 47.5,
-    "home_ml": 380,
-    "away_ml": -500,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -10.3,
-    "model_b": -4.8,
-    "games_played": [
-     9,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "5-4",
-     "3-6"
-    ],
-    "venue": "State Farm Stadium",
-    "tv": "CBS",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Hunter Long",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Jayden Williams",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Jon Gaines II",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Hjalte Froholdt",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Andrew Wingard",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "player": "Darius Robinson",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Max Melton",
-      "pos": "CB",
-      "status": "Questionable"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Steve Avila",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Trent McDuffie",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Kam Curl",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "player": "Davis Allen",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Myles Garrett",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Joe Cardona",
-      "pos": "LS",
-      "status": "Questionable"
-     }
-    ],
-    "stars": [
-     [
-      "Kyren Williams",
-      "Matthew Stafford",
-      "Tyler Higbee"
-     ],
-     [
-      "Trey McBride",
-      "Tyler Allgeier"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     6.2,
-     -9.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Rams 7 day(s), Cardinals 7 day(s)",
-     "Line moved 1 pts toward Arizona Cardinals since open (+10.5 to +9.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -9.4 a game, theirs +6.2)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "total_model": 46.0,
-    "gap_a": -0.8,
-    "gap_b": 4.7,
-    "gap_min": 4.7,
-    "pick": "Arizona Cardinals +9.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": 7.5,
-    "playable_to": null,
-    "sim_cover": 0.56,
-    "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.8,
-    "components": {
-     "efficiency": 0.78,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": 7.5,
-    "total_lean": "Over 38.5 (season scoring says 46.0) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401873063",
-    "sport": "NFL",
-    "game": "San Francisco 49ers @ Dallas Cowboys",
-    "home": "Dallas Cowboys",
-    "away": "San Francisco 49ers",
-    "time": "Sun 3:25 PM CT",
-    "start": "2026-11-15T21:25Z",
-    "book": "Draft Kings",
-    "line": "SF -4.5",
-    "home_line": 4.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 55.5,
-    "total_open": 52.5,
-    "home_ml": 180,
-    "away_ml": -218,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -2.5,
-    "model_b": -3.7,
-    "games_played": [
-     8,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "7-1",
-     "4-5"
-    ],
-    "venue": "AT&T Stadium",
-    "tv": "Fox",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Joey Porter Jr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "DaRon Bland",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Jonathan Bullard",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Donovan Ezeiruaku",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "player": "Jonathan Mingo",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "player": "Juanyeh Thomas",
-      "pos": "S",
-      "status": "Doubtful"
-     },
-     {
-      "player": "Alijah Clark",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "player": "P.J. Locke",
-      "pos": "S",
-      "status": "Out"
-     },
-     {
-      "player": "Jake Ferguson",
-      "pos": "TE",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Mike Evans",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "player": "Trent Williams",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Renardo Green",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Deommodore Lenoir",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Dre Greenlaw",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Upton Stout",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Brandon Aiyuk",
-      "pos": "WR",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Brock Purdy",
-      "Christian McCaffrey",
-      "George Kittle"
-     ],
-     [
-      "CeeDee Lamb",
-      "Dak Prescott",
-      "Javonte Williams"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     6.2,
-     0.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: 49ers 7 day(s), Cowboys 7 day(s)",
-     "Line moved 6 pts toward San Francisco 49ers since open (-1.5 to +4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +0.0 a game, theirs +6.2)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "total_model": 51.2,
-    "gap_a": 2.0,
-    "gap_b": 0.8,
-    "gap_min": 2.0,
-    "pick": "Dallas Cowboys +4.5",
-    "price": -112,
-    "side": "home",
-    "fair_line": 3.1,
-    "playable_to": null,
-    "sim_cover": 0.543,
-    "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.33,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": -4.3,
-    "total_lean": "Under 55.5 (season scoring says 51.2) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401873064",
     "sport": "NFL",
     "game": "Pittsburgh Steelers @ Cincinnati Bengals",
@@ -480,7 +96,7 @@
     "flags": [],
     "factors": [
      "Rest: Steelers 14 day(s), Bengals 7 day(s)",
-     "Kickoff forecast: wind 4 mph (gusts 12), 39F, rain chance 0%"
+     "Kickoff forecast: wind 4 mph (gusts 10), 39F, rain chance 0%"
     ],
     "against": [
      "Laying -3.5 - just past a key number (3)"
@@ -489,10 +105,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 4.3,
-     "gust": 11.9,
+     "wind": 4.1,
+     "gust": 10.1,
      "rain": 0,
-     "temp": 38.9,
+     "temp": 39.1,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -577,25 +193,40 @@
     "indoor": true,
     "inj_home": [
      {
+      "player": "Malik Benson",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
       "player": "Thomas Booker IV",
       "pos": "DT",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "player": "Dont'e Thornton Jr.",
       "pos": "WR",
-      "status": "Questionable"
+      "status": "Out"
+     },
+     {
+      "player": "Tristin McCollum",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Dalton Johnson",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Bryce Cabeldue",
+      "pos": "G",
+      "status": "Out"
      }
     ],
     "inj_away": [
      {
-      "player": "Quenton Nelson",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Charles Cross",
-      "pos": "OT",
+      "player": "Emanuel Wilson",
+      "pos": "RB",
       "status": "Out"
      },
      {
@@ -604,15 +235,35 @@
       "status": "Out"
      },
      {
+      "player": "Quenton Nelson",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Avery Smith",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Charles Cross",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
       "player": "Sam Darnold",
       "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Deven Eastern",
+      "pos": "DT",
       "status": "Out"
      }
     ],
     "stars": [
      [
       "Drew Lock",
-      "Emanuel Wilson",
+      "Jadarian Price",
       "Jaxon Smith-Njigba"
      ],
      [
@@ -664,11 +315,11 @@
     "playable_to": null,
     "sim_cover": 0.569,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -689,10 +340,396 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": 8.9,
     "total_lean": "Over 40.5 (season scoring says 49.4) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401873063",
+    "sport": "NFL",
+    "game": "San Francisco 49ers @ Dallas Cowboys",
+    "home": "Dallas Cowboys",
+    "away": "San Francisco 49ers",
+    "time": "Sun 3:25 PM CT",
+    "start": "2026-11-15T21:25Z",
+    "book": "Draft Kings",
+    "line": "SF -4.5",
+    "home_line": 4.5,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 55.5,
+    "total_open": 52.5,
+    "home_ml": 180,
+    "away_ml": -218,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": -2.5,
+    "model_b": -3.7,
+    "games_played": [
+     8,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "7-1",
+     "4-5"
+    ],
+    "venue": "AT&T Stadium",
+    "tv": "Fox",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Juanyeh Thomas",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Jonathan Mingo",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Derion Kendrick",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "P.J. Locke",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Ajani Cornelius",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Donovan Ezeiruaku",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Jake Ferguson",
+      "pos": "TE",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Kurtis Rourke",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Tatum Bethune",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Brandin Cooks",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Enrique Cruz Jr.",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Mike Evans",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Trent Williams",
+      "pos": "OT",
+      "status": "Questionable"
+     },
+     {
+      "player": "Brandon Aiyuk",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Brock Purdy",
+      "Christian McCaffrey",
+      "George Kittle"
+     ],
+     [
+      "CeeDee Lamb",
+      "Dak Prescott",
+      "Javonte Williams"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     6.2,
+     0.0
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Kurtis Rourke (San Francisco 49ers) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Kurtis Rourke (San Francisco 49ers) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: 49ers 7 day(s), Cowboys 7 day(s)",
+     "Line moved 6 pts toward San Francisco 49ers since open (-1.5 to +4.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +0.0 a game, theirs +6.2)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "total_model": 51.2,
+    "veto_sides": [
+     "game"
+    ],
+    "gap_a": 2.0,
+    "gap_b": 0.8,
+    "gap_min": 2.0,
+    "pick": "Dallas Cowboys +4.5",
+    "price": -112,
+    "side": "home",
+    "fair_line": 3.1,
+    "playable_to": null,
+    "sim_cover": 0.543,
+    "history": {
+     "adj": 0.25,
+     "key": "spread dog",
+     "w": 91,
+     "l": 64,
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 3.0,
+    "components": {
+     "efficiency": 0.33,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": -4.3,
+    "total_lean": "Under 55.5 (season scoring says 51.2) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401873061",
+    "sport": "NFL",
+    "game": "Los Angeles Rams @ Arizona Cardinals",
+    "home": "Arizona Cardinals",
+    "away": "Los Angeles Rams",
+    "time": "Sun 3:05 PM CT",
+    "start": "2026-11-15T21:05Z",
+    "book": "Draft Kings",
+    "line": "LAR -9.5",
+    "home_line": 9.5,
+    "home_line_open": 10.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 38.5,
+    "total_open": 47.5,
+    "home_ml": 380,
+    "away_ml": -500,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": -10.3,
+    "model_b": -4.8,
+    "games_played": [
+     9,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "5-4",
+     "3-6"
+    ],
+    "venue": "State Farm Stadium",
+    "tv": "CBS",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Joey Aguilar",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Jayden Williams",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Starling Thomas V",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Eku Leota",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Hjalte Froholdt",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Jon Gaines II",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Ty Simpson",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Keagen Trost",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Darryl Peterson III",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Maximus Pulley",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Desjuan Johnson",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "player": "Joe Cardona",
+      "pos": "LS",
+      "status": "Out"
+     },
+     {
+      "player": "Steve Avila",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Kyren Williams",
+      "Matthew Stafford",
+      "Tyler Higbee"
+     ],
+     [
+      "Trey McBride",
+      "Tyler Allgeier"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     6.2,
+     -9.4
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Ty Simpson (Los Angeles Rams) Out - QB rule: no bet on this game until settled; QB Joey Aguilar (Arizona Cardinals) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Ty Simpson (Los Angeles Rams) Out - QB rule: no bet on this game until settled",
+     "QB Joey Aguilar (Arizona Cardinals) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Rams 7 day(s), Cardinals 7 day(s)",
+     "Line moved 1 pts toward Arizona Cardinals since open (+10.5 to +9.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -9.4 a game, theirs +6.2)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "total_model": 46.0,
+    "veto_sides": [
+     "game",
+     "game"
+    ],
+    "gap_a": -0.8,
+    "gap_b": 4.7,
+    "gap_min": 4.7,
+    "pick": "Arizona Cardinals +9.5",
+    "price": -105,
+    "side": "home",
+    "fair_line": 7.5,
+    "playable_to": null,
+    "sim_cover": 0.56,
+    "history": {
+     "adj": 0.25,
+     "key": "spread dog",
+     "w": 91,
+     "l": 64,
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": true,
+    "conf": 2.8,
+    "components": {
+     "efficiency": 0.78,
+     "veto": 0.0,
+     "models": 0.5,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": 7.5,
+    "total_lean": "Over 38.5 (season scoring says 46.0) - WATCH only, totals have no past-games test yet"
    }
   ],
   "n_past": 136,
@@ -827,11 +864,11 @@
     "playable_to": null,
     "sim_cover": 0.673,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -852,7 +889,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": 5.5
    },
@@ -963,11 +1000,11 @@
     "playable_to": null,
     "sim_cover": 0.53,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -988,7 +1025,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": 2.7
    },
@@ -1265,11 +1302,11 @@
     "playable_to": null,
     "sim_cover": 0.647,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1290,7 +1327,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.2,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": 3.6
    },
@@ -1312,8 +1349,8 @@
     ],
     "total": 233.5,
     "total_open": 232.5,
-    "home_ml": 249,
-    "away_ml": -308,
+    "home_ml": 261,
+    "away_ml": -324,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -5.3,
@@ -1422,11 +1459,11 @@
     "playable_to": null,
     "sim_cover": 0.537,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1437,7 +1474,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.2,
+    "conf": 5.3,
     "components": {
      "efficiency": 0.36,
      "veto": 1.5,
@@ -1447,7 +1484,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": -2.8
    },
@@ -1464,8 +1501,8 @@
     "home_line": 10.5,
     "home_line_open": 10.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
     "total": 223.5,
     "total_open": 222.5,
@@ -1492,11 +1529,6 @@
       "player": "Maxime Raynaud",
       "pos": "C",
       "status": "Out"
-     },
-     {
-      "player": "Keegan Murray",
-      "pos": "F",
-      "status": "Day-To-Day"
      },
      {
       "player": "Precious Achiuwa",
@@ -1581,17 +1613,17 @@
     "gap_b": 0.3,
     "gap_min": 2.3,
     "pick": "Sacramento Kings +10.5",
-    "price": -110,
+    "price": -105,
     "side": "home",
     "fair_line": 9.2,
     "playable_to": null,
     "sim_cover": 0.541,
     "history": {
-     "adj": 0.23,
+     "adj": 0.25,
      "key": "spread dog",
-     "w": 90,
+     "w": 91,
      "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "text": "Our record on spread dog: 91-64 (last 60 days, recent counts more) -> +0.25 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1602,7 +1634,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.1,
+    "conf": 5.2,
     "components": {
      "efficiency": 0.25,
      "veto": 1.5,
@@ -1612,7 +1644,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": 0.25
     },
     "total_gap": 0.3
    },
@@ -1665,16 +1697,6 @@
      }
     ],
     "inj_away": [
-     {
-      "player": "Adou Thiero",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Collin Sexton",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
      {
       "player": "Austin Reaves",
       "pos": "G",
@@ -1929,129 +1951,6 @@
   "sport": "CBB",
   "games": [
    {
-    "id": "401917531",
-    "sport": "CBB",
-    "game": "Chicago State Cougars @ Loyola Marymount Lions",
-    "home": "Loyola Marymount Lions",
-    "away": "Chicago State Cougars",
-    "time": "Sun 3:00 PM CT",
-    "start": "2026-11-15T21:00Z",
-    "book": "Draft Kings",
-    "line": "LMU -18.5",
-    "home_line": -18.5,
-    "home_line_open": -16.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 139.5,
-    "total_open": 141.5,
-    "home_ml": -2400,
-    "away_ml": 1200,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 12.9,
-    "model_b": 4.9,
-    "games_played": [
-     5,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "2-3",
-     "1-3"
-    ],
-    "venue": "Gersten Pavilion",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Kameron Foman",
-      "Malik Olafioye",
-      "Mike Price"
-     ],
-     [
-      "Mazi Mosley",
-      "Zion Sensley"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -6.8,
-     4.2
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.2 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Cougars 2 day(s), Lions 3 day(s)",
-     "Line moved 2 pts toward Loyola Marymount Lions since open (-16.5 to -18.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "One model is only barely past the bar",
-     "Last 5 games point the other way (our side -6.8 a game, theirs +4.2)"
-    ],
-    "invalidation": [
-     "Line moves past +17.4",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 153.0,
-    "gap_a": -5.6,
-    "gap_b": -13.6,
-    "gap_min": 5.6,
-    "pick": "Chicago State Cougars +18.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 8.9,
-    "playable_to": 17.4,
-    "sim_cover": 0.809,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "conf": 6.2,
-    "components": {
-     "efficiency": 0.63,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 13.5,
-    "total_lean": "Over 139.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
-    "stake": 0
-   },
-   {
     "id": "401917175",
     "sport": "CBB",
     "game": "New Haven Chargers @ Penn State Nittany Lions",
@@ -2113,7 +2012,7 @@
      10.8
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.2 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.3 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet",
      "Early season: under 5 games for a team - prior-heavy"
@@ -2142,11 +2041,11 @@
     "playable_to": 23.0,
     "sim_cover": 0.81,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2157,7 +2056,7 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 6.2,
+    "conf": 6.3,
     "components": {
      "efficiency": 0.67,
      "veto": 1.0,
@@ -2167,9 +2066,132 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 0.5,
+    "stake": 0
+   },
+   {
+    "id": "401917531",
+    "sport": "CBB",
+    "game": "Chicago State Cougars @ Loyola Marymount Lions",
+    "home": "Loyola Marymount Lions",
+    "away": "Chicago State Cougars",
+    "time": "Sun 3:00 PM CT",
+    "start": "2026-11-15T21:00Z",
+    "book": "Draft Kings",
+    "line": "LMU -17.5",
+    "home_line": -17.5,
+    "home_line_open": -16.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 139.5,
+    "total_open": 141.5,
+    "home_ml": -2400,
+    "away_ml": 1200,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 12.9,
+    "model_b": 4.9,
+    "games_played": [
+     5,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "2-3",
+     "1-3"
+    ],
+    "venue": "Gersten Pavilion",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Kameron Foman",
+      "Malik Olafioye",
+      "Mike Price"
+     ],
+     [
+      "Mazi Mosley",
+      "Zion Sensley"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     3
+    ],
+    "form5": [
+     -6.8,
+     4.2
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.1 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Cougars 2 day(s), Lions 3 day(s)",
+     "Line moved 1 pts toward Loyola Marymount Lions since open (-16.5 to -17.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "One model is only barely past the bar",
+     "Last 5 games point the other way (our side -6.8 a game, theirs +4.2)"
+    ],
+    "invalidation": [
+     "Line moves past +17.4",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 153.0,
+    "gap_a": -4.6,
+    "gap_b": -12.6,
+    "gap_min": 4.6,
+    "pick": "Chicago State Cougars +17.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 8.9,
+    "playable_to": 17.4,
+    "sim_cover": 0.783,
+    "history": {
+     "adj": 0.29,
+     "key": "CBB spread dog",
+     "w": 39,
+     "l": 24,
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "conf": 6.1,
+    "components": {
+     "efficiency": 0.51,
+     "veto": 1.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.29
+    },
+    "total_gap": 13.5,
+    "total_lean": "Over 139.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
     "stake": 0
    },
    {
@@ -2258,11 +2280,11 @@
     "playable_to": null,
     "sim_cover": 0.671,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2283,7 +2305,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 1.3
    },
@@ -2374,11 +2396,11 @@
     "playable_to": null,
     "sim_cover": 0.553,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2399,7 +2421,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 6.0,
     "total_lean": "Over 150.5 (season scoring says 156.5) - WATCH only, totals have no past-games test yet"
@@ -2489,11 +2511,11 @@
     "playable_to": null,
     "sim_cover": 0.696,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2514,246 +2536,10 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 8.0,
     "total_lean": "Over 143.5 (season scoring says 151.5) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401921168",
-    "sport": "CBB",
-    "game": "Cleveland State Vikings @ Alabama A&M Bulldogs",
-    "home": "Alabama A&M Bulldogs",
-    "away": "Cleveland State Vikings",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": "Draft Kings",
-    "line": "AAMU -2.5",
-    "home_line": -2.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 143.5,
-    "total_open": 145.5,
-    "home_ml": -148,
-    "away_ml": 124,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 4.1,
-    "model_b": 7.7,
-    "games_played": [
-     4,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "2-2",
-     "3-1"
-    ],
-    "venue": "Event Center",
-    "tv": "SWAC TV",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dre Jones",
-      "Jordan Lowery",
-      "Rayvon Griffith"
-     ],
-     [
-      "Sami Pissis",
-      "Stephaun Walker"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -5.0,
-     8.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Vikings 2 day(s), Bulldogs 3 day(s)",
-     "Line moved 1 pts toward Cleveland State Vikings since open (-3.5 to -2.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +8.0 a game, theirs -5.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 156.1,
-    "gap_a": 1.6,
-    "gap_b": 5.2,
-    "gap_min": 5.2,
-    "pick": "Alabama A&M Bulldogs -2.5",
-    "price": -112,
-    "side": "home",
-    "fair_line": -5.9,
-    "playable_to": null,
-    "sim_cover": 0.62,
-    "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.58,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "total_gap": 12.6,
-    "total_lean": "Over 143.5 (season scoring says 156.1) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401926073",
-    "sport": "CBB",
-    "game": "Pepperdine Waves @ Oregon Ducks",
-    "home": "Oregon Ducks",
-    "away": "Pepperdine Waves",
-    "time": "Sun 4:00 PM CT",
-    "start": "2026-11-15T22:00Z",
-    "book": "Draft Kings",
-    "line": "ORE -13.5",
-    "home_line": -13.5,
-    "home_line_open": -16.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 154.5,
-    "total_open": 159.5,
-    "home_ml": -850,
-    "away_ml": 575,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 14.7,
-    "model_b": 8.0,
-    "games_played": [
-     4,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "2-2",
-     "3-0"
-    ],
-    "venue": "Matthew Knight Arena",
-    "tv": "B1G+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Alex Constanza",
-      "Jahari Williamson",
-      "Petar Majstorovic"
-     ],
-     [
-      "Malique Ewin",
-      "Wei Lin"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     4
-    ],
-    "form5": [
-     12.8,
-     null
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Waves 4 day(s), Ducks 4 day(s)",
-     "Line moved 3 pts toward Pepperdine Waves since open (-16.5 to -13.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 164.8,
-    "gap_a": 1.2,
-    "gap_b": -5.5,
-    "gap_min": 5.5,
-    "pick": "Pepperdine Waves +13.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 11.4,
-    "playable_to": null,
-    "sim_cover": 0.577,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.61,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 10.3,
-    "total_lean": "Over 154.5 (season scoring says 164.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401923393",
@@ -2844,11 +2630,11 @@
     "playable_to": null,
     "sim_cover": 0.624,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2859,7 +2645,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 5.9,
+    "conf": 6.0,
     "components": {
      "efficiency": 0.51,
      "veto": 1.5,
@@ -2869,9 +2655,127 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 2.6
+   },
+   {
+    "id": "401926073",
+    "sport": "CBB",
+    "game": "Pepperdine Waves @ Oregon Ducks",
+    "home": "Oregon Ducks",
+    "away": "Pepperdine Waves",
+    "time": "Sun 4:00 PM CT",
+    "start": "2026-11-15T22:00Z",
+    "book": "Draft Kings",
+    "line": "ORE -13.5",
+    "home_line": -13.5,
+    "home_line_open": -16.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 154.5,
+    "total_open": 159.5,
+    "home_ml": -850,
+    "away_ml": 575,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 14.7,
+    "model_b": 8.0,
+    "games_played": [
+     4,
+     3
+    ],
+    "neutral": false,
+    "records": [
+     "2-2",
+     "3-0"
+    ],
+    "venue": "Matthew Knight Arena",
+    "tv": "B1G+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Alex Constanza",
+      "Jahari Williamson",
+      "Petar Majstorovic"
+     ],
+     [
+      "Malique Ewin",
+      "Wei Lin"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     4
+    ],
+    "form5": [
+     12.8,
+     null
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Waves 4 day(s), Ducks 4 day(s)",
+     "Line moved 3 pts toward Pepperdine Waves since open (-16.5 to -13.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 164.8,
+    "gap_a": 1.2,
+    "gap_b": -5.5,
+    "gap_min": 5.5,
+    "pick": "Pepperdine Waves +13.5",
+    "price": -108,
+    "side": "away",
+    "fair_line": 11.4,
+    "playable_to": null,
+    "sim_cover": 0.577,
+    "history": {
+     "adj": 0.29,
+     "key": "CBB spread dog",
+     "w": 39,
+     "l": 24,
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.0,
+    "components": {
+     "efficiency": 0.61,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.29
+    },
+    "total_gap": 10.3,
+    "total_lean": "Over 154.5 (season scoring says 164.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401911017",
@@ -2962,11 +2866,11 @@
     "playable_to": null,
     "sim_cover": 0.71,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2987,7 +2891,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 7.2,
     "total_lean": "Over 150.5 (season scoring says 157.7) - WATCH only, totals have no past-games test yet"
@@ -3082,11 +2986,11 @@
     "playable_to": 36.5,
     "sim_cover": 0.964,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3107,7 +3011,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": -2.9
    },
@@ -3198,11 +3102,11 @@
     "playable_to": null,
     "sim_cover": 0.604,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3223,359 +3127,10 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 9.8,
     "total_lean": "Over 143.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401926068",
-    "sport": "CBB",
-    "game": "Purdue Fort Wayne Mastodons @ Eastern Illinois Panthers",
-    "home": "Eastern Illinois Panthers",
-    "away": "Purdue Fort Wayne Mastodons",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": "Draft Kings",
-    "line": "PFW -3.5",
-    "home_line": 3.5,
-    "home_line_open": 3.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 144.5,
-    "total_open": 146.5,
-    "home_ml": 136,
-    "away_ml": -162,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -0.7,
-    "model_b": -0.3,
-    "games_played": [
-     3,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "1-2",
-     "1-3"
-    ],
-    "venue": "Groniger Arena",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Anthony Isaac Jr.",
-      "DeAndre Craig Jr."
-     ],
-     [
-      "Demar Burton",
-      "Jaden Miller",
-      "Tanner Vogel"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     4
-    ],
-    "form5": [
-     null,
-     -13.5
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Mastodons 3 day(s), Panthers 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.7,
-    "gap_a": 2.8,
-    "gap_b": 3.2,
-    "gap_min": 3.2,
-    "pick": "Eastern Illinois Panthers +3.5",
-    "price": -112,
-    "side": "home",
-    "fair_line": 0.5,
-    "playable_to": null,
-    "sim_cover": 0.609,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.6,
-    "components": {
-     "efficiency": 0.36,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 6.2,
-    "total_lean": "Over 144.5 (season scoring says 150.7) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401909493",
-    "sport": "CBB",
-    "game": "Creighton Bluejays @ Iowa Hawkeyes",
-    "home": "Iowa Hawkeyes",
-    "away": "Creighton Bluejays",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": "Draft Kings",
-    "line": "IOWA -4.5",
-    "home_line": -4.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 146.5,
-    "total_open": 145.5,
-    "home_ml": -192,
-    "away_ml": 160,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.3,
-    "model_b": 1.8,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": true,
-    "records": [
-     "2-1",
-     "2-1"
-    ],
-    "venue": "Casey's Center",
-    "tv": "FS1",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jackson McAndrew",
-      "Katrelle Harmon",
-      "Wes Enis"
-     ],
-     [
-      "Isaia Howard",
-      "Trevin Jirak",
-      "Ty'Reek Coleman"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     5
-    ],
-    "form5": [
-     null,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Bluejays 5 day(s), Hawkeyes 5 day(s)",
-     "Line moved 1 pts toward Iowa Hawkeyes since open (-3.5 to -4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 149.2,
-    "gap_a": -2.2,
-    "gap_b": -2.7,
-    "gap_min": 2.7,
-    "pick": "Creighton Bluejays +4.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 2.0,
-    "playable_to": null,
-    "sim_cover": 0.588,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.6,
-    "components": {
-     "efficiency": 0.3,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 2.7
-   },
-   {
-    "id": "401911251",
-    "sport": "CBB",
-    "game": "High Point Panthers @ Saint Louis Billikens",
-    "home": "Saint Louis Billikens",
-    "away": "High Point Panthers",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": "Draft Kings",
-    "line": "SLU -7.5",
-    "home_line": -7.5,
-    "home_line_open": -5.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 165.5,
-    "total_open": 163.5,
-    "home_ml": -325,
-    "away_ml": 260,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 6.7,
-    "model_b": 5.3,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": false,
-    "records": [
-     "4-0",
-     "3-0"
-    ],
-    "venue": "Chaifetz Arena",
-    "tv": "ESPN2",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "CJ Brown",
-      "Cam'Ron Fletcher"
-     ],
-     [
-      "Alon Michaeli",
-      "Quentin Jones",
-      "Trey Green"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     5
-    ],
-    "form5": [
-     null,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Panthers 3 day(s), Billikens 5 day(s)",
-     "Line moved 2 pts toward Saint Louis Billikens since open (-5.5 to -7.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 155.7,
-    "gap_a": -0.8,
-    "gap_b": -2.2,
-    "gap_min": 2.2,
-    "pick": "High Point Panthers +7.5",
-    "price": -105,
-    "side": "away",
-    "fair_line": 6.0,
-    "playable_to": null,
-    "sim_cover": 0.553,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.24,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": -9.8,
-    "total_lean": "Under 165.5 (season scoring says 155.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920124",
@@ -3664,11 +3219,11 @@
     "playable_to": null,
     "sim_cover": 0.509,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3679,7 +3234,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.2,
+    "conf": 5.3,
     "components": {
      "efficiency": 0.33,
      "veto": 1.5,
@@ -3689,7 +3244,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": -5.6
    },
@@ -3786,11 +3341,11 @@
     "playable_to": 26.3,
     "sim_cover": 0.874,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3811,126 +3366,10 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": -7.0,
     "total_lean": "Under 148.5 (season scoring says 141.5) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401906866",
-    "sport": "CBB",
-    "game": "Baylor Bears @ Texas Longhorns",
-    "home": "Texas Longhorns",
-    "away": "Baylor Bears",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": "Draft Kings",
-    "line": "TEX -3.5",
-    "home_line": -3.5,
-    "home_line_open": -6.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 159.5,
-    "total_open": 160.5,
-    "home_ml": -166,
-    "away_ml": 140,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 4.9,
-    "model_b": 2.3,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": true,
-    "records": [
-     "3-0",
-     "3-0"
-    ],
-    "venue": "Frost Bank Center",
-    "tv": "ESPN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dylan Mingo",
-      "Isaac Williams IV",
-      "Kayden Mingo"
-     ],
-     [
-      "Austin Goosby",
-      "Matas Vokietaitis"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     6
-    ],
-    "form5": [
-     null,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Bears 5 day(s), Longhorns 6 day(s)",
-     "Line moved 3 pts toward Baylor Bears since open (-6.5 to -3.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 156.0,
-    "gap_a": 1.4,
-    "gap_b": -1.2,
-    "gap_min": 1.4,
-    "pick": "Texas Longhorns -3.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": -3.6,
-    "playable_to": null,
-    "sim_cover": 0.502,
-    "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.1,
-    "components": {
-     "efficiency": 0.15,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "total_gap": -3.5
    },
    {
     "id": "401929200",
@@ -4020,11 +3459,11 @@
     "playable_to": null,
     "sim_cover": 0.529,
     "history": {
-     "adj": 0.27,
+     "adj": 0.29,
      "key": "CBB spread dog",
-     "w": 38,
+     "w": 39,
      "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+     "text": "Our record on CBB spread dog: 39-24 (last 60 days, recent counts more) -> +0.29 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4045,75 +3484,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.27
+     "our history": 0.29
     },
     "total_gap": 4.1
-   },
-   {
-    "id": "401926216",
-    "sport": "CBB",
-    "game": "Wright State-Lake Lakers @ Tennessee Tech Golden Eagles",
-    "home": "Tennessee Tech Golden Eagles",
-    "away": "Wright State-Lake Lakers",
-    "time": "Sun 2:00 PM CT",
-    "start": "2026-11-15T20:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": null,
-    "games_played": [
-     0,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     null,
-     "2-2"
-    ],
-    "venue": "Hooper Eblen Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [],
-     [
-      "Caleb Sanders",
-      "Ty Owens"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     null,
-     3
-    ],
-    "form5": [
-     null,
-     -2.2
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": []
    },
    {
     "id": "401934396",
