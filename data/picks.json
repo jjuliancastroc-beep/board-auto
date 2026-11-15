@@ -4245,14 +4245,16 @@
   "date": "2026-11-14",
   "line_at_pick": "TXST -9.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Fresno State Bulldogs 35, Texas State Bobcats 37",
+  "close": "TXST -11.5",
+  "clv": -2.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.93,
+  "pl": 0.0
  },
  {
   "id": "401856886",
@@ -10211,6 +10213,80 @@
   "review": "HOLD",
   "review_log": [
    "11/14 06:16 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401856882",
+  "sport": "CFB",
+  "game": "South Carolina Gamecocks @ Arkansas Razorbacks",
+  "home": "Arkansas Razorbacks",
+  "away": "South Carolina Gamecocks",
+  "start": "2026-11-15T00:45Z",
+  "pick": "South Carolina Gamecocks -6.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.58,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.12
+  },
+  "gap_a": -3.5,
+  "gap_b": 0.5,
+  "gap_min": 3.5,
+  "price": -115,
+  "fair_line": -8.0,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 6.5,
+  "home_ml": 215,
+  "away_ml": -265,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -10.0,
+  "model_b": -6.0,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 120,
+   "l": 121,
+   "n": 241,
+   "win": 0.498
+  },
+  "tier": "P4vP4",
+  "day": "Sat",
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.12,
+   "key": "spread fav",
+   "w": 29,
+   "l": 34,
+   "text": "Our record on spread fav: 29-34 (last 60 days, recent counts more) -> -0.12 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "SC -6.5",
+  "logged_at": "18:41",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 06:41 PM: checked line and injuries - no change"
   ]
  }
 ]
