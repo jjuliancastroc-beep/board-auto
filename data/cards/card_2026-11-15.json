@@ -3,339 +3,6 @@
   "sport": "NFL",
   "games": [
    {
-    "id": "401873058",
-    "sport": "NFL",
-    "game": "Kansas City Chiefs @ Atlanta Falcons",
-    "home": "Atlanta Falcons",
-    "away": "Kansas City Chiefs",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "KC -3",
-    "home_line": 3.0,
-    "home_line_open": 4.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 47.5,
-    "total_open": 45.5,
-    "home_ml": 145,
-    "away_ml": -175,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -7.1,
-    "model_b": -3.1,
-    "games_played": [
-     8,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "6-2",
-     "3-6"
-    ],
-    "venue": "Mercedes-Benz Stadium",
-    "tv": "CBS",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Divine Deablo",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "player": "Zachariah Branch",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "player": "Josh Woods",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "player": "James Pearce Jr.",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Gervon Dexter Sr.",
-      "pos": "DT",
-      "status": "Questionable"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Kenneth Walker III",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "player": "Jaylon Moore",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Peter Woods",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "player": "Jaydn Ott",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Mansoor Delane",
-      "pos": "CB",
-      "status": "Questionable"
-     }
-    ],
-    "stars": [
-     [
-      "Emmett Johnson",
-      "Patrick Mahomes",
-      "Travis Kelce"
-     ],
-     [
-      "Bijan Robinson",
-      "Drake London",
-      "Michael Penix Jr."
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     4.2,
-     -7.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Chiefs 7 day(s), Falcons 7 day(s)",
-     "Line moved 1.5 pts toward Atlanta Falcons since open (+4.5 to +3 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +4.2 a game, theirs -7.8)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "total_model": 44.4,
-    "gap_a": -4.1,
-    "gap_b": -0.1,
-    "gap_min": 4.1,
-    "pick": "Kansas City Chiefs -3",
-    "price": -115,
-    "side": "away",
-    "fair_line": -5.1,
-    "playable_to": null,
-    "sim_cover": 0.565,
-    "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.1,
-    "components": {
-     "efficiency": 0.68,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "total_gap": -3.1
-   },
-   {
-    "id": "401873059",
-    "sport": "NFL",
-    "game": "Miami Dolphins @ Indianapolis Colts",
-    "home": "Indianapolis Colts",
-    "away": "Miami Dolphins",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "IND -4.5",
-    "home_line": -4.5,
-    "home_line_open": -6.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 37.5,
-    "total_open": 47.5,
-    "home_ml": -225,
-    "away_ml": 185,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 10.5,
-    "model_b": 2.6,
-    "games_played": [
-     8,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "1-7",
-     "2-7"
-    ],
-    "venue": "Lucas Oil Stadium",
-    "tv": "CBS",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Will Mallory",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "player": "Jalen Travis",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Jaylon Carlies",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "player": "Jerry Tillery",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "player": "Luke Rhodes",
-      "pos": "LS",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Darrell Baker Jr.",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "player": "Aaron Brewer",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Jared Wayne",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "player": "Chris Bell",
-      "pos": "WR",
-      "status": "Doubtful"
-     }
-    ],
-    "stars": [
-     [
-      "Bradley Pinion",
-      "Malik Washington",
-      "Ollie Gordon II"
-     ],
-     [
-      "Daniel Jones",
-      "Jonathan Taylor",
-      "Tyler Warren"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     -4.8,
-     -11.2
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Dolphins 7 day(s), Colts 7 day(s)",
-     "Line moved 2 pts toward Miami Dolphins since open (-6.5 to -4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -11.2 a game, theirs -4.8)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "total_model": 44.4,
-    "gap_a": 6.0,
-    "gap_b": -1.9,
-    "gap_min": 6.0,
-    "pick": "Indianapolis Colts -4.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": -6.6,
-    "playable_to": null,
-    "sim_cover": 0.563,
-    "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.1,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "total_gap": 6.9,
-    "total_lean": "Over 37.5 (season scoring says 44.4) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401873061",
     "sport": "NFL",
     "game": "Los Angeles Rams @ Arizona Cardinals",
@@ -518,553 +185,6 @@
     },
     "total_gap": 7.5,
     "total_lean": "Over 38.5 (season scoring says 46.0) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401873055",
-    "sport": "NFL",
-    "game": "Carolina Panthers @ New Orleans Saints",
-    "home": "New Orleans Saints",
-    "away": "Carolina Panthers",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "NO -1.5",
-    "home_line": -1.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -120,
-     100
-    ],
-    "total": 48.5,
-    "total_open": 43.5,
-    "home_ml": -115,
-    "away_ml": -105,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.7,
-    "model_b": 0.2,
-    "games_played": [
-     8,
-     8
-    ],
-    "neutral": false,
-    "records": [
-     "3-5",
-     "3-5"
-    ],
-    "venue": "Caesars Superdome",
-    "tv": "Fox",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Travis Etienne Jr.",
-      "pos": "RB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Erik McCoy",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Taliese Fuaga",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Martin Emerson Jr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "CJ Donaldson",
-      "pos": "RB",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Jaelan Phillips",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Xavier Legette",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Will Lee III",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Bobby Okereke",
-      "pos": "LB",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Bryce Young",
-      "Chuba Hubbard",
-      "Tetairoa McMillan"
-     ],
-     [
-      "Chris Olave",
-      "Tyler Shough"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     -4.8,
-     -5.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Panthers 7 day(s), Saints 7 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "total_model": 51.2,
-    "gap_a": -0.8,
-    "gap_b": -1.3,
-    "gap_min": 1.3,
-    "pick": "Carolina Panthers +1.5",
-    "price": -120,
-    "side": "away",
-    "fair_line": 0.5,
-    "playable_to": null,
-    "sim_cover": 0.532,
-    "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.4,
-    "components": {
-     "efficiency": 0.21,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": 2.7
-   },
-   {
-    "id": "401873056",
-    "sport": "NFL",
-    "game": "Houston Texans @ Cleveland Browns",
-    "home": "Cleveland Browns",
-    "away": "Houston Texans",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "HOU -4.5",
-    "home_line": 4.5,
-    "home_line_open": 4.5,
-    "spread_odds": [
-     100,
-     -120
-    ],
-    "total": 41.5,
-    "total_open": 38.5,
-    "home_ml": 164,
-    "away_ml": -198,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -6.4,
-    "model_b": -1.8,
-    "games_played": [
-     8,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "3-5",
-     "5-4"
-    ],
-    "venue": "Huntington Bank Field",
-    "tv": "Fox",
-    "indoor": false,
-    "inj_home": [
-     {
-      "player": "Denzel Boston",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Ronnie Hickman",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Will Anderson Jr.",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Jake Hummel",
-      "pos": "LB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Braden Smith",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "player": "David Montgomery",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "player": "Keylan Rutledge",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Danielle Hunter",
-      "pos": "DE",
-      "status": "Out"
-     },
-     {
-      "player": "Brevin Jordan",
-      "pos": "TE",
-      "status": "Out"
-     },
-     {
-      "player": "Azeez Al-Shaair",
-      "pos": "LB",
-      "status": "Out"
-     },
-     {
-      "player": "Wyatt Teller",
-      "pos": "G",
-      "status": "Questionable"
-     },
-     {
-      "player": "Trent Brown",
-      "pos": "OT",
-      "status": "Questionable"
-     }
-    ],
-    "stars": [
-     [
-      "C.J. Stroud",
-      "Nico Collins",
-      "Woody Marks"
-     ],
-     [
-      "Denzel Boston",
-      "Deshaun Watson",
-      "Quinshon Judkins"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     7.6,
-     -4.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Texans 7 day(s), Browns 7 day(s)",
-     "Kickoff forecast: wind 15 mph (gusts 18), 46F, rain chance 5%"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -4.2 a game, theirs +7.6)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "wind": {
-     "wind": 14.9,
-     "gust": 17.9,
-     "rain": 5,
-     "temp": 46.4,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "Cloudy",
-     "temp": 47
-    },
-    "total_model": 44.9,
-    "gap_a": -1.9,
-    "gap_b": 2.7,
-    "gap_min": 2.7,
-    "pick": "Cleveland Browns +4.5",
-    "price": -120,
-    "side": "home",
-    "fair_line": 4.1,
-    "playable_to": null,
-    "sim_cover": 0.512,
-    "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.44,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": 3.4
-   },
-   {
-    "id": "401873054",
-    "sport": "NFL",
-    "game": "Buffalo Bills @ New York Jets",
-    "home": "New York Jets",
-    "away": "Buffalo Bills",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "BUF -8.5",
-    "home_line": 8.5,
-    "home_line_open": 7.0,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 50.5,
-    "total_open": 46.5,
-    "home_ml": 370,
-    "away_ml": -485,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -8.9,
-    "model_b": -6.7,
-    "games_played": [
-     8,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "7-1",
-     "2-7"
-    ],
-    "venue": "MetLife Stadium",
-    "tv": "CBS",
-    "indoor": false,
-    "inj_home": [
-     {
-      "player": "Garrett Wilson",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "VJ Payne",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "player": "Adonai Mitchell",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Omar Cooper Jr.",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Nahshon Wright",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Harrison Phillips",
-      "pos": "DT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Joseph Ossai",
-      "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Jarvis Brownlee Jr.",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Trevin Wallace",
-      "pos": "LB",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Jordan Hancock",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Tyrell Shavers",
-      "pos": "WR",
-      "status": "Out"
-     },
-     {
-      "player": "Spencer Brown",
-      "pos": "OT",
-      "status": "Doubtful"
-     },
-     {
-      "player": "Christian Benford",
-      "pos": "CB",
-      "status": "Questionable"
-     },
-     {
-      "player": "Sam Franklin Jr.",
-      "pos": "S",
-      "status": "Questionable"
-     }
-    ],
-    "stars": [
-     [
-      "Dalton Kincaid",
-      "James Cook III",
-      "Josh Allen"
-     ],
-     [
-      "Braelon Allen",
-      "Garrett Wilson",
-      "Geno Smith"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     7
-    ],
-    "form5": [
-     9.2,
-     -6.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bills 6 day(s), Jets 7 day(s)",
-     "Line moved 1.5 pts toward Buffalo Bills since open (+7 to +8.5 home)",
-     "Kickoff forecast: wind 11 mph (gusts 18), 47F, rain chance 0%",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -6.6 a game, theirs +9.2)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "wind": {
-     "wind": 10.7,
-     "gust": 17.7,
-     "rain": 0,
-     "temp": 47.1,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "Intermittent clouds",
-     "temp": 51
-    },
-    "total_model": 50.2,
-    "gap_a": -0.4,
-    "gap_b": 1.8,
-    "gap_min": 1.8,
-    "pick": "New York Jets +8.5",
-    "price": -115,
-    "side": "home",
-    "fair_line": 7.8,
-    "playable_to": null,
-    "sim_cover": 0.522,
-    "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.29,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": -0.3
    },
    {
     "id": "401873063",
@@ -1304,6 +424,16 @@
     "indoor": false,
     "inj_home": [
      {
+      "player": "Dalton Risner",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "player": "Myles Hinton",
+      "pos": "OT",
+      "status": "Questionable"
+     },
+     {
       "player": "Kyle Dugger",
       "pos": "S",
       "status": "Out"
@@ -1447,13 +577,13 @@
     "indoor": false,
     "inj_home": [
      {
-      "player": "Tyjae Spears",
-      "pos": "RB",
-      "status": "Questionable"
+      "player": "Carnell Tate",
+      "pos": "WR",
+      "status": "Out"
      },
      {
-      "player": "Cody Barton",
-      "pos": "LB",
+      "player": "Nicholas Singleton",
+      "pos": "RB",
       "status": "Out"
      },
      {
@@ -1462,12 +592,42 @@
       "status": "Out"
      },
      {
-      "player": "Carnell Tate",
-      "pos": "WR",
+      "player": "Jaylon Jones",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Jackie Marshall",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "player": "Cody Barton",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Brandon Crenshaw-Dickson",
+      "pos": "OT",
       "status": "Out"
      }
     ],
     "inj_away": [
+     {
+      "player": "Wesley Williams",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "player": "CJ Williams",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Albert Regis",
+      "pos": "DT",
+      "status": "Out"
+     },
      {
       "player": "Jessie Bates III",
       "pos": "S",
@@ -1563,6 +723,181 @@
      "our history": -0.06
     },
     "total_gap": -2.2
+   },
+   {
+    "id": "401873059",
+    "sport": "NFL",
+    "game": "Miami Dolphins @ Indianapolis Colts",
+    "home": "Indianapolis Colts",
+    "away": "Miami Dolphins",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "IND -4.5",
+    "home_line": -4.5,
+    "home_line_open": -6.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 37.5,
+    "total_open": 47.5,
+    "home_ml": -225,
+    "away_ml": 185,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": 10.5,
+    "model_b": 2.6,
+    "games_played": [
+     8,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "1-7",
+     "2-7"
+    ],
+    "venue": "Lucas Oil Stadium",
+    "tv": "CBS",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Luke Rhodes",
+      "pos": "LS",
+      "status": "Out"
+     },
+     {
+      "player": "Jerry Tillery",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "player": "Jalen Travis",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Riley Leonard",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylon Carlies",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Will Mallory",
+      "pos": "TE",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Darrell Baker Jr.",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Aaron Brewer",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Jared Wayne",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Chris Bell",
+      "pos": "WR",
+      "status": "Doubtful"
+     }
+    ],
+    "stars": [
+     [
+      "Bradley Pinion",
+      "Malik Washington",
+      "Ollie Gordon II"
+     ],
+     [
+      "Daniel Jones",
+      "Jonathan Taylor",
+      "Tyler Warren"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     -4.8,
+     -11.2
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Riley Leonard (Indianapolis Colts) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Riley Leonard (Indianapolis Colts) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Dolphins 7 day(s), Colts 7 day(s)",
+     "Line moved 2 pts toward Miami Dolphins since open (-6.5 to -4.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side -11.2 a game, theirs -4.8)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "total_model": 44.4,
+    "veto_sides": [
+     "game"
+    ],
+    "gap_a": 6.0,
+    "gap_b": -1.9,
+    "gap_min": 6.0,
+    "pick": "Indianapolis Colts -4.5",
+    "price": -110,
+    "side": "home",
+    "fair_line": -6.6,
+    "playable_to": null,
+    "sim_cover": 0.563,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": true,
+    "conf": 3.8,
+    "components": {
+     "efficiency": 1.0,
+     "veto": 0.0,
+     "models": 0.5,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": 6.9,
+    "total_lean": "Over 37.5 (season scoring says 44.4) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401873062",
@@ -1720,6 +1055,797 @@
     "total_lean": "Over 40.5 (season scoring says 49.4) - WATCH only, totals have no past-games test yet"
    },
    {
+    "id": "401873058",
+    "sport": "NFL",
+    "game": "Kansas City Chiefs @ Atlanta Falcons",
+    "home": "Atlanta Falcons",
+    "away": "Kansas City Chiefs",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "KC -3",
+    "home_line": 3.0,
+    "home_line_open": 4.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 47.5,
+    "total_open": 45.5,
+    "home_ml": 145,
+    "away_ml": -175,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": -7.1,
+    "model_b": -3.1,
+    "games_played": [
+     8,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "6-2",
+     "3-6"
+    ],
+    "venue": "Mercedes-Benz Stadium",
+    "tv": "CBS",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Avieon Terrell",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Cameron Williams",
+      "pos": "OL",
+      "status": "Out"
+     },
+     {
+      "player": "Jack Strand",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Robert Longerbeam",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Zachariah Branch",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Andy Dalton",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Divine Deablo",
+      "pos": "LB",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylon Moore",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Peter Woods",
+      "pos": "DT",
+      "status": "Out"
+     },
+     {
+      "player": "Jaydn Ott",
+      "pos": "RB",
+      "status": "Questionable"
+     },
+     {
+      "player": "Mansoor Delane",
+      "pos": "CB",
+      "status": "Questionable"
+     }
+    ],
+    "stars": [
+     [
+      "Emmett Johnson",
+      "Patrick Mahomes",
+      "Travis Kelce"
+     ],
+     [
+      "Bijan Robinson",
+      "Drake London",
+      "Michael Penix Jr."
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     4.2,
+     -7.8
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Jack Strand (Atlanta Falcons) Out - QB rule: no bet on this game until settled; QB Andy Dalton (Atlanta Falcons) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Jack Strand (Atlanta Falcons) Out - QB rule: no bet on this game until settled",
+     "QB Andy Dalton (Atlanta Falcons) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Chiefs 7 day(s), Falcons 7 day(s)",
+     "Line moved 1.5 pts toward Atlanta Falcons since open (+4.5 to +3 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +4.2 a game, theirs -7.8)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "total_model": 44.4,
+    "veto_sides": [
+     "game",
+     "game"
+    ],
+    "gap_a": -4.1,
+    "gap_b": -0.1,
+    "gap_min": 4.1,
+    "pick": "Kansas City Chiefs -3",
+    "price": -115,
+    "side": "away",
+    "fair_line": -5.1,
+    "playable_to": null,
+    "sim_cover": 0.565,
+    "history": {
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": true,
+    "conf": 3.1,
+    "components": {
+     "efficiency": 0.68,
+     "veto": 0.0,
+     "models": 0.5,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.06
+    },
+    "total_gap": -3.1
+   },
+   {
+    "id": "401873054",
+    "sport": "NFL",
+    "game": "Buffalo Bills @ New York Jets",
+    "home": "New York Jets",
+    "away": "Buffalo Bills",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "BUF -8.5",
+    "home_line": 8.5,
+    "home_line_open": 7.0,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 50.5,
+    "total_open": 46.5,
+    "home_ml": 380,
+    "away_ml": -500,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": -8.9,
+    "model_b": -6.7,
+    "games_played": [
+     8,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "7-1",
+     "2-7"
+    ],
+    "venue": "MetLife Stadium",
+    "tv": "CBS",
+    "indoor": false,
+    "inj_home": [
+     {
+      "player": "Garrett Wilson",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "player": "VJ Payne",
+      "pos": "S",
+      "status": "Questionable"
+     },
+     {
+      "player": "Omar Cooper Jr.",
+      "pos": "WR",
+      "status": "Questionable"
+     },
+     {
+      "player": "Nahshon Wright",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "player": "Harrison Phillips",
+      "pos": "DT",
+      "status": "Questionable"
+     },
+     {
+      "player": "Joseph Ossai",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "player": "Jarvis Brownlee Jr.",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "player": "Trevin Wallace",
+      "pos": "LB",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Jordan Hancock",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "player": "Tyrell Shavers",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Shane Buechele",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Spencer Brown",
+      "pos": "OT",
+      "status": "Doubtful"
+     },
+     {
+      "player": "Christian Benford",
+      "pos": "CB",
+      "status": "Questionable"
+     },
+     {
+      "player": "Sam Franklin Jr.",
+      "pos": "S",
+      "status": "Questionable"
+     }
+    ],
+    "stars": [
+     [
+      "Dalton Kincaid",
+      "James Cook III",
+      "Josh Allen"
+     ],
+     [
+      "Braelon Allen",
+      "Garrett Wilson",
+      "Geno Smith"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     6,
+     7
+    ],
+    "form5": [
+     9.2,
+     -6.6
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Shane Buechele (Buffalo Bills) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Shane Buechele (Buffalo Bills) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Bills 6 day(s), Jets 7 day(s)",
+     "Line moved 1.5 pts toward Buffalo Bills since open (+7 to +8.5 home)",
+     "Kickoff forecast: wind 11 mph (gusts 18), 47F, rain chance 0%",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side -6.6 a game, theirs +9.2)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "wind": {
+     "wind": 10.7,
+     "gust": 17.7,
+     "rain": 0,
+     "temp": 47.1,
+     "src": "Open-Meteo"
+    },
+    "weather": {
+     "text": "Intermittent clouds",
+     "temp": 50
+    },
+    "total_model": 50.2,
+    "veto_sides": [
+     "game"
+    ],
+    "gap_a": -0.4,
+    "gap_b": 1.8,
+    "gap_min": 1.8,
+    "pick": "New York Jets +8.5",
+    "price": -115,
+    "side": "home",
+    "fair_line": 7.8,
+    "playable_to": null,
+    "sim_cover": 0.522,
+    "history": {
+     "adj": 0.23,
+     "key": "spread dog",
+     "w": 90,
+     "l": 64,
+     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 2.9,
+    "components": {
+     "efficiency": 0.29,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": -0.3
+   },
+   {
+    "id": "401873055",
+    "sport": "NFL",
+    "game": "Carolina Panthers @ New Orleans Saints",
+    "home": "New Orleans Saints",
+    "away": "Carolina Panthers",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "NO -1.5",
+    "home_line": -1.5,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -120,
+     100
+    ],
+    "total": 48.5,
+    "total_open": 43.5,
+    "home_ml": -115,
+    "away_ml": -105,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": 0.7,
+    "model_b": 0.2,
+    "games_played": [
+     8,
+     8
+    ],
+    "neutral": false,
+    "records": [
+     "3-5",
+     "3-5"
+    ],
+    "venue": "Caesars Superdome",
+    "tv": "Fox",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Zach Wilson",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Mike Reid",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Erik McCoy",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "CJ Donaldson",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylan Ford",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Taliese Fuaga",
+      "pos": "OT",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Bobby Okereke",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Ja'Tavion Sanders",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "player": "Sam Hecht",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Haynes King",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Will Lee III",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "AJ Dillon",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "TeRah Edwards",
+      "pos": "DT",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Bryce Young",
+      "Chuba Hubbard",
+      "Tetairoa McMillan"
+     ],
+     [
+      "Chris Olave",
+      "Tyler Shough"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     -4.8,
+     -5.8
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Haynes King (Carolina Panthers) Out - QB rule: no bet on this game until settled; QB Zach Wilson (New Orleans Saints) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Haynes King (Carolina Panthers) Out - QB rule: no bet on this game until settled",
+     "QB Zach Wilson (New Orleans Saints) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Panthers 7 day(s), Saints 7 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "total_model": 51.2,
+    "veto_sides": [
+     "game",
+     "game"
+    ],
+    "gap_a": -0.8,
+    "gap_b": -1.3,
+    "gap_min": 1.3,
+    "pick": "Carolina Panthers +1.5",
+    "price": -120,
+    "side": "away",
+    "fair_line": 0.5,
+    "playable_to": null,
+    "sim_cover": 0.532,
+    "history": {
+     "adj": 0.23,
+     "key": "spread dog",
+     "w": 90,
+     "l": 64,
+     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 2.4,
+    "components": {
+     "efficiency": 0.21,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": 2.7
+   },
+   {
+    "id": "401873056",
+    "sport": "NFL",
+    "game": "Houston Texans @ Cleveland Browns",
+    "home": "Cleveland Browns",
+    "away": "Houston Texans",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "HOU -4.5",
+    "home_line": 4.5,
+    "home_line_open": 4.5,
+    "spread_odds": [
+     100,
+     -120
+    ],
+    "total": 41.5,
+    "total_open": 38.5,
+    "home_ml": 164,
+    "away_ml": -198,
+    "model_a_name": "FPI",
+    "model_b_name": "Ratings",
+    "model_a": -6.4,
+    "model_b": -1.8,
+    "games_played": [
+     8,
+     9
+    ],
+    "neutral": false,
+    "records": [
+     "3-5",
+     "5-4"
+    ],
+    "venue": "Huntington Bank Field",
+    "tv": "Fox",
+    "indoor": false,
+    "inj_home": [
+     {
+      "player": "Ronnie Hickman",
+      "pos": "S",
+      "status": "Out"
+     },
+     {
+      "player": "Noah Igbinoghene",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Justin Jefferson",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Parker Brailsford",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Dillon Gabriel",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Taylen Green",
+      "pos": "QB",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Will Anderson Jr.",
+      "pos": "DE",
+      "status": "Questionable"
+     },
+     {
+      "player": "Jake Hummel",
+      "pos": "LB",
+      "status": "Questionable"
+     },
+     {
+      "player": "David Montgomery",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Keylan Rutledge",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Danielle Hunter",
+      "pos": "DE",
+      "status": "Out"
+     },
+     {
+      "player": "Brevin Jordan",
+      "pos": "TE",
+      "status": "Out"
+     },
+     {
+      "player": "Azeez Al-Shaair",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
+      "player": "Wyatt Teller",
+      "pos": "G",
+      "status": "Questionable"
+     },
+     {
+      "player": "Trent Brown",
+      "pos": "OT",
+      "status": "Questionable"
+     },
+     {
+      "player": "Marvin Harrison Jr.",
+      "pos": "WR",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "C.J. Stroud",
+      "Nico Collins",
+      "Woody Marks"
+     ],
+     [
+      "Denzel Boston",
+      "Deshaun Watson",
+      "Quinshon Judkins"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     7
+    ],
+    "form5": [
+     7.6,
+     -4.2
+    ],
+    "decision": "PASS",
+    "reason": "Veto: QB Dillon Gabriel (Cleveland Browns) Out - QB rule: no bet on this game until settled; QB Taylen Green (Cleveland Browns) Out - QB rule: no bet on this game until settled",
+    "flags": [
+     "QB Dillon Gabriel (Cleveland Browns) Out - QB rule: no bet on this game until settled",
+     "QB Taylen Green (Cleveland Browns) Out - QB rule: no bet on this game until settled"
+    ],
+    "factors": [
+     "Rest: Texans 7 day(s), Browns 7 day(s)",
+     "Kickoff forecast: wind 12 mph (gusts 12), 46F, rain chance 33%"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side -4.2 a game, theirs +7.6)"
+    ],
+    "invalidation": [
+     "Either starting QB is ruled out or downgraded"
+    ],
+    "wind": {
+     "wind": 12.0,
+     "gust": 12.0,
+     "rain": 33,
+     "temp": 46,
+     "src": "NWS"
+    },
+    "weather": {
+     "text": "Cloudy",
+     "temp": 47
+    },
+    "total_model": 44.9,
+    "veto_sides": [
+     "game",
+     "game"
+    ],
+    "gap_a": -1.9,
+    "gap_b": 2.7,
+    "gap_min": 2.7,
+    "pick": "Cleveland Browns +4.5",
+    "price": -120,
+    "side": "home",
+    "fair_line": 4.1,
+    "playable_to": null,
+    "sim_cover": 0.512,
+    "history": {
+     "adj": 0.23,
+     "key": "spread dog",
+     "w": 90,
+     "l": 64,
+     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 66,
+     "l": 74,
+     "n": 140,
+     "win": 0.471
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 2.3,
+    "components": {
+     "efficiency": 0.44,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": 3.4
+   },
+   {
     "id": "401873060",
     "sport": "NFL",
     "game": "Minnesota Vikings @ Green Bay Packers",
@@ -1757,6 +1883,36 @@
     "indoor": false,
     "inj_home": [
      {
+      "player": "Kevin Zeitler",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Sean Rhyan",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Pierre Strong Jr.",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Josh Jacobs",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Donovan Jennings",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Zaire Franklin",
+      "pos": "LB",
+      "status": "Out"
+     },
+     {
       "player": "Chris Brooks",
       "pos": "RB",
       "status": "Questionable"
@@ -1767,55 +1923,15 @@
       "status": "Questionable"
      },
      {
-      "player": "Josh Jacobs",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "player": "Kevin Zeitler",
-      "pos": "G",
-      "status": "Questionable"
-     },
-     {
-      "player": "Travis Glover",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Sean Rhyan",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Lukas Van Ness",
+      "player": "Micah Parsons",
       "pos": "DE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Javon Bullard",
-      "pos": "S",
-      "status": "Questionable"
-     },
-     {
-      "player": "Zaire Franklin",
-      "pos": "LB",
-      "status": "Doubtful"
-     },
-     {
-      "player": "Xavier McKinney",
-      "pos": "S",
-      "status": "Questionable"
+      "status": "Out"
      }
     ],
     "inj_away": [
      {
-      "player": "Jordan Addison",
-      "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Kyler Murray",
-      "pos": "QB",
+      "player": "T.J. Hockenson",
+      "pos": "TE",
       "status": "Out"
      },
      {
@@ -1824,9 +1940,14 @@
       "status": "Out"
      },
      {
-      "player": "Joshua Metellus",
-      "pos": "S",
-      "status": "Questionable"
+      "player": "Jauan Jennings",
+      "pos": "WR",
+      "status": "Out"
+     },
+     {
+      "player": "Max Brosmer",
+      "pos": "QB",
+      "status": "Out"
      },
      {
       "player": "Blake Cashman",
@@ -1834,19 +1955,14 @@
       "status": "Out"
      },
      {
-      "player": "Jauan Jennings",
+      "player": "Jordan Addison",
       "pos": "WR",
       "status": "Out"
      },
      {
-      "player": "T.J. Hockenson",
-      "pos": "TE",
+      "player": "Kyler Murray",
+      "pos": "QB",
       "status": "Out"
-     },
-     {
-      "player": "Kyle Van Noy",
-      "pos": "LB",
-      "status": "Questionable"
      }
     ],
     "stars": [
@@ -1874,14 +1990,15 @@
      11.4
     ],
     "decision": "PASS",
-    "reason": "Veto: QB Kyler Murray (Minnesota Vikings) Out - QB rule: no bet on this game until settled",
+    "reason": "Veto: QB Max Brosmer (Minnesota Vikings) Out - QB rule: no bet on this game until settled; QB Kyler Murray (Minnesota Vikings) Out - QB rule: no bet on this game until settled",
     "flags": [
+     "QB Max Brosmer (Minnesota Vikings) Out - QB rule: no bet on this game until settled",
      "QB Kyler Murray (Minnesota Vikings) Out - QB rule: no bet on this game until settled"
     ],
     "factors": [
      "Rest: Vikings 6 day(s), Packers 7 day(s)",
      "Line moved 2 pts toward Minnesota Vikings since open (-4.5 to -2.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 6), 40F, rain chance 0%"
+     "Kickoff forecast: wind 2 mph (gusts 2), 44F, rain chance 0%"
     ],
     "against": [
      "Market moved away from this side since open",
@@ -1892,10 +2009,10 @@
     ],
     "wind": {
      "wind": 2.0,
-     "gust": 5.8,
+     "gust": 2.0,
      "rain": 0,
-     "temp": 40.3,
-     "src": "Open-Meteo"
+     "temp": 44,
+     "src": "NWS"
     },
     "weather": {
      "text": "Mostly cloudy",
@@ -1903,6 +2020,7 @@
     },
     "total_model": 39.0,
     "veto_sides": [
+     "game",
      "game"
     ],
     "gap_a": -0.7,
@@ -1930,12 +2048,12 @@
     "models_agree": false,
     "one_model": false,
     "veto": true,
-    "conf": 2.5,
+    "conf": 1.7,
     "components": {
      "efficiency": 0.17,
      "veto": 0.0,
      "models": 0.0,
-     "starters": 0.75,
+     "starters": 0.0,
      "coaching": 0.5,
      "against": 0.3,
      "price": 0.0,
@@ -2106,13 +2224,13 @@
     "home_line": 1.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -103,
-     -117
+     100,
+     -121
     ],
     "total": 214.5,
     "total_open": 215.5,
-    "home_ml": -105,
-    "away_ml": -113,
+    "home_ml": -110,
+    "away_ml": -108,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 6.0,
@@ -2208,7 +2326,7 @@
     "gap_b": 3.7,
     "gap_min": 7.5,
     "pick": "LA Clippers +1.5",
-    "price": -117,
+    "price": -121,
     "side": "home",
     "fair_line": -4.1,
     "playable_to": null,
@@ -2419,8 +2537,8 @@
     "home_line": 4.5,
     "home_line_open": 3.5,
     "spread_odds": [
-     -106,
-     -115
+     -110,
+     -110
     ],
     "total": 217.5,
     "total_open": 217.5,
@@ -2507,7 +2625,7 @@
     "gap_b": -4.7,
     "gap_min": 4.7,
     "pick": "New York Knicks -4.5",
-    "price": -106,
+    "price": -110,
     "side": "away",
     "fair_line": -4.6,
     "playable_to": null,
@@ -2555,8 +2673,8 @@
     "home_line": -13.5,
     "home_line_open": -12.5,
     "spread_odds": [
-     -112,
-     -108
+     -108,
+     -111
     ],
     "total": 219.5,
     "total_open": 216.5,
@@ -2650,7 +2768,7 @@
     "gap_b": -0.8,
     "gap_min": 6.6,
     "pick": "Dallas Mavericks +13.5",
-    "price": -112,
+    "price": -108,
     "side": "away",
     "fair_line": 9.8,
     "playable_to": null,
@@ -2686,78 +2804,103 @@
     "total_gap": 2.6
    },
    {
-    "id": "401909986",
+    "id": "401909985",
     "sport": "NBA",
-    "game": "Los Angeles Lakers @ Phoenix Suns",
-    "home": "Phoenix Suns",
-    "away": "Los Angeles Lakers",
-    "time": "Sun 3:00 PM CT",
-    "start": "2026-11-15T21:00Z",
+    "game": "Indiana Pacers @ Philadelphia 76ers",
+    "home": "Philadelphia 76ers",
+    "away": "Indiana Pacers",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
     "book": "Draft Kings",
-    "line": "LAL -2.5",
-    "home_line": 2.5,
-    "home_line_open": 2.5,
+    "line": "PHI -7.5",
+    "home_line": -7.5,
+    "home_line_open": -6.5,
     "spread_odds": [
-     -115,
-     -105
+     -105,
+     -115
     ],
-    "total": 226.5,
-    "total_open": 228.5,
-    "home_ml": 130,
-    "away_ml": -154,
+    "total": 224.5,
+    "total_open": 222.5,
+    "home_ml": -304,
+    "away_ml": 247,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
-    "model_a": -4.1,
-    "model_b": -4.6,
+    "model_a": 5.4,
+    "model_b": 6.4,
     "games_played": [
      13,
-     11
+     13
     ],
     "neutral": false,
     "records": [
-     "11-2",
-     "5-6"
+     "5-8",
+     "10-3"
     ],
-    "venue": "Mortgage Matchup Center",
-    "tv": "Spectrum Sports Net, Spectrum Sports Net +, Arizona's Family",
+    "venue": "Xfinity Mobile Arena",
+    "tv": "DAZN IND",
     "indoor": true,
     "inj_home": [
      {
-      "player": "Drew Timme",
-      "pos": "F",
-      "status": "Day-To-Day"
+      "player": "Joel Embiid",
+      "pos": "C",
+      "status": "Out"
      },
      {
-      "player": "Mark Williams",
+      "player": "Dominick Barlow",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Adem Bona",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Ariel Hukporti",
       "pos": "C",
       "status": "Out"
      }
     ],
     "inj_away": [
      {
-      "player": "Adou Thiero",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Collin Sexton",
+      "player": "Andrew Nembhard",
       "pos": "G",
       "status": "Day-To-Day"
      },
      {
-      "player": "Austin Reaves",
+      "player": "T.J. McConnell",
+      "pos": "G",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Aaron Nesmith",
+      "pos": "G",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Tyrese Haliburton",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Johnny Furphy",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Ben Sheppard",
       "pos": "G",
       "status": "Out"
      }
     ],
     "stars": [
      [
-      "Luka Doncic",
-      "Walker Kessler"
+      "Ivica Zubac",
+      "Pascal Siakam"
      ],
      [
-      "Devin Booker",
-      "Miles Bridges"
+      "LeBron James",
+      "Tyrese Maxey"
      ]
     ],
     "goalies": [
@@ -2765,41 +2908,43 @@
      null
     ],
     "rest": [
-     4,
+     2,
      3
     ],
     "form5": [
-     9.0,
-     3.6
+     0.8,
+     -4.6
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
     "flags": [],
     "factors": [
-     "Rest: Lakers 4 day(s), Suns 3 day(s)",
+     "Rest: Pacers 2 day(s), 76ers 3 day(s)",
+     "Line moved 1 pts toward Philadelphia 76ers since open (-6.5 to -7.5 home)",
      "Indoors - weather does not matter",
-     "Last 5 games agree (our side +9.0 a game, theirs +3.6)"
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +0.8 a game, theirs -4.6)"
     ],
     "against": [],
     "invalidation": [
      "A star on either team changes status (questionable to out or back in)"
     ],
-    "total_model": 232.1,
-    "gap_a": -1.6,
-    "gap_b": -2.1,
+    "total_model": 222.5,
+    "gap_a": -2.1,
+    "gap_b": -1.1,
     "gap_min": 2.1,
-    "pick": "Los Angeles Lakers -2.5",
-    "price": -115,
+    "pick": "Indiana Pacers +7.5",
+    "price": -105,
     "side": "away",
-    "fair_line": -4.3,
+    "fair_line": 5.9,
     "playable_to": null,
-    "sim_cover": 0.559,
+    "sim_cover": 0.55,
     "history": {
-     "adj": -0.06,
-     "key": "spread fav",
-     "w": 34,
-     "l": 37,
-     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
+     "adj": 0.23,
+     "key": "spread dog",
+     "w": 90,
+     "l": 64,
+     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -2810,7 +2955,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.2,
+    "conf": 5.5,
     "components": {
      "efficiency": 0.23,
      "veto": 1.5,
@@ -2820,9 +2965,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.06
+     "our history": 0.23
     },
-    "total_gap": 5.6
+    "total_gap": -2.0
    },
    {
     "id": "401909992",
@@ -2987,7 +3132,7 @@
      -110,
      -110
     ],
-    "total": 222.5,
+    "total": 223.5,
     "total_open": 222.5,
     "home_ml": 361,
     "away_ml": -468,
@@ -3134,7 +3279,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 1.3
+    "total_gap": 0.3
    },
    {
     "id": "401909988",
@@ -3145,14 +3290,14 @@
     "time": "Sun 4:00 PM CT",
     "start": "2026-11-15T22:00Z",
     "book": "Draft Kings",
-    "line": "SA -16.5",
-    "home_line": 16.5,
+    "line": "SA -15.5",
+    "home_line": 15.5,
     "home_line_open": 17.5,
     "spread_odds": [
-     -104,
-     -116
+     -114,
+     -106
     ],
-    "total": 226.5,
+    "total": 225.5,
     "total_open": 224.5,
     "home_ml": 810,
     "away_ml": -1340,
@@ -3241,7 +3386,7 @@
     ],
     "factors": [
      "Rest: Spurs 2 day(s), Jazz 2 day(s)",
-     "Line moved 1 pts toward Utah Jazz since open (+17.5 to +16.5 home)",
+     "Line moved 2 pts toward Utah Jazz since open (+17.5 to +15.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +19.6 a game, theirs -11.0)"
@@ -3251,15 +3396,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 225.9,
-    "gap_a": 4.8,
-    "gap_b": -9.1,
-    "gap_min": 9.1,
-    "pick": "San Antonio Spurs -16.5",
-    "price": -104,
+    "gap_a": 3.8,
+    "gap_b": -10.1,
+    "gap_min": 10.1,
+    "pick": "San Antonio Spurs -15.5",
+    "price": -114,
     "side": "away",
     "fair_line": -18.6,
     "playable_to": null,
-    "sim_cover": 0.568,
+    "sim_cover": 0.599,
     "history": {
      "adj": -0.06,
      "key": "spread fav",
@@ -3288,107 +3433,81 @@
      "situational": 0.5,
      "our history": -0.06
     },
-    "total_gap": -0.6
+    "total_gap": 0.4
    },
    {
-    "id": "401909985",
+    "id": "401909986",
     "sport": "NBA",
-    "game": "Indiana Pacers @ Philadelphia 76ers",
-    "home": "Philadelphia 76ers",
-    "away": "Indiana Pacers",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
+    "game": "Los Angeles Lakers @ Phoenix Suns",
+    "home": "Phoenix Suns",
+    "away": "Los Angeles Lakers",
+    "time": "Sun 3:00 PM CT",
+    "start": "2026-11-15T21:00Z",
     "book": "Draft Kings",
-    "line": "PHI -7.5",
-    "home_line": -7.5,
-    "home_line_open": -6.5,
+    "line": "LAL -3.5",
+    "home_line": 3.5,
+    "home_line_open": 2.5,
     "spread_odds": [
-     -118,
-     -102
+     -103,
+     -117
     ],
-    "total": 225.5,
-    "total_open": 222.5,
-    "home_ml": -277,
-    "away_ml": 226,
+    "total": 226.5,
+    "total_open": 228.5,
+    "home_ml": 130,
+    "away_ml": -154,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
-    "model_a": 5.4,
-    "model_b": 6.4,
+    "model_a": -4.1,
+    "model_b": -4.6,
     "games_played": [
      13,
-     13
+     11
     ],
     "neutral": false,
     "records": [
-     "5-8",
-     "10-3"
+     "11-2",
+     "5-6"
     ],
-    "venue": "Xfinity Mobile Arena",
-    "tv": "DAZN IND",
+    "venue": "Mortgage Matchup Center",
+    "tv": "Spectrum Sports Net, Spectrum Sports Net +, Arizona's Family",
     "indoor": true,
     "inj_home": [
      {
-      "player": "Joel Embiid",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Dominick Barlow",
+      "player": "Drew Timme",
       "pos": "F",
-      "status": "Out"
+      "status": "Day-To-Day"
      },
      {
-      "player": "Adem Bona",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Ariel Hukporti",
+      "player": "Mark Williams",
       "pos": "C",
       "status": "Out"
      }
     ],
     "inj_away": [
      {
-      "player": "Andrew Nembhard",
+      "player": "Adou Thiero",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Collin Sexton",
       "pos": "G",
       "status": "Day-To-Day"
      },
      {
-      "player": "T.J. McConnell",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Aaron Nesmith",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Tyrese Haliburton",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Johnny Furphy",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Ben Sheppard",
+      "player": "Austin Reaves",
       "pos": "G",
       "status": "Out"
      }
     ],
     "stars": [
      [
-      "Andrew Nembhard",
-      "Ivica Zubac",
-      "Pascal Siakam"
+      "Luka Doncic",
+      "Walker Kessler"
      ],
      [
-      "LeBron James",
-      "Tyrese Maxey"
+      "Devin Booker",
+      "Miles Bridges"
      ]
     ],
     "goalies": [
@@ -3396,48 +3515,44 @@
      null
     ],
     "rest": [
-     2,
+     4,
      3
     ],
     "form5": [
-     0.8,
-     -4.6
+     9.0,
+     3.6
     ],
     "decision": "PASS",
-    "reason": "Veto: Star Andrew Nembhard (Indiana Pacers) Day-To-Day",
-    "flags": [
-     "Star Andrew Nembhard (Indiana Pacers) Day-To-Day"
-    ],
+    "reason": "Neither model clears the bar.",
+    "flags": [],
     "factors": [
-     "Rest: Pacers 2 day(s), 76ers 3 day(s)",
-     "Line moved 1 pts toward Philadelphia 76ers since open (-6.5 to -7.5 home)",
+     "Rest: Lakers 4 day(s), Suns 3 day(s)",
+     "Line moved 1 pts toward Los Angeles Lakers since open (+2.5 to +3.5 home)",
      "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +0.8 a game, theirs -4.6)"
+     "Last 5 games agree (our side +9.0 a game, theirs +3.6)"
     ],
-    "against": [],
+    "against": [
+     "Market moved away from this side since open"
+    ],
     "invalidation": [
      "A star on either team changes status (questionable to out or back in)"
     ],
-    "total_model": 222.5,
-    "veto_sides": [
-     "game"
-    ],
-    "gap_a": -2.1,
+    "total_model": 232.1,
+    "gap_a": -0.6,
     "gap_b": -1.1,
-    "gap_min": 2.1,
-    "pick": "Indiana Pacers +7.5",
-    "price": -118,
+    "gap_min": 1.1,
+    "pick": "Los Angeles Lakers -3.5",
+    "price": -103,
     "side": "away",
-    "fair_line": 5.9,
+    "fair_line": -4.3,
     "playable_to": null,
-    "sim_cover": 0.55,
+    "sim_cover": 0.527,
     "history": {
-     "adj": 0.23,
-     "key": "spread dog",
-     "w": 90,
-     "l": 64,
-     "text": "Our record on spread dog: 90-64 (last 60 days, recent counts more) -> +0.23 to confidence"
+     "adj": -0.06,
+     "key": "spread fav",
+     "w": 34,
+     "l": 37,
+     "text": "Our record on spread fav: 34-37 (last 60 days, recent counts more) -> -0.06 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -3447,20 +3562,20 @@
     },
     "models_agree": false,
     "one_model": false,
-    "veto": true,
-    "conf": 3.2,
+    "veto": false,
+    "conf": 4.7,
     "components": {
-     "efficiency": 0.23,
-     "veto": 0.0,
+     "efficiency": 0.12,
+     "veto": 1.5,
      "models": 0.0,
-     "starters": 0.75,
+     "starters": 1.5,
      "coaching": 0.5,
-     "against": 1.0,
+     "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.23
+     "our history": -0.06
     },
-    "total_gap": -3.0
+    "total_gap": 5.6
    }
   ],
   "n_past": 188,
@@ -3485,7 +3600,7 @@
      -105,
      -115
     ],
-    "total": 163.5,
+    "total": 164.5,
     "total_open": 163.5,
     "home_ml": 320,
     "away_ml": -410,
@@ -3582,7 +3697,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": 2.5,
+    "total_gap": 1.5,
     "stake": 0
    },
    {
@@ -3594,17 +3709,17 @@
     "time": "Sun 12:30 PM CT",
     "start": "2026-11-15T18:30Z",
     "book": "Draft Kings",
-    "line": "BC -22.5",
-    "home_line": -22.5,
+    "line": "BC -21.5",
+    "home_line": -21.5,
     "home_line_open": -22.5,
     "spread_odds": [
-     -105,
-     -115
+     -115,
+     -105
     ],
     "total": 132.5,
     "total_open": 131.5,
-    "home_ml": -8000,
-    "away_ml": 2200,
+    "home_ml": -5000,
+    "away_ml": 1800,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 16.2,
@@ -3646,16 +3761,18 @@
      null
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.6 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.2 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet",
      "Early season: under 5 games for a team - prior-heavy"
     ],
     "factors": [
      "Rest: Wildcats 4 day(s), Eagles 5 day(s)",
+     "Line moved 1 pts toward New Hampshire Wildcats since open (-22.5 to -21.5 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
+     "Market moved away from this side since open",
      "One model is only barely past the bar"
     ],
     "invalidation": [
@@ -3663,15 +3780,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 134.8,
-    "gap_a": -6.3,
-    "gap_b": -14.9,
-    "gap_min": 6.3,
-    "pick": "New Hampshire Wildcats +22.5",
-    "price": -105,
+    "gap_a": -5.3,
+    "gap_b": -13.9,
+    "gap_min": 5.3,
+    "pick": "New Hampshire Wildcats +21.5",
+    "price": -115,
     "side": "away",
     "fair_line": 11.9,
     "playable_to": 20.7,
-    "sim_cover": 0.832,
+    "sim_cover": 0.808,
     "history": {
      "adj": 0.27,
      "key": "CBB spread dog",
@@ -3688,14 +3805,14 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 6.6,
+    "conf": 6.2,
     "components": {
-     "efficiency": 0.7,
+     "efficiency": 0.59,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
      "our history": 0.27
@@ -3719,7 +3836,7 @@
      -112,
      -108
     ],
-    "total": 140.5,
+    "total": 139.5,
     "total_open": 141.5,
     "home_ml": -2400,
     "away_ml": 1200,
@@ -3822,8 +3939,8 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": 12.5,
-    "total_lean": "Over 140.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
+    "total_gap": 13.5,
+    "total_lean": "Over 139.5 (season scoring says 153.0) - WATCH only, totals have no past-games test yet",
     "stake": 0
    },
    {
@@ -3842,7 +3959,7 @@
      -115,
      -105
     ],
-    "total": 143.5,
+    "total": 142.5,
     "total_open": 142.5,
     "home_ml": -9000,
     "away_ml": 2500,
@@ -3944,7 +4061,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": -0.5,
+    "total_gap": 0.5,
     "stake": 0
    },
    {
@@ -4293,123 +4410,6 @@
     "total_gap": 5.0
    },
    {
-    "id": "401926063",
-    "sport": "CBB",
-    "game": "Boise State Broncos @ Nebraska Cornhuskers",
-    "home": "Nebraska Cornhuskers",
-    "away": "Boise State Broncos",
-    "time": "Sun 12:00 PM CT",
-    "start": "2026-11-15T18:00Z",
-    "book": "Draft Kings",
-    "line": "NEB -10.5",
-    "home_line": -10.5,
-    "home_line_open": -8.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 159.5,
-    "total_open": 158.5,
-    "home_ml": -520,
-    "away_ml": 390,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 7.7,
-    "model_b": 1.0,
-    "games_played": [
-     3,
-     3
-    ],
-    "neutral": true,
-    "records": [
-     "3-0",
-     "3-0"
-    ],
-    "venue": "Sanford Pentagon",
-    "tv": "BTN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Aginaldo Neto",
-      "Dovydas Butka"
-     ],
-     [
-      "Pryce Sandfort",
-      "Taj DeGourville"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     4
-    ],
-    "form5": [
-     null,
-     null
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Broncos 4 day(s), Cornhuskers 4 day(s)",
-     "Line moved 2 pts toward Nebraska Cornhuskers since open (-8.5 to -10.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 167.5,
-    "gap_a": -2.8,
-    "gap_b": -9.5,
-    "gap_min": 9.5,
-    "pick": "Boise State Broncos +10.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 4.4,
-    "playable_to": null,
-    "sim_cover": 0.712,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.3,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 8.0,
-    "total_lean": "Over 159.5 (season scoring says 167.5) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401925926",
     "sport": "CBB",
     "game": "South Carolina State Bulldogs @ Charleston Cougars",
@@ -4523,6 +4523,123 @@
      "our history": 0.27
     },
     "total_gap": 1.0
+   },
+   {
+    "id": "401926063",
+    "sport": "CBB",
+    "game": "Boise State Broncos @ Nebraska Cornhuskers",
+    "home": "Nebraska Cornhuskers",
+    "away": "Boise State Broncos",
+    "time": "Sun 12:00 PM CT",
+    "start": "2026-11-15T18:00Z",
+    "book": "Draft Kings",
+    "line": "NEB -9.5",
+    "home_line": -9.5,
+    "home_line_open": -8.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 159.5,
+    "total_open": 158.5,
+    "home_ml": -485,
+    "away_ml": 370,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 7.7,
+    "model_b": 1.0,
+    "games_played": [
+     3,
+     3
+    ],
+    "neutral": true,
+    "records": [
+     "3-0",
+     "3-0"
+    ],
+    "venue": "Sanford Pentagon",
+    "tv": "BTN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Aginaldo Neto",
+      "Dovydas Butka"
+     ],
+     [
+      "Pryce Sandfort",
+      "Taj DeGourville"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     4
+    ],
+    "form5": [
+     null,
+     null
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Broncos 4 day(s), Cornhuskers 4 day(s)",
+     "Line moved 1 pts toward Nebraska Cornhuskers since open (-8.5 to -9.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 167.5,
+    "gap_a": -1.8,
+    "gap_b": -8.5,
+    "gap_min": 8.5,
+    "pick": "Boise State Broncos +9.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 4.4,
+    "playable_to": null,
+    "sim_cover": 0.68,
+    "history": {
+     "adj": 0.27,
+     "key": "CBB spread dog",
+     "w": 38,
+     "l": 24,
+     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.2,
+    "components": {
+     "efficiency": 0.94,
+     "veto": 1.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.27
+    },
+    "total_gap": 8.0,
+    "total_lean": "Over 159.5 (season scoring says 167.5) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401917528",
@@ -4877,124 +4994,6 @@
     "total_lean": "Over 142.5 (season scoring says 156.1) - WATCH only, totals have no past-games test yet"
    },
    {
-    "id": "401923393",
-    "sport": "CBB",
-    "game": "Western Michigan Broncos @ Southern Indiana Screaming Eagles",
-    "home": "Southern Indiana Screaming Eagles",
-    "away": "Western Michigan Broncos",
-    "time": "Sun 3:30 PM CT",
-    "start": "2026-11-15T21:30Z",
-    "book": "Draft Kings",
-    "line": "WMU -7.5",
-    "home_line": 7.5,
-    "home_line_open": 5.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 139.5,
-    "total_open": 141.5,
-    "home_ml": 260,
-    "away_ml": -325,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -4.1,
-    "model_b": -1.9,
-    "games_played": [
-     4,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "3-1",
-     "1-3"
-    ],
-    "venue": "Liberty Arena (IN)",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Adam Harakow",
-      "Jaylen Washington"
-     ],
-     [
-      "Afan Trnka",
-      "Kaden Brown",
-      "Yuto Yamanouchi-Williams"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     4
-    ],
-    "form5": [
-     14.0,
-     1.5
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Broncos 3 day(s), Eagles 4 day(s)",
-     "Line moved 2 pts toward Western Michigan Broncos since open (+5.5 to +7.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +1.5 a game, theirs +14.0)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 142.1,
-    "gap_a": 3.4,
-    "gap_b": 5.6,
-    "gap_min": 5.6,
-    "pick": "Southern Indiana Screaming Eagles +7.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": 3.0,
-    "playable_to": null,
-    "sim_cover": 0.658,
-    "history": {
-     "adj": 0.27,
-     "key": "CBB spread dog",
-     "w": 38,
-     "l": 24,
-     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.62,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.27
-    },
-    "total_gap": 2.6
-   },
-   {
     "id": "401926073",
     "sport": "CBB",
     "game": "Pepperdine Waves @ Oregon Ducks",
@@ -5227,6 +5226,124 @@
     },
     "total_gap": 8.3,
     "total_lean": "Over 144.5 (season scoring says 152.8) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401923393",
+    "sport": "CBB",
+    "game": "Western Michigan Broncos @ Southern Indiana Screaming Eagles",
+    "home": "Southern Indiana Screaming Eagles",
+    "away": "Western Michigan Broncos",
+    "time": "Sun 3:30 PM CT",
+    "start": "2026-11-15T21:30Z",
+    "book": "Draft Kings",
+    "line": "WMU -6.5",
+    "home_line": 6.5,
+    "home_line_open": 5.5,
+    "spread_odds": [
+     -118,
+     -102
+    ],
+    "total": 139.5,
+    "total_open": 141.5,
+    "home_ml": 245,
+    "away_ml": -305,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -4.1,
+    "model_b": -1.9,
+    "games_played": [
+     4,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "3-1",
+     "1-3"
+    ],
+    "venue": "Liberty Arena (IN)",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Adam Harakow",
+      "Jaylen Washington"
+     ],
+     [
+      "Afan Trnka",
+      "Kaden Brown",
+      "Yuto Yamanouchi-Williams"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     4
+    ],
+    "form5": [
+     14.0,
+     1.5
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Broncos 3 day(s), Eagles 4 day(s)",
+     "Line moved 1 pts toward Western Michigan Broncos since open (+5.5 to +6.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +1.5 a game, theirs +14.0)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 142.1,
+    "gap_a": 2.4,
+    "gap_b": 4.6,
+    "gap_min": 4.6,
+    "pick": "Southern Indiana Screaming Eagles +6.5",
+    "price": -102,
+    "side": "home",
+    "fair_line": 3.0,
+    "playable_to": null,
+    "sim_cover": 0.624,
+    "history": {
+     "adj": 0.27,
+     "key": "CBB spread dog",
+     "w": 38,
+     "l": 24,
+     "text": "Our record on CBB spread dog: 38-24 (last 60 days, recent counts more) -> +0.27 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.9,
+    "components": {
+     "efficiency": 0.51,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.27
+    },
+    "total_gap": 2.6
    },
    {
     "id": "401911017",
@@ -5833,7 +5950,7 @@
      -115,
      -105
     ],
-    "total": 154.5,
+    "total": 153.5,
     "total_open": 153.5,
     "home_ml": -115,
     "away_ml": -105,
@@ -5931,8 +6048,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": -6.3,
-    "total_lean": "Under 154.5 (season scoring says 148.2) - WATCH only, totals have no past-games test yet"
+    "total_gap": -5.3
    },
    {
     "id": "401909774",
@@ -6301,7 +6417,7 @@
      -108,
      -112
     ],
-    "total": 145.5,
+    "total": 146.5,
     "total_open": 145.5,
     "home_ml": -198,
     "away_ml": 164,
@@ -6400,7 +6516,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": 3.7
+    "total_gap": 2.7
    },
    {
     "id": "401911251",
@@ -7118,7 +7234,7 @@
      -108,
      -112
     ],
-    "total": 166.5,
+    "total": 167.5,
     "total_open": 166.5,
     "home_ml": -20000,
     "away_ml": 3500,
@@ -7220,7 +7336,7 @@
      "situational": 0.5,
      "our history": 0.27
     },
-    "total_gap": -3.8
+    "total_gap": -4.8
    },
    {
     "id": "401906866",
