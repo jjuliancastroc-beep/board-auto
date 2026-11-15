@@ -4325,14 +4325,16 @@
   "date": "2026-11-14",
   "line_at_pick": "AUB -2.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Auburn Tigers 41, Mississippi State Bulldogs 9",
+  "close": "AUB -2.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "id": "401860914",
@@ -4637,14 +4639,16 @@
   "date": "2026-11-14",
   "line_at_pick": "RICE -3",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Tulane Green Wave 20, Rice Owls 17",
+  "close": "RICE -4",
+  "clv": -1.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.98,
+  "pl": 0.0
  },
  {
   "id": "401869952",
@@ -7934,14 +7938,16 @@
   "date": "2026-11-14",
   "line_at_pick": "CAM -8.5",
   "logged_at": "00:20",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "South Carolina Upstate Spartans 77, Campbell Fighting Camels 93",
+  "close": "CAM -9.5",
+  "clv": -1.0,
   "review": "HOLD",
   "review_log": [
    "11/14 12:20 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "id": "401927387",
@@ -10287,6 +10293,82 @@
   "review": "HOLD",
   "review_log": [
    "11/14 06:41 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401856863",
+  "sport": "CFB",
+  "game": "Texas Tech Red Raiders @ Oklahoma State Cowboys",
+  "home": "Oklahoma State Cowboys",
+  "away": "Texas Tech Red Raiders",
+  "start": "2026-11-15T02:30Z",
+  "pick": "Texas Tech Red Raiders +4",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.8,
+  "components": {
+   "efficiency": 0.53,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.13
+  },
+  "gap_a": -3.2,
+  "gap_b": -0.9,
+  "gap_min": 3.2,
+  "price": -110,
+  "fair_line": 1.9,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -4.0,
+  "home_ml": -185,
+  "away_ml": 154,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side +10.0 a game, theirs +13.0)"
+  ],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 0.8,
+  "model_b": 3.1,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 120,
+   "l": 121,
+   "n": 241,
+   "win": 0.498
+  },
+  "tier": "P4vP4",
+  "day": "Sat",
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.13,
+   "key": "spread dog",
+   "w": 73,
+   "l": 56,
+   "text": "Our record on spread dog: 73-56 (last 60 days, recent counts more) -> +0.13 to confidence"
+  },
+  "date": "2026-11-14",
+  "line_at_pick": "OKST -4",
+  "logged_at": "19:09",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/14 07:09 PM: checked line and injuries - no change"
   ]
  }
 ]
