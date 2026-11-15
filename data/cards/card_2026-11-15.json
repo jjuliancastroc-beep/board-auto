@@ -96,7 +96,7 @@
     "flags": [],
     "factors": [
      "Rest: Steelers 14 day(s), Bengals 7 day(s)",
-     "Kickoff forecast: wind 4 mph (gusts 6), 38F, rain chance 0%"
+     "Kickoff forecast: wind 4 mph (gusts 9), 38F, rain chance 0%"
     ],
     "against": [
      "Laying -3.5 - just past a key number (3)"
@@ -105,10 +105,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 3.5,
-     "gust": 6.3,
+     "wind": 3.9,
+     "gust": 8.9,
      "rain": 0,
-     "temp": 37.6,
+     "temp": 38.2,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -176,17 +176,17 @@
     "time": "Sun 6:00 PM CT",
     "start": "2026-11-16T00:00Z",
     "book": "DraftKings",
-    "line": "HOU -8.5",
-    "home_line": 8.5,
+    "line": "HOU -7.5",
+    "home_line": 7.5,
     "home_line_open": 8.5,
     "spread_odds": [
-     -107,
-     -113
+     -118,
+     -103
     ],
     "total": 223.5,
     "total_open": 222.5,
-    "home_ml": 276,
-    "away_ml": -345,
+    "home_ml": 262,
+    "away_ml": -326,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -8.0,
@@ -268,7 +268,9 @@
     "flags": [],
     "factors": [
      "Rest: Rockets 2 day(s), Wizards 3 day(s)",
+     "Line moved 1 pts toward Washington Wizards since open (+8.5 to +7.5 home)",
      "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +2.2 a game, theirs -13.0)"
     ],
     "against": [],
@@ -276,15 +278,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 224.7,
-    "gap_a": 0.5,
-    "gap_b": -4.5,
-    "gap_min": 4.5,
-    "pick": "Houston Rockets -8.5",
-    "price": -107,
+    "gap_a": -0.5,
+    "gap_b": -5.5,
+    "gap_min": 5.5,
+    "pick": "Houston Rockets -7.5",
+    "price": -118,
     "side": "away",
     "fair_line": -10.5,
     "playable_to": null,
-    "sim_cover": 0.563,
+    "sim_cover": 0.594,
     "history": {
      "adj": -0.07,
      "key": "spread fav",
@@ -301,9 +303,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 5.9,
+    "conf": 6.0,
     "components": {
-     "efficiency": 0.5,
+     "efficiency": 0.61,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -353,21 +355,21 @@
     "indoor": true,
     "inj_home": [
      {
-      "player": "Ousmane Dieng",
-      "pos": "F",
+      "player": "Ryan Rollins",
+      "pos": "G",
       "status": "Out"
      },
      {
-      "player": "Ryan Rollins",
-      "pos": "G",
-      "status": "Day-To-Day"
+      "player": "Ousmane Dieng",
+      "pos": "F",
+      "status": "Out"
      }
     ],
     "inj_away": [
      {
       "player": "Jock Landale",
       "pos": "C",
-      "status": "Day-To-Day"
+      "status": "Out"
      },
      {
       "player": "Kingston Flemings",
@@ -481,12 +483,12 @@
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
     "book": "DraftKings",
-    "line": "OKC -10.5",
-    "home_line": 10.5,
+    "line": "OKC -11.5",
+    "home_line": 11.5,
     "home_line_open": 10.5,
     "spread_odds": [
-     -115,
-     -105
+     -108,
+     -112
     ],
     "total": 223.5,
     "total_open": 222.5,
@@ -584,7 +586,9 @@
     "flags": [],
     "factors": [
      "Rest: Thunder 2 day(s), Kings 2 day(s)",
-     "Indoors - weather does not matter"
+     "Line moved 1 pts toward Oklahoma City Thunder since open (+10.5 to +11.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
      "Last 5 games point the other way (our side -10.8 a game, theirs +5.8)"
@@ -593,15 +597,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 223.8,
-    "gap_a": 2.3,
-    "gap_b": 0.3,
-    "gap_min": 2.3,
-    "pick": "Sacramento Kings +10.5",
-    "price": -105,
+    "gap_a": 3.3,
+    "gap_b": 1.3,
+    "gap_min": 3.3,
+    "pick": "Sacramento Kings +11.5",
+    "price": -112,
     "side": "home",
     "fair_line": 9.2,
     "playable_to": null,
-    "sim_cover": 0.541,
+    "sim_cover": 0.572,
     "history": {
      "adj": 0.21,
      "key": "spread dog",
@@ -618,9 +622,9 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.1,
+    "conf": 5.2,
     "components": {
-     "efficiency": 0.25,
+     "efficiency": 0.36,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
@@ -652,8 +656,8 @@
     "home_line": -12.5,
     "home_line_open": -12.5,
     "spread_odds": [
-     -118,
-     -102
+     -120,
+     100
     ],
     "total": 148.5,
     "total_open": 150.5,
@@ -719,7 +723,7 @@
     "gap_b": -6.7,
     "gap_min": 6.7,
     "pick": "Syracuse Orange +12.5",
-    "price": -118,
+    "price": -120,
     "side": "away",
     "fair_line": 7.6,
     "playable_to": null,
@@ -1129,7 +1133,7 @@
      -110,
      -110
     ],
-    "total": 147.5,
+    "total": 146.5,
     "total_open": 149.5,
     "home_ml": 136,
     "away_ml": -162,
@@ -1228,7 +1232,7 @@
      "situational": 0.5,
      "our history": 0.26
     },
-    "total_gap": 4.1
+    "total_gap": 5.1
    },
    {
     "id": "401925718",
@@ -1347,7 +1351,13 @@
       "status": "Out"
      }
     ],
-    "inj_away": [],
+    "inj_away": [
+     {
+      "player": "Ryan Nugent-Hopkins",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
     "stars": [
      [
       "Connor McDavid",
@@ -1842,8 +1852,8 @@
     "home_line": -155.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -185,
-     154
+     -192,
+     160
     ],
     "total": 6.5,
     "total_open": 6.5,
