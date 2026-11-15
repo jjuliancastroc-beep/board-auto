@@ -15,18 +15,18 @@
     "away": "Colorado State Rams",
     "time": "Sat 9:45 PM CT",
     "start": "2026-11-15T03:45Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "WSU -7.5",
     "home_line": -7.5,
     "home_line_open": -6.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 64.5,
     "total_open": 62.5,
-    "home_ml": -298,
-    "away_ml": 240,
+    "home_ml": -290,
+    "away_ml": 235,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 5.7,
@@ -77,7 +77,7 @@
     "factors": [
      "Rest: Rams 7 day(s), Cougars 14 day(s)",
      "Line moved 1 pts toward Washington State Cougars since open (-6.5 to -7.5 home)",
-     "Kickoff forecast: wind 7 mph (gusts 7), 44F, rain chance 2%",
+     "Kickoff forecast: wind 7 mph (gusts 12), 44F, rain chance 1%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -89,11 +89,11 @@
     "tier": "G5/mixed",
     "day": "Sat",
     "wind": {
-     "wind": 7.0,
-     "gust": 7.0,
-     "rain": 2,
-     "temp": 44,
-     "src": "NWS"
+     "wind": 6.9,
+     "gust": 12.5,
+     "rain": 1,
+     "temp": 43.8,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Intermittent clouds",
@@ -104,17 +104,17 @@
     "gap_b": -5.6,
     "gap_min": 5.6,
     "pick": "Colorado State Rams +7.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": 3.8,
     "playable_to": null,
     "sim_cover": 0.59,
     "history": {
-     "adj": 0.15,
+     "adj": 0.05,
      "key": "CFB spread dog",
      "w": 10,
-     "l": 6,
-     "text": "Our record on CFB spread dog: 10-6 (last 60 days, recent counts more) -> +0.15 to confidence"
+     "l": 8,
+     "text": "Our record on CFB spread dog: 10-8 (last 60 days, recent counts more) -> +0.05 to confidence"
     },
     "test_record": {
      "w": 133,
@@ -125,7 +125,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.2,
+    "conf": 6.1,
     "components": {
      "efficiency": 0.93,
      "veto": 1.5,
@@ -135,140 +135,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.15
+     "our history": 0.05
     },
     "total_gap": -1.0
-   },
-   {
-    "id": "401864540",
-    "sport": "CFB",
-    "game": "Wyoming Cowboys @ UTEP Miners",
-    "home": "UTEP Miners",
-    "away": "Wyoming Cowboys",
-    "time": "Sat 9:00 PM CT",
-    "start": "2026-11-15T03:00Z",
-    "book": "Draft Kings",
-    "line": "WYO -7",
-    "home_line": 7.0,
-    "home_line_open": 10.0,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 40.5,
-    "total_open": 43.5,
-    "home_ml": 230,
-    "away_ml": -285,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -10.5,
-    "model_b": -7.7,
-    "games_played": [
-     9,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "6-3",
-     "1-8"
-    ],
-    "venue": "Sun Bowl",
-    "tv": "FS1",
-    "indoor": false,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jake Wilson",
-      "Tyler Hughes"
-     ],
-     [
-      "EJ Colson Jr.",
-      "Jaden Smith",
-      "Raymond Moore III"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     7
-    ],
-    "form5": [
-     2.6,
-     -17.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
-    ],
-    "factors": [
-     "Rest: Cowboys 7 day(s), Miners 7 day(s)",
-     "Line moved 3 pts toward UTEP Miners since open (+10 to +7 home)",
-     "Kickoff forecast: wind 6 mph (gusts 6), 57F, rain chance 0%",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +2.6 a game, theirs -17.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "tier": "G5/mixed",
-    "day": "Sat",
-    "wind": {
-     "wind": 6.0,
-     "gust": 6.0,
-     "rain": 0,
-     "temp": 57,
-     "src": "NWS"
-    },
-    "weather": {
-     "text": "34",
-     "temp": 59
-    },
-    "total_model": 46.0,
-    "gap_a": -3.5,
-    "gap_b": -0.7,
-    "gap_min": 3.5,
-    "pick": "Wyoming Cowboys -7",
-    "price": -112,
-    "side": "away",
-    "fair_line": -9.1,
-    "playable_to": null,
-    "sim_cover": 0.553,
-    "history": {
-     "adj": -0.09,
-     "key": "spread fav",
-     "w": 31,
-     "l": 35,
-     "text": "Our record on spread fav: 31-35 (last 60 days, recent counts more) -> -0.09 to confidence"
-    },
-    "test_record": {
-     "w": 133,
-     "l": 135,
-     "n": 268,
-     "win": 0.496
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.59,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.09
-    },
-    "total_gap": 5.5,
-    "total_lean": "Over 40.5 (season scoring says 46.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401864537",
@@ -278,7 +147,7 @@
     "away": "North Dakota State Bison",
     "time": "Sat 10:00 PM CT",
     "start": "2026-11-15T04:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "NDSU -7.5",
     "home_line": 7.5,
     "home_line_open": 9.5,
@@ -335,13 +204,12 @@
     "decision": "WATCH",
     "reason": "Only one model clears the bar - never a bet by itself.",
     "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)",
      "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
     ],
     "factors": [
      "Rest: Bison 14 day(s), Warriors 7 day(s)",
      "Line moved 2 pts toward Hawai'i Rainbow Warriors since open (+9.5 to +7.5 home)",
-     "Kickoff forecast: wind 21 mph (gusts 21), 79F, rain chance 23%",
+     "Kickoff forecast: wind 10 mph (gusts 24), 73F, rain chance 7%",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +11.0 a game, theirs -0.4)"
     ],
@@ -354,11 +222,11 @@
     "tier": "G5/mixed",
     "day": "Sat",
     "wind": {
-     "wind": 21.0,
-     "gust": 21.0,
-     "rain": 23,
-     "temp": 79,
-     "src": "NWS"
+     "wind": 10.4,
+     "gust": 23.9,
+     "rain": 7,
+     "temp": 73.1,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Intermittent clouds",
@@ -403,134 +271,6 @@
      "our history": -0.09
     },
     "total_gap": 2.3
-   },
-   {
-    "id": "401856864",
-    "sport": "CFB",
-    "game": "Utah Utes @ Arizona Wildcats",
-    "home": "Arizona Wildcats",
-    "away": "Utah Utes",
-    "time": "Sat 9:30 PM CT",
-    "start": "2026-11-15T03:30Z",
-    "book": "Draft Kings",
-    "line": "UTAH -2.5",
-    "home_line": 2.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 55.5,
-    "total_open": 51.5,
-    "home_ml": 110,
-    "away_ml": -130,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": -3.5,
-    "model_b": -0.8,
-    "games_played": [
-     9,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     "9-0",
-     "7-2"
-    ],
-    "venue": "Casino Del Sol Stadium",
-    "tv": "Fox",
-    "indoor": false,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Braden Pegan",
-      "Devon Dampier",
-      "Wayshawn Parker"
-     ],
-     [
-      "Isaiah Mizell",
-      "Kedrick Reescano",
-      "Noah Fifita"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     8
-    ],
-    "form5": [
-     12.0,
-     13.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Utes 7 day(s), Wildcats 8 day(s)",
-     "Line moved 1 pts toward Utah Utes since open (+1.5 to +2.5 home)",
-     "Kickoff forecast: wind 3 mph (gusts 3), 59F, rain chance 1%",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "tier": "P4vP4",
-    "day": "Sat",
-    "wind": {
-     "wind": 3.0,
-     "gust": 3.0,
-     "rain": 1,
-     "temp": 59,
-     "src": "NWS"
-    },
-    "weather": {
-     "text": "Mostly cloudy w/ showers",
-     "temp": 60
-    },
-    "total_model": 54.1,
-    "gap_a": -1.0,
-    "gap_b": 1.7,
-    "gap_min": 1.7,
-    "pick": "Arizona Wildcats +2.5",
-    "price": -115,
-    "side": "home",
-    "fair_line": 2.2,
-    "playable_to": null,
-    "sim_cover": 0.508,
-    "history": {
-     "adj": 0.15,
-     "key": "CFB spread dog",
-     "w": 10,
-     "l": 6,
-     "text": "Our record on CFB spread dog: 10-6 (last 60 days, recent counts more) -> +0.15 to confidence"
-    },
-    "test_record": {
-     "w": 120,
-     "l": 121,
-     "n": 241,
-     "win": 0.498
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.4,
-    "components": {
-     "efficiency": 0.28,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.15
-    },
-    "total_gap": -1.4
    }
   ],
   "n_past": 696,
@@ -548,148 +288,7 @@
  },
  {
   "sport": "NHL",
-  "games": [
-   {
-    "id": "401892720",
-    "sport": "NHL",
-    "game": "Calgary Flames @ Los Angeles Kings",
-    "home": "Los Angeles Kings",
-    "away": "Calgary Flames",
-    "time": "Sat 9:00 PM CT",
-    "start": "2026-11-15T03:00Z",
-    "book": "Draft Kings",
-    "line": "LA -175",
-    "home_line": -175.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -180,
-     150
-    ],
-    "total": 5.5,
-    "total_open": 5.5,
-    "home_ml": -175,
-    "away_ml": 145,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.1,
-    "model_b": -0.0,
-    "games_played": [
-     16,
-     15
-    ],
-    "neutral": false,
-    "records": [
-     "8-10-1",
-     "5-10-2"
-    ],
-    "venue": "crypto.com Arena",
-    "tv": "ESPN+, ABTV",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Erik Gustafsson",
-      "pos": "D",
-      "status": "Out"
-     },
-     {
-      "player": "Artemi Panarin",
-      "pos": "LW",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Connor Zary",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Joel Farabee",
-      "Matt Coronato"
-     ],
-     [
-      "Adrian Kempe",
-      "Brandt Clarke"
-     ]
-    ],
-    "goalies": [
-     "Dustin Wolf",
-     "Anton Forsberg"
-    ],
-    "rest": [
-     3,
-     2
-    ],
-    "form5": [
-     -0.6,
-     -1.0
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'). Past-games test for this kind of pick: 47.3% over 332.",
-    "flags": [],
-    "factors": [
-     "Rest: Flames 3 day(s), Kings 2 day(s)",
-     "Line moved 173.5 pts toward Los Angeles Kings since open (-1.5 to -175 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Dustin Wolf (Flames), Anton Forsberg (Kings)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past +103 (our fair price)"
-    ],
-    "total_model": 5.8,
-    "gap_a": -8.6,
-    "gap_b": -11.8,
-    "win_prob": [
-     0.493,
-     0.507
-    ],
-    "market_prob": [
-     0.391,
-     0.609
-    ],
-    "pick": "Calgary Flames ML (+145)",
-    "price": 145,
-    "side": "away",
-    "gap_min": 8.6,
-    "fair_line": 103,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.08,
-     "key": "NHL ml",
-     "w": 10,
-     "l": 11,
-     "text": "Our record on NHL ml: 10-11 (last 60 days, recent counts more) -> -0.08 to confidence"
-    },
-    "conf": 7.3,
-    "components": {
-     "efficiency": 0.86,
-     "veto": 1.5,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.08
-    },
-    "stake": 0
-   }
-  ],
-  "n_past": 268,
-  "model_note": "Ratings model (goal margin) and last-10 form turned into win chances vs the moneyline. Checks probable starting goalies and back-to-backs. Tracking only."
+  "games": [],
+  "note": "No games today."
  }
 ]
