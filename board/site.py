@@ -201,14 +201,21 @@ function pTag(x){
 }
 function propCard(x){
   return `<div class="card click" data-prop="${esc(x.id)}"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.game)} - ${esc(x.time)}</div></div><div>${pTag(x)}</div></div>
-  <div style="margin-top:6px">Projection <b>${x.proj}</b> vs line ${x.line}. Our chance <b>${pct(x.p)}</b>, Underdog ${pct(x.mkt)}.</div>
-  <div class="mute">Last 5 ${hr(x.hits.L5)} | last 10 ${hr(x.hits.L10)} | season ${hr(x.hits.season)} | last season ${hr(x.hits["last season"])} | vs opp ${hr(x.hits["vs opp"])}</div>
+  <div style="margin-top:6px">Projection <b>${x.proj}</b> vs line ${x.line}. Our chance <b>${pct(x.p)}</b>, Underdog ${pct(x.mkt)}${x.bk != null ? `, ${esc((x.bk_books||[]).join(" + "))} ${pct(x.bk)}` : ""}.</div>
+  ${bookLine(x)}<div class="mute">Last 5 ${hr(x.hits.L5)} | last 10 ${hr(x.hits.L10)} | season ${hr(x.hits.season)} | last season ${hr(x.hits["last season"])} | vs opp ${hr(x.hits["vs opp"])}</div>
   ${x.flags.slice(0,2).map(f => `<div class="flag">${esc(f)}</div>`).join("")}</div>`;
+}
+function bookTxt(b){
+  return b.over_x != null || b.under_x != null ? `${b.line} (Higher pays ${b.over_x ?? "-"}x, Lower ${b.under_x ?? "-"}x)` : `${b.line} (Over ${b.over > 0 ? "+" : ""}${b.over}, Under ${b.under > 0 ? "+" : ""}${b.under})`;
+}
+function bookLine(x){
+  const b = x.books || [];
+  return b.length ? `<div class="mute">Other books: ${b.map(v => esc(v.book) + " " + v.line + (v.line !== x.line ? " (different line)" : "")).join(" | ")}</div>` : "";
 }
 function lineRows(){
   const P = D.props; const q = pq.trim().toLowerCase();
   const rows = P.lines.filter(r => r[0] === pday && (psport === "All" || r[1] === psport) && (!q || (r[2] + " " + r[3]).toLowerCase().includes(q))).slice(0, 300);
-  return rows.map(r => `<tr><td>${esc(r[2])}<div class="mute">${esc(r[3])} ${r[4]} - ${esc(r[10])}</div></td><td class="n">${r[5] ? esc(r[5]) : "-"}</td><td class="n">${pct(r[6])}<div class="mute">UD ${pct(r[7])}</div></td><td class="n">${r[8] ?? "-"}<div class="mute">${esc(r[9])}</div></td></tr>`).join("") || `<tr><td class="mute">No lines match.</td></tr>`;
+  return rows.map(r => `<tr><td>${esc(r[2])}<div class="mute">${esc(r[3])} ${r[4]} - ${esc(r[10])}</div></td><td class="n">${r[5] ? esc(r[5]) : "-"}</td><td class="n">${pct(r[6])}<div class="mute">UD ${pct(r[7])}${r[11] != null ? " | books " + pct(r[11]) : ""}</div></td><td class="n">${r[8] ?? "-"}<div class="mute">${esc(r[9])}</div></td></tr>`).join("") || `<tr><td class="mute">No lines match.</td></tr>`;
 }
 function propDetail(x){
   const L = x.line, up = x.side === "higher";
@@ -221,8 +228,10 @@ function propDetail(x){
   <div class="card"><b>The numbers</b><table>
   <tr><td>Our projection</td><td class="n">${x.proj} (line ${L})</td></tr>
   <tr><td>Our chance ${esc(x.side)}</td><td class="n">${pct(x.p)}</td></tr><tr><td>Underdog's chance (no-vig)</td><td class="n">${pct(x.mkt)}</td></tr>
-  <tr><td>Gap</td><td class="n">${sgn(x.edge)} pts</td></tr><tr><td>Playable to</td><td class="n">${x.playable_to ?? "-"}</td></tr>
+  ${x.bk != null ? `<tr><td>${esc((x.bk_books||[]).join(" + "))} chance (no-vig, at Underdog's line)</td><td class="n">${pct(x.bk)}</td></tr>` : ""}<tr><td>Gap</td><td class="n">${sgn(x.edge)} pts</td></tr><tr><td>Playable to</td><td class="n">${x.playable_to ?? "-"}</td></tr>
   <tr><td>Model alone (before leaning on Underdog)</td><td class="n">${pct(up ? x.p_raw_higher : 1 - x.p_raw_higher)}</td></tr></table></div>
+  <div class="card"><b>Other books on this prop</b>${(x.books||[]).length ? `<table><tr><td>Underdog</td><td class="n">${L} (Higher ${esc(x.price?.higher ?? "-")}, Lower ${esc(x.price?.lower ?? "-")})</td></tr>${x.books.map(b => `<tr><td>${esc(b.book)}</td><td class="n">${esc(bookTxt(b))}</td></tr>`).join("")}</table>
+  <div class="mute" style="margin-top:6px">${x.bk != null ? "DraftKings and Pinnacle are sportsbooks, so their prices count in our chance. " : "No sportsbook price on this one. "}Sleeper is shown because that is where you play - check its line before you put it in. A different line there changes the bet.</div>` : `<div class="mute">No other book has this prop right now, so there is nothing to check Underdog's number against.</div>`}</div>
   <div class="card"><b>Hit rates (${esc(x.side)} ${L})</b><table><tr><th></th><th>Hit</th><th>Average</th></tr>
   ${["L5","L10","season","last season","vs opp"].map(k => `<tr><td>${k === "L5" ? "Last 5" : k === "L10" ? "Last 10" : k === "vs opp" ? "vs " + esc(x.opp) : k[0].toUpperCase()+k.slice(1)}</td><td class="n ${hrc(x.hits[k])}">${hr(x.hits[k])}</td><td class="n">${x.avgs[k] ?? "-"}</td></tr>`).join("")}
   <tr><td>Home / away</td><td></td><td class="n">${x.avgs.home ?? "-"} / ${x.avgs.away ?? "-"}</td></tr></table></div>
@@ -258,9 +267,9 @@ function propsTab(){
   if (!pday) pday = P.today;
   if (propId) { const x = P.calls.find(c => c.id === propId); if (x) return propDetail(x); }
   const C = P.calib || {}, R = P.record || {};
-  let h = `<div class="card"><b>Player props</b><p>About every 30 minutes the Board pulls Underdog's board and checks each line against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. It then compares our chance to Underdog's own price.</p>
+  let h = `<div class="card"><b>Player props</b><p>About every 30 minutes the Board pulls Underdog's board and checks each line two ways. First against the player's ESPN game log: last 5, last 10, season, last season, vs this opponent, minutes or snaps trend, injuries, and what the game line says his team will score. Second against what DraftKings and Pinnacle charge for the same prop. Sleeper's line is shown too, since that is where you play.</p>
   <p class="mute">Payouts: a 2-pick pays 3x, so each pick needs about 58%. A 3-pick pays 6x, so each needs about 55%. Steep sides (Underdog already above 62%) are skipped. Deep checks too: what each opponent gives up on that stat, boom-or-bust players, and our own record on that kind of prop (a small nudge, max 0.5). Props are kept apart from the main card. Up to 10 plays a day; the card is 3 singles + 2 parlays at $15. Tell the Board if you put one in ("placed Bey").</p>
-  ${(C.weight ?? 0.35) > 0 ? `<p class="flag">Not proven yet. Underdog's lines are sharp and our numbers often disagree with them, so for now we only trust our number ${Math.round((C.weight ?? 0.35)*100)}% and Underdog's ${Math.round((1-(C.weight ?? 0.35))*100)}%. After 2,000 graded lines the Board sets that split from results (${C.n || 0} graded so far).</p>` : `<p class="flag">Props are paused. Over ${C.n || 0} graded lines, Underdog's number beat ours, so the Board has no prop plays right now. It keeps grading every line and turns back on by itself if our number starts winning.</p>`}
+  ${(C.weight ?? 0.35) > 0 ? `<p class="flag">Not proven yet. Underdog's lines are sharp and our numbers often disagree with them, so for now we only trust our number ${Math.round((C.weight ?? 0.35)*100)}% and Underdog's ${Math.round((1-(C.weight ?? 0.35))*100)}%. After 2,000 graded lines the Board sets that split from results (${C.n || 0} graded so far).</p>` : `<p class="flag">Our own number is switched off: over ${C.n || 0} graded lines, Underdog's number beat ours. A call now needs two things - DraftKings or Pinnacle pricing the prop differently from Underdog, and his game log agreeing. That check is new and not proven. The Board grades it on every line (${C.nb || 0} so far) and drops it by itself if it does not win. College football and college basketball props have no sportsbook price in the free feeds, so those stay pass.</p>`}
   <div class="mute">${esc(P.note || "")}</div></div>`;
   h += `<div class="sel">${(P.dates||[]).map(d => `<button class="pill ${d===pday?"on":""}" data-pday="${d}">${d === P.today ? "Today" : "Tomorrow"}</button>`).join("")}</div>`;
   const sp = ["All", ...new Set(P.calls.concat([]).map(c => c.sport))];
@@ -296,6 +305,10 @@ function propsTab(){
   ${C.n ? `<table><tr><td>Underdog's error (lower is better)</td><td class="n">${(C.brier.underdog/C.n).toFixed(4)}</td></tr><tr><td>Our blended error</td><td class="n">${(C.brier.ours/C.n).toFixed(4)}</td></tr>
   ${["0-3","3-5","5-8","8+"].filter(k => bins[k]).map(k => `<tr><td>Our side, gap ${k} pts</td><td class="n">${bins[k][0]}-${bins[k][1]} (${pct(bins[k][0]/(bins[k][0]+bins[k][1]))})</td></tr>`).join("")}
   ${Object.entries(C.by_sport||{}).map(([k,v]) => `<tr><td>${esc(k)} our side</td><td class="n">${v[0]}-${v[1]} (${pct(v[0]/(v[0]+v[1]))})</td></tr>`).join("")}</table>` : `<div class="mute">First grades land tomorrow morning.</div>`}</div>`;
+  const bb = C.bins_b || {};
+  h += `<div class="card"><b>Are the sportsbooks better than Underdog?</b><div class="mute">Same test for the DraftKings / Pinnacle number, on every line that had one - ${C.nb || 0} graded so far. The Board believes the full gap until 1,000 are graded, then whatever share has scored best.</div>
+  ${C.nb ? `<table><tr><td>Underdog's error (lower is better)</td><td class="n">${(C.brier_b.underdog/C.nb).toFixed(4)}</td></tr><tr><td>Sportsbooks' error</td><td class="n">${(C.brier_b.books/C.nb).toFixed(4)}</td></tr>
+  ${["3-5","5-8","8+"].filter(k => bb[k]).map(k => `<tr><td>Sportsbooks' side, gap ${k} pts</td><td class="n">${bb[k][0]}-${bb[k][1]} (${pct(bb[k][0]/(bb[k][0]+bb[k][1]))})</td></tr>`).join("")}</table>` : `<div class="mute">First grades land after tonight's games.</div>`}</div>`;
   const BD = P.bands || [];
   h += `<div class="card"><b>Is prop confidence telling the truth?</b><div class="mute">Graded calls by the confidence they were logged at. Higher bands should win more. It takes about 100 results in a band before this means anything.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th></tr>${BD.map(t => `<tr><td>${t.band}</td><td class="n">${t.w}-${t.l}</td><td class="n">${t.w+t.l ? pct(t.w/(t.w+t.l)) : "-"}${t.w+t.l && t.w+t.l < 100 ? ' <span class="mute">(too few)</span>' : ""}</td></tr>`).join("")}</table></div>`;
   const recent = (P.recent || []);
@@ -330,7 +343,7 @@ def props_data(pr, date):
     pr = pr or {"props": []}
     calls = [x for x in pr["props"] if x.get("call") in ("PLAY", "LEAN")]
     lines = [[x.get("date"), x.get("sport"), x.get("player"), x.get("label") or x.get("stat"), x.get("line"), (x.get("side") or "").title() or None,
-              x.get("p"), x.get("mkt"), x.get("conf"), x.get("call"), x.get("game") or x.get("game_title")] for x in pr["props"]]
+              x.get("p"), x.get("mkt"), x.get("conf"), x.get("call"), x.get("game") or x.get("game_title"), x.get("bk")] for x in pr["props"]]
     book = load("props.json", [])
     dates = pr.get("dates") or [date]
     prev = max([d for d in (load("props_card.json", {}) or {}) if d < date], default=None)

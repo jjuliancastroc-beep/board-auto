@@ -8,6 +8,7 @@ For each line the Board works out:
                  scaled by the team's implied points from the betting line vs its season average
   our chance   - a count model (negative binomial fit to the player's own spread) blended with his real hit rate
   Underdog's   - the chance implied by Underdog's price for that side (vig removed)
+  the books'   - what DraftKings and Pinnacle charge for the same prop (vig removed), moved to Underdog's line; Sleeper's line is shown too
   hit rates    - last 5, last 10, this season, last season, vs this opponent
   role         - minutes / time on ice / targets / attempts, recent vs season
   flags        - injury status, teammates out, back-to-back, blowout risk, small sample
@@ -17,7 +18,7 @@ Props are their own section: tracked and graded, never part of the main card or 
 import math, re, unicodedata, datetime, statistics
 from concurrent.futures import ThreadPoolExecutor
 from .common import get, load, save, now_ct, ct_time, SPORTS, american_to_prob
-from . import espn, history
+from . import espn, history, books
 
 UD_URL = "https://api.underdogfantasy.com/v1/over_under_lines"
 GL_URL = "https://site.web.api.espn.com/apis/common/v3/sports/{path}/athletes/{aid}/gamelog{q}"
@@ -268,7 +269,13 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
     mh = line_row["mkt_higher"]
     out["p_raw_higher"] = round(p_hi, 4)
     W = ctx.get("w", 0.35)  # until graded lines prove our numbers, trust Underdog's price this much: p = market + W*(ours - market)
-    p_hi = mh + W * (p_hi - mh)
+    # the sportsbooks' price on the same prop, read at Underdog's line. One book alone counts three-quarters (two books disagree by ~1.5 points on a normal line).
+    bk, bk_used = books.consensus(line_row.get("books"), L, disp, p_over)
+    if bk is not None:
+        bk = mh + (1.0 if len(bk_used) >= 2 else 0.75) * (bk - mh)
+    out["bk_higher"] = round(bk, 4) if bk is not None else None; out["bk_books"] = bk_used
+    p_hi = mh + W * (p_hi - mh) + (ctx.get("wb", 1.0) * (bk - mh) if bk is not None else 0)
+    p_hi = min(0.99, max(0.01, p_hi))
     side = "higher" if p_hi >= mh else "lower"
     p = p_hi if side == "higher" else 1 - p_hi; mk = mh if side == "higher" else 1 - mh; edge = (p - mk) * 100
     good = (lambda v: v > L) if side == "higher" else (lambda v: v < L)
@@ -295,6 +302,15 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
                log=[{"date": g["date"][5:], "opp": ("vs " if g["home"] else "@ ") + str(g["opp"] or ""), "role": r1(g["s"].get(rf, 0)), "v": r1(val(g))} for g in (cur + prv)[:12]])
     # ---- reasons ----
     diff = mu - L
+    if bk is not None:
+        bs = bk if side == "higher" else 1 - bk
+        out["bk"] = round(bs, 3)
+        if abs(bs - mk) >= 0.02:
+            (out["for"] if bs > mk else out["against"]).append(f"{' and '.join(bk_used)} price{'s' if len(bk_used) == 1 else ''} this side at {bs * 100:.0f}%, Underdog at {mk * 100:.0f}%")
+    for b in line_row.get("books") or []:
+        if b["line"] != L:
+            easier = (b["line"] > L) == (side == "higher")
+            (out["for"] if easier else out["against"]).append(f"{b['book']} has the line at {b['line']:g} - Underdog's {L:g} is the {'easier' if easier else 'harder'} number")
     out["for" if (diff > 0) == (side == "higher") else "against"].append(f"Projection {mu:.1f} vs line {L:g}")
     for k_, (h, n) in out["hits"].items():
         if n >= 4 and k_ in ("L10", "season", "last season"):
@@ -350,6 +366,8 @@ def evaluate(line_row, ath, games_cur, games_prev, ctx):
         out["call"] = "PLAY"; out["reason"] = f"Our chance {p * 100:.0f}% vs Underdog's {mk * 100:.0f}%, and the numbers line up."
     elif conf >= LEAN["conf"] and edge >= LEAN["edge"] and p >= 0.53:
         out["call"] = "LEAN"; out["reason"] = f"Our chance {p * 100:.0f}% vs Underdog's {mk * 100:.0f}% - leg only, not strong enough alone."
+    elif bk is None and W == 0:
+        out["call"] = "PASS"; out["reason"] = "No sportsbook has this line to compare with, and our own number has not beaten Underdog's - no call."
     else:
         out["call"] = "PASS"; out["reason"] = f"Our chance {p * 100:.0f}% vs Underdog's {mk * 100:.0f}% - not enough."
     out["invalidation"] = [f"Line moves past {play_to:g}" if play_to is not None else "Any line move against us",
@@ -459,7 +477,11 @@ def build(dates, cards_by_id=None):
         cache["logs"][aid] = {"cur": slim(cur), "prev": slim(pv)}
     with ThreadPoolExecutor(8) as ex:
         list(ex.map(fetch_log, {(a["id"], l["sport"]) for l, a, g in jobs}))
-    calib = load("props_calib.json", {}); W = weight(calib); test = calib.get("calls") or {}
+    calib = load("props_calib.json", {}); W = weight(calib); WB = weight_books(calib); test = calib.get("calls") or {}
+    try:
+        bhits = books.collect(jobs)
+    except Exception as e:
+        print("books failed:", e); bhits = {}
     opp_f = opponent_factors(jobs, cache["logs"])
     out = []
     for l, a, g in jobs:
@@ -480,7 +502,7 @@ def build(dates, cards_by_id=None):
         rest = c.get("rest") or [None, None]
         ctx["b2b"] = (rest[1] if home else rest[0]) == 1 if rest else False
         leaders = set((g.get("hleaders") if home else g.get("aleaders")) or [])
-        ctx["w"] = W; ctx["test"] = test
+        ctx["w"] = W; ctx["wb"] = WB; ctx["test"] = test
         ctx["opp_factor"] = opp_f.get((l["sport"], l["stat"], ctx["opp_id"]), (1.0, 0))
         ctx["teammates_out"] = [r["player"] for r in inj.get(l["sport"], {}).get(a["team"], []) if str(r.get("status", "")).lower() == "out" and r["player"] in leaders and norm(r["player"]) != norm(a["name"])]
         try:
@@ -511,8 +533,10 @@ def build(dates, cards_by_id=None):
         d[r["call"]] += 1; d["players"].add(r["player"]); d["games"][r["event_id"]] = d["games"].get(r["event_id"], 0) + 1
     out.sort(key=lambda r: (r["date"], order.get(r["call"], 3), -(r.get("conf") or 0), -(r.get("edge") or 0)))
     matched = len(jobs); total = len(want)
-    return {"ok": True, "props": out, "dates": dates, "lines": total, "matched": matched,
-            "note": f"{total} Underdog lines for these days; {matched} matched to ESPN players and graded."}
+    priced = sum(1 for r in out if r.get("bk_higher") is not None)
+    bnote = ("Other books on the same props: " + ", ".join(f"{k} {v}" for k, v in bhits.items()) + f". {priced} lines have a sportsbook price to check against.") if bhits else "Other books did not load this run."
+    return {"ok": True, "props": out, "dates": dates, "lines": total, "matched": matched, "books": bhits, "priced": priced,
+            "note": f"{total} Underdog lines for these days; {matched} matched to ESPN players and graded. {bnote}"}
 
 
 def opponent_factors(jobs, logs, k=40):
@@ -564,6 +588,15 @@ def weight(calib):
     return float(min(ll, key=lambda k: ll[k]))
 
 
+def weight_books(calib):
+    """How much of the gap between the sportsbooks' price and Underdog's the Board believes. All of it until 1,000 graded lines that had
+    a sportsbook price; then whatever share has scored best (0 = the books add nothing, and book-driven calls stop by themselves)."""
+    if (calib or {}).get("nb", 0) < 1000:
+        return 1.0
+    ll = calib["llb"]
+    return float(min(ll, key=lambda k: ll[k]))
+
+
 def log_lines(props):
     """Keep every graded line's latest pre-game snapshot so we can test our numbers against Underdog's on all of them."""
     book = load("props_lines.json", {})
@@ -572,7 +605,7 @@ def log_lines(props):
         if "p_raw_higher" not in p or ct_time(p["start"]) <= now:
             continue
         book[p["id"]] = {"sport": p["sport"], "stat": p["stat"], "aid": p["espn_id"], "eid": p["event_id"], "start": p["start"], "line": p["line"],
-                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge")}
+                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher")}
     save("props_lines.json", book)
     return book
 
@@ -582,6 +615,7 @@ def grade_lines():
     book = load("props_lines.json", {}); calib = load("props_calib.json", {})
     calib.setdefault("n", 0); calib.setdefault("ll", {str(w): 0.0 for w in WGRID}); calib.setdefault("bins", {})
     calib.setdefault("brier", {"underdog": 0.0, "ours": 0.0}); calib.setdefault("by_sport", {})
+    calib.setdefault("nb", 0); calib.setdefault("llb", {str(w): 0.0 for w in WGRID}); calib.setdefault("brier_b", {"underdog": 0.0, "books": 0.0}); calib.setdefault("bins_b", {})
     now = now_ct(); logs = {}; done = []
     due = [(k, b) for k, b in book.items() if (now - ct_time(b["start"])).total_seconds() >= 4 * 3600]
     def fetch(x):
@@ -607,6 +641,15 @@ def grade_lines():
         for w in WGRID:
             q = min(0.99, max(0.01, b["mh"] + w * (b["pr"] - b["mh"])))
             calib["ll"][str(w)] -= math.log(q if y else 1 - q)
+        if b.get("bk") is not None:  # the same test for the sportsbooks' number, on the lines that had one
+            calib["nb"] += 1
+            for w in WGRID:
+                q = min(0.99, max(0.01, b["mh"] + w * (b["bk"] - b["mh"])))
+                calib["llb"][str(w)] -= math.log(q if y else 1 - q)
+            calib["brier_b"]["underdog"] += (b["mh"] - y) ** 2; calib["brier_b"]["books"] += (b["bk"] - y) ** 2
+            gap = abs(b["bk"] - b["mh"]) * 100
+            if gap >= 3:  # did the books' side win when they disagreed with Underdog?
+                r = calib["bins_b"].setdefault("8+" if gap >= 8 else "5-8" if gap >= 5 else "3-5", [0, 0]); r[0 if y == (1 if b["bk"] > b["mh"] else 0) else 1] += 1
         calib["brier"]["underdog"] += (b["mh"] - y) ** 2
         q = b["mh"] + 0.5 * (b["pr"] - b["mh"]); calib["brier"]["ours"] += (q - y) ** 2
         won = y == (1 if b["side"] == "higher" else 0)
@@ -620,7 +663,7 @@ def grade_lines():
     cb = [x for x in load("props.json", []) if x.get("result") in ("Won", "Lost") and x.get("source") == "Underdog board"]
     w_ = sum(1 for x in cb if x["result"] == "Won")
     calib["calls"] = {"n": len(cb), "w": w_, "l": len(cb) - w_, "win": round(w_ / len(cb), 3) if cb else 0}
-    calib["weight"] = weight(calib)
+    calib["weight"] = weight(calib); calib["weight_books"] = weight_books(calib)
     save("props_lines.json", book); save("props_calib.json", calib)
     return calib
 
@@ -780,7 +823,7 @@ def bands(book=None):
 
 
 KEEP = ("id", "date", "sport", "player", "team", "opp", "game", "event_id", "espn_id", "stat", "label", "side", "line", "pick", "proj", "p", "mkt", "edge", "conf",
-        "call", "start", "time", "playable_to")
+        "call", "start", "time", "playable_to", "bk", "bk_books")
 
 
 def log(props):
@@ -901,6 +944,11 @@ def ask(text, cards_by_id=None):
         pass
     row = {"sport": sport, "player": hit["displayName"], "stat": stat, "line": line, "mkt_higher": mh, "start": g["date"], "game_title": ctx["game"]}
     ath = {"id": hit["id"], "team": (hit.get("teamRelationships") or [{}])[0].get("displayName"), "team_id": tid}
+    calib = load("props_calib.json", {}); ctx["w"] = weight(calib); ctx["wb"] = weight_books(calib); ctx["test"] = calib.get("calls") or {}
+    try:
+        books.collect([(row, ath, g)])
+    except Exception:
+        pass
     r = evaluate(row, ath, slim(cur), slim(pv), ctx)
     if "side" in r and r["side"] != side:  # report the side you asked about
         r["note"] = f"The numbers lean the other way ({'Higher' if r['side'] == 'higher' else 'Lower'})."
@@ -922,11 +970,13 @@ def summary_lines(r):
     fmt = lambda x: f"{x[0]}/{x[1]}" if x[1] else "-"
     out = [f"{r['pick']} - {r['call']} (confidence {r['conf']})",
            f"{r['game']}, {r['time']}",
-           f"Projection {r['proj']} | our chance {r['p'] * 100:.0f}%" + ("" if r["mkt"] == 0.5 else f" vs Underdog {r['mkt'] * 100:.0f}%"),
+           f"Projection {r['proj']} | our chance {r['p'] * 100:.0f}%" + ("" if r["mkt"] == 0.5 else f" vs Underdog {r['mkt'] * 100:.0f}%") + (f" | {' + '.join(r.get('bk_books') or [])} {r['bk'] * 100:.0f}%" if r.get("bk") is not None else ""),
            f"Hit rate: last 5 {fmt(h['L5'])}, last 10 {fmt(h['L10'])}, season {fmt(h['season'])}, last season {fmt(h['last season'])}, vs {r['opp']} {fmt(h['vs opp'])}",
            f"Averages: last 5 {a['L5']}, last 10 {a['L10']}, season {a['season']}",
            f"{r['role']['label']}: last 5 {r['role']['L5']} vs season {r['role']['season']}",
            f"Playable to {r['playable_to']:g}" if r.get("playable_to") is not None else "Playable: not at 55%+ at any nearby line"]
+    if r.get("books"):
+        out.append("Other books: " + ", ".join(f"{b['book']} {b['line']:g}" for b in r["books"]))
     out += [f"For: {x}" for x in r["for"]] + [f"Against: {x}" for x in r["against"]] + [f"Flag: {x}" for x in r["flags"]]
     if r.get("note"):
         out.append(r["note"])

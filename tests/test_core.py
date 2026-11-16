@@ -252,5 +252,41 @@ class Moved(unittest.TestCase):
             grade.load, grade.save, espn.event_start = keep
 
 
+class Books(unittest.TestCase):
+    def test_other_books(self):
+        from board import books, props
+        ath = lambda i: {"$ref": f"http://x/athletes/{i}?lang=en"}
+        it = lambda i, name, line, price: {"athlete": ath(i), "type": {"name": name}, "current": {"target": {"value": line}}, "odds": {"american": {"value": price}}}
+        dk = books.parse_dk([it(7, "Total Points", 20.5, "-120"), it(7, "Total Points", 20.5, "EVEN"), it(7, "Total Rebounds", 5.5, "-110"),   # one-sided: dropped
+                             it(8, "Total Assists", 4.5, "+105"), it(8, "Total Assists", 5.5, "-130"), it(9, "First Basket", 0.5, "+900")])       # two lines / not a total: dropped
+        assert dk == {("7", "points"): {"book": "DraftKings", "line": 20.5, "over": -120, "under": 100}}
+        mu = [{"id": 1, "type": "special", "special": {"category": "Player Props", "description": "Luka Doncic (Points) Total Points"},
+               "participants": [{"id": 11, "name": "Over"}, {"id": 12, "name": "Under"}], "parent": {"participants": [{"name": "Los Angeles Lakers", "alignment": "home"}]}, "startTime": "2099-01-01T01:00:00Z"},
+              {"id": 2, "type": "matchup", "participants": []}]
+        mk = [{"matchupId": 1, "type": "total", "period": 0, "prices": [{"participantId": 11, "points": 30.5, "price": -115}, {"participantId": 12, "points": 30.5, "price": -105}]}]
+        pin = books.parse_pinnacle("NBA", mu, mk)
+        assert pin[("NBA", "luka doncic", "points")]["line"] == 30.5 and pin[("NBA", "luka doncic", "points")]["over"] == -115
+        sl = [{"sport": "nba", "status": "active", "game_status": "pre_game", "outcome_type": "over_under", "line_type": "normal", "wager_type": "rebounds", "subject_id": "55",
+               "options": [{"outcome": "over", "outcome_value": 8.5, "payout_multiplier": "1.8"}, {"outcome": "under", "outcome_value": 8.5, "payout_multiplier": "1.76"}]},
+              {"sport": "nba", "status": "active", "game_status": "in_game", "outcome_type": "over_under", "line_type": "normal", "wager_type": "points", "subject_id": "55", "options": []}]
+        slp = books.parse_sleeper(sl, {("nba", "55"): "Nikola Jokić Jr."})
+        assert slp == {("NBA", "nikola jokic", "rebounds"): {"book": "Sleeper", "line": 8.5, "over_x": 1.8, "under_x": 1.76}}
+        # the books' chance: even prices = 50%, vig removed; Sleeper never counts; a far-away line never counts
+        even = {"book": "DraftKings", "line": 20.5, "over": -110, "under": -110}
+        q, used = books.consensus([even, {"book": "Sleeper", "line": 20.5, "over_x": 1.2, "under_x": 3.0}], 20.5, 1.5, props.p_over)
+        assert abs(q - 0.5) < 1e-9 and used == ["DraftKings"]
+        q, used = books.consensus([even, {"book": "Pinnacle", "line": 20.5, "over": -150, "under": 120}], 20.5, 1.5, props.p_over)
+        assert 0.53 < q < 0.56 and used == ["DraftKings", "Pinnacle"]
+        assert books.consensus([{"book": "DraftKings", "line": 2.5, "over": -110, "under": -110}], 3.5, 1.3, props.p_over) == (None, [])
+        assert books.consensus([], 3.5, 1.3, props.p_over) == (None, [])
+        # a book at a higher line with even prices means Higher at Underdog's lower line is more likely than 50%
+        up = books.at_line(0.5, 22.5, 21.5, 2.0, props.p_over)
+        assert 0.52 < up < 0.62 and books.at_line(0.5, 21.5, 22.5, 2.0, props.p_over) < 0.48 and books.at_line(0.61, 9.5, 9.5, 2.0, props.p_over) == 0.61
+        # how much of the books' gap we believe: all of it until 1,000 graded, then whatever scored best (0 = off)
+        assert props.weight_books({}) == 1.0 and props.weight_books({"nb": 999, "llb": {"0.0": 1, "1.0": 2}}) == 1.0
+        assert props.weight_books({"nb": 1000, "llb": {"0.0": 5.0, "0.5": 4.0, "1.0": 6.0}}) == 0.5
+        assert props.weight_books({"nb": 1000, "llb": {"0.0": 3.0, "0.5": 4.0, "1.0": 6.0}}) == 0.0
+
+
 if __name__ == "__main__":
     unittest.main()
