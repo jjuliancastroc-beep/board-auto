@@ -24,7 +24,7 @@
     "away_ml": 185,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
-    "model_a": -0.7,
+    "model_a": -1.0,
     "model_b": 5.5,
     "games_played": [
      8,
@@ -112,7 +112,7 @@
     "factors": [
      "Rest: Chargers 8 day(s), Ravens 11 day(s)",
      "Line moved 2 pts toward Baltimore Ravens since open (-2.5 to -4.5 home)",
-     "Kickoff forecast: wind 6 mph (gusts 11), 43F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 10), 43F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -120,10 +120,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 5.5,
-     "gust": 11.0,
+     "wind": 5.4,
+     "gust": 9.8,
      "rain": 0,
-     "temp": 42.9,
+     "temp": 43.2,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -131,15 +131,15 @@
      "temp": 43
     },
     "total_model": 44.9,
-    "gap_a": -5.2,
+    "gap_a": -5.5,
     "gap_b": 1.0,
-    "gap_min": 5.2,
+    "gap_min": 5.5,
     "pick": "Los Angeles Chargers +4.5",
     "price": -108,
     "side": "away",
-    "fair_line": 2.4,
+    "fair_line": 2.3,
     "playable_to": null,
-    "sim_cover": 0.563,
+    "sim_cover": 0.568,
     "history": {
      "adj": 0.15,
      "key": "spread dog",
@@ -156,9 +156,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.5,
+    "conf": 6.6,
     "components": {
-     "efficiency": 0.86,
+     "efficiency": 0.92,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -971,17 +971,17 @@
     "time": "Mon 6:30 PM CT",
     "start": "2026-11-17T00:30Z",
     "book": "DraftKings",
-    "line": "HOU -2.5",
-    "home_line": 2.5,
+    "line": "HOU -1.5",
+    "home_line": 1.5,
     "home_line_open": 2.5,
     "spread_odds": [
-     -106,
-     -115
+     null,
+     null
     ],
     "total": 230.5,
     "total_open": 228.5,
-    "home_ml": 114,
-    "away_ml": -135,
+    "home_ml": 110,
+    "away_ml": -130,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -5.5,
@@ -1045,7 +1045,9 @@
     ],
     "factors": [
      "Rest: Rockets 1 day(s), Heat 2 day(s)",
+     "Line moved 1 pts toward Miami Heat since open (+2.5 to +1.5 home)",
      "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +9.8 a game, theirs +4.8)"
     ],
     "against": [
@@ -1055,15 +1057,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 232.6,
-    "gap_a": -3.0,
-    "gap_b": -1.9,
-    "gap_min": 3.0,
-    "pick": "Houston Rockets -2.5",
-    "price": -106,
+    "gap_a": -4.0,
+    "gap_b": -2.9,
+    "gap_min": 4.0,
+    "pick": "Houston Rockets -1.5",
+    "price": -110,
     "side": "away",
     "fair_line": -4.9,
     "playable_to": null,
-    "sim_cover": 0.578,
+    "sim_cover": 0.609,
     "history": {
      "adj": -0.04,
      "key": "spread fav",
@@ -1080,9 +1082,9 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 4.6,
+    "conf": 4.8,
     "components": {
-     "efficiency": 0.33,
+     "efficiency": 0.44,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
@@ -4910,8 +4912,8 @@
     "time": "Mon 6:30 PM CT",
     "start": "2026-11-17T00:30Z",
     "book": "DraftKings",
-    "line": "MTL -110",
-    "home_line": 110.0,
+    "line": "MTL -115",
+    "home_line": 115.0,
     "home_line_open": 1.5,
     "spread_odds": [
      225,
@@ -4919,8 +4921,8 @@
     ],
     "total": 6.5,
     "total_open": 6.5,
-    "home_ml": -110,
-    "away_ml": -110,
+    "home_ml": -105,
+    "away_ml": -115,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 0.1,
@@ -4969,12 +4971,10 @@
     ],
     "decision": "WATCH",
     "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
-    ],
+    "flags": [],
     "factors": [
      "Rest: Canadiens 2 day(s), Rangers 3 day(s)",
-     "Line moved 108.5 pts toward Montreal Canadiens since open (+1.5 to +110 home)",
+     "Line moved 113.5 pts toward Montreal Canadiens since open (+1.5 to +115 home)",
      "Indoors - weather does not matter",
      "Probable goalies: Jacob Fowler (Canadiens), Joonas Korpisalo (Rangers)"
     ],
@@ -4984,20 +4984,20 @@
      "Price moves past -126 (our fair price)"
     ],
     "total_model": 6.2,
-    "gap_a": 1.3,
-    "gap_b": -12.8,
+    "gap_a": 2.4,
+    "gap_b": -11.7,
     "win_prob": [
      0.557,
      0.443
     ],
     "market_prob": [
-     0.5,
-     0.5
+     0.511,
+     0.489
     ],
-    "pick": "Montreal Canadiens ML (-110)",
-    "price": -110,
+    "pick": "Montreal Canadiens ML (-115)",
+    "price": -115,
     "side": "away",
-    "gap_min": 12.8,
+    "gap_min": 11.7,
     "fair_line": -126,
     "models_agree": false,
     "one_model": true,
@@ -5017,10 +5017,10 @@
      "l": 15,
      "text": "Our record on NHL ml: 13-15 (last 60 days, recent counts more) -> -0.12 to confidence"
     },
-    "conf": 5.9,
+    "conf": 6.4,
     "components": {
      "efficiency": 1.0,
-     "veto": 1.0,
+     "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
      "coaching": 0.5,
