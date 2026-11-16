@@ -1,191 +1,8 @@
 [
  {
   "sport": "NFL",
-  "games": [
-   {
-    "id": "401873064",
-    "sport": "NFL",
-    "game": "Pittsburgh Steelers @ Cincinnati Bengals",
-    "home": "Cincinnati Bengals",
-    "away": "Pittsburgh Steelers",
-    "time": "Sun 7:20 PM CT",
-    "start": "2026-11-16T01:20Z",
-    "book": "DraftKings",
-    "line": "CIN -4.5",
-    "home_line": -4.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 49.5,
-    "total_open": 47.5,
-    "home_ml": -218,
-    "away_ml": 180,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 6.3,
-    "model_b": 4.7,
-    "games_played": [
-     8,
-     8
-    ],
-    "neutral": false,
-    "records": [
-     "6-2",
-     "6-2"
-    ],
-    "venue": "Paycor Stadium",
-    "tv": "NBC",
-    "indoor": false,
-    "inj_home": [
-     {
-      "player": "Myles Hinton",
-      "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Landon Robinson",
-      "pos": "DT",
-      "status": "Out"
-     },
-     {
-      "player": "Connor Lew",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Kyle Dugger",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Will Howard",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "player": "Eli Heidenreich",
-      "pos": "RB",
-      "status": "Out"
-     },
-     {
-      "player": "Sean Murphy-Bunting",
-      "pos": "CB",
-      "status": "Out"
-     },
-     {
-      "player": "Drew Allar",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
-      "player": "DeShon Elliott",
-      "pos": "S",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Aaron Rodgers",
-      "DK Metcalf",
-      "Jaylen Warren"
-     ],
-     [
-      "Chase Brown",
-      "Joe Burrow",
-      "Tee Higgins"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     14,
-     7
-    ],
-    "form5": [
-     8.6,
-     9.6
-    ],
-    "decision": "PASS",
-    "reason": "Veto: QB Will Howard (Pittsburgh Steelers) Out - QB rule: no bet on this game until settled; QB Drew Allar (Pittsburgh Steelers) Out - QB rule: no bet on this game until settled",
-    "flags": [
-     "QB Will Howard (Pittsburgh Steelers) Out - QB rule: no bet on this game until settled",
-     "QB Drew Allar (Pittsburgh Steelers) Out - QB rule: no bet on this game until settled"
-    ],
-    "factors": [
-     "Rest: Steelers 14 day(s), Bengals 7 day(s)",
-     "Line moved 1 pts toward Cincinnati Bengals since open (-3.5 to -4.5 home)",
-     "Kickoff forecast: wind 4 mph (gusts 9), 40F, rain chance 0%"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "wind": {
-     "wind": 3.7,
-     "gust": 9.2,
-     "rain": 0,
-     "temp": 39.6,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "Partly cloudy",
-     "temp": 42
-    },
-    "total_model": 46.2,
-    "veto_sides": [
-     "game",
-     "game"
-    ],
-    "gap_a": 1.8,
-    "gap_b": 0.2,
-    "gap_min": 1.8,
-    "pick": "Cincinnati Bengals -4.5",
-    "price": -108,
-    "side": "home",
-    "fair_line": -5.5,
-    "playable_to": null,
-    "sim_cover": 0.531,
-    "history": {
-     "adj": -0.04,
-     "key": "spread fav",
-     "w": 37,
-     "l": 39,
-     "text": "Our record on spread fav: 37-39 (last 60 days, recent counts more) -> -0.04 to confidence"
-    },
-    "test_record": {
-     "w": 66,
-     "l": 74,
-     "n": 140,
-     "win": 0.471
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": true,
-    "conf": 1.9,
-    "components": {
-     "efficiency": 0.3,
-     "veto": 0.0,
-     "models": 0.0,
-     "starters": 0.0,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.04
-    },
-    "total_gap": -3.3
-   }
-  ],
-  "n_past": 136,
-  "model_note": "FPI (ESPN's season power rating) and an opponent-adjusted ratings model from every game played this season. Checks QB status, weather and wind, rest (short weeks), key numbers 3 and 7."
+  "games": [],
+  "note": "No games today."
  },
  {
   "sport": "CFB",
@@ -208,8 +25,8 @@
     "home_line": 12.5,
     "home_line_open": 10.5,
     "spread_odds": [
-     -105,
-     -115
+     -112,
+     -108
     ],
     "total": 221.5,
     "total_open": 222.5,
@@ -233,6 +50,11 @@
     "indoor": true,
     "inj_home": [
      {
+      "player": "De'Andre Hunter",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
       "player": "Zach LaVine",
       "pos": "G",
       "status": "Out"
@@ -241,11 +63,6 @@
       "player": "Precious Achiuwa",
       "pos": "F",
       "status": "Out"
-     },
-     {
-      "player": "De'Andre Hunter",
-      "pos": "F",
-      "status": "Day-To-Day"
      },
      {
       "player": "Maxime Raynaud",
@@ -263,11 +80,6 @@
       "player": "Jaylin Williams",
       "pos": "F",
       "status": "Out"
-     },
-     {
-      "player": "Ajay Mitchell",
-      "pos": "G",
-      "status": "Day-To-Day"
      },
      {
       "player": "Thomas Sorber",
@@ -332,7 +144,7 @@
     "gap_b": 2.3,
     "gap_min": 4.3,
     "pick": "Sacramento Kings +12.5",
-    "price": -115,
+    "price": -108,
     "side": "home",
     "fair_line": 9.2,
     "playable_to": null,
@@ -490,73 +302,6 @@
     },
     "total_gap": 6.0,
     "total_lean": "Over 150.5 (season scoring says 156.5) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401925718",
-    "sport": "CBB",
-    "game": "Stillman Tigers @ Bethune-Cookman Wildcats",
-    "home": "Bethune-Cookman Wildcats",
-    "away": "Stillman Tigers",
-    "time": "Sun 7:00 PM CT",
-    "start": "2026-11-16T01:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": null,
-    "games_played": [
-     0,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     null,
-     "0-4"
-    ],
-    "venue": "Moore Gymnasium (FL)",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [],
-     [
-      "Daniel Johnson",
-      "Daniel Perez-Rouzan",
-      "Jaylen Jones"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     null,
-     4
-    ],
-    "form5": [
-     null,
-     -14.5
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": []
    }
   ],
   "n_past": 815,
