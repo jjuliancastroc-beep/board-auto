@@ -112,7 +112,7 @@
     "factors": [
      "Rest: Chargers 8 day(s), Ravens 11 day(s)",
      "Line moved 2 pts toward Baltimore Ravens since open (-2.5 to -4.5 home)",
-     "Kickoff forecast: wind 5 mph (gusts 10), 43F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 11), 42F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -120,10 +120,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 5.1,
-     "gust": 9.6,
+     "wind": 5.3,
+     "gust": 10.7,
      "rain": 0,
-     "temp": 42.6,
+     "temp": 42.5,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -874,6 +874,11 @@
     ],
     "inj_away": [
      {
+      "player": "Julian Phillips",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
       "player": "Fred VanVleet",
       "pos": "G",
       "status": "Day-To-Day"
@@ -977,7 +982,7 @@
      -110,
      -110
     ],
-    "total": 229.5,
+    "total": 228.5,
     "total_open": 228.5,
     "home_ml": -406,
     "away_ml": 320,
@@ -1094,7 +1099,7 @@
      "situational": 0.2,
      "our history": 0.15
     },
-    "total_gap": -0.8
+    "total_gap": 0.2
    },
    {
     "id": "401909995",
@@ -1880,17 +1885,17 @@
     "time": "Mon 1:00 PM CT",
     "start": "2026-11-16T19:00Z",
     "book": "DraftKings",
-    "line": "UTEP -19.5",
-    "home_line": -19.5,
+    "line": "UTEP -20.5",
+    "home_line": -20.5,
     "home_line_open": -19.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 142.5,
     "total_open": 140.5,
-    "home_ml": -3200,
-    "away_ml": 1400,
+    "home_ml": -4000,
+    "away_ml": 1600,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 16.1,
@@ -1940,22 +1945,24 @@
     ],
     "factors": [
      "Rest: Rattlers 5 day(s), Miners 4 day(s)",
-     "Indoors - weather does not matter"
+     "Line moved 1 pts toward UTEP Miners since open (-19.5 to -20.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 148.8,
-    "gap_a": -3.4,
-    "gap_b": -7.5,
-    "gap_min": 7.5,
-    "pick": "Florida A&M Rattlers +19.5",
-    "price": -108,
+    "gap_a": -4.4,
+    "gap_b": -8.5,
+    "gap_min": 8.5,
+    "pick": "Florida A&M Rattlers +20.5",
+    "price": -112,
     "side": "away",
     "fair_line": 14.0,
     "playable_to": null,
-    "sim_cover": 0.69,
+    "sim_cover": 0.721,
     "history": {
      "adj": 0.2,
      "key": "CBB spread dog",
@@ -1972,9 +1979,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.0,
+    "conf": 6.1,
     "components": {
-     "efficiency": 0.83,
+     "efficiency": 0.94,
      "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
@@ -2236,7 +2243,7 @@
      -105,
      -115
     ],
-    "total": 153.5,
+    "total": 151.5,
     "total_open": 155.5,
     "home_ml": -1050,
     "away_ml": 675,
@@ -2335,7 +2342,7 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": 1.7
+    "total_gap": 3.7
    },
    {
     "id": "401920735",
@@ -2716,8 +2723,8 @@
     ],
     "total": 157.5,
     "total_open": 159.5,
-    "home_ml": -298,
-    "away_ml": 240,
+    "home_ml": -285,
+    "away_ml": 230,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 6.4,
@@ -2828,8 +2835,8 @@
     "home_line": -33.5,
     "home_line_open": -33.5,
     "spread_odds": [
-     -105,
-     -115
+     -112,
+     -108
     ],
     "total": 147.5,
     "total_open": 148.5,
@@ -2899,7 +2906,7 @@
     "gap_b": -22.9,
     "gap_min": 7.3,
     "pick": "Long Beach State Beach +33.5",
-    "price": -105,
+    "price": -112,
     "side": "away",
     "fair_line": 18.4,
     "playable_to": 30.7,
@@ -2935,128 +2942,6 @@
     "total_gap": -0.5
    },
    {
-    "id": "401921804",
-    "sport": "CBB",
-    "game": "Grambling Tigers @ Kentucky Wildcats",
-    "home": "Kentucky Wildcats",
-    "away": "Grambling Tigers",
-    "time": "Mon 6:00 PM CT",
-    "start": "2026-11-17T00:00Z",
-    "book": "DraftKings",
-    "line": "UK -29.5",
-    "home_line": -29.5,
-    "home_line_open": -30.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 152.5,
-    "total_open": 158.5,
-    "home_ml": -100000,
-    "away_ml": 5000,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 22.2,
-    "model_b": 6.6,
-    "games_played": [
-     2,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "1-1",
-     "3-1"
-    ],
-    "venue": "Rupp Arena",
-    "tv": "SECN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dwayne Pierce",
-      "Isaiah Miranda"
-     ],
-     [
-      "Malachi Moreno",
-      "Mason Williams",
-      "Zoom Diallo"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     3
-    ],
-    "form5": [
-     null,
-     4.5
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Tigers 7 day(s), Wildcats 3 day(s)",
-     "Line moved 1 pts toward Grambling Tigers since open (-30.5 to -29.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "One model is only barely past the bar"
-    ],
-    "invalidation": [
-     "Line moves past +26.7",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 160.8,
-    "gap_a": -7.3,
-    "gap_b": -22.9,
-    "gap_min": 7.3,
-    "pick": "Grambling Tigers +29.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 14.4,
-    "playable_to": 26.7,
-    "sim_cover": 0.915,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 47,
-     "l": 33,
-     "text": "Our record on CBB spread dog: 47-33 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": true,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.81,
-     "veto": 0.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 8.3,
-    "total_lean": "Over 152.5 (season scoring says 160.8) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401919807",
     "sport": "CBB",
     "game": "St. Thomas Tommies @ Long Island University Sharks",
@@ -3069,13 +2954,13 @@
     "home_line": 1.5,
     "home_line_open": 2.5,
     "spread_odds": [
-     100,
-     -120
+     105,
+     -125
     ],
     "total": 146.5,
     "total_open": 149.5,
-    "home_ml": -102,
-    "away_ml": -118,
+    "home_ml": -108,
+    "away_ml": -112,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -2.9,
@@ -3136,7 +3021,7 @@
     "gap_b": -2.8,
     "gap_min": 2.8,
     "pick": "St. Thomas Tommies -1.5",
-    "price": 100,
+    "price": 105,
     "side": "away",
     "fair_line": -3.6,
     "playable_to": null,
@@ -3172,6 +3057,128 @@
     "total_gap": 1.7
    },
    {
+    "id": "401921804",
+    "sport": "CBB",
+    "game": "Grambling Tigers @ Kentucky Wildcats",
+    "home": "Kentucky Wildcats",
+    "away": "Grambling Tigers",
+    "time": "Mon 6:00 PM CT",
+    "start": "2026-11-17T00:00Z",
+    "book": "DraftKings",
+    "line": "UK -28.5",
+    "home_line": -28.5,
+    "home_line_open": -30.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 152.5,
+    "total_open": 158.5,
+    "home_ml": -100000,
+    "away_ml": 5000,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 22.2,
+    "model_b": 6.6,
+    "games_played": [
+     2,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "1-1",
+     "3-1"
+    ],
+    "venue": "Rupp Arena",
+    "tv": "SECN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Dwayne Pierce",
+      "Isaiah Miranda"
+     ],
+     [
+      "Malachi Moreno",
+      "Mason Williams",
+      "Zoom Diallo"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     3
+    ],
+    "form5": [
+     null,
+     4.5
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Tigers 7 day(s), Wildcats 3 day(s)",
+     "Line moved 2 pts toward Grambling Tigers since open (-30.5 to -28.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "One model is only barely past the bar"
+    ],
+    "invalidation": [
+     "Line moves past +26.7",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 160.8,
+    "gap_a": -6.3,
+    "gap_b": -21.9,
+    "gap_min": 6.3,
+    "pick": "Grambling Tigers +28.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 14.4,
+    "playable_to": 26.7,
+    "sim_cover": 0.9,
+    "history": {
+     "adj": 0.2,
+     "key": "CBB spread dog",
+     "w": 47,
+     "l": 33,
+     "text": "Our record on CBB spread dog: 47-33 (last 60 days, recent counts more) -> +0.20 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": true,
+    "conf": 5.2,
+    "components": {
+     "efficiency": 0.7,
+     "veto": 0.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.2
+    },
+    "total_gap": 8.3,
+    "total_lean": "Over 152.5 (season scoring says 160.8) - WATCH only, totals have no past-games test yet"
+   },
+   {
     "id": "401916307",
     "sport": "CBB",
     "game": "Western Illinois Leathernecks @ Minnesota Golden Gophers",
@@ -3187,7 +3194,7 @@
      -115,
      -105
     ],
-    "total": 136.5,
+    "total": 135.5,
     "total_open": 138.5,
     "home_ml": null,
     "away_ml": null,
@@ -3290,8 +3297,8 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": 6.0,
-    "total_lean": "Over 136.5 (season scoring says 142.5) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.0,
+    "total_lean": "Over 135.5 (season scoring says 142.5) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401906783",
@@ -3309,7 +3316,7 @@
      -108,
      -112
     ],
-    "total": 152.5,
+    "total": 153.5,
     "total_open": 153.5,
     "home_ml": -6500,
     "away_ml": 2000,
@@ -3412,7 +3419,7 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": -1.3
+    "total_gap": -2.3
    },
    {
     "id": "401916317",
@@ -3906,13 +3913,13 @@
     "home_line": -20.5,
     "home_line_open": -21.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
-    "total": 160.5,
+    "total": 161.5,
     "total_open": 160.5,
-    "home_ml": -5000,
-    "away_ml": 1800,
+    "home_ml": -4500,
+    "away_ml": 1700,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 16.3,
@@ -3977,7 +3984,7 @@
     "gap_b": -14.9,
     "gap_min": 14.9,
     "pick": "Central Arkansas Bears +20.5",
-    "price": -110,
+    "price": -115,
     "side": "away",
     "fair_line": 10.9,
     "playable_to": null,
@@ -4010,7 +4017,7 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": -0.9
+    "total_gap": -1.9
    },
    {
     "id": "401920962",
