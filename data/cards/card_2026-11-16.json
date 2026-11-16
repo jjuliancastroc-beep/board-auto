@@ -112,7 +112,7 @@
     "factors": [
      "Rest: Chargers 8 day(s), Ravens 11 day(s)",
      "Line moved 2 pts toward Baltimore Ravens since open (-2.5 to -4.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 2), 44F, rain chance 0%",
+     "Kickoff forecast: wind 6 mph (gusts 12), 45F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -120,15 +120,15 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 2.0,
-     "gust": 2.0,
+     "wind": 5.9,
+     "gust": 11.9,
      "rain": 0,
-     "temp": 44,
-     "src": "NWS"
+     "temp": 44.7,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Clear",
-     "temp": 44
+     "temp": 45
     },
     "total_model": 44.9,
     "gap_a": -5.5,
@@ -343,8 +343,8 @@
     "home_line": 3.5,
     "home_line_open": 6.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
     "total": 232.5,
     "total_open": 230.5,
@@ -410,16 +410,6 @@
       "status": "Out"
      },
      {
-      "player": "Quinten Post",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Zach Edey",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
-     {
       "player": "Richie Saunders",
       "pos": "G",
       "status": "Out"
@@ -468,7 +458,7 @@
     "gap_b": -11.4,
     "gap_min": 11.4,
     "pick": "Memphis Grizzlies -3.5",
-    "price": -110,
+    "price": -105,
     "side": "away",
     "fair_line": -11.0,
     "playable_to": null,
@@ -516,13 +506,13 @@
     "home_line": 3.5,
     "home_line_open": 2.5,
     "spread_odds": [
-     -110,
-     -110
+     -106,
+     -115
     ],
     "total": 223.5,
     "total_open": 226.5,
-    "home_ml": 136,
-    "away_ml": -161,
+    "home_ml": 131,
+    "away_ml": -155,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -6.6,
@@ -643,7 +633,7 @@
     "gap_b": -9.5,
     "gap_min": 9.5,
     "pick": "Golden State Warriors -3.5",
-    "price": -110,
+    "price": -106,
     "side": "away",
     "fair_line": -9.8,
     "playable_to": null,
@@ -688,14 +678,14 @@
     "time": "Mon 6:00 PM CT",
     "start": "2026-11-17T00:00Z",
     "book": "Draft Kings",
-    "line": "BOS -8.5",
-    "home_line": -8.5,
+    "line": "BOS -9.5",
+    "home_line": -9.5,
     "home_line_open": -9.5,
     "spread_odds": [
-     -103,
-     -118
+     -113,
+     -107
     ],
-    "total": 213.5,
+    "total": 214.5,
     "total_open": 211.5,
     "home_ml": -375,
     "away_ml": 298,
@@ -773,9 +763,7 @@
     ],
     "factors": [
      "Rest: Magic 3 day(s), Celtics 1 day(s)",
-     "Line moved 1 pts toward Orlando Magic since open (-9.5 to -8.5 home)",
      "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +21.4 a game, theirs +2.0)"
     ],
     "against": [
@@ -785,15 +773,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 219.5,
-    "gap_a": 3.8,
-    "gap_b": 8.8,
-    "gap_min": 8.8,
-    "pick": "Boston Celtics -8.5",
-    "price": -118,
+    "gap_a": 2.8,
+    "gap_b": 7.8,
+    "gap_min": 7.8,
+    "pick": "Boston Celtics -9.5",
+    "price": -107,
     "side": "home",
     "fair_line": -14.8,
     "playable_to": null,
-    "sim_cover": 0.693,
+    "sim_cover": 0.665,
     "history": {
      "adj": -0.04,
      "key": "spread fav",
@@ -810,9 +798,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 5.3,
+    "conf": 5.2,
     "components": {
-     "efficiency": 0.98,
+     "efficiency": 0.87,
      "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
@@ -822,8 +810,7 @@
      "situational": 0.2,
      "our history": -0.04
     },
-    "total_gap": 6.0,
-    "total_lean": "Over 213.5 (season scoring says 219.5) - WATCH only, totals have no past-games test yet"
+    "total_gap": 5.0
    },
    {
     "id": "401909999",
@@ -2484,8 +2471,8 @@
     "home_line": -24.5,
     "home_line_open": -24.5,
     "spread_odds": [
-     -112,
-     -108
+     -105,
+     -115
     ],
     "total": 142.5,
     "total_open": 145.5,
@@ -2555,7 +2542,7 @@
     "gap_b": -21.7,
     "gap_min": 5.2,
     "pick": "The Citadel Bulldogs +24.5",
-    "price": -112,
+    "price": -105,
     "side": "away",
     "fair_line": 11.0,
     "playable_to": 23.8,
