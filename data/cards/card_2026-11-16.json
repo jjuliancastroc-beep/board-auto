@@ -199,7 +199,7 @@
      -110,
      -110
     ],
-    "total": 230.5,
+    "total": 232.5,
     "total_open": 230.5,
     "home_ml": 136,
     "away_ml": -161,
@@ -223,7 +223,7 @@
      {
       "player": "Tre Johnson",
       "pos": "G",
-      "status": "Out"
+      "status": "Day-To-Day"
      },
      {
       "player": "Tristan Vukcevic",
@@ -359,7 +359,7 @@
      "situational": 0.2,
      "our history": -0.04
     },
-    "total_gap": 0.0
+    "total_gap": -2.0
    },
    {
     "id": "401910000",
@@ -874,13 +874,13 @@
     ],
     "inj_away": [
      {
-      "player": "Clint Capela",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
       "player": "Fred VanVleet",
       "pos": "G",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Clint Capela",
+      "pos": "C",
       "status": "Out"
      }
     ],
@@ -1105,17 +1105,17 @@
     "time": "Mon 6:00 PM CT",
     "start": "2026-11-17T00:00Z",
     "book": "Draft Kings",
-    "line": "CLE -9.5",
-    "home_line": -9.5,
+    "line": "CLE -8.5",
+    "home_line": -8.5,
     "home_line_open": -10.5,
     "spread_odds": [
-     -113,
-     -107
+     -103,
+     -118
     ],
-    "total": 241.5,
+    "total": 242.5,
     "total_open": 241.5,
-    "home_ml": -393,
-    "away_ml": 311,
+    "home_ml": -359,
+    "away_ml": 286,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 8.6,
@@ -1207,7 +1207,7 @@
     ],
     "factors": [
      "Rest: Bulls 2 day(s), Cavaliers 2 day(s)",
-     "Line moved 1 pts toward Chicago Bulls since open (-10.5 to -9.5 home)",
+     "Line moved 2 pts toward Chicago Bulls since open (-10.5 to -8.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -1219,15 +1219,15 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": -0.9,
-    "gap_b": 4.0,
-    "gap_min": 4.0,
-    "pick": "Cleveland Cavaliers -9.5",
-    "price": -107,
+    "gap_a": 0.1,
+    "gap_b": 5.0,
+    "gap_min": 5.0,
+    "pick": "Cleveland Cavaliers -8.5",
+    "price": -118,
     "side": "home",
     "fair_line": -11.1,
     "playable_to": null,
-    "sim_cover": 0.549,
+    "sim_cover": 0.581,
     "history": {
      "adj": -0.04,
      "key": "spread fav",
@@ -1242,13 +1242,13 @@
      "win": 0.456
     },
     "models_agree": false,
-    "one_model": false,
+    "one_model": true,
     "veto": true,
-    "conf": 3.1,
+    "conf": 3.8,
     "components": {
-     "efficiency": 0.44,
+     "efficiency": 0.56,
      "veto": 0.0,
-     "models": 0.0,
+     "models": 0.5,
      "starters": 0.75,
      "coaching": 0.5,
      "against": 1.0,
@@ -1256,7 +1256,7 @@
      "situational": 0.5,
      "our history": -0.04
     },
-    "total_gap": -4.6
+    "total_gap": -5.6
    },
    {
     "id": "401909997",
@@ -1274,7 +1274,7 @@
      -108,
      -112
     ],
-    "total": 224.5,
+    "total": 226.5,
     "total_open": 226.5,
     "home_ml": 180,
     "away_ml": -217,
@@ -1395,7 +1395,7 @@
      "situational": 0.2,
      "our history": 0.15
     },
-    "total_gap": 0.3
+    "total_gap": -1.7
    }
   ],
   "n_past": 197,
@@ -1417,10 +1417,10 @@
     "home_line": -34.5,
     "home_line_open": -33.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
-    "total": 160.5,
+    "total": 159.5,
     "total_open": 158.5,
     "home_ml": null,
     "away_ml": null,
@@ -1488,7 +1488,7 @@
     "gap_b": -14.7,
     "gap_min": 10.3,
     "pick": "SE Louisiana Lions +34.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": 22.0,
     "playable_to": 28.7,
@@ -1521,7 +1521,7 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": -1.4,
+    "total_gap": -0.4,
     "stake": 0
    },
    {
@@ -1533,17 +1533,17 @@
     "time": "Mon 7:00 PM CT",
     "start": "2026-11-17T01:00Z",
     "book": "Draft Kings",
-    "line": "KSU -16.5",
-    "home_line": -16.5,
+    "line": "KSU -15.5",
+    "home_line": -15.5,
     "home_line_open": -15.5,
     "spread_odds": [
-     -112,
-     -108
+     -105,
+     -115
     ],
     "total": 156.5,
     "total_open": 155.5,
-    "home_ml": -2100,
-    "away_ml": 1100,
+    "home_ml": -1800,
+    "away_ml": 1000,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 8.9,
@@ -1586,16 +1586,14 @@
      null
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'). Past-games test for this kind of pick: 51.5% over 464.",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet",
      "Early season: under 5 games for a team - prior-heavy"
     ],
     "factors": [
      "Rest: Grizzlies 2 day(s), Wildcats 6 day(s)",
-     "Line moved 1 pts toward Kansas State Wildcats since open (-15.5 to -16.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Indoors - weather does not matter"
     ],
     "against": [],
     "invalidation": [
@@ -1603,15 +1601,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 151.3,
-    "gap_a": -7.6,
-    "gap_b": -12.3,
-    "gap_min": 7.6,
-    "pick": "Montana Grizzlies +16.5",
-    "price": -112,
+    "gap_a": -6.6,
+    "gap_b": -11.3,
+    "gap_min": 6.6,
+    "pick": "Montana Grizzlies +15.5",
+    "price": -105,
     "side": "away",
     "fair_line": 6.6,
     "playable_to": 13.4,
-    "sim_cover": 0.816,
+    "sim_cover": 0.791,
     "history": {
      "adj": 0.2,
      "key": "CBB spread dog",
@@ -1628,9 +1626,9 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 7.0,
+    "conf": 6.9,
     "components": {
-     "efficiency": 0.84,
+     "efficiency": 0.73,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
@@ -1656,8 +1654,8 @@
     "home_line": 2.5,
     "home_line_open": 2.5,
     "spread_odds": [
-     -115,
-     -105
+     -110,
+     -110
     ],
     "total": 144.5,
     "total_open": 148.5,
@@ -1720,7 +1718,7 @@
     "gap_b": 5.7,
     "gap_min": 5.7,
     "pick": "UMBC Retrievers +2.5",
-    "price": -105,
+    "price": -110,
     "side": "home",
     "fair_line": -1.4,
     "playable_to": null,
@@ -2589,8 +2587,8 @@
     "home_line": -16.5,
     "home_line_open": -17.5,
     "spread_odds": [
-     -112,
-     -108
+     -110,
+     -110
     ],
     "total": 155.5,
     "total_open": 151.5,
@@ -2660,7 +2658,7 @@
     "gap_b": -9.4,
     "gap_min": 9.4,
     "pick": "East Texas A&M Lions +16.5",
-    "price": -112,
+    "price": -110,
     "side": "away",
     "fair_line": 9.8,
     "playable_to": null,
@@ -2819,126 +2817,6 @@
     "total_lean": "Over 154.5 (season scoring says 160.5) - WATCH only, totals have no past-games test yet"
    },
    {
-    "id": "401921804",
-    "sport": "CBB",
-    "game": "Grambling Tigers @ Kentucky Wildcats",
-    "home": "Kentucky Wildcats",
-    "away": "Grambling Tigers",
-    "time": "Mon 6:00 PM CT",
-    "start": "2026-11-17T00:00Z",
-    "book": "Draft Kings",
-    "line": "UK -30.5",
-    "home_line": -30.5,
-    "home_line_open": -30.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 154.5,
-    "total_open": 158.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 22.2,
-    "model_b": 6.6,
-    "games_played": [
-     2,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "1-1",
-     "3-1"
-    ],
-    "venue": "Rupp Arena",
-    "tv": "SECN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dwayne Pierce",
-      "Isaiah Miranda"
-     ],
-     [
-      "Malachi Moreno",
-      "Mason Williams",
-      "Zoom Diallo"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     3
-    ],
-    "form5": [
-     null,
-     4.5
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Tigers 7 day(s), Wildcats 3 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "One model is only barely past the bar"
-    ],
-    "invalidation": [
-     "Line moves past +26.7",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 160.8,
-    "gap_a": -8.3,
-    "gap_b": -23.9,
-    "gap_min": 8.3,
-    "pick": "Grambling Tigers +30.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 14.4,
-    "playable_to": 26.7,
-    "sim_cover": 0.928,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 47,
-     "l": 33,
-     "text": "Our record on CBB spread dog: 47-33 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": true,
-    "conf": 5.8,
-    "components": {
-     "efficiency": 0.92,
-     "veto": 0.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 6.3,
-    "total_lean": "Over 154.5 (season scoring says 160.8) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401924265",
     "sport": "CBB",
     "game": "Long Beach State Beach @ UCLA Bruins",
@@ -2947,12 +2825,12 @@
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
     "book": "Draft Kings",
-    "line": "UCLA -34.5",
-    "home_line": -34.5,
+    "line": "UCLA -33.5",
+    "home_line": -33.5,
     "home_line_open": -33.5,
     "spread_odds": [
-     -115,
-     -105
+     -105,
+     -115
     ],
     "total": 147.5,
     "total_open": 148.5,
@@ -3008,9 +2886,7 @@
     ],
     "factors": [
      "Rest: Beach 5 day(s), Bruins 5 day(s)",
-     "Line moved 1 pts toward UCLA Bruins since open (-33.5 to -34.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Indoors - weather does not matter"
     ],
     "against": [
      "One model is only barely past the bar"
@@ -3020,15 +2896,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 147.0,
-    "gap_a": -8.3,
-    "gap_b": -23.9,
-    "gap_min": 8.3,
-    "pick": "Long Beach State Beach +34.5",
-    "price": -115,
+    "gap_a": -7.3,
+    "gap_b": -22.9,
+    "gap_min": 7.3,
+    "pick": "Long Beach State Beach +33.5",
+    "price": -105,
     "side": "away",
     "fair_line": 18.4,
     "playable_to": 30.7,
-    "sim_cover": 0.928,
+    "sim_cover": 0.915,
     "history": {
      "adj": 0.2,
      "key": "CBB spread dog",
@@ -3045,9 +2921,9 @@
     "models_agree": true,
     "one_model": false,
     "veto": true,
-    "conf": 5.8,
+    "conf": 5.7,
     "components": {
-     "efficiency": 0.92,
+     "efficiency": 0.81,
      "veto": 0.0,
      "models": 1.5,
      "starters": 1.5,
@@ -3058,6 +2934,128 @@
      "our history": 0.2
     },
     "total_gap": -0.5
+   },
+   {
+    "id": "401921804",
+    "sport": "CBB",
+    "game": "Grambling Tigers @ Kentucky Wildcats",
+    "home": "Kentucky Wildcats",
+    "away": "Grambling Tigers",
+    "time": "Mon 6:00 PM CT",
+    "start": "2026-11-17T00:00Z",
+    "book": "Draft Kings",
+    "line": "UK -29.5",
+    "home_line": -29.5,
+    "home_line_open": -30.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 154.5,
+    "total_open": 158.5,
+    "home_ml": null,
+    "away_ml": null,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 22.2,
+    "model_b": 6.6,
+    "games_played": [
+     2,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "1-1",
+     "3-1"
+    ],
+    "venue": "Rupp Arena",
+    "tv": "SECN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Dwayne Pierce",
+      "Isaiah Miranda"
+     ],
+     [
+      "Malachi Moreno",
+      "Mason Williams",
+      "Zoom Diallo"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     3
+    ],
+    "form5": [
+     null,
+     4.5
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Tigers 7 day(s), Wildcats 3 day(s)",
+     "Line moved 1 pts toward Grambling Tigers since open (-30.5 to -29.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "One model is only barely past the bar"
+    ],
+    "invalidation": [
+     "Line moves past +26.7",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 160.8,
+    "gap_a": -7.3,
+    "gap_b": -22.9,
+    "gap_min": 7.3,
+    "pick": "Grambling Tigers +29.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 14.4,
+    "playable_to": 26.7,
+    "sim_cover": 0.915,
+    "history": {
+     "adj": 0.2,
+     "key": "CBB spread dog",
+     "w": 47,
+     "l": 33,
+     "text": "Our record on CBB spread dog: 47-33 (last 60 days, recent counts more) -> +0.20 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": true,
+    "conf": 5.3,
+    "components": {
+     "efficiency": 0.81,
+     "veto": 0.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.2
+    },
+    "total_gap": 6.3,
+    "total_lean": "Over 154.5 (season scoring says 160.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401919807",
@@ -3308,8 +3306,8 @@
     "home_line": -21.5,
     "home_line_open": -23.5,
     "spread_odds": [
-     -105,
-     -115
+     -112,
+     -108
     ],
     "total": 153.5,
     "total_open": 153.5,
@@ -3381,7 +3379,7 @@
     "gap_b": -15.9,
     "gap_min": 4.5,
     "pick": "Jacksonville Dolphins +21.5",
-    "price": -105,
+    "price": -112,
     "side": "away",
     "fair_line": 11.3,
     "playable_to": 21.5,
@@ -3554,7 +3552,7 @@
      -110,
      -110
     ],
-    "total": 141.5,
+    "total": 140.5,
     "total_open": 145.5,
     "home_ml": -258,
     "away_ml": 210,
@@ -3653,8 +3651,8 @@
      "situational": 0.5,
      "our history": -0.04
     },
-    "total_gap": 9.2,
-    "total_lean": "Over 141.5 (season scoring says 150.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": 10.2,
+    "total_lean": "Over 140.5 (season scoring says 150.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401928841",
@@ -3908,8 +3906,8 @@
     "home_line": -20.5,
     "home_line_open": -21.5,
     "spread_odds": [
-     -105,
-     -115
+     -110,
+     -110
     ],
     "total": 160.5,
     "total_open": 160.5,
@@ -3979,7 +3977,7 @@
     "gap_b": -14.9,
     "gap_min": 14.9,
     "pick": "Central Arkansas Bears +20.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": 10.9,
     "playable_to": null,
