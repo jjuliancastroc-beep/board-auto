@@ -30,8 +30,8 @@
     ],
     "total": 221.5,
     "total_open": 222.5,
-    "home_ml": 443,
-    "away_ml": -597,
+    "home_ml": 458,
+    "away_ml": -620,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -8.2,
@@ -150,11 +150,11 @@
     "playable_to": null,
     "sim_cover": 0.604,
     "history": {
-     "adj": 0.19,
+     "adj": 0.17,
      "key": "spread dog",
      "w": 98,
-     "l": 73,
-     "text": "Our record on spread dog: 98-73 (last 60 days, recent counts more) -> +0.19 to confidence"
+     "l": 74,
+     "text": "Our record on spread dog: 98-74 (last 60 days, recent counts more) -> +0.17 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -175,7 +175,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.19
+     "our history": 0.17
     },
     "total_gap": 2.3
    }
@@ -204,8 +204,8 @@
     ],
     "total": 150.5,
     "total_open": 159.5,
-    "home_ml": -1000,
-    "away_ml": 650,
+    "home_ml": -1100,
+    "away_ml": 700,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 16.4,
@@ -273,11 +273,11 @@
     "playable_to": null,
     "sim_cover": 0.553,
     "history": {
-     "adj": 0.24,
+     "adj": 0.21,
      "key": "CBB spread dog",
      "w": 46,
-     "l": 31,
-     "text": "Our record on CBB spread dog: 46-31 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 32,
+     "text": "Our record on CBB spread dog: 46-32 (last 60 days, recent counts more) -> +0.21 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -288,7 +288,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.4,
+    "conf": 6.3,
     "components": {
      "efficiency": 0.64,
      "veto": 1.5,
@@ -298,7 +298,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.21
     },
     "total_gap": 6.0,
     "total_lean": "Over 150.5 (season scoring says 156.5) - WATCH only, totals have no past-games test yet"
@@ -319,17 +319,17 @@
     "time": "Sun 8:00 PM CT",
     "start": "2026-11-16T02:00Z",
     "book": "DraftKings",
-    "line": "VGK -410",
-    "home_line": -410.0,
+    "line": "VGK -440",
+    "home_line": -440.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     130,
-     -155
+     140,
+     -166
     ],
     "total": 6.5,
     "total_open": 6.5,
-    "home_ml": -410,
-    "away_ml": 320,
+    "home_ml": -440,
+    "away_ml": 340,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 2.0,
@@ -382,7 +382,7 @@
     "flags": [],
     "factors": [
      "Rest: Canucks 2 day(s), Knights 2 day(s)",
-     "Line moved 408.5 pts toward Vegas Golden Knights since open (-1.5 to -410 home)",
+     "Line moved 438.5 pts toward Vegas Golden Knights since open (-1.5 to -440 home)",
      "Indoors - weather does not matter",
      "Probable goalies: Leevi Merilainen (Canucks), Carter Hart (Knights)"
     ],
@@ -392,20 +392,20 @@
      "Price moves past -468 (our fair price)"
     ],
     "total_model": 6.4,
-    "gap_a": 4.0,
-    "gap_b": 6.5,
+    "gap_a": 3.0,
+    "gap_b": 5.4,
     "win_prob": [
      0.176,
      0.824
     ],
     "market_prob": [
-     0.228,
-     0.772
+     0.218,
+     0.782
     ],
-    "pick": "Vegas Golden Knights ML (-410)",
-    "price": -410,
+    "pick": "Vegas Golden Knights ML (-440)",
+    "price": -440,
     "side": "home",
-    "gap_min": 6.5,
+    "gap_min": 5.4,
     "fair_line": -468,
     "models_agree": false,
     "one_model": true,
@@ -425,9 +425,9 @@
      "l": 12,
      "text": "Our record on NHL ml: 12-12 (last 60 days, recent counts more) -> -0.04 to confidence"
     },
-    "conf": 6.1,
+    "conf": 6.0,
     "components": {
-     "efficiency": 0.65,
+     "efficiency": 0.54,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -485,7 +485,7 @@
      {
       "player": "Jonathan Marchessault",
       "pos": "RW",
-      "status": "Day-To-Day"
+      "status": "Out"
      }
     ],
     "stars": [
