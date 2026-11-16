@@ -14417,5 +14417,79 @@
   "review_log": [
    "11/16 12:34 AM: checked line and injuries - no change"
   ]
+ },
+ {
+  "id": "401909995",
+  "sport": "NBA",
+  "game": "Chicago Bulls @ Cleveland Cavaliers",
+  "home": "Cleveland Cavaliers",
+  "away": "Chicago Bulls",
+  "start": "2026-11-17T00:00Z",
+  "pick": "Cleveland Cavaliers -8.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.56,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.04
+  },
+  "gap_a": 0.1,
+  "gap_b": 5.0,
+  "gap_min": 5.0,
+  "price": -106,
+  "fair_line": -11.1,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -8.5,
+  "home_ml": -344,
+  "away_ml": 276,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 8.6,
+  "model_b": 13.5,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.04,
+   "key": "spread fav",
+   "w": 38,
+   "l": 40,
+   "text": "Our record on spread fav: 38-40 (last 60 days, recent counts more) -> -0.04 to confidence"
+  },
+  "date": "2026-11-16",
+  "line_at_pick": "CLE -8.5",
+  "logged_at": "17:03",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/16 05:03 PM: checked line and injuries - no change"
+  ]
  }
 ]
