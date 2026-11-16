@@ -112,7 +112,7 @@
     "factors": [
      "Rest: Chargers 8 day(s), Ravens 11 day(s)",
      "Line moved 2 pts toward Baltimore Ravens since open (-2.5 to -4.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 2), 46F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 10), 43F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -120,11 +120,11 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 2.0,
-     "gust": 2.0,
+     "wind": 5.2,
+     "gust": 10.1,
      "rain": 0,
-     "temp": 46,
-     "src": "NWS"
+     "temp": 43.0,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Clear",
@@ -248,6 +248,11 @@
     ],
     "inj_away": [
      {
+      "player": "Scotty Pippen Jr.",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
       "player": "GG Jackson",
       "pos": "F",
       "status": "Out"
@@ -271,11 +276,6 @@
       "player": "Zach Edey",
       "pos": "C",
       "status": "Day-To-Day"
-     },
-     {
-      "player": "Scotty Pippen Jr.",
-      "pos": "G",
-      "status": "Out"
      },
      {
       "player": "Richie Saunders",
@@ -1109,8 +1109,8 @@
     "home_line": -8.5,
     "home_line_open": -10.5,
     "spread_odds": [
-     -103,
-     -118
+     -107,
+     -113
     ],
     "total": 241.5,
     "total_open": 241.5,
@@ -1223,7 +1223,7 @@
     "gap_b": 5.0,
     "gap_min": 5.0,
     "pick": "Cleveland Cavaliers -8.5",
-    "price": -118,
+    "price": -113,
     "side": "home",
     "fair_line": -11.1,
     "playable_to": null,
@@ -1762,12 +1762,12 @@
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
     "book": "DraftKings",
-    "line": "UCSD -19.5",
-    "home_line": -19.5,
+    "line": "UCSD -18.5",
+    "home_line": -18.5,
     "home_line_open": -18.5,
     "spread_odds": [
-     -110,
-     -110
+     -108,
+     -112
     ],
     "total": 156.5,
     "total_open": 156.5,
@@ -1822,24 +1822,22 @@
     ],
     "factors": [
      "Rest: Tigers 3 day(s), Tritons 3 day(s)",
-     "Line moved 1 pts toward UC San Diego Tritons since open (-18.5 to -19.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Indoors - weather does not matter"
     ],
     "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 171.9,
-    "gap_a": -4.4,
-    "gap_b": -10.5,
-    "gap_min": 10.5,
-    "pick": "Texas Southern Tigers +19.5",
-    "price": -110,
+    "gap_a": -3.4,
+    "gap_b": -9.5,
+    "gap_min": 9.5,
+    "pick": "Texas Southern Tigers +18.5",
+    "price": -108,
     "side": "away",
     "fair_line": 12.1,
     "playable_to": null,
-    "sim_cover": 0.75,
+    "sim_cover": 0.721,
     "history": {
      "adj": 0.2,
      "key": "CBB spread dog",
@@ -2114,12 +2112,12 @@
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
     "book": "DraftKings",
-    "line": "SMC -18.5",
-    "home_line": -18.5,
+    "line": "SMC -17.5",
+    "home_line": -17.5,
     "home_line_open": -17.5,
     "spread_odds": [
-     -115,
-     -105
+     -105,
+     -115
     ],
     "total": 150.5,
     "total_open": 150.5,
@@ -2173,9 +2171,7 @@
     ],
     "factors": [
      "Rest: Vikings 2 day(s), Gaels 3 day(s)",
-     "Line moved 1 pts toward Saint Mary's Gaels since open (-17.5 to -18.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Indoors - weather does not matter"
     ],
     "against": [
      "Last 5 games point the other way (our side +2.8 a game, theirs +14.2)"
@@ -2184,15 +2180,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 162.4,
-    "gap_a": -0.3,
-    "gap_b": -9.8,
-    "gap_min": 9.8,
-    "pick": "Portland State Vikings +18.5",
-    "price": -115,
+    "gap_a": 0.7,
+    "gap_b": -8.8,
+    "gap_min": 8.8,
+    "pick": "Portland State Vikings +17.5",
+    "price": -105,
     "side": "away",
     "fair_line": 13.4,
     "playable_to": null,
-    "sim_cover": 0.677,
+    "sim_cover": 0.644,
     "history": {
      "adj": 0.2,
      "key": "CBB spread dog",
@@ -2211,7 +2207,7 @@
     "veto": false,
     "conf": 5.8,
     "components": {
-     "efficiency": 1.0,
+     "efficiency": 0.98,
      "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
@@ -2476,10 +2472,10 @@
      -108,
      -112
     ],
-    "total": 154.5,
+    "total": 153.5,
     "total_open": 151.5,
-    "home_ml": -1800,
-    "away_ml": 1000,
+    "home_ml": -1650,
+    "away_ml": 950,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 12.6,
@@ -2577,7 +2573,7 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": 3.5
+    "total_gap": 4.5
    },
    {
     "id": "401916298",
@@ -2718,7 +2714,7 @@
      -110,
      -110
     ],
-    "total": 157.5,
+    "total": 158.5,
     "total_open": 159.5,
     "home_ml": -285,
     "away_ml": 230,
@@ -2817,7 +2813,8 @@
      "situational": 0.5,
      "our history": 0.2
     },
-    "total_gap": -5.6
+    "total_gap": -6.6,
+    "total_lean": "Under 158.5 (season scoring says 151.9) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401918075",
