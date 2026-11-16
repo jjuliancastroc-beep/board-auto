@@ -67,6 +67,8 @@ def main():
         traceback.print_exc(); hl["notes"].append(f"Props failed: {e}"); save("health.json", hl)
     print("props:", pr.get("note"))
     if wk:
+        from .common import calib_verdict
+        wk["lines"] += ["Main picks, confidence check: " + calib_verdict(grade.tiers(picks))["text"], "Props, confidence check: " + calib_verdict(props.bands())["text"]]
         notify.send(f"weekly-{wk['week']}", wk["title"], wk["lines"], "weekly")
     site.render(cards, load("picks.json", []), load("parlays.json", []), bt, btl, st, hl, pr)
     print("done", now_ct().strftime("%H:%M"))

@@ -288,5 +288,53 @@ class Books(unittest.TestCase):
         assert props.weight_books({"nb": 1000, "llb": {"0.0": 3.0, "0.5": 4.0, "1.0": 6.0}}) == 0.0
 
 
+class Review(unittest.TestCase):
+    """Is confidence telling the truth, and which parts of the score line up with winning."""
+    def test_confidence_check(self):
+        from board import common, grade
+        v = common.calib_verdict([{"band": "8.0+", "w": 24, "l": 34}, {"band": "7.0-7.9", "w": 57, "l": 55}, {"band": "5.5-6.9", "w": 25, "l": 20}])
+        assert v["status"] == "bad" and "8.0+ (24-34, 41%) is winning less than 7.0-7.9" in v["text"]
+        v = common.calib_verdict([{"band": "8.0+", "w": 0, "l": 0}, {"band": "7.0-7.9", "w": 9, "l": 9}, {"band": "5.5-6.9", "w": 84, "l": 64}])
+        assert v["status"] == "early" and "7.0-7.9 has 18" in v["text"]                       # 18 results is not a verdict
+        v = common.calib_verdict([{"band": "8.0+", "w": 40, "l": 20}, {"band": "7.0-7.9", "w": 33, "l": 27}])
+        assert v["status"] == "ok"
+        assert common.calib_verdict([{"band": "8.0+", "w": 15, "l": 15}])["status"] == "bad"   # 50% over 30 is not beating break-even
+        mk = lambda res, eff, price=-110: {"result": res, "price": price, "conf": 6, "components": {"efficiency": eff, "veto": 1.5}}
+        picks = [mk("Won", 2.0)] * 8 + [mk("Lost", 2.0)] * 4 + [mk("Won", 0.5)] * 5 + [mk("Lost", 0.5)] * 7 + [{"result": None, "components": {"efficiency": 2}}]
+        rows = grade.parts(picks)
+        assert len(rows) == 1 and rows[0]["part"] == "efficiency" and rows[0]["hi"] == [8, 4] and rows[0]["lo"] == [5, 7] and rows[0]["diff"] > 0.2   # veto: no low group -> left out
+        assert abs(grade.flat(mk("Won", 1, 150)) - 1.5) < 1e-9 and grade.flat(mk("Lost", 1)) == -1.0
+        t = {r["band"]: r for r in grade.tiers(picks[:-1])}
+        assert t["5.5-6.9"]["w"] == 13 and abs(t["5.5-6.9"]["units"] - (13 * 100 / 110 - 11)) < 0.02
+
+    def test_lean_parlays_and_moves(self):
+        import datetime
+        from board import props, common
+        start = (common.now_ct() + datetime.timedelta(hours=3)).isoformat()
+        mk = lambda i, call, ev, conf, p=0.56, mult="1.0": {"id": f"d|{i}|points", "date": "2099-01-02", "pick": f"P{i} Higher 10.5 Points", "player": f"P{i}", "sport": "NBA",
+                                        "game": "A @ B", "event_id": ev, "stat": "points", "side": "higher", "line": 10.5, "p": p, "mkt": 0.5, "edge": 5,
+                                        "conf": conf, "playable_to": 11.5, "start": start, "time": "x", "call": call, "mult": {"higher": mult, "lower": "1.0"}}
+        saved = common.load("props_card.json", {})
+        try:
+            # no PLAY anywhere: no singles, but the parlay slots take leans from different games (your 11/16 rule)
+            pr = [mk(1, "LEAN", "e1", 7.3, 0.53), mk(2, "LEAN", "e2", 6.8, 0.56), mk(3, "LEAN", "e3", 6.7, 0.62, "0.82"), mk(4, "LEAN", "e3", 5.5), mk(5, "PASS", "e5", 5.0)]
+            pc = props.card(pr, "2099-01-02")
+            assert pc["singles"] == [] and len(pc["parlays"]) == 1   # 4 leans, two share a game with the third -> only one clean pair after the first
+            e = pc["parlays"][0]
+            assert e["lean_only"] and [x["player"] for x in e["legs"]] == ["P1", "P2"] and e["pays"] == 3.0 and e["chance"] < e["need"] and "your parlay rule" in e["why"]
+            assert all(x["event_id"] != e["legs"][0]["event_id"] for x in e["legs"][1:])
+            # a favorite that pays less lowers the payout and raises the bar
+            pc = props.card(pr + [mk(6, "LEAN", "e6", 6.9, 0.62, "0.82"), mk(7, "LEAN", "e7", 6.0, 0.6)], "2099-01-02")
+            assert len(pc["parlays"]) == 2 and [x["player"] for x in pc["parlays"][1]["legs"]] == ["P6", "P3"] and pc["singles"] == []
+            assert pc["parlays"][1]["pays"] == 2.02 and pc["parlays"][1]["need"] == round(1 / 2.02, 3)   # two 0.82x favorites: 3 x 0.82 x 0.82
+        finally:
+            common.save("props_card.json", saved)
+        row = dict(mk(1, "LEAN", "e1", 6), mkt_higher=0.5, books=[{"book": "DraftKings", "line": 11.5, "p": 0.5}, {"book": "Pinnacle", "line": 10.5, "p": 0.47}])
+        first = {"Underdog": [10.5, 0.5], "DraftKings": [10.5, 0.5], "Pinnacle": [10.5, 0.52]}
+        mv = props.moves(row, first)
+        assert ("DraftKings moved the line from 10.5 to 11.5", True) in mv and any("Pinnacle price moved away from our side" in t and not good for t, good in mv) and len(mv) == 2
+        assert props.moves(row, props.snapshot(row)) == [] and props._mult({"side": "higher", "mult": {"higher": "0.82"}}) == 0.82 and props._mult({"mult": 0.9}) == 0.9
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -224,8 +224,36 @@ def tiers(picks):
         w = sum(1 for p in sel if p["result"] == "Won")
         clv = [p["clv"] for p in sel if p.get("clv") is not None]
         out.append({"band": name, "w": w, "l": len(sel) - w, "win": round(w / len(sel), 3) if sel else None,
-                    "clv_beat": sum(1 for c in clv if c > 0), "clv_n": len(clv)})
+                    "units": round(sum(flat(p) for p in sel), 2), "clv_beat": sum(1 for c in clv if c > 0), "clv_n": len(clv)})
     return out
+
+
+def flat(p):
+    """What one unit on this pick made or lost at the price it was logged at - so every pick counts the same, bet or not."""
+    if p["result"] != "Won":
+        return -1.0
+    try:
+        return payout(int(p.get("price")))
+    except (TypeError, ValueError):
+        return 0.909
+
+
+PARTS = {"efficiency": 2, "veto": 1.5, "models": 1.5, "starters": 1.5, "coaching": 1, "against": 1, "price": 1, "situational": 0.5}
+
+
+def parts(picks, maxes=None, least=10):
+    """For each scorecard part: the record when that part scored high (75%+ of its max) against when it scored low.
+    A part that scores high on losers as often as on winners is not telling us anything."""
+    maxes = maxes or PARTS
+    done = [p for p in picks if p.get("result") in ("Won", "Lost") and p.get("components")]
+    out = []
+    for k, m in maxes.items():
+        hi = [p for p in done if (p["components"].get(k) or 0) >= 0.75 * m]; lo = [p for p in done if (p["components"].get(k) or 0) < 0.75 * m]
+        if len(hi) < least or len(lo) < least:
+            continue
+        hw = sum(1 for p in hi if p["result"] == "Won"); lw = sum(1 for p in lo if p["result"] == "Won")
+        out.append({"part": k, "hi": [hw, len(hi) - hw], "lo": [lw, len(lo) - lw], "diff": round(hw / len(hi) - lw / len(lo), 3)})
+    return sorted(out, key=lambda r: -r["diff"])
 
 
 def bankroll(picks, settings):

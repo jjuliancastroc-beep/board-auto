@@ -532,6 +532,13 @@ def build(dates, cards_by_id=None):
                 r["call"] = "PASS"; r["capped"] = True; r["reason"] += " (outside today's top calls)"; continue
         d[r["call"]] += 1; d["players"].add(r["player"]); d["games"][r["event_id"]] = d["games"].get(r["event_id"], 0) + 1
     out.sort(key=lambda r: (r["date"], order.get(r["call"], 3), -(r.get("conf") or 0), -(r.get("edge") or 0)))
+    seen = load("props_lines.json", {})
+    for r in out:  # line movement since the Board first saw the prop - a reason shown on the pick, not part of the score
+        if "side" not in r or r.get("id") not in seen:
+            continue
+        r["moves"] = []
+        for text, good in moves(r, seen[r["id"]].get("first")):
+            r["moves"].append(text); (r["for"] if good else r["against"]).append(text + (" - the market is moving our way" if good else " - the market is moving against us"))
     matched = len(jobs); total = len(want)
     priced = sum(1 for r in out if r.get("bk_higher") is not None)
     bnote = ("Other books on the same props: " + ", ".join(f"{k} {v}" for k, v in bhits.items()) + f". {priced} lines have a sportsbook price to check against.") if bhits else "Other books did not load this run."
@@ -597,6 +604,28 @@ def weight_books(calib):
     return float(min(ll, key=lambda k: ll[k]))
 
 
+def snapshot(p):
+    """Each book's line and chance of Higher right now: {book: [line, chance]}."""
+    out = {"Underdog": [p["line"], round(p["mkt_higher"], 3)]}
+    for b in p.get("books") or []:
+        out[b["book"]] = [b["line"], b.get("p")]
+    return out
+
+
+def moves(p, first):
+    """What has moved since the Board first saw this prop, in plain words, as (text, helps our side?)."""
+    out = []; up = p.get("side") == "higher"
+    for book, (line, ch) in snapshot(p).items():
+        f = (first or {}).get(book)
+        if not f:
+            continue
+        if f[0] != line:
+            out.append((f"{book} moved the line from {f[0]:g} to {line:g}", (line > f[0]) == up))   # line moving our way = the market agreeing with us
+        elif ch is not None and f[1] is not None and abs(ch - f[1]) >= 0.03:
+            out.append((f"{book} price moved {'toward' if (ch > f[1]) == up else 'away from'} our side ({(f[1] if up else 1 - f[1]) * 100:.0f}% to {(ch if up else 1 - ch) * 100:.0f}%)", (ch > f[1]) == up))
+    return out
+
+
 def log_lines(props):
     """Keep every graded line's latest pre-game snapshot so we can test our numbers against Underdog's on all of them."""
     book = load("props_lines.json", {})
@@ -604,7 +633,8 @@ def log_lines(props):
     for p in props:
         if "p_raw_higher" not in p or ct_time(p["start"]) <= now:
             continue
-        book[p["id"]] = {"sport": p["sport"], "stat": p["stat"], "aid": p["espn_id"], "eid": p["event_id"], "start": p["start"], "line": p["line"],
+        first = (book.get(p["id"]) or {}).get("first") or snapshot(p)
+        book[p["id"]] = {"first": first, "sport": p["sport"], "stat": p["stat"], "aid": p["espn_id"], "eid": p["event_id"], "start": p["start"], "line": p["line"],
                          "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher")}
     save("props_lines.json", book)
     return book
@@ -690,6 +720,7 @@ def entries(props, date):
 
 
 PROP_STAKE = 15
+PROP_PARTS = {"data": 2, "hit rates": 1.5, "vs Underdog": 1.5, "role": 1, "availability": 1, "matchup": 1, "sample": 1}
 
 
 def card(props, date):
@@ -738,9 +769,10 @@ def card(props, date):
     live = [p for p in day.values() if ct_time(p["start"]) > now and p["id"] not in used and p["player"] not in players]
     plays = sorted([p for p in live if p["call"] == "PLAY"], key=lambda p: (-p["conf"], -p["edge"]))
     leans = sorted([p for p in live if p["call"] == "LEAN" and 5.5 <= p["conf"] < 7.0], key=lambda p: (-p["conf"], -p["edge"]))  # one confident pick per parlay
+    alll = [p for p in live if p["call"] == "LEAN"]
     def item(p):
         return {k: p.get(k) for k in ("id", "pick", "player", "sport", "game", "event_id", "stat", "side", "line", "p", "mkt", "edge", "conf",
-                                         "playable_to", "start", "time")} | {"added_at": hm, "status": "OPEN", "odds": (p.get("price") or {}).get(p.get("side"))}
+                                         "playable_to", "start", "time")} | {"added_at": hm, "status": "OPEN", "odds": (p.get("price") or {}).get(p.get("side")), "mult": _mult(p)}
     # singles get the top PLAYs; parlays anchor on the next PLAYs
     for p in plays:
         if len(pc["singles"]) >= 3:
@@ -760,15 +792,43 @@ def card(props, date):
             continue
         for x in (a, b):
             used.add(x["id"]); players.add(x["player"]); games[x["event_id"]] = games.get(x["event_id"], 0) + 1
+        pays = round(3 * _mult(a) * _mult(b), 2)
         pc["parlays"].append({"name": f"Prop parlay {len(pc['parlays']) + 1}", "legs": [item(a), item(b)], "stake": PROP_STAKE,
-                              "chance": round(a["p"] * b["p"], 3), "status": "OPEN", "added_at": hm, "placed": auto,
-                              "why": f"Anchor {a['pick']} ({a['conf']}) + leg {b['pick']} ({b['conf']}). Different games, one confident pick. Pays 3x on Underdog."})
+                              "chance": round(a["p"] * b["p"], 3), "pays": pays, "need": round(1 / pays, 3), "status": "OPEN", "added_at": hm, "placed": auto,
+                              "why": f"Anchor {a['pick']} ({a['conf']}) + leg {b['pick']} ({b['conf']}). Different games, one confident pick. Pays {pays:g}x on Underdog."})
+    # Your rule (11/16): a parlay may use picks that did not reach PLAY. Singles never do. When no PLAY is left to anchor one,
+    # the two open parlay slots take the best lean plus a second lean from a different game. The ticket says plainly when the
+    # pair is under break-even on our numbers.
+    for a in sorted(alll, key=lambda p: (-p["conf"], -p["edge"])):
+        if len(pc["parlays"]) >= 2:
+            break
+        if a["id"] in used or a["player"] in players or games.get(a["event_id"], 0) >= 2:
+            continue
+        b = next((x for x in leans if x["id"] != a["id"] and x["id"] not in used and x["player"] not in players and x["player"] != a["player"]
+                  and x["event_id"] != a["event_id"] and games.get(x["event_id"], 0) < 2), None)
+        if not b:
+            continue
+        for x in (a, b):
+            used.add(x["id"]); players.add(x["player"]); games[x["event_id"]] = games.get(x["event_id"], 0) + 1
+        pays = round(3 * _mult(a) * _mult(b), 2); ch = round(a["p"] * b["p"], 3)
+        pc["parlays"].append({"name": f"Prop parlay {len(pc['parlays']) + 1}", "legs": [item(a), item(b)], "stake": PROP_STAKE, "lean_only": True,
+                              "chance": ch, "pays": pays, "need": round(1 / pays, 3), "status": "OPEN", "added_at": hm, "placed": auto,
+                              "why": f"Two leans, no PLAY anchor (your parlay rule): {a['pick']} ({a['conf']}) + {b['pick']} ({b['conf']}). Different games. Pays {pays:g}x on Underdog."
+                                     + (" On our numbers this pair clears break-even." if ch >= 1 / pays else "")})
     allc[date] = pc
     for d in list(allc):
         if d < (now - datetime.timedelta(days=21)).strftime("%Y-%m-%d"):
             allc.pop(d)
     save("props_card.json", allc)
     return pc
+
+
+def _mult(p):
+    """Underdog's payout multiplier for the side we are on (1.0 = a normal pick; under 1 = a favorite that pays less)."""
+    try:
+        return float((p.get("mult") or {}).get(p.get("side")) or 1) if isinstance(p.get("mult"), dict) else float(p.get("mult") or 1)
+    except (TypeError, ValueError):
+        return 1.0
 
 
 def _payout(odds):
@@ -804,7 +864,7 @@ def card_record(book=None, allc=None):
                 continue
             rs = [res.get(x["id"]) for x in e["legs"]]
             if "Lost" in rs or all(r == "Won" for r in rs):
-                add(["parlays"] + (["placed"] if e.get("placed") else []), "Lost" not in rs, e.get("stake") or PROP_STAKE, 2.0)
+                add(["parlays"] + (["placed"] if e.get("placed") else []), "Lost" not in rs, e.get("stake") or PROP_STAKE, (e.get("pays") or 3.0) - 1)
     for b in book:  # props you placed that were not on the card
         if b.get("placed") and b["id"] not in oncard and b.get("result") in ("Won", "Lost"):
             add(["placed", "extras"], b["result"] == "Won", b.get("placed_stake") or PROP_STAKE, _payout(b.get("odds")))
@@ -823,7 +883,7 @@ def bands(book=None):
 
 
 KEEP = ("id", "date", "sport", "player", "team", "opp", "game", "event_id", "espn_id", "stat", "label", "side", "line", "pick", "proj", "p", "mkt", "edge", "conf",
-        "call", "start", "time", "playable_to", "bk", "bk_books")
+        "call", "start", "time", "playable_to", "bk", "bk_books", "components")
 
 
 def log(props):

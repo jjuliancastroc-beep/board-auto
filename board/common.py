@@ -61,3 +61,23 @@ def american_to_prob(a):
 
 def norm_cdf(x):
     return 0.5 * (1 + math.erf(x / math.sqrt(2)))
+
+
+def calib_verdict(rows, need=30, even=0.524):
+    """rows: confidence bands, highest first, each {"band", "w", "l"}. Says in one line whether higher confidence is actually winning more.
+    A band is judged only once it has `need` graded results (30 = a first read, not proof)."""
+    judged = [(r["band"], r["w"], r["l"], r["w"] / (r["w"] + r["l"])) for r in rows if r["w"] + r["l"] >= need]
+    thin = [f"{r['band']} has {r['w'] + r['l']}" for r in rows if 0 <= r["w"] + r["l"] < need]
+    bad = []
+    for i, (b, w, l, x) in enumerate(judged):
+        lower = [j for j in judged[i + 1:] if j[3] > x]
+        if lower:
+            bad.append(f"{b} ({w}-{l}, {x * 100:.0f}%) is winning less than {lower[0][0]} ({lower[0][1]}-{lower[0][2]}, {lower[0][3] * 100:.0f}%)")
+        elif x <= even:
+            bad.append(f"{b} ({w}-{l}, {x * 100:.0f}%) is not beating break-even")
+    wait = (f" Not judged yet (under {need} results): " + ", ".join(thin) + ".") if thin else ""
+    if bad:
+        return {"status": "bad", "text": "Graded too high: " + "; ".join(bad) + "." + wait}
+    if len(judged) >= 2:
+        return {"status": "ok", "text": "So far higher confidence is winning more, as it should." + wait}
+    return {"status": "early", "text": "Too early to judge." + wait}

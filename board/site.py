@@ -1,7 +1,7 @@
 """Render docs/index.html - one self-contained page (data inlined), rebuilt on every run.
 Tabs match the original Board: Today, Board, Card, Confidence, Record, Lab, Rules, Reviews, Requests, Props."""
 import json, os
-from .common import ROOT, load, now_ct, SPORTS
+from .common import ROOT, load, now_ct, SPORTS, calib_verdict
 from . import grade, review
 from .card import MODEL_NOTE
 
@@ -146,8 +146,18 @@ function detail(r){
 function confTab(){
   const W = [["efficiency",2,"How far both models are past the bar"],["veto",1.5,"No veto (QB/star doubt, models 10+ apart); 7+ from market costs 0.5"],["models",1.5,"Both models agree (1.5) or only one (0.5)"],["starters",1.5,"Drops for each QB / star / goalie flag"],["coaching",1,"Not measured automatically - held near neutral"],["against",1,"Drops for each factor against the pick (line move, key number, rest)"],["price",1,"Past-games test record for this kind of pick"],["situational",0.5,"Back-to-backs and schedule spots"],["our history","+/-0.5","Our own record on this kind of pick (old Board + this one), last 60 days, recent counts more, pulled toward break-even so a streak can't take over"]];
   let h = `<div class="card"><b>The scorecard (max 10)</b><table><tr><th>Part</th><th>Max</th><th>What fills it</th></tr>${W.map(w => `<tr><td>${w[0]}</td><td>${w[1]}</td><td class="mute">${w[2]}</td></tr>`).join("")}</table><p class="mute">8.0+ = $50 single. 7.0-7.9 = $25 single. 5.5-6.9 = parlay leg or paper. Under 5.5 = pass. A main needs both models agreeing, 7.0+, no veto, and an approved sport (football and NBA now; CBB/NHL paper until you approve them). Midweek or small-conference CFB needs 8.0+.</p></div>`;
-  h += `<div class="card"><b>Is confidence telling the truth?</b><div class="mute">Every graded pick, by confidence band. Higher bands should win more. If they don't, the scorecard needs fixing.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th><th>Beat close</th></tr>${D.tiers.map(t => `<tr><td>${t.band}</td><td>${t.w}-${t.l}</td><td>${t.win == null ? "-" : pct(t.win)}</td><td>${t.clv_n ? t.clv_beat + "/" + t.clv_n : "-"}</td></tr>`).join("")}</table></div>`;
+  h += `<div class="card"><b>Is confidence telling the truth?</b><div class="mute">Every graded pick, by confidence band. Higher bands should win more. If they don't, the scorecard needs fixing.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th><th>1 unit each</th><th>Beat close</th></tr>${D.tiers.map(t => `<tr><td>${t.band}</td><td>${t.w}-${t.l}${t.w + t.l && t.w + t.l < 30 ? ' <span class="mute">(too few)</span>' : ""}</td><td>${t.win == null ? "-" : pct(t.win)}</td><td class="${t.units >= 0 ? "W" : "L"}">${t.w + t.l ? sgn(t.units) + "u" : "-"}</td><td>${t.clv_n ? t.clv_beat + "/" + t.clv_n : "-"}</td></tr>`).join("")}</table>
+  ${verdictBox(D.verdict)}<div class="mute" style="margin-top:6px">Every pick the Board logs counts here - cash, paper and watch, every sport, bet or not. "1 unit each" is what a flat bet on every pick in that band made at the logged price. How long to wait: it goes by results, not days. 30 in a band is a first read. 100 is when to trust it and change the scorecard.</div></div>`;
+  h += partsBox(D.parts, "main picks");
   return h;
+}
+function verdictBox(v){
+  return v ? `<div class="${v.status === "bad" ? "ag" : v.status === "ok" ? "pro" : "flag"}" style="margin-top:8px">${esc(v.text)}</div>` : "";
+}
+function partsBox(rows, what){
+  const f = r => `${r[0]}-${r[1]} (${pct(r[0] / (r[0] + r[1]))})`;
+  return `<div class="card"><b>Which parts of the score line up with winning?</b><div class="mute">For each part of the scorecard: the record of ${what} when that part scored high (75%+ of its max) and when it scored low. A part that is high on losers as often as on winners is not helping, and is the first place to look when confidence runs too high. Parts with fewer than 10 picks on either side are left out.</div>
+  ${(rows||[]).length ? `<table><tr><th>Part</th><th>Scored high</th><th>Scored low</th><th>Gap</th></tr>${rows.map(r => `<tr><td>${esc(r.part)}</td><td class="n">${f(r.hi)}</td><td class="n">${f(r.lo)}</td><td class="n ${r.diff >= 0 ? "W" : "L"}">${sgn(Math.round(r.diff * 100))} pts</td></tr>`).join("")}</table><div class="mute" style="margin-top:6px">A gap under about 10 points on fewer than 100 picks a side is still mostly luck.</div>` : `<div class="mute" style="margin-top:6px">Not enough graded picks with a saved score breakdown yet.</div>`}</div>`;
 }
 function record(){
   const S = D.summary; let h = `<div class="kpi">`;
@@ -231,7 +241,7 @@ function propDetail(x){
   ${x.bk != null ? `<tr><td>${esc((x.bk_books||[]).join(" + "))} chance (no-vig, at Underdog's line)</td><td class="n">${pct(x.bk)}</td></tr>` : ""}<tr><td>Gap</td><td class="n">${sgn(x.edge)} pts</td></tr><tr><td>Playable to</td><td class="n">${x.playable_to ?? "-"}</td></tr>
   <tr><td>Model alone (before leaning on Underdog)</td><td class="n">${pct(up ? x.p_raw_higher : 1 - x.p_raw_higher)}</td></tr></table></div>
   <div class="card"><b>Other books on this prop</b>${(x.books||[]).length ? `<table><tr><td>Underdog</td><td class="n">${L} (Higher ${esc(x.price?.higher ?? "-")}, Lower ${esc(x.price?.lower ?? "-")})</td></tr>${x.books.map(b => `<tr><td>${esc(b.book)}</td><td class="n">${esc(bookTxt(b))}</td></tr>`).join("")}</table>
-  <div class="mute" style="margin-top:6px">${x.bk != null ? "DraftKings and Pinnacle are sportsbooks, so their prices count in our chance. " : "No sportsbook price on this one. "}Sleeper is shown because that is where you play - check its line before you put it in. A different line there changes the bet.</div>` : `<div class="mute">No other book has this prop right now, so there is nothing to check Underdog's number against.</div>`}</div>
+  <div class="mute" style="margin-top:6px">${x.bk != null ? "DraftKings and Pinnacle are sportsbooks, so their prices count in our chance. " : "No sportsbook price on this one. "}Sleeper is shown because that is where you play - check its line before you put it in. A different line there changes the bet.</div><div class="mute" style="margin-top:6px">${(x.moves||[]).length ? "Since the Board first saw it: " + x.moves.map(esc).join("; ") + "." : "No line or price has moved since the Board first saw it."}</div>` : `<div class="mute">No other book has this prop right now, so there is nothing to check Underdog's number against.</div>`}</div>
   <div class="card"><b>Hit rates (${esc(x.side)} ${L})</b><table><tr><th></th><th>Hit</th><th>Average</th></tr>
   ${["L5","L10","season","last season","vs opp"].map(k => `<tr><td>${k === "L5" ? "Last 5" : k === "L10" ? "Last 10" : k === "vs opp" ? "vs " + esc(x.opp) : k[0].toUpperCase()+k.slice(1)}</td><td class="n ${hrc(x.hits[k])}">${hr(x.hits[k])}</td><td class="n">${x.avgs[k] ?? "-"}</td></tr>`).join("")}
   <tr><td>Home / away</td><td></td><td class="n">${x.avgs.home ?? "-"} / ${x.avgs.away ?? "-"}</td></tr></table></div>
@@ -280,13 +290,13 @@ function propsTab(){
   const st = x => x.status === "PULL" ? `<span class="tag PULL">PULL</span>` : (x.result ? `<span class="tag ${x.result==="Won"?"CASH":x.result==="Lost"?"PULL":""}">${esc(x.result)}</span>` : (x.placed ? `<span class="tag CASH">PLACED $${x.stake||15}</span>` : `<span class="tag PAPER">$${x.stake||15} paper</span>`));
   const pb = (x, name) => x.status === "PULL" && !x.placed ? "" : `<div>${x.placed ? `<span class="mute">You placed this at $${x.stake||15}.</span> ${cmd("skip " + name, "Undo")}` : cmd("placed " + name, "I placed this")}</div>`;
   const single = x => `<div class="card click" data-prop="${x.id}"><div class="row"><div><div class="big">${esc(x.pick)}</div><div class="mute">${esc(x.sport)} - ${esc(x.game)} - ${esc(x.time)} - ours ${pct(x.p)} vs Underdog ${pct(x.mkt)} - conf ${x.conf}</div></div>${st(x)}</div>${x.status==="PULL" ? `<div class="ag">Pull: ${esc(x.pull_why)}</div>` : ""}${x.line_now != null && x.line_now !== x.line ? `<div class="flag">Line now ${x.line_now}</div>` : ""}${pb(x, x.pick)}</div>`;
-  const parlay = e => `<div class="card"><div class="row"><div class="big">${esc(e.name)}: ${e.legs.map(x => esc(x.pick) + (x.result ? ` <span class="${x.result==="Won"?"W":x.result==="Lost"?"L":"mute"}">(${esc(x.result.toLowerCase())})</span>` : "")).join(" + ")}</div>${st(e)}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs 33.3% at 3x). ${esc(e.why)}</div>${e.status==="PULL" ? `<div class="ag">Pull: ${esc(e.pull_why)}</div>` : ""}${pb(e, "prop " + e.name.toLowerCase().replace("prop ", ""))}</div>`;
+  const parlay = e => `<div class="card"><div class="row"><div class="big">${esc(e.name)}: ${e.legs.map(x => esc(x.pick) + (x.result ? ` <span class="${x.result==="Won"?"W":x.result==="Lost"?"L":"mute"}">(${esc(x.result.toLowerCase())})</span>` : "")).join(" + ")}</div>${st(e)}</div><div class="mute">Both hit about ${pct(e.chance)} of the time (needs ${pct(e.need ?? 1/3)} at ${e.pays ?? 3}x). ${esc(e.why)}</div>${e.lean_only && e.chance < (e.need ?? 1/3) ? `<div class="flag">Under break-even on our numbers - a test ticket, not a strong one. It is on the card because you allow leans in parlays.</div>` : ""}${e.status==="PULL" ? `<div class="ag">Pull: ${esc(e.pull_why)}</div>` : ""}${pb(e, "prop " + e.name.toLowerCase().replace("prop ", ""))}</div>`;
   if (pday === P.today) {
     h += `<div class="card"><b>Today's props card</b><div class="mute">3 singles + 2 parlays, $15 each. These are the only props with an amount. ${P.auto ? "Mode: counted as placed unless you tap Undo." : "Mode: paper until you tap \"I placed this\"."}</div>${PC.singles.length || PC.parlays.length ? cmd("placed card", "I placed the whole card") : ""}
     <table style="margin-top:8px"><tr><th></th><th>Record</th><th>$ (est.)</th></tr><tr><td>Card singles (all, paper)</td><td class="n">${wl(CR.singles)}</td><td class="n">${money(CR.singles?.pl)}</td></tr><tr><td>Card parlays (all, paper)</td><td class="n">${wl(CR.parlays)}</td><td class="n">${money(CR.parlays?.pl)}</td></tr></table><div class="mute" style="margin-top:6px">What you actually put in is under "My entries" below.</div></div>`;
     h += myEntries(P, day);
     h += `<h3>Prop singles (${PC.singles.length} of 3)</h3>` + (PC.singles.map(single).join("") || `<div class="card mute">No prop single yet - nothing has cleared PLAY. Slots fill as lines post.</div>`);
-    h += `<h3>Prop parlays (${PC.parlays.length} of 2)</h3><div class="mute" style="margin:-4px 0 8px">2-pick at 3x: one PLAY plus one LEAN from a different game.</div>` + (PC.parlays.map(parlay).join("") || `<div class="card mute">No prop parlay yet - needs a PLAY and a LEAN from different games.</div>`);
+    h += `<h3>Prop parlays (${PC.parlays.length} of 2)</h3><div class="mute" style="margin:-4px 0 8px">2-pick at 3x: one PLAY plus one LEAN from a different game. With no PLAY to anchor one, two leans from different games (your rule - parlays only, never singles).</div>` + (PC.parlays.map(parlay).join("") || `<div class="card mute">No prop parlay yet - needs two calls from different games.</div>`);
     const PV = P.card_prev;
     if (PV && (PV.singles.length || PV.parlays.length)) h += `<details class="card"><summary>Last card (${esc(PV.date)}) - results</summary><div class="mute" style="margin:6px 0">Forgot to tell the Board? You can still tap "I placed this".</div>${PV.singles.map(single).join("")}${PV.parlays.map(parlay).join("")}</details>`;
   } else {
@@ -310,7 +320,8 @@ function propsTab(){
   ${C.nb ? `<table><tr><td>Underdog's error (lower is better)</td><td class="n">${(C.brier_b.underdog/C.nb).toFixed(4)}</td></tr><tr><td>Sportsbooks' error</td><td class="n">${(C.brier_b.books/C.nb).toFixed(4)}</td></tr>
   ${["3-5","5-8","8+"].filter(k => bb[k]).map(k => `<tr><td>Sportsbooks' side, gap ${k} pts</td><td class="n">${bb[k][0]}-${bb[k][1]} (${pct(bb[k][0]/(bb[k][0]+bb[k][1]))})</td></tr>`).join("")}</table>` : `<div class="mute">First grades land after tonight's games.</div>`}</div>`;
   const BD = P.bands || [];
-  h += `<div class="card"><b>Is prop confidence telling the truth?</b><div class="mute">Graded calls by the confidence they were logged at. Higher bands should win more. It takes about 100 results in a band before this means anything.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th></tr>${BD.map(t => `<tr><td>${t.band}</td><td class="n">${t.w}-${t.l}</td><td class="n">${t.w+t.l ? pct(t.w/(t.w+t.l)) : "-"}${t.w+t.l && t.w+t.l < 100 ? ' <span class="mute">(too few)</span>' : ""}</td></tr>`).join("")}</table></div>`;
+  h += `<div class="card"><b>Is prop confidence telling the truth?</b><div class="mute">Graded calls by the confidence they were logged at. Higher bands should win more. It takes about 100 results in a band before this means anything.</div><table><tr><th>Band</th><th>Record</th><th>Win %</th></tr>${BD.map(t => `<tr><td>${t.band}</td><td class="n">${t.w}-${t.l}</td><td class="n">${t.w+t.l ? pct(t.w/(t.w+t.l)) : "-"}${t.w+t.l && t.w+t.l < 100 ? ' <span class="mute">(too few)</span>' : ""}</td></tr>`).join("")}</table>${verdictBox(P.verdict)}</div>`;
+  h += partsBox(P.parts, "prop calls");
   const recent = (P.recent || []);
   if (recent.length) h += `<div class="card"><b>Recent graded calls</b><table>${recent.map(b => `<tr><td>${esc(b.pick)}<div class="mute">${esc(b.date)} ${b.placed ? "- placed" : ""}</div></td><td class="n ${b.result}">${esc(b.result)}</td><td class="n">${b.actual ?? "-"}</td></tr>`).join("")}</table></div>`;
   return h;
@@ -351,7 +362,7 @@ def props_data(pr, date):
             "entries": {d: P.entries(pr["props"], d) for d in dates}, "record": P.record(book), "calib": load("props_calib.json", {}),
             "recent": [b for b in book if b.get("result") in ("Won", "Lost", "Push", "Void")][-30:][::-1],
             "card": prop_card(date, book), "card_prev": prop_card(prev, book) if prev else None, "card_record": P.card_record(book),
-            "bands": P.bands(book), "auto": bool(load("settings.json", {}).get("props_auto")),
+            "bands": P.bands(book), "verdict": calib_verdict(P.bands(book)), "parts": grade.parts([b for b in book if b.get("source") != "your request"], P.PROP_PARTS), "auto": bool(load("settings.json", {}).get("props_auto")),
             "placed_ids": [b["id"] for b in book if b.get("placed")],
             "my": {"list": load("my_entries.json", [])[-40:][::-1], "record": E.record()}}
 
@@ -375,7 +386,7 @@ def render(cards, picks, pars, bt, btl, st, hl, pr=None):
     why = ("Mains below." if cash else
            "No pick passed every gate for a main: both models agree, confidence 7.0+ (8.0+ for midweek or small-conference CFB), no veto, and a sport you've approved (football and NBA). Paper picks are still graded so the record builds.")
     data = {"updated": now.strftime("%a %b %-d, %-I:%M %p CT"), "cards": cards, "picks": picks[-1500:], "parlays": [x for x in pars if x["date"] == date], "all_parlays": pars[-200:],
-            "summary": grade.summary(picks), "tiers": grade.tiers(picks), "bt": bt, "btl": btl, "grad": review.graduation(picks, bt, btl, st),
+            "summary": grade.summary(picks), "tiers": grade.tiers(picks), "verdict": calib_verdict(grade.tiers(picks)), "parts": grade.parts(picks), "bt": bt, "btl": btl, "grad": review.graduation(picks, bt, btl, st),
             "bank": {"now": grade.bankroll(picks, st), "goal": st.get("goal", 10000)}, "health": hl, "pulls": pulls, "why_pass": why,
             "review_log": {p["id"]: p.get("review_log", []) for p in picks if p["result"] is None},
             "reviews": load("reviews.json", []), "requests": load("requests_log.json", []), "commands": COMMANDS, "lab_notes": LAB_NOTES,
