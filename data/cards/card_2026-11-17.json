@@ -205,7 +205,7 @@
     "factors": [
      "Rest: RedHawks 7 day(s), Flashes 7 day(s)",
      "Line moved 1 pts toward Miami (OH) RedHawks since open (+8.5 to +9.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 2), 42F, rain chance 0%",
+     "Kickoff forecast: wind 1 mph (gusts 1), 41F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -217,15 +217,15 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 2.0,
-     "gust": 2.0,
+     "wind": 1.0,
+     "gust": 1.0,
      "rain": 0,
-     "temp": 42,
+     "temp": 41,
      "src": "NWS"
     },
     "weather": {
      "text": "Clear",
-     "temp": 43
+     "temp": 42
     },
     "total_model": 50.2,
     "gap_a": -2.9,
@@ -695,8 +695,8 @@
     ],
     "total": 226.5,
     "total_open": 226.5,
-    "home_ml": -142,
-    "away_ml": 120,
+    "home_ml": -135,
+    "away_ml": 114,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 4.2,
@@ -850,7 +850,7 @@
      -116,
      -105
     ],
-    "total": 222.5,
+    "total": 221.5,
     "total_open": 220.5,
     "home_ml": -371,
     "away_ml": 295,
@@ -984,7 +984,7 @@
      "situational": 0.5,
      "our history": -0.04
     },
-    "total_gap": 2.8
+    "total_gap": 3.8
    },
    {
     "id": "401910006",
@@ -4091,10 +4091,10 @@
     "home_line": -5.5,
     "home_line_open": -5.5,
     "spread_odds": [
-     -110,
-     -110
+     null,
+     null
     ],
-    "total": 131.5,
+    "total": 130.5,
     "total_open": 130.5,
     "home_ml": -258,
     "away_ml": 210,
@@ -4191,7 +4191,7 @@
      "situational": 0.5,
      "our history": -0.04
     },
-    "total_gap": -4.9
+    "total_gap": -3.9
    },
    {
     "id": "401911198",
@@ -4908,7 +4908,7 @@
      -110,
      -110
     ],
-    "total": 147.5,
+    "total": 148.5,
     "total_open": 148.5,
     "home_ml": null,
     "away_ml": null,
@@ -5008,7 +5008,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": -0.1
+    "total_gap": -1.1
    },
    {
     "id": "401921722",
@@ -8816,6 +8816,141 @@
     "stake": 0
    },
    {
+    "id": "401892729",
+    "sport": "NHL",
+    "game": "Washington Capitals @ Tampa Bay Lightning",
+    "home": "Tampa Bay Lightning",
+    "away": "Washington Capitals",
+    "time": "Tue 6:30 PM CT",
+    "start": "2026-11-18T00:30Z",
+    "book": "Draft Kings",
+    "line": "TB -162",
+    "home_line": -162.0,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -180,
+     150
+    ],
+    "total": 6.5,
+    "total_open": 6.5,
+    "home_ml": -162,
+    "away_ml": 136,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.9,
+    "model_b": 1.9,
+    "games_played": [
+     16,
+     17
+    ],
+    "neutral": false,
+    "records": [
+     "10-8-0",
+     "13-5-2"
+    ],
+    "venue": "Benchmark International Arena",
+    "tv": "Disney+, ESPN+, Hulu",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Erik Cernak",
+      "pos": "D",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Anthony Cirelli",
+      "pos": "C",
+      "status": "Day-To-Day"
+     }
+    ],
+    "inj_away": [],
+    "stars": [
+     [
+      "Alex Tuch",
+      "Dylan Strome"
+     ],
+     [
+      "Brandon Hagel",
+      "Nikita Kucherov"
+     ]
+    ],
+    "goalies": [
+     "Logan Thompson",
+     "Andrei Vasilevskiy"
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     -1.0,
+     1.0
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.5 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
+    "flags": [
+     "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
+    ],
+    "factors": [
+     "Rest: Capitals 3 day(s), Lightning 3 day(s)",
+     "Line moved 160.5 pts toward Tampa Bay Lightning since open (-1.5 to -162 home)",
+     "Indoors - weather does not matter",
+     "Probable goalies: Logan Thompson (Capitals), Andrei Vasilevskiy (Lightning)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A different goalie starts for either team",
+     "Price moves past -266 (our fair price)"
+    ],
+    "total_model": 7.1,
+    "gap_a": 5.9,
+    "gap_b": 20.8,
+    "win_prob": [
+     0.273,
+     0.727
+    ],
+    "market_prob": [
+     0.407,
+     0.593
+    ],
+    "pick": "Tampa Bay Lightning ML (-162)",
+    "price": -162,
+    "side": "home",
+    "gap_min": 5.9,
+    "fair_line": -266,
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "test_record": {
+     "w": 157,
+     "l": 175,
+     "n": 332,
+     "win": 0.473,
+     "units": -9.79,
+     "roi": -0.029
+    },
+    "history": {
+     "adj": -0.11,
+     "key": "NHL ml",
+     "w": 14,
+     "l": 16,
+     "text": "Our record on NHL ml: 14-16 (last 60 days, recent counts more) -> -0.11 to confidence"
+    },
+    "conf": 6.5,
+    "components": {
+     "efficiency": 0.59,
+     "veto": 1.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.11
+    },
+    "stake": 0
+   },
+   {
     "id": "401892731",
     "sport": "NHL",
     "game": "Columbus Blue Jackets @ New York Islanders",
@@ -9358,140 +9493,6 @@
     }
    },
    {
-    "id": "401892729",
-    "sport": "NHL",
-    "game": "Washington Capitals @ Tampa Bay Lightning",
-    "home": "Tampa Bay Lightning",
-    "away": "Washington Capitals",
-    "time": "Tue 6:30 PM CT",
-    "start": "2026-11-18T00:30Z",
-    "book": "Draft Kings",
-    "line": "TB -170",
-    "home_line": -170.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -180,
-     150
-    ],
-    "total": 6.5,
-    "total_open": 6.5,
-    "home_ml": -170,
-    "away_ml": 142,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.9,
-    "model_b": 1.9,
-    "games_played": [
-     16,
-     17
-    ],
-    "neutral": false,
-    "records": [
-     "10-8-0",
-     "13-5-2"
-    ],
-    "venue": "Benchmark International Arena",
-    "tv": "Disney+, ESPN+, Hulu",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Erik Cernak",
-      "pos": "D",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Anthony Cirelli",
-      "pos": "C",
-      "status": "Day-To-Day"
-     }
-    ],
-    "inj_away": [],
-    "stars": [
-     [
-      "Alex Tuch",
-      "Dylan Strome"
-     ],
-     [
-      "Brandon Hagel",
-      "Nikita Kucherov"
-     ]
-    ],
-    "goalies": [
-     "Logan Thompson",
-     "Andrei Vasilevskiy"
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -1.0,
-     1.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Capitals 3 day(s), Lightning 3 day(s)",
-     "Line moved 168.5 pts toward Tampa Bay Lightning since open (-1.5 to -170 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Logan Thompson (Capitals), Andrei Vasilevskiy (Lightning)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past -266 (our fair price)"
-    ],
-    "total_model": 7.1,
-    "gap_a": 4.8,
-    "gap_b": 19.8,
-    "win_prob": [
-     0.273,
-     0.727
-    ],
-    "market_prob": [
-     0.396,
-     0.604
-    ],
-    "pick": "Tampa Bay Lightning ML (-170)",
-    "price": -170,
-    "side": "home",
-    "gap_min": 19.8,
-    "fair_line": -266,
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.11,
-     "key": "NHL ml",
-     "w": 14,
-     "l": 16,
-     "text": "Our record on NHL ml: 14-16 (last 60 days, recent counts more) -> -0.11 to confidence"
-    },
-    "conf": 5.9,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.11
-    }
-   },
-   {
     "id": "401892734",
     "sport": "NHL",
     "game": "Anaheim Ducks @ St. Louis Blues",
@@ -9634,8 +9635,8 @@
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-18T00:30Z",
     "book": "Draft Kings",
-    "line": "TOR -148",
-    "home_line": 148.0,
+    "line": "TOR -155",
+    "home_line": 155.0,
     "home_line_open": 1.5,
     "spread_odds": [
      160,
@@ -9643,8 +9644,8 @@
     ],
     "total": 6.5,
     "total_open": 6.5,
-    "home_ml": 124,
-    "away_ml": -148,
+    "home_ml": 130,
+    "away_ml": -155,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -0.4,
@@ -9695,7 +9696,7 @@
     "flags": [],
     "factors": [
      "Rest: Leafs 3 day(s), Blackhawks 3 day(s)",
-     "Line moved 146.5 pts toward Toronto Maple Leafs since open (+1.5 to +148 home)",
+     "Line moved 153.5 pts toward Toronto Maple Leafs since open (+1.5 to +155 home)",
      "Indoors - weather does not matter",
      "Probable goalies: Sergei Bobrovsky (Leafs), Spencer Knight (Blackhawks)"
     ],
@@ -9705,20 +9706,20 @@
      "Price moves past +132 (our fair price)"
     ],
     "total_model": 6.7,
-    "gap_a": -0.4,
-    "gap_b": 1.2,
+    "gap_a": 0.7,
+    "gap_b": 2.3,
     "win_prob": [
      0.568,
      0.432
     ],
     "market_prob": [
-     0.572,
-     0.428
+     0.583,
+     0.417
     ],
-    "pick": "Chicago Blackhawks ML (+124)",
-    "price": 124,
+    "pick": "Chicago Blackhawks ML (+130)",
+    "price": 130,
     "side": "home",
-    "gap_min": 1.2,
+    "gap_min": 2.3,
     "fair_line": 132,
     "models_agree": false,
     "one_model": false,
@@ -9738,9 +9739,9 @@
      "l": 16,
      "text": "Our record on NHL ml: 14-16 (last 60 days, recent counts more) -> -0.11 to confidence"
     },
-    "conf": 5.0,
+    "conf": 5.1,
     "components": {
-     "efficiency": 0.12,
+     "efficiency": 0.23,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
