@@ -94,7 +94,7 @@
     },
     "weather": {
      "text": "Mostly clear",
-     "temp": 48
+     "temp": 47
     },
     "total_model": 46.5,
     "gap_a": 3.6,
@@ -225,7 +225,7 @@
     },
     "weather": {
      "text": "Clear",
-     "temp": 42
+     "temp": 43
     },
     "total_model": 50.2,
     "gap_a": -2.9,
@@ -1882,7 +1882,7 @@
      -110,
      -110
     ],
-    "total": 152.5,
+    "total": 151.5,
     "total_open": 151.5,
     "home_ml": -9000,
     "away_ml": 2500,
@@ -1985,7 +1985,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 3.5,
+    "total_gap": 4.5,
     "stake": 0
    },
    {
@@ -2006,8 +2006,8 @@
     ],
     "total": 152.5,
     "total_open": 157.5,
-    "home_ml": -6500,
-    "away_ml": 2000,
+    "home_ml": -8000,
+    "away_ml": 2200,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 17.0,
@@ -2109,121 +2109,6 @@
     },
     "total_gap": -5.8,
     "stake": 0
-   },
-   {
-    "id": "401919783",
-    "sport": "CBB",
-    "game": "Le Moyne Dolphins @ Evansville Purple Aces",
-    "home": "Evansville Purple Aces",
-    "away": "Le Moyne Dolphins",
-    "time": "Tue 7:00 PM CT",
-    "start": "2026-11-18T01:00Z",
-    "book": "Draft Kings",
-    "line": "EVAN -7.5",
-    "home_line": -7.5,
-    "home_line_open": -6.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 146.5,
-    "total_open": 147.5,
-    "home_ml": -258,
-    "away_ml": 210,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 1.0,
-    "model_b": 3.7,
-    "games_played": [
-     4,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "2-2",
-     "2-2"
-    ],
-    "venue": "Ford Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jayden Teat",
-      "Trevor Roe"
-     ],
-     [
-      "AJ Casey",
-      "Bryce Quinet"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -3.5,
-     -0.2
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Dolphins 3 day(s), Aces 3 day(s)",
-     "Line moved 1 pts toward Evansville Purple Aces since open (-6.5 to -7.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.4,
-    "gap_a": -6.5,
-    "gap_b": -3.8,
-    "gap_min": 6.5,
-    "pick": "Le Moyne Dolphins +7.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 2.3,
-    "playable_to": null,
-    "sim_cover": 0.681,
-    "history": {
-     "adj": 0.23,
-     "key": "CBB spread dog",
-     "w": 54,
-     "l": 37,
-     "text": "Our record on CBB spread dog: 54-37 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.5,
-    "components": {
-     "efficiency": 0.72,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": 3.9
    },
    {
     "id": "401920720",
@@ -3029,6 +2914,119 @@
      "our history": 0.23
     },
     "total_gap": 1.7
+   },
+   {
+    "id": "401919783",
+    "sport": "CBB",
+    "game": "Le Moyne Dolphins @ Evansville Purple Aces",
+    "home": "Evansville Purple Aces",
+    "away": "Le Moyne Dolphins",
+    "time": "Tue 7:00 PM CT",
+    "start": "2026-11-18T01:00Z",
+    "book": "Draft Kings",
+    "line": "EVAN -6.5",
+    "home_line": -6.5,
+    "home_line_open": -6.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 146.5,
+    "total_open": 147.5,
+    "home_ml": -258,
+    "away_ml": 210,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 1.0,
+    "model_b": 3.7,
+    "games_played": [
+     4,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "2-2",
+     "2-2"
+    ],
+    "venue": "Ford Center",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Jayden Teat",
+      "Trevor Roe"
+     ],
+     [
+      "AJ Casey",
+      "Bryce Quinet"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     -3.5,
+     -0.2
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Dolphins 3 day(s), Aces 3 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.4,
+    "gap_a": -5.5,
+    "gap_b": -2.8,
+    "gap_min": 5.5,
+    "pick": "Le Moyne Dolphins +6.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 2.3,
+    "playable_to": null,
+    "sim_cover": 0.647,
+    "history": {
+     "adj": 0.23,
+     "key": "CBB spread dog",
+     "w": 54,
+     "l": 37,
+     "text": "Our record on CBB spread dog: 54-37 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.3,
+    "components": {
+     "efficiency": 0.61,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": 3.9
    },
    {
     "id": "401920511",
@@ -4793,10 +4791,10 @@
      -115,
      -105
     ],
-    "total": 147.5,
+    "total": 148.5,
     "total_open": 147.5,
-    "home_ml": -142,
-    "away_ml": 120,
+    "home_ml": -135,
+    "away_ml": 114,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 3.8,
@@ -4889,8 +4887,8 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 7.2,
-    "total_lean": "Over 147.5 (season scoring says 154.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": 6.2,
+    "total_lean": "Over 148.5 (season scoring says 154.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401925064",
@@ -4908,7 +4906,7 @@
      -110,
      -110
     ],
-    "total": 148.5,
+    "total": 144.5,
     "total_open": 148.5,
     "home_ml": null,
     "away_ml": null,
@@ -5008,7 +5006,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": -1.1
+    "total_gap": 2.9
    },
    {
     "id": "401921722",
@@ -5730,8 +5728,8 @@
     "home_line": -3.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
     "total": 134.5,
     "total_open": 134.5,
@@ -5796,7 +5794,7 @@
     "gap_b": 2.7,
     "gap_min": 2.7,
     "pick": "Davidson Wildcats -3.5",
-    "price": -110,
+    "price": -115,
     "side": "home",
     "fair_line": -6.1,
     "playable_to": null,
@@ -5844,13 +5842,13 @@
     "home_line": -1.5,
     "home_line_open": -1.5,
     "spread_odds": [
-     -115,
-     -105
+     -120,
+     100
     ],
     "total": 137.5,
     "total_open": 138.5,
-    "home_ml": -115,
-    "away_ml": -105,
+    "home_ml": -120,
+    "away_ml": 100,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 2.2,
@@ -5909,7 +5907,7 @@
     "gap_b": 2.7,
     "gap_min": 2.7,
     "pick": "Mount St. Mary's Mountaineers -1.5",
-    "price": -105,
+    "price": 100,
     "side": "home",
     "fair_line": -3.2,
     "playable_to": null,
@@ -6777,8 +6775,8 @@
     "home_line": -33.5,
     "home_line_open": -33.5,
     "spread_odds": [
-     -105,
-     -115
+     -108,
+     -112
     ],
     "total": 160.5,
     "total_open": 160.5,
@@ -6850,7 +6848,7 @@
     "gap_b": -19.1,
     "gap_min": 6.2,
     "pick": "Cleveland State Vikings +33.5",
-    "price": -105,
+    "price": -108,
     "side": "away",
     "fair_line": 20.8,
     "playable_to": 31.8,
