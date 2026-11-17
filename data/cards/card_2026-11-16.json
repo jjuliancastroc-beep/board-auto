@@ -11,140 +11,8 @@
  },
  {
   "sport": "NBA",
-  "games": [
-   {
-    "id": "401910001",
-    "sport": "NBA",
-    "game": "Phoenix Suns @ Denver Nuggets",
-    "home": "Denver Nuggets",
-    "away": "Phoenix Suns",
-    "time": "Mon 8:00 PM CT",
-    "start": "2026-11-17T02:00Z",
-    "book": "DraftKings",
-    "line": "DEN -9.5",
-    "home_line": -9.5,
-    "home_line_open": -10.5,
-    "spread_odds": [
-     -106,
-     -114
-    ],
-    "total": 229.5,
-    "total_open": 228.5,
-    "home_ml": -426,
-    "away_ml": 333,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 5.7,
-    "model_b": 8.1,
-    "games_played": [
-     12,
-     11
-    ],
-    "neutral": false,
-    "records": [
-     "5-7",
-     "7-4"
-    ],
-    "venue": "Ball Arena",
-    "tv": "Suns Live, Arizona's Family 3TV",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Julian Strawther",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Mark Williams",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Devin Booker",
-      "Miles Bridges"
-     ],
-     [
-      "Jamal Murray",
-      "Nikola Jokic"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     2
-    ],
-    "form5": [
-     -0.6,
-     6.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Phoenix Suns on a back-to-back"
-    ],
-    "factors": [
-     "Rest: Suns 1 day(s), Nuggets 2 day(s)",
-     "Line moved 1 pts toward Phoenix Suns since open (-10.5 to -9.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Our side has less rest",
-     "Last 5 games point the other way (our side -0.6 a game, theirs +6.8)"
-    ],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 228.7,
-    "gap_a": -3.8,
-    "gap_b": -1.4,
-    "gap_min": 3.8,
-    "pick": "Phoenix Suns +9.5",
-    "price": -106,
-    "side": "away",
-    "fair_line": 6.9,
-    "playable_to": null,
-    "sim_cover": 0.582,
-    "history": {
-     "adj": 0.13,
-     "key": "spread dog",
-     "w": 99,
-     "l": 77,
-     "text": "Our record on spread dog: 99-77 (last 60 days, recent counts more) -> +0.13 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.2,
-    "components": {
-     "efficiency": 0.42,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.0,
-     "price": 0.0,
-     "situational": 0.2,
-     "our history": 0.13
-    },
-    "total_gap": -0.8
-   }
-  ],
-  "n_past": 197,
-  "model_note": "Opponent-adjusted ratings model and last-10-games form. Checks star players (team leaders) on the injury report, back-to-backs and rest, line movement."
+  "games": [],
+  "note": "No games today."
  },
  {
   "sport": "CBB",
@@ -157,7 +25,7 @@
     "away": "Texas Southern Tigers",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UCSD -18.5",
     "home_line": -18.5,
     "home_line_open": -18.5,
@@ -235,11 +103,11 @@
     "playable_to": null,
     "sim_cover": 0.721,
     "history": {
-     "adj": 0.18,
+     "adj": 0.2,
      "key": "CBB spread dog",
-     "w": 47,
+     "w": 48,
      "l": 34,
-     "text": "Our record on CBB spread dog: 47-34 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "text": "Our record on CBB spread dog: 48-34 (last 60 days, recent counts more) -> +0.20 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -260,7 +128,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.2
     },
     "total_gap": 14.4,
     "total_lean": "Over 157.5 (season scoring says 171.9) - WATCH only, totals have no past-games test yet"
@@ -273,7 +141,7 @@
     "away": "Portland State Vikings",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SMC -18.5",
     "home_line": -18.5,
     "home_line_open": -17.5,
@@ -354,11 +222,11 @@
     "playable_to": null,
     "sim_cover": 0.705,
     "history": {
-     "adj": 0.18,
+     "adj": 0.2,
      "key": "CBB spread dog",
-     "w": 47,
+     "w": 48,
      "l": 34,
-     "text": "Our record on CBB spread dog: 47-34 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "text": "Our record on CBB spread dog: 48-34 (last 60 days, recent counts more) -> +0.20 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -379,129 +247,10 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.2
     },
     "total_gap": 11.9,
     "total_lean": "Over 150.5 (season scoring says 162.4) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401929192",
-    "sport": "CBB",
-    "game": "East Texas A&M Lions @ Oregon State Beavers",
-    "home": "Oregon State Beavers",
-    "away": "East Texas A&M Lions",
-    "time": "Mon 8:30 PM CT",
-    "start": "2026-11-17T02:30Z",
-    "book": "DraftKings",
-    "line": "ORST -16.5",
-    "home_line": -16.5,
-    "home_line_open": -17.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 154.5,
-    "total_open": 151.5,
-    "home_ml": -1650,
-    "away_ml": 950,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 12.5,
-    "model_b": 7.1,
-    "games_played": [
-     4,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "3-1",
-     "4-0"
-    ],
-    "venue": "Gill Coliseum",
-    "tv": "YouTube",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Bo Aldridge",
-      "Mohamed Diakite"
-     ],
-     [
-      "Daniel Freitag",
-      "Josiah Lake II",
-      "Xavion Staton"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     1.8,
-     21.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Lions 3 day(s), Beavers 3 day(s)",
-     "Line moved 1 pts toward East Texas A&M Lions since open (-17.5 to -16.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side +1.8 a game, theirs +21.0)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 158.0,
-    "gap_a": -4.0,
-    "gap_b": -9.4,
-    "gap_min": 9.4,
-    "pick": "East Texas A&M Lions +16.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 9.8,
-    "playable_to": null,
-    "sim_cover": 0.729,
-    "history": {
-     "adj": 0.18,
-     "key": "CBB spread dog",
-     "w": 47,
-     "l": 34,
-     "text": "Our record on CBB spread dog: 47-34 (last 60 days, recent counts more) -> +0.18 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.18
-    },
-    "total_gap": 3.5
    },
    {
     "id": "401924265",
@@ -511,7 +260,7 @@
     "away": "Long Beach State Beach",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-17T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UCLA -29.5",
     "home_line": -29.5,
     "home_line_open": -33.5,
@@ -593,11 +342,11 @@
     "playable_to": null,
     "sim_cover": 0.845,
     "history": {
-     "adj": 0.18,
+     "adj": 0.2,
      "key": "CBB spread dog",
-     "w": 47,
+     "w": 48,
      "l": 34,
-     "text": "Our record on CBB spread dog: 47-34 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "text": "Our record on CBB spread dog: 48-34 (last 60 days, recent counts more) -> +0.20 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -618,7 +367,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.2
     },
     "total_gap": 2.5
    },
@@ -703,13 +452,13 @@
     "away": "Vancouver Canucks",
     "time": "Mon 8:30 PM CT",
     "start": "2026-11-17T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UTAH -340",
     "home_line": null,
     "home_line_open": -1.5,
     "spread_odds": [
-     105,
-     -125
+     110,
+     -130
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -732,11 +481,6 @@
     "tv": "ESPN+, Utah 16, Mammoth+",
     "indoor": true,
     "inj_home": [
-     {
-      "player": "Logan Cooley",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
      {
       "player": "Nick Schmaltz",
       "pos": "C",
