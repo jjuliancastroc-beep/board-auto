@@ -7871,11 +7871,12 @@
   ],
   "logged_at": "11/16 02:32 PM",
   "close_line": 7.5,
-  "result": null,
-  "actual": null,
+  "result": "Won",
+  "actual": 10.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "-103"
+  "odds": "-103",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|4431671|pts_rebs",
@@ -7944,11 +7945,12 @@
   ],
   "logged_at": "11/16 02:32 PM",
   "close_line": 1.5,
-  "result": null,
-  "actual": null,
+  "result": "Won",
+  "actual": 2.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "-159"
+  "odds": "-159",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|4433247|points",
@@ -8055,11 +8057,12 @@
   ],
   "logged_at": "11/16 04:12 PM",
   "close_line": 21.5,
-  "result": null,
-  "actual": null,
+  "result": "Won",
+  "actual": 26.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "-108"
+  "odds": "-108",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|4395626|pts_rebs_asts",
@@ -8369,11 +8372,12 @@
   },
   "logged_at": "11/16 05:53 PM",
   "close_line": 38.5,
-  "result": null,
-  "actual": null,
+  "result": "Lost",
+  "actual": 33.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "-109"
+  "odds": "-109",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|4711272|three_points_made",
@@ -8417,11 +8421,12 @@
   },
   "logged_at": "11/16 05:53 PM",
   "close_line": 2.5,
-  "result": null,
-  "actual": null,
+  "result": "Won",
+  "actual": 1.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "-120"
+  "odds": "-120",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|5107173|rebounds",
@@ -8465,11 +8470,12 @@
   },
   "logged_at": "11/16 06:18 PM",
   "close_line": 5.5,
-  "result": null,
-  "actual": null,
+  "result": "Lost",
+  "actual": 2.0,
   "placed": false,
   "source": "Underdog board",
-  "odds": "+116"
+  "odds": "+116",
+  "clv": 0.0
  },
  {
   "id": "2026-11-16|4698719|rebounds",
@@ -8612,5 +8618,52 @@
   "placed": false,
   "source": "Underdog board",
   "odds": "-121"
+ },
+ {
+  "id": "2026-11-17|5037871|pts_asts",
+  "date": "2026-11-17",
+  "sport": "NBA",
+  "player": "Dylan Harper",
+  "team": "San Antonio Spurs",
+  "opp": "Detroit Pistons",
+  "game": "Detroit Pistons @ San Antonio Spurs",
+  "event_id": "401910004",
+  "espn_id": "5037871",
+  "stat": "pts_asts",
+  "label": "Pts+Ast",
+  "side": "higher",
+  "line": 20.5,
+  "pick": "Dylan Harper Higher 20.5 Pts+Ast",
+  "proj": 22.4,
+  "p": 0.531,
+  "mkt": 0.485,
+  "edge": 4.6,
+  "conf": 5.5,
+  "call": "LEAN",
+  "start": "2026-11-18T01:00:00Z",
+  "time": "Tue 7:00 PM CT",
+  "playable_to": 21.0,
+  "bk": 0.531,
+  "bk_books": [
+   "DraftKings"
+  ],
+  "components": {
+   "data": 1.07,
+   "hit rates": 1.5,
+   "vs Underdog": 0.5,
+   "role": 0.5,
+   "availability": 1.0,
+   "matchup": 0.0,
+   "sample": 1.0,
+   "test record": 0.0,
+   "our history": -0.12
+  },
+  "logged_at": "11/16 10:39 PM",
+  "close_line": 20.5,
+  "result": null,
+  "actual": null,
+  "placed": false,
+  "source": "Underdog board",
+  "odds": "-104"
  }
 ]
