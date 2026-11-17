@@ -1027,17 +1027,17 @@
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-18T00:30Z",
     "book": "DraftKings",
-    "line": "NY -3.5",
-    "home_line": 3.5,
+    "line": "NY -4.5",
+    "home_line": 4.5,
     "home_line_open": 3.5,
     "spread_odds": [
-     -117,
-     -104
+     -106,
+     -114
     ],
     "total": 214.5,
     "total_open": 216.5,
-    "home_ml": 142,
-    "away_ml": -169,
+    "home_ml": 150,
+    "away_ml": -179,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -0.4,
@@ -1106,10 +1106,13 @@
     ],
     "factors": [
      "Rest: Knicks 2 day(s), Raptors 2 day(s)",
+     "Line moved 1 pts toward New York Knicks since open (+3.5 to +4.5 home)",
      "Indoors - weather does not matter",
-     "Last 5 games agree (our side +7.2 a game, theirs -4.4)"
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
-    "against": [],
+    "against": [
+     "Last 5 games point the other way (our side -4.4 a game, theirs +7.2)"
+    ],
     "invalidation": [
      "A star on either team changes status (questionable to out or back in)"
     ],
@@ -1117,21 +1120,21 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": 3.1,
-    "gap_b": -5.1,
-    "gap_min": 5.1,
-    "pick": "New York Knicks -3.5",
-    "price": -117,
-    "side": "away",
-    "fair_line": -4.5,
+    "gap_a": 4.1,
+    "gap_b": -4.1,
+    "gap_min": 4.1,
+    "pick": "Toronto Raptors +4.5",
+    "price": -114,
+    "side": "home",
+    "fair_line": 4.5,
     "playable_to": null,
-    "sim_cover": 0.531,
+    "sim_cover": 0.501,
     "history": {
-     "adj": -0.04,
-     "key": "spread fav",
-     "w": 40,
-     "l": 42,
-     "text": "Our record on spread fav: 40-42 (last 60 days, recent counts more) -> -0.04 to confidence"
+     "adj": 0.2,
+     "key": "spread dog",
+     "w": 108,
+     "l": 80,
+     "text": "Our record on spread dog: 108-80 (last 60 days, recent counts more) -> +0.20 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1140,19 +1143,19 @@
      "win": 0.456
     },
     "models_agree": false,
-    "one_model": true,
+    "one_model": false,
     "veto": true,
-    "conf": 3.8,
+    "conf": 3.1,
     "components": {
-     "efficiency": 0.57,
+     "efficiency": 0.46,
      "veto": 0.0,
-     "models": 0.5,
+     "models": 0.0,
      "starters": 0.75,
      "coaching": 0.5,
-     "against": 1.0,
+     "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.04
+     "our history": 0.2
     },
     "total_gap": 5.7
    }
@@ -1414,8 +1417,8 @@
     "home_line": -24.5,
     "home_line_open": -26.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 156.5,
     "total_open": 159.5,
@@ -1486,7 +1489,7 @@
     "gap_b": -14.7,
     "gap_min": 8.9,
     "pick": "Oral Roberts Golden Eagles +24.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": 12.7,
     "playable_to": 20.1,
@@ -2021,7 +2024,7 @@
      -110,
      -110
     ],
-    "total": 146.5,
+    "total": 147.5,
     "total_open": 147.5,
     "home_ml": -345,
     "away_ml": 275,
@@ -2118,7 +2121,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 3.9
+    "total_gap": 2.9
    },
    {
     "id": "401920720",
@@ -3060,7 +3063,7 @@
      -112,
      -108
     ],
-    "total": 143.5,
+    "total": 142.5,
     "total_open": 146.5,
     "home_ml": -298,
     "away_ml": 240,
@@ -3158,8 +3161,8 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 6.7,
-    "total_lean": "Over 143.5 (season scoring says 150.2) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.7,
+    "total_lean": "Over 142.5 (season scoring says 150.2) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401917533",
@@ -3292,13 +3295,13 @@
     "home_line": -5.5,
     "home_line_open": -5.5,
     "spread_odds": [
-     -105,
-     -115
+     -102,
+     -118
     ],
     "total": 128.5,
     "total_open": 130.5,
-    "home_ml": -278,
-    "away_ml": 225,
+    "home_ml": -265,
+    "away_ml": 215,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 9.9,
@@ -3359,7 +3362,7 @@
     "gap_b": 7.7,
     "gap_min": 7.7,
     "pick": "UMass Lowell River Hawks -5.5",
-    "price": -115,
+    "price": -118,
     "side": "home",
     "fair_line": -11.6,
     "playable_to": null,
@@ -3994,10 +3997,10 @@
     "home_line": 14.5,
     "home_line_open": 14.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
-    "total": 146.5,
+    "total": 145.5,
     "total_open": 144.5,
     "home_ml": 800,
     "away_ml": -1350,
@@ -4061,7 +4064,7 @@
     "gap_b": 4.0,
     "gap_min": 4.0,
     "pick": "Bucknell Bison +14.5",
-    "price": -112,
+    "price": -108,
     "side": "home",
     "fair_line": 11.3,
     "playable_to": null,
@@ -4094,7 +4097,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 1.7
+    "total_gap": 2.7
    },
    {
     "id": "401906761",
@@ -4458,8 +4461,8 @@
     "home_line": -2.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -115,
-     -105
+     -108,
+     -112
     ],
     "total": 169.5,
     "total_open": 169.5,
@@ -4523,7 +4526,7 @@
     "gap_b": -1.6,
     "gap_min": 2.5,
     "pick": "Bowling Green Falcons +2.5",
-    "price": -115,
+    "price": -108,
     "side": "away",
     "fair_line": 0.5,
     "playable_to": null,
@@ -5853,8 +5856,8 @@
     "home_line": -41.5,
     "home_line_open": -44.5,
     "spread_odds": [
-     -108,
-     -112
+     -105,
+     -115
     ],
     "total": 146.5,
     "total_open": 146.5,
@@ -5928,7 +5931,7 @@
     "gap_b": -21.7,
     "gap_min": 10.8,
     "pick": "Eastern Illinois Panthers +41.5",
-    "price": -108,
+    "price": -105,
     "side": "away",
     "fair_line": 25.2,
     "playable_to": 35.2,
@@ -6077,121 +6080,6 @@
      "our history": -0.04
     },
     "total_gap": 5.3
-   },
-   {
-    "id": "401921027",
-    "sport": "CBB",
-    "game": "Middle Tennessee Blue Raiders @ Georgia Southern Eagles",
-    "home": "Georgia Southern Eagles",
-    "away": "Middle Tennessee Blue Raiders",
-    "time": "Tue 7:00 PM CT",
-    "start": "2026-11-18T01:00Z",
-    "book": "DraftKings",
-    "line": "MTSU -2.5",
-    "home_line": 2.5,
-    "home_line_open": 2.5,
-    "spread_odds": [
-     -102,
-     -118
-    ],
-    "total": 154.5,
-    "total_open": 152.5,
-    "home_ml": 110,
-    "away_ml": -130,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.4,
-    "model_b": -0.1,
-    "games_played": [
-     4,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "3-1",
-     "1-3"
-    ],
-    "venue": "Jack and Ruth Ann Hill Convocation Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jahvin Carter",
-      "Ofri Naveh",
-      "Quintero Barnett"
-     ],
-     [
-      "Dallas Gardner"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     4
-    ],
-    "form5": [
-     4.5,
-     -5.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Raiders 4 day(s), Eagles 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -5.0 a game, theirs +4.5)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 158.8,
-    "gap_a": 2.9,
-    "gap_b": 2.4,
-    "gap_min": 2.9,
-    "pick": "Georgia Southern Eagles +2.5",
-    "price": -118,
-    "side": "home",
-    "fair_line": -0.1,
-    "playable_to": null,
-    "sim_cover": 0.595,
-    "history": {
-     "adj": 0.23,
-     "key": "CBB spread dog",
-     "w": 54,
-     "l": 37,
-     "text": "Our record on CBB spread dog: 54-37 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.32,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": 4.3
    },
    {
     "id": "401906851",
@@ -7498,6 +7386,123 @@
      "our history": -0.04
     },
     "total_gap": 2.3
+   },
+   {
+    "id": "401921027",
+    "sport": "CBB",
+    "game": "Middle Tennessee Blue Raiders @ Georgia Southern Eagles",
+    "home": "Georgia Southern Eagles",
+    "away": "Middle Tennessee Blue Raiders",
+    "time": "Tue 7:00 PM CT",
+    "start": "2026-11-18T01:00Z",
+    "book": "DraftKings",
+    "line": "MTSU -1.5",
+    "home_line": 1.5,
+    "home_line_open": 2.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 154.5,
+    "total_open": 152.5,
+    "home_ml": 110,
+    "away_ml": -130,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 0.4,
+    "model_b": -0.1,
+    "games_played": [
+     4,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "3-1",
+     "1-3"
+    ],
+    "venue": "Jack and Ruth Ann Hill Convocation Center",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Jahvin Carter",
+      "Ofri Naveh",
+      "Quintero Barnett"
+     ],
+     [
+      "Dallas Gardner"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     4
+    ],
+    "form5": [
+     4.5,
+     -5.0
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Raiders 4 day(s), Eagles 4 day(s)",
+     "Line moved 1 pts toward Georgia Southern Eagles since open (+2.5 to +1.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -5.0 a game, theirs +4.5)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 158.8,
+    "gap_a": 1.9,
+    "gap_b": 1.4,
+    "gap_min": 1.9,
+    "pick": "Georgia Southern Eagles +1.5",
+    "price": -105,
+    "side": "home",
+    "fair_line": -0.1,
+    "playable_to": null,
+    "sim_cover": 0.559,
+    "history": {
+     "adj": 0.23,
+     "key": "CBB spread dog",
+     "w": 54,
+     "l": 37,
+     "text": "Our record on CBB spread dog: 54-37 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 4.7,
+    "components": {
+     "efficiency": 0.21,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": 4.3
    },
    {
     "id": "401926834",
