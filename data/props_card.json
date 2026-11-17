@@ -526,7 +526,8 @@
       "added_at": "07:05",
       "status": "OPEN",
       "odds": "-122",
-      "mult": 0.95
+      "mult": 0.95,
+      "thin": "Thinner now: our chance 57% vs Underdog's 54% (was 55% vs 52%). Still our side, so not pulled."
      },
      {
       "id": "2026-11-17|4433627|pts_rebs",
@@ -548,7 +549,8 @@
       "added_at": "07:05",
       "status": "OPEN",
       "odds": "-105",
-      "mult": 1.0
+      "mult": 1.0,
+      "line_now": 25.5
      }
     ],
     "stake": 15,
@@ -582,9 +584,11 @@
       "start": "2026-11-18T00:30:00Z",
       "time": "Tue 6:30 PM CT",
       "added_at": "07:05",
-      "status": "OPEN",
+      "status": "PULL",
       "odds": "-108",
-      "mult": 1.0
+      "mult": 1.0,
+      "pull_why": "Our numbers flipped to the other side (Karl-Anthony Towns Lower 24.5 Pts+Ast)",
+      "pulled_at": "14:47"
      },
      {
       "id": "2026-11-17|5037871|pts_asts",
@@ -604,9 +608,11 @@
       "start": "2026-11-18T01:00:00Z",
       "time": "Tue 7:00 PM CT",
       "added_at": "07:05",
-      "status": "OPEN",
+      "status": "PULL",
       "odds": "-125",
-      "mult": 0.91
+      "mult": 0.91,
+      "pull_why": "Our numbers flipped to the other side (Dylan Harper Lower 20.5 Pts+Ast)",
+      "pulled_at": "14:47"
      }
     ],
     "stake": 15,
@@ -614,10 +620,11 @@
     "chance": 0.303,
     "pays": 2.73,
     "need": 0.366,
-    "status": "OPEN",
+    "status": "PULL",
     "added_at": "07:05",
     "placed": false,
-    "why": "Two leans, no PLAY anchor (your parlay rule): Karl-Anthony Towns Higher 24.5 Pts+Ast (6.3) + Dylan Harper Higher 20.5 Pts+Ast (6.0). Different games. Pays 2.73x on Underdog."
+    "why": "Two leans, no PLAY anchor (your parlay rule): Karl-Anthony Towns Higher 24.5 Pts+Ast (6.3) + Dylan Harper Higher 20.5 Pts+Ast (6.0). Different games. Pays 2.73x on Underdog.",
+    "pull_why": "Our numbers flipped to the other side (Karl-Anthony Towns Lower 24.5 Pts+Ast)"
    }
   ]
  }
