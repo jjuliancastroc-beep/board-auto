@@ -16,6 +16,7 @@ def parse_event(ev, sport):
          "hid": h["team"].get("id"), "aid": a["team"].get("id"),
          "hconf": str(h["team"].get("conferenceId", "")), "aconf": str(a["team"].get("conferenceId", "")),
          "completed": bool(st.get("completed")), "state": st.get("state"),
+         "off": st.get("name") in ("STATUS_POSTPONED", "STATUS_CANCELED"),
          "hs": int(h["score"]) if h.get("score") not in (None, "") and st.get("state") != "pre" else None,
          "as": int(a["score"]) if a.get("score") not in (None, "") and st.get("state") != "pre" else None}
     v = c.get("venue") or {}

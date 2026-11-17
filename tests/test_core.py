@@ -288,6 +288,36 @@ class Books(unittest.TestCase):
         assert props.weight_books({"nb": 1000, "llb": {"0.0": 3.0, "0.5": 4.0, "1.0": 6.0}}) == 0.0
 
 
+class Kept(unittest.TestCase):
+    """11/17: a paper parlay you placed at Onyx vanished from the Board once its games started, and a postponed game sat ungraded."""
+    def test_paper_parlay_is_kept_once_a_game_starts(self):
+        import datetime
+        from board import grade, common
+        now = common.now_ct(); t = lambda h: (now + datetime.timedelta(hours=h)).astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
+        d = "2099-01-05"
+        row = lambda i, conf, h: {"id": i, "date": d, "decision": "PAPER", "price": -110, "pick": f"T{i} +3.5", "conf": conf, "start": t(h), "result": None}
+        saved = common.load("parlays.json", [])
+        try:
+            common.save("parlays.json", [])
+            rows = [row("a", 7.2, 2), row("b", 6.7, 3), row("c", 6.5, 4)]
+            out = grade.build_parlays([{"games": rows}], d, rows)
+            assert [x["legs"] for x in out] == [["a", "b"]] and out[0]["decision"] == "PAPER"
+            late = [row("a", 7.2, -1), row("b", 6.7, -0.5), row("c", 6.5, 4)]          # both games have started
+            out = grade.build_parlays([{"games": late}], d, late)
+            assert [x["legs"] for x in out] == [["a", "b"]] and [x["legs"] for x in common.load("parlays.json", []) if x["date"] == d] == [["a", "b"]]
+        finally:
+            common.save("parlays.json", saved)
+
+    def test_postponed_game_and_goalie_text(self):
+        from board import espn
+        ev = lambda name, done: {"id": "1", "date": "2099-01-05T22:00Z", "competitions": [{"status": {"type": {"name": name, "completed": done, "state": "post"}}, "competitors": [
+            {"homeAway": "home", "score": "0", "team": {"displayName": "H", "abbreviation": "H", "id": "1"}}, {"homeAway": "away", "score": "0", "team": {"displayName": "A", "abbreviation": "A", "id": "2"}}]}]}
+        assert espn.parse_event(ev("STATUS_POSTPONED", False), "CBB")["off"] and not espn.parse_event(ev("STATUS_FINAL", True), "CBB")["off"]
+        import inspect
+        from board import review
+        assert "was {old or" in inspect.getsource(review.prelock)   # names the goalie who changed, not a raw list
+
+
 class Review(unittest.TestCase):
     """Is confidence telling the truth, and which parts of the score line up with winning."""
     def test_confidence_check(self):
@@ -327,6 +357,21 @@ class Review(unittest.TestCase):
             pc = props.card(pr + [mk(6, "LEAN", "e6", 6.9, 0.62, "0.82"), mk(7, "LEAN", "e7", 6.0, 0.6)], "2099-01-02")
             assert len(pc["parlays"]) == 2 and [x["player"] for x in pc["parlays"][1]["legs"]] == ["P6", "P3"] and pc["singles"] == []
             assert pc["parlays"][1]["pays"] == 2.02 and pc["parlays"][1]["need"] == round(1 / 2.02, 3)   # two 0.82x favorites: 3 x 0.82 x 0.82
+        finally:
+            common.save("props_card.json", saved)
+        # 11/16: both lean parlays were pulled within an hour on a small wobble, then won. A thin number alone no longer pulls.
+        saved = common.load("props_card.json", {})
+        try:
+            pr = [dict(mk(i, "LEAN", f"e{i}", c, 0.56), date="2099-01-03") for i, c in ((1, 6.8), (2, 6.4), (3, 6.2), (4, 6.0))]
+            props.card(pr, "2099-01-03")
+            thin = dict(pr[0], call="PASS", edge=2.0, p=0.62, mkt=0.60, reason="Our chance 62% vs Underdog's 60% - not enough.")      # still 2 points our way: keep
+            gone = dict(pr[1], call="PASS", edge=0.6, p=0.52, mkt=0.51, reason="Our chance 52% vs Underdog's 51% - not enough.")      # advantage gone: pull
+            moved = dict(pr[2], call="PASS", line=11.5, edge=-4, p=0.45, mkt=0.41, reason="Our chance 45% vs Underdog's 41% - not enough.")  # line moved our way, inside playable: keep
+            out_ = dict(pr[3], call="PASS", conf=0, reason="Listed Out.")
+            pc = props.card([thin, gone, moved, out_], "2099-01-03")
+            st = {x["player"]: x for e in pc["parlays"] for x in e["legs"]}
+            assert st["P1"]["status"] == "OPEN" and "Thinner now" in st["P1"]["thin"] and st["P2"]["status"] == "PULL"
+            assert st["P3"]["status"] == "OPEN" and st["P3"]["line_now"] == 11.5 and st["P4"]["status"] == "PULL" and "Listed Out" in st["P4"]["pull_why"]
         finally:
             common.save("props_card.json", saved)
         row = dict(mk(1, "LEAN", "e1", 6), mkt_higher=0.5, books=[{"book": "DraftKings", "line": 11.5, "p": 0.5}, {"book": "Pinnacle", "line": 10.5, "p": 0.47}])

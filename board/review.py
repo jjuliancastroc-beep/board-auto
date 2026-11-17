@@ -32,7 +32,9 @@ def prelock(picks, cards):
         new_flags = [f for f in r["flags"] if f.startswith(("QB", "Star", "Starting goalie")) and f not in (p.get("flags") or [])]
         why += new_flags
         if p["sport"] == "NHL" and r.get("goalies") and p.get("goalies") and r["goalies"] != p.get("goalies"):
-            why.append(f"goalie change: {r['goalies']}")
+            ch = [f"{t.split(' ')[-1]} now {new or 'not posted'} (was {old or 'not posted'})"
+                  for t, old, new in zip((p["away"], p["home"]), p["goalies"], r["goalies"]) if old != new]
+            why.append("goalie change: " + ", ".join(ch))
         if why:
             p["review"] = "PULL"; p["review_log"].append(f"{now.strftime('%m/%d %I:%M %p')}: PULL - " + "; ".join(why))
             alerts.append(p)

@@ -108,7 +108,7 @@ def grade_all():
             boards[key] = {g["id"]: g for g in espn.scoreboard(*key)}
         g = boards[key].get(p["id"])
         if not g or not g["completed"]:
-            if now - st > datetime.timedelta(days=3):
+            if (g and g.get("off")) or now - st > datetime.timedelta(days=3):  # postponed or canceled: no bet
                 p["result"] = "No result"; changed += 1
             continue
         team, ln = _pick_team_line(p)
@@ -168,12 +168,18 @@ def build_parlays(cards, date, picks):
     $15 when the confident leg is a main, paper otherwise. A $15 parlay is locked once made; paper ones rebuild each run."""
     pars = load("parlays.json", [])
     today = [x for x in pars if x["date"] == date]
-    keep = [x for x in today if x["decision"] == "CASH"]
+    # A paper parlay rebuilds each run until one of its games starts, or you say you placed it. Then it is kept as is, so it
+    # still gets graded. (Before 11/17 it was dropped once every game had started.)
+    by = {(p["date"], p["id"]): p for p in picks}; now = now_ct()
+    def locked(x):
+        if x["decision"] == "CASH" or x.get("user_placed"):
+            return True
+        return any(by.get((date, i)) and ct_time(by[(date, i)]["start"]) <= now for i in x["legs"])
+    keep = [x for x in today if locked(x)]
     if len(keep) >= 2:
-        return today
-    pars = [x for x in pars if not (x["date"] == date and x["decision"] != "CASH")]
+        return keep
+    pars = [x for x in pars if x["date"] != date or x in keep]
     rows = [r for c in cards for r in c["games"] if r["decision"] in ("CASH", "PAPER") and r.get("price") and r.get("pick") and not r.get("carried")]
-    now = now_ct()
     rows = [r for r in rows if not r.get("start") or ct_time(r["start"]) > now]
     anchors = sorted([r for r in rows if r["conf"] >= 7.0], key=lambda r: (r["decision"] != "CASH", -r["conf"]))
     legs = sorted([r for r in rows if 5.5 <= r["conf"] < 7.0], key=lambda r: -r["conf"])
@@ -193,7 +199,8 @@ def build_parlays(cards, date, picks):
         used |= {a["id"], leg["id"]}
         dec = (1 + payout(a["price"])) * (1 + payout(leg["price"]))
         am = round((dec - 1) * 100)
-        out.append({"date": date, "name": f"Parlay {len(out) + 1}", "legs": [a["id"], leg["id"]], "picks": [a["pick"], leg["pick"]],
+        num = next(n for n in (1, 2, 3) if f"Parlay {n}" not in {x["name"] for x in out})
+        out.append({"date": date, "name": f"Parlay {num}", "legs": [a["id"], leg["id"]], "picks": [a["pick"], leg["pick"]],
                     "price": f"+{am}", "decision": "CASH" if a["decision"] == "CASH" else "PAPER", "stake": 15 if a["decision"] == "CASH" else 0,
                     "why": f"Anchor {a['pick']} ({a['conf']}) + leg {leg['pick']} ({leg['conf']}). Only one confident pick per parlay." + hist,
                     "result": None, "made_at": now.strftime("%H:%M")})

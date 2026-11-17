@@ -723,6 +723,9 @@ PROP_STAKE = 15
 PROP_PARTS = {"data": 2, "hit rates": 1.5, "vs Underdog": 1.5, "role": 1, "availability": 1, "matchup": 1, "sample": 1}
 
 
+HOLD_EDGE = 1.0  # a pick already on the card is pulled for a thin number only when it is under this many points better than Underdog
+
+
 def card(props, date):
     """Props card, same shape as the main card: up to 3 prop singles + 2 prop parlays (2-pick), $15 each.
     Singles = best PLAYs from different games. Parlays = one PLAY anchor + one LEAN leg from a different game.
@@ -740,19 +743,28 @@ def card(props, date):
         started = ct_time(it["start"]) <= now
         if started or it.get("status") == "PULL":
             continue
-        why = None
+        why = None; it.pop("thin", None)
+        reason = cur.get("reason") or "" if cur else ""
         if cur is None:
             why = "Line came off Underdog's board - he may be out or limited"
-        elif cur.get("call") == "PASS" and not cur.get("capped"):  # "capped" = still a good number, just squeezed off the list - not a reason to pull
-            why = "Now a pass: " + (cur.get("reason") or "")
-        elif cur.get("side") != it["side"]:
-            why = f"Our numbers flipped to the other side ({cur.get('pick')})"
+        elif reason.startswith("Listed"):
+            why = "Now a pass: " + reason
         elif cur.get("line") != it["line"]:
+            # The line moved, so today's call is about a different bet. The ticket is judged by its own playable number only.
             pt = it.get("playable_to")
             past = pt is not None and ((it["side"] == "higher" and cur["line"] > pt) or (it["side"] == "lower" and cur["line"] < pt))
             it["line_now"] = cur["line"]
             if past:
                 why = f"Line moved to {cur['line']:g}, past playable {pt:g}"
+        elif cur.get("side") != it["side"]:
+            why = f"Our numbers flipped to the other side ({cur.get('pick')})"
+        elif cur.get("call") == "PASS" and not cur.get("capped"):  # "capped" = still a good number, just squeezed off the list - not a reason to pull
+            # A pick is added at 3+ points better than Underdog. Slipping a little under that is a wobble, not a reason to pull.
+            # It is pulled when the advantage is as good as gone (under 1 point).
+            if reason.startswith("Our chance") and (cur.get("edge") or 0) >= HOLD_EDGE:
+                it["thin"] = f"Thinner now: our chance {cur['p'] * 100:.0f}% vs Underdog's {cur['mkt'] * 100:.0f}% (was {it['p'] * 100:.0f}% vs {it['mkt'] * 100:.0f}%). Still our side, so not pulled."
+            else:
+                why = "Now a pass: " + reason
         if why:
             it["status"] = "PULL"; it["pull_why"] = why; it["pulled_at"] = hm
     for e in pc["parlays"]:
