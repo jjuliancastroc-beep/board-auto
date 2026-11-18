@@ -18574,9 +18574,10 @@
   "final": null,
   "close": null,
   "clv": null,
-  "review": "HOLD",
+  "review": "PULL",
   "review_log": [
-   "11/18 12:24 AM: checked line and injuries - no change"
+   "11/18 12:24 AM: checked line and injuries - no change",
+   "11/18 09:11 AM: PULL - line is now +1.5, past the playable number +1.8"
   ]
  },
  {
@@ -18812,9 +18813,10 @@
   "final": null,
   "close": null,
   "clv": null,
-  "review": "HOLD",
+  "review": "PULL",
   "review_log": [
-   "11/18 12:24 AM: checked line and injuries - no change"
+   "11/18 12:24 AM: checked line and injuries - no change",
+   "11/18 09:11 AM: PULL - line is now +6.5, past the playable number +6.9"
   ]
  },
  {
@@ -20545,9 +20547,10 @@
   "final": null,
   "close": null,
   "clv": null,
-  "review": "HOLD",
+  "review": "PULL",
   "review_log": [
-   "11/18 12:49 AM: checked line and injuries - no change"
+   "11/18 12:49 AM: checked line and injuries - no change",
+   "11/18 09:11 AM: PULL - Star Walker Kessler (Los Angeles Lakers) Day-To-Day"
   ]
  },
  {
@@ -20704,6 +20707,82 @@
   "review": "HOLD",
   "review_log": [
    "11/18 07:54 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "id": "401922292",
+  "sport": "CBB",
+  "game": "Tennessee Tech Golden Eagles @ UNC Asheville Bulldogs",
+  "home": "UNC Asheville Bulldogs",
+  "away": "Tennessee Tech Golden Eagles",
+  "start": "2026-11-18T23:30Z",
+  "pick": "UNC Asheville Bulldogs +3.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.53,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.28
+  },
+  "gap_a": 4.7,
+  "gap_b": 2.9,
+  "gap_min": 4.7,
+  "price": -112,
+  "fair_line": -0.3,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 3.5,
+  "home_ml": 136,
+  "away_ml": -162,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side -0.4 a game, theirs +4.2)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 1.2,
+  "model_b": -0.6,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.28,
+   "key": "CBB spread dog",
+   "w": 72,
+   "l": 48,
+   "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
+  },
+  "date": "2026-11-18",
+  "line_at_pick": "TNTC -3.5",
+  "logged_at": "09:11",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/18 09:11 AM: checked line and injuries - no change"
   ]
  }
 ]
