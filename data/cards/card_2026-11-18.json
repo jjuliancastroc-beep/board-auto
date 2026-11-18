@@ -29,7 +29,7 @@
     "away_ml": 150,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
-    "model_a": 9.6,
+    "model_a": 9.8,
     "model_b": 12.6,
     "games_played": [
      10,
@@ -84,7 +84,7 @@
      "Laying -3.5 - just past a key number (3)"
     ],
     "invalidation": [
-     "Line moves past -6.6",
+     "Line moves past -6.8",
      "Either starting QB is ruled out or downgraded"
     ],
     "tier": "G5/mixed",
@@ -98,18 +98,18 @@
     },
     "weather": {
      "text": "Mostly clear",
-     "temp": 43
+     "temp": 46
     },
     "total_model": 49.2,
-    "gap_a": 6.1,
+    "gap_a": 6.3,
     "gap_b": 9.1,
-    "gap_min": 6.1,
+    "gap_min": 6.3,
     "pick": "Massachusetts Minutemen -3",
     "price": -108,
     "side": "home",
     "fair_line": -11.1,
     "playable_to": -6.6,
-    "sim_cover": 0.682,
+    "sim_cover": 0.684,
     "history": {
      "adj": -0.08,
      "key": "CFB spread fav",
@@ -530,150 +530,6 @@
     "total_gap": 4.0
    },
    {
-    "id": "401910017",
-    "sport": "NBA",
-    "game": "Utah Jazz @ Los Angeles Lakers",
-    "home": "Los Angeles Lakers",
-    "away": "Utah Jazz",
-    "time": "Wed 9:00 PM CT",
-    "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
-    "line": "LAL -11.5",
-    "home_line": -11.5,
-    "home_line_open": -12.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 231.5,
-    "total_open": 231.5,
-    "home_ml": -610,
-    "away_ml": 450,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 11.6,
-    "model_b": 18.1,
-    "games_played": [
-     15,
-     15
-    ],
-    "neutral": false,
-    "records": [
-     "2-13",
-     "13-2"
-    ],
-    "venue": "crypto.com Arena",
-    "tv": "Spectrum Sports Net, Spectrum Sports Net +, KJZZ-TV, Jazz+",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Austin Reaves",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Jaxson Hayes",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Lauri Markkanen",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jusuf Nurkic",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Jaren Jackson Jr.",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Keyonte George",
-      "Mo Bamba"
-     ],
-     [
-      "Luka Doncic",
-      "Walker Kessler"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     -2.2,
-     7.6
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "Utah Jazz on a back-to-back",
-     "Los Angeles Lakers on a back-to-back"
-    ],
-    "factors": [
-     "Rest: Jazz 1 day(s), Lakers 1 day(s)",
-     "Line moved 1 pts toward Utah Jazz since open (-12.5 to -11.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +7.6 a game, theirs -2.2)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 231.6,
-    "gap_a": 0.1,
-    "gap_b": 6.6,
-    "gap_min": 6.6,
-    "pick": "Los Angeles Lakers -11.5",
-    "price": -115,
-    "side": "home",
-    "fair_line": -14.9,
-    "playable_to": null,
-    "sim_cover": 0.606,
-    "history": {
-     "adj": -0.12,
-     "key": "spread fav",
-     "w": 42,
-     "l": 47,
-     "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.8,
-    "components": {
-     "efficiency": 0.73,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.2,
-     "our history": -0.12
-    },
-    "total_gap": 0.1
-   },
-   {
     "id": "401910011",
     "sport": "NBA",
     "game": "Chicago Bulls @ Brooklyn Nets",
@@ -804,6 +660,148 @@
     "total_gap": -4.7
    },
    {
+    "id": "401910017",
+    "sport": "NBA",
+    "game": "Utah Jazz @ Los Angeles Lakers",
+    "home": "Los Angeles Lakers",
+    "away": "Utah Jazz",
+    "time": "Wed 9:00 PM CT",
+    "start": "2026-11-19T03:00Z",
+    "book": "Draft Kings",
+    "line": "LAL -12.5",
+    "home_line": -12.5,
+    "home_line_open": -12.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 231.5,
+    "total_open": 231.5,
+    "home_ml": -567,
+    "away_ml": 424,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 11.6,
+    "model_b": 18.1,
+    "games_played": [
+     15,
+     15
+    ],
+    "neutral": false,
+    "records": [
+     "2-13",
+     "13-2"
+    ],
+    "venue": "crypto.com Arena",
+    "tv": "Spectrum Sports Net, Spectrum Sports Net +, KJZZ-TV, Jazz+",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Austin Reaves",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Jaxson Hayes",
+      "pos": "C",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Lauri Markkanen",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jusuf Nurkic",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Jaren Jackson Jr.",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Keyonte George",
+      "Mo Bamba"
+     ],
+     [
+      "Luka Doncic",
+      "Walker Kessler"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     -2.2,
+     7.6
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Utah Jazz on a back-to-back",
+     "Los Angeles Lakers on a back-to-back"
+    ],
+    "factors": [
+     "Rest: Jazz 1 day(s), Lakers 1 day(s)",
+     "Indoors - weather does not matter",
+     "Last 5 games agree (our side +7.6 a game, theirs -2.2)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 231.6,
+    "gap_a": -0.9,
+    "gap_b": 5.6,
+    "gap_min": 5.6,
+    "pick": "Los Angeles Lakers -12.5",
+    "price": -105,
+    "side": "home",
+    "fair_line": -14.9,
+    "playable_to": null,
+    "sim_cover": 0.575,
+    "history": {
+     "adj": -0.12,
+     "key": "spread fav",
+     "w": 42,
+     "l": 47,
+     "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.62,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.2,
+     "our history": -0.12
+    },
+    "total_gap": 0.1
+   },
+   {
     "id": "401910018",
     "sport": "NBA",
     "game": "Phoenix Suns @ Sacramento Kings",
@@ -819,7 +817,7 @@
      -117,
      -104
     ],
-    "total": 227.5,
+    "total": 226.5,
     "total_open": 229.5,
     "home_ml": 221,
     "away_ml": -269,
@@ -844,16 +842,6 @@
       "player": "Maxime Raynaud",
       "pos": "C",
       "status": "Out"
-     },
-     {
-      "player": "De'Andre Hunter",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Precious Achiuwa",
-      "pos": "F",
-      "status": "Day-To-Day"
      },
      {
       "player": "Ben Simmons",
@@ -940,7 +928,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": 1.7
+    "total_gap": 2.7
    },
    {
     "id": "401910014",
@@ -1284,8 +1272,8 @@
     "home_line": -11.5,
     "home_line_open": -12.5,
     "spread_odds": [
-     -105,
-     -115
+     -103,
+     -117
     ],
     "total": 235.5,
     "total_open": 236.5,
@@ -1370,7 +1358,7 @@
     "gap_b": 12.8,
     "gap_min": 12.8,
     "pick": "Miami Heat -11.5",
-    "price": -115,
+    "price": -117,
     "side": "home",
     "fair_line": -17.9,
     "playable_to": null,
@@ -1421,7 +1409,7 @@
      -109,
      -111
     ],
-    "total": 224.5,
+    "total": 225.5,
     "total_open": 221.5,
     "home_ml": -197,
     "away_ml": 164,
@@ -1594,7 +1582,7 @@
      "situational": 0.5,
      "our history": 0.22
     },
-    "total_gap": 2.6
+    "total_gap": 1.6
    },
    {
     "id": "401910008",
@@ -1767,7 +1755,7 @@
      -110,
      -110
     ],
-    "total": 225.5,
+    "total": 226.5,
     "total_open": 229.5,
     "home_ml": 160,
     "away_ml": -191,
@@ -1929,7 +1917,7 @@
      "situational": 0.2,
      "our history": -0.12
     },
-    "total_gap": 5.7
+    "total_gap": 4.7
    },
    {
     "id": "401910012",
@@ -2604,8 +2592,8 @@
     "home_line": -20.5,
     "home_line_open": -22.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 138.5,
     "total_open": 140.5,
@@ -2677,7 +2665,7 @@
     "gap_b": -12.6,
     "gap_min": 6.0,
     "pick": "Navy Midshipmen +20.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": 11.2,
     "playable_to": 19.0,
@@ -3326,13 +3314,13 @@
     "home_line": -7.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -115,
-     -105
+     -105,
+     -115
     ],
     "total": 139.5,
     "total_open": 140.5,
-    "home_ml": -285,
-    "away_ml": 230,
+    "home_ml": -340,
+    "away_ml": 270,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 6.0,
@@ -3397,7 +3385,7 @@
     "gap_b": -7.6,
     "gap_min": 7.6,
     "pick": "Vermont Catamounts +7.5",
-    "price": -115,
+    "price": -105,
     "side": "away",
     "fair_line": 2.9,
     "playable_to": null,
@@ -3567,7 +3555,7 @@
      -112,
      -108
     ],
-    "total": 158.5,
+    "total": 157.5,
     "total_open": 162.5,
     "home_ml": -440,
     "away_ml": 340,
@@ -3667,7 +3655,7 @@
      "situational": 0.5,
      "our history": 0.28
     },
-    "total_gap": -4.7
+    "total_gap": -3.7
    },
    {
     "id": "401922292",
@@ -5551,20 +5539,20 @@
     "game": "Houston Cougars @ Florida Gators",
     "home": "Florida Gators",
     "away": "Houston Cougars",
-    "time": "Wed 3:30 PM CT",
-    "start": "2026-11-18T21:30Z",
+    "time": "Wed 3:48 PM CT",
+    "start": "2026-11-18T21:48Z",
     "book": "Draft Kings",
     "line": "FLA -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
     "total": 145.5,
     "total_open": 151.5,
-    "home_ml": -125,
-    "away_ml": 105,
+    "home_ml": -130,
+    "away_ml": 110,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 1.8,
@@ -5624,7 +5612,7 @@
     "gap_b": -0.4,
     "gap_min": 0.4,
     "pick": "Houston Cougars +1.5",
-    "price": -110,
+    "price": -105,
     "side": "away",
     "fair_line": 1.5,
     "playable_to": null,
@@ -6719,8 +6707,8 @@
     "home_line": -40.5,
     "home_line_open": -44.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 153.5,
     "total_open": 153.5,
@@ -6793,7 +6781,7 @@
     "gap_b": -22.1,
     "gap_min": 8.7,
     "pick": "Alcorn State Braves +40.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": 25.1,
     "playable_to": 36.3,
@@ -6827,129 +6815,6 @@
      "our history": 0.28
     },
     "total_gap": 4.4
-   },
-   {
-    "id": "401909494",
-    "sport": "CBB",
-    "game": "Bethune-Cookman Wildcats @ Creighton Bluejays",
-    "home": "Creighton Bluejays",
-    "away": "Bethune-Cookman Wildcats",
-    "time": "Wed 8:00 PM CT",
-    "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
-    "line": "CREI -24.5",
-    "home_line": -24.5,
-    "home_line_open": -23.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 153.5,
-    "total_open": 151.5,
-    "home_ml": -9000,
-    "away_ml": 2500,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 18.9,
-    "model_b": 8.8,
-    "games_played": [
-     5,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "1-4",
-     "3-1"
-    ],
-    "venue": "CHI Health Center Omaha",
-    "tv": "truTV",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Daniel Johnson",
-      "Jaylen Jones",
-      "Mari Jordan"
-     ],
-     [
-      "Katrelle Harmon",
-      "Oswin Erhunmwunse",
-      "Wes Enis"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -6.8,
-     9.2
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Wildcats 3 day(s), Bluejays 3 day(s)",
-     "Line moved 1 pts toward Creighton Bluejays since open (-23.5 to -24.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "One model is only barely past the bar",
-     "Last 5 games point the other way (our side -6.8 a game, theirs +9.2)"
-    ],
-    "invalidation": [
-     "Line moves past +23.4",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.9,
-    "gap_a": -5.6,
-    "gap_b": -15.7,
-    "gap_min": 5.6,
-    "pick": "Bethune-Cookman Wildcats +24.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 13.8,
-    "playable_to": 23.4,
-    "sim_cover": 0.834,
-    "history": {
-     "adj": 0.28,
-     "key": "CBB spread dog",
-     "w": 72,
-     "l": 48,
-     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": true,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.63,
-     "veto": 0.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.28
-    },
-    "total_gap": -2.6
    },
    {
     "id": "401920682",
@@ -7083,17 +6948,17 @@
     "time": "Wed 7:00 PM CT",
     "start": "2026-11-19T01:00Z",
     "book": "Draft Kings",
-    "line": "BC -3.5",
-    "home_line": 3.5,
+    "line": "BC -4.5",
+    "home_line": 4.5,
     "home_line_open": 4.5,
     "spread_odds": [
-     -115,
-     -105
+     -108,
+     -112
     ],
     "total": 128.5,
     "total_open": 128.5,
-    "home_ml": 150,
-    "away_ml": -180,
+    "home_ml": 160,
+    "away_ml": -192,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -5.6,
@@ -7141,31 +7006,30 @@
     ],
     "factors": [
      "Rest: Eagles 3 day(s), Crimson 3 day(s)",
-     "Line moved 1 pts toward Harvard Crimson since open (+4.5 to +3.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +20.5 a game, theirs +1.2)"
+     "Indoors - weather does not matter"
     ],
-    "against": [],
+    "against": [
+     "Last 5 games point the other way (our side +1.2 a game, theirs +20.5)"
+    ],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 128.6,
-    "gap_a": -2.1,
-    "gap_b": 0.7,
-    "gap_min": 2.1,
-    "pick": "Boston College Eagles -3.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": -4.2,
+    "gap_a": -1.1,
+    "gap_b": 1.7,
+    "gap_min": 1.7,
+    "pick": "Harvard Crimson +4.5",
+    "price": -112,
+    "side": "home",
+    "fair_line": 4.2,
     "playable_to": null,
-    "sim_cover": 0.527,
+    "sim_cover": 0.509,
     "history": {
-     "adj": -0.12,
-     "key": "spread fav",
-     "w": 42,
-     "l": 47,
-     "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
+     "adj": 0.28,
+     "key": "CBB spread dog",
+     "w": 72,
+     "l": 48,
+     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7178,15 +7042,15 @@
     "veto": false,
     "conf": 5.1,
     "components": {
-     "efficiency": 0.24,
+     "efficiency": 0.18,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 1.0,
+     "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.12
+     "our history": 0.28
     },
     "total_gap": 0.1
    },
@@ -7428,6 +7292,127 @@
     },
     "total_gap": 8.2,
     "total_lean": "Over 147.5 (season scoring says 155.7) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401909494",
+    "sport": "CBB",
+    "game": "Bethune-Cookman Wildcats @ Creighton Bluejays",
+    "home": "Creighton Bluejays",
+    "away": "Bethune-Cookman Wildcats",
+    "time": "Wed 8:00 PM CT",
+    "start": "2026-11-19T02:00Z",
+    "book": "Draft Kings",
+    "line": "CREI -23.5",
+    "home_line": -23.5,
+    "home_line_open": -23.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 153.5,
+    "total_open": 151.5,
+    "home_ml": -9000,
+    "away_ml": 2500,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 18.9,
+    "model_b": 8.8,
+    "games_played": [
+     5,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "1-4",
+     "3-1"
+    ],
+    "venue": "CHI Health Center Omaha",
+    "tv": "truTV",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Daniel Johnson",
+      "Jaylen Jones",
+      "Mari Jordan"
+     ],
+     [
+      "Katrelle Harmon",
+      "Oswin Erhunmwunse",
+      "Wes Enis"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     -6.8,
+     9.2
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Wildcats 3 day(s), Bluejays 3 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "One model is only barely past the bar",
+     "Last 5 games point the other way (our side -6.8 a game, theirs +9.2)"
+    ],
+    "invalidation": [
+     "Line moves past +23.4",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.9,
+    "gap_a": -4.6,
+    "gap_b": -14.7,
+    "gap_min": 4.6,
+    "pick": "Bethune-Cookman Wildcats +23.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 13.8,
+    "playable_to": 23.4,
+    "sim_cover": 0.81,
+    "history": {
+     "adj": 0.28,
+     "key": "CBB spread dog",
+     "w": 72,
+     "l": 48,
+     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": true,
+    "conf": 5.1,
+    "components": {
+     "efficiency": 0.52,
+     "veto": 0.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.28
+    },
+    "total_gap": -2.6
    },
    {
     "id": "401919848",
@@ -7797,8 +7782,8 @@
     ],
     "total": 155.5,
     "total_open": 153.5,
-    "home_ml": -1450,
-    "away_ml": 850,
+    "home_ml": -1350,
+    "away_ml": 800,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 12.8,
@@ -10052,7 +10037,7 @@
      -285,
      230
     ],
-    "total": 6.5,
+    "total": 5.5,
     "total_open": 6.5,
     "home_ml": -110,
     "away_ml": -110,
