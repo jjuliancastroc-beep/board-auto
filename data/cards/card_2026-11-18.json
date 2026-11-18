@@ -91,9 +91,9 @@
     "day": "Midweek",
     "wind": {
      "wind": 4.9,
-     "gust": 6.7,
+     "gust": 7.2,
      "rain": 0,
-     "temp": 44.6,
+     "temp": 45.0,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -545,10 +545,10 @@
      -110,
      -110
     ],
-    "total": 240.5,
+    "total": 239.5,
     "total_open": 237.5,
-    "home_ml": -152,
-    "away_ml": 128,
+    "home_ml": -142,
+    "away_ml": 120,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 3.7,
@@ -657,168 +657,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": -5.7
-   },
-   {
-    "id": "401910010",
-    "sport": "NBA",
-    "game": "Philadelphia 76ers @ Orlando Magic",
-    "home": "Orlando Magic",
-    "away": "Philadelphia 76ers",
-    "time": "Wed 6:00 PM CT",
-    "start": "2026-11-19T00:00Z",
-    "book": "DraftKings",
-    "line": "ORL -1.5",
-    "home_line": -1.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 222.5,
-    "total_open": 223.5,
-    "home_ml": -114,
-    "away_ml": -104,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": -1.0,
-    "model_b": -2.3,
-    "games_played": [
-     15,
-     13
-    ],
-    "neutral": false,
-    "records": [
-     "12-3",
-     "6-7"
-    ],
-    "venue": "Kia Center",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Izaiyah Nelson",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jonathan Isaac",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Noah Penda",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Paolo Banchero",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Dean Wade",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Dominick Barlow",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jaylen Brown",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Adem Bona",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Ariel Hukporti",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Joel Embiid",
-      "LeBron James",
-      "Tyrese Maxey"
-     ],
-     [
-      "Franz Wagner",
-      "Wendell Carter Jr."
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     2.8,
-     6.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: 76ers 2 day(s), Magic 2 day(s)",
-     "Line moved 3 pts toward Orlando Magic since open (+1.5 to -1.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 223.2,
-    "gap_a": -2.5,
-    "gap_b": -3.8,
-    "gap_min": 3.8,
-    "pick": "Philadelphia 76ers +1.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": -1.7,
-    "playable_to": null,
-    "sim_cover": 0.6,
-    "history": {
-     "adj": 0.22,
-     "key": "spread dog",
-     "w": 126,
-     "l": 92,
-     "text": "Our record on spread dog: 126-92 (last 60 days, recent counts more) -> +0.22 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.6,
-    "components": {
-     "efficiency": 0.42,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.22
-    },
-    "total_gap": 0.7
+    "total_gap": -4.7
    },
    {
     "id": "401910018",
@@ -963,6 +802,165 @@
     "total_gap": 2.7
    },
    {
+    "id": "401910010",
+    "sport": "NBA",
+    "game": "Philadelphia 76ers @ Orlando Magic",
+    "home": "Orlando Magic",
+    "away": "Philadelphia 76ers",
+    "time": "Wed 6:00 PM CT",
+    "start": "2026-11-19T00:00Z",
+    "book": "DraftKings",
+    "line": "PHI -1.5",
+    "home_line": 1.5,
+    "home_line_open": 1.5,
+    "spread_odds": [
+     100,
+     -121
+    ],
+    "total": 221.5,
+    "total_open": 223.5,
+    "home_ml": -109,
+    "away_ml": -108,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": -1.0,
+    "model_b": -2.3,
+    "games_played": [
+     15,
+     13
+    ],
+    "neutral": false,
+    "records": [
+     "12-3",
+     "6-7"
+    ],
+    "venue": "Kia Center",
+    "tv": "",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Izaiyah Nelson",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jonathan Isaac",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Noah Penda",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Paolo Banchero",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Dean Wade",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Dominick Barlow",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylen Brown",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Adem Bona",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Ariel Hukporti",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Joel Embiid",
+      "LeBron James",
+      "Tyrese Maxey"
+     ],
+     [
+      "Franz Wagner",
+      "Wendell Carter Jr."
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     2.8,
+     6.6
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: 76ers 2 day(s), Magic 2 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 223.2,
+    "gap_a": 0.5,
+    "gap_b": -0.8,
+    "gap_min": 0.8,
+    "pick": "Philadelphia 76ers -1.5",
+    "price": 100,
+    "side": "away",
+    "fair_line": -1.7,
+    "playable_to": null,
+    "sim_cover": 0.505,
+    "history": {
+     "adj": -0.12,
+     "key": "spread fav",
+     "w": 42,
+     "l": 47,
+     "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.0,
+    "components": {
+     "efficiency": 0.09,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.12
+    },
+    "total_gap": 1.7
+   },
+   {
     "id": "401910014",
     "sport": "NBA",
     "game": "Atlanta Hawks @ Oklahoma City Thunder",
@@ -971,12 +969,12 @@
     "time": "Wed 7:00 PM CT",
     "start": "2026-11-19T01:00Z",
     "book": "DraftKings",
-    "line": "OKC -5.5",
-    "home_line": -5.5,
+    "line": "OKC -6.5",
+    "home_line": -6.5,
     "home_line_open": -7.5,
     "spread_odds": [
-     -102,
-     -119
+     -119,
+     -102
     ],
     "total": 228.5,
     "total_open": 226.5,
@@ -1084,30 +1082,31 @@
     "flags": [],
     "factors": [
      "Rest: Hawks 3 day(s), Thunder 3 day(s)",
-     "Line moved 2 pts toward Atlanta Hawks since open (-7.5 to -5.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Line moved 1 pts toward Atlanta Hawks since open (-7.5 to -6.5 home)",
+     "Indoors - weather does not matter"
     ],
-    "against": [],
+    "against": [
+     "Market moved away from this side since open"
+    ],
     "invalidation": [
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 226.5,
-    "gap_a": 1.7,
-    "gap_b": 0.2,
-    "gap_min": 1.7,
-    "pick": "Oklahoma City Thunder -5.5",
+    "gap_a": 0.7,
+    "gap_b": -0.8,
+    "gap_min": 0.8,
+    "pick": "Atlanta Hawks +6.5",
     "price": -119,
-    "side": "home",
-    "fair_line": -6.4,
+    "side": "away",
+    "fair_line": 6.4,
     "playable_to": null,
-    "sim_cover": 0.53,
+    "sim_cover": 0.502,
     "history": {
-     "adj": -0.12,
-     "key": "spread fav",
-     "w": 42,
-     "l": 47,
-     "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
+     "adj": 0.22,
+     "key": "spread dog",
+     "w": 126,
+     "l": 92,
+     "text": "Our record on spread dog: 126-92 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1118,17 +1117,17 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.1,
+    "conf": 5.0,
     "components": {
-     "efficiency": 0.19,
+     "efficiency": 0.09,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 1.0,
+     "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.12
+     "our history": 0.22
     },
     "total_gap": -2.0
    },
@@ -1148,10 +1147,10 @@
      -105,
      -115
     ],
-    "total": 236.5,
+    "total": 237.5,
     "total_open": 236.5,
     "home_ml": -670,
-    "away_ml": 487,
+    "away_ml": 483,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 11.4,
@@ -1264,7 +1263,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": -4.3
+    "total_gap": -5.3
    },
    {
     "id": "401910016",
@@ -2002,11 +2001,6 @@
       "player": "Nate Bittle",
       "pos": "C",
       "status": "Out"
-     },
-     {
-      "player": "Kevin McCullar Jr.",
-      "pos": "G",
-      "status": "Day-To-Day"
      }
     ],
     "inj_away": [
@@ -4159,6 +4153,124 @@
     "total_gap": 2.0
    },
    {
+    "id": "401929176",
+    "sport": "CBB",
+    "game": "North Dakota State Bison @ Colorado State Rams",
+    "home": "Colorado State Rams",
+    "away": "North Dakota State Bison",
+    "time": "Wed 8:00 PM CT",
+    "start": "2026-11-19T02:00Z",
+    "book": "DraftKings",
+    "line": "CSU -12.5",
+    "home_line": -12.5,
+    "home_line_open": -14.5,
+    "spread_odds": [
+     -112,
+     -108
+    ],
+    "total": 147.5,
+    "total_open": 147.5,
+    "home_ml": -1000,
+    "away_ml": 650,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 14.0,
+    "model_b": 6.4,
+    "games_played": [
+     6,
+     4
+    ],
+    "neutral": false,
+    "records": [
+     "2-4",
+     "3-1"
+    ],
+    "venue": "Moby Arena",
+    "tv": "YouTube",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Kaden Tate",
+      "Rob Diaz III"
+     ],
+     [
+      "Carey Booth",
+      "Jase Butler",
+      "Josh Pascarelli"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     4
+    ],
+    "form5": [
+     -10.6,
+     5.5
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Bison 3 day(s), Rams 4 day(s)",
+     "Line moved 2 pts toward North Dakota State Bison since open (-14.5 to -12.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -10.6 a game, theirs +5.5)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 152.6,
+    "gap_a": 1.5,
+    "gap_b": -6.1,
+    "gap_min": 6.1,
+    "pick": "North Dakota State Bison +12.5",
+    "price": -112,
+    "side": "away",
+    "fair_line": 10.2,
+    "playable_to": null,
+    "sim_cover": 0.583,
+    "history": {
+     "adj": 0.28,
+     "key": "CBB spread dog",
+     "w": 72,
+     "l": 48,
+     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.8,
+    "components": {
+     "efficiency": 0.68,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.28
+    },
+    "total_gap": 5.1
+   },
+   {
     "id": "401925782",
     "sport": "CBB",
     "game": "Howard Bison @ Duquesne Dukes",
@@ -4632,125 +4744,6 @@
     },
     "total_gap": 6.6,
     "total_lean": "Over 136.5 (season scoring says 143.1) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401929176",
-    "sport": "CBB",
-    "game": "North Dakota State Bison @ Colorado State Rams",
-    "home": "Colorado State Rams",
-    "away": "North Dakota State Bison",
-    "time": "Wed 8:00 PM CT",
-    "start": "2026-11-19T02:00Z",
-    "book": "DraftKings",
-    "line": "CSU -13.5",
-    "home_line": -13.5,
-    "home_line_open": -14.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 147.5,
-    "total_open": 147.5,
-    "home_ml": -1100,
-    "away_ml": 700,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 14.0,
-    "model_b": 6.4,
-    "games_played": [
-     6,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "2-4",
-     "3-1"
-    ],
-    "venue": "Moby Arena",
-    "tv": "YouTube",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Kaden Tate",
-      "Rob Diaz III"
-     ],
-     [
-      "Carey Booth",
-      "Jase Butler",
-      "Josh Pascarelli"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     4
-    ],
-    "form5": [
-     -10.6,
-     5.5
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Bison 3 day(s), Rams 4 day(s)",
-     "Line moved 1 pts toward North Dakota State Bison since open (-14.5 to -13.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -10.6 a game, theirs +5.5)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 152.6,
-    "gap_a": 0.5,
-    "gap_b": -7.1,
-    "gap_min": 7.1,
-    "pick": "North Dakota State Bison +13.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 10.2,
-    "playable_to": null,
-    "sim_cover": 0.619,
-    "history": {
-     "adj": 0.28,
-     "key": "CBB spread dog",
-     "w": 72,
-     "l": 48,
-     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.4,
-    "components": {
-     "efficiency": 0.79,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.28
-    },
-    "total_gap": 5.1
    },
    {
     "id": "401911232",
@@ -5923,8 +5916,8 @@
     "home_line": -14.5,
     "home_line_open": -14.5,
     "spread_odds": [
-     -112,
-     -108
+     -105,
+     -115
     ],
     "total": 141.5,
     "total_open": 143.5,
@@ -5993,7 +5986,7 @@
     "gap_b": -15.6,
     "gap_min": 15.6,
     "pick": "Coppin State Eagles +14.5",
-    "price": -112,
+    "price": -105,
     "side": "away",
     "fair_line": 4.9,
     "playable_to": null,
@@ -6275,8 +6268,8 @@
     "home_line": 8.5,
     "home_line_open": 8.5,
     "spread_odds": [
-     -115,
-     -105
+     -110,
+     -110
     ],
     "total": 150.5,
     "total_open": 150.5,
@@ -6343,7 +6336,7 @@
     "gap_b": 3.2,
     "gap_min": 3.2,
     "pick": "West Virginia Mountaineers +8.5",
-    "price": -105,
+    "price": -110,
     "side": "home",
     "fair_line": 5.4,
     "playable_to": null,
@@ -6866,7 +6859,7 @@
      -102,
      -118
     ],
-    "total": 139.5,
+    "total": 140.5,
     "total_open": 143.5,
     "home_ml": -2400,
     "away_ml": 1200,
@@ -6962,8 +6955,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": 6.9,
-    "total_lean": "Over 139.5 (season scoring says 146.4) - WATCH only, totals have no past-games test yet"
+    "total_gap": 5.9
    },
    {
     "id": "401920682",
@@ -9927,8 +9919,8 @@
     "home_line": null,
     "home_line_open": 1.5,
     "spread_odds": [
-     -258,
-     210
+     -265,
+     215
     ],
     "total": 6.5,
     "total_open": 6.5,
