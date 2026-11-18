@@ -25,8 +25,8 @@
     "home_line": -6.5,
     "home_line_open": -10.5,
     "spread_odds": [
-     -101,
-     -119
+     -103,
+     -117
     ],
     "total": 221.5,
     "total_open": 218.5,
@@ -122,17 +122,17 @@
     "gap_b": 13.2,
     "gap_min": 7.8,
     "pick": "Los Angeles Lakers -6.5",
-    "price": -119,
+    "price": -117,
     "side": "home",
     "fair_line": -17.0,
     "playable_to": -9.8,
     "sim_cover": 0.799,
     "history": {
-     "adj": -0.07,
+     "adj": -0.05,
      "key": "spread fav",
-     "w": 41,
+     "w": 42,
      "l": 44,
-     "text": "Our record on spread fav: 41-44 (last 60 days, recent counts more) -> -0.07 to confidence"
+     "text": "Our record on spread fav: 42-44 (last 60 days, recent counts more) -> -0.05 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -153,167 +153,10 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.07
+     "our history": -0.05
     },
     "total_gap": 1.8,
     "stake": 0
-   },
-   {
-    "id": "401910006",
-    "sport": "NBA",
-    "game": "Utah Jazz @ LA Clippers",
-    "home": "LA Clippers",
-    "away": "Utah Jazz",
-    "time": "Tue 9:30 PM CT",
-    "start": "2026-11-18T03:30Z",
-    "book": "DraftKings",
-    "line": "LAC -6.5",
-    "home_line": -6.5,
-    "home_line_open": -5.5,
-    "spread_odds": [
-     -119,
-     -101
-    ],
-    "total": 227.5,
-    "total_open": 223.5,
-    "home_ml": -229,
-    "away_ml": 190,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 5.6,
-    "model_b": 7.8,
-    "games_played": [
-     14,
-     12
-    ],
-    "neutral": false,
-    "records": [
-     "1-13",
-     "4-8"
-    ],
-    "venue": "Intuit Dome",
-    "tv": "ClipperVision, KJZZ-TV, Jazz+",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Yanic Konan Niederhauser",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Brandon Ingram",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Bradley Beal",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Jordan Miller",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Jaxson Hayes",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Lauri Markkanen",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jusuf Nurkic",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Jaren Jackson Jr.",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Ace Bailey",
-      "Keyonte George"
-     ],
-     [
-      "Darius Garland",
-      "Rui Hachimura"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     -10.2,
-     0.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Jazz 2 day(s), Clippers 2 day(s)",
-     "Line moved 1 pts toward LA Clippers since open (-5.5 to -6.5 home)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +0.2 a game, theirs -10.2)"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 227.0,
-    "gap_a": -0.9,
-    "gap_b": 1.3,
-    "gap_min": 1.3,
-    "pick": "LA Clippers -6.5",
-    "price": -101,
-    "side": "home",
-    "fair_line": -6.7,
-    "playable_to": null,
-    "sim_cover": 0.506,
-    "history": {
-     "adj": -0.07,
-     "key": "spread fav",
-     "w": 41,
-     "l": 44,
-     "text": "Our record on spread fav: 41-44 (last 60 days, recent counts more) -> -0.07 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.7,
-    "components": {
-     "efficiency": 0.14,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.07
-    },
-    "total_gap": -0.5
    }
   ],
   "n_past": 205,
@@ -414,11 +257,11 @@
     "playable_to": 20.5,
     "sim_cover": 0.864,
     "history": {
-     "adj": 0.25,
+     "adj": 0.24,
      "key": "CBB spread dog",
-     "w": 63,
-     "l": 43,
-     "text": "Our record on CBB spread dog: 63-43 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 64,
+     "l": 44,
+     "text": "Our record on CBB spread dog: 64-44 (last 60 days, recent counts more) -> +0.24 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -439,7 +282,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.24
     },
     "total_gap": 3.5,
     "stake": 0
@@ -528,11 +371,11 @@
     "playable_to": null,
     "sim_cover": 0.586,
     "history": {
-     "adj": 0.25,
+     "adj": 0.24,
      "key": "CBB spread dog",
-     "w": 63,
-     "l": 43,
-     "text": "Our record on CBB spread dog: 63-43 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 64,
+     "l": 44,
+     "text": "Our record on CBB spread dog: 64-44 (last 60 days, recent counts more) -> +0.24 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -543,7 +386,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.8,
+    "conf": 5.7,
     "components": {
      "efficiency": 0.5,
      "veto": 1.5,
@@ -553,7 +396,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.24
     },
     "total_gap": -3.7
    }
