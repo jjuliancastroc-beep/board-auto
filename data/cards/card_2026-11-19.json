@@ -21,7 +21,7 @@
     "total": 44.5,
     "total_open": 45.5,
     "home_ml": -690,
-    "away_ml": 500,
+    "away_ml": 498,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 7.1,
@@ -71,6 +71,11 @@
      }
     ],
     "inj_away": [
+     {
+      "player": "Charlie Heck",
+      "pos": "OT",
+      "status": "Questionable"
+     },
      {
       "player": "Sauce Gardner",
       "pos": "CB",
@@ -271,7 +276,7 @@
     "factors": [
      "Rest: Owls 5 day(s), Owls 5 day(s)",
      "Line moved 1.5 pts toward Rice Owls since open (-4 to -2.5 home)",
-     "Kickoff forecast: wind 3 mph (gusts 6), 50F, rain chance 0%",
+     "Kickoff forecast: wind 2 mph (gusts 5), 51F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -281,10 +286,10 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 3.4,
-     "gust": 5.6,
+     "wind": 2.4,
+     "gust": 4.9,
      "rain": 0,
-     "temp": 50.5,
+     "temp": 51.3,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -354,7 +359,7 @@
      -105,
      -115
     ],
-    "total": 215.5,
+    "total": 216.5,
     "total_open": 217.5,
     "home_ml": -104,
     "away_ml": -113,
@@ -477,7 +482,7 @@
      "situational": 0.5,
      "our history": 0.21
     },
-    "total_gap": 2.8
+    "total_gap": 1.8
    },
    {
     "id": "401910022",
@@ -495,7 +500,7 @@
      -110,
      -110
     ],
-    "total": 225.5,
+    "total": 224.5,
     "total_open": 225.5,
     "home_ml": -1040,
     "away_ml": 670,
@@ -625,7 +630,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": 0.8
+    "total_gap": 1.8
    },
    {
     "id": "401910020",
@@ -643,7 +648,7 @@
      -112,
      -108
     ],
-    "total": 229.5,
+    "total": 230.5,
     "total_open": 225.5,
     "home_ml": 360,
     "away_ml": -467,
@@ -793,7 +798,7 @@
      "situational": 0.2,
      "our history": -0.12
     },
-    "total_gap": -1.2
+    "total_gap": -2.2
    },
    {
     "id": "401910019",
@@ -811,7 +816,7 @@
      -108,
      -112
     ],
-    "total": 225.5,
+    "total": 224.5,
     "total_open": 225.5,
     "home_ml": -243,
     "away_ml": 200,
@@ -976,7 +981,8 @@
      "situational": 0.2,
      "our history": -0.12
     },
-    "total_gap": 5.1
+    "total_gap": 6.1,
+    "total_lean": "Over 224.5 (season scoring says 230.6) - WATCH only, totals have no past-games test yet"
    }
   ],
   "n_past": 222,
@@ -1453,8 +1459,8 @@
     "home_line": -17.5,
     "home_line_open": -16.5,
     "spread_odds": [
-     -112,
-     -108
+     -115,
+     -105
     ],
     "total": 154.5,
     "total_open": 151.5,
@@ -1520,7 +1526,7 @@
     "gap_b": -9.2,
     "gap_min": 9.2,
     "pick": "Sacramento State Hornets +17.5",
-    "price": -112,
+    "price": -115,
     "side": "away",
     "fair_line": 11.5,
     "playable_to": null,
@@ -1555,6 +1561,120 @@
     },
     "total_gap": -7.0,
     "total_lean": "Under 154.5 (season scoring says 147.5) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401920517",
+    "sport": "CBB",
+    "game": "Florida Gators @ West Virginia Mountaineers",
+    "home": "West Virginia Mountaineers",
+    "away": "Florida Gators",
+    "time": "Thu 1:30 PM CT",
+    "start": "2026-11-19T19:30Z",
+    "book": "DraftKings",
+    "line": "FLA -8.5",
+    "home_line": 8.5,
+    "home_line_open": 9.5,
+    "spread_odds": [
+     -102,
+     -118
+    ],
+    "total": 147.5,
+    "total_open": 149.5,
+    "home_ml": 300,
+    "away_ml": -380,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -6.9,
+    "model_b": -2.3,
+    "games_played": [
+     6,
+     5
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "4-1"
+    ],
+    "venue": "Michelob ULTRA Arena",
+    "tv": "ESPN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Alex Condon",
+      "Thomas Haugh"
+     ],
+     [
+      "Amadou Seini",
+      "Miles Sadler"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     13.2,
+     15.2
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Gators 1 day(s), Mountaineers 1 day(s)",
+     "Line moved 1 pts toward West Virginia Mountaineers since open (+9.5 to +8.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 148.5,
+    "gap_a": 1.6,
+    "gap_b": 6.2,
+    "gap_min": 6.2,
+    "pick": "West Virginia Mountaineers +8.5",
+    "price": -118,
+    "side": "home",
+    "fair_line": 4.6,
+    "playable_to": null,
+    "sim_cover": 0.638,
+    "history": {
+     "adj": 0.25,
+     "key": "CBB spread dog",
+     "w": 85,
+     "l": 59,
+     "text": "Our record on CBB spread dog: 85-59 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.1,
+    "components": {
+     "efficiency": 0.69,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": 1.0
    },
    {
     "id": "401902280",
@@ -1674,120 +1794,6 @@
      "our history": 0.25
     },
     "total_gap": -4.1
-   },
-   {
-    "id": "401920517",
-    "sport": "CBB",
-    "game": "Florida Gators @ West Virginia Mountaineers",
-    "home": "West Virginia Mountaineers",
-    "away": "Florida Gators",
-    "time": "Thu 1:30 PM CT",
-    "start": "2026-11-19T19:30Z",
-    "book": "DraftKings",
-    "line": "FLA -7.5",
-    "home_line": 7.5,
-    "home_line_open": 9.5,
-    "spread_odds": [
-     -118,
-     -102
-    ],
-    "total": 147.5,
-    "total_open": 149.5,
-    "home_ml": 300,
-    "away_ml": -380,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -6.9,
-    "model_b": -2.3,
-    "games_played": [
-     6,
-     5
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "4-1"
-    ],
-    "venue": "Michelob ULTRA Arena",
-    "tv": "ESPN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Alex Condon",
-      "Thomas Haugh"
-     ],
-     [
-      "Amadou Seini",
-      "Miles Sadler"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     13.2,
-     15.2
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Gators 1 day(s), Mountaineers 1 day(s)",
-     "Line moved 2 pts toward West Virginia Mountaineers since open (+9.5 to +7.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 148.5,
-    "gap_a": 0.6,
-    "gap_b": 5.2,
-    "gap_min": 5.2,
-    "pick": "West Virginia Mountaineers +7.5",
-    "price": -102,
-    "side": "home",
-    "fair_line": 4.6,
-    "playable_to": null,
-    "sim_cover": 0.604,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 85,
-     "l": 59,
-     "text": "Our record on CBB spread dog: 85-59 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.58,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 1.0
    },
    {
     "id": "401920878",
@@ -6242,7 +6248,7 @@
      {
       "player": "Zack Bolduc",
       "pos": "RW",
-      "status": "Day-To-Day"
+      "status": "Out"
      },
      {
       "player": "Mike Matheson",
