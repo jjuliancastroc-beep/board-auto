@@ -20787,5 +20787,154 @@
   "review_log": [
    "11/18 09:11 AM: checked line and injuries - no change"
   ]
+ },
+ {
+  "id": "401910010",
+  "sport": "NBA",
+  "game": "Philadelphia 76ers @ Orlando Magic",
+  "home": "Orlando Magic",
+  "away": "Philadelphia 76ers",
+  "start": "2026-11-19T00:00Z",
+  "pick": "Philadelphia 76ers +4.5",
+  "decision": "CASH",
+  "stake": 25,
+  "conf": 7.3,
+  "components": {
+   "efficiency": 0.61,
+   "veto": 1.5,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.22
+  },
+  "gap_a": -5.5,
+  "gap_b": -6.8,
+  "gap_min": 5.5,
+  "price": -115,
+  "fair_line": -1.7,
+  "playable_to": 3.5,
+  "side": "away",
+  "home_line": -4.5,
+  "home_ml": -174,
+  "away_ml": 146,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Line moves past +3.5",
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Both models clear the bar, confidence 7.3. Past-games test for this kind of pick: 45.6% over 125.",
+  "model_a": -1.0,
+  "model_b": -2.3,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.22,
+   "key": "spread dog",
+   "w": 126,
+   "l": 92,
+   "text": "Our record on spread dog: 126-92 (last 60 days, recent counts more) -> +0.22 to confidence"
+  },
+  "date": "2026-11-18",
+  "line_at_pick": "ORL -4.5",
+  "logged_at": "18:02",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": []
+ },
+ {
+  "id": "401910016",
+  "sport": "NBA",
+  "game": "Golden State Warriors @ Dallas Mavericks",
+  "home": "Dallas Mavericks",
+  "away": "Golden State Warriors",
+  "start": "2026-11-19T01:00Z",
+  "pick": "Golden State Warriors +4.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.1,
+  "components": {
+   "efficiency": 0.76,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.22
+  },
+  "gap_a": -4.1,
+  "gap_b": -6.8,
+  "gap_min": 6.8,
+  "price": -104,
+  "fair_line": -1.0,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -4.5,
+  "home_ml": -197,
+  "away_ml": 164,
+  "flags": [],
+  "against": [
+   "Market moved away from this side since open"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 0.4,
+  "model_b": -2.3,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.22,
+   "key": "spread dog",
+   "w": 126,
+   "l": 92,
+   "text": "Our record on spread dog: 126-92 (last 60 days, recent counts more) -> +0.22 to confidence"
+  },
+  "date": "2026-11-18",
+  "line_at_pick": "DAL -4.5",
+  "logged_at": "18:02",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/18 06:02 PM: checked line and injuries - no change"
+  ]
  }
 ]
