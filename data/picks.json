@@ -20936,5 +20936,83 @@
   "review_log": [
    "11/18 06:02 PM: checked line and injuries - no change"
   ]
+ },
+ {
+  "id": "401910013",
+  "sport": "NBA",
+  "game": "Detroit Pistons @ New Orleans Pelicans",
+  "home": "New Orleans Pelicans",
+  "away": "Detroit Pistons",
+  "start": "2026-11-19T01:00Z",
+  "pick": "Detroit Pistons -3.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.2,
+  "components": {
+   "efficiency": 0.5,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.2,
+   "our history": -0.12
+  },
+  "gap_a": -2.8,
+  "gap_b": -4.5,
+  "gap_min": 4.5,
+  "price": -114,
+  "fair_line": -7.2,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 3.5,
+  "home_ml": 137,
+  "away_ml": -163,
+  "flags": [
+   "Detroit Pistons on a back-to-back"
+  ],
+  "against": [
+   "Our side has less rest"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -6.3,
+  "model_b": -8.0,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.12,
+   "key": "spread fav",
+   "w": 42,
+   "l": 47,
+   "text": "Our record on spread fav: 42-47 (last 60 days, recent counts more) -> -0.12 to confidence"
+  },
+  "date": "2026-11-18",
+  "line_at_pick": "DET -3.5",
+  "logged_at": "18:52",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/18 06:52 PM: checked line and injuries - no change"
+  ]
  }
 ]
