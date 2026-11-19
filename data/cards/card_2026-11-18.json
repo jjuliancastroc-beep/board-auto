@@ -20,15 +20,15 @@
     "away": "Boston Celtics",
     "time": "Wed 8:30 PM CT",
     "start": "2026-11-19T02:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "BOS -2.5",
     "home_line": 2.5,
     "home_line_open": 2.5,
     "spread_odds": [
-     -110,
-     -110
+     -106,
+     -114
     ],
-    "total": 219.5,
+    "total": 218.5,
     "total_open": 219.5,
     "home_ml": 115,
     "away_ml": -136,
@@ -95,7 +95,7 @@
     "gap_b": -4.9,
     "gap_min": 4.9,
     "pick": "Boston Celtics -2.5",
-    "price": -110,
+    "price": -106,
     "side": "away",
     "fair_line": -4.9,
     "playable_to": null,
@@ -128,7 +128,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": 3.0
+    "total_gap": 4.0
    },
    {
     "id": "401910017",
@@ -138,7 +138,7 @@
     "away": "Utah Jazz",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "LAL -11.5",
     "home_line": -11.5,
     "home_line_open": -12.5,
@@ -146,7 +146,7 @@
      -105,
      -115
     ],
-    "total": 230.5,
+    "total": 229.5,
     "total_open": 231.5,
     "home_ml": -567,
     "away_ml": 424,
@@ -272,7 +272,7 @@
      "situational": 0.2,
      "our history": -0.12
     },
-    "total_gap": 1.1
+    "total_gap": 2.1
    },
    {
     "id": "401910018",
@@ -282,7 +282,7 @@
     "away": "Phoenix Suns",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "PHX -7.5",
     "home_line": 7.5,
     "home_line_open": 6.5,
@@ -290,7 +290,7 @@
      -106,
      -114
     ],
-    "total": 227.5,
+    "total": 226.5,
     "total_open": 229.5,
     "home_ml": 221,
     "away_ml": -269,
@@ -404,7 +404,7 @@
      "situational": 0.5,
      "our history": 0.22
     },
-    "total_gap": 1.7
+    "total_gap": 2.7
    }
   ],
   "n_past": 210,
@@ -414,123 +414,6 @@
   "sport": "CBB",
   "games": [
    {
-    "id": "401922283",
-    "sport": "CBB",
-    "game": "Samford Bulldogs @ South Carolina Upstate Spartans",
-    "home": "South Carolina Upstate Spartans",
-    "away": "Samford Bulldogs",
-    "time": "Wed 7:00 PM CT",
-    "start": "2026-11-19T01:00Z",
-    "book": "Draft Kings",
-    "line": "SAM -7.5",
-    "home_line": 7.5,
-    "home_line_open": 7.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 150.5,
-    "total_open": 150.5,
-    "home_ml": 275,
-    "away_ml": -345,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -2.4,
-    "model_b": 1.6,
-    "games_played": [
-     3,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "1-2",
-     "1-4"
-    ],
-    "venue": "Timmons Arena",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Ty Davis",
-      "Will Shaver"
-     ],
-     [
-      "Alessandro Perotti",
-      "Amont'e Allen-Johnson",
-      "David Tubek"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     4
-    ],
-    "form5": [
-     null,
-     -3.2
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.8 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Bulldogs 5 day(s), Spartans 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Line moves past +6.9",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 152.5,
-    "gap_a": 5.1,
-    "gap_b": 9.1,
-    "gap_min": 5.1,
-    "pick": "South Carolina Upstate Spartans +7.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": 0.4,
-    "playable_to": 6.9,
-    "sim_cover": 0.74,
-    "history": {
-     "adj": 0.28,
-     "key": "CBB spread dog",
-     "w": 72,
-     "l": 48,
-     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "conf": 6.8,
-    "components": {
-     "efficiency": 0.56,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.28
-    },
-    "total_gap": 2.0,
-    "stake": 0
-   },
-   {
     "id": "401925949",
     "sport": "CBB",
     "game": "Weber State Wildcats @ Utah State Aggies",
@@ -538,7 +421,7 @@
     "away": "Weber State Wildcats",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "USU -28.5",
     "home_line": -28.5,
     "home_line_open": -32.5,
@@ -659,7 +542,7 @@
     "away": "Texas Southern Tigers",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SDSU -24.5",
     "home_line": -24.5,
     "home_line_open": -26.5,
@@ -783,7 +666,7 @@
     "away": "Louisiana Ragin' Cajuns",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SF -10.5",
     "home_line": -10.5,
     "home_line_open": -8.5,
@@ -899,7 +782,7 @@
     "away": "UNLV Rebels",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "AUB -9.5",
     "home_line": -9.5,
     "home_line_open": -8.5,
@@ -1017,7 +900,7 @@
     "away": "North Dakota State Bison",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "CSU -12.5",
     "home_line": -12.5,
     "home_line_open": -14.5,
@@ -1135,7 +1018,7 @@
     "away": "UConn Huskies",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "ARIZ -3.5",
     "home_line": -3.5,
     "home_line_open": -2.5,
@@ -1143,7 +1026,7 @@
      -112,
      -108
     ],
-    "total": 147.5,
+    "total": 146.5,
     "total_open": 147.5,
     "home_ml": -166,
     "away_ml": 140,
@@ -1242,7 +1125,7 @@
      "situational": 0.5,
      "our history": 0.28
     },
-    "total_gap": 4.4
+    "total_gap": 5.4
    },
    {
     "id": "401911473",
@@ -1252,7 +1135,7 @@
     "away": "Fresno State Bulldogs",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "SJSU -6.5",
     "home_line": -6.5,
     "home_line_open": -5.5,
@@ -1369,7 +1252,7 @@
     "away": "UC Riverside Highlanders",
     "time": "Wed 8:30 PM CT",
     "start": "2026-11-19T02:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "USD -6.5",
     "home_line": -6.5,
     "home_line_open": -7.5,
@@ -1487,7 +1370,7 @@
     "away": "Alcorn State Braves",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "MIZ -40.5",
     "home_line": -40.5,
     "home_line_open": -44.5,
@@ -1609,7 +1492,7 @@
     "away": "Bethune-Cookman Wildcats",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "CREI -24.5",
     "home_line": -24.5,
     "home_line_open": -23.5,
@@ -1732,7 +1615,7 @@
     "away": "Northern Colorado Bears",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "BYU -28.5",
     "home_line": -28.5,
     "home_line_open": -29.5,
@@ -1853,7 +1736,7 @@
     "away": "Oakland Golden Grizzlies",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "ASU -22.5",
     "home_line": -22.5,
     "home_line_open": -25.5,
@@ -1971,7 +1854,7 @@
     "away": "Washington State Cougars",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "HAW -1.5",
     "home_line": -1.5,
     "home_line_open": 1.5,
@@ -2091,13 +1974,13 @@
     "away": "Portland Pilots",
     "time": "Wed 8:00 PM CT",
     "start": "2026-11-19T02:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "COLO -14.5",
     "home_line": -14.5,
     "home_line_open": -15.5,
     "spread_odds": [
-     -115,
-     -105
+     -110,
+     -110
     ],
     "total": 156.5,
     "total_open": 153.5,
@@ -2167,7 +2050,7 @@
     "gap_b": -12.8,
     "gap_min": 12.8,
     "pick": "Portland Pilots +14.5",
-    "price": -115,
+    "price": -110,
     "side": "away",
     "fair_line": 7.2,
     "playable_to": null,
@@ -2210,7 +2093,7 @@
     "away": "Idaho Vandals",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "NEV -18.5",
     "home_line": -18.5,
     "home_line_open": -19.5,
@@ -2331,7 +2214,7 @@
     "away": "Cal State Fullerton Titans",
     "time": "Wed 9:30 PM CT",
     "start": "2026-11-19T03:30Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "UCLA -31.5",
     "home_line": -31.5,
     "home_line_open": -34.5,
@@ -2442,125 +2325,6 @@
     "total_gap": 2.1
    },
    {
-    "id": "401926064",
-    "sport": "CBB",
-    "game": "South Dakota Coyotes @ Nebraska Cornhuskers",
-    "home": "Nebraska Cornhuskers",
-    "away": "South Dakota Coyotes",
-    "time": "Wed 7:30 PM CT",
-    "start": "2026-11-19T01:30Z",
-    "book": "Draft Kings",
-    "line": "NEB -32.5",
-    "home_line": -32.5,
-    "home_line_open": -34.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 155.5,
-    "total_open": 163.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 30.0,
-    "model_b": 14.9,
-    "games_played": [
-     6,
-     4
-    ],
-    "neutral": false,
-    "records": [
-     "2-4",
-     "4-0"
-    ],
-    "venue": "Pinnacle Bank Arena",
-    "tv": "BTN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Josiah Dotzler",
-      "Vince Buzelis"
-     ],
-     [
-      "Pryce Sandfort",
-      "Taj DeGourville"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -1.2,
-     24.0
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Coyotes 3 day(s), Cornhuskers 3 day(s)",
-     "Line moved 2 pts toward South Dakota Coyotes since open (-34.5 to -32.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -1.2 a game, theirs +24.0)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 159.4,
-    "gap_a": -2.5,
-    "gap_b": -17.6,
-    "gap_min": 17.6,
-    "pick": "South Dakota Coyotes +32.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 22.4,
-    "playable_to": null,
-    "sim_cover": 0.82,
-    "history": {
-     "adj": 0.28,
-     "key": "CBB spread dog",
-     "w": 72,
-     "l": 48,
-     "text": "Our record on CBB spread dog: 72-48 (last 60 days, recent counts more) -> +0.28 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 4.6,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.28
-    },
-    "total_gap": 3.9
-   },
-   {
     "id": "401917965",
     "sport": "CBB",
     "game": "McMurry War Hawks @ Abilene Christian Wildcats",
@@ -2641,7 +2405,7 @@
     "away": "Colorado Avalanche",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-19T03:00Z",
-    "book": "Draft Kings",
+    "book": "DraftKings",
     "line": "UTAH -110",
     "home_line": null,
     "home_line_open": 1.5,
