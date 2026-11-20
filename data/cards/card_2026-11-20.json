@@ -23,7 +23,7 @@
      -105,
      -115
     ],
-    "total": 45.5,
+    "total": 46.5,
     "total_open": 47.5,
     "home_ml": -750,
     "away_ml": 525,
@@ -77,7 +77,7 @@
     "factors": [
      "Rest: Falcons 10 day(s), Rockets 9 day(s)",
      "Line moved 1 pts toward Toledo Rockets since open (-15.5 to -16.5 home)",
-     "Kickoff forecast: wind 3 mph (gusts 3), 51F, rain chance 0%",
+     "Kickoff forecast: wind 6 mph (gusts 8), 50F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -89,11 +89,11 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 3.0,
-     "gust": 3.0,
+     "wind": 5.6,
+     "gust": 8.5,
      "rain": 0,
-     "temp": 51,
-     "src": "NWS"
+     "temp": 50.1,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Clear",
@@ -137,8 +137,8 @@
      "situational": 0.5,
      "our history": 0.05
     },
-    "total_gap": 6.7,
-    "total_lean": "Over 45.5 (season scoring says 52.2) - WATCH only, totals have no past-games test yet"
+    "total_gap": 5.7,
+    "total_lean": "Over 46.5 (season scoring says 52.2) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401858529",
@@ -211,7 +211,7 @@
     "factors": [
      "Rest: Ducks 6 day(s), Spartans 6 day(s)",
      "Line moved 5 pts toward Oregon Ducks since open (+12.5 to +17.5 home)",
-     "Kickoff forecast: wind 6 mph (gusts 6), 52F, rain chance 0%",
+     "Kickoff forecast: wind 7 mph (gusts 19), 51F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -223,11 +223,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 6.0,
-     "gust": 6.0,
+     "wind": 7.3,
+     "gust": 18.6,
      "rain": 0,
-     "temp": 52,
-     "src": "NWS"
+     "temp": 51.0,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Clear",
@@ -337,13 +337,12 @@
     "decision": "WATCH",
     "reason": "Only one model clears the bar - never a bet by itself.",
     "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)",
      "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
     ],
     "factors": [
      "Rest: Lobos 6 day(s), Cowboys 6 day(s)",
      "Line moved 1 pts toward Wyoming Cowboys since open (+10.5 to +9.5 home)",
-     "Kickoff forecast: wind 20 mph (gusts 20), 31F, rain chance 0%",
+     "Kickoff forecast: wind 6 mph (gusts 15), 29F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
@@ -353,11 +352,11 @@
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 20.0,
-     "gust": 20.0,
+     "wind": 6.5,
+     "gust": 14.8,
      "rain": 0,
-     "temp": 31,
-     "src": "NWS"
+     "temp": 29.3,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Mostly cloudy w/ flurries",
@@ -474,7 +473,7 @@
     "factors": [
      "Rest: Tigers 6 day(s), Devils 6 day(s)",
      "Line moved 4 pts toward Duke Blue Devils since open (-8.5 to -12.5 home)",
-     "Kickoff forecast: wind 3 mph (gusts 3), 52F, rain chance 0%",
+     "Kickoff forecast: wind 6 mph (gusts 9), 54F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -486,11 +485,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 3.0,
-     "gust": 3.0,
+     "wind": 5.5,
+     "gust": 8.9,
      "rain": 0,
-     "temp": 52,
-     "src": "NWS"
+     "temp": 53.5,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Mostly cloudy",
@@ -606,7 +605,7 @@
     "factors": [
      "Rest: Cyclones 6 day(s), Knights 6 day(s)",
      "Line moved 3 pts toward Iowa State Cyclones since open (-1.5 to +1.5 home)",
-     "Kickoff forecast: wind 10 mph (gusts 10), 73F, rain chance 26%",
+     "Kickoff forecast: wind 7 mph (gusts 18), 72F, rain chance 7%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -618,11 +617,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 10.0,
-     "gust": 10.0,
-     "rain": 26,
-     "temp": 73,
-     "src": "NWS"
+     "wind": 6.6,
+     "gust": 18.3,
+     "rain": 7,
+     "temp": 72.4,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Showers",
@@ -733,23 +732,21 @@
     ],
     "decision": "PASS",
     "reason": "Missing line or a model number - no call.",
-    "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)"
-    ],
+    "flags": [],
     "factors": [
      "Rest: Miners 6 day(s), Falcons 6 day(s)",
-     "Kickoff forecast: wind 15 mph (gusts 15), 48F, rain chance 0%"
+     "Kickoff forecast: wind 10 mph (gusts 17), 46F, rain chance 0%"
     ],
     "against": [],
     "invalidation": [],
     "tier": "G5/mixed",
     "day": "Midweek",
     "wind": {
-     "wind": 15.0,
-     "gust": 15.0,
+     "wind": 9.7,
+     "gust": 17.0,
      "rain": 0,
-     "temp": 48,
-     "src": "NWS"
+     "temp": 45.7,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Mostly clear",
@@ -878,11 +875,11 @@
     "playable_to": null,
     "sim_cover": 0.611,
     "history": {
-     "adj": 0.18,
+     "adj": 0.17,
      "key": "spread dog",
      "w": 147,
-     "l": 111,
-     "text": "Our record on spread dog: 147-111 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "l": 112,
+     "text": "Our record on spread dog: 147-112 (last 60 days, recent counts more) -> +0.17 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -903,7 +900,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.17
     },
     "total_gap": 1.6
    },
@@ -1493,11 +1490,11 @@
     "playable_to": null,
     "sim_cover": 0.547,
     "history": {
-     "adj": 0.18,
+     "adj": 0.17,
      "key": "spread dog",
      "w": 147,
-     "l": 111,
-     "text": "Our record on spread dog: 147-111 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "l": 112,
+     "text": "Our record on spread dog: 147-112 (last 60 days, recent counts more) -> +0.17 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -1518,7 +1515,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.17
     },
     "total_gap": 1.8
    },
@@ -1978,11 +1975,11 @@
     "playable_to": null,
     "sim_cover": 0.61,
     "history": {
-     "adj": 0.18,
+     "adj": 0.17,
      "key": "spread dog",
      "w": 147,
-     "l": 111,
-     "text": "Our record on spread dog: 147-111 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "l": 112,
+     "text": "Our record on spread dog: 147-112 (last 60 days, recent counts more) -> +0.17 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -2003,7 +2000,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.18
+     "our history": 0.17
     },
     "total_gap": -0.3
    },
@@ -2272,11 +2269,11 @@
     "playable_to": 11.5,
     "sim_cover": 0.695,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2297,7 +2294,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 1.3,
     "stake": 0
@@ -2389,11 +2386,11 @@
     "playable_to": null,
     "sim_cover": 0.644,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2414,7 +2411,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 10.1,
     "total_lean": "Over 149.5 (season scoring says 159.6) - WATCH only, totals have no past-games test yet"
@@ -2505,11 +2502,11 @@
     "playable_to": null,
     "sim_cover": 0.623,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2530,7 +2527,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 1.2
    },
@@ -2547,8 +2544,8 @@
     "home_line": 2.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     100,
-     -120
+     -105,
+     -115
     ],
     "total": 131.5,
     "total_open": 126.5,
@@ -2615,17 +2612,17 @@
     "gap_b": 6.1,
     "gap_min": 6.1,
     "pick": "App State Mountaineers +2.5",
-    "price": -120,
+    "price": -115,
     "side": "home",
     "fair_line": -1.7,
     "playable_to": null,
     "sim_cover": 0.647,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2646,7 +2643,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 7.4,
     "total_lean": "Over 131.5 (season scoring says 138.9) - WATCH only, totals have no past-games test yet"
@@ -2734,11 +2731,11 @@
     "playable_to": null,
     "sim_cover": 0.646,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2759,7 +2756,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 9.3,
     "total_lean": "Over 135.5 (season scoring says 144.8) - WATCH only, totals have no past-games test yet"
@@ -2853,11 +2850,11 @@
     "playable_to": null,
     "sim_cover": 0.715,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2878,7 +2875,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -1.7
    },
@@ -2971,11 +2968,11 @@
     "playable_to": null,
     "sim_cover": 0.622,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2996,7 +2993,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -2.3
    },
@@ -3089,11 +3086,11 @@
     "playable_to": null,
     "sim_cover": 0.629,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3114,7 +3111,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 5.8
    },
@@ -3207,11 +3204,11 @@
     "playable_to": null,
     "sim_cover": 0.685,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3232,7 +3229,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -10.3,
     "total_lean": "Under 166.5 (season scoring says 156.2) - WATCH only, totals have no past-games test yet"
@@ -3442,11 +3439,11 @@
     "playable_to": null,
     "sim_cover": 0.619,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3467,7 +3464,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -6.9,
     "total_lean": "Under 160.5 (season scoring says 153.6) - WATCH only, totals have no past-games test yet"
@@ -3588,124 +3585,6 @@
     "total_gap": -0.9
    },
    {
-    "id": "401929459",
-    "sport": "CBB",
-    "game": "South Alabama Jaguars @ SMU Mustangs",
-    "home": "SMU Mustangs",
-    "away": "South Alabama Jaguars",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-21T01:00Z",
-    "book": "DraftKings",
-    "line": "SMU -15.5",
-    "home_line": -15.5,
-    "home_line_open": -16.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 147.5,
-    "total_open": 149.5,
-    "home_ml": -1800,
-    "away_ml": 1000,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 13.4,
-    "model_b": 9.0,
-    "games_played": [
-     6,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "3-3",
-     "5-0"
-    ],
-    "venue": "Moody Coliseum (Dallas)",
-    "tv": "ACCNX",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Diego Roman",
-      "Jalen Langsy",
-      "Stephen Williams"
-     ],
-     [
-      "David Terrell Jr.",
-      "Jakub Szumert",
-      "Oziyah Sellers"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     6.4,
-     19.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Jaguars 3 day(s), Mustangs 3 day(s)",
-     "Line moved 1 pts toward South Alabama Jaguars since open (-16.5 to -15.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side +6.4 a game, theirs +19.4)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 157.3,
-    "gap_a": -2.1,
-    "gap_b": -6.5,
-    "gap_min": 6.5,
-    "pick": "South Alabama Jaguars +15.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 11.2,
-    "playable_to": null,
-    "sim_cover": 0.652,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.8,
-    "components": {
-     "efficiency": 0.72,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 9.8,
-    "total_lean": "Over 147.5 (season scoring says 157.3) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401924844",
     "sport": "CBB",
     "game": "Niagara Purple Eagles @ Delaware State Hornets",
@@ -3822,6 +3701,124 @@
      "our history": -0.28
     },
     "total_gap": 5.0
+   },
+   {
+    "id": "401929459",
+    "sport": "CBB",
+    "game": "South Alabama Jaguars @ SMU Mustangs",
+    "home": "SMU Mustangs",
+    "away": "South Alabama Jaguars",
+    "time": "Fri 7:00 PM CT",
+    "start": "2026-11-21T01:00Z",
+    "book": "DraftKings",
+    "line": "SMU -15.5",
+    "home_line": -15.5,
+    "home_line_open": -16.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 147.5,
+    "total_open": 149.5,
+    "home_ml": -1800,
+    "away_ml": 1000,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 13.4,
+    "model_b": 9.0,
+    "games_played": [
+     6,
+     5
+    ],
+    "neutral": false,
+    "records": [
+     "3-3",
+     "5-0"
+    ],
+    "venue": "Moody Coliseum (Dallas)",
+    "tv": "ACCNX",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Diego Roman",
+      "Jalen Langsy",
+      "Stephen Williams"
+     ],
+     [
+      "David Terrell Jr.",
+      "Jakub Szumert",
+      "Oziyah Sellers"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     6.4,
+     19.4
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Jaguars 3 day(s), Mustangs 3 day(s)",
+     "Line moved 1 pts toward South Alabama Jaguars since open (-16.5 to -15.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side +6.4 a game, theirs +19.4)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 157.3,
+    "gap_a": -2.1,
+    "gap_b": -6.5,
+    "gap_min": 6.5,
+    "pick": "South Alabama Jaguars +15.5",
+    "price": -115,
+    "side": "away",
+    "fair_line": 11.2,
+    "playable_to": null,
+    "sim_cover": 0.652,
+    "history": {
+     "adj": 0.22,
+     "key": "CBB spread dog",
+     "w": 91,
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.72,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.22
+    },
+    "total_gap": 9.8,
+    "total_lean": "Over 147.5 (season scoring says 157.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921107",
@@ -4027,11 +4024,11 @@
     "playable_to": null,
     "sim_cover": 0.734,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4052,7 +4049,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 3.7
    },
@@ -4146,11 +4143,11 @@
     "playable_to": null,
     "sim_cover": 0.763,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4171,7 +4168,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -6.3,
     "total_lean": "Under 157.5 (season scoring says 151.2) - WATCH only, totals have no past-games test yet"
@@ -4263,11 +4260,11 @@
     "playable_to": null,
     "sim_cover": 0.655,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4288,7 +4285,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 8.0,
     "total_lean": "Over 147.5 (season scoring says 155.5) - WATCH only, totals have no past-games test yet"
@@ -4377,11 +4374,11 @@
     "playable_to": null,
     "sim_cover": 0.531,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4402,7 +4399,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -0.8
    },
@@ -4494,11 +4491,11 @@
     "playable_to": null,
     "sim_cover": 0.519,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4519,126 +4516,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 5.4
-   },
-   {
-    "id": "401920066",
-    "sport": "CBB",
-    "game": "Rhode Island Rams @ Liberty Flames",
-    "home": "Liberty Flames",
-    "away": "Rhode Island Rams",
-    "time": "Fri 3:30 PM CT",
-    "start": "2026-11-20T21:30Z",
-    "book": "DraftKings",
-    "line": "LIB -1.5",
-    "home_line": -1.5,
-    "home_line_open": 2.5,
-    "spread_odds": [
-     -120,
-     100
-    ],
-    "total": 141.5,
-    "total_open": 141.5,
-    "home_ml": -105,
-    "away_ml": -115,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -0.8,
-    "model_b": -0.6,
-    "games_played": [
-     5,
-     3
-    ],
-    "neutral": true,
-    "records": [
-     "5-0",
-     "3-1"
-    ],
-    "venue": "Colonial Hall",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dylan Williamson",
-      "Jonah Hinton",
-      "Matas Deniusas"
-     ],
-     [
-      "Cooper Campbell",
-      "Eli Sancomb"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     3
-    ],
-    "form5": [
-     16.2,
-     null
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
-    "factors": [
-     "Rest: Rams 5 day(s), Flames 3 day(s)",
-     "Line moved 4 pts toward Liberty Flames since open (+2.5 to -1.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.0,
-    "gap_a": -2.3,
-    "gap_b": -2.1,
-    "gap_min": 2.3,
-    "pick": "Rhode Island Rams +1.5",
-    "price": -120,
-    "side": "away",
-    "fair_line": -0.7,
-    "playable_to": null,
-    "sim_cover": 0.58,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.26,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 8.5,
-    "total_lean": "Over 141.5 (season scoring says 150.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920427",
@@ -4731,11 +4611,11 @@
     "playable_to": 34.3,
     "sim_cover": 0.939,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4756,7 +4636,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 0.0
    },
@@ -4846,11 +4726,11 @@
     "playable_to": null,
     "sim_cover": 0.533,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4871,7 +4751,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 9.1,
     "total_lean": "Over 142.5 (season scoring says 151.6) - WATCH only, totals have no past-games test yet"
@@ -4970,11 +4850,11 @@
     "playable_to": 28.2,
     "sim_cover": 0.933,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4995,7 +4875,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 5.6
    },
@@ -5089,11 +4969,11 @@
     "playable_to": 30.9,
     "sim_cover": 0.927,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5114,7 +4994,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -5.2
    },
@@ -5203,11 +5083,11 @@
     "playable_to": null,
     "sim_cover": 0.526,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5228,7 +5108,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 10.0,
     "total_lean": "Over 138.5 (season scoring says 148.5) - WATCH only, totals have no past-games test yet"
@@ -5322,11 +5202,11 @@
     "playable_to": null,
     "sim_cover": 0.555,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5347,7 +5227,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 2.0
    },
@@ -5560,11 +5440,11 @@
     "playable_to": 42.7,
     "sim_cover": 0.954,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5585,7 +5465,7 @@
      "against": 0.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -2.3
    },
@@ -5676,11 +5556,11 @@
     "playable_to": null,
     "sim_cover": 0.536,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5701,7 +5581,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 6.6,
     "total_lean": "Over 138.5 (season scoring says 145.1) - WATCH only, totals have no past-games test yet"
@@ -5800,11 +5680,11 @@
     "playable_to": 35.4,
     "sim_cover": 0.931,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5825,7 +5705,7 @@
      "against": 0.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -2.1
    },
@@ -5915,11 +5795,11 @@
     "playable_to": null,
     "sim_cover": 0.504,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5940,7 +5820,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 2.1
    },
@@ -6057,6 +5937,124 @@
      "our history": -0.28
     },
     "total_gap": 4.6
+   },
+   {
+    "id": "401920066",
+    "sport": "CBB",
+    "game": "Rhode Island Rams @ Liberty Flames",
+    "home": "Liberty Flames",
+    "away": "Rhode Island Rams",
+    "time": "Fri 3:30 PM CT",
+    "start": "2026-11-20T21:30Z",
+    "book": "DraftKings",
+    "line": "URI -1.5",
+    "home_line": 1.5,
+    "home_line_open": 2.5,
+    "spread_odds": [
+     105,
+     -125
+    ],
+    "total": 141.5,
+    "total_open": 141.5,
+    "home_ml": -105,
+    "away_ml": -115,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -0.8,
+    "model_b": -0.6,
+    "games_played": [
+     5,
+     3
+    ],
+    "neutral": true,
+    "records": [
+     "5-0",
+     "3-1"
+    ],
+    "venue": "Colonial Hall",
+    "tv": "CBSSN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Dylan Williamson",
+      "Jonah Hinton",
+      "Matas Deniusas"
+     ],
+     [
+      "Cooper Campbell",
+      "Eli Sancomb"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     5,
+     3
+    ],
+    "form5": [
+     16.2,
+     null
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Rams 5 day(s), Flames 3 day(s)",
+     "Line moved 1 pts toward Liberty Flames since open (+2.5 to +1.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.0,
+    "gap_a": 0.7,
+    "gap_b": 0.9,
+    "gap_min": 0.9,
+    "pick": "Liberty Flames +1.5",
+    "price": -125,
+    "side": "home",
+    "fair_line": 0.7,
+    "playable_to": null,
+    "sim_cover": 0.528,
+    "history": {
+     "adj": 0.22,
+     "key": "CBB spread dog",
+     "w": 91,
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.0,
+    "components": {
+     "efficiency": 0.1,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.22
+    },
+    "total_gap": 8.5,
+    "total_lean": "Over 141.5 (season scoring says 150.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401924736",
@@ -6375,11 +6373,11 @@
     "playable_to": null,
     "sim_cover": 0.56,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6400,7 +6398,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 0.4
    },
@@ -6493,11 +6491,11 @@
     "playable_to": null,
     "sim_cover": 0.656,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6518,7 +6516,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 2.2
    },
@@ -6609,11 +6607,11 @@
     "playable_to": null,
     "sim_cover": 0.508,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6634,7 +6632,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 12.8,
     "total_lean": "Over 145.5 (season scoring says 158.3) - WATCH only, totals have no past-games test yet"
@@ -6725,11 +6723,11 @@
     "playable_to": null,
     "sim_cover": 0.515,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6750,7 +6748,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": 7.2,
     "total_lean": "Over 145.5 (season scoring says 152.7) - WATCH only, totals have no past-games test yet"
@@ -6883,8 +6881,8 @@
     "home_line": -3.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 140.5,
     "total_open": 143.5,
@@ -6952,7 +6950,7 @@
     "gap_b": 1.2,
     "gap_min": 1.8,
     "pick": "NC State Wolfpack -3.5",
-    "price": -112,
+    "price": -108,
     "side": "home",
     "fair_line": -5.0,
     "playable_to": null,
@@ -7077,11 +7075,11 @@
     "playable_to": null,
     "sim_cover": 0.828,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7102,7 +7100,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -10.1,
     "total_lean": "Under 150.5 (season scoring says 140.4) - WATCH only, totals have no past-games test yet"
@@ -7198,11 +7196,11 @@
     "playable_to": null,
     "sim_cover": 0.74,
     "history": {
-     "adj": 0.24,
+     "adj": 0.22,
      "key": "CBB spread dog",
      "w": 91,
-     "l": 64,
-     "text": "Our record on CBB spread dog: 91-64 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 65,
+     "text": "Our record on CBB spread dog: 91-65 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7223,7 +7221,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.22
     },
     "total_gap": -5.4
    },
