@@ -3,7 +3,7 @@ Usage: python -m board.run   (or --date YYYY-MM-DD, --weekly to force the weekly
 """
 import sys, traceback
 from .common import today_ct, load, save, SPORTS, now_ct
-from . import card, grade, site, review, notify, props, entries
+from . import card, grade, site, review, notify, props, entries, learn
 import datetime
 
 
@@ -23,6 +23,11 @@ def main():
         cards.append(c); print(sport, len(c["games"]), "games", sum(1 for r in c["games"] if r["decision"] in ("CASH", "PAPER")), "calls")
     grade.moved_games(cards, date)
     grade.lock_mains(cards, date)
+    mem = {}
+    try:  # the Board's memory: refresh what it has learned, then make today's learned decisions
+        mem = learn.update(); learn.apply(cards, mem, date, load("picks.json", []))
+    except Exception:
+        traceback.print_exc()
     enforce_caps(cards)
     save(f"cards/card_{date}.json", cards)
     picks = grade.log_picks(cards, date)
@@ -51,6 +56,10 @@ def main():
         entries.sync(); entries.grade()  # your own prop tickets (My entries)
         tmr = (datetime.datetime.strptime(date, "%Y-%m-%d") + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         pr = props.build([date, tmr], cards_by_id={r["id"]: r for c in cards for r in c["games"]})
+        try:
+            learn.apply_props(pr["props"], mem)
+        except Exception:
+            traceback.print_exc()
         props.log(pr["props"]); props.log_lines(pr["props"])
         if pr.get("ok"):
             pr["card"] = props.card(pr["props"], date)

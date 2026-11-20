@@ -301,7 +301,7 @@ class Kept(unittest.TestCase):
             common.save("parlays.json", [])
             rows = [row("a", 7.2, 2), row("b", 6.7, 3), row("c", 6.5, 4)]
             out = grade.build_parlays([{"games": rows}], d, rows)
-            assert [x["legs"] for x in out] == [["a", "b"]] and out[0]["decision"] == "PAPER"
+            assert [x["legs"] for x in out] == [["a", "b"]] and out[0]["decision"] == "CASH" and out[0]["stake"] == 15  # 11/20: every parlay is a $15 ticket
             late = [row("a", 7.2, -1), row("b", 6.7, -0.5), row("c", 6.5, 4)]          # both games have started
             out = grade.build_parlays([{"games": late}], d, late)
             assert [x["legs"] for x in out] == [["a", "b"]] and [x["legs"] for x in common.load("parlays.json", []) if x["date"] == d] == [["a", "b"]]
@@ -383,3 +383,41 @@ class Review(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Learning(unittest.TestCase):
+    def _picks(self, kind_pick, w, l, conf=6.2, sport="CBB"):
+        return [{"sport": sport, "pick": kind_pick, "price": -110, "conf": conf, "result": "Won" if i < w else "Lost"} for i in range(w + l)]
+
+    def test_streak_needs_sample(self):
+        from board import learn
+        b = learn.buckets(self._picks("Team +22.5", 9, 1))["CBB dog 20+"]
+        self.assertEqual(b["status"], "learning")  # 9-1 is not proof
+
+    def test_proven_winner_and_loser(self):
+        from board import learn
+        self.assertEqual(learn.buckets(self._picks("Team +22.5", 23, 9))["CBB dog 20+"]["status"], "proven winner")
+        self.assertEqual(learn.buckets(self._picks("Team -4", 12, 22))["CBB fav"]["status"], "proven loser")
+
+    def test_apply_learned_single(self):
+        from board import learn
+        mem = {"buckets": learn.buckets(self._picks("Team +22.5", 23, 9))}
+        rows = [{"id": str(i), "pick": f"T{i} +21.5", "sport": "CBB", "decision": "PAPER", "conf": 6.0, "models_agree": True, "reason": ""} for i in range(4)]
+        learn.apply([{"games": rows}], mem, "2026-11-20", [])
+        got = [r for r in rows if r.get("learned")]
+        self.assertEqual(len(got), learn.MAX_LEARNED)
+        self.assertTrue(all(r["decision"] == "CASH" and r["stake"] == learn.LEARN_STAKE for r in got))
+
+    def test_caution_cuts_stake(self):
+        from board import learn
+        mem = {"buckets": learn.buckets(self._picks("Team -4", 12, 22, conf=7.5))}
+        r = {"id": "x", "pick": "Team -3", "sport": "CBB", "decision": "CASH", "conf": 7.5, "stake": 25, "reason": ""}
+        learn.apply([{"games": [r]}], mem, "2026-11-20", [])
+        self.assertEqual(r["stake"], learn.LEARN_STAKE)
+
+    def test_prop_buckets(self):
+        from board import learn
+        rows = [{"s": "NBA", "t": "points", "mh": 0.5, "y": 1 if i % 10 < 6 else 0} for i in range(1000)]
+        b = learn.prop_buckets(rows)
+        self.assertEqual(b["NBA points higher"]["status"], "proven winner")
+        self.assertEqual(b["NBA points lower"]["status"], "learning")

@@ -667,6 +667,11 @@ def grade_lines():
         if v == b["line"]:
             continue
         y = 1 if v > b["line"] else 0
+        try:  # keep every graded line in the Board's memory instead of throwing it away
+            from .learn import remember_line
+            remember_line(b, y, b["start"][:10])
+        except Exception:
+            pass
         calib["n"] += 1
         for w in WGRID:
             q = min(0.99, max(0.01, b["mh"] + w * (b["pr"] - b["mh"])))

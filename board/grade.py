@@ -4,7 +4,7 @@ import datetime
 from .common import load, save, now_ct, ct_time
 from . import espn
 
-KEEP = ("id", "sport", "game", "home", "away", "start", "pick", "decision", "stake", "conf", "components", "gap_a", "gap_b", "gap_min",
+KEEP = ("learned", "learned_caution", "id", "sport", "game", "home", "away", "start", "pick", "decision", "stake", "conf", "components", "gap_a", "gap_b", "gap_min",
         "price", "fair_line", "playable_to", "side", "home_line", "home_ml", "away_ml", "flags", "against", "invalidation", "reason",
         "model_a", "model_b", "model_a_name", "model_b_name", "test_record", "tier", "day", "book", "goalies", "history")
 
@@ -47,7 +47,7 @@ def lock_mains(cards, date):
                 continue
             if r.get("decision") != "CASH" or r.get("pick") != p["pick"]:
                 r["now_says"] = f"{r.get('decision')} {r.get('pick') or ''} {r.get('conf') or ''}".strip()
-            for k in ("pick", "stake", "conf", "components", "side", "fair_line", "playable_to", "test_record", "history"):
+            for k in ("pick", "stake", "conf", "components", "side", "fair_line", "playable_to", "test_record", "history", "learned", "learned_caution"):
                 if p.get(k) is not None:
                     r[k] = p[k]
             r["decision"] = "CASH"; r["locked"] = True
@@ -201,7 +201,7 @@ def build_parlays(cards, date, picks):
         am = round((dec - 1) * 100)
         num = next(n for n in (1, 2, 3) if f"Parlay {n}" not in {x["name"] for x in out})
         out.append({"date": date, "name": f"Parlay {num}", "legs": [a["id"], leg["id"]], "picks": [a["pick"], leg["pick"]],
-                    "price": f"+{am}", "decision": "CASH" if a["decision"] == "CASH" else "PAPER", "stake": 15 if a["decision"] == "CASH" else 0,
+                    "price": f"+{am}", "decision": "CASH", "stake": 15,  # 11/20 owner: "Parlays are parlays no matter the sport" - every built parlay is a $15 ticket
                     "why": f"Anchor {a['pick']} ({a['conf']}) + leg {leg['pick']} ({leg['conf']}). Only one confident pick per parlay." + hist,
                     "result": None, "made_at": now.strftime("%H:%M")})
     pars.extend(x for x in out if x not in keep); save("parlays.json", pars)
