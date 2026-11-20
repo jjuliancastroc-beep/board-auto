@@ -23243,5 +23243,83 @@
   "review_log": [
    "11/19 11:34 AM: checked line and injuries - no change"
   ]
+ },
+ {
+  "id": "401910020",
+  "sport": "NBA",
+  "game": "Portland Trail Blazers @ Milwaukee Bucks",
+  "home": "Milwaukee Bucks",
+  "away": "Portland Trail Blazers",
+  "start": "2026-11-20T01:00Z",
+  "pick": "Portland Trail Blazers -10.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.4,
+  "components": {
+   "efficiency": 0.67,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.2,
+   "our history": -0.12
+  },
+  "gap_a": -0.5,
+  "gap_b": -6.0,
+  "gap_min": 6.0,
+  "price": -106,
+  "fair_line": -13.7,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 10.5,
+  "home_ml": 326,
+  "away_ml": -415,
+  "flags": [
+   "Milwaukee Bucks on a back-to-back"
+  ],
+  "against": [
+   "Market moved away from this side since open"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -11.0,
+  "model_b": -16.5,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.12,
+   "key": "NBA spread fav",
+   "w": 8,
+   "l": 10,
+   "text": "Our record on NBA spread fav: 8-10 (last 60 days, recent counts more) -> -0.12 to confidence"
+  },
+  "date": "2026-11-19",
+  "line_at_pick": "POR -10.5",
+  "logged_at": "18:36",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/19 06:36 PM: checked line and injuries - no change"
+  ]
  }
 ]
