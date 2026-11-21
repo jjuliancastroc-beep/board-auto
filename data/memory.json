@@ -25,20 +25,20 @@
    "status": "learning"
   },
   "CBB dog under 10": {
-   "w": 36,
+   "w": 38,
    "l": 28,
-   "units": 4.25,
-   "be": 0.5288,
-   "shrunk": 0.5351,
+   "units": 5.9,
+   "be": 0.5294,
+   "shrunk": 0.5431,
    "status": "learning"
   },
   "CBB conf 6-6.9": {
-   "w": 71,
+   "w": 73,
    "l": 56,
-   "units": 7.4,
-   "be": 0.5285,
-   "shrunk": 0.5424,
-   "status": "learning"
+   "units": 9.05,
+   "be": 0.5288,
+   "shrunk": 0.5475,
+   "status": "proven winner"
   },
   "CBB dog 20+": {
    "w": 23,
@@ -302,6 +302,13 @@
    "from": "learning",
    "to": "proven loser",
    "text": "NHL ML fav: 18-20 (47%, -7.9 units). Counted as 48.9% after the pull toward 50/50; break-even 60.1%. Now proven loser - cash picks of this kind drop to $10."
+  },
+  {
+   "date": "2026-11-20",
+   "what": "CBB conf 6-6.9",
+   "from": "learning",
+   "to": "proven winner",
+   "text": "CBB conf 6-6.9: 73-56 (57%, +9.1 units). Counted as 54.8% after the pull toward 50/50; break-even 52.9%. Now proven winner - lower-graded picks of this kind can be played at $10."
   }
  ],
  "learned": {
@@ -382,5 +389,5 @@
    "status": "learning"
   }
  },
- "updated": "11/20 07:26 PM"
+ "updated": "11/20 07:51 PM"
 }
