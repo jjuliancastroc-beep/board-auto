@@ -84,18 +84,25 @@ def main():
 
 
 def enforce_caps(cards):
-    """Max 3 mains, 2 tickets per game, $150 for singles so two $15 parlays fit under $180. Locked mains count first;
-    extra cash picks drop to paper."""
-    cash = sorted([r for c in cards for r in c["games"] if r["decision"] == "CASH"], key=lambda r: (not r.get("locked"), -r["conf"]))
+    """Max 3 mains, 2 tickets per game, $150 for mains so two $15 parlays fit under $180. Locked mains count first;
+    extra cash picks drop to paper.
+    Learned $10 plays (11/21 fix) are their own lane: they never take a main's slot. Most 2 a day, and they only stay if
+    mains + learned + two $15 parlays fit under $180 - otherwise the learned play is the one that drops."""
+    cash = [r for c in cards for r in c["games"] if r["decision"] == "CASH" and not r.get("carried")]
+    mains = sorted([r for r in cash if not r.get("learned")], key=lambda r: (not r.get("locked"), -r["conf"]))
+    learned = sorted([r for r in cash if r.get("learned")], key=lambda r: (not r.get("locked"), -r["conf"]))
     total = 0; n = 0
-    for r in cash:
-        if r.get("carried"):
-            continue  # another day's ticket whose game moved here - doesn't use up today's slots
+    for r in mains:
         if not r.get("locked") and (n >= 3 or total + r["stake"] > 150):
             r["decision"] = "PAPER"; r["stake"] = 0; r["reason"] += " Dropped to paper by the day cap (3 mains, $150)."
         else:
             total += r["stake"]; n += 1
-
+    k = 0
+    for r in learned:
+        if not r.get("locked") and (k >= 2 or total + r["stake"] + 30 > 180):
+            r["decision"] = "PAPER"; r["stake"] = 0; r.pop("learned", None); r["reason"] += " Learned play dropped - no room under the $180 day cap."
+        else:
+            total += r["stake"]; k += 1
 
 if __name__ == "__main__":
     main()

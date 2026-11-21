@@ -155,7 +155,7 @@ def apply(cards, mem, date, picks):
         if already >= MAX_LEARNED or r["id"] in games:
             continue
         r.update(decision="CASH", stake=LEARN_STAKE, learned=True)
-        r["reason"] = (f"Learned play: graded {r['conf']} (under the usual bar), but {kname} is {b['w']}-{b['l']} ({b['units']:+.1f} units) on the Board - "
+        r["reason"] = (f"Learned play: graded {r['conf']} " + ("(under the usual bar)" if (r.get("conf") or 0) < 7 else "(in a paper sport)") + f", but {kname} is {b['w']}-{b['l']} ({b['units']:+.1f} units) on the Board - "
                        f"{b['shrunk'] * 100:.1f}% after the pull toward 50/50 vs {b['be'] * 100:.1f}% break-even. Smaller stake (${LEARN_STAKE}) because the grade is lower. ") + r["reason"]
         already += 1; games.add(r["id"])
 

@@ -421,3 +421,15 @@ class Learning(unittest.TestCase):
         b = learn.prop_buckets(rows)
         self.assertEqual(b["NBA points higher"]["status"], "proven winner")
         self.assertEqual(b["NBA points lower"]["status"], "learning")
+
+
+class LearnedLane(unittest.TestCase):
+    def test_learned_never_blocks_a_main(self):
+        """11/21: two learned $10 plays took slots and Northwestern -3 (7.1) got dropped by the 3-main cap."""
+        from board import run
+        rows = [{"id": "a", "decision": "CASH", "stake": 25, "conf": 7.0, "locked": True, "reason": ""},
+                {"id": "b", "decision": "CASH", "stake": 10, "conf": 7.0, "locked": True, "learned": True, "reason": ""},
+                {"id": "c", "decision": "CASH", "stake": 10, "conf": 6.6, "locked": True, "learned": True, "reason": ""},
+                {"id": "d", "decision": "CASH", "stake": 25, "conf": 7.1, "reason": ""}]
+        run.enforce_caps([{"games": rows}])
+        self.assertEqual([r["decision"] for r in rows], ["CASH"] * 4)
