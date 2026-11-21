@@ -28535,14 +28535,16 @@
   "date": "2026-11-21",
   "line_at_pick": "TEX -20.5",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Arkansas Razorbacks 3, Texas Longhorns 45",
+  "close": "TEX -18.5",
+  "clv": 2.0,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -29406,14 +29408,16 @@
   "date": "2026-11-21",
   "line_at_pick": "ARMY -1.5",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Army Black Knights 46, Binghamton Bearcats 67",
+  "close": "ARMY -1.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.95,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -31088,14 +31092,16 @@
   "date": "2026-11-21",
   "line_at_pick": "CGY -162",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Chicago Blackhawks 4, Calgary Flames 3",
+  "close": "CGY -162",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -31885,6 +31891,87 @@
   "review": "HOLD",
   "review_log": [
    "11/21 05:23 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401869938",
+  "sport": "CFB",
+  "game": "Arkansas State Red Wolves @ Louisiana Tech Bulldogs",
+  "home": "Louisiana Tech Bulldogs",
+  "away": "Arkansas State Red Wolves",
+  "start": "2026-11-22T00:00Z",
+  "pick": "Arkansas State Red Wolves +15.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.2,
+  "components": {
+   "efficiency": 0.56,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.3,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.15
+  },
+  "gap_a": -1.1,
+  "gap_b": -3.4,
+  "gap_min": 3.4,
+  "price": -112,
+  "fair_line": 13.2,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -15.5,
+  "home_ml": -625,
+  "away_ml": 455,
+  "flags": [
+   "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
+  ],
+  "against": [
+   "Market moved away from this side since open",
+   "Last 5 games point the other way (our side +0.0 a game, theirs +23.4)"
+  ],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 14.4,
+  "model_b": 12.1,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 133,
+   "l": 135,
+   "n": 268,
+   "win": 0.496
+  },
+  "tier": "G5/mixed",
+  "day": "Sat",
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.15,
+   "key": "CFB spread dog",
+   "w": 17,
+   "l": 19,
+   "text": "Our record on CFB spread dog: 17-19 (last 60 days, recent counts more) -> -0.15 to confidence"
+  },
+  "date": "2026-11-21",
+  "line_at_pick": "LT -15.5",
+  "logged_at": "17:55",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/21 05:55 PM: checked line and injuries - no change"
   ]
  }
 ]
