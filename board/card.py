@@ -98,7 +98,7 @@ def build(sport, date, bt, btl, settings):
                "games_played": [gp.get(g["aid"], 0), gp.get(g["hid"], 0)], "neutral": g["neutral"], "records": [g.get("arecord"), g.get("hrecord")],
                "venue": g.get("venue"), "tv": g.get("tv"), "indoor": g.get("indoor"),
                "inj_home": key_injuries(inj, g["home"]), "inj_away": key_injuries(inj, g["away"]),
-               "stars": [g.get("aleaders") or [], g.get("hleaders") or []], "goalies": [g.get("agoalie"), g.get("hgoalie")],
+               "stars": [sorted(set(g.get("aleaders") or []) | set(_stars().get(g.get("away"), []))), sorted(set(g.get("hleaders") or []) | set(_stars().get(g.get("home"), [])))], "goalies": [g.get("agoalie"), g.get("hgoalie")],
                "rest": [rest_days(past, g["aid"], g["date"]), rest_days(past, g["hid"], g["date"])],
                "form5": [round(F5[g["aid"]][0], 1) if F5.get(g["aid"], (0, 0))[1] >= 4 else None, round(F5[g["hid"]][0], 1) if F5.get(g["hid"], (0, 0))[1] >= 4 else None],
                "decision": "PASS", "reason": "", "flags": [], "factors": [], "against": [], "invalidation": []}
@@ -168,6 +168,19 @@ def add_factors(row, sport, cfg):
                 fl.append(f"Star {x['player']} ({team}) {x['status']}")
                 if st != "out":
                     row.setdefault("veto_sides", []).append("game")
+
+
+_STARS = None
+def _stars():
+    """NBA teams' top scorers this season (ESPN's leaders list leaves out injured stars - fixed 11/21)."""
+    global _STARS
+    if _STARS is None:
+        try:
+            from .keyplayers import stars
+            _STARS = stars()
+        except Exception:
+            _STARS = {}
+    return _STARS
 
 
 def playable(line, gap_min, bar):

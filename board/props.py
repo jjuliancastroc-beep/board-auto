@@ -455,6 +455,12 @@ def build(dates, cards_by_id=None):
             scoring[s] = team_scoring(s, today)
         except Exception:
             scoring[s] = {}
+    stars_ = {}
+    try:  # each NBA team's top scorers this season (ESPN's leaders list skips injured players)
+        from . import keyplayers
+        stars_ = keyplayers.stars(keyplayers.update())
+    except Exception:
+        pass
     jobs = []
     for l in want:
         g = l.get("_g")
@@ -501,7 +507,7 @@ def build(dates, cards_by_id=None):
         c = cards_by_id.get(g["id"]) or {}
         rest = c.get("rest") or [None, None]
         ctx["b2b"] = (rest[1] if home else rest[0]) == 1 if rest else False
-        leaders = set((g.get("hleaders") if home else g.get("aleaders")) or [])
+        leaders = set((g.get("hleaders") if home else g.get("aleaders")) or []) | set(stars_.get(a["team"], []))
         ctx["w"] = W; ctx["wb"] = WB; ctx["test"] = test
         ctx["opp_factor"] = opp_f.get((l["sport"], l["stat"], ctx["opp_id"]), (1.0, 0))
         ctx["teammates_out"] = [r["player"] for r in inj.get(l["sport"], {}).get(a["team"], []) if str(r.get("status", "")).lower() == "out" and r["player"] in leaders and norm(r["player"]) != norm(a["name"])]
