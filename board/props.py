@@ -507,6 +507,7 @@ def build(dates, cards_by_id=None):
         ctx["teammates_out"] = [r["player"] for r in inj.get(l["sport"], {}).get(a["team"], []) if str(r.get("status", "")).lower() == "out" and r["player"] in leaders and norm(r["player"]) != norm(a["name"])]
         try:
             row = evaluate(l, a, lg["cur"], lg["prev"], ctx)
+            row["tmo"] = len(ctx.get("teammates_out") or [])  # key teammates ruled out - tracked against Underdog (11/21)
         except Exception as e:
             row = {**l, "call": "PASS", "conf": 0, "reason": f"Could not evaluate: {e}", "label": l["stat"]}
         row.pop("_g", None); row["date"] = ct_time(l["start"]).strftime("%Y-%m-%d"); row["time"] = ct_time(l["start"]).strftime("%a %-I:%M %p CT")
@@ -635,7 +636,7 @@ def log_lines(props):
             continue
         first = (book.get(p["id"]) or {}).get("first") or snapshot(p)
         book[p["id"]] = {"first": first, "sport": p["sport"], "stat": p["stat"], "aid": p["espn_id"], "eid": p["event_id"], "start": p["start"], "line": p["line"],
-                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher"), "conf": p.get("conf")}
+                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher"), "conf": p.get("conf"), "tmo": p.get("tmo") or 0}
     save("props_lines.json", book)
     return book
 

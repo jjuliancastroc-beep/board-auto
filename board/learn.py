@@ -30,6 +30,7 @@ LEARN_STAKE = 10
 MAX_LEARNED = 2
 PAUSE_N, PAUSE_UNITS, PAUSE_DAYS = 20, -4.0, 7
 PROP_MIN_N, PROP_PRIOR, PROP_EDGE = 400, 100, 0.04
+PROP_STRONG_N = 1000
 LINES = "memory_lines.jsonl"
 
 
@@ -165,7 +166,7 @@ def apply(cards, mem, date, picks):
 def remember_line(b, y, date):
     """One graded Underdog line -> memory_lines.jsonl (sport, stat, line, Underdog's chance of Higher, books' chance, what happened)."""
     path = os.path.join(ROOT, "data", LINES)
-    row = {"d": date, "s": b["sport"], "t": b["stat"], "ln": b["line"], "mh": b["mh"], "bk": b.get("bk"), "y": y, "c": b.get("conf"), "sd": b.get("side")}
+    row = {"d": date, "s": b["sport"], "t": b["stat"], "ln": b["line"], "mh": b["mh"], "bk": b.get("bk"), "y": y, "c": b.get("conf"), "sd": b.get("side"), "tm": b.get("tmo") or 0}
     with open(path, "a") as f:
         f.write(json.dumps(row, separators=(",", ":")) + "\n")
 
@@ -186,6 +187,13 @@ def prop_buckets(rows=None):
         for side in ("higher", "lower"):
             a = agg.setdefault(f"{r['s']} {r['t']} {side}", {"n": 0, "hit": 0, "said": 0.0})
             a["n"] += 1; a["hit"] += r["y"] if side == "higher" else 1 - r["y"]; a["said"] += r["mh"] if side == "higher" else 1 - r["mh"]
+    for r in rows:   # 11/21: lines where a key teammate is ruled out - does Underdog move the line enough?
+        if not r.get("tm"):
+            continue
+        for key in (f"{r['s']} {r['t']}", f"{r['s']} all stats"):
+            for side in ("higher", "lower"):
+                a = agg.setdefault(f"{key} {side}, teammate out", {"n": 0, "hit": 0, "said": 0.0})
+                a["n"] += 1; a["hit"] += r["y"] if side == "higher" else 1 - r["y"]; a["said"] += r["mh"] if side == "higher" else 1 - r["mh"]
     for r in rows:   # 11/21 owner's question: does a high prop confidence win by itself, even with no gap to Underdog?
         if r.get("c") is None or r.get("sd") not in ("higher", "lower"):
             continue
@@ -198,7 +206,8 @@ def prop_buckets(rows=None):
         s = (a["hit"] + PROP_PRIOR * said) / (a["n"] + PROP_PRIOR)   # pulled toward Underdog's own number
         gap = s - said
         out[k] = {"n": a["n"], "hit": round(a["hit"] / a["n"], 4), "said": round(said, 4), "gap": round(gap, 4),
-                  "status": "proven winner" if a["n"] >= PROP_MIN_N and gap >= PROP_EDGE else "learning"}
+                  "status": "proven winner" if a["n"] >= PROP_MIN_N and gap >= PROP_EDGE else "learning",
+                  "strong": a["n"] >= PROP_STRONG_N and gap >= PROP_EDGE}   # strong = can be a props-card single (owner 11/21: "go all in" once it proves out)
     return out
 
 
@@ -210,6 +219,10 @@ def apply_props(props, mem, cap=6):
             continue
         mh = p["mkt"] if p.get("side") == "higher" else 1 - p["mkt"]
         tries = [(side, P.get(f"{p['sport']} {p['stat']} {side}"), f"{side} on {p['sport']} {p['stat']}") for side in ("higher", "lower")]
+        if p.get("tmo"):
+            for key, what in ((f"{p['sport']} all stats", f"{p['sport']} props with a key teammate out"), (f"{p['sport']} {p['stat']}", f"{p['sport']} {p['stat']} with a key teammate out")):
+                for side in ("higher", "lower"):
+                    tries.insert(0, (side, P.get(f"{key} {side}, teammate out"), f"{side} on {what}"))
         if p.get("side") in ("higher", "lower") and p.get("conf") is not None:
             tries.insert(0, (p["side"], P.get(f"{p['sport']} conf {band(p['conf'])} leaned side"), f"{p['sport']} props graded {band(p['conf'])} (the side it leaned)"))
         for side, b, what in tries:
@@ -217,9 +230,9 @@ def apply_props(props, mem, cap=6):
             if not b or b["status"] != "proven winner" or mk > 0.62:
                 continue
             ch = min(0.99, mk + b["gap"])
-            p.update(call="LEAN", learned=True, side=side, conf=max(p.get("conf") or 0, 5.5), p=round(ch, 3), mkt=round(mk, 3), edge=round(b["gap"] * 100, 1),
+            p.update(call="PLAY" if b.get("strong") else "LEAN", learned=True, side=side, conf=max(p.get("conf") or 0, 5.5), p=round(ch, 3), mkt=round(mk, 3), edge=round(b["gap"] * 100, 1),
                      pick=f"{p['player']} {side.title()} {p['line']:g} {p.get('label') or p['stat']}",
-                     reason=f"Learned leg: {what} has hit {b['hit'] * 100:.0f}% over {b['n']} graded Underdog lines when Underdog's price said {b['said'] * 100:.0f}%. Parlay leg only.")
+                     reason=f"Learned leg: {what} has hit {b['hit'] * 100:.0f}% over {b['n']} graded Underdog lines when Underdog's price said {b['said'] * 100:.0f}%." + (" Proven over 1,000+ lines, so it can be a single." if b.get("strong") else " Parlay leg only until 1,000+ lines."))
             n += 1
             break
     return props

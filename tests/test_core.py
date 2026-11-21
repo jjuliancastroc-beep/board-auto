@@ -441,3 +441,14 @@ class PropConfMemory(unittest.TestCase):
         rows = [{"s": "NFL", "t": "rush", "mh": 0.5, "c": 7.4, "sd": "higher", "y": 1 if i % 10 < 6 else 0} for i in range(1000)]
         b = learn.prop_buckets(rows)
         self.assertEqual(b["NFL conf 7-7.9 leaned side"]["status"], "proven winner")
+
+
+class TeammateOut(unittest.TestCase):
+    def test_teammate_out_buckets(self):
+        from board import learn
+        rows = [{"s": "NBA", "t": "points", "mh": 0.5, "tm": 1, "y": 1 if i % 10 < 6 else 0} for i in range(1200)]
+        b = learn.prop_buckets(rows)
+        self.assertTrue(b["NBA all stats higher, teammate out"]["strong"])
+        p = [{"sport": "NBA", "stat": "points", "call": "PASS", "mkt": 0.5, "side": "higher", "line": 20.5, "player": "X", "conf": 6.0, "tmo": 1}]
+        learn.apply_props(p, {"props": b})
+        self.assertEqual(p[0]["call"], "PLAY")
