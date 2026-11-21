@@ -635,7 +635,7 @@ def log_lines(props):
             continue
         first = (book.get(p["id"]) or {}).get("first") or snapshot(p)
         book[p["id"]] = {"first": first, "sport": p["sport"], "stat": p["stat"], "aid": p["espn_id"], "eid": p["event_id"], "start": p["start"], "line": p["line"],
-                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher")}
+                         "pr": p["p_raw_higher"], "mh": round(p["mkt_higher"], 4), "call": p["call"], "side": p["side"], "edge": p.get("edge"), "bk": p.get("bk_higher"), "conf": p.get("conf")}
     save("props_lines.json", book)
     return book
 

@@ -433,3 +433,11 @@ class LearnedLane(unittest.TestCase):
                 {"id": "d", "decision": "CASH", "stake": 25, "conf": 7.1, "reason": ""}]
         run.enforce_caps([{"games": rows}])
         self.assertEqual([r["decision"] for r in rows], ["CASH"] * 4)
+
+
+class PropConfMemory(unittest.TestCase):
+    def test_conf_band_bucket(self):
+        from board import learn
+        rows = [{"s": "NFL", "t": "rush", "mh": 0.5, "c": 7.4, "sd": "higher", "y": 1 if i % 10 < 6 else 0} for i in range(1000)]
+        b = learn.prop_buckets(rows)
+        self.assertEqual(b["NFL conf 7-7.9 leaned side"]["status"], "proven winner")

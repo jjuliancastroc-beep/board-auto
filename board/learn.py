@@ -165,7 +165,7 @@ def apply(cards, mem, date, picks):
 def remember_line(b, y, date):
     """One graded Underdog line -> memory_lines.jsonl (sport, stat, line, Underdog's chance of Higher, books' chance, what happened)."""
     path = os.path.join(ROOT, "data", LINES)
-    row = {"d": date, "s": b["sport"], "t": b["stat"], "ln": b["line"], "mh": b["mh"], "bk": b.get("bk"), "y": y}
+    row = {"d": date, "s": b["sport"], "t": b["stat"], "ln": b["line"], "mh": b["mh"], "bk": b.get("bk"), "y": y, "c": b.get("conf"), "sd": b.get("side")}
     with open(path, "a") as f:
         f.write(json.dumps(row, separators=(",", ":")) + "\n")
 
@@ -186,6 +186,12 @@ def prop_buckets(rows=None):
         for side in ("higher", "lower"):
             a = agg.setdefault(f"{r['s']} {r['t']} {side}", {"n": 0, "hit": 0, "said": 0.0})
             a["n"] += 1; a["hit"] += r["y"] if side == "higher" else 1 - r["y"]; a["said"] += r["mh"] if side == "higher" else 1 - r["mh"]
+    for r in rows:   # 11/21 owner's question: does a high prop confidence win by itself, even with no gap to Underdog?
+        if r.get("c") is None or r.get("sd") not in ("higher", "lower"):
+            continue
+        a = agg.setdefault(f"{r['s']} conf {band(r['c'])} leaned side", {"n": 0, "hit": 0, "said": 0.0})
+        hi = r["sd"] == "higher"
+        a["n"] += 1; a["hit"] += r["y"] if hi else 1 - r["y"]; a["said"] += r["mh"] if hi else 1 - r["mh"]
     out = {}
     for k, a in agg.items():
         said = a["said"] / a["n"]
@@ -203,15 +209,17 @@ def apply_props(props, mem, cap=6):
         if n >= cap or p.get("call") != "PASS" or p.get("mkt") is None or p.get("line") is None:
             continue
         mh = p["mkt"] if p.get("side") == "higher" else 1 - p["mkt"]
-        for side in ("higher", "lower"):
-            b = P.get(f"{p['sport']} {p['stat']} {side}")
+        tries = [(side, P.get(f"{p['sport']} {p['stat']} {side}"), f"{side} on {p['sport']} {p['stat']}") for side in ("higher", "lower")]
+        if p.get("side") in ("higher", "lower") and p.get("conf") is not None:
+            tries.insert(0, (p["side"], P.get(f"{p['sport']} conf {band(p['conf'])} leaned side"), f"{p['sport']} props graded {band(p['conf'])} (the side it leaned)"))
+        for side, b, what in tries:
             mk = mh if side == "higher" else 1 - mh
             if not b or b["status"] != "proven winner" or mk > 0.62:
                 continue
             ch = min(0.99, mk + b["gap"])
             p.update(call="LEAN", learned=True, side=side, conf=max(p.get("conf") or 0, 5.5), p=round(ch, 3), mkt=round(mk, 3), edge=round(b["gap"] * 100, 1),
                      pick=f"{p['player']} {side.title()} {p['line']:g} {p.get('label') or p['stat']}",
-                     reason=f"Learned leg: {side} on {p['sport']} {p['stat']} has hit {b['hit'] * 100:.0f}% over {b['n']} graded Underdog lines when Underdog's price said {b['said'] * 100:.0f}%. Parlay leg only.")
+                     reason=f"Learned leg: {what} has hit {b['hit'] * 100:.0f}% over {b['n']} graded Underdog lines when Underdog's price said {b['said'] * 100:.0f}%. Parlay leg only.")
             n += 1
             break
     return props
