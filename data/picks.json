@@ -26791,14 +26791,16 @@
   "date": "2026-11-21",
   "line_at_pick": "WAKE -21",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Push",
+  "final": "Wake Forest Demon Deacons 50, Georgia Tech Yellow Jackets 29",
+  "close": "WAKE -22.5",
+  "clv": -1.5,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -27021,14 +27023,16 @@
   "date": "2026-11-21",
   "line_at_pick": "OSU -3",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Ohio State Buckeyes 28, Nebraska Cornhuskers 31",
+  "close": "OSU -3.5",
+  "clv": 0.5,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -27728,14 +27732,16 @@
   "date": "2026-11-21",
   "line_at_pick": "BYU -4.5",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "BYU Cougars 31, Kansas Jayhawks 29",
+  "close": "BYU -4.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -27806,14 +27812,16 @@
   "date": "2026-11-21",
   "line_at_pick": "FLA -13.5",
   "logged_at": "00:03",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "Vanderbilt Commodores 27, Florida Gators 34",
+  "close": "FLA -13.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/21 12:03 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.91,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -31612,6 +31620,86 @@
   "review": "HOLD",
   "review_log": [
    "11/21 12:48 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401910028",
+  "sport": "NBA",
+  "game": "Boston Celtics @ Sacramento Kings",
+  "home": "Sacramento Kings",
+  "away": "Boston Celtics",
+  "start": "2026-11-22T03:00Z",
+  "pick": "Boston Celtics -13.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.1,
+  "components": {
+   "efficiency": 0.54,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.2,
+   "our history": -0.27
+  },
+  "gap_a": 2.4,
+  "gap_b": -4.9,
+  "gap_min": 4.9,
+  "price": -112,
+  "fair_line": -14.7,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 13.5,
+  "home_ml": 554,
+  "away_ml": -790,
+  "flags": [
+   "Sacramento Kings on a back-to-back"
+  ],
+  "against": [
+   "Market moved away from this side since open"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -11.1,
+  "model_b": -18.4,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.27,
+   "key": "NBA spread fav",
+   "w": 9,
+   "l": 15,
+   "text": "Our record on NBA spread fav: 9-15 (last 60 days, recent counts more) -> -0.27 to confidence"
+  },
+  "date": "2026-11-21",
+  "line_at_pick": "BOS -13.5",
+  "logged_at": "14:54",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/21 02:54 PM: checked line and injuries - no change"
   ]
  }
 ]
