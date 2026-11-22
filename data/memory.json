@@ -2,26 +2,26 @@
  "buckets": {
   "CFB dog under 10": {
    "w": 11,
-   "l": 14,
-   "units": -3.95,
-   "be": 0.5219,
-   "shrunk": 0.48,
+   "l": 15,
+   "units": -4.95,
+   "be": 0.5221,
+   "shrunk": 0.4737,
    "status": "learning"
   },
   "CFB conf 6-6.9": {
    "w": 12,
-   "l": 22,
-   "units": -11.12,
-   "be": 0.5234,
-   "shrunk": 0.4405,
+   "l": 23,
+   "units": -12.12,
+   "be": 0.5233,
+   "shrunk": 0.4353,
    "status": "proven loser"
   },
   "CFB fav": {
    "w": 7,
-   "l": 16,
-   "units": -9.45,
-   "be": 0.5229,
-   "shrunk": 0.4384,
+   "l": 17,
+   "units": -10.45,
+   "be": 0.5228,
+   "shrunk": 0.4324,
    "status": "learning"
   },
   "CBB dog under 10": {
@@ -66,10 +66,10 @@
   },
   "NHL ML fav": {
    "w": 24,
-   "l": 22,
-   "units": -5.74,
-   "be": 0.6004,
-   "shrunk": 0.5104,
+   "l": 24,
+   "units": -7.74,
+   "be": 0.6015,
+   "shrunk": 0.5,
    "status": "proven loser"
   },
   "NHL conf 7-7.9": {
@@ -82,11 +82,11 @@
   },
   "NHL conf 6-6.9": {
    "w": 21,
-   "l": 14,
-   "units": 4.42,
-   "be": 0.5622,
-   "shrunk": 0.5412,
-   "status": "learning"
+   "l": 16,
+   "units": 2.42,
+   "be": 0.5657,
+   "shrunk": 0.5287,
+   "status": "proven loser"
   },
   "NHL conf 5.5-5.9": {
    "w": 8,
@@ -106,10 +106,10 @@
   },
   "NBA fav": {
    "w": 10,
-   "l": 16,
-   "units": -6.99,
-   "be": 0.523,
-   "shrunk": 0.4605,
+   "l": 17,
+   "units": -7.99,
+   "be": 0.5232,
+   "shrunk": 0.4545,
    "status": "learning"
   },
   "NBA conf 6-6.9": {
@@ -170,10 +170,10 @@
   },
   "CFB conf 5.5-5.9": {
    "w": 15,
-   "l": 13,
-   "units": 0.84,
-   "be": 0.5235,
-   "shrunk": 0.5128,
+   "l": 14,
+   "units": -0.16,
+   "be": 0.5237,
+   "shrunk": 0.5063,
    "status": "learning"
   },
   "CFB conf under 5.5": {
@@ -194,10 +194,10 @@
   },
   "NBA conf under 5.5": {
    "w": 3,
-   "l": 3,
-   "units": -0.29,
-   "be": 0.5291,
-   "shrunk": 0.5,
+   "l": 4,
+   "units": -1.29,
+   "be": 0.529,
+   "shrunk": 0.4912,
    "status": "learning"
   },
   "NFL fav": {
@@ -337,6 +337,13 @@
    "from": "proven loser",
    "to": "learning",
    "text": "NHL conf 6-6.9: 21-13 (62%, +5.4 units). Counted as 54.8% after the pull toward 50/50; break-even 56.6%. Now learning - back to watching."
+  },
+  {
+   "date": "2026-11-22",
+   "what": "NHL conf 6-6.9",
+   "from": "learning",
+   "to": "proven loser",
+   "text": "NHL conf 6-6.9: 21-16 (57%, +2.4 units). Counted as 52.9% after the pull toward 50/50; break-even 56.6%. Now proven loser - cash picks of this kind drop to $10."
   }
  ],
  "learned": {
@@ -1051,5 +1058,5 @@
    "strong": false
   }
  },
- "updated": "11/21 11:50 PM"
+ "updated": "11/22 12:18 AM"
 }
