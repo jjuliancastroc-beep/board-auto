@@ -32616,14 +32616,16 @@
   "date": "2026-11-22",
   "line_at_pick": "GW -5.5",
   "logged_at": "00:18",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "George Washington Revolutionaries 78, Western Kentucky Hilltoppers 86",
+  "close": "GW -3.5",
+  "clv": 2.0,
   "review": "HOLD",
   "review_log": [
    "11/22 12:18 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.87,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -32694,14 +32696,16 @@
   "date": "2026-11-22",
   "line_at_pick": "W&M -2.5",
   "logged_at": "00:18",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "William & Mary Tribe 75, Youngstown State Penguins 63",
+  "close": "W&M -2.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/22 12:18 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -33816,14 +33820,16 @@
   "date": "2026-11-22",
   "line_at_pick": "SDAK -1.5",
   "logged_at": "07:27",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Won",
+  "final": "South Dakota Coyotes 74, Utah Tech Trailblazers 73",
+  "close": "UTU -1.5",
+  "clv": 3.0,
   "review": "HOLD",
   "review_log": [
    "11/22 07:27 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": 0.77,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -34057,6 +34063,167 @@
   "review": "HOLD",
   "review_log": [
    "11/22 10:22 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401910032",
+  "sport": "NBA",
+  "game": "Denver Nuggets @ Chicago Bulls",
+  "home": "Chicago Bulls",
+  "away": "Denver Nuggets",
+  "start": "2026-11-23T00:00Z",
+  "pick": "Chicago Bulls +9.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 5.7,
+  "components": {
+   "efficiency": 0.51,
+   "veto": 1.5,
+   "models": 1.5,
+   "starters": 0.0,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.18
+  },
+  "gap_a": 6.5,
+  "gap_b": 4.6,
+  "gap_min": 4.6,
+  "price": -103,
+  "fair_line": 4.0,
+  "playable_to": 9.4,
+  "side": "home",
+  "home_line": 9.5,
+  "home_ml": 340,
+  "away_ml": -437,
+  "flags": [
+   "Star Norman Powell (Chicago Bulls) Out",
+   "Star Caleb Wilson (Chicago Bulls) Out"
+  ],
+  "against": [],
+  "invalidation": [
+   "Line moves past +9.4",
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Both models agree, but confidence 5.7 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
+  "model_a": -3.0,
+  "model_b": -4.9,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.18,
+   "key": "spread dog",
+   "w": 191,
+   "l": 145,
+   "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+  },
+  "date": "2026-11-22",
+  "line_at_pick": "DEN -9.5",
+  "logged_at": "16:23",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/22 04:23 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401910030",
+  "sport": "NBA",
+  "game": "Oklahoma City Thunder @ Miami Heat",
+  "home": "Miami Heat",
+  "away": "Oklahoma City Thunder",
+  "start": "2026-11-22T23:00Z",
+  "pick": "Oklahoma City Thunder +4.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 4.4,
+  "components": {
+   "efficiency": 0.6,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 0.0,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.18
+  },
+  "gap_a": -5.4,
+  "gap_b": -3.6,
+  "gap_min": 5.4,
+  "price": -106,
+  "fair_line": -0.0,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -4.5,
+  "home_ml": -194,
+  "away_ml": 162,
+  "flags": [
+   "Star Shai Gilgeous-Alexander (Oklahoma City Thunder) Out",
+   "Star Giannis Antetokounmpo (Miami Heat) Out"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side +2.4 a game, theirs +12.6)"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -0.9,
+  "model_b": 0.9,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.18,
+   "key": "spread dog",
+   "w": 191,
+   "l": 145,
+   "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+  },
+  "date": "2026-11-22",
+  "line_at_pick": "MIA -4.5",
+  "logged_at": "16:23",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/22 04:23 PM: checked line and injuries - no change"
   ]
  }
 ]
