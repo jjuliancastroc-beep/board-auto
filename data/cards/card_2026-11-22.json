@@ -11,17 +11,17 @@
     "time": "Sun 7:20 PM CT",
     "start": "2026-11-23T01:20Z",
     "book": "Draft Kings",
-    "line": "SF -3.5",
-    "home_line": -3.5,
+    "line": "SF -4.5",
+    "home_line": -4.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -104,
-     -115
+     -116,
+     -103
     ],
-    "total": 45.5,
+    "total": 44.5,
     "total_open": 46.5,
-    "home_ml": -194,
-    "away_ml": 163,
+    "home_ml": -205,
+    "away_ml": 171,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 3.0,
@@ -139,7 +139,9 @@
     ],
     "factors": [
      "Rest: Vikings 7 day(s), 49ers 7 day(s)",
-     "Kickoff forecast: wind 4 mph (gusts 24), 61F, rain chance 57%"
+     "Line moved 1 pts toward San Francisco 49ers since open (-3.5 to -4.5 home)",
+     "Kickoff forecast: wind 4 mph (gusts 24), 61F, rain chance 79%",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [],
     "invalidation": [
@@ -148,7 +150,7 @@
     "wind": {
      "wind": 3.9,
      "gust": 23.7,
-     "rain": 57,
+     "rain": 79,
      "temp": 61.1,
      "src": "Open-Meteo"
     },
@@ -158,21 +160,21 @@
      "game",
      "game"
     ],
-    "gap_a": -0.5,
-    "gap_b": -2.5,
-    "gap_min": 2.5,
-    "pick": "Minnesota Vikings +3.5",
-    "price": -104,
+    "gap_a": -1.5,
+    "gap_b": -3.5,
+    "gap_min": 3.5,
+    "pick": "Minnesota Vikings +4.5",
+    "price": -116,
     "side": "away",
     "fair_line": 2.0,
     "playable_to": null,
-    "sim_cover": 0.547,
+    "sim_cover": 0.578,
     "history": {
      "adj": 0.18,
      "key": "spread dog",
-     "w": 191,
-     "l": 145,
-     "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "w": 192,
+     "l": 146,
+     "text": "Our record on spread dog: 192-146 (last 60 days, recent counts more) -> +0.18 to confidence"
     },
     "test_record": {
      "w": 66,
@@ -181,13 +183,13 @@
      "win": 0.471
     },
     "models_agree": false,
-    "one_model": false,
+    "one_model": true,
     "veto": true,
-    "conf": 2.6,
+    "conf": 3.3,
     "components": {
-     "efficiency": 0.42,
+     "efficiency": 0.59,
      "veto": 0.0,
-     "models": 0.0,
+     "models": 0.5,
      "starters": 0.0,
      "coaching": 0.5,
      "against": 1.0,
@@ -195,7 +197,7 @@
      "situational": 0.5,
      "our history": 0.18
     },
-    "total_gap": -2.2
+    "total_gap": -1.2
    }
   ],
   "n_past": 150,
@@ -209,6 +211,149 @@
  {
   "sport": "NBA",
   "games": [
+   {
+    "id": "401910032",
+    "sport": "NBA",
+    "game": "Denver Nuggets @ Chicago Bulls",
+    "home": "Chicago Bulls",
+    "away": "Denver Nuggets",
+    "time": "Sun 6:00 PM CT",
+    "start": "2026-11-23T00:00Z",
+    "book": "Draft Kings",
+    "line": "DEN -9.5",
+    "home_line": 9.5,
+    "home_line_open": 8.5,
+    "spread_odds": [
+     -117,
+     -104
+    ],
+    "total": 237.5,
+    "total_open": 237.5,
+    "home_ml": 328,
+    "away_ml": -419,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": -3.0,
+    "model_b": -4.9,
+    "games_played": [
+     14,
+     15
+    ],
+    "neutral": false,
+    "records": [
+     "9-5",
+     "4-11"
+    ],
+    "venue": "United Center",
+    "tv": "",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Nic Claxton",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Norman Powell",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Caleb Wilson",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Julian Strawther",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Jamal Murray",
+      "Nikola Jokic"
+     ],
+     [
+      "Caleb Wilson",
+      "Jalen Smith",
+      "Josh Giddey",
+      "Matas Buzelis",
+      "Norman Powell"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     2.8,
+     6.8
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but confidence 5.7 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
+    "flags": [
+     "Star Norman Powell (Chicago Bulls) Out",
+     "Star Caleb Wilson (Chicago Bulls) Out"
+    ],
+    "factors": [
+     "Rest: Nuggets 2 day(s), Bulls 2 day(s)",
+     "Line moved 1 pts toward Denver Nuggets since open (+8.5 to +9.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Line moves past +9.4",
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 232.6,
+    "gap_a": 6.5,
+    "gap_b": 4.6,
+    "gap_min": 4.6,
+    "pick": "Chicago Bulls +9.5",
+    "price": -104,
+    "side": "home",
+    "fair_line": 4.0,
+    "playable_to": 9.4,
+    "sim_cover": 0.671,
+    "history": {
+     "adj": 0.18,
+     "key": "spread dog",
+     "w": 192,
+     "l": 146,
+     "text": "Our record on spread dog: 192-146 (last 60 days, recent counts more) -> +0.18 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.51,
+     "veto": 1.5,
+     "models": 1.5,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.18
+    },
+    "total_gap": -4.9,
+    "stake": 0
+   },
    {
     "id": "401910031",
     "sport": "NBA",
@@ -225,7 +370,7 @@
      -112,
      -108
     ],
-    "total": 219.5,
+    "total": 220.5,
     "total_open": 222.5,
     "home_ml": 164,
     "away_ml": -196,
@@ -246,16 +391,6 @@
     "tv": "MNMT",
     "indoor": true,
     "inj_home": [
-     {
-      "player": "Bub Carrington",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Deandre Ayton",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
      {
       "player": "Tristan Vukcevic",
       "pos": "F",
@@ -350,9 +485,9 @@
     "history": {
      "adj": 0.18,
      "key": "spread dog",
-     "w": 191,
-     "l": 145,
-     "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "w": 192,
+     "l": 146,
+     "text": "Our record on spread dog: 192-146 (last 60 days, recent counts more) -> +0.18 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -375,151 +510,7 @@
      "situational": 0.5,
      "our history": 0.18
     },
-    "total_gap": 4.9
-   },
-   {
-    "id": "401910032",
-    "sport": "NBA",
-    "game": "Denver Nuggets @ Chicago Bulls",
-    "home": "Chicago Bulls",
-    "away": "Denver Nuggets",
-    "time": "Sun 6:00 PM CT",
-    "start": "2026-11-23T00:00Z",
-    "book": "Draft Kings",
-    "line": "DEN -10.5",
-    "home_line": 10.5,
-    "home_line_open": 8.5,
-    "spread_odds": [
-     -104,
-     -117
-    ],
-    "total": 236.5,
-    "total_open": 237.5,
-    "home_ml": 328,
-    "away_ml": -419,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": -3.0,
-    "model_b": -4.9,
-    "games_played": [
-     14,
-     15
-    ],
-    "neutral": false,
-    "records": [
-     "9-5",
-     "4-11"
-    ],
-    "venue": "United Center",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Nic Claxton",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Norman Powell",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Caleb Wilson",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Julian Strawther",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Jamal Murray",
-      "Nikola Jokic"
-     ],
-     [
-      "Caleb Wilson",
-      "Jalen Smith",
-      "Josh Giddey",
-      "Matas Buzelis",
-      "Norman Powell"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     2.8,
-     6.8
-    ],
-    "decision": "WATCH",
-    "reason": "Both models agree, but confidence 5.3 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
-    "flags": [
-     "Star Norman Powell (Chicago Bulls) Out",
-     "Star Caleb Wilson (Chicago Bulls) Out",
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Nuggets 2 day(s), Bulls 2 day(s)",
-     "Line moved 2 pts toward Denver Nuggets since open (+8.5 to +10.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Line moves past +9.4",
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 232.6,
-    "gap_a": 7.5,
-    "gap_b": 5.6,
-    "gap_min": 5.6,
-    "pick": "Chicago Bulls +10.5",
-    "price": -117,
-    "side": "home",
-    "fair_line": 4.0,
-    "playable_to": 9.4,
-    "sim_cover": 0.7,
-    "history": {
-     "adj": 0.18,
-     "key": "spread dog",
-     "w": 191,
-     "l": 145,
-     "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.62,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 0.0,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.18
-    },
-    "total_gap": -3.9,
-    "stake": 0
+    "total_gap": 3.9
    },
    {
     "id": "401910035",
@@ -652,9 +643,9 @@
     "history": {
      "adj": 0.18,
      "key": "spread dog",
-     "w": 191,
-     "l": 145,
-     "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "w": 192,
+     "l": 146,
+     "text": "Our record on spread dog: 192-146 (last 60 days, recent counts more) -> +0.18 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -811,9 +802,9 @@
     "history": {
      "adj": 0.18,
      "key": "spread dog",
-     "w": 191,
-     "l": 145,
-     "text": "Our record on spread dog: 191-145 (last 60 days, recent counts more) -> +0.18 to confidence"
+     "w": 192,
+     "l": 146,
+     "text": "Our record on spread dog: 192-146 (last 60 days, recent counts more) -> +0.18 to confidence"
     },
     "test_record": {
      "w": 57,
@@ -851,10 +842,10 @@
     "home_line": -7.5,
     "home_line_open": -9.5,
     "spread_odds": [
-     -110,
-     -110
+     -116,
+     -104
     ],
-    "total": 212.5,
+    "total": 213.5,
     "total_open": 217.5,
     "home_ml": -296,
     "away_ml": 240,
@@ -971,7 +962,7 @@
     "gap_b": 8.1,
     "gap_min": 8.1,
     "pick": "New York Knicks -7.5",
-    "price": -110,
+    "price": -104,
     "side": "home",
     "fair_line": -12.4,
     "playable_to": null,
@@ -1004,8 +995,8 @@
      "situational": 0.2,
      "our history": -0.3
     },
-    "total_gap": 7.2,
-    "total_lean": "Over 212.5 (season scoring says 219.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": 6.2,
+    "total_lean": "Over 213.5 (season scoring says 219.7) - WATCH only, totals have no past-games test yet"
    }
   ],
   "n_past": 241,
@@ -1015,53 +1006,51 @@
   "sport": "CBB",
   "games": [
    {
-    "id": "401926774",
+    "id": "401917541",
     "sport": "CBB",
-    "game": "Louisiana Ragin' Cajuns @ USC Trojans",
-    "home": "USC Trojans",
-    "away": "Louisiana Ragin' Cajuns",
-    "time": "Sun 7:00 PM CT",
-    "start": "2026-11-23T01:00Z",
+    "game": "California Baptist Lancers @ Portland Pilots",
+    "home": "Portland Pilots",
+    "away": "California Baptist Lancers",
+    "time": "Sun 6:00 PM CT",
+    "start": "2026-11-23T00:00Z",
     "book": "Draft Kings",
-    "line": "USC -32.5",
-    "home_line": -32.5,
-    "home_line_open": -33.5,
+    "line": "PORT -7.5",
+    "home_line": -7.5,
+    "home_line_open": -10.5,
     "spread_odds": [
-     -112,
-     -108
+     -118,
+     -102
     ],
-    "total": 145.5,
-    "total_open": 146.5,
-    "home_ml": null,
-    "away_ml": null,
+    "total": 146.5,
+    "total_open": 145.5,
+    "home_ml": -325,
+    "away_ml": 260,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": 27.0,
-    "model_b": 18.6,
+    "model_a": 8.1,
+    "model_b": 12.4,
     "games_played": [
-     4,
-     5
+     6,
+     7
     ],
-    "neutral": false,
+    "neutral": true,
     "records": [
-     "1-3",
-     "5-0"
+     "1-5",
+     "4-3"
     ],
-    "venue": "Galen Center",
-    "tv": "B1G+",
+    "venue": "Acrisure Arena",
+    "tv": "FloSports",
     "indoor": true,
     "inj_home": [],
     "inj_away": [],
     "stars": [
      [
-      "Dani Pounds",
-      "Jamyron Keller",
-      "Mekhi Cooper"
+      "Rene D'Amelio",
+      "Terry Coner Jr."
      ],
      [
-      "Adonis Ratliff",
-      "Alijah Arenas",
-      "Rodney Rice"
+      "James O'Donnell",
+      "Kaia Isaac"
      ]
     ],
     "goalies": [
@@ -1069,49 +1058,43 @@
      null
     ],
     "rest": [
-     4,
-     3
+     1,
+     1
     ],
     "form5": [
-     -6.2,
-     21.8
+     -13.8,
+     3.2
     ],
-    "decision": "CASH",
-    "reason": "Locked as a main at 00:18. Learned play: graded 6.3 (under the usual bar), but CBB dog 20+ is 25-13 (+9.7 units) on the Board - 56.8% after the pull toward 50/50 vs 52.4% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.3 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Early season: under 5 games for a team - prior-heavy"
-    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
     "factors": [
-     "Rest: Cajuns 4 day(s), Trojans 3 day(s)",
-     "Line moved 1 pts toward Louisiana Ragin' Cajuns since open (-33.5 to -32.5 home)",
-     "Indoors - weather does not matter"
+     "Rest: Lancers 1 day(s), Pilots 1 day(s)",
+     "Line moved 3 pts toward California Baptist Lancers since open (-10.5 to -7.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +3.2 a game, theirs -13.8)"
     ],
-    "against": [
-     "Market moved away from this side since open",
-     "One model is only barely past the bar",
-     "Last 5 games point the other way (our side -6.2 a game, theirs +21.8)"
-    ],
+    "against": [],
     "invalidation": [
-     "Line moves past +31.5",
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
-    "total_model": 140.8,
-    "gap_a": -5.5,
-    "gap_b": -13.9,
-    "gap_min": 5.5,
-    "pick": "Louisiana Ragin' Cajuns +33.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 22.8,
-    "playable_to": 31.5,
-    "sim_cover": 0.811,
+    "total_model": 158.5,
+    "gap_a": 0.6,
+    "gap_b": 4.9,
+    "gap_min": 4.9,
+    "pick": "Portland Pilots -7.5",
+    "price": -102,
+    "side": "home",
+    "fair_line": -10.3,
+    "playable_to": null,
+    "sim_cover": 0.599,
     "history": {
-     "adj": 0.32,
-     "key": "CBB spread dog",
-     "w": 120,
-     "l": 79,
-     "text": "Our record on CBB spread dog: 120-79 (last 60 days, recent counts more) -> +0.32 to confidence"
+     "adj": -0.13,
+     "key": "CBB spread fav",
+     "w": 8,
+     "l": 10,
+     "text": "Our record on CBB spread fav: 8-10 (last 60 days, recent counts more) -> -0.13 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1119,26 +1102,23 @@
      "n": 464,
      "win": 0.515
     },
-    "models_agree": true,
-    "one_model": false,
+    "models_agree": false,
+    "one_model": true,
     "veto": false,
-    "conf": 6.3,
+    "conf": 5.9,
     "components": {
-     "efficiency": 0.72,
-     "veto": 1.0,
-     "models": 1.5,
+     "efficiency": 0.55,
+     "veto": 1.5,
+     "models": 0.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.3,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.32
+     "our history": -0.13
     },
-    "total_gap": -4.7,
-    "stake": 10,
-    "now_says": "PAPER Louisiana Ragin' Cajuns +32.5 6.0",
-    "learned": true,
-    "locked": true
+    "total_gap": 12.0,
+    "total_lean": "Over 146.5 (season scoring says 158.5) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921206",
@@ -1153,8 +1133,8 @@
     "home_line": -6.5,
     "home_line_open": -8.5,
     "spread_odds": [
-     -105,
-     -115
+     -110,
+     -110
     ],
     "total": 144.5,
     "total_open": 146.5,
@@ -1223,132 +1203,17 @@
     "gap_b": -8.5,
     "gap_min": 8.5,
     "pick": "UT Martin Skyhawks +6.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": 0.9,
     "playable_to": null,
     "sim_cover": 0.694,
     "history": {
-     "adj": 0.35,
+     "adj": 0.34,
      "key": "CBB spread dog",
-     "w": 124,
-     "l": 80,
-     "text": "Our record on CBB spread dog: 124-80 (last 60 days, recent counts more) -> +0.35 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.95,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.35
-    },
-    "total_gap": 17.1,
-    "total_lean": "Over 144.5 (season scoring says 161.6) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401917541",
-    "sport": "CBB",
-    "game": "California Baptist Lancers @ Portland Pilots",
-    "home": "Portland Pilots",
-    "away": "California Baptist Lancers",
-    "time": "Sun 6:00 PM CT",
-    "start": "2026-11-23T00:00Z",
-    "book": "Draft Kings",
-    "line": "PORT -7.5",
-    "home_line": -7.5,
-    "home_line_open": -10.5,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": 146.5,
-    "total_open": 145.5,
-    "home_ml": -355,
-    "away_ml": 280,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 8.1,
-    "model_b": 12.4,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "1-5",
-     "4-3"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "FloSports",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Rene D'Amelio",
-      "Terry Coner Jr."
-     ],
-     [
-      "James O'Donnell",
-      "Kaia Isaac"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     -13.8,
-     3.2
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Lancers 1 day(s), Pilots 1 day(s)",
-     "Line moved 3 pts toward California Baptist Lancers since open (-10.5 to -7.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +3.2 a game, theirs -13.8)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 158.5,
-    "gap_a": 0.6,
-    "gap_b": 4.9,
-    "gap_min": 4.9,
-    "pick": "Portland Pilots -7.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": -10.3,
-    "playable_to": null,
-    "sim_cover": 0.599,
-    "history": {
-     "adj": -0.17,
-     "key": "CBB spread fav",
-     "w": 7,
-     "l": 10,
-     "text": "Our record on CBB spread fav: 7-10 (last 60 days, recent counts more) -> -0.17 to confidence"
+     "w": 125,
+     "l": 81,
+     "text": "Our record on CBB spread dog: 125-81 (last 60 days, recent counts more) -> +0.34 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1361,18 +1226,142 @@
     "veto": false,
     "conf": 5.9,
     "components": {
-     "efficiency": 0.55,
-     "veto": 1.5,
+     "efficiency": 0.95,
+     "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 1.0,
+     "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": -0.17
+     "our history": 0.34
     },
-    "total_gap": 12.0,
-    "total_lean": "Over 146.5 (season scoring says 158.5) - WATCH only, totals have no past-games test yet"
+    "total_gap": 17.1,
+    "total_lean": "Over 144.5 (season scoring says 161.6) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401926774",
+    "sport": "CBB",
+    "game": "Louisiana Ragin' Cajuns @ USC Trojans",
+    "home": "USC Trojans",
+    "away": "Louisiana Ragin' Cajuns",
+    "time": "Sun 7:00 PM CT",
+    "start": "2026-11-23T01:00Z",
+    "book": "Draft Kings",
+    "line": "USC -31.5",
+    "home_line": -31.5,
+    "home_line_open": -33.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 144.5,
+    "total_open": 146.5,
+    "home_ml": null,
+    "away_ml": null,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 27.0,
+    "model_b": 18.6,
+    "games_played": [
+     4,
+     5
+    ],
+    "neutral": false,
+    "records": [
+     "1-3",
+     "5-0"
+    ],
+    "venue": "Galen Center",
+    "tv": "B1G+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Dani Pounds",
+      "Jamyron Keller",
+      "Mekhi Cooper"
+     ],
+     [
+      "Adonis Ratliff",
+      "Alijah Arenas",
+      "Rodney Rice"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     3
+    ],
+    "form5": [
+     -6.2,
+     21.8
+    ],
+    "decision": "CASH",
+    "reason": "Locked as a main at 00:18. Learned play: graded 6.3 (under the usual bar), but CBB dog 20+ is 25-13 (+9.7 units) on the Board - 56.8% after the pull toward 50/50 vs 52.4% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.3 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Early season: under 5 games for a team - prior-heavy"
+    ],
+    "factors": [
+     "Rest: Cajuns 4 day(s), Trojans 3 day(s)",
+     "Line moved 2 pts toward Louisiana Ragin' Cajuns since open (-33.5 to -31.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -6.2 a game, theirs +21.8)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 140.8,
+    "gap_a": -4.5,
+    "gap_b": -12.9,
+    "gap_min": 12.9,
+    "pick": "Louisiana Ragin' Cajuns +33.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 22.8,
+    "playable_to": 31.5,
+    "sim_cover": 0.786,
+    "history": {
+     "adj": 0.32,
+     "key": "CBB spread dog",
+     "w": 120,
+     "l": 79,
+     "text": "Our record on CBB spread dog: 120-79 (last 60 days, recent counts more) -> +0.32 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.3,
+    "components": {
+     "efficiency": 0.72,
+     "veto": 1.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.32
+    },
+    "total_gap": -3.7,
+    "now_says": "WATCH Louisiana Ragin' Cajuns +31.5 5.6",
+    "stake": 10,
+    "learned": true,
+    "locked": true
    },
    {
     "id": "401917542",
@@ -1459,11 +1448,11 @@
     "playable_to": null,
     "sim_cover": 0.567,
     "history": {
-     "adj": 0.35,
+     "adj": 0.34,
      "key": "CBB spread dog",
-     "w": 124,
-     "l": 80,
-     "text": "Our record on CBB spread dog: 124-80 (last 60 days, recent counts more) -> +0.35 to confidence"
+     "w": 125,
+     "l": 81,
+     "text": "Our record on CBB spread dog: 125-81 (last 60 days, recent counts more) -> +0.34 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1474,7 +1463,7 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.6,
+    "conf": 5.5,
     "components": {
      "efficiency": 0.21,
      "veto": 1.5,
@@ -1484,10 +1473,132 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.35
+     "our history": 0.34
     },
     "total_gap": 12.0,
     "total_lean": "Over 148.5 (season scoring says 160.5) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401920905",
+    "sport": "CBB",
+    "game": "Delaware Blue Hens @ UCLA Bruins",
+    "home": "UCLA Bruins",
+    "away": "Delaware Blue Hens",
+    "time": "Sun 6:00 PM CT",
+    "start": "2026-11-23T00:00Z",
+    "book": "Draft Kings",
+    "line": "UCLA -30.5",
+    "home_line": -30.5,
+    "home_line_open": -29.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 144.5,
+    "total_open": 146.5,
+    "home_ml": -20000,
+    "away_ml": 3500,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 23.6,
+    "model_b": 8.1,
+    "games_played": [
+     6,
+     5
+    ],
+    "neutral": false,
+    "records": [
+     "4-2",
+     "5-0"
+    ],
+    "venue": "Pauley Pavilion",
+    "tv": "B1G+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Chuck Bailey III",
+      "DeShawn Harris-Smith",
+      "Kachi Nzeh"
+     ],
+     [
+      "Eric Dailey Jr.",
+      "Trent Perry"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     4
+    ],
+    "form5": [
+     4.4,
+     20.6
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Hens 2 day(s), Bruins 4 day(s)",
+     "Line moved 1 pts toward UCLA Bruins since open (-29.5 to -30.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "One model is only barely past the bar",
+     "Last 5 games point the other way (our side +4.4 a game, theirs +20.6)"
+    ],
+    "invalidation": [
+     "Line moves past +28.1",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 152.0,
+    "gap_a": -6.9,
+    "gap_b": -22.4,
+    "gap_min": 6.9,
+    "pick": "Delaware Blue Hens +30.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 15.9,
+    "playable_to": 28.1,
+    "sim_cover": 0.908,
+    "history": {
+     "adj": 0.34,
+     "key": "CBB spread dog",
+     "w": 125,
+     "l": 81,
+     "text": "Our record on CBB spread dog: 125-81 (last 60 days, recent counts more) -> +0.34 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": true,
+    "conf": 5.4,
+    "components": {
+     "efficiency": 0.77,
+     "veto": 0.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.34
+    },
+    "total_gap": 7.5,
+    "total_lean": "Over 144.5 (season scoring says 152.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401919020",
@@ -1505,7 +1616,7 @@
      -105,
      -115
     ],
-    "total": 152.5,
+    "total": 151.5,
     "total_open": 150.5,
     "home_ml": 114,
     "away_ml": -135,
@@ -1572,11 +1683,11 @@
     "playable_to": null,
     "sim_cover": 0.512,
     "history": {
-     "adj": 0.35,
+     "adj": 0.34,
      "key": "CBB spread dog",
-     "w": 124,
-     "l": 80,
-     "text": "Our record on CBB spread dog: 124-80 (last 60 days, recent counts more) -> +0.35 to confidence"
+     "w": 125,
+     "l": 81,
+     "text": "Our record on CBB spread dog: 125-81 (last 60 days, recent counts more) -> +0.34 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1597,9 +1708,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.35
+     "our history": 0.34
     },
-    "total_gap": -3.3
+    "total_gap": -2.3
    },
    {
     "id": "401911233",
@@ -1617,7 +1728,7 @@
      -112,
      -108
     ],
-    "total": 145.5,
+    "total": 146.5,
     "total_open": 148.5,
     "home_ml": -185,
     "away_ml": 154,
@@ -1688,11 +1799,11 @@
     "playable_to": null,
     "sim_cover": 0.521,
     "history": {
-     "adj": 0.35,
+     "adj": 0.34,
      "key": "CBB spread dog",
-     "w": 124,
-     "l": 80,
-     "text": "Our record on CBB spread dog: 124-80 (last 60 days, recent counts more) -> +0.35 to confidence"
+     "w": 125,
+     "l": 81,
+     "text": "Our record on CBB spread dog: 125-81 (last 60 days, recent counts more) -> +0.34 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1713,132 +1824,10 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.35
+     "our history": 0.34
     },
-    "total_gap": 10.8,
-    "total_lean": "Over 145.5 (season scoring says 156.3) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401920905",
-    "sport": "CBB",
-    "game": "Delaware Blue Hens @ UCLA Bruins",
-    "home": "UCLA Bruins",
-    "away": "Delaware Blue Hens",
-    "time": "Sun 6:00 PM CT",
-    "start": "2026-11-23T00:00Z",
-    "book": "Draft Kings",
-    "line": "UCLA -28.5",
-    "home_line": -28.5,
-    "home_line_open": -29.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 145.5,
-    "total_open": 146.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 23.6,
-    "model_b": 8.1,
-    "games_played": [
-     6,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "4-2",
-     "5-0"
-    ],
-    "venue": "Pauley Pavilion",
-    "tv": "B1G+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Chuck Bailey III",
-      "DeShawn Harris-Smith",
-      "Kachi Nzeh"
-     ],
-     [
-      "Eric Dailey Jr.",
-      "Trent Perry"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     4
-    ],
-    "form5": [
-     4.4,
-     20.6
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Hens 2 day(s), Bruins 4 day(s)",
-     "Line moved 1 pts toward Delaware Blue Hens since open (-29.5 to -28.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "One model is only barely past the bar",
-     "Last 5 games point the other way (our side +4.4 a game, theirs +20.6)"
-    ],
-    "invalidation": [
-     "Line moves past +28.1",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 152.0,
-    "gap_a": -4.9,
-    "gap_b": -20.4,
-    "gap_min": 4.9,
-    "pick": "Delaware Blue Hens +28.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 15.9,
-    "playable_to": 28.1,
-    "sim_cover": 0.875,
-    "history": {
-     "adj": 0.35,
-     "key": "CBB spread dog",
-     "w": 124,
-     "l": 80,
-     "text": "Our record on CBB spread dog: 124-80 (last 60 days, recent counts more) -> +0.35 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": true,
-    "conf": 4.9,
-    "components": {
-     "efficiency": 0.55,
-     "veto": 0.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.35
-    },
-    "total_gap": 6.5,
-    "total_lean": "Over 145.5 (season scoring says 152.0) - WATCH only, totals have no past-games test yet"
+    "total_gap": 9.8,
+    "total_lean": "Over 146.5 (season scoring says 156.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401929595",
@@ -2246,7 +2235,7 @@
      {
       "player": "Anton Frondell",
       "pos": "C",
-      "status": "Day-To-Day"
+      "status": "Out"
      }
     ],
     "stars": [
