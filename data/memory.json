@@ -2,42 +2,42 @@
  "buckets": {
   "CFB dog under 10": {
    "w": 7,
-   "l": 11,
-   "units": -4.65,
-   "be": 0.5228,
-   "shrunk": 0.4706,
-   "status": "learning"
-  },
-  "CFB conf 6-6.9": {
-   "w": 10,
-   "l": 18,
-   "units": -8.9,
-   "be": 0.5231,
-   "shrunk": 0.4487,
-   "status": "learning"
-  },
-  "CFB fav": {
-   "w": 7,
    "l": 13,
-   "units": -6.45,
-   "be": 0.5222,
+   "units": -6.65,
+   "be": 0.5227,
    "shrunk": 0.4571,
    "status": "learning"
   },
+  "CFB conf 6-6.9": {
+   "w": 11,
+   "l": 19,
+   "units": -8.99,
+   "be": 0.523,
+   "shrunk": 0.45,
+   "status": "proven loser"
+  },
+  "CFB fav": {
+   "w": 7,
+   "l": 14,
+   "units": -7.45,
+   "be": 0.5223,
+   "shrunk": 0.4507,
+   "status": "learning"
+  },
   "CBB dog under 10": {
-   "w": 50,
-   "l": 32,
-   "units": 12.78,
-   "be": 0.5286,
-   "shrunk": 0.5682,
+   "w": 52,
+   "l": 33,
+   "units": 13.56,
+   "be": 0.5287,
+   "shrunk": 0.5704,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 85,
-   "l": 62,
-   "units": 13.87,
-   "be": 0.5286,
-   "shrunk": 0.5584,
+   "w": 86,
+   "l": 63,
+   "units": 13.74,
+   "be": 0.5287,
+   "shrunk": 0.5578,
    "status": "proven winner"
   },
   "CBB dog 20+": {
@@ -121,11 +121,11 @@
    "status": "learning"
   },
   "CBB conf 7-7.9": {
-   "w": 8,
+   "w": 9,
    "l": 7,
-   "units": 0.2,
-   "be": 0.5254,
-   "shrunk": 0.5077,
+   "units": 1.11,
+   "be": 0.5253,
+   "shrunk": 0.5152,
    "status": "learning"
   },
   "CBB fav": {
@@ -161,19 +161,19 @@
    "status": "learning"
   },
   "CFB dog 20+": {
-   "w": 1,
+   "w": 2,
    "l": 2,
-   "units": -1.09,
-   "be": 0.5253,
-   "shrunk": 0.4906,
+   "units": -0.18,
+   "be": 0.5249,
+   "shrunk": 0.5,
    "status": "learning"
   },
   "CFB conf 5.5-5.9": {
    "w": 11,
-   "l": 8,
-   "units": 2.22,
-   "be": 0.5241,
-   "shrunk": 0.5217,
+   "l": 10,
+   "units": 0.22,
+   "be": 0.524,
+   "shrunk": 0.507,
    "status": "learning"
   },
   "CFB conf under 5.5": {
@@ -316,6 +316,13 @@
    "from": "learning",
    "to": "proven winner",
    "text": "CBB dog under 10: 39-28 (58%, +6.8 units). Counted as 54.7% after the pull toward 50/50; break-even 52.9%. Now proven winner - lower-graded picks of this kind can be played at $10."
+  },
+  {
+   "date": "2026-11-21",
+   "what": "CFB conf 6-6.9",
+   "from": "learning",
+   "to": "proven loser",
+   "text": "CFB conf 6-6.9: 11-19 (37%, -9.0 units). Counted as 45.0% after the pull toward 50/50; break-even 52.3%. Now proven loser - cash picks of this kind drop to $10."
   }
  ],
  "learned": {
@@ -438,18 +445,18 @@
    "strong": false
   },
   "CFB rushing_yds higher": {
-   "n": 56,
-   "hit": 0.4821,
+   "n": 57,
+   "hit": 0.4737,
    "said": 0.4997,
-   "gap": -0.0063,
+   "gap": -0.0094,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds lower": {
-   "n": 56,
-   "hit": 0.5179,
+   "n": 57,
+   "hit": 0.5263,
    "said": 0.5003,
-   "gap": 0.0063,
+   "gap": 0.0094,
    "status": "learning",
    "strong": false
   },
@@ -782,10 +789,10 @@
    "strong": false
   },
   "CFB conf under 5.5 leaned side": {
-   "n": 145,
-   "hit": 0.4966,
-   "said": 0.4918,
-   "gap": 0.0028,
+   "n": 146,
+   "hit": 0.4932,
+   "said": 0.4919,
+   "gap": 0.0007,
    "status": "learning",
    "strong": false
   },
@@ -838,5 +845,5 @@
    "strong": false
   }
  },
- "updated": "11/21 05:55 PM"
+ "updated": "11/21 06:19 PM"
 }
