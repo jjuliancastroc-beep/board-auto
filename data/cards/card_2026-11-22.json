@@ -114,8 +114,8 @@
      "src": "Open-Meteo"
     },
     "weather": {
-     "text": "Intermittent clouds",
-     "temp": 43
+     "text": "Mostly sunny",
+     "temp": 44
     },
     "total_model": 48.3,
     "gap_a": 1.1,
@@ -298,7 +298,7 @@
     "factors": [
      "Rest: Dolphins 7 day(s), Bills 7 day(s)",
      "Line moved 5 pts toward Buffalo Bills since open (-11.5 to -16.5 home)",
-     "Kickoff forecast: wind 7 mph (gusts 7), 66F, rain chance 1%",
+     "Kickoff forecast: wind 14 mph (gusts 22), 67F, rain chance 1%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -308,15 +308,15 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 7.0,
-     "gust": 7.0,
+     "wind": 13.6,
+     "gust": 21.5,
      "rain": 1,
-     "temp": 66,
-     "src": "NWS"
+     "temp": 66.8,
+     "src": "Open-Meteo"
     },
     "weather": {
-     "text": "Partly sunny",
-     "temp": 66
+     "text": "38",
+     "temp": 51
     },
     "total_model": 47.7,
     "gap_a": 1.5,
@@ -376,7 +376,7 @@
     ],
     "total": 41.5,
     "total_open": 41.5,
-    "home_ml": -171,
+    "home_ml": -172,
     "away_ml": 144,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
@@ -828,13 +828,11 @@
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
-    "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)"
-    ],
+    "flags": [],
     "factors": [
      "Rest: Saints 7 day(s), Bears 14 day(s)",
      "Line moved 5 pts toward Chicago Bears since open (-6.5 to -11.5 home)",
-     "Kickoff forecast: wind 15 mph (gusts 15), 58F, rain chance 89%",
+     "Kickoff forecast: wind 8 mph (gusts 21), 56F, rain chance 82%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -844,15 +842,15 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 15.0,
-     "gust": 15.0,
-     "rain": 89,
-     "temp": 58,
-     "src": "NWS"
+     "wind": 8.3,
+     "gust": 20.6,
+     "rain": 82,
+     "temp": 56.1,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Rain",
-     "temp": 56
+     "temp": 57
     },
     "total_model": 47.9,
     "gap_a": -2.7,
@@ -1056,8 +1054,8 @@
     ],
     "total": 54.5,
     "total_open": 48.5,
-    "home_ml": -343,
-    "away_ml": 276,
+    "home_ml": -345,
+    "away_ml": 277,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 9.7,
@@ -1221,7 +1219,7 @@
     ],
     "total": 37.5,
     "total_open": 42.5,
-    "home_ml": 160,
+    "home_ml": 159,
     "away_ml": -190,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
@@ -1303,7 +1301,7 @@
     "factors": [
      "Rest: Steelers 7 day(s), Eagles 14 day(s)",
      "Line moved 9 pts toward Pittsburgh Steelers since open (-5.5 to +3.5 home)",
-     "Kickoff forecast: wind 10 mph (gusts 10), 63F, rain chance 74%",
+     "Kickoff forecast: wind 9 mph (gusts 17), 61F, rain chance 5%",
      "Last 5 games agree (our side +5.2 a game, theirs -11.0)"
     ],
     "against": [
@@ -1314,14 +1312,14 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 10.0,
-     "gust": 10.0,
-     "rain": 74,
-     "temp": 63,
-     "src": "NWS"
+     "wind": 8.9,
+     "gust": 17.4,
+     "rain": 5,
+     "temp": 61.3,
+     "src": "Open-Meteo"
     },
     "weather": {
-     "text": "Cloudy",
+     "text": "Rain",
      "temp": 62
     },
     "total_model": 41.6,
@@ -1384,7 +1382,7 @@
     "total": 40.5,
     "total_open": 44.5,
     "home_ml": -1320,
-    "away_ml": 810,
+    "away_ml": 800,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 12.9,
@@ -1466,12 +1464,13 @@
     "decision": "PASS",
     "reason": "Veto: QB Carson Beck (Arizona Cardinals) Out - QB rule: no bet on this game until settled",
     "flags": [
+     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)",
      "QB Carson Beck (Arizona Cardinals) Out - QB rule: no bet on this game until settled"
     ],
     "factors": [
      "Rest: Cardinals 7 day(s), Chiefs 7 day(s)",
      "Line moved 4 pts toward Kansas City Chiefs since open (-11.5 to -15.5 home)",
-     "Kickoff forecast: wind 14 mph (gusts 14), 48F, rain chance 0%",
+     "Kickoff forecast: wind 16 mph (gusts 26), 47F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -1481,15 +1480,15 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 14.0,
-     "gust": 14.0,
+     "wind": 15.5,
+     "gust": 26.2,
      "rain": 0,
-     "temp": 48,
-     "src": "NWS"
+     "temp": 46.9,
+     "src": "Open-Meteo"
     },
     "weather": {
-     "text": "Sunny",
-     "temp": 50
+     "text": "Mostly sunny",
+     "temp": 49
     },
     "total_model": 45.5,
     "veto_sides": [
@@ -1752,7 +1751,7 @@
     "total": 47.5,
     "total_open": 49.5,
     "home_ml": -200,
-    "away_ml": 167,
+    "away_ml": 168,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 4.2,
