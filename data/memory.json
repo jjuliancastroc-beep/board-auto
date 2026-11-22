@@ -1,27 +1,27 @@
 {
  "buckets": {
   "CFB dog under 10": {
-   "w": 7,
+   "w": 9,
    "l": 13,
-   "units": -6.65,
-   "be": 0.5227,
-   "shrunk": 0.4571,
+   "units": -4.8,
+   "be": 0.5224,
+   "shrunk": 0.4722,
    "status": "learning"
   },
   "CFB conf 6-6.9": {
-   "w": 11,
+   "w": 12,
    "l": 19,
-   "units": -8.99,
-   "be": 0.523,
-   "shrunk": 0.45,
+   "units": -8.12,
+   "be": 0.5233,
+   "shrunk": 0.4568,
    "status": "proven loser"
   },
   "CFB fav": {
    "w": 7,
-   "l": 14,
-   "units": -7.45,
-   "be": 0.5223,
-   "shrunk": 0.4507,
+   "l": 15,
+   "units": -8.45,
+   "be": 0.5224,
+   "shrunk": 0.4444,
    "status": "learning"
   },
   "CBB dog under 10": {
@@ -153,11 +153,11 @@
    "status": "learning"
   },
   "CFB conf 7-7.9": {
-   "w": 3,
+   "w": 4,
    "l": 3,
-   "units": -0.3,
-   "be": 0.5191,
-   "shrunk": 0.5,
+   "units": 0.68,
+   "be": 0.517,
+   "shrunk": 0.5088,
    "status": "learning"
   },
   "CFB dog 20+": {
@@ -170,10 +170,10 @@
   },
   "CFB conf 5.5-5.9": {
    "w": 11,
-   "l": 10,
-   "units": 0.22,
+   "l": 11,
+   "units": -0.78,
    "be": 0.524,
-   "shrunk": 0.507,
+   "shrunk": 0.5,
    "status": "learning"
   },
   "CFB conf under 5.5": {
@@ -413,82 +413,82 @@
    "strong": false
   },
   "CFB passing_tds higher": {
-   "n": 24,
-   "hit": 0.4167,
-   "said": 0.4824,
-   "gap": -0.0127,
+   "n": 25,
+   "hit": 0.4,
+   "said": 0.4783,
+   "gap": -0.0157,
    "status": "learning",
    "strong": false
   },
   "CFB passing_tds lower": {
-   "n": 24,
-   "hit": 0.5833,
-   "said": 0.5176,
-   "gap": 0.0127,
+   "n": 25,
+   "hit": 0.6,
+   "said": 0.5217,
+   "gap": 0.0157,
    "status": "learning",
    "strong": false
   },
   "CFB passing_yds higher": {
-   "n": 25,
-   "hit": 0.4,
+   "n": 26,
+   "hit": 0.3846,
    "said": 0.5,
-   "gap": -0.02,
+   "gap": -0.0238,
    "status": "learning",
    "strong": false
   },
   "CFB passing_yds lower": {
-   "n": 25,
-   "hit": 0.6,
+   "n": 26,
+   "hit": 0.6154,
    "said": 0.5,
-   "gap": 0.02,
+   "gap": 0.0238,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds higher": {
-   "n": 57,
-   "hit": 0.4737,
+   "n": 58,
+   "hit": 0.4655,
    "said": 0.4997,
-   "gap": -0.0094,
+   "gap": -0.0125,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds lower": {
-   "n": 57,
-   "hit": 0.5263,
+   "n": 58,
+   "hit": 0.5345,
    "said": 0.5003,
-   "gap": 0.0094,
+   "gap": 0.0125,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds higher": {
-   "n": 79,
-   "hit": 0.4557,
-   "said": 0.5005,
-   "gap": -0.0198,
+   "n": 82,
+   "hit": 0.4634,
+   "said": 0.5006,
+   "gap": -0.0167,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds lower": {
-   "n": 79,
-   "hit": 0.5443,
-   "said": 0.4995,
-   "gap": 0.0198,
+   "n": 82,
+   "hit": 0.5366,
+   "said": 0.4994,
+   "gap": 0.0167,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec higher": {
-   "n": 65,
-   "hit": 0.3538,
-   "said": 0.4861,
-   "gap": -0.0521,
+   "n": 68,
+   "hit": 0.3676,
+   "said": 0.4835,
+   "gap": -0.0469,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec lower": {
-   "n": 65,
-   "hit": 0.6462,
-   "said": 0.5139,
-   "gap": 0.0521,
+   "n": 68,
+   "hit": 0.6324,
+   "said": 0.5165,
+   "gap": 0.0469,
    "status": "learning",
    "strong": false
   },
@@ -773,10 +773,10 @@
    "strong": false
   },
   "CFB conf 6-6.9 leaned side": {
-   "n": 6,
-   "hit": 0.5,
-   "said": 0.531,
-   "gap": -0.0018,
+   "n": 7,
+   "hit": 0.4286,
+   "said": 0.5266,
+   "gap": -0.0064,
    "status": "learning",
    "strong": false
   },
@@ -789,10 +789,10 @@
    "strong": false
   },
   "CFB conf under 5.5 leaned side": {
-   "n": 146,
-   "hit": 0.4932,
-   "said": 0.4919,
-   "gap": 0.0007,
+   "n": 153,
+   "hit": 0.4902,
+   "said": 0.4901,
+   "gap": 0.0001,
    "status": "learning",
    "strong": false
   },
@@ -845,5 +845,5 @@
    "strong": false
   }
  },
- "updated": "11/21 06:19 PM"
+ "updated": "11/21 06:44 PM"
 }
