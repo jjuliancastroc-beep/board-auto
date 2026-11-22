@@ -34,42 +34,42 @@
   },
   "CBB conf 6-6.9": {
    "w": 86,
-   "l": 63,
-   "units": 13.74,
-   "be": 0.5287,
-   "shrunk": 0.5578,
+   "l": 64,
+   "units": 12.74,
+   "be": 0.5288,
+   "shrunk": 0.555,
    "status": "proven winner"
   },
   "CBB dog 20+": {
-   "w": 24,
+   "w": 25,
    "l": 13,
-   "units": 8.82,
-   "be": 0.5235,
-   "shrunk": 0.5632,
+   "units": 9.69,
+   "be": 0.5238,
+   "shrunk": 0.5682,
    "status": "proven winner"
   },
   "CBB dog 10-20": {
-   "w": 39,
-   "l": 31,
-   "units": 3.67,
-   "be": 0.5285,
-   "shrunk": 0.5333,
+   "w": 40,
+   "l": 32,
+   "units": 3.56,
+   "be": 0.5287,
+   "shrunk": 0.5328,
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
-   "w": 26,
+   "w": 27,
    "l": 17,
-   "units": 6.74,
-   "be": 0.5241,
-   "shrunk": 0.5484,
+   "units": 7.63,
+   "be": 0.5242,
+   "shrunk": 0.5532,
    "status": "proven winner"
   },
   "NHL ML fav": {
-   "w": 19,
+   "w": 21,
    "l": 21,
-   "units": -8.38,
-   "be": 0.6023,
-   "shrunk": 0.4889,
+   "units": -6.99,
+   "be": 0.6018,
+   "shrunk": 0.5,
    "status": "proven loser"
   },
   "NHL conf 7-7.9": {
@@ -81,12 +81,12 @@
    "status": "learning"
   },
   "NHL conf 6-6.9": {
-   "w": 16,
+   "w": 18,
    "l": 12,
-   "units": 2.79,
-   "be": 0.5672,
-   "shrunk": 0.5256,
-   "status": "learning"
+   "units": 4.17,
+   "be": 0.5688,
+   "shrunk": 0.5375,
+   "status": "proven loser"
   },
   "NHL conf 5.5-5.9": {
    "w": 7,
@@ -121,11 +121,11 @@
    "status": "learning"
   },
   "CBB conf 7-7.9": {
-   "w": 9,
+   "w": 10,
    "l": 7,
-   "units": 1.11,
-   "be": 0.5253,
-   "shrunk": 0.5152,
+   "units": 1.98,
+   "be": 0.5259,
+   "shrunk": 0.5224,
    "status": "learning"
   },
   "CBB fav": {
@@ -138,10 +138,10 @@
   },
   "CFB dog 10-20": {
    "w": 9,
-   "l": 6,
-   "units": 2.2,
-   "be": 0.5245,
-   "shrunk": 0.5231,
+   "l": 7,
+   "units": 1.2,
+   "be": 0.5242,
+   "shrunk": 0.5152,
    "status": "learning"
   },
   "NBA dog under 10": {
@@ -178,10 +178,10 @@
   },
   "CFB conf under 5.5": {
    "w": 0,
-   "l": 2,
-   "units": -2.0,
-   "be": 0.5202,
-   "shrunk": 0.4808,
+   "l": 3,
+   "units": -3.0,
+   "be": 0.5199,
+   "shrunk": 0.4717,
    "status": "learning"
   },
   "NBA dog 10-20": {
@@ -323,12 +323,19 @@
    "from": "learning",
    "to": "proven loser",
    "text": "CFB conf 6-6.9: 11-19 (37%, -9.0 units). Counted as 45.0% after the pull toward 50/50; break-even 52.3%. Now proven loser - cash picks of this kind drop to $10."
+  },
+  {
+   "date": "2026-11-21",
+   "what": "NHL conf 6-6.9",
+   "from": "learning",
+   "to": "proven loser",
+   "text": "NHL conf 6-6.9: 18-12 (60%, +4.2 units). Counted as 53.8% after the pull toward 50/50; break-even 56.9%. Now proven loser - cash picks of this kind drop to $10."
   }
  ],
  "learned": {
-  "w": 0,
+  "w": 1,
   "l": 1,
-  "units": -1.0
+  "units": -0.13
  },
  "paused_until": null,
  "props": {
@@ -853,5 +860,5 @@
    "strong": false
   }
  },
- "updated": "11/21 08:00 PM"
+ "updated": "11/21 08:30 PM"
 }
