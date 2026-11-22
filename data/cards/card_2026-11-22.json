@@ -176,8 +176,8 @@
     ],
     "total": 43.5,
     "total_open": 41.5,
-    "home_ml": -178,
-    "away_ml": 150,
+    "home_ml": -179,
+    "away_ml": 151,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 4.2,
@@ -196,19 +196,9 @@
     "indoor": false,
     "inj_home": [
      {
-      "player": "Ladd McConkey",
+      "player": "Brenen Thompson",
       "pos": "WR",
-      "status": "Questionable"
-     },
-     {
-      "player": "Trey Pipkins III",
-      "pos": "OT",
-      "status": "Questionable"
-     },
-     {
-      "player": "Isas Waxter",
-      "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "player": "Kendall Williamson",
@@ -218,7 +208,7 @@
      {
       "player": "Tarheeb Still",
       "pos": "CB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "player": "Daiyan Henley",
@@ -226,35 +216,35 @@
       "status": "Out"
      },
      {
-      "player": "Brenen Thompson",
+      "player": "KeAndre Lambert-Smith",
       "pos": "WR",
-      "status": "Doubtful"
+      "status": "Out"
      },
      {
-      "player": "Charlie Kolar",
-      "pos": "TE",
-      "status": "Questionable"
+      "player": "Alex Harkey",
+      "pos": "G",
+      "status": "Out"
      }
     ],
     "inj_away": [
      {
-      "player": "Dylan Parham",
-      "pos": "G",
-      "status": "Questionable"
+      "player": "Isaiah Williams",
+      "pos": "WR",
+      "status": "Out"
      },
      {
-      "player": "Harrison Phillips",
-      "pos": "DT",
-      "status": "Questionable"
+      "player": "Jelani Woods",
+      "pos": "TE",
+      "status": "Out"
      },
      {
       "player": "Trevin Wallace",
       "pos": "LB",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
-      "player": "Isaiah Williams",
-      "pos": "WR",
+      "player": "Nate Lynn",
+      "pos": "DE",
       "status": "Out"
      },
      {
@@ -263,9 +253,9 @@
       "status": "Out"
      },
      {
-      "player": "Joseph Ossai",
-      "pos": "DE",
-      "status": "Questionable"
+      "player": "Jarvis Brownlee Jr.",
+      "pos": "CB",
+      "status": "Out"
      }
     ],
     "stars": [
@@ -459,7 +449,7 @@
     },
     "weather": {
      "text": "Rain",
-     "temp": 59
+     "temp": 60
     },
     "total_model": 45.1,
     "gap_a": -2.2,
@@ -885,12 +875,12 @@
     "time": "Sun 6:00 PM CT",
     "start": "2026-11-23T00:00Z",
     "book": "DraftKings",
-    "line": "DEN -10.5",
-    "home_line": 10.5,
+    "line": "DEN -9.5",
+    "home_line": 9.5,
     "home_line_open": 8.5,
     "spread_odds": [
-     -105,
-     -116
+     -115,
+     -105
     ],
     "total": 235.5,
     "total_open": 237.5,
@@ -976,12 +966,11 @@
     "flags": [
      "Star Jalen Smith (Chicago Bulls) Day-To-Day",
      "Star Norman Powell (Chicago Bulls) Out",
-     "Star Caleb Wilson (Chicago Bulls) Out",
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+     "Star Caleb Wilson (Chicago Bulls) Out"
     ],
     "factors": [
      "Rest: Nuggets 2 day(s), Bulls 2 day(s)",
-     "Line moved 2 pts toward Denver Nuggets since open (+8.5 to +10.5 home)",
+     "Line moved 1 pts toward Denver Nuggets since open (+8.5 to +9.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -994,15 +983,15 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": 7.5,
-    "gap_b": 5.6,
-    "gap_min": 5.6,
-    "pick": "Chicago Bulls +10.5",
-    "price": -116,
+    "gap_a": 6.5,
+    "gap_b": 4.6,
+    "gap_min": 4.6,
+    "pick": "Chicago Bulls +9.5",
+    "price": -105,
     "side": "home",
     "fair_line": 4.0,
     "playable_to": 9.4,
-    "sim_cover": 0.7,
+    "sim_cover": 0.671,
     "history": {
      "adj": 0.17,
      "key": "spread dog",
@@ -1019,9 +1008,9 @@
     "models_agree": true,
     "one_model": false,
     "veto": true,
-    "conf": 4.3,
+    "conf": 4.2,
     "components": {
-     "efficiency": 0.62,
+     "efficiency": 0.51,
      "veto": 0.0,
      "models": 1.5,
      "starters": 0.0,
@@ -1202,181 +1191,6 @@
     "total_gap": 4.0
    },
    {
-    "id": "401910030",
-    "sport": "NBA",
-    "game": "Oklahoma City Thunder @ Miami Heat",
-    "home": "Miami Heat",
-    "away": "Oklahoma City Thunder",
-    "time": "Sun 5:00 PM CT",
-    "start": "2026-11-22T23:00Z",
-    "book": "DraftKings",
-    "line": "MIA -4.5",
-    "home_line": -4.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 231.5,
-    "total_open": 231.5,
-    "home_ml": -173,
-    "away_ml": 146,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": -0.9,
-    "model_b": 0.9,
-    "games_played": [
-     16,
-     15
-    ],
-    "neutral": false,
-    "records": [
-     "10-6",
-     "9-6"
-    ],
-    "venue": "Kaseya Center",
-    "tv": "KSBI, Thunder App",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Myron Gardner",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Giannis Antetokounmpo",
-      "pos": "F",
-      "status": "Day-To-Day"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Shai Gilgeous-Alexander",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Nikola Topic",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Jaylin Williams",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Alex Caruso",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Thomas Sorber",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Cason Wallace",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Chet Holmgren",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Jalen Williams",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Isaiah Hartenstein",
-      "Shai Gilgeous-Alexander"
-     ],
-     [
-      "Bam Adebayo",
-      "Davion Mitchell",
-      "Giannis Antetokounmpo"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     4
-    ],
-    "form5": [
-     2.4,
-     12.6
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Star Shai Gilgeous-Alexander (Oklahoma City Thunder) Day-To-Day; Star Giannis Antetokounmpo (Miami Heat) Day-To-Day",
-    "flags": [
-     "Star Shai Gilgeous-Alexander (Oklahoma City Thunder) Day-To-Day",
-     "Star Giannis Antetokounmpo (Miami Heat) Day-To-Day"
-    ],
-    "factors": [
-     "Rest: Thunder 2 day(s), Heat 4 day(s)",
-     "Line moved 2 pts toward Miami Heat since open (-2.5 to -4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +2.4 a game, theirs +12.6)"
-    ],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 230.9,
-    "veto_sides": [
-     "game",
-     "game"
-    ],
-    "gap_a": -5.4,
-    "gap_b": -3.6,
-    "gap_min": 5.4,
-    "pick": "Oklahoma City Thunder +4.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": -0.0,
-    "playable_to": null,
-    "sim_cover": 0.641,
-    "history": {
-     "adj": 0.17,
-     "key": "spread dog",
-     "w": 187,
-     "l": 143,
-     "text": "Our record on spread dog: 187-143 (last 60 days, recent counts more) -> +0.17 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 2.9,
-    "components": {
-     "efficiency": 0.6,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 0.0,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.17
-    },
-    "total_gap": -0.6
-   },
-   {
     "id": "401910033",
     "sport": "NBA",
     "game": "Dallas Mavericks @ Utah Jazz",
@@ -1389,8 +1203,8 @@
     "home_line": 1.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -106
     ],
     "total": 226.5,
     "total_open": 225.5,
@@ -1507,7 +1321,7 @@
     "gap_b": 0.6,
     "gap_min": 0.6,
     "pick": "Utah Jazz +1.5",
-    "price": -110,
+    "price": -106,
     "side": "home",
     "fair_line": 1.5,
     "playable_to": null,
@@ -1875,6 +1689,181 @@
     },
     "total_gap": 6.2,
     "total_lean": "Over 213.5 (season scoring says 219.7) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401910030",
+    "sport": "NBA",
+    "game": "Oklahoma City Thunder @ Miami Heat",
+    "home": "Miami Heat",
+    "away": "Oklahoma City Thunder",
+    "time": "Sun 5:00 PM CT",
+    "start": "2026-11-22T23:00Z",
+    "book": "DraftKings",
+    "line": "MIA -3.5",
+    "home_line": -3.5,
+    "home_line_open": -2.5,
+    "spread_odds": [
+     -104,
+     -116
+    ],
+    "total": 231.5,
+    "total_open": 231.5,
+    "home_ml": -173,
+    "away_ml": 146,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": -0.9,
+    "model_b": 0.9,
+    "games_played": [
+     16,
+     15
+    ],
+    "neutral": false,
+    "records": [
+     "10-6",
+     "9-6"
+    ],
+    "venue": "Kaseya Center",
+    "tv": "KSBI, Thunder App",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Myron Gardner",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Giannis Antetokounmpo",
+      "pos": "F",
+      "status": "Day-To-Day"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Shai Gilgeous-Alexander",
+      "pos": "G",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Nikola Topic",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylin Williams",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Alex Caruso",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Thomas Sorber",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Cason Wallace",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Chet Holmgren",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Jalen Williams",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Isaiah Hartenstein",
+      "Shai Gilgeous-Alexander"
+     ],
+     [
+      "Bam Adebayo",
+      "Davion Mitchell",
+      "Giannis Antetokounmpo"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     4
+    ],
+    "form5": [
+     2.4,
+     12.6
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Star Shai Gilgeous-Alexander (Oklahoma City Thunder) Day-To-Day; Star Giannis Antetokounmpo (Miami Heat) Day-To-Day",
+    "flags": [
+     "Star Shai Gilgeous-Alexander (Oklahoma City Thunder) Day-To-Day",
+     "Star Giannis Antetokounmpo (Miami Heat) Day-To-Day"
+    ],
+    "factors": [
+     "Rest: Thunder 2 day(s), Heat 4 day(s)",
+     "Line moved 1 pts toward Miami Heat since open (-2.5 to -3.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +2.4 a game, theirs +12.6)"
+    ],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 230.9,
+    "veto_sides": [
+     "game",
+     "game"
+    ],
+    "gap_a": -4.4,
+    "gap_b": -2.6,
+    "gap_min": 4.4,
+    "pick": "Oklahoma City Thunder +3.5",
+    "price": -104,
+    "side": "away",
+    "fair_line": -0.0,
+    "playable_to": null,
+    "sim_cover": 0.611,
+    "history": {
+     "adj": 0.17,
+     "key": "spread dog",
+     "w": 187,
+     "l": 143,
+     "text": "Our record on spread dog: 187-143 (last 60 days, recent counts more) -> +0.17 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 2.3,
+    "components": {
+     "efficiency": 0.49,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.0,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.17
+    },
+    "total_gap": -0.6
    }
   ],
   "n_past": 241,
@@ -2025,7 +2014,7 @@
      -112,
      -108
     ],
-    "total": 135.5,
+    "total": 136.5,
     "total_open": 134.5,
     "home_ml": 200,
     "away_ml": -245,
@@ -2120,8 +2109,8 @@
      "situational": 0.5,
      "our history": 0.32
     },
-    "total_gap": 8.4,
-    "total_lean": "Over 135.5 (season scoring says 143.9) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.4,
+    "total_lean": "Over 136.5 (season scoring says 143.9) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921205",
@@ -2837,10 +2826,10 @@
      -105,
      -115
     ],
-    "total": 138.5,
+    "total": 139.5,
     "total_open": 143.5,
-    "home_ml": -245,
-    "away_ml": 200,
+    "home_ml": -230,
+    "away_ml": 190,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 6.5,
@@ -2937,8 +2926,8 @@
      "situational": 0.5,
      "our history": 0.32
     },
-    "total_gap": 19.9,
-    "total_lean": "Over 138.5 (season scoring says 158.4) - WATCH only, totals have no past-games test yet"
+    "total_gap": 18.9,
+    "total_lean": "Over 139.5 (season scoring says 158.4) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401922293",
@@ -3399,122 +3388,6 @@
      "our history": 0.32
     },
     "total_gap": -3.3
-   },
-   {
-    "id": "401928790",
-    "sport": "CBB",
-    "game": "Robert Morris Colonials @ New Mexico State Aggies",
-    "home": "New Mexico State Aggies",
-    "away": "Robert Morris Colonials",
-    "time": "Sun 1:30 PM CT",
-    "start": "2026-11-22T19:30Z",
-    "book": "DraftKings",
-    "line": "NMSU -1.5",
-    "home_line": -1.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 135.5,
-    "total_open": 137.5,
-    "home_ml": -122,
-    "away_ml": 102,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -1.7,
-    "model_b": -0.0,
-    "games_played": [
-     5,
-     5
-    ],
-    "neutral": true,
-    "records": [
-     "1-4",
-     "1-4"
-    ],
-    "venue": "The Reef",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Ace Valentine",
-      "KJ Garris Jr.",
-      "Samuel Obenjo"
-     ],
-     [
-      "Gabe Pickens",
-      "Mark Lavrenov"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -10.6,
-     -10.4
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Colonials 3 day(s), Aggies 3 day(s)",
-     "Line moved 1 pts toward Robert Morris Colonials since open (-2.5 to -1.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 141.8,
-    "gap_a": -3.2,
-    "gap_b": -1.5,
-    "gap_min": 3.2,
-    "pick": "Robert Morris Colonials +1.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": -0.8,
-    "playable_to": null,
-    "sim_cover": 0.584,
-    "history": {
-     "adj": 0.32,
-     "key": "CBB spread dog",
-     "w": 120,
-     "l": 79,
-     "text": "Our record on CBB spread dog: 120-79 (last 60 days, recent counts more) -> +0.32 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.35,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.32
-    },
-    "total_gap": 6.3,
-    "total_lean": "Over 135.5 (season scoring says 141.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920381",
@@ -4230,7 +4103,7 @@
      -105,
      -115
     ],
-    "total": 131.5,
+    "total": 132.5,
     "total_open": 128.5,
     "home_ml": 100,
     "away_ml": -120,
@@ -4328,8 +4201,7 @@
      "situational": 0.5,
      "our history": 0.32
     },
-    "total_gap": 6.0,
-    "total_lean": "Over 131.5 (season scoring says 137.5) - WATCH only, totals have no past-games test yet"
+    "total_gap": 5.0
    },
    {
     "id": "401920905",
@@ -5048,7 +4920,7 @@
      -258,
      210
     ],
-    "total": 5.5,
+    "total": 6.5,
     "total_open": 6.5,
     "home_ml": -125,
     "away_ml": 105,
