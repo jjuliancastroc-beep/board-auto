@@ -24,7 +24,7 @@
     "away_ml": -296,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
-    "model_a": -6.4,
+    "model_a": -6.0,
     "model_b": -6.5,
     "games_played": [
      9,
@@ -106,7 +106,7 @@
     "factors": [
      "Rest: Bengals 8 day(s), Commanders 11 day(s)",
      "Line moved 4.5 pts toward Cincinnati Bengals since open (+1.5 to +6 home)",
-     "Kickoff forecast: wind 11 mph (gusts 24), 55F, rain chance 3%",
+     "Kickoff forecast: wind 8 mph (gusts 8), 55F, rain chance 15%",
      "Last 5 games agree (our side +14.6 a game, theirs +1.4)"
     ],
     "against": [
@@ -116,26 +116,26 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 10.9,
-     "gust": 23.5,
-     "rain": 3,
-     "temp": 55.3,
-     "src": "Open-Meteo"
+     "wind": 8.0,
+     "gust": 8.0,
+     "rain": 15,
+     "temp": 55,
+     "src": "NWS"
     },
     "weather": {
      "text": "Partly cloudy",
      "temp": 56
     },
     "total_model": 49.4,
-    "gap_a": -0.4,
+    "gap_a": 0.0,
     "gap_b": -0.5,
     "gap_min": 0.5,
     "pick": "Cincinnati Bengals -6",
     "price": -113,
     "side": "away",
-    "fair_line": -6.4,
+    "fair_line": -6.2,
     "playable_to": null,
-    "sim_cover": 0.514,
+    "sim_cover": 0.507,
     "history": {
      "adj": -0.44,
      "key": "spread fav",
@@ -179,6 +179,148 @@
  {
   "sport": "NBA",
   "games": [
+   {
+    "id": "401910040",
+    "sport": "NBA",
+    "game": "Brooklyn Nets @ Minnesota Timberwolves",
+    "home": "Minnesota Timberwolves",
+    "away": "Brooklyn Nets",
+    "time": "Mon 6:30 PM CT",
+    "start": "2026-11-24T00:30Z",
+    "book": "Draft Kings",
+    "line": "MIN -11.5",
+    "home_line": -11.5,
+    "home_line_open": -11.5,
+    "spread_odds": [
+     -106,
+     -115
+    ],
+    "total": 223.5,
+    "total_open": 225.5,
+    "home_ml": -620,
+    "away_ml": 455,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 14.9,
+    "model_b": 16.3,
+    "games_played": [
+     15,
+     17
+    ],
+    "neutral": false,
+    "records": [
+     "3-12",
+     "12-5"
+    ],
+    "venue": "Target Center",
+    "tv": "NBCSN, DAZN MIN",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Jaylen Clark",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Anthony Edwards",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Donte DiVincenzo",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Grant Nelson",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Nolan Traore",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Day'Ron Sharpe",
+      "Julius Randle",
+      "Michael Porter Jr."
+     ],
+     [
+      "Ayo Dosunmu",
+      "Jaden McDaniels",
+      "LaMelo Ball",
+      "Rudy Gobert"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     2
+    ],
+    "form5": [
+     -6.6,
+     0.8
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Nets 3 day(s), Timberwolves 2 day(s)",
+     "Indoors - weather does not matter",
+     "Last 5 games agree (our side +0.8 a game, theirs -6.6)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 224.9,
+    "gap_a": 3.4,
+    "gap_b": 4.8,
+    "gap_min": 4.8,
+    "pick": "Minnesota Timberwolves -11.5",
+    "price": -115,
+    "side": "home",
+    "fair_line": -15.6,
+    "playable_to": null,
+    "sim_cover": 0.628,
+    "history": {
+     "adj": -0.25,
+     "key": "NBA spread fav",
+     "w": 11,
+     "l": 17,
+     "text": "Our record on NBA spread fav: 11-17 (last 60 days, recent counts more) -> -0.25 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.8,
+    "components": {
+     "efficiency": 0.53,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.25
+    },
+    "total_gap": 1.4
+   },
    {
     "id": "401910041",
     "sport": "NBA",
@@ -335,151 +477,6 @@
     },
     "total_gap": -2.3,
     "stake": 0
-   },
-   {
-    "id": "401910040",
-    "sport": "NBA",
-    "game": "Brooklyn Nets @ Minnesota Timberwolves",
-    "home": "Minnesota Timberwolves",
-    "away": "Brooklyn Nets",
-    "time": "Mon 6:30 PM CT",
-    "start": "2026-11-24T00:30Z",
-    "book": "Draft Kings",
-    "line": "MIN -12.5",
-    "home_line": -12.5,
-    "home_line_open": -11.5,
-    "spread_odds": [
-     -115,
-     -106
-    ],
-    "total": 223.5,
-    "total_open": 225.5,
-    "home_ml": -620,
-    "away_ml": 455,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 14.9,
-    "model_b": 16.3,
-    "games_played": [
-     15,
-     17
-    ],
-    "neutral": false,
-    "records": [
-     "3-12",
-     "12-5"
-    ],
-    "venue": "Target Center",
-    "tv": "NBCSN, DAZN MIN",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Jaylen Clark",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Anthony Edwards",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Donte DiVincenzo",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Grant Nelson",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Nolan Traore",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Day'Ron Sharpe",
-      "Julius Randle",
-      "Michael Porter Jr."
-     ],
-     [
-      "Ayo Dosunmu",
-      "Jaden McDaniels",
-      "LaMelo Ball",
-      "Rudy Gobert"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     2
-    ],
-    "form5": [
-     -6.6,
-     0.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Nets 3 day(s), Timberwolves 2 day(s)",
-     "Line moved 1 pts toward Minnesota Timberwolves since open (-11.5 to -12.5 home)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +0.8 a game, theirs -6.6)"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 224.9,
-    "gap_a": 2.4,
-    "gap_b": 3.8,
-    "gap_min": 3.8,
-    "pick": "Minnesota Timberwolves -12.5",
-    "price": -106,
-    "side": "home",
-    "fair_line": -15.6,
-    "playable_to": null,
-    "sim_cover": 0.598,
-    "history": {
-     "adj": -0.25,
-     "key": "NBA spread fav",
-     "w": 11,
-     "l": 17,
-     "text": "Our record on NBA spread fav: 11-17 (last 60 days, recent counts more) -> -0.25 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.8,
-    "components": {
-     "efficiency": 0.42,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.25
-    },
-    "total_gap": 1.4
    },
    {
     "id": "401910043",
@@ -1426,12 +1423,12 @@
     "time": "Mon 6:00 PM CT",
     "start": "2026-11-24T00:00Z",
     "book": "Draft Kings",
-    "line": "PHI -3.5",
-    "home_line": -3.5,
+    "line": "PHI -4.5",
+    "home_line": -4.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -108,
-     -112
+     -115,
+     -105
     ],
     "total": 231.5,
     "total_open": 228.5,
@@ -1529,7 +1526,7 @@
     ],
     "factors": [
      "Rest: Blazers 2 day(s), 76ers 2 day(s)",
-     "Line moved 1 pts toward Philadelphia 76ers since open (-2.5 to -3.5 home)",
+     "Line moved 2 pts toward Philadelphia 76ers since open (-2.5 to -4.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -1543,15 +1540,15 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": -5.1,
-    "gap_b": -1.5,
-    "gap_min": 5.1,
-    "pick": "Portland Trail Blazers +3.5",
-    "price": -108,
+    "gap_a": -6.1,
+    "gap_b": -2.5,
+    "gap_min": 6.1,
+    "pick": "Portland Trail Blazers +4.5",
+    "price": -115,
     "side": "away",
     "fair_line": 0.2,
     "playable_to": null,
-    "sim_cover": 0.604,
+    "sim_cover": 0.635,
     "history": {
      "adj": 0.17,
      "key": "NBA spread dog",
@@ -1568,9 +1565,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": true,
-    "conf": 3.6,
+    "conf": 3.8,
     "components": {
-     "efficiency": 0.57,
+     "efficiency": 0.68,
      "veto": 0.0,
      "models": 0.5,
      "starters": 0.75,
@@ -6828,8 +6825,8 @@
     "home_line": -108.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -278,
-     225
+     -270,
+     220
     ],
     "total": 6.5,
     "total_open": 6.5,
