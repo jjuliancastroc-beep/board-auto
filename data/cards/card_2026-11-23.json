@@ -106,7 +106,7 @@
     "factors": [
      "Rest: Bengals 8 day(s), Commanders 11 day(s)",
      "Line moved 4.5 pts toward Cincinnati Bengals since open (+1.5 to +6 home)",
-     "Kickoff forecast: wind 8 mph (gusts 8), 55F, rain chance 15%",
+     "Kickoff forecast: wind 12 mph (gusts 24), 55F, rain chance 3%",
      "Last 5 games agree (our side +14.6 a game, theirs +1.4)"
     ],
     "against": [
@@ -116,11 +116,11 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 8.0,
-     "gust": 8.0,
-     "rain": 15,
-     "temp": 55,
-     "src": "NWS"
+     "wind": 11.6,
+     "gust": 24.4,
+     "rain": 3,
+     "temp": 54.7,
+     "src": "Open-Meteo"
     },
     "weather": {
      "text": "Partly cloudy",
@@ -337,7 +337,7 @@
      -110,
      -110
     ],
-    "total": 240.5,
+    "total": 241.5,
     "total_open": 241.5,
     "home_ml": 270,
     "away_ml": -336,
@@ -475,7 +475,7 @@
      "situational": 0.2,
      "our history": 0.17
     },
-    "total_gap": -2.3,
+    "total_gap": -3.3,
     "stake": 0
    },
    {
@@ -1431,7 +1431,7 @@
      -107,
      -113
     ],
-    "total": 230.5,
+    "total": 232.5,
     "total_open": 228.5,
     "home_ml": -166,
     "away_ml": 139,
@@ -1578,7 +1578,7 @@
      "situational": 0.5,
      "our history": 0.17
     },
-    "total_gap": -3.2
+    "total_gap": -5.2
    },
    {
     "id": "401910045",
@@ -1869,6 +1869,127 @@
     "stake": 0
    },
    {
+    "id": "401917919",
+    "sport": "CBB",
+    "game": "Central Arkansas Bears @ North Florida Ospreys",
+    "home": "North Florida Ospreys",
+    "away": "Central Arkansas Bears",
+    "time": "Mon 6:00 PM CT",
+    "start": "2026-11-24T00:00Z",
+    "book": "Draft Kings",
+    "line": "CARK -9.5",
+    "home_line": 9.5,
+    "home_line_open": 8.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 165.5,
+    "total_open": 163.5,
+    "home_ml": 360,
+    "away_ml": -470,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -4.8,
+    "model_b": -0.2,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": false,
+    "records": [
+     "3-3",
+     "3-3"
+    ],
+    "venue": "UNF Arena",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Cole McCormick",
+      "Ty Robinson"
+     ],
+     [
+      "Ayuba Bryant Jr.",
+      "Kent Jackson"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     -5.6,
+     -4.2
+    ],
+    "decision": "CASH",
+    "reason": "Locked as a main at 00:05. Learned play: graded 6.9 (under the usual bar), but CBB dog under 10 is 61-35 (+19.6 units) on the Board - 58.9% after the pull toward 50/50 vs 52.9% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+    ],
+    "factors": [
+     "Rest: Bears 2 day(s), Ospreys 2 day(s)",
+     "Line moved 1 pts toward Central Arkansas Bears since open (+8.5 to +9.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Line moves past +9.3",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 156.4,
+    "gap_a": 4.7,
+    "gap_b": 9.3,
+    "gap_min": 4.7,
+    "pick": "North Florida Ospreys +9.5",
+    "price": -115,
+    "side": "home",
+    "fair_line": 2.5,
+    "playable_to": 9.3,
+    "sim_cover": 0.737,
+    "history": {
+     "adj": 0.36,
+     "key": "CBB spread dog",
+     "w": 128,
+     "l": 82,
+     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "conf": 6.9,
+    "components": {
+     "efficiency": 0.52,
+     "veto": 1.0,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.36
+    },
+    "total_gap": -9.1,
+    "total_lean": "Under 165.5 (season scoring says 156.4) - WATCH only, totals have no past-games test yet",
+    "stake": 10,
+    "now_says": "PAPER North Florida Ospreys +9.5 6.9",
+    "learned": true,
+    "locked": true
+   },
+   {
     "id": "401929445",
     "sport": "CBB",
     "game": "Arkansas State Red Wolves @ Southern Utah Thunderbirds",
@@ -1990,122 +2111,6 @@
     "now_says": "PAPER Southern Utah Thunderbirds +7.5 6.6",
     "learned": true,
     "locked": true
-   },
-   {
-    "id": "401921210",
-    "sport": "CBB",
-    "game": "Temple Owls @ UT Martin Skyhawks",
-    "home": "UT Martin Skyhawks",
-    "away": "Temple Owls",
-    "time": "Mon 4:30 PM CT",
-    "start": "2026-11-23T22:30Z",
-    "book": "Draft Kings",
-    "line": "TEM -4.5",
-    "home_line": 4.5,
-    "home_line_open": 4.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 145.5,
-    "total_open": 145.5,
-    "home_ml": 180,
-    "away_ml": -218,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -2.1,
-    "model_b": 6.0,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "3-3",
-     "4-3"
-    ],
-    "venue": "Elridge Blake Sports and Fitness Center",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cam Scott",
-      "Dallis Dillard",
-      "Gavin Griffiths"
-     ],
-     [
-      "Davi Remagen",
-      "Sasha Savkov"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     -3.2,
-     15.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Owls 1 day(s), Skyhawks 1 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +15.4 a game, theirs -3.2)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 153.3,
-    "gap_a": 2.4,
-    "gap_b": 10.5,
-    "gap_min": 10.5,
-    "pick": "UT Martin Skyhawks +4.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": -1.9,
-    "playable_to": null,
-    "sim_cover": 0.721,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 128,
-     "l": 82,
-     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.4,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": 7.8,
-    "total_lean": "Over 145.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920752",
@@ -2237,13 +2242,13 @@
     "home_line": -9.5,
     "home_line_open": -8.5,
     "spread_odds": [
-     -115,
-     -105
+     -112,
+     -108
     ],
-    "total": 136.5,
+    "total": 137.5,
     "total_open": 133.5,
-    "home_ml": -410,
-    "away_ml": 320,
+    "home_ml": -440,
+    "away_ml": 340,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 10.4,
@@ -2304,7 +2309,7 @@
     "gap_b": -5.2,
     "gap_min": 5.2,
     "pick": "Fairleigh Dickinson Knights +9.5",
-    "price": -115,
+    "price": -112,
     "side": "away",
     "fair_line": 7.4,
     "playable_to": null,
@@ -2337,126 +2342,7 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": 6.3,
-    "total_lean": "Over 136.5 (season scoring says 142.8) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401917919",
-    "sport": "CBB",
-    "game": "Central Arkansas Bears @ North Florida Ospreys",
-    "home": "North Florida Ospreys",
-    "away": "Central Arkansas Bears",
-    "time": "Mon 6:00 PM CT",
-    "start": "2026-11-24T00:00Z",
-    "book": "Draft Kings",
-    "line": "CARK -8.5",
-    "home_line": 8.5,
-    "home_line_open": 8.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 164.5,
-    "total_open": 163.5,
-    "home_ml": 360,
-    "away_ml": -470,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -4.8,
-    "model_b": -0.2,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     "3-3",
-     "3-3"
-    ],
-    "venue": "UNF Arena",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cole McCormick",
-      "Ty Robinson"
-     ],
-     [
-      "Ayuba Bryant Jr.",
-      "Kent Jackson"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     -5.6,
-     -4.2
-    ],
-    "decision": "CASH",
-    "reason": "Locked as a main at 00:05. Learned play: graded 6.9 (under the usual bar), but CBB dog under 10 is 61-35 (+19.6 units) on the Board - 58.9% after the pull toward 50/50 vs 52.9% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Bears 2 day(s), Ospreys 2 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 156.4,
-    "gap_a": 3.7,
-    "gap_b": 8.3,
-    "gap_min": 8.3,
-    "pick": "North Florida Ospreys +9.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": 2.5,
-    "playable_to": 9.3,
-    "sim_cover": 0.707,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 128,
-     "l": 82,
-     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.9,
-    "components": {
-     "efficiency": 0.52,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": -8.1,
-    "total_lean": "Under 164.5 (season scoring says 156.4) - WATCH only, totals have no past-games test yet",
-    "now_says": "WATCH North Florida Ospreys +8.5 6.3",
-    "stake": 10,
-    "learned": true,
-    "locked": true
+    "total_gap": 5.3
    },
    {
     "id": "401921701",
@@ -2474,7 +2360,7 @@
      -110,
      -110
     ],
-    "total": 143.5,
+    "total": 142.5,
     "total_open": 145.5,
     "home_ml": 225,
     "away_ml": -278,
@@ -2571,7 +2457,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": 5.2
+    "total_gap": 6.2,
+    "total_lean": "Over 142.5 (season scoring says 148.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921708",
@@ -2922,6 +2809,125 @@
     "total_gap": -0.1
    },
    {
+    "id": "401921210",
+    "sport": "CBB",
+    "game": "Temple Owls @ UT Martin Skyhawks",
+    "home": "UT Martin Skyhawks",
+    "away": "Temple Owls",
+    "time": "Mon 4:30 PM CT",
+    "start": "2026-11-23T22:30Z",
+    "book": "Draft Kings",
+    "line": "TEM -2.5",
+    "home_line": 2.5,
+    "home_line_open": 4.5,
+    "spread_odds": [
+     -120,
+     100
+    ],
+    "total": 144.5,
+    "total_open": 145.5,
+    "home_ml": 130,
+    "away_ml": -155,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -2.1,
+    "model_b": 6.0,
+    "games_played": [
+     6,
+     7
+    ],
+    "neutral": true,
+    "records": [
+     "3-3",
+     "4-3"
+    ],
+    "venue": "Elridge Blake Sports and Fitness Center",
+    "tv": "",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Cam Scott",
+      "Dallis Dillard",
+      "Gavin Griffiths"
+     ],
+     [
+      "Davi Remagen",
+      "Sasha Savkov"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     -3.2,
+     15.4
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+    ],
+    "factors": [
+     "Rest: Owls 1 day(s), Skyhawks 1 day(s)",
+     "Line moved 2 pts toward UT Martin Skyhawks since open (+4.5 to +2.5 home)",
+     "Indoors - weather does not matter",
+     "Last 5 games agree (our side +15.4 a game, theirs -3.2)"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 153.3,
+    "gap_a": 0.4,
+    "gap_b": 8.5,
+    "gap_min": 8.5,
+    "pick": "UT Martin Skyhawks +2.5",
+    "price": 100,
+    "side": "home",
+    "fair_line": -1.9,
+    "playable_to": null,
+    "sim_cover": 0.657,
+    "history": {
+     "adj": 0.36,
+     "key": "CBB spread dog",
+     "w": 128,
+     "l": 82,
+     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.0,
+    "components": {
+     "efficiency": 0.94,
+     "veto": 1.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.36
+    },
+    "total_gap": 8.8,
+    "total_lean": "Over 144.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
+   },
+   {
     "id": "401918057",
     "sport": "CBB",
     "game": "Alabama State Hornets @ California Golden Bears",
@@ -2937,7 +2943,7 @@
      -112,
      -108
     ],
-    "total": 145.5,
+    "total": 143.5,
     "total_open": 148.5,
     "home_ml": -5000,
     "away_ml": 1800,
@@ -3035,127 +3041,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": 6.7,
-    "total_lean": "Over 145.5 (season scoring says 152.2) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401913102",
-    "sport": "CBB",
-    "game": "Monmouth Hawks @ North Carolina Tar Heels",
-    "home": "North Carolina Tar Heels",
-    "away": "Monmouth Hawks",
-    "time": "Mon 7:00 PM CT",
-    "start": "2026-11-24T01:00Z",
-    "book": "Draft Kings",
-    "line": "UNC -19.5",
-    "home_line": -19.5,
-    "home_line_open": -20.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 153.5,
-    "total_open": 153.5,
-    "home_ml": -4500,
-    "away_ml": 1700,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 16.4,
-    "model_b": 10.5,
-    "games_played": [
-     5,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "1-4",
-     "4-1"
-    ],
-    "venue": "Dean E. Smith Center",
-    "tv": "ACC Network",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Madison Durr",
-      "Stefanos Spartalis",
-      "Torrey Brooks Jr."
-     ],
-     [
-      "Maximo Adams",
-      "Neo Avdalas",
-      "Terrence Brown"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -9.0,
-     11.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Hawks 3 day(s), Heels 3 day(s)",
-     "Line moved 1 pts toward Monmouth Hawks since open (-20.5 to -19.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -9.0 a game, theirs +11.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.9,
-    "gap_a": -3.1,
-    "gap_b": -9.0,
-    "gap_min": 9.0,
-    "pick": "Monmouth Hawks +19.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 13.5,
-    "playable_to": null,
-    "sim_cover": 0.709,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 128,
-     "l": 82,
-     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": -2.6
+    "total_gap": 8.7,
+    "total_lean": "Over 143.5 (season scoring says 152.2) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401926183",
@@ -3389,6 +3276,125 @@
      "our history": 0.36
     },
     "total_gap": -5.9
+   },
+   {
+    "id": "401913102",
+    "sport": "CBB",
+    "game": "Monmouth Hawks @ North Carolina Tar Heels",
+    "home": "North Carolina Tar Heels",
+    "away": "Monmouth Hawks",
+    "time": "Mon 7:00 PM CT",
+    "start": "2026-11-24T01:00Z",
+    "book": "Draft Kings",
+    "line": "UNC -18.5",
+    "home_line": -18.5,
+    "home_line_open": -20.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 153.5,
+    "total_open": 153.5,
+    "home_ml": -3600,
+    "away_ml": 1500,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 16.4,
+    "model_b": 10.5,
+    "games_played": [
+     5,
+     5
+    ],
+    "neutral": false,
+    "records": [
+     "1-4",
+     "4-1"
+    ],
+    "venue": "Dean E. Smith Center",
+    "tv": "ACC Network",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Madison Durr",
+      "Stefanos Spartalis",
+      "Torrey Brooks Jr."
+     ],
+     [
+      "Maximo Adams",
+      "Neo Avdalas",
+      "Terrence Brown"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     -9.0,
+     11.8
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+    ],
+    "factors": [
+     "Rest: Hawks 3 day(s), Heels 3 day(s)",
+     "Line moved 2 pts toward Monmouth Hawks since open (-20.5 to -18.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -9.0 a game, theirs +11.8)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.9,
+    "gap_a": -2.1,
+    "gap_b": -8.0,
+    "gap_min": 8.0,
+    "pick": "Monmouth Hawks +18.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 13.5,
+    "playable_to": null,
+    "sim_cover": 0.677,
+    "history": {
+     "adj": 0.36,
+     "key": "CBB spread dog",
+     "w": 128,
+     "l": 82,
+     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.5,
+    "components": {
+     "efficiency": 0.89,
+     "veto": 1.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.36
+    },
+    "total_gap": -2.6
    },
    {
     "id": "401921209",
@@ -3742,7 +3748,7 @@
      -110,
      -110
     ],
-    "total": 151.5,
+    "total": 150.5,
     "total_open": 152.5,
     "home_ml": -175,
     "away_ml": 145,
@@ -3835,7 +3841,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": 5.3
+    "total_gap": 6.3,
+    "total_lean": "Over 150.5 (season scoring says 156.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401909536",
@@ -3853,7 +3860,7 @@
      -110,
      -110
     ],
-    "total": 154.5,
+    "total": 153.5,
     "total_open": 152.5,
     "home_ml": -122,
     "away_ml": 102,
@@ -3949,8 +3956,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": -9.1,
-    "total_lean": "Under 154.5 (season scoring says 145.4) - WATCH only, totals have no past-games test yet"
+    "total_gap": -8.1,
+    "total_lean": "Under 153.5 (season scoring says 145.4) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921207",
@@ -4303,14 +4310,14 @@
     "time": "Mon 3:00 PM CT",
     "start": "2026-11-23T21:00Z",
     "book": "Draft Kings",
-    "line": "BEL -3.5",
-    "home_line": -3.5,
+    "line": "BEL -2.5",
+    "home_line": -2.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -118,
-     -102
+     -102,
+     -118
     ],
-    "total": 143.5,
+    "total": 144.5,
     "total_open": 143.5,
     "home_ml": -155,
     "away_ml": 130,
@@ -4361,32 +4368,29 @@
     "flags": [],
     "factors": [
      "Rest: Bulldogs 5 day(s), Bruins 5 day(s)",
-     "Line moved 1 pts toward Belmont Bruins since open (-2.5 to -3.5 home)",
      "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Last 5 games agree (our side +15.0 a game, theirs -4.0)"
     ],
-    "against": [
-     "Last 5 games point the other way (our side -4.0 a game, theirs +15.0)"
-    ],
+    "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 143.6,
-    "gap_a": -3.6,
-    "gap_b": 3.4,
-    "gap_min": 3.6,
-    "pick": "Yale Bulldogs +3.5",
+    "gap_a": -2.6,
+    "gap_b": 4.4,
+    "gap_min": 4.4,
+    "pick": "Belmont Bruins -2.5",
     "price": -118,
-    "side": "away",
-    "fair_line": 3.4,
+    "side": "home",
+    "fair_line": -3.4,
     "playable_to": null,
-    "sim_cover": 0.503,
+    "sim_cover": 0.533,
     "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 128,
-     "l": 82,
-     "text": "Our record on CBB spread dog: 128-82 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "adj": -0.08,
+     "key": "CBB spread fav",
+     "w": 10,
+     "l": 11,
+     "text": "Our record on CBB spread fav: 10-11 (last 60 days, recent counts more) -> -0.08 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4399,17 +4403,17 @@
     "veto": false,
     "conf": 5.4,
     "components": {
-     "efficiency": 0.4,
+     "efficiency": 0.49,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": -0.08
     },
-    "total_gap": 0.1
+    "total_gap": -0.9
    },
    {
     "id": "401921157",
@@ -4892,7 +4896,7 @@
      -105,
      -115
     ],
-    "total": 147.5,
+    "total": 146.5,
     "total_open": 149.5,
     "home_ml": -125,
     "away_ml": 105,
@@ -4988,8 +4992,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": 8.9,
-    "total_lean": "Over 147.5 (season scoring says 156.4) - WATCH only, totals have no past-games test yet"
+    "total_gap": 9.9,
+    "total_lean": "Over 146.5 (season scoring says 156.4) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401909788",
@@ -5007,7 +5011,7 @@
      -110,
      -110
     ],
-    "total": 158.5,
+    "total": 157.5,
     "total_open": 156.5,
     "home_ml": null,
     "away_ml": null,
@@ -5110,8 +5114,8 @@
      "situational": 0.5,
      "our history": 0.36
     },
-    "total_gap": -7.5,
-    "total_lean": "Under 158.5 (season scoring says 151.0) - WATCH only, totals have no past-games test yet"
+    "total_gap": -6.5,
+    "total_lean": "Under 157.5 (season scoring says 151.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401927397",
@@ -5354,14 +5358,14 @@
     "time": "Mon 6:00 PM CT",
     "start": "2026-11-24T00:00Z",
     "book": "Draft Kings",
-    "line": "NKU -2.5",
-    "home_line": -2.5,
+    "line": "NKU -3.5",
+    "home_line": -3.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -105,
-     -115
+     -118,
+     -102
     ],
-    "total": 166.5,
+    "total": 165.5,
     "total_open": 164.5,
     "home_ml": -155,
     "away_ml": 130,
@@ -5410,24 +5414,22 @@
     "flags": [],
     "factors": [
      "Rest: Eagles 4 day(s), Norse 4 day(s)",
-     "Line moved 1 pts toward Georgia Southern Eagles since open (-3.5 to -2.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Indoors - weather does not matter"
     ],
     "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 162.0,
-    "gap_a": 1.3,
-    "gap_b": 1.4,
-    "gap_min": 1.4,
-    "pick": "Northern Kentucky Norse -2.5",
-    "price": -115,
+    "gap_a": 0.3,
+    "gap_b": 0.4,
+    "gap_min": 0.4,
+    "pick": "Northern Kentucky Norse -3.5",
+    "price": -102,
     "side": "home",
     "fair_line": -3.8,
     "playable_to": null,
-    "sim_cover": 0.549,
+    "sim_cover": 0.513,
     "history": {
      "adj": -0.08,
      "key": "CBB spread fav",
@@ -5444,9 +5446,9 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.1,
+    "conf": 5.0,
     "components": {
-     "efficiency": 0.16,
+     "efficiency": 0.04,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
@@ -5456,7 +5458,7 @@
      "situational": 0.5,
      "our history": -0.08
     },
-    "total_gap": -4.5
+    "total_gap": -3.5
    },
    {
     "id": "401926069",
