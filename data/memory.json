@@ -34,10 +34,10 @@
   },
   "CBB conf 6-6.9": {
    "w": 93,
-   "l": 66,
-   "units": 16.86,
+   "l": 67,
+   "units": 15.86,
    "be": 0.5289,
-   "shrunk": 0.5646,
+   "shrunk": 0.5619,
    "status": "proven winner"
   },
   "CBB dog 20+": {
@@ -50,10 +50,10 @@
   },
   "CBB dog 10-20": {
    "w": 41,
-   "l": 33,
-   "units": 3.45,
-   "be": 0.5285,
-   "shrunk": 0.5323,
+   "l": 34,
+   "units": 2.45,
+   "be": 0.5284,
+   "shrunk": 0.528,
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
@@ -210,10 +210,10 @@
   },
   "NFL conf 6-6.9": {
    "w": 2,
-   "l": 1,
-   "units": 0.84,
-   "be": 0.5208,
-   "shrunk": 0.5094,
+   "l": 2,
+   "units": -0.16,
+   "be": 0.5215,
+   "shrunk": 0.5,
    "status": "learning"
   },
   "NFL dog under 10": {
@@ -266,10 +266,10 @@
   },
   "NFL dog 10-20": {
    "w": 0,
-   "l": 2,
-   "units": -2.0,
-   "be": 0.5283,
-   "shrunk": 0.4808,
+   "l": 3,
+   "units": -3.0,
+   "be": 0.5268,
+   "shrunk": 0.4717,
    "status": "learning"
   },
   "NFL conf 7-7.9": {
@@ -362,82 +362,82 @@
  "paused_until": null,
  "props": {
   "CBB assists higher": {
-   "n": 50,
-   "hit": 0.52,
-   "said": 0.4828,
-   "gap": 0.0124,
+   "n": 51,
+   "hit": 0.5098,
+   "said": 0.4841,
+   "gap": 0.0087,
    "status": "learning",
    "strong": false
   },
   "CBB assists lower": {
-   "n": 50,
-   "hit": 0.48,
-   "said": 0.5172,
-   "gap": -0.0124,
+   "n": 51,
+   "hit": 0.4902,
+   "said": 0.5159,
+   "gap": -0.0087,
    "status": "learning",
    "strong": false
   },
   "CBB rebounds higher": {
-   "n": 75,
-   "hit": 0.5067,
-   "said": 0.4957,
-   "gap": 0.0047,
+   "n": 76,
+   "hit": 0.5,
+   "said": 0.4945,
+   "gap": 0.0024,
    "status": "learning",
    "strong": false
   },
   "CBB rebounds lower": {
-   "n": 75,
-   "hit": 0.4933,
-   "said": 0.5043,
-   "gap": -0.0047,
+   "n": 76,
+   "hit": 0.5,
+   "said": 0.5055,
+   "gap": -0.0024,
    "status": "learning",
    "strong": false
   },
   "CBB pts_rebs_asts higher": {
-   "n": 60,
-   "hit": 0.45,
-   "said": 0.4933,
-   "gap": -0.0163,
+   "n": 62,
+   "hit": 0.4516,
+   "said": 0.4937,
+   "gap": -0.0161,
    "status": "learning",
    "strong": false
   },
   "CBB pts_rebs_asts lower": {
-   "n": 60,
-   "hit": 0.55,
-   "said": 0.5067,
-   "gap": 0.0162,
+   "n": 62,
+   "hit": 0.5484,
+   "said": 0.5063,
+   "gap": 0.0161,
    "status": "learning",
    "strong": false
   },
   "CBB points higher": {
-   "n": 80,
-   "hit": 0.5125,
-   "said": 0.4905,
-   "gap": 0.0098,
+   "n": 81,
+   "hit": 0.5062,
+   "said": 0.4907,
+   "gap": 0.0069,
    "status": "learning",
    "strong": false
   },
   "CBB points lower": {
-   "n": 80,
-   "hit": 0.4875,
-   "said": 0.5095,
-   "gap": -0.0098,
+   "n": 81,
+   "hit": 0.4938,
+   "said": 0.5093,
+   "gap": -0.0069,
    "status": "learning",
    "strong": false
   },
   "CBB three_points_made higher": {
-   "n": 45,
-   "hit": 0.3778,
-   "said": 0.4676,
-   "gap": -0.0279,
+   "n": 46,
+   "hit": 0.3696,
+   "said": 0.4706,
+   "gap": -0.0318,
    "status": "learning",
    "strong": false
   },
   "CBB three_points_made lower": {
-   "n": 45,
-   "hit": 0.6222,
-   "said": 0.5324,
-   "gap": 0.0279,
+   "n": 46,
+   "hit": 0.6304,
+   "said": 0.5294,
+   "gap": 0.0318,
    "status": "learning",
    "strong": false
   },
@@ -1258,10 +1258,10 @@
    "strong": false
   },
   "CBB conf under 5.5 leaned side": {
-   "n": 76,
-   "hit": 0.4342,
-   "said": 0.489,
-   "gap": -0.0237,
+   "n": 82,
+   "hit": 0.4146,
+   "said": 0.4908,
+   "gap": -0.0343,
    "status": "learning",
    "strong": false
   },
@@ -1314,5 +1314,5 @@
    "strong": false
   }
  },
- "updated": "11/22 06:24 PM"
+ "updated": "11/22 06:48 PM"
 }

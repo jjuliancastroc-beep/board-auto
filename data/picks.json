@@ -32139,15 +32139,17 @@
   "date": "2026-11-22",
   "line_at_pick": "DEN -10.5",
   "logged_at": "00:18",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Las Vegas Raiders 24, Denver Broncos 38",
+  "close": "DEN -11.5",
+  "clv": -1.0,
   "review": "PULL",
   "review_log": [
    "11/22 12:18 AM: checked line and injuries - no change",
    "11/22 02:17 PM: PULL - QB Sam Ehlinger (Denver Broncos) Out - QB rule: no bet on this game until settled"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -32936,14 +32938,16 @@
   "date": "2026-11-22",
   "line_at_pick": "IUIN -10.5",
   "logged_at": "00:18",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "IU Indianapolis Jaguars 81, Maryland Eastern Shore Hawks 61",
+  "close": "IUIN -10.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/22 12:18 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -34232,6 +34236,87 @@
   "review": "HOLD",
   "review_log": [
    "11/22 04:23 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401910034",
+  "sport": "NBA",
+  "game": "Indiana Pacers @ New York Knicks",
+  "home": "New York Knicks",
+  "away": "Indiana Pacers",
+  "start": "2026-11-23T01:00Z",
+  "pick": "New York Knicks -6.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.0,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.2,
+   "our history": -0.3
+  },
+  "gap_a": 2.8,
+  "gap_b": 9.1,
+  "gap_min": 9.1,
+  "price": -108,
+  "fair_line": -12.4,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -6.5,
+  "home_ml": -249,
+  "away_ml": 205,
+  "flags": [
+   "New York Knicks on a back-to-back",
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Our side has less rest"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 9.3,
+  "model_b": 15.6,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.3,
+   "key": "NBA spread fav",
+   "w": 10,
+   "l": 17,
+   "text": "Our record on NBA spread fav: 10-17 (last 60 days, recent counts more) -> -0.30 to confidence"
+  },
+  "date": "2026-11-22",
+  "line_at_pick": "NY -6.5",
+  "logged_at": "18:48",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/22 06:48 PM: checked line and injuries - no change"
   ]
  }
 ]
