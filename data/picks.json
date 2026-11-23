@@ -36494,5 +36494,84 @@
   "review_log": [
    "11/23 12:11 PM: checked line and injuries - no change"
   ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401910036",
+  "sport": "NBA",
+  "game": "Memphis Grizzlies @ Charlotte Hornets",
+  "home": "Charlotte Hornets",
+  "away": "Memphis Grizzlies",
+  "start": "2026-11-24T00:00Z",
+  "pick": "Memphis Grizzlies -2.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.5,
+  "components": {
+   "efficiency": 0.76,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.25
+  },
+  "gap_a": -6.8,
+  "gap_b": -12.4,
+  "gap_min": 6.8,
+  "price": -116,
+  "fair_line": -12.1,
+  "playable_to": -4.8,
+  "side": "away",
+  "home_line": 2.5,
+  "home_ml": 125,
+  "away_ml": -148,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [],
+  "invalidation": [
+   "Line moves past -4.8",
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Both models agree, but confidence 6.5 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
+  "model_a": -9.3,
+  "model_b": -14.9,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.25,
+   "key": "NBA spread fav",
+   "w": 11,
+   "l": 17,
+   "text": "Our record on NBA spread fav: 11-17 (last 60 days, recent counts more) -> -0.25 to confidence"
+  },
+  "date": "2026-11-23",
+  "line_at_pick": "MEM -2.5",
+  "logged_at": "16:22",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/23 04:22 PM: checked line and injuries - no change"
+  ]
  }
 ]
