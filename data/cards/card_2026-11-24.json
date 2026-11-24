@@ -225,7 +225,7 @@
     },
     "weather": {
      "text": "Mostly clear",
-     "temp": 32
+     "temp": 31
     },
     "total_model": 49.4,
     "gap_a": 3.2,
@@ -292,8 +292,8 @@
     ],
     "total": 218.5,
     "total_open": 230.5,
-    "home_ml": 351,
-    "away_ml": -453,
+    "home_ml": 331,
+    "away_ml": -424,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -6.0,
@@ -575,12 +575,12 @@
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
     "book": "Draft Kings",
-    "line": "DET -2.5",
-    "home_line": 2.5,
+    "line": "DET -1.5",
+    "home_line": 1.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     -105,
-     -115
+     -116,
+     -104
     ],
     "total": 212.5,
     "total_open": 214.5,
@@ -681,12 +681,9 @@
     ],
     "factors": [
      "Rest: Pistons 2 day(s), Magic 2 day(s)",
-     "Line moved 1 pts toward Detroit Pistons since open (+1.5 to +2.5 home)",
      "Indoors - weather does not matter"
     ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
+    "against": [],
     "invalidation": [
      "A star on either team changes status (questionable to out or back in)"
     ],
@@ -694,15 +691,15 @@
     "veto_sides": [
      "game"
     ],
-    "gap_a": -1.5,
-    "gap_b": 1.2,
-    "gap_min": 1.5,
-    "pick": "Detroit Pistons -2.5",
-    "price": -105,
+    "gap_a": -2.5,
+    "gap_b": 0.2,
+    "gap_min": 2.5,
+    "pick": "Detroit Pistons -1.5",
+    "price": -116,
     "side": "away",
     "fair_line": -2.6,
     "playable_to": null,
-    "sim_cover": 0.505,
+    "sim_cover": 0.536,
     "history": {
      "adj": -0.13,
      "key": "NBA spread fav",
@@ -719,14 +716,14 @@
     "models_agree": false,
     "one_model": false,
     "veto": true,
-    "conf": 2.4,
+    "conf": 2.9,
     "components": {
-     "efficiency": 0.17,
+     "efficiency": 0.28,
      "veto": 0.0,
      "models": 0.0,
      "starters": 0.75,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
      "our history": -0.13
@@ -1936,7 +1933,7 @@
      -110,
      -110
     ],
-    "total": 157.5,
+    "total": 156.5,
     "total_open": 154.5,
     "home_ml": -340,
     "away_ml": 270,
@@ -2031,8 +2028,8 @@
      "situational": 0.5,
      "our history": 0.35
     },
-    "total_gap": -7.8,
-    "total_lean": "Under 157.5 (season scoring says 149.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": -6.8,
+    "total_lean": "Under 156.5 (season scoring says 149.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401909775",
@@ -3676,13 +3673,13 @@
     "home_line": -5.5,
     "home_line_open": -5.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
-    "total": 135.5,
+    "total": 134.5,
     "total_open": 138.5,
-    "home_ml": -225,
-    "away_ml": 185,
+    "home_ml": -238,
+    "away_ml": 195,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.8,
@@ -3742,7 +3739,7 @@
     "gap_b": -3.1,
     "gap_min": 3.1,
     "pick": "Boston University Terriers +5.5",
-    "price": -110,
+    "price": -105,
     "side": "away",
     "fair_line": 3.6,
     "playable_to": null,
@@ -3775,8 +3772,8 @@
      "situational": 0.5,
      "our history": 0.35
     },
-    "total_gap": 6.8,
-    "total_lean": "Over 135.5 (season scoring says 142.3) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.8,
+    "total_lean": "Over 134.5 (season scoring says 142.3) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401911458",
@@ -3791,13 +3788,13 @@
     "home_line": -1.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     -122,
-     102
+     -115,
+     -105
     ],
-    "total": 158.5,
+    "total": 159.5,
     "total_open": 155.5,
-    "home_ml": -118,
-    "away_ml": -102,
+    "home_ml": -110,
+    "away_ml": -110,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -1.5,
@@ -3856,7 +3853,7 @@
     "gap_b": -2.4,
     "gap_min": 3.0,
     "pick": "Nevada Wolf Pack +1.5",
-    "price": -122,
+    "price": -115,
     "side": "away",
     "fair_line": -1.2,
     "playable_to": null,
@@ -3889,7 +3886,7 @@
      "situational": 0.5,
      "our history": 0.35
     },
-    "total_gap": 0.6
+    "total_gap": -0.4
    },
    {
     "id": "401926154",
