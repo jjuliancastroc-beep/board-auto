@@ -20,7 +20,7 @@
     "away": "San Antonio Spurs",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-24T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SA -8.5",
     "home_line": 8.5,
     "home_line_open": 10.5,
@@ -178,15 +178,15 @@
     "away": "Utah Jazz",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-24T03:00Z",
-    "book": "DraftKings",
-    "line": "LAL -12.5",
-    "home_line": -12.5,
+    "book": "Draft Kings",
+    "line": "LAL -13.5",
+    "home_line": -13.5,
     "home_line_open": -12.5,
     "spread_odds": [
-     -104,
-     -116
+     -117,
+     -103
     ],
-    "total": 224.5,
+    "total": 225.5,
     "total_open": 230.5,
     "home_ml": -750,
     "away_ml": 530,
@@ -266,7 +266,9 @@
     ],
     "factors": [
      "Rest: Jazz 1 day(s), Lakers 3 day(s)",
-     "Indoors - weather does not matter"
+     "Line moved 1 pts toward Los Angeles Lakers since open (-12.5 to -13.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
      "Our side has less rest"
@@ -275,15 +277,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 229.1,
-    "gap_a": -3.1,
-    "gap_b": 0.6,
-    "gap_min": 3.1,
-    "pick": "Utah Jazz +12.5",
-    "price": -104,
+    "gap_a": -4.1,
+    "gap_b": -0.4,
+    "gap_min": 4.1,
+    "pick": "Utah Jazz +13.5",
+    "price": -117,
     "side": "away",
     "fair_line": 11.2,
     "playable_to": null,
-    "sim_cover": 0.54,
+    "sim_cover": 0.572,
     "history": {
      "adj": 0.17,
      "key": "NBA spread dog",
@@ -300,9 +302,9 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 4.1,
+    "conf": 4.2,
     "components": {
-     "efficiency": 0.35,
+     "efficiency": 0.46,
      "veto": 1.5,
      "models": 0.0,
      "starters": 0.75,
@@ -312,7 +314,7 @@
      "situational": 0.2,
      "our history": 0.17
     },
-    "total_gap": 4.6
+    "total_gap": 3.6
    }
   ],
   "n_past": 248,
@@ -329,13 +331,13 @@
     "away": "Eastern Washington Eagles",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-24T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UNLV -8.5",
     "home_line": -8.5,
     "home_line_open": -7.5,
     "spread_odds": [
-     -115,
-     -105
+     -112,
+     -108
     ],
     "total": 160.5,
     "total_open": 161.5,
@@ -403,7 +405,7 @@
     "gap_b": -8.0,
     "gap_min": 8.0,
     "pick": "Eastern Washington Eagles +8.5",
-    "price": -115,
+    "price": -112,
     "side": "away",
     "fair_line": 3.8,
     "playable_to": null,
@@ -439,123 +441,6 @@
     "total_gap": -0.1
    },
    {
-    "id": "401926183",
-    "sport": "CBB",
-    "game": "UNC Greensboro Spartans @ Pepperdine Waves",
-    "home": "Pepperdine Waves",
-    "away": "UNC Greensboro Spartans",
-    "time": "Mon 8:30 PM CT",
-    "start": "2026-11-24T02:30Z",
-    "book": "DraftKings",
-    "line": "PEPP -10.5",
-    "home_line": -10.5,
-    "home_line_open": -11.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 153.5,
-    "total_open": 152.5,
-    "home_ml": -600,
-    "away_ml": 440,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 8.5,
-    "model_b": 5.4,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     "4-2",
-     "3-3"
-    ],
-    "venue": "Firestone Fieldhouse",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cameron Grant",
-      "Dionte Neal"
-     ],
-     [
-      "Anthony Robinson",
-      "Anto Balian",
-      "Petar Majstorovic"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     2.6,
-     14.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Spartans 2 day(s), Waves 3 day(s)",
-     "Line moved 1 pts toward UNC Greensboro Spartans since open (-11.5 to -10.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side +2.6 a game, theirs +14.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 161.2,
-    "gap_a": -2.0,
-    "gap_b": -5.1,
-    "gap_min": 5.1,
-    "pick": "UNC Greensboro Spartans +10.5",
-    "price": -105,
-    "side": "away",
-    "fair_line": 7.0,
-    "playable_to": null,
-    "sim_cover": 0.626,
-    "history": {
-     "adj": 0.37,
-     "key": "CBB spread dog",
-     "w": 132,
-     "l": 84,
-     "text": "Our record on CBB spread dog: 132-84 (last 60 days, recent counts more) -> +0.37 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 0.56,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.37
-    },
-    "total_gap": 7.7,
-    "total_lean": "Over 153.5 (season scoring says 161.2) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401909743",
     "sport": "CBB",
     "game": "Colorado State Rams @ Arizona Wildcats",
@@ -563,7 +448,7 @@
     "away": "Colorado State Rams",
     "time": "Mon 10:30 PM CT",
     "start": "2026-11-24T04:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ARIZ -16.5",
     "home_line": -16.5,
     "home_line_open": -17.5,
@@ -680,15 +565,15 @@
     "away": "Alabama State Hornets",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-24T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CAL -18.5",
     "home_line": -18.5,
     "home_line_open": -19.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
-    "total": 143.5,
+    "total": 142.5,
     "total_open": 148.5,
     "home_ml": -5000,
     "away_ml": 1800,
@@ -755,7 +640,7 @@
     "gap_b": -8.2,
     "gap_min": 8.2,
     "pick": "Alabama State Hornets +18.5",
-    "price": -110,
+    "price": -115,
     "side": "away",
     "fair_line": 15.3,
     "playable_to": null,
@@ -788,8 +673,8 @@
      "situational": 0.5,
      "our history": 0.37
     },
-    "total_gap": 8.7,
-    "total_lean": "Over 143.5 (season scoring says 152.2) - WATCH only, totals have no past-games test yet"
+    "total_gap": 9.7,
+    "total_lean": "Over 142.5 (season scoring says 152.2) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921664",
@@ -799,7 +684,7 @@
     "away": "San Jos\u00e9 State Spartans",
     "time": "Mon 10:59 PM CT",
     "start": "2026-11-24T04:59Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UCSD -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -912,7 +797,7 @@
     "away": "Loyola Chicago Ramblers",
     "time": "Mon 8:30 PM CT",
     "start": "2026-11-24T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SEA -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -1034,13 +919,13 @@
     "away": "Minnesota Wild",
     "time": "Mon 9:00 PM CT",
     "start": "2026-11-24T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIN -180",
     "home_line": 180.0,
     "home_line_open": 1.5,
     "spread_odds": [
-     136,
-     -162
+     130,
+     -155
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -1162,13 +1047,13 @@
     "away": "Anaheim Ducks",
     "time": "Mon 8:40 PM CT",
     "start": "2026-11-24T02:40Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SEA -118",
     "home_line": -118.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -245,
-     200
+     -258,
+     210
     ],
     "total": 6.5,
     "total_open": 6.5,
