@@ -15,7 +15,7 @@
     "away": "Kent State Golden Flashes",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "EMU -5.5",
     "home_line": -5.5,
     "home_line_open": -6.5,
@@ -145,7 +145,7 @@
     "away": "Miami (OH) RedHawks",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WMU -5.5",
     "home_line": -5.5,
     "home_line_open": -7.5,
@@ -282,7 +282,7 @@
     "away": "Boston Celtics",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BOS -10.5",
     "home_line": 10.5,
     "home_line_open": 5.5,
@@ -430,7 +430,7 @@
     "away": "Dallas Mavericks",
     "time": "Tue 9:00 PM CT",
     "start": "2026-11-25T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DEN -8.5",
     "home_line": -8.5,
     "home_line_open": -8.5,
@@ -574,7 +574,7 @@
     "away": "Detroit Pistons",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DET -2.5",
     "home_line": 2.5,
     "home_line_open": 1.5,
@@ -584,8 +584,8 @@
     ],
     "total": 213.5,
     "total_open": 214.5,
-    "home_ml": 114,
-    "away_ml": -135,
+    "home_ml": 110,
+    "away_ml": -130,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -4.0,
@@ -749,7 +749,7 @@
     "away": "UNC Asheville Bulldogs",
     "time": "Tue 8:00 PM CT",
     "start": "2026-11-25T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FSU -29.5",
     "home_line": -29.5,
     "home_line_open": -25.5,
@@ -866,6 +866,124 @@
     "locked": true
    },
    {
+    "id": "401926184",
+    "sport": "CBB",
+    "game": "UNC Greensboro Spartans @ UC Santa Barbara Gauchos",
+    "home": "UC Santa Barbara Gauchos",
+    "away": "UNC Greensboro Spartans",
+    "time": "Tue 8:00 PM CT",
+    "start": "2026-11-25T02:00Z",
+    "book": "Draft Kings",
+    "line": "UCSB -18.5",
+    "home_line": -18.5,
+    "home_line_open": -19.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 145.5,
+    "total_open": 149.5,
+    "home_ml": -2800,
+    "away_ml": 1300,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 12.5,
+    "model_b": 12.3,
+    "games_played": [
+     7,
+     5
+    ],
+    "neutral": false,
+    "records": [
+     "4-3",
+     "5-0"
+    ],
+    "venue": "The Thunderdome",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Cameron Grant",
+      "Dionte Neal"
+     ],
+     [
+      "Aidan Mahaney",
+      "Eric Dibami",
+      "Miro Little"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     5
+    ],
+    "form5": [
+     -1.0,
+     20.8
+    ],
+    "decision": "PAPER",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.8 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "flags": [],
+    "factors": [
+     "Rest: Spartans 1 day(s), Gauchos 5 day(s)",
+     "Line moved 1 pts toward UNC Greensboro Spartans since open (-19.5 to -18.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -1.0 a game, theirs +20.8)"
+    ],
+    "invalidation": [
+     "Line moves past +17",
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.4,
+    "gap_a": -6.0,
+    "gap_b": -6.2,
+    "gap_min": 6.0,
+    "pick": "UNC Greensboro Spartans +18.5",
+    "price": -115,
+    "side": "away",
+    "fair_line": 12.4,
+    "playable_to": 17.0,
+    "sim_cover": 0.711,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": true,
+    "one_model": false,
+    "veto": false,
+    "conf": 6.8,
+    "components": {
+     "efficiency": 0.67,
+     "veto": 1.5,
+     "models": 1.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": 4.9,
+    "stake": 0
+   },
+   {
     "id": "401920709",
     "sport": "CBB",
     "game": "Lipscomb Bisons @ Auburn Tigers",
@@ -873,7 +991,7 @@
     "away": "Lipscomb Bisons",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "AUB -24.5",
     "home_line": -24.5,
     "home_line_open": -20.5,
@@ -989,124 +1107,6 @@
     "locked": true
    },
    {
-    "id": "401926184",
-    "sport": "CBB",
-    "game": "UNC Greensboro Spartans @ UC Santa Barbara Gauchos",
-    "home": "UC Santa Barbara Gauchos",
-    "away": "UNC Greensboro Spartans",
-    "time": "Tue 8:00 PM CT",
-    "start": "2026-11-25T02:00Z",
-    "book": "DraftKings",
-    "line": "UCSB -17.5",
-    "home_line": -17.5,
-    "home_line_open": -19.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 145.5,
-    "total_open": 149.5,
-    "home_ml": -2800,
-    "away_ml": 1300,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 12.5,
-    "model_b": 12.3,
-    "games_played": [
-     7,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "4-3",
-     "5-0"
-    ],
-    "venue": "The Thunderdome",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cameron Grant",
-      "Dionte Neal"
-     ],
-     [
-      "Aidan Mahaney",
-      "Eric Dibami",
-      "Miro Little"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     5
-    ],
-    "form5": [
-     -1.0,
-     20.8
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.7 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [],
-    "factors": [
-     "Rest: Spartans 1 day(s), Gauchos 5 day(s)",
-     "Line moved 2 pts toward UNC Greensboro Spartans since open (-19.5 to -17.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -1.0 a game, theirs +20.8)"
-    ],
-    "invalidation": [
-     "Line moves past +17",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.4,
-    "gap_a": -5.0,
-    "gap_b": -5.2,
-    "gap_min": 5.0,
-    "pick": "UNC Greensboro Spartans +17.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 12.4,
-    "playable_to": 17.0,
-    "sim_cover": 0.679,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "conf": 6.7,
-    "components": {
-     "efficiency": 0.56,
-     "veto": 1.5,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": 4.9,
-    "stake": 0
-   },
-   {
     "id": "401909800",
     "sport": "CBB",
     "game": "Gonzaga Bulldogs @ Kansas State Wildcats",
@@ -1114,9 +1114,9 @@
     "away": "Gonzaga Bulldogs",
     "time": "Tue 11:30 PM CT",
     "start": "2026-11-25T05:30Z",
-    "book": "DraftKings",
-    "line": "GONZ -16.5",
-    "home_line": 16.5,
+    "book": "Draft Kings",
+    "line": "GONZ -15.5",
+    "home_line": 15.5,
     "home_line_open": 12.5,
     "spread_odds": [
      -105,
@@ -1168,14 +1168,14 @@
      8.4
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.7 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.5 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet",
      "Early season: under 5 games for a team - prior-heavy"
     ],
     "factors": [
      "Rest: Bulldogs 7 day(s), Wildcats 4 day(s)",
-     "Line moved 4 pts toward Gonzaga Bulldogs since open (+12.5 to +16.5 home)",
+     "Line moved 3 pts toward Gonzaga Bulldogs since open (+12.5 to +15.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -1187,21 +1187,21 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 153.9,
-    "gap_a": 5.9,
-    "gap_b": 14.4,
-    "gap_min": 5.9,
-    "pick": "Kansas State Wildcats +16.5",
+    "gap_a": 4.9,
+    "gap_b": 13.4,
+    "gap_min": 4.9,
+    "pick": "Kansas State Wildcats +15.5",
     "price": -115,
     "side": "home",
     "fair_line": 6.4,
     "playable_to": 15.1,
-    "sim_cover": 0.822,
+    "sim_cover": 0.797,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1212,9 +1212,9 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 6.7,
+    "conf": 6.5,
     "components": {
-     "efficiency": 0.66,
+     "efficiency": 0.54,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
@@ -1222,7 +1222,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -3.6,
     "stake": 0
@@ -1235,7 +1235,7 @@
     "away": "Milwaukee Panthers",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FLA -34.5",
     "home_line": -34.5,
     "home_line_open": -38.5,
@@ -1317,11 +1317,11 @@
     "playable_to": 31.7,
     "sim_cover": 0.865,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1342,7 +1342,7 @@
      "against": 0.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 1.3,
     "stake": 0
@@ -1355,7 +1355,7 @@
     "away": "Jacksonville Dolphins",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "IU -28.5",
     "home_line": -28.5,
     "home_line_open": -28.5,
@@ -1437,11 +1437,11 @@
     "playable_to": 28.0,
     "sim_cover": 0.778,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1462,7 +1462,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 9.3,
     "total_lean": "Over 146.5 (season scoring says 155.8) - WATCH only, totals have no past-games test yet",
@@ -1476,7 +1476,7 @@
     "away": "Sacred Heart Pioneers",
     "time": "Tue 5:00 PM CT",
     "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "RUTG -22.5",
     "home_line": -22.5,
     "home_line_open": -23.5,
@@ -1559,11 +1559,11 @@
     "playable_to": 22.2,
     "sim_cover": 0.789,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1584,7 +1584,7 @@
      "against": 0.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -3.8,
     "stake": 0
@@ -1597,7 +1597,7 @@
     "away": "App State Mountaineers",
     "time": "Tue 2:00 PM CT",
     "start": "2026-11-24T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "YALE -1.5",
     "home_line": -1.5,
     "home_line_open": 1.5,
@@ -1675,11 +1675,11 @@
     "playable_to": null,
     "sim_cover": 0.631,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1700,7 +1700,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 5.4
    },
@@ -1712,7 +1712,7 @@
     "away": "Creighton Bluejays",
     "time": "Tue 4:30 PM CT",
     "start": "2026-11-24T22:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MICH -5.5",
     "home_line": -5.5,
     "home_line_open": -4.5,
@@ -1790,11 +1790,11 @@
     "playable_to": null,
     "sim_cover": 0.652,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1815,7 +1815,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -5.5
    },
@@ -1827,13 +1827,13 @@
     "away": "Tarleton State Texans",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WEB -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
     "spread_odds": [
-     -118,
-     -102
+     -112,
+     -108
     ],
     "total": 155.5,
     "total_open": 160.5,
@@ -1896,17 +1896,17 @@
     "gap_b": -6.2,
     "gap_min": 6.2,
     "pick": "Tarleton State Texans +1.5",
-    "price": -118,
+    "price": -112,
     "side": "away",
     "fair_line": -2.2,
     "playable_to": null,
     "sim_cover": 0.632,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1927,7 +1927,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 2.3
    },
@@ -1939,7 +1939,7 @@
     "away": "Army Black Knights",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "AF -3.5",
     "home_line": -3.5,
     "home_line_open": -3.5,
@@ -2013,11 +2013,11 @@
     "playable_to": null,
     "sim_cover": 0.648,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2038,7 +2038,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -1.3
    },
@@ -2050,7 +2050,7 @@
     "away": "Sam Houston Bearkats",
     "time": "Tue 8:00 PM CT",
     "start": "2026-11-25T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WSU -5.5",
     "home_line": -5.5,
     "home_line_open": -4.5,
@@ -2127,11 +2127,11 @@
     "playable_to": null,
     "sim_cover": 0.662,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2142,7 +2142,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.5,
+    "conf": 6.4,
     "components": {
      "efficiency": 0.59,
      "veto": 1.5,
@@ -2152,9 +2152,123 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 5.9
+   },
+   {
+    "id": "401921710",
+    "sport": "CBB",
+    "game": "Providence Friars @ Arizona Wildcats",
+    "home": "Arizona Wildcats",
+    "away": "Providence Friars",
+    "time": "Tue 4:00 PM CT",
+    "start": "2026-11-24T22:00Z",
+    "book": "Draft Kings",
+    "line": "ARIZ -7.5",
+    "home_line": -7.5,
+    "home_line_open": -7.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 157.5,
+    "total_open": 154.5,
+    "home_ml": -340,
+    "away_ml": 270,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 7.9,
+    "model_b": 0.6,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "5-1"
+    ],
+    "venue": "Lahaina Civic Center",
+    "tv": "ESPN2",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Jacob Bannarbie",
+      "Malik Mack"
+     ],
+     [
+      "Ivan Kharchenkov",
+      "Motiejus Krivas"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     10.6,
+     16.0
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Friars 1 day(s), Wildcats 1 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +10.6 a game, theirs +16.0)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 149.7,
+    "gap_a": 0.4,
+    "gap_b": -6.9,
+    "gap_min": 6.9,
+    "pick": "Providence Friars +7.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 4.2,
+    "playable_to": null,
+    "sim_cover": 0.617,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.3,
+    "components": {
+     "efficiency": 0.77,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": -7.8,
+    "total_lean": "Under 157.5 (season scoring says 149.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401909775",
@@ -2164,7 +2278,7 @@
     "away": "San Diego State Aztecs",
     "time": "Tue 4:30 PM CT",
     "start": "2026-11-24T22:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ISU -9.5",
     "home_line": -9.5,
     "home_line_open": -7.5,
@@ -2244,11 +2358,11 @@
     "playable_to": null,
     "sim_cover": 0.692,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2259,7 +2373,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.4,
+    "conf": 6.3,
     "components": {
      "efficiency": 1.0,
      "veto": 1.0,
@@ -2269,7 +2383,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 1.6
    },
@@ -2281,7 +2395,7 @@
     "away": "Vermont Catamounts",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SIE -4.5",
     "home_line": -4.5,
     "home_line_open": -3.5,
@@ -2358,124 +2472,11 @@
     "playable_to": null,
     "sim_cover": 0.645,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.4,
-    "components": {
-     "efficiency": 0.5,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": -1.4
-   },
-   {
-    "id": "401921710",
-    "sport": "CBB",
-    "game": "Providence Friars @ Arizona Wildcats",
-    "home": "Arizona Wildcats",
-    "away": "Providence Friars",
-    "time": "Tue 4:00 PM CT",
-    "start": "2026-11-24T22:00Z",
-    "book": "DraftKings",
-    "line": "ARIZ -7.5",
-    "home_line": -7.5,
-    "home_line_open": -7.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 157.5,
-    "total_open": 154.5,
-    "home_ml": -340,
-    "away_ml": 270,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 7.9,
-    "model_b": 0.6,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Lahaina Civic Center",
-    "tv": "ESPN2",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jacob Bannarbie",
-      "Malik Mack"
-     ],
-     [
-      "Ivan Kharchenkov",
-      "Motiejus Krivas"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     10.6,
-     16.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Friars 1 day(s), Wildcats 1 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +10.6 a game, theirs +16.0)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 149.7,
-    "gap_a": 0.4,
-    "gap_b": -6.9,
-    "gap_min": 6.9,
-    "pick": "Providence Friars +7.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": 4.2,
-    "playable_to": null,
-    "sim_cover": 0.617,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2488,18 +2489,17 @@
     "veto": false,
     "conf": 6.3,
     "components": {
-     "efficiency": 0.77,
+     "efficiency": 0.5,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
-    "total_gap": -7.8,
-    "total_lean": "Under 157.5 (season scoring says 149.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": -1.4
    },
    {
     "id": "401911379",
@@ -2509,7 +2509,7 @@
     "away": "Charleston Southern Buccaneers",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "JMU -13.5",
     "home_line": -13.5,
     "home_line_open": -13.5,
@@ -2586,11 +2586,11 @@
     "playable_to": null,
     "sim_cover": 0.662,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2611,7 +2611,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -5.1
    },
@@ -2623,7 +2623,7 @@
     "away": "UIC Flames",
     "time": "Tue 12:30 PM CT",
     "start": "2026-11-24T18:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UIC -7.5",
     "home_line": 7.5,
     "home_line_open": 7.5,
@@ -2633,8 +2633,8 @@
     ],
     "total": 143.5,
     "total_open": 141.5,
-    "home_ml": 250,
-    "away_ml": -310,
+    "home_ml": 215,
+    "away_ml": -265,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -6.9,
@@ -2700,11 +2700,11 @@
     "playable_to": null,
     "sim_cover": 0.639,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2725,9 +2725,127 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 3.3
+   },
+   {
+    "id": "401922231",
+    "sport": "CBB",
+    "game": "Queens University Royals @ Wofford Terriers",
+    "home": "Wofford Terriers",
+    "away": "Queens University Royals",
+    "time": "Tue 5:00 PM CT",
+    "start": "2026-11-24T23:00Z",
+    "book": "Draft Kings",
+    "line": "QUC -1.5",
+    "home_line": 1.5,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     105,
+     -125
+    ],
+    "total": 172.5,
+    "total_open": 174.5,
+    "home_ml": -105,
+    "away_ml": -115,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 0.7,
+    "model_b": 6.4,
+    "games_played": [
+     6,
+     7
+    ],
+    "neutral": false,
+    "records": [
+     "3-3",
+     "4-3"
+    ],
+    "venue": "Jerry Richardson Indoor Stadium",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Isaiah Henry",
+      "Jordan Watford",
+      "Nasir Mann"
+     ],
+     [
+      "Chace Watley",
+      "Evan Ramsey",
+      "Jacob Daniels"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     3
+    ],
+    "form5": [
+     -14.0,
+     12.4
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+    ],
+    "factors": [
+     "Rest: Royals 3 day(s), Terriers 3 day(s)",
+     "Line moved 3 pts toward Queens University Royals since open (-1.5 to +1.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +12.4 a game, theirs -14.0)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 176.5,
+    "gap_a": 2.2,
+    "gap_b": 7.9,
+    "gap_min": 7.9,
+    "pick": "Wofford Terriers +1.5",
+    "price": -125,
+    "side": "home",
+    "fair_line": -3.5,
+    "playable_to": null,
+    "sim_cover": 0.677,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.2,
+    "components": {
+     "efficiency": 0.88,
+     "veto": 1.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": 4.0
    },
    {
     "id": "401909505",
@@ -2737,7 +2855,7 @@
     "away": "DePaul Blue Demons",
     "time": "Tue 5:00 PM CT",
     "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PUR -2.5",
     "home_line": -2.5,
     "home_line_open": -4.5,
@@ -2815,11 +2933,11 @@
     "playable_to": null,
     "sim_cover": 0.574,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -2840,7 +2958,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 9.3,
     "total_lean": "Over 132.5 (season scoring says 141.8) - WATCH only, totals have no past-games test yet"
@@ -2853,7 +2971,7 @@
     "away": "Mount St. Mary's Mountaineers",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MORG -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -2966,7 +3084,7 @@
     "away": "Bryant Bulldogs",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MRST -2.5",
     "home_line": -2.5,
     "home_line_open": -4.5,
@@ -3073,121 +3191,6 @@
     "total_gap": 5.8
    },
    {
-    "id": "401918996",
-    "sport": "CBB",
-    "game": "Stetson Hatters @ South Florida Bulls",
-    "home": "South Florida Bulls",
-    "away": "Stetson Hatters",
-    "time": "Tue 6:00 PM CT",
-    "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
-    "line": "USF -18.5",
-    "home_line": -18.5,
-    "home_line_open": -18.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 152.5,
-    "total_open": 152.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 14.9,
-    "model_b": 13.1,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     "1-5",
-     "3-3"
-    ],
-    "venue": "Yuengling Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Collin Kuhl",
-      "Magnus Entenmann",
-      "Thiago Sucatzky"
-     ],
-     [
-      "Chris Davis Jr.",
-      "Sonny Wilson",
-      "Zayden High"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     3
-    ],
-    "form5": [
-     -10.6,
-     4.2
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Hatters 5 day(s), Bulls 3 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -10.6 a game, theirs +4.2)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.6,
-    "gap_a": -3.6,
-    "gap_b": -5.4,
-    "gap_min": 5.4,
-    "pick": "Stetson Hatters +18.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 14.0,
-    "playable_to": null,
-    "sim_cover": 0.659,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.1,
-    "components": {
-     "efficiency": 0.6,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": -1.9
-   },
-   {
     "id": "401915943",
     "sport": "CBB",
     "game": "Oregon Ducks @ St. John's Red Storm",
@@ -3195,13 +3198,13 @@
     "away": "Oregon Ducks",
     "time": "Tue 9:30 PM CT",
     "start": "2026-11-25T03:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SJU -10.5",
     "home_line": -10.5,
     "home_line_open": -8.5,
     "spread_odds": [
-     -105,
-     -115
+     -112,
+     -108
     ],
     "total": 155.5,
     "total_open": 158.5,
@@ -3270,17 +3273,17 @@
     "gap_b": -5.4,
     "gap_min": 5.4,
     "pick": "Oregon Ducks +10.5",
-    "price": -105,
+    "price": -112,
     "side": "away",
     "fair_line": 6.0,
     "playable_to": null,
     "sim_cover": 0.66,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3301,123 +3304,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 4.1
-   },
-   {
-    "id": "401922231",
-    "sport": "CBB",
-    "game": "Queens University Royals @ Wofford Terriers",
-    "home": "Wofford Terriers",
-    "away": "Queens University Royals",
-    "time": "Tue 5:00 PM CT",
-    "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
-    "line": "WOF -1.5",
-    "home_line": -1.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 172.5,
-    "total_open": 174.5,
-    "home_ml": -115,
-    "away_ml": -105,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.7,
-    "model_b": 6.4,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "3-3",
-     "4-3"
-    ],
-    "venue": "Jerry Richardson Indoor Stadium",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Isaiah Henry",
-      "Jordan Watford",
-      "Nasir Mann"
-     ],
-     [
-      "Chace Watley",
-      "Evan Ramsey",
-      "Jacob Daniels"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     3
-    ],
-    "form5": [
-     -14.0,
-     12.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Royals 3 day(s), Terriers 3 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +12.4 a game, theirs -14.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 176.5,
-    "gap_a": -0.8,
-    "gap_b": 4.9,
-    "gap_min": 4.9,
-    "pick": "Wofford Terriers -1.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": -3.5,
-    "playable_to": null,
-    "sim_cover": 0.574,
-    "history": {
-     "adj": -0.04,
-     "key": "CBB spread fav",
-     "w": 11,
-     "l": 11,
-     "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.55,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.04
-    },
-    "total_gap": 4.0
    },
    {
     "id": "401920976",
@@ -3427,7 +3316,7 @@
     "away": "Delaware State Hornets",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UTC -16.5",
     "home_line": -16.5,
     "home_line_open": -15.5,
@@ -3507,11 +3396,11 @@
     "playable_to": null,
     "sim_cover": 0.694,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3532,7 +3421,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 10.4,
     "total_lean": "Over 145.5 (season scoring says 155.9) - WATCH only, totals have no past-games test yet"
@@ -3545,7 +3434,7 @@
     "away": "Texas Tech Red Raiders",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TTU -2.5",
     "home_line": 2.5,
     "home_line_open": 5.5,
@@ -3661,7 +3550,7 @@
     "away": "Central Michigan Chippewas",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ND -20.5",
     "home_line": -20.5,
     "home_line_open": -20.5,
@@ -3739,11 +3628,11 @@
     "playable_to": null,
     "sim_cover": 0.708,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3764,7 +3653,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 7.6,
     "total_lean": "Over 152.5 (season scoring says 160.1) - WATCH only, totals have no past-games test yet"
@@ -3777,7 +3666,7 @@
     "away": "Idaho State Bengals",
     "time": "Tue 8:00 PM CT",
     "start": "2026-11-25T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BOIS -19.5",
     "home_line": -19.5,
     "home_line_open": -19.5,
@@ -3856,11 +3745,11 @@
     "playable_to": null,
     "sim_cover": 0.726,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -3881,7 +3770,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 3.2
    },
@@ -3893,18 +3782,18 @@
     "away": "Oklahoma Sooners",
     "time": "Tue 12:30 PM CT",
     "start": "2026-11-24T18:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PITT -1.5",
     "home_line": -1.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -110,
-     -110
+     -108,
+     -112
     ],
     "total": 148.5,
     "total_open": 146.5,
-    "home_ml": -122,
-    "away_ml": 102,
+    "home_ml": -130,
+    "away_ml": 110,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 1.4,
@@ -3965,7 +3854,7 @@
     "gap_b": 7.1,
     "gap_min": 7.1,
     "pick": "Pittsburgh Panthers -1.5",
-    "price": -110,
+    "price": -112,
     "side": "home",
     "fair_line": -5.0,
     "playable_to": null,
@@ -4008,7 +3897,7 @@
     "away": "Tulsa Golden Hurricane",
     "time": "Tue 3:30 PM CT",
     "start": "2026-11-24T21:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TLSA -1.5",
     "home_line": 1.5,
     "home_line_open": 1.5,
@@ -4083,11 +3972,11 @@
     "playable_to": null,
     "sim_cover": 0.579,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4108,7 +3997,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 9.8,
     "total_lean": "Over 143.5 (season scoring says 153.3) - WATCH only, totals have no past-games test yet"
@@ -4121,7 +4010,7 @@
     "away": "Boston University Terriers",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HARV -5.5",
     "home_line": -5.5,
     "home_line_open": -5.5,
@@ -4198,11 +4087,11 @@
     "playable_to": null,
     "sim_cover": 0.569,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4223,7 +4112,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 7.8,
     "total_lean": "Over 134.5 (season scoring says 142.3) - WATCH only, totals have no past-games test yet"
@@ -4236,7 +4125,7 @@
     "away": "Purdue Fort Wayne Mastodons",
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-25T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SEMO -3.5",
     "home_line": -3.5,
     "home_line_open": -2.5,
@@ -4313,11 +4202,11 @@
     "playable_to": null,
     "sim_cover": 0.583,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4338,122 +4227,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 5.7
-   },
-   {
-    "id": "401921711",
-    "sport": "CBB",
-    "game": "Clemson Tigers @ Washington Huskies",
-    "home": "Washington Huskies",
-    "away": "Clemson Tigers",
-    "time": "Tue 7:00 PM CT",
-    "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
-    "line": "CLEM -1.5",
-    "home_line": 1.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 150.5,
-    "total_open": 153.5,
-    "home_ml": 105,
-    "away_ml": -125,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -3.4,
-    "model_b": 1.2,
-    "games_played": [
-     6,
-     5
-    ],
-    "neutral": true,
-    "records": [
-     "4-2",
-     "4-1"
-    ],
-    "venue": "Lahaina Civic Center",
-    "tv": "ESPNU",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Ace Buckner",
-      "Dylan Faulkner"
-     ],
-     [
-      "Lathan Sommerville",
-      "LeJuan Watts",
-      "Ryan Beasley"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     5.4,
-     12.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Tigers 1 day(s), Huskies 1 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +12.8 a game, theirs +5.4)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 154.5,
-    "gap_a": -1.9,
-    "gap_b": 2.7,
-    "gap_min": 2.7,
-    "pick": "Washington Huskies +1.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": 1.1,
-    "playable_to": null,
-    "sim_cover": 0.513,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 0.29,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": 4.0
    },
    {
     "id": "401920949",
@@ -4463,7 +4239,7 @@
     "away": "Eastern Michigan Eagles",
     "time": "Tue 5:00 PM CT",
     "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "KENN -4.5",
     "home_line": -4.5,
     "home_line_open": -4.5,
@@ -4538,11 +4314,11 @@
     "playable_to": null,
     "sim_cover": 0.577,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4563,10 +4339,123 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 7.6,
     "total_lean": "Over 147.5 (season scoring says 155.1) - WATCH only, totals have no past-games test yet"
+   },
+   {
+    "id": "401921711",
+    "sport": "CBB",
+    "game": "Clemson Tigers @ Washington Huskies",
+    "home": "Washington Huskies",
+    "away": "Clemson Tigers",
+    "time": "Tue 7:00 PM CT",
+    "start": "2026-11-25T01:00Z",
+    "book": "Draft Kings",
+    "line": "CLEM -1.5",
+    "home_line": 1.5,
+    "home_line_open": 1.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 150.5,
+    "total_open": 153.5,
+    "home_ml": 100,
+    "away_ml": -120,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -3.4,
+    "model_b": 1.2,
+    "games_played": [
+     6,
+     5
+    ],
+    "neutral": true,
+    "records": [
+     "4-2",
+     "4-1"
+    ],
+    "venue": "Lahaina Civic Center",
+    "tv": "ESPNU",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Ace Buckner",
+      "Dylan Faulkner"
+     ],
+     [
+      "Lathan Sommerville",
+      "LeJuan Watts",
+      "Ryan Beasley"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     5.4,
+     12.8
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Tigers 1 day(s), Huskies 1 day(s)",
+     "Indoors - weather does not matter",
+     "Last 5 games agree (our side +12.8 a game, theirs +5.4)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 154.5,
+    "gap_a": -1.9,
+    "gap_b": 2.7,
+    "gap_min": 2.7,
+    "pick": "Washington Huskies +1.5",
+    "price": -110,
+    "side": "home",
+    "fair_line": 1.1,
+    "playable_to": null,
+    "sim_cover": 0.513,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.6,
+    "components": {
+     "efficiency": 0.29,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": 4.0
    },
    {
     "id": "401906762",
@@ -4576,7 +4465,7 @@
     "away": "Baylor Bears",
     "time": "Tue 9:00 PM CT",
     "start": "2026-11-25T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ALA -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -4651,11 +4540,11 @@
     "playable_to": null,
     "sim_cover": 0.57,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4676,7 +4565,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -8.2,
     "total_lean": "Under 174.5 (season scoring says 166.3) - WATCH only, totals have no past-games test yet"
@@ -4689,18 +4578,18 @@
     "away": "Bellarmine Knights",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GASO -2.5",
     "home_line": -2.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -115,
-     -105
+     -110,
+     -110
     ],
     "total": 152.5,
     "total_open": 154.5,
-    "home_ml": -130,
-    "away_ml": 110,
+    "home_ml": -142,
+    "away_ml": 120,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 2.8,
@@ -4756,17 +4645,17 @@
     "gap_b": -1.2,
     "gap_min": 1.2,
     "pick": "Bellarmine Knights +2.5",
-    "price": -115,
+    "price": -110,
     "side": "away",
     "fair_line": 2.1,
     "playable_to": null,
     "sim_cover": 0.516,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4787,7 +4676,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 4.2
    },
@@ -4799,7 +4688,7 @@
     "away": "Campbell Fighting Camels",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CCU -1.5",
     "home_line": -1.5,
     "home_line_open": -1.5,
@@ -4875,11 +4764,11 @@
     "playable_to": null,
     "sim_cover": 0.515,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -4900,7 +4789,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 1.0
    },
@@ -4912,7 +4801,7 @@
     "away": "Gardner-Webb Runnin' Bulldogs",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BGSU -12.5",
     "home_line": -12.5,
     "home_line_open": -12.5,
@@ -4920,7 +4809,7 @@
      -110,
      -110
     ],
-    "total": 144.5,
+    "total": 143.5,
     "total_open": 149.5,
     "home_ml": -900,
     "away_ml": 600,
@@ -4989,11 +4878,11 @@
     "playable_to": null,
     "sim_cover": 0.55,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5014,10 +4903,10 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
-    "total_gap": 6.6,
-    "total_lean": "Over 144.5 (season scoring says 151.1) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.6,
+    "total_lean": "Over 143.5 (season scoring says 151.1) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401906853",
@@ -5027,7 +4916,7 @@
     "away": "Tennessee Volunteers",
     "time": "Tue 2:00 PM CT",
     "start": "2026-11-24T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TENN -2.5",
     "home_line": 2.5,
     "home_line_open": 5.5,
@@ -5142,7 +5031,7 @@
     "away": "Hampton Pirates",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ODU -7.5",
     "home_line": -7.5,
     "home_line_open": -8.5,
@@ -5253,125 +5142,6 @@
     "total_gap": 2.3
    },
    {
-    "id": "401920889",
-    "sport": "CBB",
-    "game": "New Hampshire Wildcats @ Seton Hall Pirates",
-    "home": "Seton Hall Pirates",
-    "away": "New Hampshire Wildcats",
-    "time": "Tue 6:00 PM CT",
-    "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
-    "line": "HALL -20.5",
-    "home_line": -20.5,
-    "home_line_open": -19.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 130.5,
-    "total_open": 125.5,
-    "home_ml": -6500,
-    "away_ml": 2000,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 17.1,
-    "model_b": 4.0,
-    "games_played": [
-     7,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     "4-3",
-     "5-1"
-    ],
-    "venue": "Prudential Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Drew McKenna",
-      "Ryan Zan",
-      "Tyler Bike"
-     ],
-     [
-      "Elijah Fisher",
-      "Mihailo Petrovic",
-      "Terry Copeland Jr."
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     4
-    ],
-    "form5": [
-     6.0,
-     3.6
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Wildcats 3 day(s), Pirates 4 day(s)",
-     "Line moved 1 pts toward Seton Hall Pirates since open (-19.5 to -20.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 136.6,
-    "gap_a": -3.4,
-    "gap_b": -16.5,
-    "gap_min": 16.5,
-    "pick": "New Hampshire Wildcats +20.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 10.6,
-    "playable_to": null,
-    "sim_cover": 0.816,
-    "history": {
-     "adj": 0.36,
-     "key": "CBB spread dog",
-     "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 5.4,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.36
-    },
-    "total_gap": 6.1,
-    "total_lean": "Over 130.5 (season scoring says 136.6) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401920309",
     "sport": "CBB",
     "game": "Samford Bulldogs @ Georgia Tech Yellow Jackets",
@@ -5379,7 +5149,7 @@
     "away": "Samford Bulldogs",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GT -10.5",
     "home_line": -10.5,
     "home_line_open": -10.5,
@@ -5456,11 +5226,11 @@
     "playable_to": null,
     "sim_cover": 0.622,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5481,7 +5251,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -5.6
    },
@@ -5493,7 +5263,7 @@
     "away": "Nevada Wolf Pack",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NEV -1.5",
     "home_line": 1.5,
     "home_line_open": 1.5,
@@ -5567,11 +5337,11 @@
     "playable_to": null,
     "sim_cover": 0.51,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5592,7 +5362,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 0.6
    },
@@ -5604,7 +5374,7 @@
     "away": "High Point Panthers",
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-25T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HPU -9.5",
     "home_line": 9.5,
     "home_line_open": 9.5,
@@ -5681,11 +5451,11 @@
     "playable_to": null,
     "sim_cover": 0.512,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5706,9 +5476,121 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -2.6
+   },
+   {
+    "id": "401911535",
+    "sport": "CBB",
+    "game": "Charleston Cougars @ UTEP Miners",
+    "home": "UTEP Miners",
+    "away": "Charleston Cougars",
+    "time": "Tue 7:30 PM CT",
+    "start": "2026-11-25T01:30Z",
+    "book": "Draft Kings",
+    "line": "COFC -1.5",
+    "home_line": 1.5,
+    "home_line_open": 1.5,
+    "spread_odds": [
+     -120,
+     100
+    ],
+    "total": 149.5,
+    "total_open": 150.5,
+    "home_ml": 114,
+    "away_ml": -135,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -4.2,
+    "model_b": -5.3,
+    "games_played": [
+     5,
+     5
+    ],
+    "neutral": true,
+    "records": [
+     "4-1",
+     "4-1"
+    ],
+    "venue": "Hard Rock Hotel Riviera Maya",
+    "tv": "FloSports",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Braden Pierce",
+      "Tavari Johnson"
+     ],
+     [
+      "Cam McDaniels",
+      "Leif Moeller",
+      "Youssouf Traore"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     5,
+     5
+    ],
+    "form5": [
+     15.6,
+     11.6
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Cougars 5 day(s), Miners 5 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 152.3,
+    "gap_a": -2.7,
+    "gap_b": -3.8,
+    "gap_min": 3.8,
+    "pick": "Charleston Cougars -1.5",
+    "price": -120,
+    "side": "away",
+    "fair_line": -4.7,
+    "playable_to": null,
+    "sim_cover": 0.616,
+    "history": {
+     "adj": -0.04,
+     "key": "CBB spread fav",
+     "w": 11,
+     "l": 11,
+     "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.4,
+    "components": {
+     "efficiency": 0.42,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.04
+    },
+    "total_gap": 2.8
    },
    {
     "id": "401921709",
@@ -5718,7 +5600,7 @@
     "away": "Ole Miss Rebels",
     "time": "Tue 1:30 PM CT",
     "start": "2026-11-24T19:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MISS -1.5",
     "home_line": 1.5,
     "home_line_open": -1.5,
@@ -5726,7 +5608,7 @@
      -110,
      -110
     ],
-    "total": 158.5,
+    "total": 157.5,
     "total_open": 160.5,
     "home_ml": 100,
     "away_ml": -120,
@@ -5796,11 +5678,11 @@
     "playable_to": null,
     "sim_cover": 0.528,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5821,9 +5703,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
-    "total_gap": -3.9
+    "total_gap": -2.9
    },
    {
     "id": "401924267",
@@ -5833,7 +5715,7 @@
     "away": "Arkansas State Red Wolves",
     "time": "Tue 2:30 PM CT",
     "start": "2026-11-24T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ARST -4.5",
     "home_line": 4.5,
     "home_line_open": 3.5,
@@ -5912,11 +5794,11 @@
     "playable_to": null,
     "sim_cover": 0.562,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -5937,7 +5819,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -1.2
    },
@@ -5949,7 +5831,7 @@
     "away": "Wyoming Cowboys",
     "time": "Tue 4:30 PM CT",
     "start": "2026-11-24T22:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WYO -9.5",
     "home_line": 9.5,
     "home_line_open": 8.5,
@@ -6026,11 +5908,11 @@
     "playable_to": null,
     "sim_cover": 0.566,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6051,7 +5933,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 0.8
    },
@@ -6063,7 +5945,7 @@
     "away": "Mercer Bears",
     "time": "Tue 5:00 PM CT",
     "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FAU -7.5",
     "home_line": -7.5,
     "home_line_open": -7.5,
@@ -6141,11 +6023,11 @@
     "playable_to": null,
     "sim_cover": 0.58,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6166,7 +6048,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -2.0
    },
@@ -6178,7 +6060,7 @@
     "away": "Elon Phoenix",
     "time": "Tue 5:30 PM CT",
     "start": "2026-11-24T23:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FUR -6.5",
     "home_line": -6.5,
     "home_line_open": -8.5,
@@ -6293,7 +6175,7 @@
     "away": "Coppin State Eagles",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VILL -33.5",
     "home_line": -33.5,
     "home_line_open": -32.5,
@@ -6377,11 +6259,11 @@
     "playable_to": 31.8,
     "sim_cover": 0.874,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6402,9 +6284,128 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 0.4
+   },
+   {
+    "id": "401920889",
+    "sport": "CBB",
+    "game": "New Hampshire Wildcats @ Seton Hall Pirates",
+    "home": "Seton Hall Pirates",
+    "away": "New Hampshire Wildcats",
+    "time": "Tue 6:00 PM CT",
+    "start": "2026-11-25T00:00Z",
+    "book": "Draft Kings",
+    "line": "HALL -20.5",
+    "home_line": -20.5,
+    "home_line_open": -19.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 130.5,
+    "total_open": 125.5,
+    "home_ml": -6500,
+    "away_ml": 2000,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 17.1,
+    "model_b": 4.0,
+    "games_played": [
+     7,
+     6
+    ],
+    "neutral": false,
+    "records": [
+     "4-3",
+     "5-1"
+    ],
+    "venue": "Prudential Center",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Drew McKenna",
+      "Ryan Zan",
+      "Tyler Bike"
+     ],
+     [
+      "Elijah Fisher",
+      "Mihailo Petrovic",
+      "Terry Copeland Jr."
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     4
+    ],
+    "form5": [
+     6.0,
+     3.6
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Models 10+ points apart - automatic pass",
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet",
+     "Models 10+ points apart - automatic pass"
+    ],
+    "factors": [
+     "Rest: Wildcats 3 day(s), Pirates 4 day(s)",
+     "Line moved 1 pts toward Seton Hall Pirates since open (-19.5 to -20.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 136.6,
+    "gap_a": -3.4,
+    "gap_b": -16.5,
+    "gap_min": 16.5,
+    "pick": "New Hampshire Wildcats +20.5",
+    "price": -108,
+    "side": "away",
+    "fair_line": 10.6,
+    "playable_to": null,
+    "sim_cover": 0.816,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": true,
+    "conf": 5.3,
+    "components": {
+     "efficiency": 1.0,
+     "veto": 0.0,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": 6.1,
+    "total_lean": "Over 130.5 (season scoring says 136.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401911279",
@@ -6414,7 +6415,7 @@
     "away": "Binghamton Bearcats",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LEH -8.5",
     "home_line": -8.5,
     "home_line_open": -8.5,
@@ -6490,11 +6491,11 @@
     "playable_to": null,
     "sim_cover": 0.513,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6515,7 +6516,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -2.5
    },
@@ -6527,7 +6528,7 @@
     "away": "Florida A&M Rattlers",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "USA -18.5",
     "home_line": -18.5,
     "home_line_open": -16.5,
@@ -6607,11 +6608,11 @@
     "playable_to": null,
     "sim_cover": 0.578,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6632,7 +6633,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 14.2,
     "total_lean": "Over 141.5 (season scoring says 155.7) - WATCH only, totals have no past-games test yet"
@@ -6645,7 +6646,7 @@
     "away": "Bucknell Bison",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "COR -10.5",
     "home_line": -10.5,
     "home_line_open": -10.5,
@@ -6758,18 +6759,18 @@
     "away": "VCU Rams",
     "time": "Tue 9:30 PM CT",
     "start": "2026-11-25T03:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VCU -5.5",
     "home_line": 5.5,
     "home_line_open": 5.5,
     "spread_odds": [
-     -105,
-     -115
+     -112,
+     -108
     ],
     "total": 149.5,
     "total_open": 149.5,
-    "home_ml": 190,
-    "away_ml": -230,
+    "home_ml": 195,
+    "away_ml": -238,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -7.6,
@@ -6829,17 +6830,17 @@
     "gap_b": 2.9,
     "gap_min": 2.9,
     "pick": "Colorado State Rams +5.5",
-    "price": -115,
+    "price": -108,
     "side": "home",
     "fair_line": 5.1,
     "playable_to": null,
     "sim_cover": 0.515,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6860,7 +6861,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 2.5
    },
@@ -6872,7 +6873,7 @@
     "away": "Stanford Cardinal",
     "time": "Tue 10:59 PM CT",
     "start": "2026-11-25T04:59Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "STAN -3.5",
     "home_line": 3.5,
     "home_line_open": 2.5,
@@ -6882,8 +6883,8 @@
     ],
     "total": 140.5,
     "total_open": 143.5,
-    "home_ml": 145,
-    "away_ml": -175,
+    "home_ml": 154,
+    "away_ml": -185,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -0.6,
@@ -6949,11 +6950,11 @@
     "playable_to": null,
     "sim_cover": 0.603,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -6974,7 +6975,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 3.7
    },
@@ -6986,7 +6987,7 @@
     "away": "Miami Hurricanes",
     "time": "Tue 2:00 PM CT",
     "start": "2026-11-24T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIA -4.5",
     "home_line": 4.5,
     "home_line_open": 7.5,
@@ -7101,7 +7102,7 @@
     "away": "Lindenwood Lions",
     "time": "Tue 3:00 PM CT",
     "start": "2026-11-24T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LIN -2.5",
     "home_line": 2.5,
     "home_line_open": 2.5,
@@ -7179,11 +7180,11 @@
     "playable_to": null,
     "sim_cover": 0.51,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7204,7 +7205,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 6.5,
     "total_lean": "Over 133.5 (season scoring says 140.0) - WATCH only, totals have no past-games test yet"
@@ -7217,7 +7218,7 @@
     "away": "Rider Broncs",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "L-MD -3.5",
     "home_line": -3.5,
     "home_line_open": -3.5,
@@ -7329,7 +7330,7 @@
     "away": "Oral Roberts Golden Eagles",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UTA -4.5",
     "home_line": -4.5,
     "home_line_open": -4.5,
@@ -7440,7 +7441,7 @@
     "away": "Alabama A&M Bulldogs",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UNA -2.5",
     "home_line": -2.5,
     "home_line_open": -3.5,
@@ -7517,11 +7518,11 @@
     "playable_to": null,
     "sim_cover": 0.531,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7542,7 +7543,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 4.9
    },
@@ -7554,7 +7555,7 @@
     "away": "Southern Indiana Screaming Eagles",
     "time": "Tue 5:00 PM CT",
     "start": "2026-11-24T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VMI -5.5",
     "home_line": -5.5,
     "home_line_open": -5.5,
@@ -7632,11 +7633,11 @@
     "playable_to": null,
     "sim_cover": 0.507,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7657,7 +7658,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 6.1,
     "total_lean": "Over 142.5 (season scoring says 148.6) - WATCH only, totals have no past-games test yet"
@@ -7670,7 +7671,7 @@
     "away": "Vanderbilt Commodores",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VAN -1.5",
     "home_line": 1.5,
     "home_line_open": 1.5,
@@ -7746,11 +7747,11 @@
     "playable_to": null,
     "sim_cover": 0.501,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -7771,7 +7772,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -2.1
    },
@@ -7783,7 +7784,7 @@
     "away": "Houston Christian Huskies",
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-25T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HCU -1.5",
     "home_line": 1.5,
     "home_line_open": 2.5,
@@ -7898,7 +7899,7 @@
     "away": "Grand Canyon Lopes",
     "time": "Tue 8:30 PM CT",
     "start": "2026-11-25T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GCU -1.5",
     "home_line": 1.5,
     "home_line_open": 1.5,
@@ -8014,7 +8015,7 @@
     "away": "North Dakota Fighting Hawks",
     "time": "Tue 2:00 PM CT",
     "start": "2026-11-24T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UND -4.5",
     "home_line": 4.5,
     "home_line_open": 3.5,
@@ -8130,7 +8131,7 @@
     "away": "Robert Morris Colonials",
     "time": "Tue 5:30 PM CT",
     "start": "2026-11-24T23:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LAM -2.5",
     "home_line": -2.5,
     "home_line_open": -3.5,
@@ -8249,7 +8250,7 @@
     "away": "UMBC Retrievers",
     "time": "Tue 6:00 PM CT",
     "start": "2026-11-25T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "IOWA -28.5",
     "home_line": -28.5,
     "home_line_open": -26.5,
@@ -8332,11 +8333,11 @@
     "playable_to": null,
     "sim_cover": 0.793,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -8357,9 +8358,126 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 2.2
+   },
+   {
+    "id": "401918996",
+    "sport": "CBB",
+    "game": "Stetson Hatters @ South Florida Bulls",
+    "home": "South Florida Bulls",
+    "away": "Stetson Hatters",
+    "time": "Tue 6:00 PM CT",
+    "start": "2026-11-25T00:00Z",
+    "book": "Draft Kings",
+    "line": "USF -16.5",
+    "home_line": -16.5,
+    "home_line_open": -18.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 152.5,
+    "total_open": 152.5,
+    "home_ml": null,
+    "away_ml": null,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 14.9,
+    "model_b": 13.1,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": false,
+    "records": [
+     "1-5",
+     "3-3"
+    ],
+    "venue": "Yuengling Center",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Collin Kuhl",
+      "Magnus Entenmann",
+      "Thiago Sucatzky"
+     ],
+     [
+      "Chris Davis Jr.",
+      "Sonny Wilson",
+      "Zayden High"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     5,
+     3
+    ],
+    "form5": [
+     -10.6,
+     4.2
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Hatters 5 day(s), Bulls 3 day(s)",
+     "Line moved 2 pts toward Stetson Hatters since open (-18.5 to -16.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -10.6 a game, theirs +4.2)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.6,
+    "gap_a": -1.6,
+    "gap_b": -3.4,
+    "gap_min": 3.4,
+    "pick": "Stetson Hatters +16.5",
+    "price": -108,
+    "side": "away",
+    "fair_line": 14.0,
+    "playable_to": null,
+    "sim_cover": 0.59,
+    "history": {
+     "adj": 0.35,
+     "key": "CBB spread dog",
+     "w": 139,
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.0,
+    "components": {
+     "efficiency": 0.38,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.35
+    },
+    "total_gap": -1.9
    },
    {
     "id": "401917904",
@@ -8369,7 +8487,7 @@
     "away": "West Georgia Wolves",
     "time": "Tue 6:30 PM CT",
     "start": "2026-11-25T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TNTC -14.5",
     "home_line": -14.5,
     "home_line_open": -17.5,
@@ -8379,8 +8497,8 @@
     ],
     "total": 163.5,
     "total_open": 164.5,
-    "home_ml": -1800,
-    "away_ml": 1000,
+    "home_ml": -1650,
+    "away_ml": 950,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 11.2,
@@ -8447,11 +8565,11 @@
     "playable_to": null,
     "sim_cover": 0.619,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -8472,7 +8590,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": -5.7
    },
@@ -8484,7 +8602,7 @@
     "away": "Drexel Dragons",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PENN -6.5",
     "home_line": -6.5,
     "home_line_open": -6.5,
@@ -8561,11 +8679,11 @@
     "playable_to": null,
     "sim_cover": 0.512,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -8586,7 +8704,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 4.6
    },
@@ -8598,7 +8716,7 @@
     "away": "San Francisco Dons",
     "time": "Tue 1:00 PM CT",
     "start": "2026-11-24T19:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ORST -8.5",
     "home_line": -8.5,
     "home_line_open": -10.5,
@@ -8678,11 +8796,11 @@
     "playable_to": null,
     "sim_cover": 0.55,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -8703,124 +8821,9 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 1.3
-   },
-   {
-    "id": "401911535",
-    "sport": "CBB",
-    "game": "Charleston Cougars @ UTEP Miners",
-    "home": "UTEP Miners",
-    "away": "Charleston Cougars",
-    "time": "Tue 7:30 PM CT",
-    "start": "2026-11-25T01:30Z",
-    "book": "DraftKings",
-    "line": "COFC -2.5",
-    "home_line": 2.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 149.5,
-    "total_open": 150.5,
-    "home_ml": 120,
-    "away_ml": -142,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -4.2,
-    "model_b": -5.3,
-    "games_played": [
-     5,
-     5
-    ],
-    "neutral": true,
-    "records": [
-     "4-1",
-     "4-1"
-    ],
-    "venue": "Hard Rock Hotel Riviera Maya",
-    "tv": "FloSports",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Braden Pierce",
-      "Tavari Johnson"
-     ],
-     [
-      "Cam McDaniels",
-      "Leif Moeller",
-      "Youssouf Traore"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     5
-    ],
-    "form5": [
-     15.6,
-     11.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Cougars 5 day(s), Miners 5 day(s)",
-     "Line moved 1 pts toward Charleston Cougars since open (+1.5 to +2.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 152.3,
-    "gap_a": -1.7,
-    "gap_b": -2.8,
-    "gap_min": 2.8,
-    "pick": "Charleston Cougars -2.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": -4.7,
-    "playable_to": null,
-    "sim_cover": 0.581,
-    "history": {
-     "adj": -0.04,
-     "key": "CBB spread fav",
-     "w": 11,
-     "l": 11,
-     "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.9,
-    "components": {
-     "efficiency": 0.31,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.04
-    },
-    "total_gap": 2.8
    },
    {
     "id": "401921008",
@@ -8830,7 +8833,7 @@
     "away": "Green Bay Phoenix",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "KC -1.5",
     "home_line": -1.5,
     "home_line_open": 1.5,
@@ -8945,7 +8948,7 @@
     "away": "Evansville Purple Aces",
     "time": "Tue 8:00 PM CT",
     "start": "2026-11-25T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIZ -30.5",
     "home_line": -30.5,
     "home_line_open": -31.5,
@@ -9027,11 +9030,11 @@
     "playable_to": null,
     "sim_cover": 0.806,
     "history": {
-     "adj": 0.36,
+     "adj": 0.35,
      "key": "CBB spread dog",
      "w": 139,
-     "l": 89,
-     "text": "Our record on CBB spread dog: 139-89 (last 60 days, recent counts more) -> +0.36 to confidence"
+     "l": 90,
+     "text": "Our record on CBB spread dog: 139-90 (last 60 days, recent counts more) -> +0.35 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -9052,7 +9055,7 @@
      "against": 0.3,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.36
+     "our history": 0.35
     },
     "total_gap": 2.9
    },
@@ -9681,7 +9684,7 @@
     "away": "Vegas Golden Knights",
     "time": "Tue 7:00 PM CT",
     "start": "2026-11-25T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VGK -118",
     "home_line": 118.0,
     "home_line_open": -1.5,
