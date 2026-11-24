@@ -35473,14 +35473,16 @@
   "date": "2026-11-23",
   "line_at_pick": "PEPP -10.5",
   "logged_at": "00:05",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "UNC Greensboro Spartans 62, Pepperdine Waves 89",
+  "close": "PEPP -10.5",
+  "clv": 0.0,
   "review": "HOLD",
   "review_log": [
    "11/23 12:05 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -35883,15 +35885,17 @@
   "date": "2026-11-23",
   "line_at_pick": "SEA -115",
   "logged_at": "00:05",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Anaheim Ducks 2, Seattle Kraken 3",
+  "close": "SEA -118",
+  "clv": -0.7,
   "review": "PULL",
   "review_log": [
    "11/23 12:05 AM: checked line and injuries - no change",
    "11/23 12:11 PM: PULL - goalie change: Kraken now Joey Daccord (was Philipp Grubauer)"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -36768,6 +36772,2055 @@
   "review": "HOLD",
   "review_log": [
    "11/23 10:48 PM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401866470",
+  "sport": "CFB",
+  "game": "Kent State Golden Flashes @ Eastern Michigan Eagles",
+  "home": "Eastern Michigan Eagles",
+  "away": "Kent State Golden Flashes",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Eastern Michigan Eagles -5.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.9,
+  "components": {
+   "efficiency": 1.39,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.5,
+   "situational": 0.5,
+   "our history": -0.38
+  },
+  "gap_a": 4.2,
+  "gap_b": 0.4,
+  "gap_min": 4.2,
+  "price": -112,
+  "fair_line": -7.8,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -5.5,
+  "home_ml": -225,
+  "away_ml": 185,
+  "flags": [
+   "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
+  ],
+  "against": [],
+  "invalidation": [
+   "Either starting QB is ruled out or downgraded"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 9.7,
+  "model_b": 5.9,
+  "model_a_name": "FPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 20,
+   "l": 18,
+   "n": 38,
+   "win": 0.526
+  },
+  "tier": "G5/mixed",
+  "day": "Midweek",
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.38,
+   "key": "CFB spread fav",
+   "w": 8,
+   "l": 17,
+   "text": "Our record on CFB spread fav: 8-17 (last 60 days, recent counts more) -> -0.38 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "EMU -5.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909315",
+  "sport": "NBA",
+  "game": "Boston Celtics @ Washington Wizards",
+  "home": "Washington Wizards",
+  "away": "Boston Celtics",
+  "start": "2026-11-25T01:00Z",
+  "pick": "Boston Celtics -10.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.5,
+  "components": {
+   "efficiency": 0.54,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.17
+  },
+  "gap_a": 4.5,
+  "gap_b": -4.9,
+  "gap_min": 4.9,
+  "price": -110,
+  "fair_line": -10.7,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 10.5,
+  "home_ml": 351,
+  "away_ml": -453,
+  "flags": [],
+  "against": [
+   "Market moved away from this side since open"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -6.0,
+  "model_b": -15.4,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.17,
+   "key": "NBA spread fav",
+   "w": 13,
+   "l": 17,
+   "text": "Our record on NBA spread fav: 13-17 (last 60 days, recent counts more) -> -0.17 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "BOS -10.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": true,
+  "learned_caution": null,
+  "id": "401909699",
+  "sport": "CBB",
+  "game": "UNC Asheville Bulldogs @ Florida State Seminoles",
+  "home": "Florida State Seminoles",
+  "away": "UNC Asheville Bulldogs",
+  "start": "2026-11-25T02:00Z",
+  "pick": "UNC Asheville Bulldogs +29.5",
+  "decision": "CASH",
+  "stake": 10,
+  "conf": 7.0,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -10.4,
+  "gap_b": -15.4,
+  "gap_min": 10.4,
+  "price": -112,
+  "fair_line": 16.6,
+  "playable_to": 23.6,
+  "side": "away",
+  "home_line": -29.5,
+  "home_ml": -100000,
+  "away_ml": 5000,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -6.0 a game, theirs +15.2)"
+  ],
+  "invalidation": [
+   "Line moves past +23.6",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Learned play: graded 7.0 (in a paper sport), but CBB dog 20+ is 27-13 (+11.5 units) on the Board - 57.8% after the pull toward 50/50 vs 52.4% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'). Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 19.1,
+  "model_b": 14.1,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "FSU -29.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401926184",
+  "sport": "CBB",
+  "game": "UNC Greensboro Spartans @ UC Santa Barbara Gauchos",
+  "home": "UC Santa Barbara Gauchos",
+  "away": "UNC Greensboro Spartans",
+  "start": "2026-11-25T02:00Z",
+  "pick": "UNC Greensboro Spartans +18.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.8,
+  "components": {
+   "efficiency": 0.67,
+   "veto": 1.5,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.3,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -6.0,
+  "gap_b": -6.2,
+  "gap_min": 6.0,
+  "price": -115,
+  "fair_line": 12.4,
+  "playable_to": 17.0,
+  "side": "away",
+  "home_line": -18.5,
+  "home_ml": -3200,
+  "away_ml": 1400,
+  "flags": [],
+  "against": [
+   "Market moved away from this side since open",
+   "Last 5 games point the other way (our side -1.0 a game, theirs +20.8)"
+  ],
+  "invalidation": [
+   "Line moves past +17",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.8 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 12.5,
+  "model_b": 12.3,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "UCSB -18.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": true,
+  "learned_caution": null,
+  "id": "401920709",
+  "sport": "CBB",
+  "game": "Lipscomb Bisons @ Auburn Tigers",
+  "home": "Auburn Tigers",
+  "away": "Lipscomb Bisons",
+  "start": "2026-11-25T01:00Z",
+  "pick": "Lipscomb Bisons +24.5",
+  "decision": "CASH",
+  "stake": 10,
+  "conf": 6.7,
+  "components": {
+   "efficiency": 0.71,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -6.4,
+  "gap_b": -16.3,
+  "gap_min": 6.4,
+  "price": -115,
+  "fair_line": 13.2,
+  "playable_to": 22.6,
+  "side": "away",
+  "home_line": -24.5,
+  "home_ml": -8000,
+  "away_ml": 2200,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "One model is only barely past the bar"
+  ],
+  "invalidation": [
+   "Line moves past +22.6",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Learned play: graded 6.7 (under the usual bar), but CBB dog 20+ is 27-13 (+11.5 units) on the Board - 57.8% after the pull toward 50/50 vs 52.4% break-even. Smaller stake ($10) because the grade is lower. Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.7 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 18.1,
+  "model_b": 8.2,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "AUB -24.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909800",
+  "sport": "CBB",
+  "game": "Gonzaga Bulldogs @ Kansas State Wildcats",
+  "home": "Kansas State Wildcats",
+  "away": "Gonzaga Bulldogs",
+  "start": "2026-11-25T05:30Z",
+  "pick": "Kansas State Wildcats +15.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.6,
+  "components": {
+   "efficiency": 0.54,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": 4.9,
+  "gap_b": 13.4,
+  "gap_min": 4.9,
+  "price": -110,
+  "fair_line": 6.4,
+  "playable_to": 15.1,
+  "side": "home",
+  "home_line": 15.5,
+  "home_ml": 900,
+  "away_ml": -1600,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet",
+   "Early season: under 5 games for a team - prior-heavy"
+  ],
+  "against": [
+   "One model is only barely past the bar"
+  ],
+  "invalidation": [
+   "Line moves past +15.1",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.6 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": -10.6,
+  "model_b": -2.1,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "GONZ -15.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401924877",
+  "sport": "CBB",
+  "game": "Sacred Heart Pioneers @ Rutgers Scarlet Knights",
+  "home": "Rutgers Scarlet Knights",
+  "away": "Sacred Heart Pioneers",
+  "start": "2026-11-24T23:00Z",
+  "pick": "Sacred Heart Pioneers +23.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.3,
+  "components": {
+   "efficiency": 0.65,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.3,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -5.8,
+  "gap_b": -13.8,
+  "gap_min": 5.8,
+  "price": -115,
+  "fair_line": 13.7,
+  "playable_to": 22.2,
+  "side": "away",
+  "home_line": -23.5,
+  "home_ml": -6500,
+  "away_ml": 2000,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "One model is only barely past the bar",
+   "Last 5 games point the other way (our side +2.0 a game, theirs +9.6)"
+  ],
+  "invalidation": [
+   "Line moves past +22.2",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.3 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 17.7,
+  "model_b": 9.7,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "RUTG -23.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401906774",
+  "sport": "CBB",
+  "game": "Milwaukee Panthers @ Florida Gators",
+  "home": "Florida Gators",
+  "away": "Milwaukee Panthers",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Milwaukee Panthers +35.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.3,
+  "components": {
+   "efficiency": 0.92,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -8.3,
+  "gap_b": -18.0,
+  "gap_min": 8.3,
+  "price": -112,
+  "fair_line": 22.3,
+  "playable_to": 31.7,
+  "side": "away",
+  "home_line": -35.5,
+  "home_ml": null,
+  "away_ml": null,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Market moved away from this side since open",
+   "One model is only barely past the bar",
+   "Last 5 games point the other way (our side -4.8 a game, theirs +9.8)"
+  ],
+  "invalidation": [
+   "Line moves past +31.7",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.3 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 27.2,
+  "model_b": 17.5,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "FLA -35.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401916291",
+  "sport": "CBB",
+  "game": "Jacksonville Dolphins @ Indiana Hoosiers",
+  "home": "Indiana Hoosiers",
+  "away": "Jacksonville Dolphins",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Jacksonville Dolphins +28.5",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.2,
+  "components": {
+   "efficiency": 0.55,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.3,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -5.0,
+  "gap_b": -11.9,
+  "gap_min": 5.0,
+  "price": -115,
+  "fair_line": 20.1,
+  "playable_to": 28.0,
+  "side": "away",
+  "home_line": -28.5,
+  "home_ml": -100000,
+  "away_ml": 5000,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "One model is only barely past the bar",
+   "Last 5 games point the other way (our side -12.6 a game, theirs +13.8)"
+  ],
+  "invalidation": [
+   "Line moves past +28",
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.2 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
+  "model_a": 23.5,
+  "model_b": 16.6,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "IU -28.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909495",
+  "sport": "CBB",
+  "game": "Creighton Bluejays @ Michigan Wolverines",
+  "home": "Michigan Wolverines",
+  "away": "Creighton Bluejays",
+  "start": "2026-11-24T22:30Z",
+  "pick": "Creighton Bluejays +6.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.6,
+  "components": {
+   "efficiency": 0.74,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -4.0,
+  "gap_b": -6.6,
+  "gap_min": 6.6,
+  "price": -105,
+  "fair_line": 1.2,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -6.5,
+  "home_ml": -230,
+  "away_ml": 190,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 2.5,
+  "model_b": -0.1,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "MICH -6.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401911338",
+  "sport": "CBB",
+  "game": "Army Black Knights @ Air Force Falcons",
+  "home": "Air Force Falcons",
+  "away": "Army Black Knights",
+  "start": "2026-11-25T01:00Z",
+  "pick": "Army Black Knights +3.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.5,
+  "components": {
+   "efficiency": 0.67,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -6.0,
+  "gap_b": -2.3,
+  "gap_min": 6.0,
+  "price": -108,
+  "fair_line": -0.7,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -3.5,
+  "home_ml": -180,
+  "away_ml": 150,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -2.5,
+  "model_b": 1.2,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "AF -3.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401927398",
+  "sport": "CBB",
+  "game": "Wright State Raiders @ St. Bonaventure Bonnies",
+  "home": "St. Bonaventure Bonnies",
+  "away": "Wright State Raiders",
+  "start": "2026-11-24T15:00Z",
+  "pick": "Wright State Raiders +1.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.4,
+  "components": {
+   "efficiency": 0.5,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -4.0,
+  "gap_b": -4.5,
+  "gap_min": 4.5,
+  "price": -112,
+  "fair_line": -2.8,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -1.5,
+  "home_ml": -115,
+  "away_ml": -105,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -2.5,
+  "model_b": -3.0,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "SBU -1.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909775",
+  "sport": "CBB",
+  "game": "San Diego State Aztecs @ Iowa State Cyclones",
+  "home": "Iowa State Cyclones",
+  "away": "San Diego State Aztecs",
+  "start": "2026-11-24T22:30Z",
+  "pick": "San Diego State Aztecs +7.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.3,
+  "components": {
+   "efficiency": 0.94,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": 1.4,
+  "gap_b": -8.4,
+  "gap_min": 8.4,
+  "price": -108,
+  "fair_line": 4.0,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -7.5,
+  "home_ml": -340,
+  "away_ml": 270,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet",
+   "Early season: under 5 games for a team - prior-heavy"
+  ],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 8.9,
+  "model_b": -0.9,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "ISU -7.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909505",
+  "sport": "CBB",
+  "game": "DePaul Blue Demons @ Purdue Boilermakers",
+  "home": "Purdue Boilermakers",
+  "away": "DePaul Blue Demons",
+  "start": "2026-11-24T23:00Z",
+  "pick": "DePaul Blue Demons +4.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.3,
+  "components": {
+   "efficiency": 0.93,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": 0.3,
+  "gap_b": -8.4,
+  "gap_min": 8.4,
+  "price": -112,
+  "fair_line": 0.5,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -4.5,
+  "home_ml": -185,
+  "away_ml": 154,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 4.8,
+  "model_b": -3.9,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "PUR -4.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401911379",
+  "sport": "CBB",
+  "game": "Charleston Southern Buccaneers @ James Madison Dukes",
+  "home": "James Madison Dukes",
+  "away": "Charleston Southern Buccaneers",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Charleston Southern Buccaneers +13.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.3,
+  "components": {
+   "efficiency": 0.76,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -2.3,
+  "gap_b": -6.9,
+  "gap_min": 6.9,
+  "price": -115,
+  "fair_line": 8.9,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -13.5,
+  "home_ml": -1000,
+  "away_ml": 650,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side +5.8 a game, theirs +11.6)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 11.2,
+  "model_b": 6.6,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "JMU -13.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401928859",
+  "sport": "CBB",
+  "game": "Rice Owls @ UIC Flames",
+  "home": "UIC Flames",
+  "away": "Rice Owls",
+  "start": "2026-11-24T18:30Z",
+  "pick": "Rice Owls +7.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.2,
+  "components": {
+   "efficiency": 0.8,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -0.6,
+  "gap_b": -7.2,
+  "gap_min": 7.2,
+  "price": -112,
+  "fair_line": 3.6,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -7.5,
+  "home_ml": -310,
+  "away_ml": 250,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 6.9,
+  "model_b": 0.3,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "UIC -7.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401920923",
+  "sport": "CBB",
+  "game": "Mount St. Mary's Mountaineers @ Morgan State Bears",
+  "home": "Morgan State Bears",
+  "away": "Mount St. Mary's Mountaineers",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Morgan State Bears -1.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.2,
+  "components": {
+   "efficiency": 0.74,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.04
+  },
+  "gap_a": 1.6,
+  "gap_b": 6.7,
+  "gap_min": 6.7,
+  "price": 110,
+  "fair_line": -5.7,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -1.5,
+  "home_ml": -115,
+  "away_ml": -105,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 3.1,
+  "model_b": 8.2,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.04,
+   "key": "CBB spread fav",
+   "w": 11,
+   "l": 11,
+   "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "MORG -1.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401906806",
+  "sport": "CBB",
+  "game": "Oklahoma Sooners @ Pittsburgh Panthers",
+  "home": "Pittsburgh Panthers",
+  "away": "Oklahoma Sooners",
+  "start": "2026-11-24T18:30Z",
+  "pick": "Pittsburgh Panthers -2.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.1,
+  "components": {
+   "efficiency": 0.67,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.04
+  },
+  "gap_a": -1.1,
+  "gap_b": 6.1,
+  "gap_min": 6.1,
+  "price": -108,
+  "fair_line": -5.0,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -2.5,
+  "home_ml": -135,
+  "away_ml": 114,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 1.4,
+  "model_b": 8.6,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.04,
+   "key": "CBB spread fav",
+   "w": 11,
+   "l": 11,
+   "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "PITT -2.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401918996",
+  "sport": "CBB",
+  "game": "Stetson Hatters @ South Florida Bulls",
+  "home": "South Florida Bulls",
+  "away": "Stetson Hatters",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Stetson Hatters +18.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.1,
+  "components": {
+   "efficiency": 0.6,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -3.6,
+  "gap_b": -5.4,
+  "gap_min": 5.4,
+  "price": -105,
+  "fair_line": 14.0,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -18.5,
+  "home_ml": null,
+  "away_ml": null,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side -10.6 a game, theirs +4.2)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 14.9,
+  "model_b": 13.1,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "USF -18.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401920819",
+  "sport": "CBB",
+  "game": "SE Louisiana Lions @ Northern Colorado Bears",
+  "home": "Northern Colorado Bears",
+  "away": "SE Louisiana Lions",
+  "start": "2026-11-24T17:30Z",
+  "pick": "Northern Colorado Bears -3.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.51,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.04
+  },
+  "gap_a": 1.0,
+  "gap_b": 4.6,
+  "gap_min": 4.6,
+  "price": -115,
+  "fair_line": -6.3,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -3.5,
+  "home_ml": -175,
+  "away_ml": 145,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 4.5,
+  "model_b": 8.1,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.04,
+   "key": "CBB spread fav",
+   "w": 11,
+   "l": 11,
+   "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "UNCO -3.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401922231",
+  "sport": "CBB",
+  "game": "Queens University Royals @ Wofford Terriers",
+  "home": "Wofford Terriers",
+  "away": "Queens University Royals",
+  "start": "2026-11-24T23:00Z",
+  "pick": "Wofford Terriers -1.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.55,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.04
+  },
+  "gap_a": -0.8,
+  "gap_b": 4.9,
+  "gap_min": 4.9,
+  "price": -112,
+  "fair_line": -3.5,
+  "playable_to": null,
+  "side": "home",
+  "home_line": -1.5,
+  "home_ml": -122,
+  "away_ml": 102,
+  "flags": [],
+  "against": [],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 0.7,
+  "model_b": 6.4,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.04,
+   "key": "CBB spread fav",
+   "w": 11,
+   "l": 11,
+   "text": "Our record on CBB spread fav: 11-11 (last 60 days, recent counts more) -> -0.04 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "WOF -1.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401920414",
+  "sport": "CBB",
+  "game": "High Point Panthers @ Duquesne Dukes",
+  "home": "Duquesne Dukes",
+  "away": "High Point Panthers",
+  "start": "2026-11-25T00:30Z",
+  "pick": "Duquesne Dukes +10.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 0.51,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -1.9,
+  "gap_b": 4.6,
+  "gap_min": 4.6,
+  "price": -110,
+  "fair_line": 9.2,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 10.5,
+  "home_ml": 400,
+  "away_ml": -535,
+  "flags": [],
+  "against": [
+   "Last 5 games point the other way (our side +2.4 a game, theirs +15.2)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -12.4,
+  "model_b": -5.9,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "HPU -10.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401911026",
+  "sport": "CBB",
+  "game": "Central Michigan Chippewas @ Notre Dame Fighting Irish",
+  "home": "Notre Dame Fighting Irish",
+  "away": "Central Michigan Chippewas",
+  "start": "2026-11-25T01:00Z",
+  "pick": "Central Michigan Chippewas +21.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -3.5,
+  "gap_b": -10.6,
+  "gap_min": 10.6,
+  "price": -115,
+  "fair_line": 14.5,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -21.5,
+  "home_ml": -4000,
+  "away_ml": 1600,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side +1.4 a game, theirs +12.2)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 18.0,
+  "model_b": 10.9,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "ND -21.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401922023",
+  "sport": "CBB",
+  "game": "Idaho State Bengals @ Boise State Broncos",
+  "home": "Boise State Broncos",
+  "away": "Idaho State Bengals",
+  "start": "2026-11-25T02:00Z",
+  "pick": "Idaho State Bengals +20.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 6.0,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -3.3,
+  "gap_b": -11.9,
+  "gap_min": 11.9,
+  "price": -115,
+  "fair_line": 12.9,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -20.5,
+  "home_ml": -3600,
+  "away_ml": 1500,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -11.8 a game, theirs +7.6)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 17.2,
+  "model_b": 8.6,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "BOIS -20.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401920976",
+  "sport": "CBB",
+  "game": "Delaware State Hornets @ Chattanooga Mocs",
+  "home": "Chattanooga Mocs",
+  "away": "Delaware State Hornets",
+  "start": "2026-11-25T00:00Z",
+  "pick": "Delaware State Hornets +15.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.9,
+  "components": {
+   "efficiency": 0.92,
+   "veto": 1.0,
+   "models": 0.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.37
+  },
+  "gap_a": -0.9,
+  "gap_b": -8.3,
+  "gap_min": 8.3,
+  "price": -108,
+  "fair_line": 10.9,
+  "playable_to": null,
+  "side": "away",
+  "home_line": -15.5,
+  "home_ml": -1600,
+  "away_ml": 900,
+  "flags": [
+   "A model is 7+ points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -3.4 a game, theirs +7.2)"
+  ],
+  "invalidation": [
+   "Key starter news (CBB injury reports are thin - check before tip)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 14.6,
+  "model_b": 7.2,
+  "model_a_name": "BPI",
+  "model_b_name": "Ratings",
+  "test_record": {
+   "w": 239,
+   "l": 225,
+   "n": 464,
+   "win": 0.515
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.37,
+   "key": "CBB spread dog",
+   "w": 137,
+   "l": 87,
+   "text": "Our record on CBB spread dog: 137-87 (last 60 days, recent counts more) -> +0.37 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "UTC -15.5",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
+  ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401892780",
+  "sport": "NHL",
+  "game": "Vegas Golden Knights @ Edmonton Oilers",
+  "home": "Edmonton Oilers",
+  "away": "Vegas Golden Knights",
+  "start": "2026-11-25T01:00Z",
+  "pick": "Edmonton Oilers ML (-102)",
+  "decision": "PAPER",
+  "stake": 0,
+  "conf": 6.8,
+  "components": {
+   "efficiency": 1.0,
+   "veto": 1.0,
+   "models": 1.5,
+   "starters": 1.5,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.15
+  },
+  "gap_a": 15.1,
+  "gap_b": 12.9,
+  "gap_min": 12.9,
+  "price": -102,
+  "fair_line": -165,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 118.0,
+  "home_ml": -102,
+  "away_ml": -118,
+  "flags": [
+   "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
+  ],
+  "against": [],
+  "invalidation": [
+   "A different goalie starts for either team",
+   "Price moves past -165 (our fair price)"
+  ],
+  "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.8 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
+  "model_a": 0.8,
+  "model_b": 0.7,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 157,
+   "l": 175,
+   "n": 332,
+   "win": 0.473,
+   "units": -9.79,
+   "roi": -0.029
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   "Carter Hart",
+   "Devon Levi"
+  ],
+  "history": {
+   "adj": -0.15,
+   "key": "NHL ml",
+   "w": 36,
+   "l": 40,
+   "text": "Our record on NHL ml: 36-40 (last 60 days, recent counts more) -> -0.15 to confidence"
+  },
+  "date": "2026-11-24",
+  "line_at_pick": "VGK -118",
+  "logged_at": "00:04",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/24 12:04 AM: checked line and injuries - no change"
   ]
  }
 ]
