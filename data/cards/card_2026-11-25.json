@@ -127,7 +127,7 @@
     "factors": [
      "Rest: Packers 10 day(s), Rams 10 day(s)",
      "Line moved 1 pts toward Green Bay Packers since open (-3.5 to -2.5 home)",
-     "Kickoff forecast: wind 4 mph (gusts 5), 67F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 5), 72F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +12.4 a game, theirs +2.6)"
     ],
@@ -136,14 +136,14 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 4.0,
-     "gust": 4.7,
+     "wind": 5.0,
+     "gust": 5.0,
      "rain": 0,
-     "temp": 67.0,
-     "src": "Open-Meteo"
+     "temp": 72,
+     "src": "NWS"
     },
     "weather": {
-     "text": "Mostly clear",
+     "text": "Clear",
      "temp": 70
     },
     "total_model": 44.1,
@@ -361,14 +361,14 @@
     "time": "Wed 7:30 PM CT",
     "start": "2026-11-26T01:30Z",
     "book": "Draft Kings",
-    "line": "HOU -8.5",
-    "home_line": -8.5,
+    "line": "HOU -9.5",
+    "home_line": -9.5,
     "home_line_open": -10.5,
     "spread_odds": [
-     -103,
-     -117
+     -117,
+     -103
     ],
-    "total": 223.5,
+    "total": 224.5,
     "total_open": 223.5,
     "home_ml": -406,
     "away_ml": 319,
@@ -425,7 +425,7 @@
     ],
     "factors": [
      "Rest: Suns 2 day(s), Rockets 2 day(s)",
-     "Line moved 2 pts toward Phoenix Suns since open (-10.5 to -8.5 home)",
+     "Line moved 1 pts toward Phoenix Suns since open (-10.5 to -9.5 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
@@ -435,15 +435,15 @@
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 228.9,
-    "gap_a": 0.2,
-    "gap_b": -7.8,
-    "gap_min": 7.8,
-    "pick": "Phoenix Suns +8.5",
-    "price": -103,
+    "gap_a": -0.8,
+    "gap_b": -8.8,
+    "gap_min": 8.8,
+    "pick": "Phoenix Suns +9.5",
+    "price": -117,
     "side": "away",
     "fair_line": 4.7,
     "playable_to": null,
-    "sim_cover": 0.62,
+    "sim_cover": 0.65,
     "history": {
      "adj": 0.23,
      "key": "NBA spread dog",
@@ -460,9 +460,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 5.8,
+    "conf": 5.9,
     "components": {
-     "efficiency": 0.87,
+     "efficiency": 0.98,
      "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
@@ -472,7 +472,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 5.4
+    "total_gap": 4.4
    },
    {
     "id": "401909320",
@@ -2754,7 +2754,7 @@
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 3.1,
-    "model_b": -0.7,
+    "model_b": -0.6,
     "games_played": [
      7,
      5
@@ -2808,14 +2808,14 @@
     ],
     "total_model": 152.9,
     "gap_a": -1.4,
-    "gap_b": -5.2,
-    "gap_min": 5.2,
+    "gap_b": -5.1,
+    "gap_min": 5.1,
     "pick": "Rice Owls +4.5",
     "price": -105,
     "side": "away",
     "fair_line": 1.2,
     "playable_to": null,
-    "sim_cover": 0.619,
+    "sim_cover": 0.618,
     "history": {
      "adj": 0.25,
      "key": "CBB spread dog",
@@ -2834,7 +2834,7 @@
     "veto": false,
     "conf": 6.0,
     "components": {
-     "efficiency": 0.58,
+     "efficiency": 0.57,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -5020,6 +5020,123 @@
     "total_lean": "Over 136.5 (season scoring says 142.6) - WATCH only, totals have no past-games test yet"
    },
    {
+    "id": "401927399",
+    "sport": "CBB",
+    "game": "St. Bonaventure Bonnies @ Belmont Bruins",
+    "home": "Belmont Bruins",
+    "away": "St. Bonaventure Bonnies",
+    "time": "Wed 9:00 AM CT",
+    "start": "2026-11-25T15:00Z",
+    "book": "Draft Kings",
+    "line": "SBU -4.5",
+    "home_line": 4.5,
+    "home_line_open": 3.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 138.5,
+    "total_open": 140.5,
+    "home_ml": 170,
+    "away_ml": -205,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -0.6,
+    "model_b": -3.4,
+    "games_played": [
+     7,
+     7
+    ],
+    "neutral": true,
+    "records": [
+     "6-1",
+     "5-2"
+    ],
+    "venue": "State Farm Field House",
+    "tv": "ESPN2",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Ari Fulton",
+      "Benjamin Bill",
+      "Ilia Ermakov"
+     ],
+     [
+      "Aleksa Ristic",
+      "Jack Smiley",
+      "Vincent Neugebauer"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     12.8,
+     2.4
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Bonnies 1 day(s), Bruins 1 day(s)",
+     "Line moved 1 pts toward St. Bonaventure Bonnies since open (+3.5 to +4.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +2.4 a game, theirs +12.8)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 139.6,
+    "gap_a": 3.9,
+    "gap_b": 1.1,
+    "gap_min": 3.9,
+    "pick": "Belmont Bruins +4.5",
+    "price": -110,
+    "side": "home",
+    "fair_line": 2.0,
+    "playable_to": null,
+    "sim_cover": 0.59,
+    "history": {
+     "adj": 0.25,
+     "key": "CBB spread dog",
+     "w": 148,
+     "l": 104,
+     "text": "Our record on CBB spread dog: 148-104 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.3,
+    "components": {
+     "efficiency": 0.44,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": 1.1
+   },
+   {
     "id": "401920428",
     "sport": "CBB",
     "game": "Virginia Cavaliers @ Marquette Golden Eagles",
@@ -5032,8 +5149,8 @@
     "home_line": 5.5,
     "home_line_open": 4.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
     "total": 153.5,
     "total_open": 152.5,
@@ -5100,7 +5217,7 @@
     "gap_b": -0.3,
     "gap_min": 3.6,
     "pick": "Marquette Golden Eagles +5.5",
-    "price": -110,
+    "price": -105,
     "side": "home",
     "fair_line": 3.9,
     "playable_to": null,
@@ -5722,121 +5839,6 @@
     "total_gap": 1.1
    },
    {
-    "id": "401927399",
-    "sport": "CBB",
-    "game": "St. Bonaventure Bonnies @ Belmont Bruins",
-    "home": "Belmont Bruins",
-    "away": "St. Bonaventure Bonnies",
-    "time": "Wed 9:00 AM CT",
-    "start": "2026-11-25T15:00Z",
-    "book": "Draft Kings",
-    "line": "SBU -3.5",
-    "home_line": 3.5,
-    "home_line_open": 3.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 138.5,
-    "total_open": 140.5,
-    "home_ml": 150,
-    "away_ml": -180,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -0.6,
-    "model_b": -3.4,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-1",
-     "5-2"
-    ],
-    "venue": "State Farm Field House",
-    "tv": "ESPN2",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Ari Fulton",
-      "Benjamin Bill",
-      "Ilia Ermakov"
-     ],
-     [
-      "Aleksa Ristic",
-      "Jack Smiley",
-      "Vincent Neugebauer"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     12.8,
-     2.4
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bonnies 1 day(s), Bruins 1 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +2.4 a game, theirs +12.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 139.6,
-    "gap_a": 2.9,
-    "gap_b": 0.1,
-    "gap_min": 2.9,
-    "pick": "Belmont Bruins +3.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": 2.0,
-    "playable_to": null,
-    "sim_cover": 0.554,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 148,
-     "l": 104,
-     "text": "Our record on CBB spread dog: 148-104 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.32,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 1.1
-   },
-   {
     "id": "401920547",
     "sport": "CBB",
     "game": "Northern Colorado Bears @ Detroit Mercy Titans",
@@ -6202,7 +6204,7 @@
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.5,
-    "model_b": 6.5,
+    "model_b": 6.6,
     "games_played": [
      6,
      7
@@ -6255,14 +6257,14 @@
     ],
     "total_model": 154.2,
     "gap_a": -3.0,
-    "gap_b": -1.0,
+    "gap_b": -0.9,
     "gap_min": 3.0,
     "pick": "Eastern Washington Eagles +7.5",
     "price": -112,
     "side": "away",
-    "fair_line": 5.5,
+    "fair_line": 5.6,
     "playable_to": null,
-    "sim_cover": 0.571,
+    "sim_cover": 0.57,
     "history": {
      "adj": 0.25,
      "key": "CBB spread dog",
@@ -6487,9 +6489,9 @@
     "pick": "BYU Cougars -3.5",
     "price": -108,
     "side": "away",
-    "fair_line": -4.4,
+    "fair_line": -4.3,
     "playable_to": null,
-    "sim_cover": 0.531,
+    "sim_cover": 0.53,
     "history": {
      "adj": -0.12,
      "key": "CBB spread fav",
@@ -6829,7 +6831,7 @@
     "side": "home",
     "fair_line": -8.1,
     "playable_to": null,
-    "sim_cover": 0.523,
+    "sim_cover": 0.522,
     "history": {
      "adj": -0.12,
      "key": "CBB spread fav",
@@ -7530,7 +7532,7 @@
     "side": "home",
     "fair_line": -4.3,
     "playable_to": null,
-    "sim_cover": 0.601,
+    "sim_cover": 0.602,
     "history": {
      "adj": -0.12,
      "key": "CBB spread fav",
@@ -8657,9 +8659,9 @@
    {
     "id": "401921671",
     "sport": "CBB",
-    "game": "TBD @ Grand Canyon Lopes",
-    "home": "Grand Canyon Lopes",
-    "away": "TBD",
+    "game": "Grand Canyon Lopes @ Colorado Buffaloes",
+    "home": "Colorado Buffaloes",
+    "away": "Grand Canyon Lopes",
     "time": "Wed 8:30 PM CT",
     "start": "2026-11-26T02:30Z",
     "book": null,
@@ -8676,28 +8678,31 @@
     "away_ml": null,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": null,
+    "model_a": -7.4,
+    "model_b": -5.8,
     "games_played": [
-     0,
-     5
+     5,
+     6
     ],
     "neutral": true,
     "records": [
-     null,
-     "5-0"
+     "5-0",
+     "3-3"
     ],
     "venue": "Acrisure Arena",
-    "tv": "",
+    "tv": "CBSSN",
     "indoor": true,
     "inj_home": [],
     "inj_away": [],
     "stars": [
-     [],
      [
       "Dylan Darling",
       "Jaden Henley",
       "Tyler Behrend"
+     ],
+     [
+      "Barrington Hargress",
+      "Justin Neely"
      ]
     ],
     "goalies": [
@@ -8705,28 +8710,30 @@
      null
     ],
     "rest": [
-     null,
-     1
+     1,
+     7
     ],
     "form5": [
-     null,
-     20.6
+     20.6,
+     -3.0
     ],
     "decision": "PASS",
     "reason": "Missing line or a model number - no call.",
     "flags": [],
     "factors": [
+     "Rest: Lopes 1 day(s), Buffaloes 7 day(s)",
      "Indoors - weather does not matter"
     ],
     "against": [],
-    "invalidation": []
+    "invalidation": [],
+    "total_model": 156.8
    },
    {
     "id": "401921672",
     "sport": "CBB",
-    "game": "TBD @ Saint Louis Billikens",
+    "game": "Stanford Cardinal @ Saint Louis Billikens",
     "home": "Saint Louis Billikens",
-    "away": "TBD",
+    "away": "Stanford Cardinal",
     "time": "Wed 10:59 PM CT",
     "start": "2026-11-26T04:59Z",
     "book": null,
@@ -8743,24 +8750,26 @@
     "away_ml": null,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": null,
+    "model_a": 5.7,
+    "model_b": 2.8,
     "games_played": [
-     0,
+     7,
      6
     ],
     "neutral": true,
     "records": [
-     null,
+     "5-2",
      "3-3"
     ],
     "venue": "Acrisure Arena",
-    "tv": "",
+    "tv": "CBSSN",
     "indoor": true,
     "inj_home": [],
     "inj_away": [],
     "stars": [
-     [],
+     [
+      "Nick Townsend"
+     ],
      [
       "Amari McCottry",
       "Kellen Thames",
@@ -8772,24 +8781,26 @@
      null
     ],
     "rest": [
-     null,
+     6,
      1
     ],
     "form5": [
-     null,
+     4.4,
      1.2
     ],
     "decision": "PASS",
     "reason": "Missing line or a model number - no call.",
     "flags": [],
     "factors": [
+     "Rest: Cardinal 6 day(s), Billikens 1 day(s)",
      "Indoors - weather does not matter"
     ],
     "against": [],
-    "invalidation": []
+    "invalidation": [],
+    "total_model": 154.3
    }
   ],
-  "n_past": 1356,
+  "n_past": 1357,
   "model_note": "BPI and an opponent-adjusted ratings model. Early season leans on preseason priors. Sides only."
  },
  {
