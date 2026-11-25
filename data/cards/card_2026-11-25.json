@@ -127,7 +127,7 @@
     "factors": [
      "Rest: Packers 10 day(s), Rams 10 day(s)",
      "Line moved 1 pts toward Green Bay Packers since open (-3.5 to -2.5 home)",
-     "Kickoff forecast: wind 4 mph (gusts 5), 68F, rain chance 0%",
+     "Kickoff forecast: wind 3 mph (gusts 3), 68F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +12.4 a game, theirs +2.6)"
     ],
@@ -136,10 +136,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 3.7,
-     "gust": 5.4,
+     "wind": 3.4,
+     "gust": 3.4,
      "rain": 0,
-     "temp": 68.0,
+     "temp": 67.6,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -494,10 +494,10 @@
      -106,
      -114
     ],
-    "total": 222.5,
+    "total": 221.5,
     "total_open": 232.5,
-    "home_ml": -130,
-    "away_ml": 110,
+    "home_ml": -125,
+    "away_ml": 105,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -1.9,
@@ -644,7 +644,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": 0.4
+    "total_gap": 1.4
    },
    {
     "id": "401909322",
@@ -784,8 +784,8 @@
     ],
     "total": 219.5,
     "total_open": 222.5,
-    "home_ml": -162,
-    "away_ml": 136,
+    "home_ml": -167,
+    "away_ml": 140,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": -0.2,
@@ -952,8 +952,8 @@
     ],
     "total": 216.5,
     "total_open": 220.5,
-    "home_ml": -121,
-    "away_ml": 103,
+    "home_ml": -130,
+    "away_ml": 110,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 5.5,
@@ -1957,13 +1957,13 @@
     "home_line": 1.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     105,
-     -125
+     -102,
+     -118
     ],
     "total": 140.5,
     "total_open": 147.5,
-    "home_ml": -105,
-    "away_ml": -115,
+    "home_ml": 100,
+    "away_ml": -120,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -0.2,
@@ -2021,7 +2021,7 @@
     "gap_b": 5.5,
     "gap_min": 5.5,
     "pick": "North Dakota Fighting Hawks +1.5",
-    "price": -125,
+    "price": -118,
     "side": "home",
     "fair_line": -1.9,
     "playable_to": null,
@@ -2285,120 +2285,6 @@
     },
     "total_gap": 11.5,
     "total_lean": "Over 139.5 (season scoring says 151.0) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401921715",
-    "sport": "CBB",
-    "game": "Ole Miss Rebels @ Arizona Wildcats",
-    "home": "Arizona Wildcats",
-    "away": "Ole Miss Rebels",
-    "time": "Wed 1:30 PM CT",
-    "start": "2026-11-25T19:30Z",
-    "book": "DraftKings",
-    "line": "ARIZ -5.5",
-    "home_line": -5.5,
-    "home_line_open": -5.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 153.5,
-    "total_open": 156.5,
-    "home_ml": -230,
-    "away_ml": 190,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.4,
-    "model_b": -3.4,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-0",
-     "6-1"
-    ],
-    "venue": "Lahaina Civic Center",
-    "tv": "ESPN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Adam Clark",
-      "Santiago Trouet"
-     ],
-     [
-      "Ivan Kharchenkov",
-      "Motiejus Krivas"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     24.0,
-     15.6
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Rebels 1 day(s), Wildcats 1 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +24.0 a game, theirs +15.6)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 152.0,
-    "gap_a": -3.1,
-    "gap_b": -8.9,
-    "gap_min": 8.9,
-    "pick": "Ole Miss Rebels +5.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": -0.5,
-    "playable_to": null,
-    "sim_cover": 0.707,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 149,
-     "l": 106,
-     "text": "Our record on CBB spread dog: 149-106 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.2,
-    "components": {
-     "efficiency": 0.99,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": -1.5
    },
    {
     "id": "401917182",
@@ -3222,10 +3108,10 @@
     "home_line": -13.5,
     "home_line_open": -17.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
-    "total": 150.5,
+    "total": 149.5,
     "total_open": 151.5,
     "home_ml": -1200,
     "away_ml": 750,
@@ -3290,7 +3176,7 @@
     "gap_b": -4.9,
     "gap_min": 4.9,
     "pick": "Prairie View A&M Panthers +13.5",
-    "price": -110,
+    "price": -105,
     "side": "away",
     "fair_line": 11.7,
     "playable_to": null,
@@ -3323,7 +3209,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 2.1
+    "total_gap": 3.1
    },
    {
     "id": "401909720",
@@ -3334,12 +3220,12 @@
     "time": "Wed 5:00 PM CT",
     "start": "2026-11-25T23:00Z",
     "book": "DraftKings",
-    "line": "SYR -26.5",
-    "home_line": -26.5,
+    "line": "SYR -25.5",
+    "home_line": -25.5,
     "home_line_open": -27.5,
     "spread_odds": [
-     -112,
-     -108
+     -105,
+     -115
     ],
     "total": 146.5,
     "total_open": 150.5,
@@ -3394,7 +3280,7 @@
     ],
     "factors": [
      "Rest: Danes 3 day(s), Orange 4 day(s)",
-     "Line moved 1 pts toward UAlbany Great Danes since open (-27.5 to -26.5 home)",
+     "Line moved 2 pts toward UAlbany Great Danes since open (-27.5 to -25.5 home)",
      "Indoors - weather does not matter"
     ],
     "against": [
@@ -3405,15 +3291,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 148.8,
-    "gap_a": -4.5,
-    "gap_b": -14.1,
-    "gap_min": 14.1,
-    "pick": "UAlbany Great Danes +26.5",
-    "price": -112,
+    "gap_a": -3.5,
+    "gap_b": -13.1,
+    "gap_min": 13.1,
+    "pick": "UAlbany Great Danes +25.5",
+    "price": -105,
     "side": "away",
     "fair_line": 17.2,
     "playable_to": null,
-    "sim_cover": 0.801,
+    "sim_cover": 0.775,
     "history": {
      "adj": 0.24,
      "key": "CBB spread dog",
@@ -4473,121 +4359,6 @@
      "our history": 0.24
     },
     "total_gap": 4.3
-   },
-   {
-    "id": "401920809",
-    "sport": "CBB",
-    "game": "Texas A&M Aggies @ Xavier Musketeers",
-    "home": "Xavier Musketeers",
-    "away": "Texas A&M Aggies",
-    "time": "Wed 1:30 PM CT",
-    "start": "2026-11-25T19:30Z",
-    "book": "DraftKings",
-    "line": "TA&M -3.5",
-    "home_line": 3.5,
-    "home_line_open": 5.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 170.5,
-    "total_open": 169.5,
-    "home_ml": 145,
-    "away_ml": -175,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -3.8,
-    "model_b": -5.5,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "6-0",
-     "5-1"
-    ],
-    "venue": "Imperial Arena",
-    "tv": "ESPN2",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jalen Shelley",
-      "PJ Haggerty"
-     ],
-     [
-      "Filip Borovicanin",
-      "Mike Nwoko"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     5
-    ],
-    "form5": [
-     22.8,
-     12.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Aggies 6 day(s), Musketeers 5 day(s)",
-     "Line moved 2 pts toward Xavier Musketeers since open (+5.5 to +3.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +22.8 a game, theirs +12.2)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 157.7,
-    "gap_a": -0.3,
-    "gap_b": -2.0,
-    "gap_min": 2.0,
-    "pick": "Texas A&M Aggies -3.5",
-    "price": -110,
-    "side": "away",
-    "fair_line": -4.6,
-    "playable_to": null,
-    "sim_cover": 0.541,
-    "history": {
-     "adj": -0.12,
-     "key": "CBB spread fav",
-     "w": 13,
-     "l": 15,
-     "text": "Our record on CBB spread fav: 13-15 (last 60 days, recent counts more) -> -0.12 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.1,
-    "components": {
-     "efficiency": 0.22,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.12
-    },
-    "total_gap": -12.8,
-    "total_lean": "Under 170.5 (season scoring says 157.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401928836",
@@ -6337,13 +6108,13 @@
     "home_line": -1.5,
     "home_line_open": -2.5,
     "spread_odds": [
-     -112,
-     -108
+     -125,
+     105
     ],
     "total": 131.5,
     "total_open": 133.5,
-    "home_ml": -120,
-    "away_ml": 100,
+    "home_ml": -112,
+    "away_ml": -108,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 0.5,
@@ -6405,7 +6176,7 @@
     "gap_b": -0.8,
     "gap_min": 1.0,
     "pick": "Eastern Michigan Eagles +1.5",
-    "price": -112,
+    "price": -125,
     "side": "away",
     "fair_line": 0.6,
     "playable_to": null,
@@ -8465,8 +8236,8 @@
     "time": "Wed 6:00 PM CT",
     "start": "2026-11-26T00:00Z",
     "book": "DraftKings",
-    "line": "NYI -120",
-    "home_line": -120.0,
+    "line": "NYI -130",
+    "home_line": -130.0,
     "home_line_open": -1.5,
     "spread_odds": [
      -250,
@@ -8474,8 +8245,8 @@
     ],
     "total": 5.5,
     "total_open": 5.5,
-    "home_ml": -120,
-    "away_ml": 100,
+    "home_ml": -130,
+    "away_ml": 110,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 0.0,
@@ -8538,7 +8309,7 @@
     "flags": [],
     "factors": [
      "Rest: Blues 3 day(s), Islanders 2 day(s)",
-     "Line moved 118.5 pts toward New York Islanders since open (-1.5 to -120 home)",
+     "Line moved 128.5 pts toward New York Islanders since open (-1.5 to -130 home)",
      "Indoors - weather does not matter",
      "Probable goalies: Joel Hofer (Blues), Ilya Sorokin (Islanders)"
     ],
@@ -8548,20 +8319,20 @@
      "Price moves past +102 (our fair price)"
     ],
     "total_model": 6.5,
-    "gap_a": -1.9,
-    "gap_b": -1.3,
+    "gap_a": -4.0,
+    "gap_b": -3.4,
     "win_prob": [
      0.494,
      0.506
     ],
     "market_prob": [
-     0.478,
-     0.522
+     0.457,
+     0.543
     ],
-    "pick": "St. Louis Blues ML (+100)",
-    "price": 100,
+    "pick": "St. Louis Blues ML (+110)",
+    "price": 110,
     "side": "away",
-    "gap_min": 1.9,
+    "gap_min": 4.0,
     "fair_line": 102,
     "models_agree": false,
     "one_model": false,
@@ -8581,9 +8352,9 @@
      "l": 41,
      "text": "Our record on NHL ml: 37-41 (last 60 days, recent counts more) -> -0.15 to confidence"
     },
-    "conf": 5.0,
+    "conf": 5.2,
     "components": {
-     "efficiency": 0.19,
+     "efficiency": 0.4,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
