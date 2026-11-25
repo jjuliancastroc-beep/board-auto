@@ -34,18 +34,18 @@
   },
   "CBB conf 6-6.9": {
    "w": 119,
-   "l": 92,
-   "units": 14.22,
+   "l": 93,
+   "units": 13.22,
    "be": 0.5283,
-   "shrunk": 0.5517,
+   "shrunk": 0.5496,
    "status": "proven winner"
   },
   "CBB dog 20+": {
    "w": 31,
-   "l": 16,
-   "units": 12.0,
+   "l": 17,
+   "units": 11.0,
    "be": 0.5253,
-   "shrunk": 0.5773,
+   "shrunk": 0.5714,
    "status": "proven winner"
   },
   "CBB dog 10-20": {
@@ -57,11 +57,11 @@
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
-   "w": 34,
+   "w": 35,
    "l": 22,
-   "units": 9.12,
-   "be": 0.5239,
-   "shrunk": 0.5566,
+   "units": 9.97,
+   "be": 0.5243,
+   "shrunk": 0.5607,
    "status": "proven winner"
   },
   "NHL ML fav": {
@@ -129,12 +129,12 @@
    "status": "learning"
   },
   "CBB fav": {
-   "w": 13,
+   "w": 14,
    "l": 16,
-   "units": -4.05,
-   "be": 0.5251,
-   "shrunk": 0.481,
-   "status": "learning"
+   "units": -3.21,
+   "be": 0.5257,
+   "shrunk": 0.4875,
+   "status": "proven loser"
   },
   "CFB dog 10-20": {
    "w": 10,
@@ -359,12 +359,19 @@
    "from": "learning",
    "to": "proven loser",
    "text": "NBA fav: 13-17 (43%, -5.3 units). Counted as 47.5% after the pull toward 50/50; break-even 52.4%. Now proven loser - cash picks of this kind drop to $10."
+  },
+  {
+   "date": "2026-11-25",
+   "what": "CBB fav",
+   "from": "learning",
+   "to": "proven loser",
+   "text": "CBB fav: 14-16 (47%, -3.2 units). Counted as 48.8% after the pull toward 50/50; break-even 52.6%. Now proven loser - cash picks of this kind drop to $10."
   }
  ],
  "learned": {
   "w": 3,
-  "l": 4,
-  "units": -1.33
+  "l": 5,
+  "units": -2.33
  },
  "paused_until": null,
  "props": {
@@ -1345,5 +1352,5 @@
    "strong": false
   }
  },
- "updated": "11/25 03:52 PM"
+ "updated": "11/25 04:16 PM"
 }
