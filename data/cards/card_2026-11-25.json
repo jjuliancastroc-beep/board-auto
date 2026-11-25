@@ -127,7 +127,7 @@
     "factors": [
      "Rest: Packers 10 day(s), Rams 10 day(s)",
      "Line moved 1 pts toward Green Bay Packers since open (-3.5 to -2.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 5), 67F, rain chance 0%",
+     "Kickoff forecast: wind 5 mph (gusts 5), 72F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +12.4 a game, theirs +2.6)"
     ],
@@ -136,11 +136,11 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 2.2,
-     "gust": 4.7,
+     "wind": 5.0,
+     "gust": 5.0,
      "rain": 0,
-     "temp": 67.0,
-     "src": "Open-Meteo"
+     "temp": 72,
+     "src": "NWS"
     },
     "weather": {
      "text": "Clear",
@@ -207,17 +207,17 @@
     "time": "Wed 7:00 PM CT",
     "start": "2026-11-26T01:00Z",
     "book": "DraftKings",
-    "line": "MEM -7.5",
-    "home_line": -7.5,
+    "line": "MEM -6.5",
+    "home_line": -6.5,
     "home_line_open": -6.5,
     "spread_odds": [
-     -118,
-     -103
+     -110,
+     -110
     ],
-    "total": 228.5,
+    "total": 229.5,
     "total_open": 229.5,
-    "home_ml": -249,
-    "away_ml": 205,
+    "home_ml": -257,
+    "away_ml": 211,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 12.2,
@@ -297,33 +297,30 @@
      8.8
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but confidence 6.1 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
+    "reason": "Both models agree, but confidence 6.5 is under 7.0. Past-games test for this kind of pick: 45.6% over 125.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet"
     ],
     "factors": [
      "Rest: Clippers 2 day(s), Grizzlies 2 day(s)",
-     "Line moved 1 pts toward Memphis Grizzlies since open (-6.5 to -7.5 home)",
      "Indoors - weather does not matter",
      "Last 5 games agree (our side +8.8 a game, theirs -10.2)"
     ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
+    "against": [],
     "invalidation": [
      "Line moves past -7.7",
      "A star on either team changes status (questionable to out or back in)"
     ],
     "total_model": 230.0,
-    "gap_a": 4.7,
-    "gap_b": 8.9,
-    "gap_min": 4.7,
-    "pick": "Memphis Grizzlies -7.5",
-    "price": -103,
+    "gap_a": 5.7,
+    "gap_b": 9.9,
+    "gap_min": 5.7,
+    "pick": "Memphis Grizzlies -6.5",
+    "price": -110,
     "side": "home",
     "fair_line": -14.3,
     "playable_to": -7.7,
-    "sim_cover": 0.707,
+    "sim_cover": 0.734,
     "history": {
      "adj": -0.09,
      "key": "NBA spread fav",
@@ -340,19 +337,19 @@
     "models_agree": true,
     "one_model": false,
     "veto": false,
-    "conf": 6.1,
+    "conf": 6.5,
     "components": {
-     "efficiency": 0.53,
+     "efficiency": 0.64,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
      "our history": -0.09
     },
-    "total_gap": 1.5,
+    "total_gap": 0.5,
     "stake": 0
    },
    {
@@ -493,7 +490,7 @@
      -110,
      -110
     ],
-    "total": 224.5,
+    "total": 223.5,
     "total_open": 232.5,
     "home_ml": -119,
     "away_ml": 101,
@@ -643,7 +640,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": -1.6
+    "total_gap": -0.6
    },
    {
     "id": "401909322",
@@ -661,7 +658,7 @@
      -118,
      -103
     ],
-    "total": 232.5,
+    "total": 233.5,
     "total_open": 229.5,
     "home_ml": -113,
     "away_ml": -105,
@@ -763,7 +760,7 @@
      "situational": 0.5,
      "our history": 0.23
     },
-    "total_gap": -1.4
+    "total_gap": -2.4
    },
    {
     "id": "401909319",
@@ -1090,168 +1087,6 @@
     "total_gap": 4.5
    },
    {
-    "id": "401909324",
-    "sport": "NBA",
-    "game": "Sacramento Kings @ Golden State Warriors",
-    "home": "Golden State Warriors",
-    "away": "Sacramento Kings",
-    "time": "Wed 9:00 PM CT",
-    "start": "2026-11-26T03:00Z",
-    "book": "DraftKings",
-    "line": "GS -5.5",
-    "home_line": -5.5,
-    "home_line_open": -5.5,
-    "spread_odds": [
-     -106,
-     -114
-    ],
-    "total": 217.5,
-    "total_open": 218.5,
-    "home_ml": -237,
-    "away_ml": 196,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 10.3,
-    "model_b": 9.2,
-    "games_played": [
-     17,
-     17
-    ],
-    "neutral": false,
-    "records": [
-     "2-15",
-     "9-8"
-    ],
-    "venue": "Chase Center",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Yaxel Lendeborg",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Brandon Williams",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Stephen Curry",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Kristaps Porzingis",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Moses Moody",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Jimmy Butler III",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Maxime Raynaud",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Ben Simmons",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Darius Acuff Jr.",
-      "Domantas Sabonis",
-      "Zach LaVine"
-     ],
-     [
-      "Draymond Green",
-      "Yaxel Lendeborg"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -12.0,
-     -20.0
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Star Yaxel Lendeborg (Golden State Warriors) Day-To-Day",
-    "flags": [
-     "Star Yaxel Lendeborg (Golden State Warriors) Day-To-Day"
-    ],
-    "factors": [
-     "Rest: Kings 2 day(s), Warriors 3 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -20.0 a game, theirs -12.0)"
-    ],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 224.7,
-    "veto_sides": [
-     "game"
-    ],
-    "gap_a": 4.8,
-    "gap_b": 3.7,
-    "gap_min": 4.8,
-    "pick": "Golden State Warriors -5.5",
-    "price": -114,
-    "side": "home",
-    "fair_line": -9.7,
-    "playable_to": null,
-    "sim_cover": 0.633,
-    "history": {
-     "adj": -0.09,
-     "key": "NBA spread fav",
-     "w": 15,
-     "l": 17,
-     "text": "Our record on NBA spread fav: 15-17 (last 60 days, recent counts more) -> -0.09 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 3.3,
-    "components": {
-     "efficiency": 0.53,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 0.75,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.09
-    },
-    "total_gap": 7.2,
-    "total_lean": "Over 217.5 (season scoring says 224.7) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401909325",
     "sport": "NBA",
     "game": "San Antonio Spurs @ Portland Trail Blazers",
@@ -1561,6 +1396,170 @@
      "our history": 0.23
     },
     "total_gap": -3.1
+   },
+   {
+    "id": "401909324",
+    "sport": "NBA",
+    "game": "Sacramento Kings @ Golden State Warriors",
+    "home": "Golden State Warriors",
+    "away": "Sacramento Kings",
+    "time": "Wed 9:00 PM CT",
+    "start": "2026-11-26T03:00Z",
+    "book": "DraftKings",
+    "line": "GS -6.5",
+    "home_line": -6.5,
+    "home_line_open": -5.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 217.5,
+    "total_open": 218.5,
+    "home_ml": -264,
+    "away_ml": 217,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 10.3,
+    "model_b": 9.2,
+    "games_played": [
+     17,
+     17
+    ],
+    "neutral": false,
+    "records": [
+     "2-15",
+     "9-8"
+    ],
+    "venue": "Chase Center",
+    "tv": "",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Yaxel Lendeborg",
+      "pos": "F",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Brandon Williams",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Stephen Curry",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Kristaps Porzingis",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Moses Moody",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Jimmy Butler III",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Maxime Raynaud",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Ben Simmons",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Darius Acuff Jr.",
+      "Domantas Sabonis",
+      "Zach LaVine"
+     ],
+     [
+      "Draymond Green",
+      "Yaxel Lendeborg"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     3
+    ],
+    "form5": [
+     -12.0,
+     -20.0
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Star Yaxel Lendeborg (Golden State Warriors) Day-To-Day",
+    "flags": [
+     "Star Yaxel Lendeborg (Golden State Warriors) Day-To-Day"
+    ],
+    "factors": [
+     "Rest: Kings 2 day(s), Warriors 3 day(s)",
+     "Line moved 1 pts toward Golden State Warriors since open (-5.5 to -6.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open",
+     "Last 5 games point the other way (our side -20.0 a game, theirs -12.0)"
+    ],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 224.7,
+    "veto_sides": [
+     "game"
+    ],
+    "gap_a": 3.8,
+    "gap_b": 2.7,
+    "gap_min": 3.8,
+    "pick": "Golden State Warriors -6.5",
+    "price": -112,
+    "side": "home",
+    "fair_line": -9.7,
+    "playable_to": null,
+    "sim_cover": 0.602,
+    "history": {
+     "adj": -0.09,
+     "key": "NBA spread fav",
+     "w": 15,
+     "l": 17,
+     "text": "Our record on NBA spread fav: 15-17 (last 60 days, recent counts more) -> -0.09 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 2.4,
+    "components": {
+     "efficiency": 0.42,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 0.3,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.09
+    },
+    "total_gap": 7.2,
+    "total_lean": "Over 217.5 (season scoring says 224.7) - WATCH only, totals have no past-games test yet"
    }
   ],
   "n_past": 261,
@@ -1585,10 +1584,10 @@
      -112,
      -108
     ],
-    "total": 155.5,
+    "total": 153.5,
     "total_open": 158.5,
-    "home_ml": -5000,
-    "away_ml": 1800,
+    "home_ml": -6500,
+    "away_ml": 2000,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 13.8,
@@ -1686,7 +1685,7 @@
      "situational": 0.5,
      "our history": 0.26
     },
-    "total_gap": 0.6,
+    "total_gap": 2.6,
     "stake": 10,
     "now_says": "PAPER Arkansas-Pine Bluff Golden Lions +21.5 6.7",
     "learned": true,
@@ -1708,7 +1707,7 @@
      -110,
      -110
     ],
-    "total": 149.5,
+    "total": 150.5,
     "total_open": 145.5,
     "home_ml": null,
     "away_ml": null,
@@ -1807,7 +1806,7 @@
      "situational": 0.5,
      "our history": 0.26
     },
-    "total_gap": 0.3,
+    "total_gap": -0.7,
     "stake": 10,
     "now_says": "PAPER Southern Jaguars +35.5 6.2",
     "learned": true,
@@ -1946,10 +1945,10 @@
     "home_line": -34.5,
     "home_line_open": -35.5,
     "spread_odds": [
-     -112,
-     -108
+     -105,
+     -115
     ],
-    "total": 160.5,
+    "total": 161.5,
     "total_open": 160.5,
     "home_ml": null,
     "away_ml": null,
@@ -2018,7 +2017,7 @@
     "gap_b": -16.3,
     "gap_min": 7.8,
     "pick": "Jackson State Tigers +34.5",
-    "price": -112,
+    "price": -105,
     "side": "away",
     "fair_line": 22.4,
     "playable_to": 31.2,
@@ -2051,7 +2050,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": -0.8,
+    "total_gap": -1.8,
     "stake": 0
    },
    {
@@ -2278,6 +2277,119 @@
      "our history": 0.24
     },
     "total_gap": 3.5
+   },
+   {
+    "id": "401922253",
+    "sport": "CBB",
+    "game": "West Florida Argonauts @ Northwestern State Demons",
+    "home": "Northwestern State Demons",
+    "away": "West Florida Argonauts",
+    "time": "Wed 5:00 PM CT",
+    "start": "2026-11-25T23:00Z",
+    "book": "DraftKings",
+    "line": "NWST -1.5",
+    "home_line": -1.5,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 139.5,
+    "total_open": 141.5,
+    "home_ml": -130,
+    "away_ml": 110,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 2.3,
+    "model_b": -3.6,
+    "games_played": [
+     7,
+     6
+    ],
+    "neutral": false,
+    "records": [
+     "3-4",
+     "1-5"
+    ],
+    "venue": "Prather Coliseum",
+    "tv": "ESPN+",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "DJ Shine",
+      "Isaiah Alexander"
+     ],
+     [
+      "Isaiah Vick",
+      "Kai Simpson"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     5
+    ],
+    "form5": [
+     6.2,
+     -6.4
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Argonauts 3 day(s), Demons 5 day(s)",
+     "Indoors - weather does not matter",
+     "Last 5 games agree (our side +6.2 a game, theirs -6.4)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 151.0,
+    "gap_a": 0.8,
+    "gap_b": -5.1,
+    "gap_min": 5.1,
+    "pick": "West Florida Argonauts +1.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": -0.6,
+    "playable_to": null,
+    "sim_cover": 0.577,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 148,
+     "l": 105,
+     "text": "Our record on CBB spread dog: 148-105 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.3,
+    "components": {
+     "efficiency": 0.56,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 11.5,
+    "total_lean": "Over 139.5 (season scoring says 151.0) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921715",
@@ -2756,8 +2868,8 @@
     ],
     "total": 147.5,
     "total_open": 146.5,
-    "home_ml": -800,
-    "away_ml": 550,
+    "home_ml": -750,
+    "away_ml": 525,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 11.9,
@@ -2867,7 +2979,7 @@
      -108,
      -112
     ],
-    "total": 147.5,
+    "total": 146.5,
     "total_open": 152.5,
     "home_ml": 120,
     "away_ml": -142,
@@ -2965,7 +3077,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 2.3
+    "total_gap": 3.3
    },
    {
     "id": "401921702",
@@ -3559,10 +3671,10 @@
      -112,
      -108
     ],
-    "total": 151.5,
+    "total": 152.5,
     "total_open": 151.5,
-    "home_ml": -1650,
-    "away_ml": 950,
+    "home_ml": -1800,
+    "away_ml": 1000,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 14.9,
@@ -3657,7 +3769,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 1.1
+    "total_gap": 0.1
    },
    {
     "id": "401929005",
@@ -3675,7 +3787,7 @@
      -105,
      -115
     ],
-    "total": 138.5,
+    "total": 139.5,
     "total_open": 142.5,
     "home_ml": -1650,
     "away_ml": 950,
@@ -3774,8 +3886,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 7.4,
-    "total_lean": "Over 138.5 (season scoring says 145.9) - WATCH only, totals have no past-games test yet"
+    "total_gap": 6.4,
+    "total_lean": "Over 139.5 (season scoring says 145.9) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920916",
@@ -3910,7 +4022,7 @@
      -105,
      -115
     ],
-    "total": 156.5,
+    "total": 155.5,
     "total_open": 158.5,
     "home_ml": -3600,
     "away_ml": 1500,
@@ -4009,7 +4121,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": -3.7
+    "total_gap": -2.7
    },
    {
     "id": "401921670",
@@ -4136,13 +4248,13 @@
     "home_line": -3.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
     "total": 147.5,
     "total_open": 147.5,
-    "home_ml": -175,
-    "away_ml": 145,
+    "home_ml": -185,
+    "away_ml": 154,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 6.2,
@@ -4201,7 +4313,7 @@
     "gap_b": -3.9,
     "gap_min": 3.9,
     "pick": "Washington Huskies +3.5",
-    "price": -110,
+    "price": -105,
     "side": "away",
     "fair_line": 2.9,
     "playable_to": null,
@@ -4235,117 +4347,6 @@
      "our history": 0.24
     },
     "total_gap": 5.0
-   },
-   {
-    "id": "401921669",
-    "sport": "CBB",
-    "game": "Arizona State Sun Devils @ LSU Tigers",
-    "home": "LSU Tigers",
-    "away": "Arizona State Sun Devils",
-    "time": "Wed 1:00 PM CT",
-    "start": "2026-11-25T19:00Z",
-    "book": "DraftKings",
-    "line": "LSU -4.5",
-    "home_line": -4.5,
-    "home_line_open": -4.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 146.5,
-    "total_open": 148.5,
-    "home_ml": -198,
-    "away_ml": 164,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 1.3,
-    "model_b": 4.5,
-    "games_played": [
-     5,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-0",
-     "6-0"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Joel Foxwell",
-      "Paulius Murauskas"
-     ],
-     [
-      "Donovan Dent",
-      "Michael Ruzic"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     7,
-     4
-    ],
-    "form5": [
-     18.4,
-     20.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Devils 7 day(s), Tigers 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.1,
-    "gap_a": -3.2,
-    "gap_b": 0.0,
-    "gap_min": 3.2,
-    "pick": "Arizona State Sun Devils +4.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 2.9,
-    "playable_to": null,
-    "sim_cover": 0.557,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 148,
-     "l": 105,
-     "text": "Our record on CBB spread dog: 148-105 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.6,
-    "components": {
-     "efficiency": 0.36,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 3.6
    },
    {
     "id": "401920847",
@@ -4586,8 +4587,8 @@
     "home_line": -1.5,
     "home_line_open": -1.5,
     "spread_odds": [
-     -105,
-     -115
+     -108,
+     -112
     ],
     "total": 150.5,
     "total_open": 150.5,
@@ -4653,7 +4654,7 @@
     "gap_b": -4.3,
     "gap_min": 4.3,
     "pick": "Southern Utah Thunderbirds +1.5",
-    "price": -105,
+    "price": -108,
     "side": "away",
     "fair_line": -2.3,
     "playable_to": null,
@@ -5049,7 +5050,7 @@
      -110,
      -110
     ],
-    "total": 151.5,
+    "total": 152.5,
     "total_open": 155.5,
     "home_ml": -175,
     "away_ml": 145,
@@ -5147,8 +5148,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 10.1,
-    "total_lean": "Over 151.5 (season scoring says 161.6) - WATCH only, totals have no past-games test yet"
+    "total_gap": 9.1,
+    "total_lean": "Over 152.5 (season scoring says 161.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401921703",
@@ -5166,7 +5167,7 @@
      -108,
      -112
     ],
-    "total": 145.5,
+    "total": 143.5,
     "total_open": 146.5,
     "home_ml": 130,
     "away_ml": -155,
@@ -5264,8 +5265,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 9.3,
-    "total_lean": "Over 145.5 (season scoring says 154.8) - WATCH only, totals have no past-games test yet"
+    "total_gap": 11.3,
+    "total_lean": "Over 143.5 (season scoring says 154.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401925688",
@@ -5867,10 +5868,10 @@
      -110,
      -110
     ],
-    "total": 167.5,
+    "total": 166.5,
     "total_open": 169.5,
-    "home_ml": -192,
-    "away_ml": 160,
+    "home_ml": -198,
+    "away_ml": 164,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 2.7,
@@ -5963,7 +5964,122 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": -1.4
+    "total_gap": -0.4
+   },
+   {
+    "id": "401920550",
+    "sport": "CBB",
+    "game": "Eastern Michigan Eagles @ UTEP Miners",
+    "home": "UTEP Miners",
+    "away": "Eastern Michigan Eagles",
+    "time": "Wed 7:30 PM CT",
+    "start": "2026-11-26T01:30Z",
+    "book": "DraftKings",
+    "line": "UTEP -2.5",
+    "home_line": -2.5,
+    "home_line_open": -2.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 133.5,
+    "total_open": 133.5,
+    "home_ml": -148,
+    "away_ml": 124,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -0.4,
+    "model_b": 0.7,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "5-1"
+    ],
+    "venue": "Hard Rock Hotel Riviera Maya",
+    "tv": "FloHoops",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Braelon Green",
+      "Mohammad Habhab"
+     ],
+     [
+      "Cam McDaniels",
+      "Leif Moeller",
+      "Youssouf Traore"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     8.6,
+     15.4
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Eagles 1 day(s), Miners 1 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +8.6 a game, theirs +15.4)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 140.1,
+    "gap_a": -2.9,
+    "gap_b": -1.8,
+    "gap_min": 2.9,
+    "pick": "Eastern Michigan Eagles +2.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 0.2,
+    "playable_to": null,
+    "sim_cover": 0.584,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 148,
+     "l": 105,
+     "text": "Our record on CBB spread dog: 148-105 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.2,
+    "components": {
+     "efficiency": 0.32,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 6.6,
+    "total_lean": "Over 133.5 (season scoring says 140.1) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401917545",
@@ -6078,6 +6194,120 @@
      "our history": 0.24
     },
     "total_gap": 1.7
+   },
+   {
+    "id": "401921669",
+    "sport": "CBB",
+    "game": "Arizona State Sun Devils @ LSU Tigers",
+    "home": "LSU Tigers",
+    "away": "Arizona State Sun Devils",
+    "time": "Wed 1:00 PM CT",
+    "start": "2026-11-25T19:00Z",
+    "book": "DraftKings",
+    "line": "LSU -3.5",
+    "home_line": -3.5,
+    "home_line_open": -4.5,
+    "spread_odds": [
+     -105,
+     -115
+    ],
+    "total": 145.5,
+    "total_open": 148.5,
+    "home_ml": -198,
+    "away_ml": 164,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 1.3,
+    "model_b": 4.5,
+    "games_played": [
+     5,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-0",
+     "6-0"
+    ],
+    "venue": "Acrisure Arena",
+    "tv": "CBSSN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Joel Foxwell",
+      "Paulius Murauskas"
+     ],
+     [
+      "Donovan Dent",
+      "Michael Ruzic"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     7,
+     4
+    ],
+    "form5": [
+     18.4,
+     20.6
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Devils 7 day(s), Tigers 4 day(s)",
+     "Line moved 1 pts toward Arizona State Sun Devils since open (-4.5 to -3.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.1,
+    "gap_a": -2.2,
+    "gap_b": 1.0,
+    "gap_min": 2.2,
+    "pick": "Arizona State Sun Devils +3.5",
+    "price": -105,
+    "side": "away",
+    "fair_line": 2.9,
+    "playable_to": null,
+    "sim_cover": 0.521,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 148,
+     "l": 105,
+     "text": "Our record on CBB spread dog: 148-105 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.1,
+    "components": {
+     "efficiency": 0.24,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 4.6
    },
    {
     "id": "401921716",
@@ -6326,10 +6556,10 @@
      -115,
      -105
     ],
-    "total": 153.5,
+    "total": 151.5,
     "total_open": 153.5,
-    "home_ml": 140,
-    "away_ml": -166,
+    "home_ml": 124,
+    "away_ml": -148,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -4.8,
@@ -6420,7 +6650,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": -1.8
+    "total_gap": 0.2
    },
    {
     "id": "401917967",
@@ -6776,13 +7006,13 @@
     "home_line": -3.5,
     "home_line_open": -4.5,
     "spread_odds": [
-     -105,
-     -115
+     -108,
+     -112
     ],
     "total": 150.5,
     "total_open": 150.5,
-    "home_ml": -180,
-    "away_ml": 150,
+    "home_ml": -175,
+    "away_ml": 145,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.6,
@@ -6842,7 +7072,7 @@
     "gap_b": -1.5,
     "gap_min": 1.5,
     "pick": "Wake Forest Demon Deacons +3.5",
-    "price": -105,
+    "price": -108,
     "side": "away",
     "fair_line": 3.3,
     "playable_to": null,
@@ -7126,10 +7356,10 @@
     "home_line": -11.5,
     "home_line_open": -12.5,
     "spread_odds": [
-     -105,
-     -115
+     -110,
+     -110
     ],
-    "total": 148.5,
+    "total": 147.5,
     "total_open": 149.5,
     "home_ml": -800,
     "away_ml": 550,
@@ -7194,7 +7424,7 @@
     "gap_b": -1.4,
     "gap_min": 1.7,
     "pick": "Bethune-Cookman Wildcats +11.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": 10.0,
     "playable_to": null,
@@ -7227,8 +7457,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 7.3,
-    "total_lean": "Over 148.5 (season scoring says 155.8) - WATCH only, totals have no past-games test yet"
+    "total_gap": 8.3,
+    "total_lean": "Over 147.5 (season scoring says 155.8) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401911522",
@@ -7479,8 +7709,8 @@
     ],
     "total": 173.5,
     "total_open": 171.5,
-    "home_ml": -125,
-    "away_ml": 105,
+    "home_ml": -130,
+    "away_ml": 110,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.5,
@@ -8319,77 +8549,6 @@
     "total_model": 166.3
    },
    {
-    "id": "401922253",
-    "sport": "CBB",
-    "game": "West Florida Argonauts @ Northwestern State Demons",
-    "home": "Northwestern State Demons",
-    "away": "West Florida Argonauts",
-    "time": "Wed 5:00 PM CT",
-    "start": "2026-11-25T23:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.3,
-    "model_b": -3.6,
-    "games_played": [
-     7,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     "3-4",
-     "1-5"
-    ],
-    "venue": "Prather Coliseum",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "DJ Shine",
-      "Isaiah Alexander"
-     ],
-     [
-      "Isaiah Vick",
-      "Kai Simpson"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     5
-    ],
-    "form5": [
-     6.2,
-     -6.4
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Argonauts 3 day(s), Demons 5 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 151.0
-   },
-   {
     "id": "401920549",
     "sport": "CBB",
     "game": "Kennesaw State Owls @ Charleston Cougars",
@@ -8528,78 +8687,6 @@
     ],
     "against": [],
     "invalidation": []
-   },
-   {
-    "id": "401920550",
-    "sport": "CBB",
-    "game": "Eastern Michigan Eagles @ UTEP Miners",
-    "home": "UTEP Miners",
-    "away": "Eastern Michigan Eagles",
-    "time": "Wed 7:30 PM CT",
-    "start": "2026-11-26T01:30Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -0.4,
-    "model_b": 0.7,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Hard Rock Hotel Riviera Maya",
-    "tv": "FloHoops",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Braelon Green",
-      "Mohammad Habhab"
-     ],
-     [
-      "Cam McDaniels",
-      "Leif Moeller",
-      "Youssouf Traore"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     8.6,
-     15.4
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Eagles 1 day(s), Miners 1 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 140.1
    },
    {
     "id": "401925880",
@@ -9240,8 +9327,8 @@
     "home_line": -148.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -198,
-     164
+     -205,
+     170
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -10142,8 +10229,8 @@
     "home_line": -155.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -185,
-     154
+     -192,
+     160
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -10391,8 +10478,8 @@
     "home_line": -230.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -135,
-     114
+     -130,
+     110
     ],
     "total": 6.5,
     "total_open": 6.5,
