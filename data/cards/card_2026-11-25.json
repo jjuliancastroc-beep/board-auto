@@ -189,10 +189,10 @@
      -103,
      -117
     ],
-    "total": 227.5,
+    "total": 226.5,
     "total_open": 237.5,
-    "home_ml": 136,
-    "away_ml": -162,
+    "home_ml": 130,
+    "away_ml": -155,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 0.5,
@@ -340,7 +340,7 @@
      "situational": 0.5,
      "our history": -0.09
     },
-    "total_gap": -2.4
+    "total_gap": -1.4
    }
   ],
   "n_past": 261,
@@ -435,11 +435,11 @@
     "playable_to": null,
     "sim_cover": 0.581,
     "history": {
-     "adj": 0.25,
+     "adj": 0.23,
      "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 158,
+     "l": 113,
+     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -460,7 +460,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.23
     },
     "total_gap": 9.0,
     "total_lean": "Over 143.5 (season scoring says 152.5) - WATCH only, totals have no past-games test yet"
@@ -553,11 +553,11 @@
     "playable_to": null,
     "sim_cover": 0.697,
     "history": {
-     "adj": 0.25,
+     "adj": 0.23,
      "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 158,
+     "l": 113,
+     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -578,132 +578,10 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.23
     },
     "total_gap": 6.4,
     "total_lean": "Over 139.5 (season scoring says 145.9) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401924897",
-    "sport": "CBB",
-    "game": "Mississippi Valley State Delta Devils @ New Mexico Lobos",
-    "home": "New Mexico Lobos",
-    "away": "Mississippi Valley State Delta Devils",
-    "time": "Wed 8:00 PM CT",
-    "start": "2026-11-26T02:00Z",
-    "book": "DraftKings",
-    "line": "UNM -36.5",
-    "home_line": -36.5,
-    "home_line_open": -35.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 152.5,
-    "total_open": 150.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 27.7,
-    "model_b": 17.3,
-    "games_played": [
-     5,
-     5
-    ],
-    "neutral": false,
-    "records": [
-     "0-5",
-     "3-2"
-    ],
-    "venue": "The Pit",
-    "tv": "MW+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Eli Pippins",
-      "Matt Anglo",
-      "Tymias Williams"
-     ],
-     [
-      "Chris Howell",
-      "Hudson Mayes",
-      "Jake Hall"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     4
-    ],
-    "form5": [
-     -23.2,
-     10.8
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Models 10+ points apart - automatic pass",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet",
-     "Models 10+ points apart - automatic pass"
-    ],
-    "factors": [
-     "Rest: Devils 5 day(s), Lobos 4 day(s)",
-     "Line moved 1 pts toward New Mexico Lobos since open (-35.5 to -36.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "One model is only barely past the bar",
-     "Last 5 games point the other way (our side -23.2 a game, theirs +10.8)"
-    ],
-    "invalidation": [
-     "Line moves past +32.2",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 153.6,
-    "gap_a": -8.8,
-    "gap_b": -19.2,
-    "gap_min": 8.8,
-    "pick": "Mississippi Valley State Delta Devils +36.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 22.5,
-    "playable_to": 32.2,
-    "sim_cover": 0.898,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": true,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.98,
-     "veto": 0.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 1.1
    },
    {
     "id": "401921671",
@@ -790,11 +668,11 @@
     "playable_to": null,
     "sim_cover": 0.61,
     "history": {
-     "adj": 0.25,
+     "adj": 0.23,
      "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 158,
+     "l": 113,
+     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -815,236 +693,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.23
     },
     "total_gap": 4.3
-   },
-   {
-    "id": "401917545",
-    "sport": "CBB",
-    "game": "Eastern Washington Eagles @ Loyola Marymount Lions",
-    "home": "Loyola Marymount Lions",
-    "away": "Eastern Washington Eagles",
-    "time": "Wed 8:00 PM CT",
-    "start": "2026-11-26T02:00Z",
-    "book": "DraftKings",
-    "line": "LMU -7.5",
-    "home_line": -7.5,
-    "home_line_open": -7.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 152.5,
-    "total_open": 152.5,
-    "home_ml": -310,
-    "away_ml": 250,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 5.3,
-    "model_b": 6.6,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "2-4",
-     "4-3"
-    ],
-    "venue": "Gersten Pavilion",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Alton Hamilton IV",
-      "Jalen Griffith",
-      "Jamil Miller"
-     ],
-     [
-      "Mazi Mosley",
-      "Zion Sensley"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -4.8,
-     5.8
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Eagles 2 day(s), Lions 3 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -4.8 a game, theirs +5.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 154.2,
-    "gap_a": -2.2,
-    "gap_b": -0.9,
-    "gap_min": 2.2,
-    "pick": "Eastern Washington Eagles +7.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 5.9,
-    "playable_to": null,
-    "sim_cover": 0.557,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.25,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 1.7
-   },
-   {
-    "id": "401929287",
-    "sport": "CBB",
-    "game": "Wake Forest Demon Deacons @ Mississippi State Bulldogs",
-    "home": "Mississippi State Bulldogs",
-    "away": "Wake Forest Demon Deacons",
-    "time": "Wed 8:05 PM CT",
-    "start": "2026-11-26T02:05Z",
-    "book": "DraftKings",
-    "line": "MSST -3.5",
-    "home_line": -3.5,
-    "home_line_open": -4.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": null,
-    "total_open": 150.5,
-    "home_ml": -175,
-    "away_ml": 145,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 4.1,
-    "model_b": 2.0,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Imperial Arena",
-    "tv": "ESPNU",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Gavin Placide",
-      "Kevair Kennedy"
-     ],
-     [
-      "Josh Hubbard",
-      "Tristan Reed"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     5
-    ],
-    "form5": [
-     11.4,
-     11.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Deacons 4 day(s), Bulldogs 5 day(s)",
-     "Line moved 1 pts toward Wake Forest Demon Deacons since open (-4.5 to -3.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 148.9,
-    "gap_a": 0.6,
-    "gap_b": -1.5,
-    "gap_min": 1.5,
-    "pick": "Wake Forest Demon Deacons +3.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 3.0,
-    "playable_to": null,
-    "sim_cover": 0.517,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.1,
-    "components": {
-     "efficiency": 0.16,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    }
    },
    {
     "id": "401921672",
@@ -1245,11 +896,11 @@
     "playable_to": null,
     "sim_cover": 0.529,
     "history": {
-     "adj": 0.25,
+     "adj": 0.23,
      "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
+     "w": 158,
+     "l": 113,
+     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1270,9 +921,123 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.25
+     "our history": 0.23
     },
     "total_gap": 4.2
+   },
+   {
+    "id": "401929287",
+    "sport": "CBB",
+    "game": "Wake Forest Demon Deacons @ Mississippi State Bulldogs",
+    "home": "Mississippi State Bulldogs",
+    "away": "Wake Forest Demon Deacons",
+    "time": "Wed 8:29 PM CT",
+    "start": "2026-11-26T02:29Z",
+    "book": "DraftKings",
+    "line": "MSST -3.5",
+    "home_line": -3.5,
+    "home_line_open": -4.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 149.5,
+    "total_open": 150.5,
+    "home_ml": -198,
+    "away_ml": 164,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 4.1,
+    "model_b": 2.0,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "5-1"
+    ],
+    "venue": "Imperial Arena",
+    "tv": "ESPNU",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Gavin Placide",
+      "Kevair Kennedy"
+     ],
+     [
+      "Josh Hubbard",
+      "Tristan Reed"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     5
+    ],
+    "form5": [
+     11.4,
+     11.2
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Deacons 4 day(s), Bulldogs 5 day(s)",
+     "Line moved 1 pts toward Wake Forest Demon Deacons since open (-4.5 to -3.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 148.9,
+    "gap_a": 0.6,
+    "gap_b": -1.5,
+    "gap_min": 1.5,
+    "pick": "Wake Forest Demon Deacons +3.5",
+    "price": -108,
+    "side": "away",
+    "fair_line": 3.0,
+    "playable_to": null,
+    "sim_cover": 0.517,
+    "history": {
+     "adj": 0.23,
+     "key": "CBB spread dog",
+     "w": 158,
+     "l": 113,
+     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.0,
+    "components": {
+     "efficiency": 0.16,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": -0.6
    },
    {
     "id": "401917544",
@@ -1390,195 +1155,6 @@
     },
     "total_gap": 10.9,
     "total_lean": "Over 132.5 (season scoring says 143.4) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401920550",
-    "sport": "CBB",
-    "game": "Eastern Michigan Eagles @ UTEP Miners",
-    "home": "UTEP Miners",
-    "away": "Eastern Michigan Eagles",
-    "time": "Wed 7:45 PM CT",
-    "start": "2026-11-26T01:45Z",
-    "book": "DraftKings",
-    "line": "UTEP -1.5",
-    "home_line": -1.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 129.5,
-    "total_open": 133.5,
-    "home_ml": -112,
-    "away_ml": -108,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.5,
-    "model_b": 0.7,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Hard Rock Hotel Riviera Maya",
-    "tv": "FloHoops",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Braelon Green",
-      "Mohammad Habhab"
-     ],
-     [
-      "Cam McDaniels",
-      "Leif Moeller",
-      "Youssouf Traore"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     8.6,
-     15.4
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Eagles 1 day(s), Miners 1 day(s)",
-     "Line moved 1 pts toward Eastern Michigan Eagles since open (-2.5 to -1.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side +8.6 a game, theirs +15.4)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 140.1,
-    "gap_a": -1.0,
-    "gap_b": -0.8,
-    "gap_min": 1.0,
-    "pick": "Eastern Michigan Eagles +1.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 0.6,
-    "playable_to": null,
-    "sim_cover": 0.534,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 157,
-     "l": 111,
-     "text": "Our record on CBB spread dog: 157-111 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.7,
-    "components": {
-     "efficiency": 0.12,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 10.6,
-    "total_lean": "Over 129.5 (season scoring says 140.1) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401925880",
-    "sport": "CBB",
-    "game": "Northwest Indian RedHawks @ Montana State Bobcats",
-    "home": "Montana State Bobcats",
-    "away": "Northwest Indian RedHawks",
-    "time": "Wed 8:00 PM CT",
-    "start": "2026-11-26T02:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": 10.4,
-    "games_played": [
-     1,
-     6
-    ],
-    "neutral": false,
-    "records": [
-     null,
-     "2-4"
-    ],
-    "venue": "Worthington Arena",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Keenan Kahoekapu",
-      "Tyasin Burns"
-     ],
-     [
-      "Christian King",
-      "Jed Miller",
-      "Jeremiah Davis"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     6
-    ],
-    "form5": [
-     null,
-     0.0
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: RedHawks 6 day(s), Bobcats 6 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 160.8
    }
   ],
   "n_past": 1357,
