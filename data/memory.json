@@ -105,19 +105,19 @@
    "status": "learning"
   },
   "NBA fav": {
-   "w": 15,
+   "w": 16,
    "l": 17,
-   "units": -3.45,
-   "be": 0.5234,
-   "shrunk": 0.4878,
-   "status": "proven loser"
+   "units": -2.51,
+   "be": 0.5232,
+   "shrunk": 0.494,
+   "status": "learning"
   },
   "NBA conf 6-6.9": {
-   "w": 10,
+   "w": 12,
    "l": 6,
-   "units": 2.94,
-   "be": 0.5269,
-   "shrunk": 0.5303,
+   "units": 4.77,
+   "be": 0.5263,
+   "shrunk": 0.5441,
    "status": "learning"
   },
   "CBB conf 7-7.9": {
@@ -145,11 +145,11 @@
    "status": "learning"
   },
   "NBA dog under 10": {
-   "w": 12,
+   "w": 13,
    "l": 5,
-   "units": 5.98,
-   "be": 0.5218,
-   "shrunk": 0.5522,
+   "units": 6.89,
+   "be": 0.522,
+   "shrunk": 0.5588,
    "status": "learning"
   },
   "CFB conf 7-7.9": {
@@ -366,6 +366,13 @@
    "from": "learning",
    "to": "proven loser",
    "text": "CBB fav: 14-16 (47%, -3.2 units). Counted as 48.8% after the pull toward 50/50; break-even 52.6%. Now proven loser - cash picks of this kind drop to $10."
+  },
+  {
+   "date": "2026-11-25",
+   "what": "NBA fav",
+   "from": "proven loser",
+   "to": "learning",
+   "text": "NBA fav: 16-17 (48%, -2.5 units). Counted as 49.4% after the pull toward 50/50; break-even 52.3%. Now learning - back to watching."
   }
  ],
  "learned": {
@@ -1352,5 +1359,5 @@
    "strong": false
   }
  },
- "updated": "11/25 09:32 PM"
+ "updated": "11/25 09:58 PM"
 }
