@@ -135,7 +135,7 @@
     ],
     "wind": {
      "wind": 19.5,
-     "gust": 37.6,
+     "gust": 38.5,
      "rain": 100,
      "temp": 35.2,
      "src": "Open-Meteo"
@@ -202,8 +202,8 @@
     ],
     "total": 49.5,
     "total_open": 49.5,
-    "home_ml": -455,
-    "away_ml": 354,
+    "home_ml": -458,
+    "away_ml": 355,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 10.0,
@@ -415,7 +415,7 @@
     "factors": [
      "Rest: Frogs 5 day(s), Raiders 5 day(s)",
      "Line moved 2.5 pts toward TCU Horned Frogs since open (-16.5 to -14 home)",
-     "Kickoff forecast: wind 6 mph (gusts 6), 45F, rain chance 0%"
+     "Kickoff forecast: wind 6 mph (gusts 7), 45F, rain chance 0%"
     ],
     "against": [
      "Market moved away from this side since open",
@@ -428,7 +428,7 @@
     "day": "Midweek",
     "wind": {
      "wind": 5.6,
-     "gust": 6.5,
+     "gust": 6.9,
      "rain": 0,
      "temp": 44.9,
      "src": "Open-Meteo"
@@ -603,6 +603,118 @@
     "total_gap": -4.2
    },
    {
+    "id": "401918972",
+    "sport": "CBB",
+    "game": "SMU Mustangs @ LSU Tigers",
+    "home": "LSU Tigers",
+    "away": "SMU Mustangs",
+    "time": "Thu 6:00 PM CT",
+    "start": "2026-11-27T00:00Z",
+    "book": "Draft Kings",
+    "line": "LSU -7.5",
+    "home_line": -7.5,
+    "home_line_open": -7.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 155.5,
+    "total_open": 159.5,
+    "home_ml": -310,
+    "away_ml": 250,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 2.6,
+    "model_b": 3.3,
+    "games_played": [
+     7,
+     7
+    ],
+    "neutral": true,
+    "records": [
+     "6-1",
+     "7-0"
+    ],
+    "venue": "Acrisure Arena",
+    "tv": "CBSSN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "David Terrell Jr.",
+      "Jaden Toombs",
+      "Oziyah Sellers"
+     ],
+     [
+      "Donovan Dent",
+      "Michael Ruzic"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     11.8,
+     15.0
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Mustangs 1 day(s), Tigers 1 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 157.7,
+    "gap_a": -4.9,
+    "gap_b": -4.2,
+    "gap_min": 4.9,
+    "pick": "SMU Mustangs +7.5",
+    "price": -115,
+    "side": "away",
+    "fair_line": 2.9,
+    "playable_to": null,
+    "sim_cover": 0.661,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 163,
+     "l": 116,
+     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.3,
+    "components": {
+     "efficiency": 0.55,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 2.2
+   },
+   {
     "id": "401920531",
     "sport": "CBB",
     "game": "Texas Tech Red Raiders @ Oregon Ducks",
@@ -718,6 +830,122 @@
     "total_gap": -0.4
    },
    {
+    "id": "401917547",
+    "sport": "CBB",
+    "game": "Saint Mary's Gaels @ UCLA Bruins",
+    "home": "UCLA Bruins",
+    "away": "Saint Mary's Gaels",
+    "time": "Thu 4:00 PM CT",
+    "start": "2026-11-26T22:00Z",
+    "book": "Draft Kings",
+    "line": "UCLA -8.5",
+    "home_line": -8.5,
+    "home_line_open": -7.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 151.5,
+    "total_open": 155.5,
+    "home_ml": -355,
+    "away_ml": 280,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 9.3,
+    "model_b": 1.8,
+    "games_played": [
+     7,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "6-1",
+     "6-0"
+    ],
+    "venue": "Jenny Craig Pavilion",
+    "tv": "FS1",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Joshua Dent",
+      "Mantas Juzenas"
+     ],
+     [
+      "Eric Dailey Jr.",
+      "Trent Perry"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     4,
+     4
+    ],
+    "form5": [
+     14.2,
+     24.8
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Gaels 4 day(s), Bruins 4 day(s)",
+     "Line moved 1 pts toward UCLA Bruins since open (-7.5 to -8.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +14.2 a game, theirs +24.8)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 162.9,
+    "gap_a": 0.8,
+    "gap_b": -6.7,
+    "gap_min": 6.7,
+    "pick": "Saint Mary's Gaels +8.5",
+    "price": -115,
+    "side": "away",
+    "fair_line": 5.6,
+    "playable_to": null,
+    "sim_cover": 0.606,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 163,
+     "l": 116,
+     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.1,
+    "components": {
+     "efficiency": 0.74,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 11.4,
+    "total_lean": "Over 151.5 (season scoring says 162.9) - WATCH only, totals have no past-games test yet"
+   },
+   {
     "id": "401920539",
     "sport": "CBB",
     "game": "Alabama Crimson Tide @ Kansas State Wildcats",
@@ -831,120 +1059,6 @@
     },
     "total_gap": -7.5,
     "total_lean": "Under 169.5 (season scoring says 162.0) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401917547",
-    "sport": "CBB",
-    "game": "Saint Mary's Gaels @ UCLA Bruins",
-    "home": "UCLA Bruins",
-    "away": "Saint Mary's Gaels",
-    "time": "Thu 4:00 PM CT",
-    "start": "2026-11-26T22:00Z",
-    "book": "Draft Kings",
-    "line": "UCLA -7.5",
-    "home_line": -7.5,
-    "home_line_open": -7.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 152.5,
-    "total_open": 155.5,
-    "home_ml": -325,
-    "away_ml": 260,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 9.3,
-    "model_b": 1.8,
-    "games_played": [
-     7,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "6-1",
-     "6-0"
-    ],
-    "venue": "Jenny Craig Pavilion",
-    "tv": "FS1",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Joshua Dent",
-      "Mantas Juzenas"
-     ],
-     [
-      "Eric Dailey Jr.",
-      "Trent Perry"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     4
-    ],
-    "form5": [
-     14.2,
-     24.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Gaels 4 day(s), Bruins 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +14.2 a game, theirs +24.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 162.9,
-    "gap_a": 1.8,
-    "gap_b": -5.7,
-    "gap_min": 5.7,
-    "pick": "Saint Mary's Gaels +7.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 5.6,
-    "playable_to": null,
-    "sim_cover": 0.57,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 163,
-     "l": 116,
-     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.0,
-    "components": {
-     "efficiency": 0.63,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 10.4,
-    "total_lean": "Over 152.5 (season scoring says 162.9) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401906869",
@@ -1190,7 +1304,7 @@
      -110,
      -110
     ],
-    "total": 157.5,
+    "total": 156.5,
     "total_open": 162.5,
     "home_ml": -122,
     "away_ml": 102,
@@ -1288,7 +1402,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 4.7
+    "total_gap": 5.7
    },
    {
     "id": "401920530",
@@ -1406,121 +1520,6 @@
      "our history": -0.12
     },
     "total_gap": -2.3
-   },
-   {
-    "id": "401921674",
-    "sport": "CBB",
-    "game": "Arizona State Sun Devils @ South Carolina Gamecocks",
-    "home": "South Carolina Gamecocks",
-    "away": "Arizona State Sun Devils",
-    "time": "Thu 1:00 PM CT",
-    "start": "2026-11-26T19:00Z",
-    "book": "Draft Kings",
-    "line": "ASU -4.5",
-    "home_line": 4.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 139.5,
-    "total_open": 140.5,
-    "home_ml": 164,
-    "away_ml": -198,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -1.7,
-    "model_b": -0.8,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dillan Shaw",
-      "Joel Foxwell",
-      "Paulius Murauskas"
-     ],
-     [
-      "Juan Fernandez",
-      "Marcus Johnson"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     16.0,
-     12.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Devils 1 day(s), Gamecocks 1 day(s)",
-     "Line moved 8 pts toward Arizona State Sun Devils since open (-3.5 to +4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 145.6,
-    "gap_a": 2.8,
-    "gap_b": 3.7,
-    "gap_min": 3.7,
-    "pick": "South Carolina Gamecocks +4.5",
-    "price": -105,
-    "side": "home",
-    "fair_line": 1.2,
-    "playable_to": null,
-    "sim_cover": 0.616,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 163,
-     "l": 116,
-     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 0.41,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 6.1,
-    "total_lean": "Over 139.5 (season scoring says 145.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920540",
@@ -1868,121 +1867,6 @@
      "our history": 0.24
     },
     "total_gap": 5.1
-   },
-   {
-    "id": "401918972",
-    "sport": "CBB",
-    "game": "SMU Mustangs @ LSU Tigers",
-    "home": "LSU Tigers",
-    "away": "SMU Mustangs",
-    "time": "Thu 6:00 PM CT",
-    "start": "2026-11-27T00:00Z",
-    "book": "Draft Kings",
-    "line": "LSU -6.5",
-    "home_line": -6.5,
-    "home_line_open": -7.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 155.5,
-    "total_open": 159.5,
-    "home_ml": -310,
-    "away_ml": 250,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.6,
-    "model_b": 3.3,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-1",
-     "7-0"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "David Terrell Jr.",
-      "Jaden Toombs",
-      "Oziyah Sellers"
-     ],
-     [
-      "Donovan Dent",
-      "Michael Ruzic"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     11.8,
-     15.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Mustangs 1 day(s), Tigers 1 day(s)",
-     "Line moved 1 pts toward SMU Mustangs since open (-7.5 to -6.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 157.7,
-    "gap_a": -3.9,
-    "gap_b": -3.2,
-    "gap_min": 3.9,
-    "pick": "SMU Mustangs +6.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 2.9,
-    "playable_to": null,
-    "sim_cover": 0.627,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 163,
-     "l": 116,
-     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.44,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 2.2
    },
    {
     "id": "401909506",
