@@ -26,12 +26,12 @@
     "time": "Wed 10:59 PM CT",
     "start": "2026-11-26T04:59Z",
     "book": "DraftKings",
-    "line": "HAW -16.5",
-    "home_line": -16.5,
+    "line": "HAW -17.5",
+    "home_line": -17.5,
     "home_line_open": -16.5,
     "spread_odds": [
-     -105,
-     -115
+     -115,
+     -105
     ],
     "total": 139.5,
     "total_open": 142.5,
@@ -79,31 +79,34 @@
      -8.6,
      3.4
     ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
+    "decision": "PAPER",
+    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.4 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
     "flags": [
      "A model is 7+ points from the market - re-check warning, not a reason to bet"
     ],
     "factors": [
      "Rest: Cardinals 5 day(s), Warriors 7 day(s)",
-     "Indoors - weather does not matter"
+     "Line moved 1 pts toward Hawai'i Rainbow Warriors since open (-16.5 to -17.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
      "Last 5 games point the other way (our side -8.6 a game, theirs +3.4)"
     ],
     "invalidation": [
+     "Line moves past +17.2",
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 145.9,
-    "gap_a": -3.8,
-    "gap_b": -7.6,
-    "gap_min": 7.6,
-    "pick": "Incarnate Word Cardinals +16.5",
-    "price": -105,
+    "gap_a": -4.8,
+    "gap_b": -8.6,
+    "gap_min": 4.8,
+    "pick": "Incarnate Word Cardinals +17.5",
+    "price": -115,
     "side": "away",
     "fair_line": 10.8,
-    "playable_to": null,
-    "sim_cover": 0.697,
+    "playable_to": 17.2,
+    "sim_cover": 0.728,
     "history": {
      "adj": 0.23,
      "key": "CBB spread dog",
@@ -117,14 +120,14 @@
      "n": 464,
      "win": 0.515
     },
-    "models_agree": false,
-    "one_model": true,
+    "models_agree": true,
+    "one_model": false,
     "veto": false,
-    "conf": 5.7,
+    "conf": 6.4,
     "components": {
-     "efficiency": 0.84,
+     "efficiency": 0.53,
      "veto": 1.0,
-     "models": 0.5,
+     "models": 1.5,
      "starters": 1.5,
      "coaching": 0.5,
      "against": 0.65,
@@ -133,7 +136,8 @@
      "our history": 0.23
     },
     "total_gap": 6.4,
-    "total_lean": "Over 139.5 (season scoring says 145.9) - WATCH only, totals have no past-games test yet"
+    "total_lean": "Over 139.5 (season scoring says 145.9) - WATCH only, totals have no past-games test yet",
+    "stake": 0
    },
    {
     "id": "401921672",
