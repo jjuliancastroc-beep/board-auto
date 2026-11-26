@@ -15,13 +15,13 @@
     "home_line": -3.0,
     "home_line_open": -2.5,
     "spread_odds": [
-     -118,
+     -119,
      -101
     ],
     "total": 45.5,
     "total_open": 49.5,
-    "home_ml": -155,
-    "away_ml": 131,
+    "home_ml": -153,
+    "away_ml": 130,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 2.1,
@@ -124,7 +124,7 @@
     "factors": [
      "Rest: Chiefs 4 day(s), Bills 4 day(s)",
      "Line moved 0.5 pts toward Buffalo Bills since open (-2.5 to -3 home)",
-     "Kickoff forecast: wind 18 mph (gusts 38), 35F, rain chance 100%",
+     "Kickoff forecast: wind 20 mph (gusts 38), 35F, rain chance 100%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -134,7 +134,7 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 18.2,
+     "wind": 19.5,
      "gust": 37.6,
      "rain": 100,
      "temp": 35.2,
@@ -149,7 +149,7 @@
     "gap_b": -0.4,
     "gap_min": 0.9,
     "pick": "Kansas City Chiefs +3",
-    "price": -118,
+    "price": -119,
     "side": "away",
     "fair_line": 2.3,
     "playable_to": null,
@@ -415,7 +415,7 @@
     "factors": [
      "Rest: Frogs 5 day(s), Raiders 5 day(s)",
      "Line moved 2.5 pts toward TCU Horned Frogs since open (-16.5 to -14 home)",
-     "Kickoff forecast: wind 6 mph (gusts 6), 44F, rain chance 0%"
+     "Kickoff forecast: wind 6 mph (gusts 6), 45F, rain chance 0%"
     ],
     "against": [
      "Market moved away from this side since open",
@@ -427,10 +427,10 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 5.8,
+     "wind": 5.6,
      "gust": 6.5,
      "rain": 0,
-     "temp": 44.5,
+     "temp": 44.9,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -718,122 +718,6 @@
     "total_gap": -0.4
    },
    {
-    "id": "401929282",
-    "sport": "CBB",
-    "game": "Boston College Eagles @ UCF Knights",
-    "home": "UCF Knights",
-    "away": "Boston College Eagles",
-    "time": "Thu 12:30 PM CT",
-    "start": "2026-11-26T18:30Z",
-    "book": "Draft Kings",
-    "line": "UCF -1.5",
-    "home_line": -1.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 147.5,
-    "total_open": 144.5,
-    "home_ml": -118,
-    "away_ml": -102,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -1.1,
-    "model_b": -5.0,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "6-0",
-     "4-2"
-    ],
-    "venue": "State Farm Field House",
-    "tv": "ESPN2",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Armoni Zeigler",
-      "Brandon Benjamin",
-      "Zak Smrekar"
-     ],
-     [
-      "Dior Johnson",
-      "John Bol"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     6
-    ],
-    "form5": [
-     16.2,
-     4.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Eagles 4 day(s), Knights 6 day(s)",
-     "Line moved 1 pts toward Boston College Eagles since open (-2.5 to -1.5 home)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +16.2 a game, theirs +4.4)"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 147.3,
-    "gap_a": -2.6,
-    "gap_b": -6.5,
-    "gap_min": 6.5,
-    "pick": "Boston College Eagles +1.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": -3.0,
-    "playable_to": null,
-    "sim_cover": 0.66,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 163,
-     "l": 116,
-     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.1,
-    "components": {
-     "efficiency": 0.72,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": -0.2
-   },
-   {
     "id": "401920539",
     "sport": "CBB",
     "game": "Alabama Crimson Tide @ Kansas State Wildcats",
@@ -1080,8 +964,8 @@
     ],
     "total": 153.5,
     "total_open": 155.5,
-    "home_ml": -380,
-    "away_ml": 300,
+    "home_ml": -395,
+    "away_ml": 310,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 13.0,
@@ -1526,27 +1410,27 @@
    {
     "id": "401921674",
     "sport": "CBB",
-    "game": "South Carolina Gamecocks @ Arizona State Sun Devils",
-    "home": "Arizona State Sun Devils",
-    "away": "South Carolina Gamecocks",
+    "game": "Arizona State Sun Devils @ South Carolina Gamecocks",
+    "home": "South Carolina Gamecocks",
+    "away": "Arizona State Sun Devils",
     "time": "Thu 1:00 PM CT",
     "start": "2026-11-26T19:00Z",
     "book": "Draft Kings",
     "line": "ASU -4.5",
-    "home_line": -4.5,
+    "home_line": 4.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
     "total": 139.5,
     "total_open": 140.5,
-    "home_ml": -198,
-    "away_ml": 164,
+    "home_ml": 164,
+    "away_ml": -198,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": 1.7,
-    "model_b": 0.8,
+    "model_a": -1.7,
+    "model_b": -0.8,
     "games_played": [
      6,
      6
@@ -1563,13 +1447,13 @@
     "inj_away": [],
     "stars": [
      [
-      "Juan Fernandez",
-      "Marcus Johnson"
-     ],
-     [
       "Dillan Shaw",
       "Joel Foxwell",
       "Paulius Murauskas"
+     ],
+     [
+      "Juan Fernandez",
+      "Marcus Johnson"
      ]
     ],
     "goalies": [
@@ -1581,15 +1465,15 @@
      1
     ],
     "form5": [
-     12.6,
-     16.0
+     16.0,
+     12.6
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
     "flags": [],
     "factors": [
-     "Rest: Gamecocks 1 day(s), Devils 1 day(s)",
-     "Line moved 1 pts toward Arizona State Sun Devils since open (-3.5 to -4.5 home)",
+     "Rest: Devils 1 day(s), Gamecocks 1 day(s)",
+     "Line moved 8 pts toward Arizona State Sun Devils since open (-3.5 to +4.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -1598,12 +1482,12 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 145.6,
-    "gap_a": -2.8,
-    "gap_b": -3.7,
+    "gap_a": 2.8,
+    "gap_b": 3.7,
     "gap_min": 3.7,
     "pick": "South Carolina Gamecocks +4.5",
-    "price": -110,
-    "side": "away",
+    "price": -105,
+    "side": "home",
     "fair_line": 1.2,
     "playable_to": null,
     "sim_cover": 0.616,
