@@ -13,6 +13,166 @@
   "sport": "NBA",
   "games": [
    {
+    "id": "401909325",
+    "sport": "NBA",
+    "game": "San Antonio Spurs @ Portland Trail Blazers",
+    "home": "Portland Trail Blazers",
+    "away": "San Antonio Spurs",
+    "time": "Wed 9:00 PM CT",
+    "start": "2026-11-26T03:00Z",
+    "book": "Draft Kings",
+    "line": "SA -3.5",
+    "home_line": 3.5,
+    "home_line_open": 4.5,
+    "spread_odds": [
+     -115,
+     -105
+    ],
+    "total": 225.5,
+    "total_open": 237.5,
+    "home_ml": 136,
+    "away_ml": -162,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.5,
+    "model_b": -8.8,
+    "games_played": [
+     18,
+     17
+    ],
+    "neutral": false,
+    "records": [
+     "15-3",
+     "11-6"
+    ],
+    "venue": "Moda Center",
+    "tv": "ESPN, KUNP 16, BlazerVision",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Chris Youngblood",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Vit Krejci",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Ja Morant",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Shaedon Sharpe",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "De'Aaron Fox",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Dylan Harper",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Tobias Harris",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jayden Quaintance",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Dylan Harper",
+      "Stephon Castle",
+      "Victor Wembanyama"
+     ],
+     [
+      "Damian Lillard",
+      "Deni Avdija",
+      "Donovan Clingan"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     9.4,
+     3.4
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [
+     "Star Dylan Harper (San Antonio Spurs) Out"
+    ],
+    "factors": [
+     "Rest: Spurs 2 day(s), Blazers 2 day(s)",
+     "Line moved 1 pts toward Portland Trail Blazers since open (+4.5 to +3.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +9.4 a game, theirs +3.4)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 225.1,
+    "gap_a": 4.0,
+    "gap_b": -5.3,
+    "gap_min": 5.3,
+    "pick": "San Antonio Spurs -3.5",
+    "price": -115,
+    "side": "away",
+    "fair_line": -4.1,
+    "playable_to": null,
+    "sim_cover": 0.52,
+    "history": {
+     "adj": -0.09,
+     "key": "NBA spread fav",
+     "w": 15,
+     "l": 17,
+     "text": "Our record on NBA spread fav: 15-17 (last 60 days, recent counts more) -> -0.09 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 5.2,
+    "components": {
+     "efficiency": 0.59,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.09
+    },
+    "total_gap": -0.4
+   },
+   {
     "id": "401909324",
     "sport": "NBA",
     "game": "Sacramento Kings @ Golden State Warriors",
@@ -20,7 +180,7 @@
     "away": "Sacramento Kings",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-26T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GS -8.5",
     "home_line": -8.5,
     "home_line_open": -5.5,
@@ -51,11 +211,6 @@
     "inj_home": [
      {
       "player": "Stephen Curry",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Brandon Williams",
       "pos": "G",
       "status": "Out"
      },
@@ -172,175 +327,6 @@
     },
     "total_gap": 8.2,
     "total_lean": "Over 216.5 (season scoring says 224.7) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401909325",
-    "sport": "NBA",
-    "game": "San Antonio Spurs @ Portland Trail Blazers",
-    "home": "Portland Trail Blazers",
-    "away": "San Antonio Spurs",
-    "time": "Wed 9:00 PM CT",
-    "start": "2026-11-26T03:00Z",
-    "book": "DraftKings",
-    "line": "SA -3.5",
-    "home_line": 3.5,
-    "home_line_open": 4.5,
-    "spread_odds": [
-     -103,
-     -117
-    ],
-    "total": 226.5,
-    "total_open": 237.5,
-    "home_ml": 130,
-    "away_ml": -155,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.5,
-    "model_b": -8.8,
-    "games_played": [
-     18,
-     17
-    ],
-    "neutral": false,
-    "records": [
-     "15-3",
-     "11-6"
-    ],
-    "venue": "Moda Center",
-    "tv": "ESPN, KUNP 16, BlazerVision",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Chris Youngblood",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Vit Krejci",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Ja Morant",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Shaedon Sharpe",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "De'Aaron Fox",
-      "pos": "G",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Victor Wembanyama",
-      "pos": "F",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Dylan Harper",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Tobias Harris",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jayden Quaintance",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Dylan Harper",
-      "Stephon Castle",
-      "Victor Wembanyama"
-     ],
-     [
-      "Damian Lillard",
-      "Deni Avdija",
-      "Donovan Clingan"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     9.4,
-     3.4
-    ],
-    "decision": "PASS",
-    "reason": "Veto: Star Victor Wembanyama (San Antonio Spurs) Day-To-Day; Star Dylan Harper (San Antonio Spurs) Out",
-    "flags": [
-     "Star Victor Wembanyama (San Antonio Spurs) Day-To-Day",
-     "Star Dylan Harper (San Antonio Spurs) Out"
-    ],
-    "factors": [
-     "Rest: Spurs 2 day(s), Blazers 2 day(s)",
-     "Line moved 1 pts toward Portland Trail Blazers since open (+4.5 to +3.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +9.4 a game, theirs +3.4)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 225.1,
-    "veto_sides": [
-     "game"
-    ],
-    "gap_a": 4.0,
-    "gap_b": -5.3,
-    "gap_min": 5.3,
-    "pick": "San Antonio Spurs -3.5",
-    "price": -103,
-    "side": "away",
-    "fair_line": -4.1,
-    "playable_to": null,
-    "sim_cover": 0.52,
-    "history": {
-     "adj": -0.09,
-     "key": "NBA spread fav",
-     "w": 15,
-     "l": 17,
-     "text": "Our record on NBA spread fav: 15-17 (last 60 days, recent counts more) -> -0.09 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": true,
-    "conf": 3.0,
-    "components": {
-     "efficiency": 0.59,
-     "veto": 0.0,
-     "models": 0.5,
-     "starters": 0.0,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.09
-    },
-    "total_gap": -1.4
    }
   ],
   "n_past": 261,
@@ -357,7 +343,7 @@
     "away": "Washington Huskies",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-26T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VCU -4.5",
     "home_line": -4.5,
     "home_line_open": -3.5,
@@ -473,7 +459,7 @@
     "away": "Incarnate Word Cardinals",
     "time": "Wed 10:59 PM CT",
     "start": "2026-11-26T04:59Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HAW -16.5",
     "home_line": -16.5,
     "home_line_open": -16.5,
@@ -589,9 +575,9 @@
     "game": "Grand Canyon Lopes @ Colorado Buffaloes",
     "home": "Colorado Buffaloes",
     "away": "Grand Canyon Lopes",
-    "time": "Wed 8:30 PM CT",
-    "start": "2026-11-26T02:30Z",
-    "book": "DraftKings",
+    "time": "Wed 9:15 PM CT",
+    "start": "2026-11-26T03:15Z",
+    "book": "Draft Kings",
     "line": "GCU -9.5",
     "home_line": 9.5,
     "home_line_open": 9.5,
@@ -601,8 +587,8 @@
     ],
     "total": 152.5,
     "total_open": 154.5,
-    "home_ml": 380,
-    "away_ml": -500,
+    "home_ml": 390,
+    "away_ml": -520,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -7.0,
@@ -705,7 +691,7 @@
     "away": "Stanford Cardinal",
     "time": "Wed 10:59 PM CT",
     "start": "2026-11-26T04:59Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SLU -3.5",
     "home_line": -3.5,
     "home_line_open": -4.5,
@@ -818,7 +804,7 @@
     "away": "Clemson Tigers",
     "time": "Wed 11:30 PM CT",
     "start": "2026-11-26T05:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CLEM -3.5",
     "home_line": 3.5,
     "home_line_open": 2.5,
@@ -926,120 +912,6 @@
     "total_gap": 4.2
    },
    {
-    "id": "401929287",
-    "sport": "CBB",
-    "game": "Wake Forest Demon Deacons @ Mississippi State Bulldogs",
-    "home": "Mississippi State Bulldogs",
-    "away": "Wake Forest Demon Deacons",
-    "time": "Wed 8:29 PM CT",
-    "start": "2026-11-26T02:29Z",
-    "book": "DraftKings",
-    "line": "MSST -3.5",
-    "home_line": -3.5,
-    "home_line_open": -4.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 149.5,
-    "total_open": 150.5,
-    "home_ml": -198,
-    "away_ml": 164,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 4.1,
-    "model_b": 2.0,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Imperial Arena",
-    "tv": "ESPNU",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Gavin Placide",
-      "Kevair Kennedy"
-     ],
-     [
-      "Josh Hubbard",
-      "Tristan Reed"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     5
-    ],
-    "form5": [
-     11.4,
-     11.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Deacons 4 day(s), Bulldogs 5 day(s)",
-     "Line moved 1 pts toward Wake Forest Demon Deacons since open (-4.5 to -3.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 148.9,
-    "gap_a": 0.6,
-    "gap_b": -1.5,
-    "gap_min": 1.5,
-    "pick": "Wake Forest Demon Deacons +3.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 3.0,
-    "playable_to": null,
-    "sim_cover": 0.517,
-    "history": {
-     "adj": 0.23,
-     "key": "CBB spread dog",
-     "w": 158,
-     "l": 113,
-     "text": "Our record on CBB spread dog: 158-113 (last 60 days, recent counts more) -> +0.23 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.0,
-    "components": {
-     "efficiency": 0.16,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.23
-    },
-    "total_gap": -0.6
-   },
-   {
     "id": "401917544",
     "sport": "CBB",
     "game": "Pacific Tigers @ Jacksonville State Gamecocks",
@@ -1047,7 +919,7 @@
     "away": "Pacific Tigers",
     "time": "Wed 9:30 PM CT",
     "start": "2026-11-26T03:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PAC -3.5",
     "home_line": 3.5,
     "home_line_open": 5.5,
@@ -1164,142 +1036,6 @@
   "sport": "NHL",
   "games": [
    {
-    "id": "401892792",
-    "sport": "NHL",
-    "game": "Montreal Canadiens @ Colorado Avalanche",
-    "home": "Colorado Avalanche",
-    "away": "Montreal Canadiens",
-    "time": "Wed 8:30 PM CT",
-    "start": "2026-11-26T02:30Z",
-    "book": "DraftKings",
-    "line": "COL -120",
-    "home_line": -120.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -225,
-     185
-    ],
-    "total": 6.5,
-    "total_open": 6.5,
-    "home_ml": -120,
-    "away_ml": 100,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.5,
-    "model_b": 1.2,
-    "games_played": [
-     23,
-     21
-    ],
-    "neutral": false,
-    "records": [
-     "14-7-4",
-     "13-7-3"
-    ],
-    "venue": "Ball Arena",
-    "tv": "ESPN+, Altitude Sports, KTVD-TV (My20)",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Gavin Brindley",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Nathan MacKinnon",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cole Caufield",
-      "Lane Hutson"
-     ],
-     [
-      "Artturi Lehkonen",
-      "Cale Makar",
-      "Martin Necas"
-     ]
-    ],
-    "goalies": [
-     "Jacob Fowler",
-     "Mackenzie Blackwood"
-    ],
-    "rest": [
-     2,
-     6
-    ],
-    "form5": [
-     -0.4,
-     1.2
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.4 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
-    "flags": [
-     "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Canadiens 2 day(s), Avalanche 6 day(s)",
-     "Line moved 118.5 pts toward Colorado Avalanche since open (-1.5 to -120 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Jacob Fowler (Canadiens), Mackenzie Blackwood (Avalanche)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past -180 (our fair price)"
-    ],
-    "total_model": 6.2,
-    "gap_a": 5.8,
-    "gap_b": 18.5,
-    "win_prob": [
-     0.357,
-     0.643
-    ],
-    "market_prob": [
-     0.478,
-     0.522
-    ],
-    "pick": "Colorado Avalanche ML (-120)",
-    "price": -120,
-    "side": "home",
-    "gap_min": 5.8,
-    "fair_line": -180,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.15,
-     "key": "NHL ml",
-     "w": 37,
-     "l": 41,
-     "text": "Our record on NHL ml: 37-41 (last 60 days, recent counts more) -> -0.15 to confidence"
-    },
-    "conf": 6.4,
-    "components": {
-     "efficiency": 0.58,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.15
-    },
-    "stake": 0
-   },
-   {
     "id": "401892794",
     "sport": "NHL",
     "game": "Chicago Blackhawks @ Seattle Kraken",
@@ -1307,7 +1043,7 @@
     "away": "Chicago Blackhawks",
     "time": "Wed 8:40 PM CT",
     "start": "2026-11-26T02:40Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SEA -155",
     "home_line": -155.0,
     "home_line_open": -1.5,
@@ -1434,7 +1170,7 @@
     "away": "San Jose Sharks",
     "time": "Wed 9:00 PM CT",
     "start": "2026-11-26T03:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ANA -135",
     "home_line": -135.0,
     "home_line_open": -1.5,

@@ -43424,5 +43424,83 @@
   "review_log": [
    "11/25 05:32 PM: checked line and injuries - no change"
   ]
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909325",
+  "sport": "NBA",
+  "game": "San Antonio Spurs @ Portland Trail Blazers",
+  "home": "Portland Trail Blazers",
+  "away": "San Antonio Spurs",
+  "start": "2026-11-26T03:00Z",
+  "pick": "San Antonio Spurs -3.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.2,
+  "components": {
+   "efficiency": 0.59,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 0.75,
+   "coaching": 0.5,
+   "against": 1.0,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": -0.09
+  },
+  "gap_a": 4.0,
+  "gap_b": -5.3,
+  "gap_min": 5.3,
+  "price": -115,
+  "fair_line": -4.1,
+  "playable_to": null,
+  "side": "away",
+  "home_line": 3.5,
+  "home_ml": 136,
+  "away_ml": -162,
+  "flags": [
+   "Star Dylan Harper (San Antonio Spurs) Out"
+  ],
+  "against": [],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": 0.5,
+  "model_b": -8.8,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "Draft Kings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": -0.09,
+   "key": "NBA spread fav",
+   "w": 15,
+   "l": 17,
+   "text": "Our record on NBA spread fav: 15-17 (last 60 days, recent counts more) -> -0.09 to confidence"
+  },
+  "date": "2026-11-25",
+  "line_at_pick": "SA -3.5",
+  "logged_at": "20:42",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": [
+   "11/25 08:42 PM: checked line and injuries - no change"
+  ]
  }
 ]
