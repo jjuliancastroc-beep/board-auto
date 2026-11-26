@@ -25,19 +25,19 @@
    "status": "learning"
   },
   "CBB dog under 10": {
-   "w": 78,
+   "w": 79,
    "l": 52,
-   "units": 17.81,
+   "units": 18.72,
    "be": 0.5285,
-   "shrunk": 0.5722,
+   "shrunk": 0.5746,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 125,
+   "w": 126,
    "l": 99,
-   "units": 12.5,
+   "units": 13.41,
    "be": 0.5284,
-   "shrunk": 0.5474,
+   "shrunk": 0.5491,
    "status": "proven winner"
   },
   "CBB dog 20+": {
@@ -65,11 +65,11 @@
    "status": "proven winner"
   },
   "NHL ML fav": {
-   "w": 33,
+   "w": 34,
    "l": 30,
-   "units": -8.02,
+   "units": -7.34,
    "be": 0.6021,
-   "shrunk": 0.5133,
+   "shrunk": 0.5175,
    "status": "proven loser"
   },
   "NHL conf 7-7.9": {
@@ -81,12 +81,12 @@
    "status": "learning"
   },
   "NHL conf 6-6.9": {
-   "w": 28,
+   "w": 29,
    "l": 23,
-   "units": 1.49,
-   "be": 0.5584,
-   "shrunk": 0.5248,
-   "status": "proven loser"
+   "units": 2.17,
+   "be": 0.5591,
+   "shrunk": 0.5294,
+   "status": "learning"
   },
   "NHL conf 5.5-5.9": {
    "w": 12,
@@ -106,10 +106,10 @@
   },
   "NBA fav": {
    "w": 17,
-   "l": 17,
-   "units": -1.61,
-   "be": 0.5232,
-   "shrunk": 0.5,
+   "l": 18,
+   "units": -2.61,
+   "be": 0.5235,
+   "shrunk": 0.4941,
    "status": "learning"
   },
   "NBA conf 6-6.9": {
@@ -194,10 +194,10 @@
   },
   "NBA conf under 5.5": {
    "w": 7,
-   "l": 5,
-   "units": 1.49,
-   "be": 0.5228,
-   "shrunk": 0.5161,
+   "l": 6,
+   "units": 0.49,
+   "be": 0.5237,
+   "shrunk": 0.5079,
    "status": "learning"
   },
   "NFL fav": {
@@ -373,6 +373,13 @@
    "from": "proven loser",
    "to": "learning",
    "text": "NBA fav: 16-17 (48%, -2.5 units). Counted as 49.4% after the pull toward 50/50; break-even 52.3%. Now learning - back to watching."
+  },
+  {
+   "date": "2026-11-26",
+   "what": "NHL conf 6-6.9",
+   "from": "proven loser",
+   "to": "learning",
+   "text": "NHL conf 6-6.9: 29-23 (56%, +2.2 units). Counted as 52.9% after the pull toward 50/50; break-even 55.9%. Now learning - back to watching."
   }
  ],
  "learned": {
@@ -1359,5 +1366,5 @@
    "strong": false
   }
  },
- "updated": "11/26 12:03 AM"
+ "updated": "11/26 12:28 AM"
 }
