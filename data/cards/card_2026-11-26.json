@@ -20,8 +20,8 @@
     ],
     "total": 56.5,
     "total_open": 51.5,
-    "home_ml": 100,
-    "away_ml": -118,
+    "home_ml": 101,
+    "away_ml": -119,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 1.9,
@@ -279,13 +279,11 @@
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
-    "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)"
-    ],
+    "flags": [],
     "factors": [
      "Rest: Chiefs 4 day(s), Bills 4 day(s)",
      "Line moved 0.5 pts toward Buffalo Bills since open (-2.5 to -3 home)",
-     "Kickoff forecast: wind 16 mph (gusts 37), 36F, rain chance 100%",
+     "Kickoff forecast: wind 14 mph (gusts 14), 37F, rain chance 100%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -295,11 +293,11 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 16.3,
-     "gust": 37.1,
+     "wind": 14.0,
+     "gust": 14.0,
      "rain": 100,
-     "temp": 36.4,
-     "src": "Open-Meteo"
+     "temp": 37,
+     "src": "NWS"
     },
     "weather": {
      "text": "Rain",
@@ -364,7 +362,7 @@
     "total": 49.5,
     "total_open": 49.5,
     "home_ml": -479,
-    "away_ml": 369,
+    "away_ml": 370,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 10.0,
@@ -576,7 +574,7 @@
     "factors": [
      "Rest: Frogs 5 day(s), Raiders 5 day(s)",
      "Line moved 1 pts toward TCU Horned Frogs since open (-16.5 to -15.5 home)",
-     "Kickoff forecast: wind 5 mph (gusts 8), 43F, rain chance 0%"
+     "Kickoff forecast: wind 5 mph (gusts 5), 44F, rain chance 0%"
     ],
     "against": [
      "Market moved away from this side since open",
@@ -588,11 +586,11 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 5.4,
-     "gust": 7.6,
+     "wind": 5.0,
+     "gust": 5.0,
      "rain": 0,
-     "temp": 43.3,
-     "src": "Open-Meteo"
+     "temp": 44,
+     "src": "NWS"
     },
     "weather": {
      "text": "Clear",
@@ -767,121 +765,6 @@
     "total_gap": -0.3
    },
    {
-    "id": "401921674",
-    "sport": "CBB",
-    "game": "South Carolina Gamecocks @ Arizona State Sun Devils",
-    "home": "Arizona State Sun Devils",
-    "away": "South Carolina Gamecocks",
-    "time": "Thu 1:00 PM CT",
-    "start": "2026-11-26T19:00Z",
-    "book": "Draft Kings",
-    "line": "ASU -5.5",
-    "home_line": -5.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 139.5,
-    "total_open": 140.5,
-    "home_ml": -205,
-    "away_ml": 170,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 1.7,
-    "model_b": 0.8,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "5-1"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Juan Fernandez",
-      "Marcus Johnson"
-     ],
-     [
-      "Dillan Shaw",
-      "Joel Foxwell",
-      "Paulius Murauskas"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     12.6,
-     16.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Gamecocks 1 day(s), Devils 1 day(s)",
-     "Line moved 2 pts toward Arizona State Sun Devils since open (-3.5 to -5.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 145.6,
-    "gap_a": -3.8,
-    "gap_b": -4.7,
-    "gap_min": 4.7,
-    "pick": "South Carolina Gamecocks +5.5",
-    "price": -115,
-    "side": "away",
-    "fair_line": 1.2,
-    "playable_to": null,
-    "sim_cover": 0.65,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 163,
-     "l": 116,
-     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.3,
-    "components": {
-     "efficiency": 0.53,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 6.1,
-    "total_lean": "Over 139.5 (season scoring says 145.6) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401920529",
     "sport": "CBB",
     "game": "Tennessee Volunteers @ Iowa State Cyclones",
@@ -894,8 +777,8 @@
     "home_line": -3.5,
     "home_line_open": 1.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 139.5,
     "total_open": 139.5,
@@ -959,7 +842,7 @@
     "gap_b": -4.9,
     "gap_min": 4.9,
     "pick": "Tennessee Volunteers +3.5",
-    "price": -108,
+    "price": -112,
     "side": "away",
     "fair_line": -0.4,
     "playable_to": null,
@@ -1238,7 +1121,7 @@
      -105,
      -115
     ],
-    "total": 154.5,
+    "total": 153.5,
     "total_open": 155.5,
     "home_ml": -355,
     "away_ml": 280,
@@ -1334,7 +1217,7 @@
      "situational": 0.5,
      "our history": -0.12
     },
-    "total_gap": -1.3
+    "total_gap": -0.3
    },
    {
     "id": "401921673",
@@ -1349,13 +1232,13 @@
     "home_line": -2.5,
     "home_line_open": -3.5,
     "spread_odds": [
-     -110,
-     -110
+     -115,
+     -105
     ],
     "total": 159.5,
     "total_open": 162.5,
-    "home_ml": -142,
-    "away_ml": 120,
+    "home_ml": -135,
+    "away_ml": 114,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 2.0,
@@ -1417,7 +1300,7 @@
     "gap_b": -5.8,
     "gap_min": 5.8,
     "pick": "Utah State Aggies +2.5",
-    "price": -110,
+    "price": -115,
     "side": "away",
     "fair_line": -0.7,
     "playable_to": null,
@@ -1465,10 +1348,10 @@
     "home_line": -7.5,
     "home_line_open": -7.5,
     "spread_odds": [
-     -118,
-     -102
+     -115,
+     -105
     ],
-    "total": 152.5,
+    "total": 151.5,
     "total_open": 155.5,
     "home_ml": -325,
     "away_ml": 260,
@@ -1530,7 +1413,7 @@
     "gap_b": -5.7,
     "gap_min": 5.7,
     "pick": "Saint Mary's Gaels +7.5",
-    "price": -118,
+    "price": -115,
     "side": "away",
     "fair_line": 5.6,
     "playable_to": null,
@@ -1563,8 +1446,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 10.4,
-    "total_lean": "Over 152.5 (season scoring says 162.9) - WATCH only, totals have no past-games test yet"
+    "total_gap": 11.4,
+    "total_lean": "Over 151.5 (season scoring says 162.9) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920531",
@@ -1914,6 +1797,121 @@
      "our history": -0.12
     },
     "total_gap": -3.3
+   },
+   {
+    "id": "401921674",
+    "sport": "CBB",
+    "game": "South Carolina Gamecocks @ Arizona State Sun Devils",
+    "home": "Arizona State Sun Devils",
+    "away": "South Carolina Gamecocks",
+    "time": "Thu 1:00 PM CT",
+    "start": "2026-11-26T19:00Z",
+    "book": "Draft Kings",
+    "line": "ASU -4.5",
+    "home_line": -4.5,
+    "home_line_open": -3.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 138.5,
+    "total_open": 140.5,
+    "home_ml": -192,
+    "away_ml": 160,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 1.7,
+    "model_b": 0.8,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "5-1"
+    ],
+    "venue": "Acrisure Arena",
+    "tv": "CBSSN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Juan Fernandez",
+      "Marcus Johnson"
+     ],
+     [
+      "Dillan Shaw",
+      "Joel Foxwell",
+      "Paulius Murauskas"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     12.6,
+     16.0
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Gamecocks 1 day(s), Devils 1 day(s)",
+     "Line moved 1 pts toward Arizona State Sun Devils since open (-3.5 to -4.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 145.6,
+    "gap_a": -2.8,
+    "gap_b": -3.7,
+    "gap_min": 3.7,
+    "pick": "South Carolina Gamecocks +4.5",
+    "price": -110,
+    "side": "away",
+    "fair_line": 1.2,
+    "playable_to": null,
+    "sim_cover": 0.616,
+    "history": {
+     "adj": 0.24,
+     "key": "CBB spread dog",
+     "w": 163,
+     "l": 116,
+     "text": "Our record on CBB spread dog: 163-116 (last 60 days, recent counts more) -> +0.24 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.41,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.24
+    },
+    "total_gap": 7.1,
+    "total_lean": "Over 138.5 (season scoring says 145.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401920540",
@@ -2389,7 +2387,7 @@
      -112,
      -108
     ],
-    "total": 140.5,
+    "total": 139.5,
     "total_open": 138.5,
     "home_ml": 130,
     "away_ml": -155,
@@ -2487,8 +2485,8 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 7.1,
-    "total_lean": "Over 140.5 (season scoring says 147.6) - WATCH only, totals have no past-games test yet"
+    "total_gap": 8.1,
+    "total_lean": "Over 139.5 (season scoring says 147.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401906807",
@@ -2503,13 +2501,13 @@
     "home_line": -4.5,
     "home_line_open": -4.5,
     "spread_odds": [
-     -105,
-     -115
+     -110,
+     -110
     ],
     "total": 140.5,
     "total_open": 141.5,
-    "home_ml": -218,
-    "away_ml": 180,
+    "home_ml": -198,
+    "away_ml": 164,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.6,
@@ -2568,7 +2566,7 @@
     "gap_b": -1.5,
     "gap_min": 1.5,
     "pick": "Oklahoma Sooners +4.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": 3.8,
     "playable_to": null,
@@ -2619,7 +2617,7 @@
      -110,
      -110
     ],
-    "total": 149.5,
+    "total": 148.5,
     "total_open": 151.5,
     "home_ml": -225,
     "away_ml": 185,
@@ -2715,120 +2713,7 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": 1.0
-   },
-   {
-    "id": "401929281",
-    "sport": "CBB",
-    "game": "Georgia Bulldogs @ Cincinnati Bearcats",
-    "home": "Cincinnati Bearcats",
-    "away": "Georgia Bulldogs",
-    "time": "Thu 10:00 AM CT",
-    "start": "2026-11-26T16:00Z",
-    "book": "Draft Kings",
-    "line": "CIN -1.5",
-    "home_line": -1.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 154.5,
-    "total_open": 156.5,
-    "home_ml": -130,
-    "away_ml": 110,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.9,
-    "model_b": 2.4,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "6-0",
-     "5-1"
-    ],
-    "venue": "State Farm Field House",
-    "tv": "ESPN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Blue Cain",
-      "James Scott",
-      "Marcus Millender"
-     ],
-     [
-      "Elijah Perryman",
-      "Tylen Riley",
-      "Tyler Tejada"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     4
-    ],
-    "form5": [
-     13.2,
-     15.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bulldogs 6 day(s), Bearcats 4 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.5,
-    "gap_a": 1.4,
-    "gap_b": 0.9,
-    "gap_min": 1.4,
-    "pick": "Cincinnati Bearcats -1.5",
-    "price": -115,
-    "side": "home",
-    "fair_line": -2.7,
-    "playable_to": null,
-    "sim_cover": 0.542,
-    "history": {
-     "adj": -0.12,
-     "key": "CBB spread fav",
-     "w": 15,
-     "l": 17,
-     "text": "Our record on CBB spread fav: 15-17 (last 60 days, recent counts more) -> -0.12 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.0,
-    "components": {
-     "efficiency": 0.16,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.12
-    },
-    "total_gap": -4.0
+    "total_gap": 2.0
    },
    {
     "id": "401917546",
@@ -2957,13 +2842,13 @@
     "home_line": -11.5,
     "home_line_open": -14.5,
     "spread_odds": [
-     -105,
-     -115
+     -110,
+     -110
     ],
-    "total": 149.5,
+    "total": 150.5,
     "total_open": 151.5,
-    "home_ml": -900,
-    "away_ml": 600,
+    "home_ml": -850,
+    "away_ml": 575,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 8.1,
@@ -3026,7 +2911,7 @@
     "gap_b": -2.0,
     "gap_min": 3.4,
     "pick": "Army Black Knights +11.5",
-    "price": -105,
+    "price": -110,
     "side": "away",
     "fair_line": 8.8,
     "playable_to": null,
@@ -3059,7 +2944,124 @@
      "situational": 0.5,
      "our history": 0.24
     },
-    "total_gap": -0.6
+    "total_gap": -1.6
+   },
+   {
+    "id": "401929281",
+    "sport": "CBB",
+    "game": "Georgia Bulldogs @ Cincinnati Bearcats",
+    "home": "Cincinnati Bearcats",
+    "away": "Georgia Bulldogs",
+    "time": "Thu 10:00 AM CT",
+    "start": "2026-11-26T16:00Z",
+    "book": "Draft Kings",
+    "line": "CIN -2.5",
+    "home_line": -2.5,
+    "home_line_open": -1.5,
+    "spread_odds": [
+     -110,
+     -110
+    ],
+    "total": 156.5,
+    "total_open": 156.5,
+    "home_ml": -142,
+    "away_ml": 120,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": 2.9,
+    "model_b": 2.4,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "6-0",
+     "5-1"
+    ],
+    "venue": "State Farm Field House",
+    "tv": "ESPN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Blue Cain",
+      "James Scott",
+      "Marcus Millender"
+     ],
+     [
+      "Elijah Perryman",
+      "Tylen Riley",
+      "Tyler Tejada"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     6,
+     4
+    ],
+    "form5": [
+     13.2,
+     15.6
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Bulldogs 6 day(s), Bearcats 4 day(s)",
+     "Line moved 1 pts toward Cincinnati Bearcats since open (-1.5 to -2.5 home)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [
+     "Market moved away from this side since open"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 150.5,
+    "gap_a": 0.4,
+    "gap_b": -0.1,
+    "gap_min": 0.4,
+    "pick": "Cincinnati Bearcats -2.5",
+    "price": -110,
+    "side": "home",
+    "fair_line": -2.7,
+    "playable_to": null,
+    "sim_cover": 0.506,
+    "history": {
+     "adj": -0.12,
+     "key": "CBB spread fav",
+     "w": 15,
+     "l": 17,
+     "text": "Our record on CBB spread fav: 15-17 (last 60 days, recent counts more) -> -0.12 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 4.6,
+    "components": {
+     "efficiency": 0.05,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": -0.12
+    },
+    "total_gap": -6.0,
+    "total_lean": "Under 156.5 (season scoring says 150.5) - WATCH only, totals have no past-games test yet"
    }
   ],
   "n_past": 1426,
