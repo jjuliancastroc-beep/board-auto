@@ -10,7 +10,7 @@
     "away": "Kansas City Chiefs",
     "time": "Thu 7:20 PM CT",
     "start": "2026-11-27T01:20Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BUF -3",
     "home_line": -3.0,
     "home_line_open": -2.5,
@@ -20,8 +20,8 @@
     ],
     "total": 45.5,
     "total_open": 49.5,
-    "home_ml": -154,
-    "away_ml": 130,
+    "home_ml": -157,
+    "away_ml": 132,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 2.1,
@@ -72,9 +72,29 @@
     ],
     "inj_away": [
      {
-      "player": "Peter Woods",
+      "player": "Garrett Nussmeier",
+      "pos": "QB",
+      "status": "Out"
+     },
+     {
+      "player": "Diego Pounds",
+      "pos": "OT",
+      "status": "Out"
+     },
+     {
+      "player": "Melvin Smith Jr.",
+      "pos": "CB",
+      "status": "Out"
+     },
+     {
+      "player": "Kenneth Walker III",
+      "pos": "RB",
+      "status": "Out"
+     },
+     {
+      "player": "Marcus Harris",
       "pos": "DT",
-      "status": "Questionable"
+      "status": "Out"
      },
      {
       "player": "Omarr Norman-Lott",
@@ -84,16 +104,6 @@
      {
       "player": "Jaylon Moore",
       "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Noah Gray",
-      "pos": "TE",
-      "status": "Questionable"
-     },
-     {
-      "player": "Kenneth Walker III",
-      "pos": "RB",
       "status": "Out"
      }
     ],
@@ -122,9 +132,10 @@
      16.4
     ],
     "decision": "PASS",
-    "reason": "Neither model clears the bar.",
+    "reason": "Veto: QB Garrett Nussmeier (Kansas City Chiefs) Out - QB rule: no bet on this game until settled",
     "flags": [
-     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)"
+     "Wind 15+ mph - passing and kicking take a hit (lean under, not a bet by itself)",
+     "QB Garrett Nussmeier (Kansas City Chiefs) Out - QB rule: no bet on this game until settled"
     ],
     "factors": [
      "Rest: Chiefs 4 day(s), Bills 4 day(s)",
@@ -150,6 +161,9 @@
      "temp": 35
     },
     "total_model": 47.8,
+    "veto_sides": [
+     "game"
+    ],
     "gap_a": -0.9,
     "gap_b": -0.4,
     "gap_min": 0.9,
@@ -174,13 +188,13 @@
     },
     "models_agree": false,
     "one_model": false,
-    "veto": false,
-    "conf": 5.0,
+    "veto": true,
+    "conf": 2.7,
     "components": {
      "efficiency": 0.15,
-     "veto": 1.5,
+     "veto": 0.0,
      "models": 0.0,
-     "starters": 1.5,
+     "starters": 0.75,
      "coaching": 0.5,
      "against": 0.65,
      "price": 0.0,
@@ -204,7 +218,7 @@
     "away": "TCU Horned Frogs",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-27T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TTU -14",
     "home_line": -14.0,
     "home_line_open": -16.5,
@@ -348,7 +362,7 @@
     "away": "Texas Tech Red Raiders",
     "time": "Thu 10:30 PM CT",
     "start": "2026-11-27T04:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TTU -10.5",
     "home_line": 10.5,
     "home_line_open": 8.5,
@@ -358,8 +372,8 @@
     ],
     "total": 148.5,
     "total_open": 153.5,
-    "home_ml": 400,
-    "away_ml": -535,
+    "home_ml": 410,
+    "away_ml": -550,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -9.5,
@@ -463,7 +477,7 @@
     "away": "Alabama Crimson Tide",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-27T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ALA -13.5",
     "home_line": 13.5,
     "home_line_open": -12.5,
@@ -578,15 +592,15 @@
     "away": "Louisville Cardinals",
     "time": "Thu 8:00 PM CT",
     "start": "2026-11-27T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SJU -1.5",
     "home_line": -1.5,
     "home_line_open": 4.5,
     "spread_odds": [
-     -118,
-     -102
+     -112,
+     -108
     ],
-    "total": 161.5,
+    "total": 160.5,
     "total_open": 157.5,
     "home_ml": -120,
     "away_ml": 100,
@@ -652,7 +666,7 @@
     "gap_b": 5.7,
     "gap_min": 5.7,
     "pick": "St. John's Red Storm -1.5",
-    "price": -102,
+    "price": -108,
     "side": "home",
     "fair_line": -4.6,
     "playable_to": null,
@@ -685,7 +699,121 @@
      "situational": 0.5,
      "our history": -0.08
     },
-    "total_gap": -3.3
+    "total_gap": -2.3
+   },
+   {
+    "id": "401918972",
+    "sport": "CBB",
+    "game": "LSU Tigers @ SMU Mustangs",
+    "home": "SMU Mustangs",
+    "away": "LSU Tigers",
+    "time": "Thu 6:00 PM CT",
+    "start": "2026-11-27T00:00Z",
+    "book": "Draft Kings",
+    "line": "LSU -6.5",
+    "home_line": 6.5,
+    "home_line_open": -7.5,
+    "spread_odds": [
+     -108,
+     -112
+    ],
+    "total": 155.5,
+    "total_open": 159.5,
+    "home_ml": 230,
+    "away_ml": -285,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -2.6,
+    "model_b": -3.3,
+    "games_played": [
+     7,
+     7
+    ],
+    "neutral": true,
+    "records": [
+     "7-0",
+     "6-1"
+    ],
+    "venue": "Acrisure Arena",
+    "tv": "CBSSN",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Donovan Dent",
+      "Michael Ruzic"
+     ],
+     [
+      "David Terrell Jr.",
+      "Jaden Toombs",
+      "Oziyah Sellers"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     1,
+     1
+    ],
+    "form5": [
+     15.0,
+     11.8
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Tigers 1 day(s), Mustangs 1 day(s)",
+     "Line moved 14 pts toward LSU Tigers since open (-7.5 to +6.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 157.7,
+    "gap_a": 3.9,
+    "gap_b": 3.2,
+    "gap_min": 3.9,
+    "pick": "SMU Mustangs +6.5",
+    "price": -112,
+    "side": "home",
+    "fair_line": 2.9,
+    "playable_to": null,
+    "sim_cover": 0.627,
+    "history": {
+     "adj": 0.25,
+     "key": "CBB spread dog",
+     "w": 167,
+     "l": 118,
+     "text": "Our record on CBB spread dog: 167-118 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.44,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": 2.2
    },
    {
     "id": "401920540",
@@ -695,7 +823,7 @@
     "away": "Baylor Bears",
     "time": "Thu 10:30 PM CT",
     "start": "2026-11-27T04:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GONZ -3.5",
     "home_line": -3.5,
     "home_line_open": 4.5,
@@ -803,235 +931,6 @@
     "total_gap": 0.3
    },
    {
-    "id": "401909506",
-    "sport": "CBB",
-    "game": "DePaul Blue Demons @ Pittsburgh Panthers",
-    "home": "Pittsburgh Panthers",
-    "away": "DePaul Blue Demons",
-    "time": "Thu 6:00 PM CT",
-    "start": "2026-11-27T00:00Z",
-    "book": "DraftKings",
-    "line": "DEP -1.5",
-    "home_line": 1.5,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -102,
-     -118
-    ],
-    "total": 137.5,
-    "total_open": 139.5,
-    "home_ml": 102,
-    "away_ml": -122,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.5,
-    "model_b": 0.8,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-0",
-     "7-0"
-    ],
-    "venue": "Suncoast Credit Union Arena",
-    "tv": "FS1",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Fabian Flores",
-      "Koree Cotton",
-      "Noah Meeusen"
-     ],
-     [
-      "Baye Ndongo",
-      "Naithan George"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     18.2,
-     14.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Demons 2 day(s), Panthers 2 day(s)",
-     "Line moved 3 pts toward DePaul Blue Demons since open (-1.5 to +1.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 141.4,
-    "gap_a": 2.0,
-    "gap_b": 2.3,
-    "gap_min": 2.3,
-    "pick": "Pittsburgh Panthers +1.5",
-    "price": -118,
-    "side": "home",
-    "fair_line": -0.6,
-    "playable_to": null,
-    "sim_cover": 0.576,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 167,
-     "l": 118,
-     "text": "Our record on CBB spread dog: 167-118 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.25,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 3.9
-   },
-   {
-    "id": "401918972",
-    "sport": "CBB",
-    "game": "SMU Mustangs @ LSU Tigers",
-    "home": "LSU Tigers",
-    "away": "SMU Mustangs",
-    "time": "Thu 6:00 PM CT",
-    "start": "2026-11-27T00:00Z",
-    "book": "DraftKings",
-    "line": "LSU -6.5",
-    "home_line": -6.5,
-    "home_line_open": -7.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 155.5,
-    "total_open": 159.5,
-    "home_ml": -285,
-    "away_ml": 230,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.6,
-    "model_b": 3.3,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-1",
-     "7-0"
-    ],
-    "venue": "Acrisure Arena",
-    "tv": "CBSSN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "David Terrell Jr.",
-      "Jaden Toombs",
-      "Oziyah Sellers"
-     ],
-     [
-      "Donovan Dent",
-      "Michael Ruzic"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     11.8,
-     15.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Mustangs 1 day(s), Tigers 1 day(s)",
-     "Line moved 1 pts toward SMU Mustangs since open (-7.5 to -6.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 157.7,
-    "gap_a": -3.9,
-    "gap_b": -3.2,
-    "gap_min": 3.9,
-    "pick": "SMU Mustangs +6.5",
-    "price": -112,
-    "side": "away",
-    "fair_line": 2.9,
-    "playable_to": null,
-    "sim_cover": 0.627,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 167,
-     "l": 118,
-     "text": "Our record on CBB spread dog: 167-118 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.44,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 2.2
-   },
-   {
     "id": "401911523",
     "sport": "CBB",
     "game": "Jacksonville State Gamecocks @ UC Davis Aggies",
@@ -1039,7 +938,7 @@
     "away": "Jacksonville State Gamecocks",
     "time": "Thu 7:00 PM CT",
     "start": "2026-11-27T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "JXST -2.5",
     "home_line": 2.5,
     "home_line_open": 1.5,
@@ -1156,7 +1055,7 @@
     "away": "Pacific Tigers",
     "time": "Thu 9:30 PM CT",
     "start": "2026-11-27T03:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PAC -7.5",
     "home_line": 7.5,
     "home_line_open": 8.5,
