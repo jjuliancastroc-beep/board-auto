@@ -10,7 +10,7 @@
     "away": "Denver Broncos",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DEN -4.5",
     "home_line": 4.5,
     "home_line_open": 1.5,
@@ -20,8 +20,8 @@
     ],
     "total": 36.5,
     "total_open": 41.5,
-    "home_ml": 199,
-    "away_ml": -240,
+    "home_ml": 198,
+    "away_ml": -239,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 0.9,
@@ -39,6 +39,11 @@
     "tv": "Prime Video",
     "indoor": false,
     "inj_home": [
+     {
+      "player": "Drew Allar",
+      "pos": "QB",
+      "status": "Out"
+     },
      {
       "player": "Kaden Wetjen",
       "pos": "WR",
@@ -60,11 +65,6 @@
       "status": "Out"
      },
      {
-      "player": "Drew Allar",
-      "pos": "QB",
-      "status": "Out"
-     },
-     {
       "player": "Cole Holcomb",
       "pos": "LB",
       "status": "Out"
@@ -76,6 +76,11 @@
      }
     ],
     "inj_away": [
+     {
+      "player": "Sam Ehlinger",
+      "pos": "QB",
+      "status": "Out"
+     },
      {
       "player": "Taylor Rapp",
       "pos": "S",
@@ -89,11 +94,6 @@
      {
       "player": "Kage Casey",
       "pos": "OT",
-      "status": "Out"
-     },
-     {
-      "player": "Sam Ehlinger",
-      "pos": "QB",
       "status": "Out"
      },
      {
@@ -140,7 +140,7 @@
     "factors": [
      "Rest: Broncos 5 day(s), Steelers 5 day(s)",
      "Line moved 3 pts toward Denver Broncos since open (+1.5 to +4.5 home)",
-     "Kickoff forecast: wind 13 mph (gusts 30), 37F, rain chance 40%",
+     "Kickoff forecast: wind 13 mph (gusts 30), 37F, rain chance 43%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -153,7 +153,7 @@
     "wind": {
      "wind": 12.9,
      "gust": 30.2,
-     "rain": 40,
+     "rain": 43,
      "temp": 36.6,
      "src": "Open-Meteo"
     },
@@ -221,7 +221,7 @@
     "away": "West Virginia Mountaineers",
     "time": "Fri 8:00 PM CT",
     "start": "2026-11-28T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UTAH -25.5",
     "home_line": -25.5,
     "home_line_open": -20.5,
@@ -356,7 +356,7 @@
     "away": "Florida Gators",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FLA -6.5",
     "home_line": 6.5,
     "home_line_open": 4.5,
@@ -492,13 +492,13 @@
     "away": "Temple Owls",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
-    "line": "MEM -18.5",
-    "home_line": -18.5,
+    "book": "Draft Kings",
+    "line": "MEM -19.5",
+    "home_line": -19.5,
     "home_line_open": -17.5,
     "spread_odds": [
-     -105,
-     -115
+     -115,
+     -105
     ],
     "total": 66.5,
     "total_open": 64.5,
@@ -553,7 +553,7 @@
     ],
     "factors": [
      "Rest: Owls 8 day(s), Tigers 6 day(s)",
-     "Line moved 1 pts toward Memphis Tigers since open (-17.5 to -18.5 home)",
+     "Line moved 2 pts toward Memphis Tigers since open (-17.5 to -19.5 home)",
      "Kickoff forecast: wind 9 mph (gusts 18), 49F, rain chance 0%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -577,15 +577,15 @@
      "temp": 50
     },
     "total_model": 59.0,
-    "gap_a": -0.1,
-    "gap_b": -3.5,
-    "gap_min": 3.5,
-    "pick": "Temple Owls +18.5",
-    "price": -105,
+    "gap_a": -1.1,
+    "gap_b": -4.5,
+    "gap_min": 4.5,
+    "pick": "Temple Owls +19.5",
+    "price": -115,
     "side": "away",
     "fair_line": 16.7,
     "playable_to": null,
-    "sim_cover": 0.544,
+    "sim_cover": 0.569,
     "history": {
      "adj": -0.21,
      "key": "CFB spread dog",
@@ -602,9 +602,9 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.6,
+    "conf": 6.9,
     "components": {
-     "efficiency": 1.16,
+     "efficiency": 1.49,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -625,7 +625,7 @@
     "away": "Texas Longhorns",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TEX -10.5",
     "home_line": 10.5,
     "home_line_open": 2.5,
@@ -757,7 +757,7 @@
     "away": "Air Force Falcons",
     "time": "Fri 3:30 PM CT",
     "start": "2026-11-27T21:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UNM -7",
     "home_line": -7.0,
     "home_line_open": -7.0,
@@ -884,7 +884,7 @@
     "away": "Minnesota Golden Gophers",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WIS -9.5",
     "home_line": -9.5,
     "home_line_open": -6.0,
@@ -1016,7 +1016,7 @@
     "away": "App State Mountaineers",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "USA -3",
     "home_line": -3.0,
     "home_line_open": -2.5,
@@ -1148,7 +1148,7 @@
     "away": "North Dakota State Bison",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NDSU -9.5",
     "home_line": 9.5,
     "home_line_open": 11.5,
@@ -1287,7 +1287,7 @@
     "away": "New Orleans Pelicans",
     "time": "Fri 8:30 PM CT",
     "start": "2026-11-28T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LAC -2.5",
     "home_line": -2.5,
     "home_line_open": -2.5,
@@ -1433,7 +1433,7 @@
     "away": "Milwaukee Bucks",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DET -9.5",
     "home_line": -9.5,
     "home_line_open": -11.5,
@@ -1582,7 +1582,7 @@
     "away": "Brooklyn Nets",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TOR -9.5",
     "home_line": -9.5,
     "home_line_open": -7.5,
@@ -1590,7 +1590,7 @@
      -112,
      -108
     ],
-    "total": 219.5,
+    "total": 220.5,
     "total_open": 221.5,
     "home_ml": -375,
     "away_ml": 298,
@@ -1724,6 +1724,178 @@
      "situational": 0.5,
      "our history": 0.25
     },
+    "total_gap": 5.9
+   },
+   {
+    "id": "401909331",
+    "sport": "NBA",
+    "game": "Memphis Grizzlies @ Minnesota Timberwolves",
+    "home": "Minnesota Timberwolves",
+    "away": "Memphis Grizzlies",
+    "time": "Fri 7:30 PM CT",
+    "start": "2026-11-28T01:30Z",
+    "book": "Draft Kings",
+    "line": "MIN -3.5",
+    "home_line": -3.5,
+    "home_line_open": -2.5,
+    "spread_odds": [
+     -119,
+     -102
+    ],
+    "total": 219.5,
+    "total_open": 223.5,
+    "home_ml": -155,
+    "away_ml": 130,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 4.2,
+    "model_b": -0.9,
+    "games_played": [
+     19,
+     19
+    ],
+    "neutral": false,
+    "records": [
+     "14-5",
+     "14-5"
+    ],
+    "venue": "Target Center",
+    "tv": "DAZN MIN, DAZN MEM",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "LaMelo Ball",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Donte DiVincenzo",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Jaylen Clark",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Anthony Edwards",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Isaiah Stewart",
+      "pos": "C",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Zach Edey",
+      "pos": "C",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Scotty Pippen Jr.",
+      "pos": "G",
+      "status": "Out"
+     },
+     {
+      "player": "Cameron Boozer",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Jerami Grant",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "GG Jackson",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Richie Saunders",
+      "pos": "G",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Cam Spencer",
+      "Cedric Coward",
+      "Ty Jerome"
+     ],
+     [
+      "Ayo Dosunmu",
+      "Jaden McDaniels",
+      "Rudy Gobert"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     9.2,
+     8.0
+    ],
+    "decision": "PASS",
+    "reason": "Neither model clears the bar.",
+    "flags": [],
+    "factors": [
+     "Rest: Grizzlies 2 day(s), Timberwolves 2 day(s)",
+     "Line moved 1 pts toward Minnesota Timberwolves since open (-2.5 to -3.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 226.4,
+    "gap_a": 0.7,
+    "gap_b": -4.4,
+    "gap_min": 4.4,
+    "pick": "Memphis Grizzlies +3.5",
+    "price": -119,
+    "side": "away",
+    "fair_line": 1.7,
+    "playable_to": null,
+    "sim_cover": 0.558,
+    "history": {
+     "adj": 0.25,
+     "key": "NBA spread dog",
+     "w": 15,
+     "l": 7,
+     "text": "Our record on NBA spread dog: 15-7 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": false,
+    "conf": 5.7,
+    "components": {
+     "efficiency": 0.49,
+     "veto": 1.5,
+     "models": 0.0,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
     "total_gap": 6.9,
     "total_lean": "Over 219.5 (season scoring says 226.4) - WATCH only, totals have no past-games test yet"
    },
@@ -1735,7 +1907,7 @@
     "away": "Atlanta Hawks",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BOS -8.5",
     "home_line": -8.5,
     "home_line_open": -9.5,
@@ -1876,147 +2048,6 @@
     "total_gap": -0.7
    },
    {
-    "id": "401909332",
-    "sport": "NBA",
-    "game": "Dallas Mavericks @ Phoenix Suns",
-    "home": "Phoenix Suns",
-    "away": "Dallas Mavericks",
-    "time": "Fri 8:00 PM CT",
-    "start": "2026-11-28T02:00Z",
-    "book": "DraftKings",
-    "line": "PHX -1.5",
-    "home_line": -1.5,
-    "home_line_open": -3.5,
-    "spread_odds": [
-     -105,
-     -115
-    ],
-    "total": 226.5,
-    "total_open": 227.5,
-    "home_ml": -121,
-    "away_ml": 103,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.7,
-    "model_b": 2.9,
-    "games_played": [
-     18,
-     17
-    ],
-    "neutral": false,
-    "records": [
-     "11-7",
-     "9-8"
-    ],
-    "venue": "Mortgage Matchup Center",
-    "tv": "Suns Live, Arizona's Family 3TV, KFAA-TV, MavsTV",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Mark Williams",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Tobi Lawal",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Sergio de Larrea",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Dereck Lively II",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Tarik Biberovic",
-      "pos": "F",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Cooper Flagg",
-      "Kyrie Irving",
-      "P.J. Washington"
-     ],
-     [
-      "Devin Booker",
-      "Miles Bridges"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     2
-    ],
-    "form5": [
-     4.6,
-     7.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Mavericks 3 day(s), Suns 2 day(s)",
-     "Line moved 2 pts toward Dallas Mavericks since open (-3.5 to -1.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 226.8,
-    "gap_a": -0.8,
-    "gap_b": 1.4,
-    "gap_min": 1.4,
-    "pick": "Phoenix Suns -1.5",
-    "price": -115,
-    "side": "home",
-    "fair_line": -1.8,
-    "playable_to": null,
-    "sim_cover": 0.509,
-    "history": {
-     "adj": -0.05,
-     "key": "NBA spread fav",
-     "w": 17,
-     "l": 18,
-     "text": "Our record on NBA spread fav: 17-18 (last 60 days, recent counts more) -> -0.05 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.1,
-    "components": {
-     "efficiency": 0.16,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.05
-    },
-    "total_gap": 0.3
-   },
-   {
     "id": "401909334",
     "sport": "NBA",
     "game": "Denver Nuggets @ Utah Jazz",
@@ -2024,7 +2055,7 @@
     "away": "Denver Nuggets",
     "time": "Fri 8:30 PM CT",
     "start": "2026-11-28T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "DEN -9.5",
     "home_line": 9.5,
     "home_line_open": 9.5,
@@ -2032,7 +2063,7 @@
      -116,
      -105
     ],
-    "total": 231.5,
+    "total": 232.5,
     "total_open": 228.5,
     "home_ml": 341,
     "away_ml": -438,
@@ -2158,7 +2189,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": -4.1,
+    "total_gap": -5.1,
     "now_says": "PASS Utah Jazz +9.5 5.1",
     "stake": 25,
     "locked": true
@@ -2171,7 +2202,7 @@
     "away": "Golden State Warriors",
     "time": "Fri 8:30 PM CT",
     "start": "2026-11-28T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "POR -7.5",
     "home_line": -7.5,
     "home_line_open": -9.5,
@@ -2179,10 +2210,10 @@
      -112,
      -108
     ],
-    "total": 216.5,
+    "total": 218.5,
     "total_open": 221.5,
-    "home_ml": -313,
-    "away_ml": 254,
+    "home_ml": -297,
+    "away_ml": 241,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
     "model_a": 8.0,
@@ -2325,8 +2356,8 @@
      "situational": 0.5,
      "our history": -0.05
     },
-    "total_gap": 9.2,
-    "total_lean": "Over 216.5 (season scoring says 225.7) - WATCH only, totals have no past-games test yet"
+    "total_gap": 7.2,
+    "total_lean": "Over 218.5 (season scoring says 225.7) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401909333",
@@ -2336,13 +2367,13 @@
     "away": "Los Angeles Lakers",
     "time": "Fri 8:30 PM CT",
     "start": "2026-11-28T02:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "SA -6.5",
     "home_line": -6.5,
     "home_line_open": 7.5,
     "spread_odds": [
-     -110,
-     -110
+     -105,
+     -115
     ],
     "total": 226.5,
     "total_open": 232.5,
@@ -2439,7 +2470,7 @@
     "gap_b": 2.3,
     "gap_min": 2.3,
     "pick": "San Antonio Spurs -6.5",
-    "price": -110,
+    "price": -115,
     "side": "home",
     "fair_line": -7.8,
     "playable_to": null,
@@ -2475,6 +2506,155 @@
     "total_gap": 1.2
    },
    {
+    "id": "401909332",
+    "sport": "NBA",
+    "game": "Dallas Mavericks @ Phoenix Suns",
+    "home": "Phoenix Suns",
+    "away": "Dallas Mavericks",
+    "time": "Fri 8:00 PM CT",
+    "start": "2026-11-28T02:00Z",
+    "book": "Draft Kings",
+    "line": "PHX -3.5",
+    "home_line": -3.5,
+    "home_line_open": -3.5,
+    "spread_odds": [
+     -114,
+     -106
+    ],
+    "total": 226.5,
+    "total_open": 227.5,
+    "home_ml": -148,
+    "away_ml": 124,
+    "model_a_name": "Ratings",
+    "model_b_name": "Last 10",
+    "model_a": 0.7,
+    "model_b": 2.9,
+    "games_played": [
+     18,
+     17
+    ],
+    "neutral": false,
+    "records": [
+     "11-7",
+     "9-8"
+    ],
+    "venue": "Mortgage Matchup Center",
+    "tv": "Suns Live, Arizona's Family 3TV, KFAA-TV, MavsTV",
+    "indoor": true,
+    "inj_home": [
+     {
+      "player": "Mark Williams",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
+    "inj_away": [
+     {
+      "player": "Kyrie Irving",
+      "pos": "G",
+      "status": "Day-To-Day"
+     },
+     {
+      "player": "Tobi Lawal",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Sergio de Larrea",
+      "pos": "F",
+      "status": "Out"
+     },
+     {
+      "player": "Dereck Lively II",
+      "pos": "C",
+      "status": "Out"
+     },
+     {
+      "player": "Tarik Biberovic",
+      "pos": "F",
+      "status": "Out"
+     }
+    ],
+    "stars": [
+     [
+      "Cooper Flagg",
+      "Kyrie Irving",
+      "P.J. Washington"
+     ],
+     [
+      "Devin Booker",
+      "Miles Bridges"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     3,
+     2
+    ],
+    "form5": [
+     4.6,
+     7.0
+    ],
+    "decision": "PASS",
+    "reason": "Veto: Star Kyrie Irving (Dallas Mavericks) Day-To-Day",
+    "flags": [
+     "Star Kyrie Irving (Dallas Mavericks) Day-To-Day"
+    ],
+    "factors": [
+     "Rest: Mavericks 3 day(s), Suns 2 day(s)",
+     "Indoors - weather does not matter"
+    ],
+    "against": [],
+    "invalidation": [
+     "A star on either team changes status (questionable to out or back in)"
+    ],
+    "total_model": 226.8,
+    "veto_sides": [
+     "game"
+    ],
+    "gap_a": -2.8,
+    "gap_b": -0.6,
+    "gap_min": 2.8,
+    "pick": "Dallas Mavericks +3.5",
+    "price": -114,
+    "side": "away",
+    "fair_line": 1.8,
+    "playable_to": null,
+    "sim_cover": 0.555,
+    "history": {
+     "adj": 0.25,
+     "key": "NBA spread dog",
+     "w": 15,
+     "l": 7,
+     "text": "Our record on NBA spread dog: 15-7 (last 60 days, recent counts more) -> +0.25 to confidence"
+    },
+    "test_record": {
+     "w": 57,
+     "l": 68,
+     "n": 125,
+     "win": 0.456
+    },
+    "models_agree": false,
+    "one_model": false,
+    "veto": true,
+    "conf": 3.3,
+    "components": {
+     "efficiency": 0.32,
+     "veto": 0.0,
+     "models": 0.0,
+     "starters": 0.75,
+     "coaching": 0.5,
+     "against": 1.0,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.25
+    },
+    "total_gap": 0.3
+   },
+   {
     "id": "401909326",
     "sport": "NBA",
     "game": "Miami Heat @ New York Knicks",
@@ -2482,7 +2662,7 @@
     "away": "Miami Heat",
     "time": "Fri 6:00 PM CT",
     "start": "2026-11-28T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NY -2.5",
     "home_line": -2.5,
     "home_line_open": 5.5,
@@ -2636,7 +2816,7 @@
     "away": "Philadelphia 76ers",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PHI -3.5",
     "home_line": 3.5,
     "home_line_open": 4.5,
@@ -2793,136 +2973,6 @@
      "our history": 0.25
     },
     "total_gap": -2.4
-   },
-   {
-    "id": "401909331",
-    "sport": "NBA",
-    "game": "Memphis Grizzlies @ Minnesota Timberwolves",
-    "home": "Minnesota Timberwolves",
-    "away": "Memphis Grizzlies",
-    "time": "Fri 7:30 PM CT",
-    "start": "2026-11-28T01:30Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 4.2,
-    "model_b": -0.9,
-    "games_played": [
-     19,
-     19
-    ],
-    "neutral": false,
-    "records": [
-     "14-5",
-     "14-5"
-    ],
-    "venue": "Target Center",
-    "tv": "DAZN MIN, DAZN MEM",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "LaMelo Ball",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Donte DiVincenzo",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Jaylen Clark",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Anthony Edwards",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Isaiah Stewart",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Zach Edey",
-      "pos": "C",
-      "status": "Day-To-Day"
-     },
-     {
-      "player": "Scotty Pippen Jr.",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Cameron Boozer",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Jerami Grant",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "GG Jackson",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Richie Saunders",
-      "pos": "G",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Cam Spencer",
-      "Cedric Coward",
-      "Ty Jerome"
-     ],
-     [
-      "Ayo Dosunmu",
-      "Jaden McDaniels",
-      "Rudy Gobert"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     9.2,
-     8.0
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Grizzlies 2 day(s), Timberwolves 2 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 226.4
    }
   ],
   "n_past": 270,
@@ -2939,7 +2989,7 @@
     "away": "Tennessee Volunteers",
     "time": "Fri 8:00 PM CT",
     "start": "2026-11-28T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LOU -3.5",
     "home_line": -3.5,
     "home_line_open": 1.5,
@@ -2949,8 +2999,8 @@
     ],
     "total": 148.5,
     "total_open": 150.5,
-    "home_ml": -162,
-    "away_ml": 136,
+    "home_ml": -155,
+    "away_ml": 130,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -3.6,
@@ -3051,125 +3101,6 @@
     "stake": 0
    },
    {
-    "id": "401921827",
-    "sport": "CBB",
-    "game": "Southern Jaguars @ Vanderbilt Commodores",
-    "home": "Vanderbilt Commodores",
-    "away": "Southern Jaguars",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": "DraftKings",
-    "line": "VAN -38.5",
-    "home_line": -38.5,
-    "home_line_open": -36.5,
-    "spread_odds": [
-     -114,
-     -106
-    ],
-    "total": 152.5,
-    "total_open": 151.5,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 29.5,
-    "model_b": 21.4,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "1-6",
-     "7-0"
-    ],
-    "venue": "Memorial Gymnasium (TN)",
-    "tv": "SECN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Daniel Dormu",
-      "R'Chaun King"
-     ],
-     [
-      "Berke Buyuktuncel",
-      "Tyler Tanner"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -13.2,
-     19.0
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but CBB is a paper sport until you graduate it ('approve CBB'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 51.5% over 464.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Jaguars 2 day(s), Commodores 3 day(s)",
-     "Line moved 2 pts toward Vanderbilt Commodores since open (-36.5 to -38.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -13.2 a game, theirs +19.0)"
-    ],
-    "invalidation": [
-     "Line moves past +34",
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 151.1,
-    "gap_a": -9.0,
-    "gap_b": -17.1,
-    "gap_min": 9.0,
-    "pick": "Southern Jaguars +38.5",
-    "price": -114,
-    "side": "away",
-    "fair_line": 25.4,
-    "playable_to": 34.0,
-    "sim_cover": 0.883,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 170,
-     "l": 120,
-     "text": "Our record on CBB spread dog: 170-120 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "conf": 6.9,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": -1.4,
-    "stake": 0
-   },
-   {
     "id": "401925703",
     "sport": "CBB",
     "game": "Oakland Golden Grizzlies @ Houston Cougars",
@@ -3177,7 +3108,7 @@
     "away": "Oakland Golden Grizzlies",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HOU -36.5",
     "home_line": -36.5,
     "home_line_open": -38.5,
@@ -3301,7 +3232,7 @@
     "away": "Marquette Golden Eagles",
     "time": "Fri 4:00 PM CT",
     "start": "2026-11-27T22:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MARQ -1.5",
     "home_line": 1.5,
     "home_line_open": -2.5,
@@ -3417,7 +3348,7 @@
     "away": "Cincinnati Bearcats",
     "time": "Fri 3:30 PM CT",
     "start": "2026-11-27T21:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CIN -8.5",
     "home_line": 8.5,
     "home_line_open": 8.5,
@@ -3529,7 +3460,7 @@
     "away": "Texas Longhorns",
     "time": "Fri 4:00 PM CT",
     "start": "2026-11-27T22:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TEX -7.5",
     "home_line": 7.5,
     "home_line_open": 5.5,
@@ -3539,8 +3470,8 @@
     ],
     "total": 160.5,
     "total_open": 157.5,
-    "home_ml": 275,
-    "away_ml": -345,
+    "home_ml": 270,
+    "away_ml": -340,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -8.3,
@@ -3642,7 +3573,7 @@
     "away": "San Diego State Aztecs",
     "time": "Fri 10:30 PM CT",
     "start": "2026-11-28T04:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TTU -8.5",
     "home_line": -8.5,
     "home_line_open": 7.5,
@@ -3756,7 +3687,7 @@
     "away": "Penn State Nittany Lions",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MSST -6.5",
     "home_line": -6.5,
     "home_line_open": -6.5,
@@ -3867,13 +3798,13 @@
     "away": "Maryland Terrapins",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MD -3.5",
     "home_line": 3.5,
-    "home_line_open": 2.5,
+    "home_line_open": -2.5,
     "spread_odds": [
-     -108,
-     -111
+     -113,
+     -107
     ],
     "total": 148.5,
     "total_open": 149.5,
@@ -3925,7 +3856,7 @@
     "flags": [],
     "factors": [
      "Rest: Terrapins 1 day(s), Ducks 1 day(s)",
-     "Line moved 1 pts toward Maryland Terrapins since open (+2.5 to +3.5 home)",
+     "Line moved 6 pts toward Maryland Terrapins since open (-2.5 to +3.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
@@ -3938,7 +3869,7 @@
     "gap_b": 4.5,
     "gap_min": 4.5,
     "pick": "Oregon Ducks +3.5",
-    "price": -111,
+    "price": -107,
     "side": "home",
     "fair_line": -0.0,
     "playable_to": null,
@@ -3981,7 +3912,7 @@
     "away": "Michigan Wolverines",
     "time": "Fri 4:30 PM CT",
     "start": "2026-11-27T22:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MICH -9.5",
     "home_line": 9.5,
     "home_line_open": 7.5,
@@ -3989,10 +3920,10 @@
      -113,
      -107
     ],
-    "total": 164.5,
+    "total": 165.5,
     "total_open": 163.5,
-    "home_ml": 340,
-    "away_ml": -440,
+    "home_ml": 360,
+    "away_ml": -470,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": -7.3,
@@ -4086,7 +4017,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": -1.9
+    "total_gap": -2.9
    },
    {
     "id": "401924845",
@@ -4096,7 +4027,7 @@
     "away": "Niagara Purple Eagles",
     "time": "Fri 3:30 PM CT",
     "start": "2026-11-27T21:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LAF -4.5",
     "home_line": -4.5,
     "home_line_open": -5.5,
@@ -4212,18 +4143,18 @@
     "away": "Drake Bulldogs",
     "time": "Fri 4:30 PM CT",
     "start": "2026-11-27T22:30Z",
-    "book": "DraftKings",
-    "line": "BOIS -5.5",
-    "home_line": -5.5,
+    "book": "Draft Kings",
+    "line": "BOIS -6.5",
+    "home_line": -6.5,
     "home_line_open": -6.5,
     "spread_odds": [
-     -106,
-     -114
+     -111,
+     -109
     ],
-    "total": 157.5,
+    "total": 158.5,
     "total_open": 156.5,
-    "home_ml": -245,
-    "away_ml": 200,
+    "home_ml": -258,
+    "away_ml": 210,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 4.5,
@@ -4267,28 +4198,27 @@
     ],
     "decision": "WATCH",
     "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
+    "flags": [
+     "A model is 7+ points from the market - re-check warning, not a reason to bet"
+    ],
     "factors": [
      "Rest: Bulldogs 6 day(s), Broncos 3 day(s)",
-     "Line moved 1 pts toward Drake Bulldogs since open (-6.5 to -5.5 home)",
      "Indoors - weather does not matter"
     ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
+    "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 161.6,
-    "gap_a": -1.0,
-    "gap_b": -6.3,
-    "gap_min": 6.3,
-    "pick": "Drake Bulldogs +5.5",
-    "price": -106,
+    "gap_a": -2.0,
+    "gap_b": -7.3,
+    "gap_min": 7.3,
+    "pick": "Drake Bulldogs +6.5",
+    "price": -111,
     "side": "away",
     "fair_line": 1.9,
     "playable_to": null,
-    "sim_cover": 0.63,
+    "sim_cover": 0.663,
     "history": {
      "adj": 0.25,
      "key": "CBB spread dog",
@@ -4307,17 +4237,17 @@
     "veto": false,
     "conf": 6.1,
     "components": {
-     "efficiency": 0.7,
-     "veto": 1.5,
+     "efficiency": 0.81,
+     "veto": 1.0,
      "models": 0.5,
      "starters": 1.5,
      "coaching": 0.5,
-     "against": 0.65,
+     "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": 4.1
+    "total_gap": 3.1
    },
    {
     "id": "401919033",
@@ -4327,7 +4257,7 @@
     "away": "Wichita State Shockers",
     "time": "Fri 8:00 PM CT",
     "start": "2026-11-28T02:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UK -4.5",
     "home_line": -4.5,
     "home_line_open": -3.5,
@@ -4444,7 +4374,7 @@
     "away": "Georgetown Hoyas",
     "time": "Fri 1:30 PM CT",
     "start": "2026-11-27T19:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UCLA -7.5",
     "home_line": -7.5,
     "home_line_open": -9.5,
@@ -4559,7 +4489,7 @@
     "away": "Creighton Bluejays",
     "time": "Fri 10:00 PM CT",
     "start": "2026-11-28T04:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GONZ -6.5",
     "home_line": -6.5,
     "home_line_open": -5.5,
@@ -4675,7 +4605,7 @@
     "away": "Bellarmine Knights",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BTLR -18.5",
     "home_line": -18.5,
     "home_line_open": -19.5,
@@ -4791,7 +4721,7 @@
     "away": "Old Dominion Monarchs",
     "time": "Fri 4:00 PM CT",
     "start": "2026-11-27T22:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VT -17.5",
     "home_line": -17.5,
     "home_line_open": -18.5,
@@ -4909,7 +4839,7 @@
     "away": "Idaho Vandals",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "WSU -11.5",
     "home_line": -11.5,
     "home_line_open": -12.5,
@@ -5028,7 +4958,7 @@
     "away": "Bowling Green Falcons",
     "time": "Fri 5:00 PM CT",
     "start": "2026-11-27T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "IU -21.5",
     "home_line": -21.5,
     "home_line_open": -23.5,
@@ -5146,7 +5076,7 @@
     "away": "UMBC Retrievers",
     "time": "Fri 3:00 PM CT",
     "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "GW -21.5",
     "home_line": -21.5,
     "home_line_open": -22.5,
@@ -5262,120 +5192,6 @@
     "locked": true
    },
    {
-    "id": "401912711",
-    "sport": "CBB",
-    "game": "West Virginia Mountaineers @ North Carolina Tar Heels",
-    "home": "North Carolina Tar Heels",
-    "away": "West Virginia Mountaineers",
-    "time": "Fri 6:00 PM CT",
-    "start": "2026-11-28T00:00Z",
-    "book": "DraftKings",
-    "line": "WVU -3.5",
-    "home_line": 3.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -110,
-     -110
-    ],
-    "total": 149.5,
-    "total_open": 149.5,
-    "home_ml": 136,
-    "away_ml": -162,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -0.9,
-    "model_b": 1.0,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "4-2",
-     "5-1"
-    ],
-    "venue": "Spectrum Center",
-    "tv": "ESPN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Miles Sadler",
-      "Mouhamed Sylla"
-     ],
-     [
-      "Maximo Adams",
-      "Terrence Brown"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     8,
-     4
-    ],
-    "form5": [
-     6.6,
-     16.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Mountaineers 8 day(s), Heels 4 day(s)",
-     "Line moved 2 pts toward West Virginia Mountaineers since open (+1.5 to +3.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +16.2 a game, theirs +6.6)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 149.7,
-    "gap_a": 2.6,
-    "gap_b": 4.5,
-    "gap_min": 4.5,
-    "pick": "North Carolina Tar Heels +3.5",
-    "price": -110,
-    "side": "home",
-    "fair_line": -0.0,
-    "playable_to": null,
-    "sim_cover": 0.626,
-    "history": {
-     "adj": 0.25,
-     "key": "CBB spread dog",
-     "w": 170,
-     "l": 120,
-     "text": "Our record on CBB spread dog: 170-120 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.8,
-    "components": {
-     "efficiency": 0.5,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": 0.2
-   },
-   {
     "id": "401928624",
     "sport": "CBB",
     "game": "Missouri State Bears @ Oral Roberts Golden Eagles",
@@ -5383,7 +5199,7 @@
     "away": "Missouri State Bears",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ORU -4.5",
     "home_line": -4.5,
     "home_line_open": -2.5,
@@ -5490,52 +5306,51 @@
     "total_gap": 0.5
    },
    {
-    "id": "401921224",
+    "id": "401912711",
     "sport": "CBB",
-    "game": "Navy Midshipmen @ Fairfield Stags",
-    "home": "Fairfield Stags",
-    "away": "Navy Midshipmen",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": "DraftKings",
-    "line": "FAIR -5.5",
-    "home_line": -5.5,
-    "home_line_open": -4.5,
+    "game": "West Virginia Mountaineers @ North Carolina Tar Heels",
+    "home": "North Carolina Tar Heels",
+    "away": "West Virginia Mountaineers",
+    "time": "Fri 6:00 PM CT",
+    "start": "2026-11-28T00:00Z",
+    "book": "Draft Kings",
+    "line": "WVU -2.5",
+    "home_line": 2.5,
+    "home_line_open": 1.5,
     "spread_odds": [
-     -108,
-     -112
+     -118,
+     -103
     ],
-    "total": 134.5,
-    "total_open": 135.5,
-    "home_ml": -225,
-    "away_ml": 185,
+    "total": 148.5,
+    "total_open": 149.5,
+    "home_ml": 136,
+    "away_ml": -162,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
-    "model_a": 4.4,
-    "model_b": 2.0,
+    "model_a": -0.9,
+    "model_b": 1.0,
     "games_played": [
-     8,
+     6,
      6
     ],
-    "neutral": false,
+    "neutral": true,
     "records": [
-     "5-3",
-     "4-2"
+     "4-2",
+     "5-1"
     ],
-    "venue": "Leo D. Mahoney Arena",
-    "tv": "ESPN+, Patriot League TV",
+    "venue": "Spectrum Center",
+    "tv": "ESPN",
     "indoor": true,
     "inj_home": [],
     "inj_away": [],
     "stars": [
      [
-      "Cam Cole",
-      "David Burnett",
-      "Jordan Pennick"
+      "Miles Sadler",
+      "Mouhamed Sylla"
      ],
      [
-      "Declan Wucherpfennig",
-      "Jah Hatchett"
+      "Maximo Adams",
+      "Terrence Brown"
      ]
     ],
     "goalies": [
@@ -5543,36 +5358,37 @@
      null
     ],
     "rest": [
-     3,
-     5
+     8,
+     4
     ],
     "form5": [
-     0.8,
-     3.0
+     6.6,
+     16.2
     ],
     "decision": "PASS",
     "reason": "Neither model clears the bar.",
     "flags": [],
     "factors": [
-     "Rest: Midshipmen 3 day(s), Stags 5 day(s)",
-     "Line moved 1 pts toward Fairfield Stags since open (-4.5 to -5.5 home)",
+     "Rest: Mountaineers 8 day(s), Heels 4 day(s)",
+     "Line moved 1 pts toward West Virginia Mountaineers since open (+1.5 to +2.5 home)",
      "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
+     "Market moved toward this side since open (we get a worse number than early bettors)",
+     "Last 5 games agree (our side +16.2 a game, theirs +6.6)"
     ],
     "against": [],
     "invalidation": [
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
-    "total_model": 137.0,
-    "gap_a": -1.1,
-    "gap_b": -3.5,
+    "total_model": 149.7,
+    "gap_a": 1.6,
+    "gap_b": 3.5,
     "gap_min": 3.5,
-    "pick": "Navy Midshipmen +5.5",
-    "price": -108,
-    "side": "away",
-    "fair_line": 3.2,
+    "pick": "North Carolina Tar Heels +2.5",
+    "price": -103,
+    "side": "home",
+    "fair_line": -0.0,
     "playable_to": null,
-    "sim_cover": 0.584,
+    "sim_cover": 0.591,
     "history": {
      "adj": 0.25,
      "key": "CBB spread dog",
@@ -5601,7 +5417,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": 2.5
+    "total_gap": 1.2
    },
    {
     "id": "401920737",
@@ -5611,7 +5427,7 @@
     "away": "Northeastern Huskies",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NU -12.5",
     "home_line": -12.5,
     "home_line_open": -12.5,
@@ -5722,7 +5538,7 @@
     "away": "North Dakota State Bison",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UNT -5.5",
     "home_line": -5.5,
     "home_line_open": -6.5,
@@ -5839,7 +5655,7 @@
     "away": "TCU Horned Frogs",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BAY -4.5",
     "home_line": -4.5,
     "home_line_open": -4.5,
@@ -5954,13 +5770,13 @@
     "away": "La Salle Explorers",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LAS -9.5",
     "home_line": 9.5,
     "home_line_open": 9.5,
     "spread_odds": [
-     -108,
-     -112
+     -112,
+     -108
     ],
     "total": 148.5,
     "total_open": 149.5,
@@ -6025,7 +5841,7 @@
     "gap_b": 3.2,
     "gap_min": 3.2,
     "pick": "Bucknell Bison +9.5",
-    "price": -112,
+    "price": -108,
     "side": "home",
     "fair_line": 6.9,
     "playable_to": null,
@@ -6068,7 +5884,7 @@
     "away": "Arkansas-Pine Bluff Golden Lions",
     "time": "Fri 3:00 PM CT",
     "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIZ -48.5",
     "home_line": -48.5,
     "home_line_open": -49.5,
@@ -6189,7 +6005,7 @@
     "away": "Pacific Tigers",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PAC -6.5",
     "home_line": 6.5,
     "home_line_open": 4.5,
@@ -6306,7 +6122,7 @@
     "away": "Towson Tigers",
     "time": "Fri 5:00 PM CT",
     "start": "2026-11-27T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PENN -3.5",
     "home_line": -3.5,
     "home_line_open": -5.5,
@@ -6421,7 +6237,7 @@
     "away": "UCF Knights",
     "time": "Fri 6:00 PM CT",
     "start": "2026-11-28T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UGA -5.5",
     "home_line": -5.5,
     "home_line_open": -5.5,
@@ -6534,7 +6350,7 @@
     "away": "Jacksonville State Gamecocks",
     "time": "Fri 9:30 PM CT",
     "start": "2026-11-28T03:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "JXST -5.5",
     "home_line": 5.5,
     "home_line_open": 7.5,
@@ -6644,121 +6460,6 @@
     "total_lean": "Over 139.5 (season scoring says 149.8) - WATCH only, totals have no past-games test yet"
    },
    {
-    "id": "401929181",
-    "sport": "CBB",
-    "game": "South Alabama Jaguars @ Fresno State Bulldogs",
-    "home": "Fresno State Bulldogs",
-    "away": "South Alabama Jaguars",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": "DraftKings",
-    "line": "USA -1.5",
-    "home_line": 1.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -119,
-     -102
-    ],
-    "total": 144.5,
-    "total_open": 147.5,
-    "home_ml": 110,
-    "away_ml": -130,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -2.1,
-    "model_b": -2.0,
-    "games_played": [
-     9,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-4",
-     "4-2"
-    ],
-    "venue": "Convocation Center (LA)",
-    "tv": "YouTube",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Diego Roman",
-      "Jalen Langsy",
-      "Stephen Williams"
-     ],
-     [
-      "Bradey Henige",
-      "Roger Fabrega Urpina",
-      "Ross Candelino"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     3,
-     7
-    ],
-    "form5": [
-     7.4,
-     0.4
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Jaguars 3 day(s), Bulldogs 7 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +7.4 a game, theirs +0.4)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 158.9,
-    "gap_a": -0.6,
-    "gap_b": -0.5,
-    "gap_min": 0.6,
-    "pick": "South Alabama Jaguars -1.5",
-    "price": -119,
-    "side": "away",
-    "fair_line": -2.1,
-    "playable_to": null,
-    "sim_cover": 0.52,
-    "history": {
-     "adj": -0.12,
-     "key": "CBB spread fav",
-     "w": 16,
-     "l": 18,
-     "text": "Our record on CBB spread fav: 16-18 (last 60 days, recent counts more) -> -0.12 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.0,
-    "components": {
-     "efficiency": 0.07,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.12
-    },
-    "total_gap": 14.4,
-    "total_lean": "Over 144.5 (season scoring says 158.9) - WATCH only, totals have no past-games test yet"
-   },
-   {
     "id": "401928468",
     "sport": "CBB",
     "game": "Texas State Bobcats @ Louisiana Tech Bulldogs",
@@ -6766,7 +6467,7 @@
     "away": "Texas State Bobcats",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TXST -4.5",
     "home_line": 4.5,
     "home_line_open": 7.5,
@@ -6881,7 +6582,7 @@
     "away": "Villanova Wildcats",
     "time": "Fri 4:00 PM CT",
     "start": "2026-11-27T22:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "KU -10.5",
     "home_line": -10.5,
     "home_line_open": -12.5,
@@ -6997,18 +6698,18 @@
     "away": "Lehigh Mountain Hawks",
     "time": "Fri 6:00 PM CT",
     "start": "2026-11-28T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UCSB -13.5",
     "home_line": -13.5,
     "home_line_open": -14.5,
     "spread_odds": [
-     -103,
-     -118
+     -107,
+     -113
     ],
     "total": 144.5,
     "total_open": 145.5,
-    "home_ml": -1350,
-    "away_ml": 800,
+    "home_ml": -1200,
+    "away_ml": 750,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 9.4,
@@ -7070,7 +6771,7 @@
     "gap_b": -4.4,
     "gap_min": 4.4,
     "pick": "Lehigh Mountain Hawks +13.5",
-    "price": -103,
+    "price": -107,
     "side": "away",
     "fair_line": 9.3,
     "playable_to": null,
@@ -7113,13 +6814,13 @@
     "away": "Princeton Tigers",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "UNCW -7.5",
     "home_line": -7.5,
     "home_line_open": -8.5,
     "spread_odds": [
-     -111,
-     -109
+     -106,
+     -114
     ],
     "total": 150.5,
     "total_open": 151.5,
@@ -7184,7 +6885,7 @@
     "gap_b": -0.5,
     "gap_min": 2.8,
     "pick": "Princeton Tigers +7.5",
-    "price": -111,
+    "price": -106,
     "side": "away",
     "fair_line": 5.9,
     "playable_to": null,
@@ -7227,7 +6928,7 @@
     "away": "Radford Highlanders",
     "time": "Fri 3:00 PM CT",
     "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "AMER -6.5",
     "home_line": -6.5,
     "home_line_open": -7.5,
@@ -7235,7 +6936,7 @@
      -111,
      -108
     ],
-    "total": 141.5,
+    "total": 142.5,
     "total_open": 146.5,
     "home_ml": -305,
     "away_ml": 245,
@@ -7333,7 +7034,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": 0.7
+    "total_gap": -0.3
    },
    {
     "id": "401911380",
@@ -7343,7 +7044,7 @@
     "away": "Charleston Southern Buccaneers",
     "time": "Fri 6:00 PM CT",
     "start": "2026-11-28T00:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ETSU -9.5",
     "home_line": -9.5,
     "home_line_open": -11.5,
@@ -7458,7 +7159,7 @@
     "away": "Colgate Raiders",
     "time": "Fri 2:30 PM CT",
     "start": "2026-11-27T20:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "HOF -1.5",
     "home_line": -1.5,
     "home_line_open": -5.5,
@@ -7566,123 +7267,6 @@
     "total_gap": 4.9
    },
    {
-    "id": "401919786",
-    "sport": "CBB",
-    "game": "Maine Black Bears @ Le Moyne Dolphins",
-    "home": "Le Moyne Dolphins",
-    "away": "Maine Black Bears",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": "DraftKings",
-    "line": "LEM -1.5",
-    "home_line": -1.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -106,
-     -114
-    ],
-    "total": 138.5,
-    "total_open": 140.5,
-    "home_ml": -130,
-    "away_ml": 110,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 0.6,
-    "model_b": 2.5,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "2-5",
-     "3-4"
-    ],
-    "venue": "Kirby Sports Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Hudson Franz",
-      "Killian Gribben",
-      "Villiam Garcia Adsten"
-     ],
-     [
-      "Jayden Teat",
-      "Kaden Stuckey",
-      "Ty Francis"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     4
-    ],
-    "form5": [
-     -8.4,
-     2.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bears 6 day(s), Dolphins 4 day(s)",
-     "Line moved 3 pts toward Le Moyne Dolphins since open (+1.5 to -1.5 home)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +2.6 a game, theirs -8.4)"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 139.7,
-    "gap_a": -0.9,
-    "gap_b": 1.0,
-    "gap_min": 1.0,
-    "pick": "Le Moyne Dolphins -1.5",
-    "price": -114,
-    "side": "home",
-    "fair_line": -1.5,
-    "playable_to": null,
-    "sim_cover": 0.501,
-    "history": {
-     "adj": -0.12,
-     "key": "CBB spread fav",
-     "w": 16,
-     "l": 18,
-     "text": "Our record on CBB spread fav: 16-18 (last 60 days, recent counts more) -> -0.12 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 4.6,
-    "components": {
-     "efficiency": 0.11,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.12
-    },
-    "total_gap": 1.2
-   },
-   {
     "id": "401920543",
     "sport": "CBB",
     "game": "Miami Hurricanes @ Alabama Crimson Tide",
@@ -7690,7 +7274,7 @@
     "away": "Miami Hurricanes",
     "time": "Fri 7:30 PM CT",
     "start": "2026-11-28T01:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "MIA -2.5",
     "home_line": 2.5,
     "home_line_open": 1.5,
@@ -7805,7 +7389,7 @@
     "away": "Western Kentucky Hilltoppers",
     "time": "Fri 5:00 PM CT",
     "start": "2026-11-27T23:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "ILL -26.5",
     "home_line": -26.5,
     "home_line_open": -27.5,
@@ -7916,78 +7500,6 @@
     },
     "total_gap": -11.4,
     "total_lean": "Under 175.5 (season scoring says 164.1) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401929407",
-    "sport": "CBB",
-    "game": "Clarke Pride @ South Dakota Coyotes",
-    "home": "South Dakota Coyotes",
-    "away": "Clarke Pride",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": 9.5,
-    "games_played": [
-     1,
-     9
-    ],
-    "neutral": false,
-    "records": [
-     null,
-     "4-5"
-    ],
-    "venue": "Sanford Coyote Sports Center",
-    "tv": "Summit League Network, Midco Sports Plus",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Dion Doyle",
-      "Jonovan Howard",
-      "Lovre Stanovic"
-     ],
-     [
-      "Josiah Dotzler",
-      "Vince Buzelis"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     16,
-     2
-    ],
-    "form5": [
-     null,
-     4.0
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Pride 16 day(s), Coyotes 2 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 139.0
    },
    {
     "id": "401919021",
@@ -8281,7 +7793,7 @@
     "away": "New York Rangers",
     "time": "Fri 4:30 PM CT",
     "start": "2026-11-27T22:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NYR -180",
     "home_line": 180.0,
     "home_line_open": 1.5,
@@ -8409,13 +7921,13 @@
     "away": "Seattle Kraken",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "EDM -218",
     "home_line": -218.0,
     "home_line_open": -1.5,
     "spread_odds": [
-     -135,
-     114
+     -142,
+     120
     ],
     "total": 6.5,
     "total_open": 6.5,
@@ -8535,134 +8047,6 @@
     "stake": 0
    },
    {
-    "id": "401892803",
-    "sport": "NHL",
-    "game": "Colorado Avalanche @ Minnesota Wild",
-    "home": "Minnesota Wild",
-    "away": "Colorado Avalanche",
-    "time": "Fri 3:00 PM CT",
-    "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
-    "line": "MIN -125",
-    "home_line": -125.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -238,
-     195
-    ],
-    "total": 6.5,
-    "total_open": 6.5,
-    "home_ml": -125,
-    "away_ml": 105,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.6,
-    "model_b": 0.9,
-    "games_played": [
-     22,
-     25
-    ],
-    "neutral": false,
-    "records": [
-     "14-7-3",
-     "18-4-5"
-    ],
-    "venue": "Grand Casino Arena",
-    "tv": "ESPN+, Altitude Sports, MINNHL",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [
-     {
-      "player": "Nathan MacKinnon",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Artturi Lehkonen",
-      "Cale Makar",
-      "Martin Necas"
-     ],
-     [
-      "Kirill Kaprizov"
-     ]
-    ],
-    "goalies": [
-     "Mackenzie Blackwood",
-     "Jesper Wallstedt"
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     1.6,
-     1.6
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'). Past-games test for this kind of pick: 47.3% over 332.",
-    "flags": [],
-    "factors": [
-     "Rest: Avalanche 2 day(s), Wild 2 day(s)",
-     "Line moved 123.5 pts toward Minnesota Wild since open (-1.5 to -125 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Mackenzie Blackwood (Avalanche), Jesper Wallstedt (Wild)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past -163 (our fair price)"
-    ],
-    "total_model": 6.3,
-    "gap_a": 6.4,
-    "gap_b": 11.2,
-    "win_prob": [
-     0.38,
-     0.62
-    ],
-    "market_prob": [
-     0.468,
-     0.532
-    ],
-    "pick": "Minnesota Wild ML (-125)",
-    "price": -125,
-    "side": "home",
-    "gap_min": 6.4,
-    "fair_line": -163,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.05,
-     "key": "NHL ml",
-     "w": 45,
-     "l": 45,
-     "text": "Our record on NHL ml: 45-45 (last 60 days, recent counts more) -> -0.05 to confidence"
-    },
-    "conf": 7.1,
-    "components": {
-     "efficiency": 0.64,
-     "veto": 1.5,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.05
-    },
-    "stake": 0
-   },
-   {
     "id": "401892802",
     "sport": "NHL",
     "game": "Detroit Red Wings @ Columbus Blue Jackets",
@@ -8670,7 +8054,7 @@
     "away": "Detroit Red Wings",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "CBJ -130",
     "home_line": -130.0,
     "home_line_open": -1.5,
@@ -8804,7 +8188,7 @@
     "away": "Pittsburgh Penguins",
     "time": "Fri 7:00 PM CT",
     "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "BUF -130",
     "home_line": -130.0,
     "home_line_open": -1.5,
@@ -8938,96 +8322,103 @@
     "stake": 0
    },
    {
-    "id": "401892798",
+    "id": "401892803",
     "sport": "NHL",
-    "game": "Dallas Stars @ St. Louis Blues",
-    "home": "St. Louis Blues",
-    "away": "Dallas Stars",
-    "time": "Fri 1:00 PM CT",
-    "start": "2026-11-27T19:00Z",
-    "book": "DraftKings",
-    "line": "DAL -130",
-    "home_line": 130.0,
-    "home_line_open": 1.5,
+    "game": "Colorado Avalanche @ Minnesota Wild",
+    "home": "Minnesota Wild",
+    "away": "Colorado Avalanche",
+    "time": "Fri 3:00 PM CT",
+    "start": "2026-11-27T21:00Z",
+    "book": "Draft Kings",
+    "line": "MIN -118",
+    "home_line": -118.0,
+    "home_line_open": -1.5,
     "spread_odds": [
-     195,
-     -238
+     -238,
+     195
     ],
-    "total": 5.5,
-    "total_open": 5.5,
-    "home_ml": 110,
-    "away_ml": -130,
+    "total": 6.5,
+    "total_open": 6.5,
+    "home_ml": -118,
+    "away_ml": -102,
     "model_a_name": "Ratings",
     "model_b_name": "Last 10",
-    "model_a": 0.3,
-    "model_b": 0.7,
+    "model_a": 0.6,
+    "model_b": 0.9,
     "games_played": [
-     21,
-     23
+     22,
+     25
     ],
     "neutral": false,
     "records": [
-     "15-7-2",
-     "13-9-3"
+     "14-7-3",
+     "18-4-5"
     ],
-    "venue": "Enterprise Center",
-    "tv": "NHL Net, Blues App, BN+, Prime Video (Local)",
+    "venue": "Grand Casino Arena",
+    "tv": "ESPN+, Altitude Sports, MINNHL",
     "indoor": true,
     "inj_home": [],
-    "inj_away": [],
+    "inj_away": [
+     {
+      "player": "Nathan MacKinnon",
+      "pos": "C",
+      "status": "Out"
+     }
+    ],
     "stars": [
      [
-      "Mikko Rantanen"
+      "Artturi Lehkonen",
+      "Cale Makar",
+      "Martin Necas"
      ],
      [
-      "Mason McTavish",
-      "Robert Thomas"
+      "Kirill Kaprizov"
      ]
     ],
     "goalies": [
-     "Casey DeSmith",
-     "Joel Hofer"
+     "Mackenzie Blackwood",
+     "Jesper Wallstedt"
     ],
     "rest": [
      2,
      2
     ],
     "form5": [
-     0.4,
+     1.6,
      1.6
     ],
     "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
+    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.7 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
     "flags": [
      "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
     ],
     "factors": [
-     "Rest: Stars 2 day(s), Blues 2 day(s)",
-     "Line moved 128.5 pts toward Dallas Stars since open (+1.5 to +130 home)",
+     "Rest: Avalanche 2 day(s), Wild 2 day(s)",
+     "Line moved 116.5 pts toward Minnesota Wild since open (-1.5 to -118 home)",
      "Indoors - weather does not matter",
-     "Probable goalies: Casey DeSmith (Stars), Joel Hofer (Blues)"
+     "Probable goalies: Mackenzie Blackwood (Avalanche), Jesper Wallstedt (Wild)"
     ],
     "against": [],
     "invalidation": [
      "A different goalie starts for either team",
-     "Price moves past -140 (our fair price)"
+     "Price moves past -163 (our fair price)"
     ],
-    "total_model": 6.0,
-    "gap_a": 9.7,
-    "gap_b": 15.4,
+    "total_model": 6.3,
+    "gap_a": 7.9,
+    "gap_b": 12.7,
     "win_prob": [
-     0.417,
-     0.583
+     0.38,
+     0.62
     ],
     "market_prob": [
-     0.543,
-     0.457
+     0.483,
+     0.517
     ],
-    "pick": "St. Louis Blues ML (+110)",
-    "price": 110,
+    "pick": "Minnesota Wild ML (-118)",
+    "price": -118,
     "side": "home",
-    "gap_min": 9.7,
-    "fair_line": -140,
+    "gap_min": 7.9,
+    "fair_line": -163,
     "models_agree": true,
     "one_model": false,
     "veto": false,
@@ -9046,9 +8437,9 @@
      "l": 45,
      "text": "Our record on NHL ml: 45-45 (last 60 days, recent counts more) -> -0.05 to confidence"
     },
-    "conf": 6.9,
+    "conf": 6.7,
     "components": {
-     "efficiency": 0.97,
+     "efficiency": 0.79,
      "veto": 1.0,
      "models": 1.5,
      "starters": 1.5,
@@ -9068,7 +8459,7 @@
     "away": "Los Angeles Kings",
     "time": "Fri 3:00 PM CT",
     "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "LA -122",
     "home_line": 122.0,
     "home_line_open": 1.5,
@@ -9191,7 +8582,7 @@
     "away": "Vancouver Canucks",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "PHI -245",
     "home_line": -245.0,
     "home_line_open": -1.5,
@@ -9323,7 +8714,7 @@
     "away": "Ottawa Senators",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "TB -142",
     "home_line": -142.0,
     "home_line_open": -1.5,
@@ -9459,7 +8850,7 @@
     "away": "Florida Panthers",
     "time": "Fri 2:00 PM CT",
     "start": "2026-11-27T20:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "FLA -120",
     "home_line": 120.0,
     "home_line_open": -1.5,
@@ -9582,7 +8973,7 @@
     "away": "Winnipeg Jets",
     "time": "Fri 6:30 PM CT",
     "start": "2026-11-28T00:30Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "NYI -125",
     "home_line": -125.0,
     "home_line_open": -1.5,
@@ -9711,7 +9102,7 @@
     "away": "Vegas Golden Knights",
     "time": "Fri 3:00 PM CT",
     "start": "2026-11-27T21:00Z",
-    "book": "DraftKings",
+    "book": "Draft Kings",
     "line": "VGK -218",
     "home_line": 218.0,
     "home_line_open": 1.5,
