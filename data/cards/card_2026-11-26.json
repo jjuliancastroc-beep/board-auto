@@ -15,13 +15,13 @@
     "home_line": -3.0,
     "home_line_open": -2.5,
     "spread_odds": [
-     -118,
+     -119,
      -101
     ],
     "total": 46.5,
     "total_open": 49.5,
-    "home_ml": -156,
-    "away_ml": 132,
+    "home_ml": -155,
+    "away_ml": 131,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 2.1,
@@ -140,7 +140,7 @@
     "factors": [
      "Rest: Chiefs 4 day(s), Bills 4 day(s)",
      "Line moved 0.5 pts toward Buffalo Bills since open (-2.5 to -3 home)",
-     "Kickoff forecast: wind 23 mph (gusts 44), 35F, rain chance 100%",
+     "Kickoff forecast: wind 20 mph (gusts 42), 33F, rain chance 100%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -150,10 +150,10 @@
      "Either starting QB is ruled out or downgraded"
     ],
     "wind": {
-     "wind": 22.7,
-     "gust": 43.6,
+     "wind": 20.0,
+     "gust": 41.8,
      "rain": 100,
-     "temp": 35.2,
+     "temp": 33.0,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -168,17 +168,17 @@
     "gap_b": -0.4,
     "gap_min": 0.9,
     "pick": "Kansas City Chiefs +3",
-    "price": -118,
+    "price": -119,
     "side": "away",
     "fair_line": 2.3,
     "playable_to": null,
     "sim_cover": 0.52,
     "history": {
-     "adj": 0.16,
+     "adj": 0.15,
      "key": "spread dog",
      "w": 242,
-     "l": 188,
-     "text": "Our record on spread dog: 242-188 (last 60 days, recent counts more) -> +0.16 to confidence"
+     "l": 189,
+     "text": "Our record on spread dog: 242-189 (last 60 days, recent counts more) -> +0.15 to confidence"
     },
     "test_record": {
      "w": 11,
@@ -199,7 +199,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.16
+     "our history": 0.15
     },
     "total_gap": 1.3
    }
@@ -209,142 +209,8 @@
  },
  {
   "sport": "CFB",
-  "games": [
-   {
-    "id": "401856879",
-    "sport": "CFB",
-    "game": "TCU Horned Frogs @ Texas Tech Red Raiders",
-    "home": "Texas Tech Red Raiders",
-    "away": "TCU Horned Frogs",
-    "time": "Thu 7:00 PM CT",
-    "start": "2026-11-27T01:00Z",
-    "book": "DraftKings",
-    "line": "TTU -14",
-    "home_line": -14.0,
-    "home_line_open": -16.5,
-    "spread_odds": [
-     -115,
-     -105
-    ],
-    "total": 46.5,
-    "total_open": 55.5,
-    "home_ml": -625,
-    "away_ml": 455,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 12.9,
-    "model_b": 10.1,
-    "games_played": [
-     11,
-     11
-    ],
-    "neutral": false,
-    "records": [
-     "5-6",
-     "10-1"
-    ],
-    "venue": "Galaxy Stadium",
-    "tv": "ESPN",
-    "indoor": false,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jaden Craig",
-      "Jeremy Payne",
-      "Kari Ashley"
-     ],
-     [
-      "J'Koby Williams",
-      "Kenny Johnson",
-      "Will Hammond"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     5
-    ],
-    "form5": [
-     -2.0,
-     7.0
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
-    ],
-    "factors": [
-     "Rest: Frogs 5 day(s), Raiders 5 day(s)",
-     "Line moved 2.5 pts toward TCU Horned Frogs since open (-16.5 to -14 home)",
-     "Kickoff forecast: wind 6 mph (gusts 10), 45F, rain chance 0%"
-    ],
-    "against": [
-     "Market moved away from this side since open",
-     "Last 5 games point the other way (our side -2.0 a game, theirs +7.0)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "tier": "P4vP4",
-    "day": "Midweek",
-    "wind": {
-     "wind": 6.3,
-     "gust": 10.1,
-     "rain": 0,
-     "temp": 45.2,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "Clear",
-     "temp": 49
-    },
-    "total_model": 50.2,
-    "gap_a": -1.1,
-    "gap_b": -3.9,
-    "gap_min": 3.9,
-    "pick": "TCU Horned Frogs +14",
-    "price": -115,
-    "side": "away",
-    "fair_line": 11.5,
-    "playable_to": null,
-    "sim_cover": 0.563,
-    "history": {
-     "adj": -0.18,
-     "key": "CFB spread dog",
-     "w": 24,
-     "l": 28,
-     "text": "Our record on CFB spread dog: 24-28 (last 60 days, recent counts more) -> -0.18 to confidence"
-    },
-    "test_record": {
-     "w": 12,
-     "l": 10,
-     "n": 22,
-     "win": 0.545
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.4,
-    "components": {
-     "efficiency": 1.32,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.3,
-     "price": 0.5,
-     "situational": 0.5,
-     "our history": -0.18
-    },
-    "total_gap": 3.7
-   }
-  ],
-  "n_past": 824,
-  "model_note": "FPI and an opponent-adjusted ratings model from every FBS game this season. Checks QB status, weather and wind, conference tier and weekday (L-1112-1), key numbers."
+  "games": [],
+  "note": "No games today."
  },
  {
   "sport": "NBA",
@@ -354,6 +220,121 @@
  {
   "sport": "CBB",
   "games": [
+   {
+    "id": "401920539",
+    "sport": "CBB",
+    "game": "Alabama Crimson Tide @ Kansas State Wildcats",
+    "home": "Kansas State Wildcats",
+    "away": "Alabama Crimson Tide",
+    "time": "Thu 8:00 PM CT",
+    "start": "2026-11-27T02:00Z",
+    "book": "DraftKings",
+    "line": "ALA -13.5",
+    "home_line": 13.5,
+    "home_line_open": -12.5,
+    "spread_odds": [
+     -112,
+     -108
+    ],
+    "total": 169.5,
+    "total_open": 177.5,
+    "home_ml": 700,
+    "away_ml": -1100,
+    "model_a_name": "BPI",
+    "model_b_name": "Ratings",
+    "model_a": -11.3,
+    "model_b": -7.1,
+    "games_played": [
+     6,
+     6
+    ],
+    "neutral": true,
+    "records": [
+     "5-1",
+     "3-3"
+    ],
+    "venue": "T-Mobile Arena",
+    "tv": "ESPNU",
+    "indoor": true,
+    "inj_home": [],
+    "inj_away": [],
+    "stars": [
+     [
+      "Amari Allen"
+     ],
+     [
+      "Brandon Rechsteiner",
+      "Brock Vice"
+     ]
+    ],
+    "goalies": [
+     null,
+     null
+    ],
+    "rest": [
+     2,
+     2
+    ],
+    "form5": [
+     12.8,
+     2.8
+    ],
+    "decision": "WATCH",
+    "reason": "Only one model clears the bar - never a bet by itself.",
+    "flags": [],
+    "factors": [
+     "Rest: Tide 2 day(s), Wildcats 2 day(s)",
+     "Line moved 26 pts toward Alabama Crimson Tide since open (-12.5 to +13.5 home)",
+     "Indoors - weather does not matter",
+     "Market moved toward this side since open (we get a worse number than early bettors)"
+    ],
+    "against": [
+     "Last 5 games point the other way (our side +2.8 a game, theirs +12.8)"
+    ],
+    "invalidation": [
+     "Key starter news (CBB injury reports are thin - check before tip)"
+    ],
+    "total_model": 162.0,
+    "gap_a": 2.2,
+    "gap_b": 6.4,
+    "gap_min": 6.4,
+    "pick": "Kansas State Wildcats +13.5",
+    "price": -108,
+    "side": "home",
+    "fair_line": 9.2,
+    "playable_to": null,
+    "sim_cover": 0.653,
+    "history": {
+     "adj": 0.23,
+     "key": "CBB spread dog",
+     "w": 167,
+     "l": 120,
+     "text": "Our record on CBB spread dog: 167-120 (last 60 days, recent counts more) -> +0.23 to confidence"
+    },
+    "test_record": {
+     "w": 239,
+     "l": 225,
+     "n": 464,
+     "win": 0.515
+    },
+    "models_agree": false,
+    "one_model": true,
+    "veto": false,
+    "conf": 6.1,
+    "components": {
+     "efficiency": 0.72,
+     "veto": 1.5,
+     "models": 0.5,
+     "starters": 1.5,
+     "coaching": 0.5,
+     "against": 0.65,
+     "price": 0.0,
+     "situational": 0.5,
+     "our history": 0.23
+    },
+    "total_gap": -7.5,
+    "total_lean": "Under 169.5 (season scoring says 162.0) - WATCH only, totals have no past-games test yet"
+   },
    {
     "id": "401920531",
     "sport": "CBB",
@@ -440,125 +421,11 @@
     "playable_to": null,
     "sim_cover": 0.639,
     "history": {
-     "adj": 0.24,
+     "adj": 0.23,
      "key": "CBB spread dog",
      "w": 167,
-     "l": 119,
-     "text": "Our record on CBB spread dog: 167-119 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.2,
-    "components": {
-     "efficiency": 0.76,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": -0.4
-   },
-   {
-    "id": "401920539",
-    "sport": "CBB",
-    "game": "Alabama Crimson Tide @ Kansas State Wildcats",
-    "home": "Kansas State Wildcats",
-    "away": "Alabama Crimson Tide",
-    "time": "Thu 8:00 PM CT",
-    "start": "2026-11-27T02:00Z",
-    "book": "DraftKings",
-    "line": "ALA -13.5",
-    "home_line": 13.5,
-    "home_line_open": -12.5,
-    "spread_odds": [
-     -112,
-     -108
-    ],
-    "total": 169.5,
-    "total_open": 177.5,
-    "home_ml": 700,
-    "away_ml": -1100,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -11.3,
-    "model_b": -7.1,
-    "games_played": [
-     6,
-     6
-    ],
-    "neutral": true,
-    "records": [
-     "5-1",
-     "3-3"
-    ],
-    "venue": "T-Mobile Arena",
-    "tv": "ESPNU",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Amari Allen"
-     ],
-     [
-      "Brandon Rechsteiner",
-      "Brock Vice"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     12.8,
-     2.8
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [],
-    "factors": [
-     "Rest: Tide 2 day(s), Wildcats 2 day(s)",
-     "Line moved 26 pts toward Alabama Crimson Tide since open (-12.5 to +13.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +2.8 a game, theirs +12.8)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 162.0,
-    "gap_a": 2.2,
-    "gap_b": 6.4,
-    "gap_min": 6.4,
-    "pick": "Kansas State Wildcats +13.5",
-    "price": -108,
-    "side": "home",
-    "fair_line": 9.2,
-    "playable_to": null,
-    "sim_cover": 0.653,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 167,
-     "l": 119,
-     "text": "Our record on CBB spread dog: 167-119 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 120,
+     "text": "Our record on CBB spread dog: 167-120 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -571,7 +438,7 @@
     "veto": false,
     "conf": 6.1,
     "components": {
-     "efficiency": 0.72,
+     "efficiency": 0.76,
      "veto": 1.5,
      "models": 0.5,
      "starters": 1.5,
@@ -579,10 +446,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.23
     },
-    "total_gap": -7.5,
-    "total_lean": "Under 169.5 (season scoring says 162.0) - WATCH only, totals have no past-games test yet"
+    "total_gap": -0.4
    },
    {
     "id": "401920530",
@@ -787,11 +653,11 @@
     "playable_to": null,
     "sim_cover": 0.569,
     "history": {
-     "adj": 0.24,
+     "adj": 0.23,
      "key": "CBB spread dog",
      "w": 167,
-     "l": 119,
-     "text": "Our record on CBB spread dog: 167-119 (last 60 days, recent counts more) -> +0.24 to confidence"
+     "l": 120,
+     "text": "Our record on CBB spread dog: 167-120 (last 60 days, recent counts more) -> +0.23 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -812,126 +678,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.24
+     "our history": 0.23
     },
     "total_gap": 0.3
-   },
-   {
-    "id": "401911523",
-    "sport": "CBB",
-    "game": "UC Davis Aggies @ Jacksonville State Gamecocks",
-    "home": "Jacksonville State Gamecocks",
-    "away": "UC Davis Aggies",
-    "time": "Thu 7:00 PM CT",
-    "start": "2026-11-27T01:00Z",
-    "book": "DraftKings",
-    "line": "JXST -2.5",
-    "home_line": -2.5,
-    "home_line_open": 1.5,
-    "spread_odds": [
-     -118,
-     -102
-    ],
-    "total": 136.5,
-    "total_open": 138.5,
-    "home_ml": 130,
-    "away_ml": -155,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 2.2,
-    "model_b": 1.6,
-    "games_played": [
-     6,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "4-2",
-     "4-3"
-    ],
-    "venue": "Resorts World Event Center",
-    "tv": "FloSports",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Brayden Fagbemi",
-      "Jalen Stokes",
-      "Veniamin Abosi"
-     ],
-     [
-      "Chris Lockett Jr.",
-      "Ethan Croley",
-      "Jordan Stiemke"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     7.8,
-     -4.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Aggies 1 day(s), Gamecocks 1 day(s)",
-     "Line moved 4 pts toward Jacksonville State Gamecocks since open (+1.5 to -2.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +7.8 a game, theirs -4.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 147.6,
-    "gap_a": -0.3,
-    "gap_b": -0.9,
-    "gap_min": 0.9,
-    "pick": "UC Davis Aggies +2.5",
-    "price": -118,
-    "side": "away",
-    "fair_line": 1.9,
-    "playable_to": null,
-    "sim_cover": 0.52,
-    "history": {
-     "adj": 0.24,
-     "key": "CBB spread dog",
-     "w": 167,
-     "l": 119,
-     "text": "Our record on CBB spread dog: 167-119 (last 60 days, recent counts more) -> +0.24 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.1,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.24
-    },
-    "total_gap": 11.1,
-    "total_lean": "Over 136.5 (season scoring says 147.6) - WATCH only, totals have no past-games test yet"
    },
    {
     "id": "401917546",
