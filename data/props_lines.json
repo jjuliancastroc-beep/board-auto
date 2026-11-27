@@ -173,12 +173,12 @@
   "start": "2026-11-28T00:00:00Z",
   "line": 3.5,
   "pr": 0.6021,
-  "mh": 0.568,
+  "mh": 0.554,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.5578,
-  "conf": 1.7,
+  "side": "higher",
+  "edge": 0.1,
+  "bk": 0.5565,
+  "conf": 5.7,
   "tmo": 0
  },
  "2026-11-27|3032977|rebounds": {
@@ -320,8 +320,8 @@
   "mh": 0.424,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4221,
+  "edge": 0.0,
+  "bk": 0.4234,
   "conf": 3.4,
   "tmo": 0
  },
@@ -342,13 +342,13 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 28.5,
-  "pr": 0.6866,
+  "pr": 0.6843,
   "mh": 0.506,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 5.9,
+  "conf": 5.8,
   "tmo": 0
  },
  "2026-11-27|4278053|points": {
@@ -395,10 +395,10 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 11.5,
   "pr": 0.6565,
-  "mh": 0.529,
+  "mh": 0.519,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
+  "edge": 0.5,
   "bk": 0.5298,
   "conf": 5.8,
   "tmo": 0
@@ -541,14 +541,14 @@
   "aid": "3136195",
   "eid": "401909326",
   "start": "2026-11-28T00:00:00Z",
-  "line": 38.5,
-  "pr": 0.5743,
-  "mh": 0.514,
+  "line": 39.5,
+  "pr": 0.5581,
+  "mh": 0.482,
   "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.5343,
-  "conf": 5.3,
+  "side": "lower",
+  "edge": 0.3,
+  "bk": 0.4752,
+  "conf": 1.6,
   "tmo": 0
  },
  "2026-11-27|5144959|passing_tds": {
@@ -1035,7 +1035,7 @@
   "start": "2026-11-28T00:00:00Z",
   "line": 6.5,
   "pr": 0.5161,
-  "mh": 0.504,
+  "mh": 0.494,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -1057,10 +1057,10 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 24.5,
   "pr": 0.5103,
-  "mh": 0.498,
+  "mh": 0.524,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.3,
+  "edge": 1.0,
   "bk": 0.545,
   "conf": 5.9,
   "tmo": 1
@@ -1279,10 +1279,10 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 1.5,
   "pr": 0.605,
-  "mh": 0.48,
+  "mh": 0.476,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
+  "edge": 0.2,
   "bk": 0.4803,
   "conf": 4.3,
   "tmo": 0
@@ -1303,10 +1303,10 @@
   "pr": 0.5922,
   "mh": 0.432,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4275,
-  "conf": 3.4,
+  "side": "higher",
+  "edge": 0.1,
+  "bk": 0.4332,
+  "conf": 4.5,
   "tmo": 0
  },
  "2026-11-27|4278053|rebs_asts": {
@@ -1348,7 +1348,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 73.5,
-  "pr": 0.4012,
+  "pr": 0.3988,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -1570,8 +1570,8 @@
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.4743,
+  "edge": 0.3,
+  "bk": 0.4737,
   "conf": 4.1,
   "tmo": 0
  },
@@ -1592,8 +1592,8 @@
   "mh": 0.471,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.4791,
+  "edge": 0.7,
+  "bk": 0.4843,
   "conf": 4.9,
   "tmo": 0
  },
@@ -2058,8 +2058,8 @@
   "mh": 0.521,
   "call": "PASS",
   "side": "lower",
-  "edge": 2.0,
-  "bk": 0.4804,
+  "edge": 1.3,
+  "bk": 0.4955,
   "conf": 4.9,
   "tmo": 0
  },
@@ -2080,8 +2080,8 @@
   "mh": 0.43,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.4381,
+  "edge": 0.5,
+  "bk": 0.44,
   "conf": 2.4,
   "tmo": 0
  },
@@ -2272,8 +2272,8 @@
   "mh": 0.514,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.7,
-  "bk": 0.4804,
+  "edge": 1.8,
+  "bk": 0.4784,
   "conf": 3.3,
   "tmo": 0
  },
@@ -2390,8 +2390,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.2,
-  "bk": 0.4765,
+  "edge": 0.4,
+  "bk": 0.4916,
   "conf": 4.7,
   "tmo": 0
  },
@@ -2549,7 +2549,7 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 7.5,
   "pr": 0.3477,
-  "mh": 0.526,
+  "mh": 0.534,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -2596,7 +2596,7 @@
   "eid": "401858544",
   "start": "2026-11-28T00:30:00Z",
   "line": 4.5,
-  "pr": 0.639,
+  "pr": 0.6371,
   "mh": 0.568,
   "call": "PASS",
   "side": "higher",
@@ -2623,7 +2623,7 @@
   "call": "PASS",
   "side": "higher",
   "edge": 1.4,
-  "bk": 0.5101,
+  "bk": 0.5106,
   "conf": 3.2,
   "tmo": 0
  },
@@ -2762,7 +2762,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 28.5,
-  "pr": 0.4514,
+  "pr": 0.4493,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -2932,8 +2932,8 @@
   "mh": 0.422,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.9,
-  "bk": 0.4391,
+  "edge": 0.7,
+  "bk": 0.4351,
   "conf": 2.4,
   "tmo": 0
  },
@@ -3195,14 +3195,14 @@
   "aid": "1966",
   "eid": "401909328",
   "start": "2026-11-28T00:30:00Z",
-  "line": 17.5,
-  "pr": 0.5098,
-  "mh": 0.524,
+  "line": 18.5,
+  "pr": 0.4402,
+  "mh": 0.471,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.1,
-  "bk": 0.5651,
-  "conf": 4.4,
+  "edge": 0.9,
+  "bk": 0.4896,
+  "conf": 3.8,
   "tmo": 1
  },
  "2026-11-27|3149673|pts_rebs_asts": {
@@ -3543,12 +3543,12 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 8.5,
   "pr": 0.5663,
-  "mh": 0.529,
+  "mh": 0.504,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.5225,
-  "conf": 2.4,
+  "side": "higher",
+  "edge": 0.6,
+  "bk": 0.5162,
+  "conf": 4.8,
   "tmo": 1
  },
  "2026-11-27|4017837|pts_rebs": {
@@ -3796,8 +3796,8 @@
   "mh": 0.498,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.2,
-  "bk": 0.5226,
+  "edge": 1.7,
+  "bk": 0.5325,
   "conf": 3.7,
   "tmo": 0
  },
@@ -3862,13 +3862,13 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 29.5,
-  "pr": 0.4854,
+  "pr": 0.4832,
   "mh": 0.496,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.9,
+  "conf": 3.8,
   "tmo": 0
  },
  "2026-11-27|4685383|receiving_yds": {
@@ -4102,8 +4102,8 @@
   "mh": 0.519,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.9,
-  "bk": 0.5004,
+  "edge": 1.5,
+  "bk": 0.4893,
   "conf": 1.9,
   "tmo": 0
  },
@@ -4195,10 +4195,10 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 20.5,
   "pr": 0.4743,
-  "mh": 0.487,
+  "mh": 0.496,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.5,
+  "edge": 0.9,
   "bk": 0.4771,
   "conf": 2.8,
   "tmo": 0
@@ -4276,8 +4276,8 @@
   "mh": 0.481,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4909,
+  "edge": 0.4,
+  "bk": 0.4888,
   "conf": 2.9,
   "tmo": 0
  },
@@ -4594,8 +4594,8 @@
   "mh": 0.476,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4808,
+  "edge": 0.3,
+  "bk": 0.4812,
   "conf": 5.2,
   "tmo": 0
  },
@@ -4735,11 +4735,11 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 24.5,
   "pr": 0.6075,
-  "mh": 0.509,
+  "mh": 0.533,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.4,
-  "bk": 0.5577,
+  "edge": 1.3,
+  "bk": 0.5597,
   "conf": 3.5,
   "tmo": 1
  },
@@ -4892,7 +4892,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 70.5,
-  "pr": 0.4874,
+  "pr": 0.4848,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -5145,10 +5145,10 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 3.5,
   "pr": 0.5259,
-  "mh": 0.486,
+  "mh": 0.468,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.7,
+  "edge": 0.8,
   "bk": 0.4523,
   "conf": 3.4,
   "tmo": 0
@@ -5196,8 +5196,8 @@
   "mh": 0.426,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4277,
+  "edge": 0.4,
+  "bk": 0.4339,
   "conf": 2.4,
   "tmo": 0
  },
@@ -5267,7 +5267,7 @@
   "call": "PASS",
   "side": "lower",
   "edge": 0.5,
-  "bk": 0.4854,
+  "bk": 0.4869,
   "conf": 3.7,
   "tmo": 1
  },
@@ -5288,8 +5288,8 @@
   "mh": 0.524,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5115,
+  "edge": 0.4,
+  "bk": 0.5166,
   "conf": 5.0,
   "tmo": 0
  },
@@ -5398,8 +5398,8 @@
   "mh": 0.459,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.9,
-  "bk": 0.44,
+  "edge": 1.2,
+  "bk": 0.436,
   "conf": 3.4,
   "tmo": 0
  },
@@ -5560,7 +5560,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 273.5,
-  "pr": 0.28,
+  "pr": 0.2748,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -5586,7 +5586,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 2.5,
-  "pr": 0.3749,
+  "pr": 0.3731,
   "mh": 0.462,
   "call": "PASS",
   "side": "higher",
@@ -5908,8 +5908,8 @@
   "mh": 0.423,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.0,
-  "bk": 0.4223,
+  "edge": 0.1,
+  "bk": 0.4202,
   "conf": 4.5,
   "tmo": 0
  },
@@ -6182,8 +6182,8 @@
   "mh": 0.533,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.8,
-  "bk": 0.4977,
+  "edge": 2.1,
+  "bk": 0.4902,
   "conf": 3.0,
   "tmo": 0
  },
@@ -6204,8 +6204,8 @@
   "mh": 0.551,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5421,
+  "edge": 0.5,
+  "bk": 0.5415,
   "conf": 4.1,
   "tmo": 0
  },
@@ -6275,12 +6275,12 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 2.5,
   "pr": 0.5409,
-  "mh": 0.571,
+  "mh": 0.512,
   "call": "PASS",
-  "side": "lower",
+  "side": "higher",
   "edge": 0.7,
-  "bk": 0.5571,
-  "conf": 2.2,
+  "bk": 0.5265,
+  "conf": 3.0,
   "tmo": 0
  },
  "2026-11-27|4397077|rebs_asts": {
@@ -6300,8 +6300,8 @@
   "mh": 0.464,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4766,
+  "edge": 0.7,
+  "bk": 0.4788,
   "conf": 5.7,
   "tmo": 0
  },
@@ -6403,10 +6403,10 @@
   "pr": 0.3423,
   "mh": 0.514,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.5165,
-  "conf": 2.9,
+  "side": "lower",
+  "edge": 1.0,
+  "bk": 0.4947,
+  "conf": 5.0,
   "tmo": 0
  },
  "2026-11-27|3112335|rebounds": {
@@ -6496,8 +6496,8 @@
   "mh": 0.538,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.5,
-  "bk": 0.5285,
+  "edge": 0.1,
+  "bk": 0.5352,
   "conf": 4.5,
   "tmo": 0
  },
@@ -6517,10 +6517,10 @@
   "pr": 0.3466,
   "mh": 0.519,
   "call": "PASS",
-  "side": "lower",
-  "edge": 2.0,
-  "bk": 0.4784,
-  "conf": 4.9,
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 2.9,
   "tmo": 0
  },
  "2026-11-27|3149673|rebs_asts": {
@@ -6607,7 +6607,7 @@
   "call": "PASS",
   "side": "lower",
   "edge": 0.1,
-  "bk": 0.5219,
+  "bk": 0.5212,
   "conf": 3.3,
   "tmo": 0
  },
@@ -6672,8 +6672,8 @@
   "mh": 0.587,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.1,
-  "bk": 0.5656,
+  "edge": 0.8,
+  "bk": 0.5715,
   "conf": 3.5,
   "tmo": 0
  },
@@ -6896,8 +6896,8 @@
   "mh": 0.494,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4916,
+  "edge": 0.4,
+  "bk": 0.4863,
   "conf": 4.6,
   "tmo": 0
  },
@@ -7070,8 +7070,8 @@
   "mh": 0.506,
   "call": "PASS",
   "side": "lower",
-  "edge": 2.5,
-  "bk": 0.4562,
+  "edge": 2.4,
+  "bk": 0.4581,
   "conf": 2.2,
   "tmo": 0
  },
@@ -7382,7 +7382,7 @@
   "eid": "401858544",
   "start": "2026-11-28T00:30:00Z",
   "line": 3.5,
-  "pr": 0.3032,
+  "pr": 0.3019,
   "mh": 0.416,
   "call": "PASS",
   "side": "higher",
@@ -8111,10 +8111,10 @@
   "pr": 0.4444,
   "mh": 0.5,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4961,
-  "conf": 4.0,
+  "side": "higher",
+  "edge": 0.0,
+  "bk": 0.5005,
+  "conf": 2.9,
   "tmo": 0
  },
  "2026-11-27|3149673|assists": {
@@ -8156,8 +8156,8 @@
   "mh": 0.514,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5027,
+  "edge": 0.2,
+  "bk": 0.5104,
   "conf": 4.0,
   "tmo": 0
  },
@@ -8251,13 +8251,13 @@
   "aid": "5149077",
   "eid": "401909330",
   "start": "2026-11-28T01:00:00Z",
-  "line": 16.5,
-  "pr": 0.4028,
-  "mh": 0.471,
+  "line": 15.5,
+  "pr": 0.4208,
+  "mh": 0.529,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4744,
+  "edge": 0.0,
+  "bk": null,
   "conf": 2.4,
   "tmo": 0
  },
@@ -8530,7 +8530,7 @@
   "eid": "401858544",
   "start": "2026-11-28T00:30:00Z",
   "line": 3.5,
-  "pr": 0.3239,
+  "pr": 0.3228,
   "mh": 0.459,
   "call": "PASS",
   "side": "higher",
@@ -8775,10 +8775,10 @@
   "pr": 0.5681,
   "mh": 0.488,
   "call": "PASS",
-  "side": "lower",
+  "side": "higher",
   "edge": 0.1,
-  "bk": 0.4864,
-  "conf": 2.1,
+  "bk": 0.4901,
+  "conf": 4.1,
   "tmo": 0
  },
  "2026-11-27|4918103|receiving_yds": {
@@ -9020,8 +9020,8 @@
   "mh": 0.282,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.281,
+  "edge": 0.0,
+  "bk": 0.2815,
   "conf": 7.2,
   "tmo": 0
  },
@@ -9131,12 +9131,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.1791,
-  "mh": 0.31,
+  "mh": 0.361,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.3103,
-  "conf": 3.1,
+  "side": "lower",
+  "edge": 1.9,
+  "bk": 0.323,
+  "conf": 5.7,
   "tmo": 0
  },
  "2026-11-27|5149077|rebounds": {
@@ -9330,8 +9330,8 @@
   "mh": 0.514,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": 0.5148,
+  "edge": 0.1,
+  "bk": 0.5158,
   "conf": 2.5,
   "tmo": 0
  },
@@ -9552,8 +9552,8 @@
   "mh": 0.491,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5026,
+  "edge": 0.3,
+  "bk": 0.498,
   "conf": 2.9,
   "tmo": 0
  },
@@ -9718,8 +9718,8 @@
   "mh": 0.578,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5903,
+  "edge": 0.4,
+  "bk": 0.587,
   "conf": 2.6,
   "tmo": 0
  },
@@ -10082,8 +10082,8 @@
   "mh": 0.48,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.1,
-  "bk": 0.5212,
+  "edge": 1.9,
+  "bk": 0.5187,
   "conf": 5.7,
   "tmo": 0
  },
@@ -10171,7 +10171,7 @@
   "call": "PASS",
   "side": "lower",
   "edge": 0.4,
-  "bk": 0.5825,
+  "bk": 0.5833,
   "conf": 3.1,
   "tmo": 0
  },
@@ -10324,8 +10324,8 @@
   "mh": 0.509,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5208,
+  "edge": 0.8,
+  "bk": 0.5242,
   "conf": 4.8,
   "tmo": 0
  },
@@ -10541,10 +10541,10 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 6.5,
   "pr": 0.3292,
-  "mh": 0.545,
+  "mh": 0.541,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.8,
+  "edge": 0.6,
   "bk": 0.5298,
   "conf": 4.6,
   "tmo": 0
@@ -10632,8 +10632,8 @@
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4712,
+  "edge": 0.3,
+  "bk": 0.4733,
   "conf": 3.7,
   "tmo": 0
  },
@@ -10829,10 +10829,10 @@
   "pr": 0.4046,
   "mh": 0.471,
   "call": "PASS",
-  "side": "lower",
+  "side": "higher",
   "edge": 0.0,
-  "bk": 0.4707,
-  "conf": 3.8,
+  "bk": 0.4716,
+  "conf": 2.8,
   "tmo": 0
  },
  "2026-11-27|5041939|rebounds": {
@@ -10893,12 +10893,12 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 22.5,
   "pr": 0.4698,
-  "mh": 0.514,
+  "mh": 0.498,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.505,
-  "conf": 2.8,
+  "side": "higher",
+  "edge": 0.2,
+  "bk": 0.501,
+  "conf": 3.4,
   "tmo": 0
  },
  "2026-11-27|6442|three_points_made": {
@@ -10937,10 +10937,10 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 1.5,
   "pr": 0.5051,
-  "mh": 0.494,
+  "mh": 0.502,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.9,
+  "edge": 0.5,
   "bk": 0.5122,
   "conf": 2.1,
   "tmo": 0
@@ -11050,8 +11050,8 @@
   "mh": 0.524,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5315,
+  "edge": 0.7,
+  "bk": 0.5383,
   "conf": 2.9,
   "tmo": 0
  },
@@ -11135,7 +11135,7 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 2.5,
   "pr": 0.3808,
-  "mh": 0.399,
+  "mh": 0.388,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -11177,13 +11177,13 @@
   "aid": "3136193",
   "eid": "401909332",
   "start": "2026-11-28T02:00:00Z",
-  "line": 33.5,
-  "pr": 0.443,
-  "mh": 0.524,
+  "line": 34.5,
+  "pr": 0.3896,
+  "mh": 0.48,
   "call": "PASS",
   "side": "higher",
   "edge": 0.3,
-  "bk": 0.5306,
+  "bk": 0.4858,
   "conf": 2.4,
   "tmo": 0
  },
@@ -11270,185 +11270,9 @@
   "mh": 0.425,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.2,
-  "bk": 0.421,
+  "edge": 0.0,
+  "bk": 0.4247,
   "conf": 6.5,
-  "tmo": 0
- },
- "2026-11-27|2967072|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.599
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "2967072",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.7757,
-  "mh": 0.602,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5991,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5080143|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.584
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5080143",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.7394,
-  "mh": 0.612,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.6152,
-  "conf": 6.2,
-  "tmo": 0
- },
- "2026-11-27|3114778|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.527
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3114778",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6258,
-  "mh": 0.538,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5297,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4024857|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.667
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4024857",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.3356,
-  "mh": 0.366,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.3521,
-  "conf": 5.9,
-  "tmo": 0
- },
- "2026-11-27|2563036|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.553
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2563036",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5497,
-  "mh": 0.554,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5511,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|4268466|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.591
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4268466",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6053,
-  "mh": 0.568,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5798,
-  "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|4024857|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.549
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4024857",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6891,
-  "mh": 0.539,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.3,
-  "bk": 0.5655,
-  "conf": 5.5,
-  "tmo": 0
- },
- "2026-11-27|4352750|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.506
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4352750",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.729,
-  "mh": 0.619,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.6139,
-  "conf": 3.4,
   "tmo": 0
  },
  "2026-11-27|5430|shots": {
@@ -11473,72 +11297,6 @@
   "conf": 2.6,
   "tmo": 0
  },
- "2026-11-27|3041994|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.557
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3041994",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6127,
-  "mh": 0.576,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5832,
-  "conf": 5.2,
-  "tmo": 0
- },
- "2026-11-27|5080143|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.418
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5080143",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5943,
-  "mh": 0.455,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.0,
-  "bk": 0.4341,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|2968772|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.62
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2968772",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6829,
-  "mh": 0.632,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.6373,
-  "conf": 6.2,
-  "tmo": 0
- },
  "2026-11-27|4233637|points": {
   "first": {
    "Underdog": [
@@ -11559,50 +11317,6 @@
   "edge": 0.7,
   "bk": 0.6192,
   "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|3899949|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.554
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3899949",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.567,
-  "mh": 0.584,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.5888,
-  "conf": 5.0,
-  "tmo": 0
- },
- "2026-11-27|3114778|shots": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.583
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3114778",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.6198,
-  "mh": 0.576,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.5608,
-  "conf": 2.4,
   "tmo": 0
  },
  "2026-11-27|4874740|shots": {
@@ -11627,50 +11341,6 @@
   "conf": 2.4,
   "tmo": 0
  },
- "2026-11-27|2968772|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.584
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "2968772",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.5405,
-  "mh": 0.558,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5665,
-  "conf": 4.1,
-  "tmo": 0
- },
- "2026-11-27|5037|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.548
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5037",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.7082,
-  "mh": 0.628,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.6117,
-  "conf": 2.2,
-  "tmo": 0
- },
  "2026-11-27|4233875|points": {
   "first": {
    "Underdog": [
@@ -11693,50 +11363,6 @@
   "conf": 6.7,
   "tmo": 0
  },
- "2026-11-27|4268771|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.638
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4268771",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6508,
-  "mh": 0.615,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.6218,
-  "conf": 5.4,
-  "tmo": 0
- },
- "2026-11-27|4024123|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.649
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4024123",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.2928,
-  "mh": 0.357,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3583,
-  "conf": 2.2,
-  "tmo": 0
- },
  "2026-11-27|3899938|points": {
   "first": {
    "Underdog": [
@@ -11757,72 +11383,6 @@
   "edge": 0.2,
   "bk": 0.6359,
   "conf": 6.6,
-  "tmo": 0
- },
- "2026-11-27|3067951|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.563
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3067951",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5483,
-  "mh": 0.536,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5438,
-  "conf": 6.0,
-  "tmo": 0
- },
- "2026-11-27|5208|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.563
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5208",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6543,
-  "mh": 0.634,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.6219,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|2562605|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.48
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "2562605",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.5525,
-  "mh": 0.447,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4579,
-  "conf": 6.0,
   "tmo": 0
  },
  "2026-11-27|4874740|points": {
@@ -11891,94 +11451,6 @@
   "conf": 2.1,
   "tmo": 0
  },
- "2026-11-27|5436|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.452
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5436",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4683,
-  "mh": 0.464,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.4488,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3067951|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.509
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3067951",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4984,
-  "mh": 0.475,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.3,
-  "bk": 0.5004,
-  "conf": 5.1,
-  "tmo": 0
- },
- "2026-11-27|4268466|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.42
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4268466",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.45,
-  "mh": 0.455,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.9,
-  "bk": 0.4363,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3114778|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.412
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3114778",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3864,
-  "mh": 0.412,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.5,
-  "tmo": 0
- },
  "2026-11-27|4565239|shots": {
   "first": {
    "Underdog": [
@@ -12001,600 +11473,6 @@
   "conf": 4.9,
   "tmo": 0
  },
- "2026-11-27|4352699|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.557
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4352699",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5954,
-  "mh": 0.588,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.5736,
-  "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|2562636|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.377
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2562636",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4496,
-  "mh": 0.39,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.3997,
-  "conf": 4.8,
-  "tmo": 0
- },
- "2026-11-27|3648008|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.443
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3648008",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4008,
-  "mh": 0.446,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.9,
-  "bk": 0.4277,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|4024857|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.351
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4024857",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5601,
-  "mh": 0.346,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|5793|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.595
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5793",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5524,
-  "mh": 0.549,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.9,
-  "bk": 0.5663,
-  "conf": 5.9,
-  "tmo": 0
- },
- "2026-11-27|3899978|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.553
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3899978",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4321,
-  "mh": 0.541,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.5,
-  "bk": 0.5102,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|4352750|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.412
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4352750",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5584,
-  "mh": 0.496,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.5,
-  "conf": 4.6,
-  "tmo": 0
- },
- "2026-11-27|3899949|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.398
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3899949",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4051,
-  "mh": 0.424,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4337,
-  "conf": 4.7,
-  "tmo": 0
- },
- "2026-11-27|5208|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.524
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5208",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4677,
-  "mh": 0.536,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5343,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|4233555|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.588
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4233555",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5152,
-  "mh": 0.584,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.6032,
-  "conf": 4.6,
-  "tmo": 0
- },
- "2026-11-27|3899951|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.544
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3899951",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4697,
-  "mh": 0.539,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.5335,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|5436|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.588
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5436",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5927,
-  "mh": 0.619,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.6113,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|5208|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.429
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5208",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4707,
-  "mh": 0.455,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4679,
-  "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|5080143|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.289
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5080143",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5026,
-  "mh": 0.289,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.0,
-  "tmo": 0
- },
- "2026-11-27|4697413|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.512
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4697413",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5421,
-  "mh": 0.5,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.5051,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4874723|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.549
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4874723",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4456,
-  "mh": 0.568,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5764,
-  "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|3149843|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.541
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3149843",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5686,
-  "mh": 0.545,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5324,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|5436|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.502
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5436",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5578,
-  "mh": 0.554,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5427,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|4268771|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.515
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4268771",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.6089,
-  "mh": 0.524,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5161,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3648008|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.583
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3648008",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4575,
-  "mh": 0.536,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.5506,
-  "conf": 5.0,
-  "tmo": 0
- },
- "2026-11-27|5080207|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.498
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5080207",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5205,
-  "mh": 0.486,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 5.0,
-  "tmo": 0
- },
- "2026-11-27|3149843|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.514
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3149843",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.5017,
-  "mh": 0.475,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4716,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|2563036|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.389
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2563036",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3536,
-  "mh": 0.385,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4019,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|3648008|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.244
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3648008",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3216,
-  "mh": 0.202,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.2029,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5216878|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.476
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5216878",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.539,
-  "mh": 0.525,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5124,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5080207|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.401
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5080207",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4098,
-  "mh": 0.432,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4281,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|5216878|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.392
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5216878",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3953,
-  "mh": 0.366,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.3863,
-  "conf": 4.0,
-  "tmo": 0
- },
  "2026-11-27|4697409|points": {
   "first": {
    "Underdog": [
@@ -12615,72 +11493,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|3899978|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.347
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3899978",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2899,
-  "mh": 0.304,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3068,
-  "conf": 3.0,
-  "tmo": 0
- },
- "2026-11-27|3067951|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.266
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3067951",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3609,
-  "mh": 0.272,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.262,
-  "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|3149843|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.446
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3149843",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5644,
-  "mh": 0.436,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.5,
-  "bk": 0.4658,
-  "conf": 4.1,
   "tmo": 0
  },
  "2026-11-27|3904183|shots": {
@@ -12727,226 +11539,6 @@
   "conf": 3.2,
   "tmo": 0
  },
- "2026-11-27|4587843|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.422
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4587843",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3886,
-  "mh": 0.39,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.3853,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|4874730|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.509
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4874730",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4409,
-  "mh": 0.504,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5024,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|3114778|points": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.377
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3114778",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.417,
-  "mh": 0.394,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4049,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|4565222|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.576
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4565222",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5841,
-  "mh": 0.591,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 2.1,
-  "bk": 0.5499,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3041994|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.304
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3041994",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3588,
-  "mh": 0.31,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3113,
-  "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|3114778|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.429
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3114778",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3807,
-  "mh": 0.432,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4341,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|5216878|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.32
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5216878",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3323,
-  "mh": 0.334,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.3191,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4268466|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.325
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4268466",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3025,
-  "mh": 0.329,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3797|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.429
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3797",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3776,
-  "mh": 0.381,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3852,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|5080207|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.219
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5080207",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3465,
-  "mh": 0.232,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.2333,
-  "conf": 3.6,
-  "tmo": 0
- },
  "2026-11-27|4697409|assists": {
   "first": {
    "Underdog": [
@@ -12967,72 +11559,6 @@
   "edge": 0.0,
   "bk": 0.3735,
   "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|5037|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.356
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5037",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4154,
-  "mh": 0.398,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4099,
-  "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|4874723|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.285
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4874723",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3475,
-  "mh": 0.285,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|4024123|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.464
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4024123",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.514,
-  "mh": 0.475,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4788,
-  "conf": 3.5,
   "tmo": 0
  },
  "2026-11-27|4233536|shots": {
@@ -13101,94 +11627,6 @@
   "conf": 3.4,
   "tmo": 0
  },
- "2026-11-27|3988803|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.568
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3988803",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3397,
-  "mh": 0.558,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.5637,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4024868|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.558
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4024868",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5515,
-  "mh": 0.584,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.5807,
-  "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|4352750|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.28
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4352750",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4175,
-  "mh": 0.299,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.3184,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|4024123|shots": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.451
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4024123",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.4527,
-  "mh": 0.475,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.4654,
-  "conf": 3.7,
-  "tmo": 0
- },
  "2026-11-27|3899938|assists": {
   "first": {
    "Underdog": [
@@ -13209,50 +11647,6 @@
   "edge": 0.1,
   "bk": 0.4886,
   "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|2563036|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.231
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "2563036",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1379,
-  "mh": 0.231,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5037|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.471
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5037",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4032,
-  "mh": 0.461,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.4475,
-  "conf": 5.2,
   "tmo": 0
  },
  "2026-11-27|4233637|shots": {
@@ -13321,182 +11715,6 @@
   "conf": 2.7,
   "tmo": 0
  },
- "2026-11-27|4565263|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.275
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4565263",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1603,
-  "mh": 0.272,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.264,
-  "conf": 5.2,
-  "tmo": 0
- },
- "2026-11-27|4587843|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.272
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4587843",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1898,
-  "mh": 0.284,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.3,
-  "bk": 0.258,
-  "conf": 4.9,
-  "tmo": 0
- },
- "2026-11-27|3797|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.285
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3797",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2769,
-  "mh": 0.264,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.2608,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|3988803|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.488
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3988803",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2988,
-  "mh": 0.498,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.5124,
-  "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|5216897|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.564
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5216897",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5916,
-  "mh": 0.58,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.1,
-  "bk": 0.5589,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|4697446|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.385
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4697446",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.5354,
-  "mh": 0.401,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.406,
-  "conf": 4.3,
-  "tmo": 0
- },
- "2026-11-27|4874719|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.548
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4874719",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4148,
-  "mh": 0.5,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.8,
-  "bk": 0.5359,
-  "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|4233575|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.419
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4233575",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4417,
-  "mh": 0.464,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.4536,
-  "conf": 3.7,
-  "tmo": 0
- },
  "2026-11-27|4233875|assists": {
   "first": {
    "Underdog": [
@@ -13519,1370 +11737,6 @@
   "conf": 2.6,
   "tmo": 0
  },
- "2026-11-27|2563036|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.429
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "2563036",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.365,
-  "mh": 0.394,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.3885,
-  "conf": 2.8,
-  "tmo": 0
- },
- "2026-11-27|3899949|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.619
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3899949",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4247,
-  "mh": 0.584,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.5888,
-  "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|3899978|shots": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.446
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3899978",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.462,
-  "mh": 0.426,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4299,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|4697438|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.588
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4697438",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5614,
-  "mh": 0.576,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.5899,
-  "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|2562605|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.479
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2562605",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4349,
-  "mh": 0.442,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.4611,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|4233648|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.401
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4233648",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4773,
-  "mh": 0.401,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.385,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|2562636|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.263
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2562636",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3,
-  "mh": 0.302,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.297,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|2968772|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.439
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2968772",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5106,
-  "mh": 0.455,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.4607,
-  "conf": 3.3,
-  "tmo": 0
- },
- "2026-11-27|4874730|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.449
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4874730",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4377,
-  "mh": 0.401,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4035,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|5216897|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.429
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5216897",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3562,
-  "mh": 0.464,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.4634,
-  "conf": 4.4,
-  "tmo": 0
- },
- "2026-11-27|3899951|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.409
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3899951",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3073,
-  "mh": 0.419,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.4021,
-  "conf": 4.8,
-  "tmo": 0
- },
- "2026-11-27|4352699|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.406
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4352699",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4338,
-  "mh": 0.381,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.39,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|4565263|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.412
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4565263",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.288,
-  "mh": 0.381,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.3866,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|4697438|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.476
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4697438",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4286,
-  "mh": 0.525,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5179,
-  "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|5793|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.413
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5793",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3713,
-  "mh": 0.426,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.9,
-  "bk": 0.4086,
-  "conf": 4.7,
-  "tmo": 0
- },
- "2026-11-27|2968818|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.359
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2968818",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2352,
-  "mh": 0.302,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.2983,
-  "conf": 6.2,
-  "tmo": 0
- },
- "2026-11-27|4024123|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.383
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4024123",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3418,
-  "mh": 0.36,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4565222|shots": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.563
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4565222",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.4341,
-  "mh": 0.496,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.9,
-  "bk": 0.5149,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|4565222|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.43
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4565222",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2785,
-  "mh": 0.437,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.4279,
-  "conf": 6.7,
-  "tmo": 0
- },
- "2026-11-27|3114736|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.309
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3114736",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2855,
-  "mh": 0.309,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|2563036|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.289
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "2563036",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2525,
-  "mh": 0.273,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.2744,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4268466|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.314
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4268466",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2578,
-  "mh": 0.302,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.3016,
-  "conf": 4.1,
-  "tmo": 0
- },
- "2026-11-27|3899949|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.279
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3899949",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2179,
-  "mh": 0.284,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.2935,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4697438|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.245
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4697438",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2362,
-  "mh": 0.282,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.2896,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4233575|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.208
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4233575",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2856,
-  "mh": 0.208,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4268771|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.273
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4268771",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1451,
-  "mh": 0.257,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.259,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4233555|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.335
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4233555",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3151,
-  "mh": 0.357,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.3642,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|2562605|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.205
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "2562605",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0733,
-  "mh": 0.207,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4697446|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.267
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4697446",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1795,
-  "mh": 0.227,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.2278,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4565263|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.215
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4565263",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1689,
-  "mh": 0.212,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4915855|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.279
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4915855",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2289,
-  "mh": 0.278,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.2788,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4587843|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.236
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4587843",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2452,
-  "mh": 0.236,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|5080207|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.257
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5080207",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1764,
-  "mh": 0.262,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.2744,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3899951|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.273
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3899951",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1655,
-  "mh": 0.251,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.2606,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3041994|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.389
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3041994",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3509,
-  "mh": 0.446,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.8,
-  "bk": 0.4305,
-  "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|4233575|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.289
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4233575",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2364,
-  "mh": 0.316,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.3016,
-  "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|5793|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.26
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5793",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3086,
-  "mh": 0.267,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.266,
-  "conf": 4.8,
-  "tmo": 0
- },
- "2026-11-27|4697438|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.326
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4697438",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1989,
-  "mh": 0.352,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.3458,
-  "conf": 5.1,
-  "tmo": 0
- },
- "2026-11-27|2968818|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.3
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2968818",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.203,
-  "mh": 0.269,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.2641,
-  "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|4352699|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.272
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4352699",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2768,
-  "mh": 0.271,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.2638,
-  "conf": 6.2,
-  "tmo": 0
- },
- "2026-11-27|5216897|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.288
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5216897",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2928,
-  "mh": 0.328,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3293,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4874723|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.36
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4874723",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2879,
-  "mh": 0.388,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3928,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5080144|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.256
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5080144",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0829,
-  "mh": 0.261,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.2689,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4024868|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.471
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4024868",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4481,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5124,
-  "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|4233648|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.269
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4233648",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3872,
-  "mh": 0.261,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.2589,
-  "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|2967072|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.309
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2967072",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2319,
-  "mh": 0.329,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.334,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4874730|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.357
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4874730",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2481,
-  "mh": 0.352,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.3437,
-  "conf": 5.0,
-  "tmo": 0
- },
- "2026-11-27|2968772|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.366
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "2968772",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2302,
-  "mh": 0.364,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4874730|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.207
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4874730",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2207,
-  "mh": 0.205,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3988803|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.342
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3988803",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1134,
-  "mh": 0.347,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|5208|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.3
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5208",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3065,
-  "mh": 0.293,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|2967072|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.26
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "2967072",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2557,
-  "mh": 0.256,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4024868|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.311
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4024868",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3254,
-  "mh": 0.333,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|5216878|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.207
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5216878",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1686,
-  "mh": 0.189,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5037|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.314
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5037",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3838,
-  "mh": 0.304,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3899949|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.291
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3899949",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3341,
-  "mh": 0.292,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|5160|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.285
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5160",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2361,
-  "mh": 0.262,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3149843|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.347
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3149843",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3068,
-  "mh": 0.325,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5436|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.357
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5436",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3243,
-  "mh": 0.349,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3041994|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.273
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "3041994",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1571,
-  "mh": 0.275,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4915855|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.491
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4915855",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5262,
-  "mh": 0.496,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4976,
-  "conf": 2.9,
-  "tmo": 0
- },
- "2026-11-27|2967072|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.47
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2967072",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4155,
-  "mh": 0.475,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4902,
-  "conf": 3.6,
-  "tmo": 0
- },
  "2026-11-27|3904183|assists": {
   "first": {
    "Underdog": [
@@ -14903,204 +11757,6 @@
   "edge": 0.2,
   "bk": 0.385,
   "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|4587843|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.389
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4587843",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.3863,
-  "mh": 0.496,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.3,
-  "bk": 0.5218,
-  "conf": 4.1,
-  "tmo": 0
- },
- "2026-11-27|3041994|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.401
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3041994",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.3594,
-  "mh": 0.388,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.3,
-  "bk": 0.3935,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|4874719|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.437
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4874719",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.3606,
-  "mh": 0.424,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.4116,
-  "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|4268466|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.476
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4268466",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.2724,
-  "mh": 0.394,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.3924,
-  "conf": 4.7,
-  "tmo": 0
- },
- "2026-11-27|4233555|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.465
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4233555",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.3602,
-  "mh": 0.405,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.1,
-  "bk": 0.4273,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|4915855|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.412
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4915855",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.2649,
-  "mh": 0.412,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.4049,
-  "conf": 4.3,
-  "tmo": 0
- },
- "2026-11-27|4268771|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.392
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4268771",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.2931,
-  "mh": 0.405,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.4059,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|3988803|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.62
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3988803",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.3749,
-  "mh": 0.568,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.9,
-  "bk": 0.5497,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|5160|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.512
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5160",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4576,
-  "mh": 0.554,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.5396,
-  "conf": 3.7,
   "tmo": 0
  },
  "2026-11-27|4874718|points": {
@@ -15147,468 +11803,6 @@
   "conf": 4.2,
   "tmo": 0
  },
- "2026-11-27|4565222|points": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.422
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4565222",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.3605,
-  "mh": 0.394,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.4147,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|3042269|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.506
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3042269",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.2994,
-  "mh": 0.416,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|4697446|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.494
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4697446",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3878,
-  "mh": 0.455,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4654,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|5149211|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.379
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5149211",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4898,
-  "mh": 0.377,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.3,
-  "bk": 0.4035,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|5080144|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.385
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5080144",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1888,
-  "mh": 0.396,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.396,
-  "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|5436|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.201
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5436",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0759,
-  "mh": 0.197,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5080144|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.201
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5080144",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1432,
-  "mh": 0.201,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|2968772|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.347
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "2968772",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.299,
-  "mh": 0.366,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.3665,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5216897|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.225
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5216897",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1676,
-  "mh": 0.227,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.2278,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|2967072|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.26
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "2967072",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2472,
-  "mh": 0.272,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4352750|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.211
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4352750",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.292,
-  "mh": 0.284,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.2803,
-  "conf": 5.1,
-  "tmo": 0
- },
- "2026-11-27|4874730|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.266
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4874730",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2448,
-  "mh": 0.273,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.6,
-  "bk": 0.2603,
-  "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|5208|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.262
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5208",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2884,
-  "mh": 0.262,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3797|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.228
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3797",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1106,
-  "mh": 0.217,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5037|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.314
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5037",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3851,
-  "mh": 0.347,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.3617,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3067951|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.353
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3067951",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3141,
-  "mh": 0.37,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.4,
-  "bk": 0.3418,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|4697413|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.272
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4697413",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2437,
-  "mh": 0.272,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.2622,
-  "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|2562605|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.366
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2562605",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3667,
-  "mh": 0.405,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.6,
-  "bk": 0.3732,
-  "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|5149211|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.256
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5149211",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2598,
-  "mh": 0.261,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.0,
-  "bk": 0.2818,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|3114736|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.548
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3114736",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4929,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.5283,
-  "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|4024868|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.437
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4024868",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4739,
-  "mh": 0.416,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4277,
-  "conf": 3.9,
-  "tmo": 0
- },
  "2026-11-27|4565239|points": {
   "first": {
    "Underdog": [
@@ -15629,160 +11823,6 @@
   "edge": 0.8,
   "bk": 0.4281,
   "conf": 3.8,
-  "tmo": 0
- },
- "2026-11-27|5080143|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.313
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5080143",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3607,
-  "mh": 0.333,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.3409,
-  "conf": 2.5,
-  "tmo": 0
- },
- "2026-11-27|3114736|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.454
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3114736",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.3954,
-  "mh": 0.39,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.3907,
-  "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|3797|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.386
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3797",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.6511,
-  "mh": 0.606,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.6045,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5160|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.422
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5160",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4701,
-  "mh": 0.412,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4226,
-  "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|4874723|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.542
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4874723",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4291,
-  "mh": 0.496,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.1,
-  "bk": 0.5175,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|4024857|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.481
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4024857",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4103,
-  "mh": 0.481,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.1,
-  "bk": 0.5036,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|5080143|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.419
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5080143",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.298,
-  "mh": 0.388,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.7,
-  "bk": 0.4021,
-  "conf": 3.4,
   "tmo": 0
  },
  "2026-11-27|4697409|shots": {
@@ -15851,50 +11891,6 @@
   "conf": 2.4,
   "tmo": 0
  },
- "2026-11-27|4233648|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.473
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4233648",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5495,
-  "mh": 0.483,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4994,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|4697413|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.416
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4697413",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3093,
-  "mh": 0.416,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4143,
-  "conf": 4.7,
-  "tmo": 0
- },
  "2026-11-27|4233536|points": {
   "first": {
    "Underdog": [
@@ -15937,50 +11933,6 @@
   "edge": 0.1,
   "bk": 0.396,
   "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|4024123|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.368
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4024123",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4518,
-  "mh": 0.378,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.4,
-  "bk": 0.3867,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4565222|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.348
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4565222",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.26,
-  "mh": 0.38,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|3899938|goals": {
@@ -16027,116 +11979,6 @@
   "conf": 2.1,
   "tmo": 0
  },
- "2026-11-27|3114736|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.271
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3114736",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2606,
-  "mh": 0.282,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|3114736|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.398
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3114736",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3669,
-  "mh": 0.366,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.7,
-  "bk": 0.3521,
-  "conf": 5.0,
-  "tmo": 0
- },
- "2026-11-27|3648008|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.289
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3648008",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2357,
-  "mh": 0.299,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.2971,
-  "conf": 5.8,
-  "tmo": 0
- },
- "2026-11-27|4352699|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.212
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4352699",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.163,
-  "mh": 0.22,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.1,
-  "bk": 0.1981,
-  "conf": 6.7,
-  "tmo": 0
- },
- "2026-11-27|5160|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.279
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5160",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2422,
-  "mh": 0.291,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.2918,
-  "conf": 2.1,
-  "tmo": 0
- },
  "2026-11-27|4697409|goals": {
   "first": {
    "Underdog": [
@@ -16152,50 +11994,6 @@
   "line": 0.5,
   "pr": 0.1512,
   "mh": 0.243,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|3149843|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.2
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3149843",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0382,
-  "mh": 0.2,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4233648|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.204
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4233648",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.133,
-  "mh": 0.21,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -16223,28 +12021,6 @@
   "edge": 0.2,
   "bk": 0.3617,
   "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3899951|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.217
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "3899951",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1775,
-  "mh": 0.217,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.2067,
-  "conf": 5.9,
   "tmo": 0
  },
  "2026-11-27|4874718|goals": {
@@ -16288,28 +12064,6 @@
   "side": "higher",
   "edge": 0.1,
   "bk": 0.2913,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4874723|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.314
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4874723",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2965,
-  "mh": 0.321,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3238,
   "conf": 2.1,
   "tmo": 0
  },
@@ -16357,50 +12111,6 @@
   "conf": 6.3,
   "tmo": 0
  },
- "2026-11-27|4024857|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.295
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4024857",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1385,
-  "mh": 0.3,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3011,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4697413|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.224
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4697413",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0712,
-  "mh": 0.22,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.2138,
-  "conf": 6.7,
-  "tmo": 0
- },
  "2026-11-27|5430|goals": {
   "first": {
    "Underdog": [
@@ -16421,28 +12131,6 @@
   "edge": 0.2,
   "bk": 0.2122,
   "conf": 5.7,
-  "tmo": 0
- },
- "2026-11-27|5793|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.233
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5793",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0943,
-  "mh": 0.217,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.2169,
-  "conf": 6.7,
   "tmo": 0
  },
  "2026-11-27|5209793|goals": {
@@ -16489,50 +12177,6 @@
   "conf": 6.7,
   "tmo": 0
  },
- "2026-11-27|4697446|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.334
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4697446",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2885,
-  "mh": 0.352,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.3437,
-  "conf": 6.0,
-  "tmo": 0
- },
- "2026-11-27|4874719|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.458
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4874719",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2642,
-  "mh": 0.491,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.8,
-  "bk": 0.4544,
-  "conf": 4.2,
-  "tmo": 0
- },
  "2026-11-27|4565229|assists": {
   "first": {
    "Underdog": [
@@ -16553,28 +12197,6 @@
   "edge": 0.3,
   "bk": 0.3591,
   "conf": 5.6,
-  "tmo": 0
- },
- "2026-11-27|5160|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.342
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5160",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2755,
-  "mh": 0.352,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.9,
-  "bk": 0.3699,
-  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|4565239|assists": {
@@ -16621,28 +12243,6 @@
   "conf": 5.8,
   "tmo": 0
  },
- "2026-11-27|4915855|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.319
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4915855",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3643,
-  "mh": 0.328,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3313,
-  "conf": 2.6,
-  "tmo": 0
- },
  "2026-11-27|4233536|assists": {
   "first": {
    "Underdog": [
@@ -16663,28 +12263,6 @@
   "edge": 0.3,
   "bk": 0.452,
   "conf": 5.8,
-  "tmo": 0
- },
- "2026-11-27|4233555|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.4
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4233555",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2883,
-  "mh": 0.424,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.0,
-  "bk": 0.4033,
-  "conf": 4.8,
   "tmo": 0
  },
  "2026-11-27|5430|assists": {
@@ -16709,28 +12287,6 @@
   "conf": 2.6,
   "tmo": 0
  },
- "2026-11-27|3899978|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.338
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3899978",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1943,
-  "mh": 0.355,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 1.4,
-  "bk": 0.327,
-  "conf": 6.0,
-  "tmo": 0
- },
  "2026-11-27|4874740|assists": {
   "first": {
    "Underdog": [
@@ -16753,28 +12309,6 @@
   "conf": 3.8,
   "tmo": 0
  },
- "2026-11-27|2562605|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.198
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "2562605",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.0929,
-  "mh": 0.205,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
  "2026-11-27|4233536|power_play_points": {
   "first": {
    "Underdog": [
@@ -16790,50 +12324,6 @@
   "line": 0.5,
   "pr": 0.1291,
   "mh": 0.274,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4874719|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.267
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4874719",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1704,
-  "mh": 0.289,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4233555|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.231
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4233555",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2185,
-  "mh": 0.251,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -16988,28 +12478,6 @@
   "line": 0.5,
   "pr": 0.1556,
   "mh": 0.239,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|4268771|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.293
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4268771",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.222,
-  "mh": 0.32,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -17756,8 +13224,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5073,
+  "edge": 0.3,
+  "bk": 0.5053,
   "conf": 4.7,
   "tmo": 1
  },
@@ -17982,8 +13450,8 @@
   "mh": 0.481,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.9,
-  "bk": 0.4998,
+  "edge": 0.3,
+  "bk": 0.4862,
   "conf": 4.2,
   "tmo": 1
  },
@@ -18007,10 +13475,10 @@
   "pr": 0.4773,
   "mh": 0.462,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4608,
-  "conf": 3.5,
+  "side": "higher",
+  "edge": 0.0,
+  "bk": 0.4621,
+  "conf": 3.7,
   "tmo": 1
  },
  "2026-11-27|3945274|pts_rebs_asts": {
@@ -18320,8 +13788,8 @@
   "mh": 0.458,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.0,
-  "bk": 0.4788,
+  "edge": 1.1,
+  "bk": 0.4798,
   "conf": 2.9,
   "tmo": 0
  },
@@ -18502,8 +13970,8 @@
   "mh": 0.494,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.4853,
+  "edge": 0.3,
+  "bk": 0.4873,
   "conf": 4.6,
   "tmo": 0
  },
@@ -19211,28 +14679,6 @@
   "conf": 3.4,
   "tmo": 0
  },
- "2026-11-27|4024868|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.199
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4024868",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1961,
-  "mh": 0.199,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
  "2026-11-27|3064514|pts_asts": {
   "first": {
    "Underdog": [
@@ -19580,8 +15026,8 @@
   "mh": 0.486,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.3,
-  "bk": 0.4919,
+  "edge": 0.6,
+  "bk": 0.4988,
   "conf": 4.7,
   "tmo": 1
  },
@@ -19624,8 +15070,8 @@
   "mh": 0.416,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": 0.416,
+  "edge": 0.2,
+  "bk": 0.4198,
   "conf": 3.7,
   "tmo": 0
  },
@@ -19668,8 +15114,8 @@
   "mh": 0.443,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.4351,
+  "edge": 0.1,
+  "bk": 0.4403,
   "conf": 3.1,
   "tmo": 0
  },
@@ -19712,8 +15158,8 @@
   "mh": 0.621,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.0,
-  "bk": 0.6207,
+  "edge": 0.3,
+  "bk": 0.6145,
   "conf": 2.1,
   "tmo": 1
  },
@@ -20218,8 +15664,8 @@
   "mh": 0.471,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.7,
-  "bk": 0.4843,
+  "edge": 0.8,
+  "bk": 0.4879,
   "conf": 2.9,
   "tmo": 0
  },
@@ -20284,8 +15730,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.5,
-  "bk": 0.5309,
+  "edge": 0.7,
+  "bk": 0.5137,
   "conf": 2.9,
   "tmo": 1
  },
@@ -20372,8 +15818,8 @@
   "mh": 0.49,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.1,
-  "bk": 0.5116,
+  "edge": 1.0,
+  "bk": 0.5096,
   "conf": 2.9,
   "tmo": 1
  },
@@ -20394,8 +15840,8 @@
   "mh": 0.581,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.1,
-  "bk": 0.5597,
+  "edge": 0.8,
+  "bk": 0.5642,
   "conf": 2.6,
   "tmo": 1
  },
@@ -20592,8 +16038,8 @@
   "mh": 0.408,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.3,
-  "bk": 0.4132,
+  "edge": 0.2,
+  "bk": 0.413,
   "conf": 2.1,
   "tmo": 0
  },
@@ -21856,8 +17302,8 @@
   "mh": 0.476,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.7,
-  "bk": 0.4909,
+  "edge": 0.0,
+  "bk": 0.4768,
   "conf": 6.7,
   "tmo": 0
  },
@@ -23132,8 +18578,8 @@
   "mh": 0.458,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4611,
+  "edge": 0.3,
+  "bk": 0.4632,
   "conf": 3.2,
   "tmo": 0
  },
@@ -23264,8 +18710,8 @@
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.8,
-  "bk": 0.503,
+  "edge": 1.9,
+  "bk": 0.504,
   "conf": 2.7,
   "tmo": 0
  },
@@ -23440,7 +18886,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 1.5,
-  "pr": 0.5758,
+  "pr": 0.5749,
   "mh": 0.529,
   "call": "PASS",
   "side": "higher",
@@ -23588,8 +19034,8 @@
   "mh": 0.554,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.5557,
+  "edge": 0.4,
+  "bk": 0.561,
   "conf": 5.3,
   "tmo": 0
  },
@@ -23632,8 +19078,8 @@
   "mh": 0.398,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": 0.399,
+  "edge": 0.2,
+  "bk": 0.4026,
   "conf": 2.9,
   "tmo": 0
  },
@@ -23654,8 +19100,8 @@
   "mh": 0.512,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.3,
-  "bk": 0.5182,
+  "edge": 0.0,
+  "bk": 0.5127,
   "conf": 5.0,
   "tmo": 0
  },
@@ -23772,8 +19218,8 @@
   "mh": 0.462,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.1,
-  "bk": 0.5036,
+  "edge": 2.0,
+  "bk": 0.5016,
   "conf": 4.0,
   "tmo": 0
  },
@@ -23912,8 +19358,8 @@
   "mh": 0.512,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5207,
+  "edge": 0.5,
+  "bk": 0.5217,
   "conf": 3.0,
   "tmo": 0
  },
@@ -24206,8 +19652,8 @@
   "mh": 0.498,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.0,
-  "bk": 0.4972,
+  "edge": 0.3,
+  "bk": 0.4911,
   "conf": 3.4,
   "tmo": 0
  },
@@ -24382,8 +19828,8 @@
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4797,
+  "edge": 1.0,
+  "bk": 0.4862,
   "conf": 3.0,
   "tmo": 0
  },
@@ -24404,8 +19850,8 @@
   "mh": 0.473,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.8,
-  "bk": 0.5081,
+  "edge": 2.1,
+  "bk": 0.5141,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24470,8 +19916,8 @@
   "mh": 0.462,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4774,
+  "edge": 1.0,
+  "bk": 0.4813,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24492,8 +19938,8 @@
   "mh": 0.509,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.0,
-  "bk": 0.5281,
+  "edge": 0.9,
+  "bk": 0.5275,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24514,8 +19960,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4977,
+  "edge": 0.8,
+  "bk": 0.4848,
   "conf": 5.4,
   "tmo": 0
  },
@@ -24540,8 +19986,8 @@
   "mh": 0.459,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.7,
-  "bk": 0.4737,
+  "edge": 0.4,
+  "bk": 0.4664,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24561,10 +20007,10 @@
   "pr": 0.4732,
   "mh": 0.533,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.544,
-  "conf": 2.9,
+  "side": "lower",
+  "edge": 0.0,
+  "bk": 0.5324,
+  "conf": 4.3,
   "tmo": 0
  },
  "2026-11-27|4397002|rebounds": {
@@ -24579,13 +20025,13 @@
   "aid": "4397002",
   "eid": "401909331",
   "start": "2026-11-28T01:30:00Z",
-  "line": 5.5,
-  "pr": 0.2042,
-  "mh": 0.439,
+  "line": 4.5,
+  "pr": 0.31,
+  "mh": 0.53,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.3,
-  "bk": 0.4456,
+  "edge": 0.5,
+  "bk": 0.5403,
   "conf": 2.6,
   "tmo": 0
  },
@@ -24627,10 +20073,10 @@
   "pr": 0.1226,
   "mh": 0.473,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4691,
-  "conf": 6.1,
+  "side": "higher",
+  "edge": 0.3,
+  "bk": 0.478,
+  "conf": 2.6,
   "tmo": 0
  },
  "2026-11-27|4594326|rebounds": {
@@ -24650,8 +20096,8 @@
   "mh": 0.529,
   "call": "PASS",
   "side": "lower",
-  "edge": 2.9,
-  "bk": 0.4715,
+  "edge": 1.8,
+  "bk": 0.492,
   "conf": 6.2,
   "tmo": 0
  },
@@ -24694,8 +20140,8 @@
   "mh": 0.494,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.3,
-  "bk": 0.5409,
+  "edge": 2.7,
+  "bk": 0.5477,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24716,8 +20162,8 @@
   "mh": 0.458,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.7,
-  "bk": 0.491,
+  "edge": 2.0,
+  "bk": 0.4971,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24738,8 +20184,8 @@
   "mh": 0.494,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5061,
+  "edge": 0.9,
+  "bk": 0.5122,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24760,8 +20206,8 @@
   "mh": 0.529,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.5,
-  "bk": 0.5381,
+  "edge": 0.0,
+  "bk": null,
   "conf": 2.9,
   "tmo": 0
  },
@@ -24781,10 +20227,10 @@
   "pr": 0.3354,
   "mh": 0.504,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5167,
-  "conf": 2.9,
+  "side": "lower",
+  "edge": 0.5,
+  "bk": 0.4944,
+  "conf": 6.3,
   "tmo": 0
  },
  "2026-11-27|4397002|rebs_asts": {
@@ -24799,13 +20245,13 @@
   "aid": "4397002",
   "eid": "401909331",
   "start": "2026-11-28T01:30:00Z",
-  "line": 10.5,
-  "pr": 0.1644,
-  "mh": 0.494,
+  "line": 9.5,
+  "pr": 0.1822,
+  "mh": 0.548,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.5,
-  "bk": 0.4833,
+  "edge": 0.4,
+  "bk": 0.5408,
   "conf": 6.4,
   "tmo": 0
  },
@@ -24870,8 +20316,8 @@
   "mh": 0.482,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4854,
+  "edge": 0.3,
+  "bk": 0.4889,
   "conf": 2.4,
   "tmo": 0
  },
@@ -24914,8 +20360,8 @@
   "mh": 0.506,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.2,
-  "bk": 0.5303,
+  "edge": 1.5,
+  "bk": 0.5362,
   "conf": 3.4,
   "tmo": 0
  },
@@ -25160,8 +20606,8 @@
   "mh": 0.563,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.3,
-  "bk": 0.5563,
+  "edge": 0.4,
+  "bk": 0.5553,
   "conf": 1.9,
   "tmo": 0
  },
@@ -25657,7 +21103,7 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 0.5,
   "pr": 0.5896,
-  "mh": 0.63,
+  "mh": 0.635,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -26238,8 +21684,8 @@
   "mh": 0.504,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.0,
-  "bk": 0.503,
+  "edge": 0.1,
+  "bk": 0.502,
   "conf": 3.3,
   "tmo": 0
  },
@@ -26339,7 +21785,7 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 1.5,
   "pr": 0.3471,
-  "mh": 0.481,
+  "mh": 0.474,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -26917,11 +22363,11 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 12.5,
   "pr": 0.3695,
-  "mh": 0.496,
+  "mh": 0.483,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.0,
-  "bk": 0.5159,
+  "edge": 1.6,
+  "bk": 0.5149,
   "conf": 3.5,
   "tmo": 1
  },
@@ -26965,11 +22411,11 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 8.5,
   "pr": 0.3613,
-  "mh": 0.473,
+  "mh": 0.464,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4774,
+  "edge": 0.6,
+  "bk": 0.4751,
   "conf": 2.9,
   "tmo": 0
  },
@@ -27083,7 +22529,7 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 0.5,
   "pr": 0.1378,
-  "mh": 0.219,
+  "mh": 0.212,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -27113,7 +22559,7 @@
   "call": "PASS",
   "side": "higher",
   "edge": 0.1,
-  "bk": 0.5169,
+  "bk": 0.5158,
   "conf": 2.5,
   "tmo": 0
  },
@@ -27491,11 +22937,11 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 14.5,
   "pr": 0.5032,
-  "mh": 0.518,
+  "mh": 0.509,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.2,
-  "bk": 0.493,
+  "edge": 0.9,
+  "bk": 0.4908,
   "conf": 1.9,
   "tmo": 1
  },
@@ -28045,7 +23491,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.6039,
-  "mh": 0.425,
+  "mh": 0.429,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -28123,10 +23569,10 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.5617,
-  "mh": 0.56,
+  "mh": 0.564,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.1,
+  "edge": 0.9,
   "bk": 0.581,
   "conf": 3.3,
   "tmo": 0
@@ -28201,10 +23647,10 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3091,
-  "mh": 0.357,
+  "mh": 0.362,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.2,
+  "edge": 0.4,
   "bk": 0.3536,
   "conf": 3.9,
   "tmo": 0
@@ -28487,7 +23933,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.4343,
-  "mh": 0.339,
+  "mh": 0.343,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -28639,12 +24085,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.2828,
-  "mh": 0.352,
+  "mh": 0.357,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
+  "side": "lower",
+  "edge": 0.2,
   "bk": 0.3524,
-  "conf": 2.1,
+  "conf": 6.7,
   "tmo": 0
  },
  "2026-11-27|5032|assists": {
@@ -28694,8 +24140,8 @@
   "mh": 0.273,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.2813,
+  "edge": 0.3,
+  "bk": 0.2793,
   "conf": 2.1,
   "tmo": 0
  },
@@ -28717,10 +24163,10 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3887,
-  "mh": 0.284,
+  "mh": 0.28,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.7,
+  "edge": 0.5,
   "bk": 0.2699,
   "conf": 4.6,
   "tmo": 0
@@ -28817,7 +24263,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.4809,
-  "mh": 0.36,
+  "mh": 0.372,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -28861,7 +24307,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.1834,
-  "mh": 0.227,
+  "mh": 0.231,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -28883,7 +24329,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.2118,
-  "mh": 0.235,
+  "mh": 0.24,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -28971,7 +24417,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3251,
-  "mh": 0.301,
+  "mh": 0.311,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -29005,7 +24451,7 @@
   "call": "PASS",
   "side": "lower",
   "edge": 0.6,
-  "bk": 0.3858,
+  "bk": 0.3852,
   "conf": 4.9,
   "tmo": 0
  },
@@ -29124,8 +24570,8 @@
   "mh": 0.464,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4655,
+  "edge": 0.0,
+  "bk": 0.4649,
   "conf": 2.8,
   "tmo": 0
  },
@@ -29184,8 +24630,8 @@
   "mh": 0.552,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.7,
-  "bk": 0.5372,
+  "edge": 0.3,
+  "bk": 0.5468,
   "conf": 3.6,
   "tmo": 0
  },
@@ -29214,8 +24660,8 @@
   "mh": 0.473,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.4774,
+  "edge": 0.3,
+  "bk": 0.4796,
   "conf": 2.9,
   "tmo": 0
  },
@@ -29790,8 +25236,8 @@
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4761,
+  "edge": 0.4,
+  "bk": 0.4747,
   "conf": 4.0,
   "tmo": 1
  },
@@ -31187,7 +26633,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.1765,
-  "mh": 0.198,
+  "mh": 0.203,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -31479,7 +26925,7 @@
   "call": "PASS",
   "side": "higher",
   "edge": 1.0,
-  "bk": 0.49,
+  "bk": 0.4915,
   "conf": 5.0,
   "tmo": 1
  },
@@ -32613,28 +28059,6 @@
   "conf": 5.7,
   "tmo": 1
  },
- "2026-11-27|5342529|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.502
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5342529",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4571,
-  "mh": 0.504,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.5035,
-  "conf": 3.1,
-  "tmo": 0
- },
  "2026-11-27|4063607|power_play_points": {
   "first": {
    "Underdog": [
@@ -32701,28 +28125,6 @@
   "conf": 3.1,
   "tmo": 0
  },
- "2026-11-27|5342529|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.266
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5342529",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.128,
-  "mh": 0.254,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
  "2026-11-27|4697391|power_play_points": {
   "first": {
    "Underdog": [
@@ -32774,72 +28176,6 @@
   "bk": 0.5338,
   "conf": 3.4,
   "tmo": 1
- },
- "2026-11-27|5342529|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.446
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5342529",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4234,
-  "mh": 0.464,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.4554,
-  "conf": 4.8,
-  "tmo": 0
- },
- "2026-11-27|5080221|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.198
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5080221",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1693,
-  "mh": 0.191,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5342529|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.305
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5342529",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2774,
-  "mh": 0.291,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 1.5,
-  "bk": 0.3203,
-  "conf": 2.1,
-  "tmo": 0
  },
  "2026-11-27|5149172|points": {
   "first": {
@@ -40934,7 +36270,7 @@
   "eid": "401856761",
   "start": "2026-11-28T17:00:00Z",
   "line": 2.5,
-  "pr": 0.7965,
+  "pr": 0.8034,
   "mh": 0.56,
   "call": "PASS",
   "side": "higher",
@@ -41064,13 +36400,13 @@
   "eid": "401856761",
   "start": "2026-11-28T17:00:00Z",
   "line": 4.5,
-  "pr": 0.6955,
+  "pr": 0.7031,
   "mh": 0.568,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 5.9,
+  "conf": 6.0,
   "tmo": 0
  },
  "2026-11-28|5078810|passing_yds": {
@@ -41424,7 +36760,7 @@
   "eid": "401856760",
   "start": "2026-11-28T20:30:00Z",
   "line": 2.5,
-  "pr": 0.5682,
+  "pr": 0.5659,
   "mh": 0.519,
   "call": "PASS",
   "side": "higher",
@@ -41914,7 +37250,7 @@
   "eid": "401858537",
   "start": "2026-11-28T17:30:00Z",
   "line": 3.5,
-  "pr": 0.5283,
+  "pr": 0.5279,
   "mh": 0.542,
   "call": "PASS",
   "side": "higher",
@@ -42144,7 +37480,7 @@
   "eid": "401858538",
   "start": "2026-11-29T00:00:00Z",
   "line": 1.5,
-  "pr": 0.5659,
+  "pr": 0.5617,
   "mh": 0.591,
   "call": "PASS",
   "side": "higher",
@@ -42170,13 +37506,13 @@
   "eid": "401858538",
   "start": "2026-11-29T00:00:00Z",
   "line": 5.5,
-  "pr": 0.4972,
+  "pr": 0.4907,
   "mh": 0.536,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.6,
+  "conf": 4.5,
   "tmo": 0
  },
  "2026-11-28|5141684|passing_yds": {
@@ -42196,7 +37532,7 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 223.5,
-  "pr": 0.5483,
+  "pr": 0.5503,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -42660,7 +37996,7 @@
   "eid": "401856760",
   "start": "2026-11-28T20:30:00Z",
   "line": 1.5,
-  "pr": 0.5394,
+  "pr": 0.5372,
   "mh": 0.574,
   "call": "PASS",
   "side": "higher",
@@ -43024,13 +38360,13 @@
   "eid": "401858538",
   "start": "2026-11-29T00:00:00Z",
   "line": 1.5,
-  "pr": 0.53,
+  "pr": 0.5247,
   "mh": 0.574,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.1,
+  "conf": 4.0,
   "tmo": 0
  },
  "2026-11-28|4915980|passing_tds": {
@@ -44081,14 +39417,14 @@
   "aid": "5215337",
   "eid": "401858313",
   "start": "2026-11-28T17:00:00Z",
-  "line": 34.5,
-  "pr": 0.5647,
+  "line": 32.5,
+  "pr": 0.5817,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.8,
+  "conf": 4.1,
   "tmo": 0
  },
  "2026-11-28|5219834|passing_tds": {
@@ -44420,7 +39756,7 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 84.5,
-  "pr": 0.4949,
+  "pr": 0.4969,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -44654,7 +39990,7 @@
   "eid": "401858538",
   "start": "2026-11-29T00:00:00Z",
   "line": 4.5,
-  "pr": 0.3646,
+  "pr": 0.3595,
   "mh": 0.432,
   "call": "PASS",
   "side": "higher",
@@ -44783,14 +40119,14 @@
   "aid": "5159046",
   "eid": "401858540",
   "start": "2026-11-28T17:00:00Z",
-  "line": 54.5,
-  "pr": 0.4101,
-  "mh": 0.506,
+  "line": 51.5,
+  "pr": 0.4764,
+  "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.4,
+  "conf": 3.9,
   "tmo": 0
  },
  "2026-11-28|5079506|rushing_yds": {
@@ -44809,14 +40145,14 @@
   "aid": "5079506",
   "eid": "401856757",
   "start": "2026-11-29T00:30:00Z",
-  "line": 36.5,
-  "pr": 0.4852,
+  "line": 40.5,
+  "pr": 0.4588,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.2,
+  "conf": 2.8,
   "tmo": 0
  },
  "2026-11-28|4912342|receiving_yds": {
@@ -45200,13 +40536,13 @@
   "eid": "401858316",
   "start": "2026-11-28T20:30:00Z",
   "line": 4.5,
-  "pr": 0.527,
+  "pr": 0.5198,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.2,
+  "conf": 3.1,
   "tmo": 0
  },
  "2026-11-28|5079369|passing_tds": {
@@ -45303,9 +40639,9 @@
   "aid": "5141742",
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
-  "line": 51.5,
-  "pr": 0.2536,
-  "mh": 0.506,
+  "line": 49.5,
+  "pr": 0.2633,
+  "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -45356,13 +40692,13 @@
   "eid": "401858312",
   "start": "2026-11-28T20:30:00Z",
   "line": 3.5,
-  "pr": 0.4049,
+  "pr": 0.3989,
   "mh": 0.517,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.1,
+  "conf": 2.5,
   "tmo": 0
  },
  "2026-11-28|5094032|receiving_yds": {
@@ -45849,14 +41185,14 @@
   "aid": "5008017",
   "eid": "401858313",
   "start": "2026-11-28T17:00:00Z",
-  "line": 54.5,
-  "pr": 0.3523,
+  "line": 51.5,
+  "pr": 0.3685,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 2.9,
+  "conf": 3.1,
   "tmo": 0
  },
  "2026-11-28|5030333|receiving_rec": {
@@ -46366,13 +41702,13 @@
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
   "line": 2.5,
-  "pr": 0.513,
+  "pr": 0.5105,
   "mh": 0.529,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 2.6,
+  "conf": 2.5,
   "tmo": 0
  },
  "2026-11-28|5132253|receiving_rec": {
@@ -46392,7 +41728,7 @@
   "eid": "401856760",
   "start": "2026-11-28T20:30:00Z",
   "line": 3.5,
-  "pr": 0.3692,
+  "pr": 0.3666,
   "mh": 0.452,
   "call": "PASS",
   "side": "higher",
@@ -46418,13 +41754,13 @@
   "eid": "401858317",
   "start": "2026-11-28T20:00:00Z",
   "line": 3.5,
-  "pr": 0.4466,
+  "pr": 0.452,
   "mh": 0.462,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 2.6,
+  "conf": 3.2,
   "tmo": 0
  },
  "2026-11-28|5079373|receiving_yds": {
@@ -46725,8 +42061,8 @@
   "aid": "5141629",
   "eid": "401856757",
   "start": "2026-11-29T00:30:00Z",
-  "line": 274.5,
-  "pr": 0.3055,
+  "line": 269.5,
+  "pr": 0.3136,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -46960,7 +42296,7 @@
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
   "line": 4.5,
-  "pr": 0.3352,
+  "pr": 0.3324,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -47008,7 +42344,7 @@
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
   "line": 2.5,
-  "pr": 0.3968,
+  "pr": 0.3946,
   "mh": 0.452,
   "call": "PASS",
   "side": "higher",
@@ -47085,14 +42421,14 @@
   "aid": "5079420",
   "eid": "401856758",
   "start": "2026-11-28T17:45:00Z",
-  "line": 60.5,
-  "pr": 0.4715,
+  "line": 57.5,
+  "pr": 0.6301,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 2.5,
+  "conf": 4.4,
   "tmo": 0
  },
  "2026-11-28|5079572|passing_tds": {
@@ -47215,8 +42551,8 @@
   "aid": "5076952",
   "eid": "401858540",
   "start": "2026-11-28T17:00:00Z",
-  "line": 34.5,
-  "pr": 0.3291,
+  "line": 32.5,
+  "pr": 0.3971,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -47472,7 +42808,7 @@
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
   "line": 2.5,
-  "pr": 0.446,
+  "pr": 0.4438,
   "mh": 0.56,
   "call": "PASS",
   "side": "higher",
@@ -47939,10 +43275,10 @@
   "pr": 0.5385,
   "mh": 0.455,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.3,
-  "bk": 0.4489,
-  "conf": 2.9,
+  "side": "higher",
+  "edge": 0.5,
+  "bk": 0.4646,
+  "conf": 4.3,
   "tmo": 0
  },
  "2026-11-27|3042016|shots": {
@@ -47966,8 +43302,8 @@
   "mh": 0.568,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5665,
+  "edge": 0.4,
+  "bk": 0.5603,
   "conf": 2.6,
   "tmo": 0
  },
@@ -47989,12 +43325,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 2.5,
   "pr": 0.6091,
-  "mh": 0.576,
+  "mh": 0.52,
   "call": "PASS",
-  "side": "lower",
-  "edge": 1.8,
-  "bk": 0.5394,
-  "conf": 2.4,
+  "side": "higher",
+  "edge": 0.0,
+  "bk": 0.5209,
+  "conf": 6.6,
   "tmo": 0
  },
  "2026-11-27|4024988|goals": {
@@ -48044,8 +43380,8 @@
   "mh": 0.536,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.1,
-  "bk": 0.5143,
+  "edge": 1.6,
+  "bk": 0.5044,
   "conf": 2.7,
   "tmo": 0
  },
@@ -48096,8 +43432,8 @@
   "mh": 0.525,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5372,
+  "edge": 0.7,
+  "bk": 0.5394,
   "conf": 5.3,
   "tmo": 0
  },
@@ -48147,10 +43483,10 @@
   "pr": 0.4975,
   "mh": 0.344,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3456,
-  "conf": 4.8,
+  "side": "lower",
+  "edge": 0.4,
+  "bk": 0.3364,
+  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|3899952|goals": {
@@ -48251,10 +43587,10 @@
   "pr": 0.4776,
   "mh": 0.455,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.4558,
-  "conf": 6.0,
+  "side": "lower",
+  "edge": 0.2,
+  "bk": 0.451,
+  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|3124|power_play_points": {
@@ -48330,8 +43666,8 @@
   "mh": 0.43,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4262,
+  "edge": 0.4,
+  "bk": 0.422,
   "conf": 3.1,
   "tmo": 0
  },
@@ -48356,8 +43692,8 @@
   "mh": 0.549,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.5473,
+  "edge": 0.2,
+  "bk": 0.5456,
   "conf": 2.1,
   "tmo": 0
  },
@@ -48382,8 +43718,8 @@
   "mh": 0.433,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4493,
+  "edge": 0.9,
+  "bk": 0.4504,
   "conf": 3.7,
   "tmo": 0
  },
@@ -48407,10 +43743,10 @@
   "pr": 0.4579,
   "mh": 0.517,
   "call": "PASS",
-  "side": "lower",
-  "edge": 1.3,
-  "bk": 0.4912,
-  "conf": 2.6,
+  "side": "higher",
+  "edge": 0.0,
+  "bk": 0.5171,
+  "conf": 3.7,
   "tmo": 0
  },
  "2026-11-27|4697392|shots": {
@@ -48434,8 +43770,8 @@
   "mh": 0.405,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.1,
-  "bk": 0.4038,
+  "edge": 0.4,
+  "bk": 0.3972,
   "conf": 5.7,
   "tmo": 0
  },
@@ -48485,10 +43821,10 @@
   "pr": 0.3393,
   "mh": 0.5,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.5019,
-  "conf": 3.3,
+  "side": "lower",
+  "edge": 0.4,
+  "bk": 0.4918,
+  "conf": 3.2,
   "tmo": 0
  },
  "2026-11-27|3899952|shots": {
@@ -48512,8 +43848,8 @@
   "mh": 0.451,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4677,
+  "edge": 0.2,
+  "bk": 0.456,
   "conf": 3.3,
   "tmo": 0
  },
@@ -48694,8 +44030,8 @@
   "mh": 0.306,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.4,
-  "bk": 0.3347,
+  "edge": 0.6,
+  "bk": 0.3183,
   "conf": 3.1,
   "tmo": 0
  },
@@ -48720,8 +44056,8 @@
   "mh": 0.338,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.3456,
+  "edge": 0.0,
+  "bk": 0.3383,
   "conf": 3.1,
   "tmo": 0
  },
@@ -48745,10 +44081,10 @@
   "pr": 0.3682,
   "mh": 0.357,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3597,
-  "conf": 3.0,
+  "side": "lower",
+  "edge": 0.2,
+  "bk": 0.3538,
+  "conf": 4.2,
   "tmo": 0
  },
  "2026-11-27|3114|shots": {
@@ -48821,11 +44157,11 @@
   "start": "2026-11-28T00:30:00Z",
   "line": 1.5,
   "pr": 0.7098,
-  "mh": 0.602,
+  "mh": 0.576,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.6035,
+  "edge": 1.3,
+  "bk": 0.6022,
   "conf": 5.9,
   "tmo": 0
  },
@@ -48850,8 +44186,8 @@
   "mh": 0.388,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3905,
+  "edge": 0.2,
+  "bk": 0.393,
   "conf": 2.9,
   "tmo": 0
  },
@@ -48876,8 +44212,8 @@
   "mh": 0.464,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.4724,
+  "edge": 0.3,
+  "bk": 0.4706,
   "conf": 2.9,
   "tmo": 0
  },
@@ -49032,8 +44368,8 @@
   "mh": 0.432,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.4393,
+  "edge": 0.5,
+  "bk": 0.4412,
   "conf": 3.1,
   "tmo": 0
  },
@@ -49081,12 +44417,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.2392,
-  "mh": 0.316,
+  "mh": 0.352,
   "call": "PASS",
-  "side": "higher",
-  "edge": 1.4,
-  "bk": 0.3433,
-  "conf": 3.1,
+  "side": "lower",
+  "edge": 0.1,
+  "bk": 0.3499,
+  "conf": 5.5,
   "tmo": 0
  },
  "2026-11-27|2562629|power_play_points": {
@@ -49239,10 +44575,10 @@
   "pr": 0.5171,
   "mh": 0.464,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4604,
-  "conf": 3.5,
+  "side": "higher",
+  "edge": 0.1,
+  "bk": 0.465,
+  "conf": 3.6,
   "tmo": 0
  },
  "2026-11-27|2593315|goals": {
@@ -49314,8 +44650,8 @@
   "mh": 0.405,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.0,
-  "bk": 0.4244,
+  "edge": 0.1,
+  "bk": 0.4061,
   "conf": 2.6,
   "tmo": 0
  },
@@ -49388,8 +44724,8 @@
   "mh": 0.612,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.6,
-  "bk": 0.5795,
+  "edge": 0.9,
+  "bk": 0.5943,
   "conf": 3.3,
   "tmo": 0
  },
@@ -49536,8 +44872,8 @@
   "mh": 0.347,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.2,
-  "bk": 0.3438,
+  "edge": 0.5,
+  "bk": 0.3376,
   "conf": 4.6,
   "tmo": 0
  },
@@ -49562,8 +44898,8 @@
   "mh": 0.502,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.5101,
+  "edge": 0.3,
+  "bk": 0.5075,
   "conf": 3.0,
   "tmo": 0
  },
@@ -49744,8 +45080,8 @@
   "mh": 0.471,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.3,
-  "bk": 0.4658,
+  "edge": 0.5,
+  "bk": 0.4607,
   "conf": 2.6,
   "tmo": 0
  },
@@ -49770,8 +45106,8 @@
   "mh": 0.299,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.2,
-  "bk": 0.2952,
+  "edge": 0.3,
+  "bk": 0.2923,
   "conf": 4.8,
   "tmo": 0
  },
@@ -49796,8 +45132,8 @@
   "mh": 0.352,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.3,
-  "bk": 0.3465,
+  "edge": 0.5,
+  "bk": 0.3427,
   "conf": 4.5,
   "tmo": 0
  },
@@ -49874,8 +45210,8 @@
   "mh": 0.339,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3431,
+  "edge": 0.4,
+  "bk": 0.3466,
   "conf": 2.6,
   "tmo": 0
  },
@@ -50311,10 +45647,10 @@
   "pr": 0.6925,
   "mh": 0.568,
   "call": "PASS",
-  "side": "higher",
+  "side": "lower",
   "edge": 0.0,
-  "bk": 0.5686,
-  "conf": 6.4,
+  "bk": 0.5671,
+  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|4066436|pts_rebs_asts": {
@@ -50339,11 +45675,11 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 18.5,
   "pr": 0.3149,
-  "mh": 0.509,
+  "mh": 0.498,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.1,
-  "bk": 0.486,
+  "edge": 0.7,
+  "bk": 0.4833,
   "conf": 6.4,
   "tmo": 0
  },
@@ -50373,10 +45709,10 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 11.5,
   "pr": 0.2715,
-  "mh": 0.518,
+  "mh": 0.509,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.7,
+  "edge": 1.3,
   "bk": 0.4831,
   "conf": 6.4,
   "tmo": 0
@@ -50488,8 +45824,8 @@
   "mh": 0.494,
   "call": "PASS",
   "side": "higher",
-  "edge": 2.1,
-  "bk": 0.5361,
+  "edge": 1.2,
+  "bk": 0.5186,
   "conf": 3.4,
   "tmo": 1
  },
@@ -50690,8 +46026,8 @@
   "mh": 0.471,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.5,
-  "bk": 0.4613,
+  "edge": 0.4,
+  "bk": 0.4628,
   "conf": 6.0,
   "tmo": 1
  },
@@ -50720,8 +46056,8 @@
   "mh": 0.541,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5332,
+  "edge": 0.3,
+  "bk": 0.5347,
   "conf": 5.2,
   "tmo": 0
  },
@@ -50743,12 +46079,12 @@
   "start": "2026-11-27T22:30:00Z",
   "line": 1.5,
   "pr": 0.5813,
-  "mh": 0.549,
+  "mh": 0.545,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.5488,
-  "conf": 2.1,
+  "side": "higher",
+  "edge": 0.4,
+  "bk": 0.5528,
+  "conf": 6.0,
   "tmo": 0
  },
  "2026-11-27|4066436|rebounds": {
@@ -51229,11 +46565,11 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 8.5,
   "pr": 0.3817,
-  "mh": 0.524,
+  "mh": 0.527,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5154,
+  "edge": 0.5,
+  "bk": 0.5161,
   "conf": 3.3,
   "tmo": 1
  },
@@ -51564,8 +46900,8 @@
   "mh": 0.305,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.293,
+  "edge": 0.7,
+  "bk": 0.2908,
   "conf": 3.1,
   "tmo": 0
  },
@@ -52351,12 +47687,12 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 1.5,
   "pr": 0.5455,
-  "mh": 0.617,
+  "mh": 0.607,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.0,
-  "bk": 0.6169,
-  "conf": 3.6,
+  "side": "higher",
+  "edge": 0.4,
+  "bk": 0.6144,
+  "conf": 3.1,
   "tmo": 0
  },
  "2026-11-27|2562637|goals": {
@@ -52510,8 +47846,8 @@
   "mh": 0.349,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.8,
-  "bk": 0.3332,
+  "edge": 0.7,
+  "bk": 0.3354,
   "conf": 5.1,
   "tmo": 0
  },
@@ -52693,28 +48029,6 @@
   "conf": 3.1,
   "tmo": 0
  },
- "2026-11-27|5216897|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.191
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "5216897",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1593,
-  "mh": 0.194,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
  "2026-11-27|4397886|points": {
   "first": {
    "Underdog": [
@@ -52740,8 +48054,8 @@
   "mh": 0.528,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5168,
+  "edge": 0.7,
+  "bk": 0.5146,
   "conf": 3.0,
   "tmo": 0
  },
@@ -53140,8 +48454,8 @@
   "mh": 0.455,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.8,
-  "bk": 0.4707,
+  "edge": 1.1,
+  "bk": 0.4765,
   "conf": 2.7,
   "tmo": 0
  },
@@ -53270,8 +48584,8 @@
   "mh": 0.372,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3768,
+  "edge": 0.5,
+  "bk": 0.3813,
   "conf": 3.6,
   "tmo": 0
  },
@@ -53398,8 +48712,8 @@
   "mh": 0.509,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.6,
-  "bk": 0.5209,
+  "edge": 0.3,
+  "bk": 0.5154,
   "conf": 2.4,
   "tmo": 0
  },
@@ -53878,8 +49192,8 @@
   "mh": 0.442,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.5,
-  "bk": 0.4523,
+  "edge": 0.2,
+  "bk": 0.4457,
   "conf": 2.7,
   "tmo": 0
  },
@@ -53938,8 +49252,8 @@
   "mh": 0.602,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.0,
-  "bk": 0.6017,
+  "edge": 0.2,
+  "bk": 0.5979,
   "conf": 3.7,
   "tmo": 0
  },
@@ -54087,10 +49401,10 @@
   "pr": 0.4984,
   "mh": 0.491,
   "call": "PASS",
-  "side": "lower",
+  "side": "higher",
   "edge": 0.1,
-  "bk": 0.4899,
-  "conf": 3.2,
+  "bk": 0.4925,
+  "conf": 4.1,
   "tmo": 0
  },
  "2026-11-27|5831|points": {
@@ -54357,10 +49671,10 @@
   "pr": 0.4058,
   "mh": 0.342,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.2,
-  "bk": 0.3463,
-  "conf": 4.2,
+  "side": "lower",
+  "edge": 0.1,
+  "bk": 0.3407,
+  "conf": 3.2,
   "tmo": 0
  },
  "2026-11-27|5118|points": {
@@ -54688,8 +50002,8 @@
   "mh": 0.549,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.5364,
+  "edge": 1.0,
+  "bk": 0.5296,
   "conf": 2.2,
   "tmo": 0
  },
@@ -54912,8 +50226,8 @@
   "mh": 0.634,
   "call": "PASS",
   "side": "lower",
-  "edge": 2.3,
-  "bk": 0.5878,
+  "edge": 0.2,
+  "bk": 0.6291,
   "conf": 2.7,
   "tmo": 0
  },
@@ -54939,11 +50253,11 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 3.5,
   "pr": 0.6948,
-  "mh": 0.564,
+  "mh": 0.512,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": null,
+  "edge": 0.9,
+  "bk": 0.5303,
   "conf": 5.8,
   "tmo": 0
  },
@@ -55003,14 +50317,14 @@
   "aid": "5203685",
   "eid": "401909332",
   "start": "2026-11-28T02:00:00Z",
-  "line": 6.5,
-  "pr": 0.6897,
-  "mh": 0.53,
+  "line": 7.5,
+  "pr": 0.6096,
+  "mh": 0.471,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 5.5,
+  "conf": 4.5,
   "tmo": 0
  },
  "2026-11-27|3942335|points": {
@@ -55068,8 +50382,8 @@
   "mh": 0.498,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.8,
-  "bk": 0.5147,
+  "edge": 0.4,
+  "bk": 0.5064,
   "conf": 4.8,
   "tmo": 0
  },
@@ -55263,12 +50577,12 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 2.5,
   "pr": 0.3987,
-  "mh": 0.428,
+  "mh": 0.405,
   "call": "PASS",
-  "side": "lower",
-  "edge": 0.2,
-  "bk": 0.4235,
-  "conf": 4.3,
+  "side": "higher",
+  "edge": 0.6,
+  "bk": 0.4178,
+  "conf": 2.6,
   "tmo": 0
  },
  "2026-11-27|3114766|points": {
@@ -55564,8 +50878,8 @@
   "mh": 0.571,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.6,
-  "bk": 0.5388,
+  "edge": 1.5,
+  "bk": 0.5408,
   "conf": 3.4,
   "tmo": 0
  },
@@ -56073,7 +51387,7 @@
   "call": "PASS",
   "side": "lower",
   "edge": 0.1,
-  "bk": 0.5669,
+  "bk": 0.5659,
   "conf": 2.2,
   "tmo": 0
  },
@@ -56392,8 +51706,8 @@
   "mh": 0.558,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.2,
-  "bk": 0.562,
+  "edge": 0.4,
+  "bk": 0.5663,
   "conf": 6.7,
   "tmo": 0
  },
@@ -56422,8 +51736,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.4,
-  "bk": 0.4926,
+  "edge": 0.7,
+  "bk": 0.4853,
   "conf": 1.7,
   "tmo": 0
  },
@@ -56567,7 +51881,7 @@
   "start": "2026-11-28T02:00:00Z",
   "line": 6.5,
   "pr": 0.2459,
-  "mh": 0.458,
+  "mh": 0.449,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -56660,8 +51974,8 @@
   "mh": 0.619,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.6,
-  "bk": 0.6066,
+  "edge": 1.2,
+  "bk": 0.5944,
   "conf": 2.7,
   "tmo": 0
  },
@@ -56780,8 +52094,8 @@
   "mh": 0.343,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3449,
+  "edge": 0.0,
+  "bk": null,
   "conf": 3.2,
   "tmo": 0
  },
@@ -57008,8 +52322,8 @@
   "mh": 0.628,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.1,
-  "bk": 0.6057,
+  "edge": 1.5,
+  "bk": 0.5981,
   "conf": 1.7,
   "tmo": 0
  },
@@ -57329,12 +52643,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 1.5,
   "pr": 0.5525,
-  "mh": 0.545,
+  "mh": 0.554,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
+  "side": "lower",
+  "edge": 0.4,
   "bk": 0.5456,
-  "conf": 2.2,
+  "conf": 4.3,
   "tmo": 0
  },
  "2026-11-27|4352722|points": {
@@ -57536,7 +52850,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 68.5,
-  "pr": 0.3291,
+  "pr": 0.3276,
   "mh": 0.506,
   "call": "PASS",
   "side": "higher",
@@ -57593,32 +52907,6 @@
   "conf": 3.5,
   "tmo": 0
  },
- "2026-11-27|4869770|points": {
-  "first": {
-   "Underdog": [
-    15.5,
-    0.512
-   ],
-   "Sleeper": [
-    16.5,
-    0.4609
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "4869770",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 15.5,
-  "pr": 0.333,
-  "mh": 0.512,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.0,
-  "tmo": 0
- },
  "2026-11-27|3112335|blks_stls": {
   "first": {
    "Underdog": [
@@ -57643,58 +52931,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|5106254|points": {
-  "first": {
-   "Underdog": [
-    10.5,
-    0.532
-   ],
-   "Sleeper": [
-    10.5,
-    0.5084
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5106254",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 11.5,
-  "pr": 0.4011,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.3,
-  "tmo": 0
- },
- "2026-11-27|5241360|points": {
-  "first": {
-   "Underdog": [
-    10.5,
-    0.52
-   ],
-   "Sleeper": [
-    10.5,
-    0.5098
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5241360",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 10.5,
-  "pr": 0.5592,
-  "mh": 0.52,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.7,
   "tmo": 0
  },
  "2026-11-27|5079322|rushing_yds": {
@@ -57723,28 +52959,6 @@
   "conf": 3.6,
   "tmo": 0
  },
- "2026-11-27|5241360|assists": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.373
-   ]
-  },
-  "sport": "CBB",
-  "stat": "assists",
-  "aid": "5241360",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.5867,
-  "mh": 0.397,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
  "2026-11-27|4873086|points": {
   "first": {
    "Underdog": [
@@ -57765,54 +52979,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 2.5,
-  "tmo": 0
- },
- "2026-11-27|4869770|assists": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.482
-   ]
-  },
-  "sport": "CBB",
-  "stat": "assists",
-  "aid": "4869770",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4352,
-  "mh": 0.482,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|5226071|rebounds": {
-  "first": {
-   "Underdog": [
-    5.5,
-    0.554
-   ],
-   "Sleeper": [
-    5.5,
-    0.5391
-   ]
-  },
-  "sport": "CBB",
-  "stat": "rebounds",
-  "aid": "5226071",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 5.5,
-  "pr": 0.384,
-  "mh": 0.554,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.3,
   "tmo": 0
  },
  "2026-11-27|5077787|passing_yds": {
@@ -57878,58 +53044,6 @@
   "line": 2.5,
   "pr": 0.2367,
   "mh": 0.509,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|5106254|assists": {
-  "first": {
-   "Underdog": [
-    5.5,
-    0.409
-   ],
-   "Sleeper": [
-    4.5,
-    0.5472
-   ]
-  },
-  "sport": "CBB",
-  "stat": "assists",
-  "aid": "5106254",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 4.5,
-  "pr": 0.515,
-  "mh": 0.532,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5075625|points": {
-  "first": {
-   "Underdog": [
-    17.5,
-    0.491
-   ],
-   "Sleeper": [
-    17.5,
-    0.4888
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5075625",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 17.5,
-  "pr": 0.5079,
-  "mh": 0.491,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -58103,28 +53217,6 @@
   "conf": 2.2,
   "tmo": 0
  },
- "2026-11-27|5075625|rebounds": {
-  "first": {
-   "Underdog": [
-    6.5,
-    0.532
-   ]
-  },
-  "sport": "CBB",
-  "stat": "rebounds",
-  "aid": "5075625",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 6.5,
-  "pr": 0.4074,
-  "mh": 0.532,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 1.7,
-  "tmo": 0
- },
  "2026-11-27|5122887|rushing_yds": {
   "first": {
    "Underdog": [
@@ -58167,28 +53259,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|4869770|three_points_made": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.373
-   ]
-  },
-  "sport": "CBB",
-  "stat": "three_points_made",
-  "aid": "4869770",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.2748,
-  "mh": 0.405,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 1.5,
   "tmo": 0
  },
  "2026-11-27|5176241|assists": {
@@ -58521,32 +53591,6 @@
   "conf": 5.1,
   "tmo": 0
  },
- "2026-11-27|5106254|three_points_made": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.627
-   ],
-   "Sleeper": [
-    0.5,
-    0.6119
-   ]
-  },
-  "sport": "CBB",
-  "stat": "three_points_made",
-  "aid": "5106254",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.2442,
-  "mh": 0.338,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 1.5,
-  "tmo": 0
- },
  "2026-11-27|4362748|receiving_yds": {
   "first": {
    "Underdog": [
@@ -58634,7 +53678,7 @@
   "eid": "401858544",
   "start": "2026-11-28T00:30:00Z",
   "line": 3.5,
-  "pr": 0.349,
+  "pr": 0.3478,
   "mh": 0.401,
   "call": "PASS",
   "side": "higher",
@@ -58794,7 +53838,7 @@
   "eid": "401856880",
   "start": "2026-11-28T02:00:00Z",
   "line": 17.5,
-  "pr": 0.3499,
+  "pr": 0.3485,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -59333,32 +54377,6 @@
   "conf": 2.6,
   "tmo": 0
  },
- "2026-11-27|5214635|points": {
-  "first": {
-   "Underdog": [
-    9.5,
-    0.512
-   ],
-   "Sleeper": [
-    10.5,
-    0.479
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5214635",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 10.5,
-  "pr": 0.4151,
-  "mh": 0.462,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.3,
-  "tmo": 0
- },
  "2026-11-27|2562624|goals": {
   "first": {
    "Underdog": [
@@ -59508,32 +54526,6 @@
   "line": 6.5,
   "pr": 0.0919,
   "mh": 0.455,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|5214635|assists": {
-  "first": {
-   "Underdog": [
-    7.5,
-    0.519
-   ],
-   "Sleeper": [
-    7.5,
-    0.4846
-   ]
-  },
-  "sport": "CBB",
-  "stat": "assists",
-  "aid": "5214635",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 7.5,
-  "pr": 0.5112,
-  "mh": 0.519,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -59839,32 +54831,6 @@
   "conf": 1.8,
   "tmo": 0
  },
- "2026-11-27|5075625|three_points_made": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.468
-   ],
-   "Sleeper": [
-    1.5,
-    0.4337
-   ]
-  },
-  "sport": "CBB",
-  "stat": "three_points_made",
-  "aid": "5075625",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4148,
-  "mh": 0.468,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 1.5,
-  "tmo": 0
- },
  "2026-11-27|5175007|three_points_made": {
   "first": {
    "Underdog": [
@@ -60148,7 +55114,7 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 59.5,
-  "pr": 0.5838,
+  "pr": 0.5822,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -60174,13 +55140,13 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 28.5,
-  "pr": 0.4516,
+  "pr": 0.4505,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.6,
+  "conf": 3.5,
   "tmo": 0
  },
  "2026-11-27|4233889|saves": {
@@ -60398,8 +55364,8 @@
   "mh": 0.525,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.5,
-  "bk": 0.5152,
+  "edge": 1.2,
+  "bk": 0.5005,
   "conf": 2.5,
   "tmo": 0
  },
@@ -60559,28 +55525,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|5111|goals_against": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.476
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "5111",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.6899,
-  "mh": 0.476,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 5.3,
   "tmo": 0
  },
  "2026-11-27|3026526|saves": {
@@ -60747,28 +55691,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|5111|saves": {
-  "first": {
-   "Underdog": [
-    21.5,
-    0.53
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "5111",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 21.5,
-  "pr": 0.446,
-  "mh": 0.509,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.5098,
-  "conf": 2.4,
   "tmo": 0
  },
  "2026-11-27|5243212|points": {
@@ -60957,32 +55879,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 4.0,
-  "tmo": 0
- },
- "2026-11-27|5075625|assists": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.532
-   ],
-   "Sleeper": [
-    2.5,
-    0.5112
-   ]
-  },
-  "sport": "CBB",
-  "stat": "assists",
-  "aid": "5075625",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4828,
-  "mh": 0.532,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.6,
   "tmo": 0
  },
  "2026-11-27|5264658|receiving_rec": {
@@ -61539,28 +56435,6 @@
   "conf": 6.0,
   "tmo": 0
  },
- "2026-11-27|4712036|goals_against": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.538
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "4712036",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.589,
-  "mh": 0.52,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 5.6,
-  "tmo": 0
- },
  "2026-11-27|4873093|points": {
   "first": {
    "Underdog": [
@@ -61711,7 +56585,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.2773,
-  "mh": 0.377,
+  "mh": 0.432,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -61746,50 +56620,6 @@
   "side": "higher",
   "edge": 0.1,
   "bk": 0.2222,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|2562636|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.198
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "2562636",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2072,
-  "mh": 0.2,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4697442|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.3
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4697442",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1617,
-  "mh": 0.308,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
   "conf": 3.1,
   "tmo": 0
  },
@@ -61829,7 +56659,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.1127,
-  "mh": 0.25,
+  "mh": 0.28,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -61933,28 +56763,6 @@
   "conf": 2.9,
   "tmo": 0
  },
- "2026-11-27|4697442|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.498
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4697442",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.3107,
-  "mh": 0.437,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.4,
-  "tmo": 0
- },
  "2026-11-27|4268767|goals_against": {
   "first": {
    "Underdog": [
@@ -62001,28 +56809,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 2.9,
-  "tmo": 0
- },
- "2026-11-27|4697442|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.437
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4697442",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2269,
-  "mh": 0.441,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.7,
   "tmo": 0
  },
  "2026-11-27|3042020|goals_against": {
@@ -62073,28 +56859,6 @@
   "conf": 2.1,
   "tmo": 0
  },
- "2026-11-27|4712036|saves": {
-  "first": {
-   "Underdog": [
-    23.5,
-    0.51
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "4712036",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 24.5,
-  "pr": 0.3579,
-  "mh": 0.504,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.5047,
-  "conf": 1.9,
-  "tmo": 0
- },
  "2026-11-28|4870858|receiving_yds": {
   "first": {
    "Underdog": [
@@ -62112,107 +56876,13 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 61.5,
-  "pr": 0.6398,
+  "pr": 0.6382,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.6,
-  "tmo": 0
- },
- "2026-11-27|4587996|power_play_points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.289
-   ],
-   "Sleeper": [
-    0.5,
-    0.2937
-   ]
-  },
-  "sport": "NHL",
-  "stat": "power_play_points",
-  "aid": "4587996",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.5494,
-  "mh": 0.268,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
   "conf": 4.5,
-  "tmo": 0
- },
- "2026-11-27|4587996|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.446
-   ],
-   "DraftKings": [
-    0.5,
-    0.4425
-   ],
-   "Pinnacle": [
-    0.5,
-    0.4452
-   ],
-   "Sleeper": [
-    0.5,
-    0.4365
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4587996",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.4649,
-  "mh": 0.446,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.5,
-  "bk": 0.435,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|4587996|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.595
-   ],
-   "DraftKings": [
-    0.5,
-    0.5941
-   ],
-   "Pinnacle": [
-    0.5,
-    0.5941
-   ],
-   "Sleeper": [
-    0.5,
-    0.5608
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4587996",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.7123,
-  "mh": 0.595,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 0.4,
-  "bk": 0.5861,
-  "conf": 3.7,
   "tmo": 0
  },
  "2026-11-27|5144086|points": {
@@ -62234,32 +56904,6 @@
   "line": 13.5,
   "pr": 0.3952,
   "mh": 0.548,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|5149211|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.476
-   ],
-   "Sleeper": [
-    1.5,
-    0.4775
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5149211",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.5569,
-  "mh": 0.467,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -62296,131 +56940,9 @@
   "mh": 0.432,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.3,
-  "bk": 0.4262,
+  "edge": 0.4,
+  "bk": 0.4245,
   "conf": 3.7,
-  "tmo": 0
- },
- "2026-11-27|5281369|points": {
-  "first": {
-   "Underdog": [
-    7.5,
-    0.532
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5281369",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 7.5,
-  "pr": 0.3464,
-  "mh": 0.532,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|5188613|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.195
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "5188613",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1395,
-  "mh": 0.2,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5226071|points": {
-  "first": {
-   "Underdog": [
-    14.5,
-    0.464
-   ],
-   "Sleeper": [
-    14.5,
-    0.4831
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5226071",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 14.5,
-  "pr": 0.279,
-  "mh": 0.464,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.0,
-  "tmo": 0
- },
- "2026-11-27|3067313|saves": {
-  "first": {
-   "Underdog": [
-    24.5,
-    0.514
-   ],
-   "DraftKings": [
-    24.5,
-    0.5147
-   ],
-   "Pinnacle": [
-    24.5,
-    0.5147
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "3067313",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 24.5,
-  "pr": 0.4855,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.5147,
-  "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|3067313|goals_against": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.425
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "3067313",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.3242,
-  "mh": 0.424,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.9,
   "tmo": 0
  },
  "2026-11-27|5144086|three_points_made": {
@@ -62489,7 +57011,7 @@
   "start": "2026-11-28T01:30:00Z",
   "line": 5.5,
   "pr": 0.4701,
-  "mh": 0.447,
+  "mh": 0.416,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -62601,32 +57123,6 @@
   "conf": 2.3,
   "tmo": 0
  },
- "2026-11-27|5108062|points": {
-  "first": {
-   "Underdog": [
-    14.5,
-    0.491
-   ],
-   "Sleeper": [
-    14.5,
-    0.4888
-   ]
-  },
-  "sport": "CBB",
-  "stat": "points",
-  "aid": "5108062",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 14.5,
-  "pr": 0.4849,
-  "mh": 0.491,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.3,
-  "tmo": 0
- },
  "2026-11-27|5144105|points": {
   "first": {
    "Underdog": [
@@ -62643,9 +57139,9 @@
   "aid": "5144105",
   "eid": "401920543",
   "start": "2026-11-28T01:30:00Z",
-  "line": 14.5,
-  "pr": 0.2584,
-  "mh": 0.409,
+  "line": 13.5,
+  "pr": 0.2863,
+  "mh": 0.462,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -62677,40 +57173,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 2.8,
-  "tmo": 0
- },
- "2026-11-27|4587996|shots": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.409
-   ],
-   "DraftKings": [
-    2.5,
-    0.4248
-   ],
-   "Pinnacle": [
-    2.5,
-    0.4248
-   ],
-   "Sleeper": [
-    2.5,
-    0.4114
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "4587996",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.444,
-  "mh": 0.412,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.6,
-  "bk": 0.4234,
-  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|5105798|assists": {
@@ -62765,148 +57227,6 @@
   "conf": 2.5,
   "tmo": 0
  },
- "2026-11-27|4587996|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.3
-   ],
-   "Pinnacle": [
-    0.5,
-    0.3015
-   ],
-   "Sleeper": [
-    0.5,
-    0.3033
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4587996",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2833,
-  "mh": 0.3,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.1,
-  "bk": 0.3011,
-  "conf": 1.6,
-  "tmo": 0
- },
- "2026-11-27|5108062|three_points_made": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.443
-   ],
-   "Sleeper": [
-    2.5,
-    0.4337
-   ]
-  },
-  "sport": "CBB",
-  "stat": "three_points_made",
-  "aid": "5108062",
-  "eid": "401920533",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.4543,
-  "mh": 0.443,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 1.5,
-  "tmo": 0
- },
- "2026-11-27|3042269|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.433
-   ],
-   "DraftKings": [
-    0.5,
-    0.3713
-   ],
-   "Pinnacle": [
-    0.5,
-    0.3587
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3042269",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2196,
-  "mh": 0.433,
-  "call": "LEAN",
-  "side": "lower",
-  "edge": 3.4,
-  "bk": 0.365,
-  "conf": 6.7,
-  "tmo": 0
- },
- "2026-11-27|3042269|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.347
-   ],
-   "DraftKings": [
-    0.5,
-    0.3079
-   ],
-   "Pinnacle": [
-    0.5,
-    0.3015
-   ],
-   "Sleeper": [
-    0.5,
-    0.3009
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3042269",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1574,
-  "mh": 0.347,
-  "call": "PASS",
-  "side": "lower",
-  "edge": 2.1,
-  "bk": 0.3047,
-  "conf": 6.2,
-  "tmo": 0
- },
- "2026-11-27|3942065|goals_against": {
-  "first": {
-   "Underdog": [
-    2.5,
-    0.58
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "3942065",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 2.5,
-  "pr": 0.7165,
-  "mh": 0.58,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 6.2,
-  "tmo": 0
- },
  "2026-11-27|4894366|goals_against": {
   "first": {
    "Underdog": [
@@ -62927,270 +57247,6 @@
   "edge": 0.0,
   "bk": null,
   "conf": 6.3,
-  "tmo": 0
- },
- "2026-11-27|5188613|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.498
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "5188613",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.558,
-  "mh": 0.498,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|5073306|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.342
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5073306",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3534,
-  "mh": 0.342,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|5073306|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.233
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5073306",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2599,
-  "mh": 0.233,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 4.2,
-  "tmo": 0
- },
- "2026-11-27|3042109|saves": {
-  "first": {
-   "Underdog": [
-    25.5,
-    0.514
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "3042109",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 25.5,
-  "pr": 0.4999,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.6,
-  "tmo": 0
- },
- "2026-11-27|3042111|shots": {
-  "first": {
-   "Underdog": [
-    1.5,
-    0.459
-   ]
-  },
-  "sport": "NHL",
-  "stat": "shots",
-  "aid": "3042111",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 1.5,
-  "pr": 0.4313,
-  "mh": 0.459,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.5,
-  "tmo": 0
- },
- "2026-11-27|4319911|saves": {
-  "first": {
-   "Underdog": [
-    28.5,
-    0.486
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "4319911",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 28.5,
-  "pr": 0.4192,
-  "mh": 0.486,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.4,
-  "tmo": 0
- },
- "2026-11-27|5188613|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.366
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5188613",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2417,
-  "mh": 0.366,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.2,
-  "tmo": 0
- },
- "2026-11-27|5080221|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.225
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5080221",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1267,
-  "mh": 0.225,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|5188613|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.229
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "5188613",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1422,
-  "mh": 0.229,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|4697461|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.257
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "4697461",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2443,
-  "mh": 0.257,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 3.1,
-  "tmo": 0
- },
- "2026-11-27|3942065|saves": {
-  "first": {
-   "Underdog": [
-    22.5,
-    0.514
-   ]
-  },
-  "sport": "NHL",
-  "stat": "saves",
-  "aid": "3942065",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 22.5,
-  "pr": 0.2571,
-  "mh": 0.514,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.9,
-  "tmo": 0
- },
- "2026-11-27|3042109|goals_against": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.398
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "3042109",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.2096,
-  "mh": 0.398,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.9,
   "tmo": 0
  },
  "2026-11-27|4894366|saves": {
@@ -63220,94 +57276,6 @@
   "side": "lower",
   "edge": 0.2,
   "bk": 0.5246,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|5080221|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.353
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "5080221",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2548,
-  "mh": 0.353,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|4697461|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.32
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "4697461",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3538,
-  "mh": 0.32,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.7,
-  "tmo": 0
- },
- "2026-11-27|4392471|goals": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.196
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals",
-  "aid": "4392471",
-  "eid": "401892797",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2492,
-  "mh": 0.196,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.6,
-  "tmo": 0
- },
- "2026-11-27|4319911|goals_against": {
-  "first": {
-   "Underdog": [
-    3.5,
-    0.515
-   ]
-  },
-  "sport": "NHL",
-  "stat": "goals_against",
-  "aid": "4319911",
-  "eid": "401892796",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 3.5,
-  "pr": 0.2211,
-  "mh": 0.515,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
   "conf": 2.6,
   "tmo": 0
  },
@@ -63354,101 +57322,9 @@
   "mh": 0.529,
   "call": "PASS",
   "side": "lower",
-  "edge": 0.9,
-  "bk": 0.5103,
+  "edge": 1.1,
+  "bk": 0.5075,
   "conf": 2.4,
-  "tmo": 0
- },
- "2026-11-27|3042111|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.347
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "3042111",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.2616,
-  "mh": 0.347,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|2976833|points": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.278
-   ],
-   "Sleeper": [
-    0.5,
-    0.2805
-   ]
-  },
-  "sport": "NHL",
-  "stat": "points",
-  "aid": "2976833",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3835,
-  "mh": 0.278,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.2,
-  "tmo": 0
- },
- "2026-11-27|3042111|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.22
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "3042111",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.1988,
-  "mh": 0.22,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
-  "tmo": 0
- },
- "2026-11-27|2976833|assists": {
-  "first": {
-   "Underdog": [
-    0.5,
-    0.225
-   ]
-  },
-  "sport": "NHL",
-  "stat": "assists",
-  "aid": "2976833",
-  "eid": "401892795",
-  "start": "2026-11-27T18:00:00Z",
-  "line": 0.5,
-  "pr": 0.3851,
-  "mh": 0.225,
-  "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": null,
-  "conf": 2.1,
   "tmo": 0
  },
  "2026-11-27|4593841|pts_rebs_asts": {
@@ -63901,12 +57777,12 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 3.5,
   "pr": 0.4307,
-  "mh": 0.423,
+  "mh": 0.426,
   "call": "PASS",
-  "side": "higher",
-  "edge": 0.0,
-  "bk": 0.424,
-  "conf": 2.6,
+  "side": "lower",
+  "edge": 0.1,
+  "bk": 0.4247,
+  "conf": 3.9,
   "tmo": 0
  },
  "2026-11-27|5164368|points": {
@@ -64221,7 +58097,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3967,
-  "mh": 0.329,
+  "mh": 0.388,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -64243,7 +58119,7 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3633,
-  "mh": 0.233,
+  "mh": 0.291,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -64640,7 +58516,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 43.5,
-  "pr": 0.6242,
+  "pr": 0.6249,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -64717,8 +58593,8 @@
   "aid": "5239156",
   "eid": "401858312",
   "start": "2026-11-28T20:30:00Z",
-  "line": 43.5,
-  "pr": 0.7272,
+  "line": 41.5,
+  "pr": 0.8011,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -64822,7 +58698,7 @@
   "eid": "401862843",
   "start": "2026-11-28T21:00:00Z",
   "line": 30.5,
-  "pr": 0.5887,
+  "pr": 0.591,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -64974,13 +58850,13 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 55.5,
-  "pr": 0.5695,
+  "pr": 0.572,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.3,
+  "conf": 4.9,
   "tmo": 0
  },
  "2026-11-28|5088888|rushing_yds": {
@@ -65018,13 +58894,13 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 1.5,
-  "pr": 0.5834,
+  "pr": 0.5888,
   "mh": 0.397,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.2,
+  "conf": 4.8,
   "tmo": 0
  },
  "2026-11-28|4911971|rushing_yds": {
@@ -65062,13 +58938,13 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 193.5,
-  "pr": 0.5441,
+  "pr": 0.5937,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.9,
+  "conf": 5.6,
   "tmo": 0
  },
  "2026-11-28|5084084|passing_yds": {
@@ -65592,7 +59468,7 @@
   "eid": "401862843",
   "start": "2026-11-28T21:00:00Z",
   "line": 155.5,
-  "pr": 0.3347,
+  "pr": 0.3389,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -65640,13 +59516,13 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 65.5,
-  "pr": 0.4643,
+  "pr": 0.4671,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 3.0,
+  "conf": 3.5,
   "tmo": 0
  },
  "2026-11-28|5079349|rushing_yds": {
@@ -65792,7 +59668,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 47.5,
-  "pr": 0.3345,
+  "pr": 0.3376,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -65896,7 +59772,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 60.5,
-  "pr": 0.3941,
+  "pr": 0.3902,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -65996,7 +59872,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 0.5,
-  "pr": 0.3859,
+  "pr": 0.3896,
   "mh": 0.626,
   "call": "PASS",
   "side": "higher",
@@ -66022,7 +59898,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 146.5,
-  "pr": 0.1316,
+  "pr": 0.1324,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -66044,7 +59920,7 @@
   "eid": "401862843",
   "start": "2026-11-28T21:00:00Z",
   "line": 31.5,
-  "pr": 0.2012,
+  "pr": 0.2025,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -66240,7 +60116,7 @@
   "eid": "401864548",
   "start": "2026-11-29T02:00:00Z",
   "line": 35.5,
-  "pr": 0.4207,
+  "pr": 0.4213,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -66909,11 +60785,11 @@
   "start": "2026-11-28T01:00:00Z",
   "line": 0.5,
   "pr": 0.3824,
-  "mh": 0.356,
+  "mh": 0.361,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.4,
-  "bk": 0.364,
+  "edge": 0.2,
+  "bk": 0.3652,
   "conf": 2.1,
   "tmo": 0
  },
@@ -67234,7 +61110,7 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 12.5,
-  "pr": 0.622,
+  "pr": 0.6231,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
@@ -67311,14 +61187,14 @@
   "aid": "5093141",
   "eid": "401856764",
   "start": "2026-11-28T20:00:00Z",
-  "line": 39.5,
-  "pr": 0.2832,
+  "line": 37.5,
+  "pr": 0.351,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 2.9,
+  "conf": 3.5,
   "tmo": 0
  },
  "2026-11-28|4870736|rushing_yds": {
@@ -67761,7 +61637,7 @@
   "start": "2026-11-28T01:30:00Z",
   "line": 6.5,
   "pr": 0.1259,
-  "mh": 0.397,
+  "mh": 0.468,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -67852,7 +61728,7 @@
   "eid": "401856763",
   "start": "2026-11-28T21:15:00Z",
   "line": 1.5,
-  "pr": 0.6704,
+  "pr": 0.6712,
   "mh": 0.422,
   "call": "PASS",
   "side": "higher",
@@ -68060,13 +61936,13 @@
   "eid": "401858315",
   "start": "2026-11-29T00:30:00Z",
   "line": 5.5,
-  "pr": 0.5981,
+  "pr": 0.5911,
   "mh": 0.467,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.5,
+  "conf": 4.4,
   "tmo": 0
  },
  "2026-11-28|5084084|passing_tds": {
@@ -68944,13 +62820,13 @@
   "eid": "401856761",
   "start": "2026-11-28T17:00:00Z",
   "line": 4.5,
-  "pr": 0.5093,
+  "pr": 0.5163,
   "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
   "bk": null,
-  "conf": 4.5,
+  "conf": 4.6,
   "tmo": 0
  },
  "2026-11-27|5182412|assists": {
@@ -69056,8 +62932,8 @@
   "mh": 0.5,
   "call": "PASS",
   "side": "lower",
-  "edge": 1.5,
-  "bk": 0.4698,
+  "edge": 1.8,
+  "bk": 0.4647,
   "conf": 2.4,
   "tmo": 0
  },
@@ -69795,7 +63671,7 @@
   "start": "2026-11-28T00:00:00Z",
   "line": 2.5,
   "pr": 0.1028,
-  "mh": 0.443,
+  "mh": 0.439,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -69824,8 +63700,8 @@
   "mh": 0.473,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": null,
+  "edge": 0.6,
+  "bk": 0.4857,
   "conf": 3.6,
   "tmo": 0
  },
@@ -69932,8 +63808,8 @@
   "mh": 0.364,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": null,
+  "edge": 0.7,
+  "bk": 0.3773,
   "conf": 3.2,
   "tmo": 0
  },
@@ -70014,8 +63890,8 @@
   "mh": 0.239,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.0,
-  "bk": null,
+  "edge": 0.3,
+  "bk": 0.2454,
   "conf": 3.1,
   "tmo": 0
  },
@@ -70074,8 +63950,8 @@
   "mh": 0.488,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.4,
-  "bk": 0.5158,
+  "edge": 1.5,
+  "bk": 0.5189,
   "conf": 2.9,
   "tmo": 0
  },
@@ -70104,8 +63980,8 @@
   "mh": 0.504,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.9,
-  "bk": 0.5215,
+  "edge": 1.4,
+  "bk": 0.5318,
   "conf": 2.9,
   "tmo": 0
  },
@@ -70461,11 +64337,11 @@
   "start": "2026-11-28T01:30:00Z",
   "line": 3.5,
   "pr": 0.3831,
-  "mh": 0.447,
+  "mh": 0.471,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4481,
+  "edge": 0.4,
+  "bk": 0.4791,
   "conf": 2.4,
   "tmo": 0
  },
@@ -70593,9 +64469,9 @@
   "aid": "4684276",
   "eid": "401920543",
   "start": "2026-11-28T01:30:00Z",
-  "line": 15.5,
-  "pr": 0.4753,
-  "mh": 0.512,
+  "line": 14.5,
+  "pr": 0.5687,
+  "mh": 0.5,
   "call": "PASS",
   "side": "higher",
   "edge": 0.0,
@@ -70877,13 +64753,13 @@
   "aid": "3102530",
   "eid": "401909334",
   "start": "2026-11-28T02:30:00Z",
-  "line": 18.5,
-  "pr": 0.8057,
-  "mh": 0.481,
+  "line": 17.5,
+  "pr": 0.8321,
+  "mh": 0.529,
   "call": "PASS",
   "side": "higher",
-  "edge": 1.4,
-  "bk": 0.5089,
+  "edge": 0.0,
+  "bk": null,
   "conf": 0,
   "tmo": 0
  },
@@ -70905,11 +64781,11 @@
   "start": "2026-11-28T02:30:00Z",
   "line": 6.5,
   "pr": 0.8612,
-  "mh": 0.518,
+  "mh": 0.533,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.5,
-  "bk": 0.5287,
+  "edge": 0.0,
+  "bk": 0.534,
   "conf": 0,
   "tmo": 0
  },
@@ -71136,8 +65012,8 @@
   "mh": 0.462,
   "call": "PASS",
   "side": "higher",
-  "edge": 0.1,
-  "bk": 0.4632,
+  "edge": 0.3,
+  "bk": 0.4678,
   "conf": 0,
   "tmo": 0
  },
@@ -71275,6 +65151,310 @@
   "edge": 0.0,
   "bk": null,
   "conf": 1.8,
+  "tmo": 0
+ },
+ "2026-11-27|5105787|points": {
+  "first": {
+   "Underdog": [
+    14.5,
+    0.455
+   ]
+  },
+  "sport": "CBB",
+  "stat": "points",
+  "aid": "5105787",
+  "eid": "401920737",
+  "start": "2026-11-28T01:00:00Z",
+  "line": 14.5,
+  "pr": 0.4675,
+  "mh": 0.455,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 3.6,
+  "tmo": 0
+ },
+ "2026-11-27|5221322|assists": {
+  "first": {
+   "Underdog": [
+    7.5,
+    0.416
+   ]
+  },
+  "sport": "CBB",
+  "stat": "assists",
+  "aid": "5221322",
+  "eid": "401920737",
+  "start": "2026-11-28T01:00:00Z",
+  "line": 7.5,
+  "pr": 0.2268,
+  "mh": 0.416,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 3.1,
+  "tmo": 0
+ },
+ "2026-11-28|5121750|receiving_rec": {
+  "first": {
+   "Underdog": [
+    5.5,
+    0.529
+   ],
+   "Sleeper": [
+    5.5,
+    0.514
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5121750",
+  "eid": "401858316",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 5.5,
+  "pr": 0.578,
+  "mh": 0.529,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 4.7,
+  "tmo": 0
+ },
+ "2026-11-28|4691315|receiving_rec": {
+  "first": {
+   "Underdog": [
+    4.5,
+    0.471
+   ],
+   "Sleeper": [
+    4.5,
+    0.4888
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "4691315",
+  "eid": "401858314",
+  "start": "2026-11-28T17:00:00Z",
+  "line": 4.5,
+  "pr": 0.6128,
+  "mh": 0.471,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 4.5,
+  "tmo": 0
+ },
+ "2026-11-28|5153074|receiving_rec": {
+  "first": {
+   "Underdog": [
+    6.5,
+    0.509
+   ],
+   "Sleeper": [
+    6.5,
+    0.5
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5153074",
+  "eid": "401858312",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 6.5,
+  "pr": 0.5791,
+  "mh": 0.509,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 4.5,
+  "tmo": 0
+ },
+ "2026-11-28|5239156|receiving_rec": {
+  "first": {
+   "Underdog": [
+    2.5,
+    0.509
+   ],
+   "Sleeper": [
+    2.5,
+    0.5084
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5239156",
+  "eid": "401858312",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 2.5,
+  "pr": 0.6014,
+  "mh": 0.509,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 4.1,
+  "tmo": 0
+ },
+ "2026-11-28|4869728|receiving_rec": {
+  "first": {
+   "Underdog": [
+    3.5,
+    0.591
+   ],
+   "Sleeper": [
+    4.5,
+    0.4258
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "4869728",
+  "eid": "401858312",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 3.5,
+  "pr": 0.5221,
+  "mh": 0.591,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 3.6,
+  "tmo": 0
+ },
+ "2026-11-28|4879192|receiving_rec": {
+  "first": {
+   "Underdog": [
+    2.5,
+    0.551
+   ],
+   "Sleeper": [
+    2.5,
+    0.521
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "4879192",
+  "eid": "401858312",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 2.5,
+  "pr": 0.5398,
+  "mh": 0.551,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 3.5,
+  "tmo": 0
+ },
+ "2026-11-28|5079475|receiving_rec": {
+  "first": {
+   "Underdog": [
+    3.5,
+    0.6
+   ],
+   "Sleeper": [
+    4.5,
+    0.4298
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5079475",
+  "eid": "401858314",
+  "start": "2026-11-28T17:00:00Z",
+  "line": 3.5,
+  "pr": 0.3814,
+  "mh": 0.6,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 3.4,
+  "tmo": 0
+ },
+ "2026-11-28|5081131|receiving_rec": {
+  "first": {
+   "Underdog": [
+    2.5,
+    0.578
+   ],
+   "Sleeper": [
+    2.5,
+    0.5531
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5081131",
+  "eid": "401858312",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 2.5,
+  "pr": 0.5118,
+  "mh": 0.578,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 2.9,
+  "tmo": 0
+ },
+ "2026-11-28|5155519|receiving_rec": {
+  "first": {
+   "Underdog": [
+    4.5,
+    0.398
+   ],
+   "Sleeper": [
+    4.5,
+    0.4522
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5155519",
+  "eid": "401858316",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 4.5,
+  "pr": 0.3993,
+  "mh": 0.398,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 2.9,
+  "tmo": 0
+ },
+ "2026-11-28|5207842|receiving_rec": {
+  "first": {
+   "Underdog": [
+    3.5,
+    0.398
+   ],
+   "Sleeper": [
+    3.5,
+    0.4222
+   ]
+  },
+  "sport": "CFB",
+  "stat": "receiving_rec",
+  "aid": "5207842",
+  "eid": "401858316",
+  "start": "2026-11-28T20:30:00Z",
+  "line": 3.5,
+  "pr": 0.4133,
+  "mh": 0.398,
+  "call": "PASS",
+  "side": "higher",
+  "edge": 0.0,
+  "bk": null,
+  "conf": 2.6,
   "tmo": 0
  }
 }
