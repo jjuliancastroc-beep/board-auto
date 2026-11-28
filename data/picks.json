@@ -45555,15 +45555,17 @@
   "date": "2026-11-27",
   "line_at_pick": "GW -22.5",
   "logged_at": "00:22",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "UMBC Retrievers 51, George Washington Revolutionaries 91",
+  "close": "GW -21.5",
+  "clv": 1.0,
   "review": "PULL",
   "review_log": [
    "11/27 12:22 AM: checked line and injuries - no change",
    "11/27 01:40 AM: PULL - line is now +21.5, past the playable number +21.7"
-  ]
+  ],
+  "units": -1.0,
+  "pl": -10.0
  },
  {
   "learned": null,
@@ -47457,14 +47459,16 @@
   "date": "2026-11-27",
   "line_at_pick": "MIN -130",
   "logged_at": "00:22",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Colorado Avalanche 4, Minnesota Wild 3",
+  "close": "MIN -118",
+  "clv": -2.4,
   "review": "HOLD",
   "review_log": [
    "11/27 12:22 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -47620,14 +47624,16 @@
   "date": "2026-11-27",
   "line_at_pick": "LA -115",
   "logged_at": "00:22",
-  "result": null,
-  "final": null,
-  "close": null,
-  "clv": null,
+  "result": "Lost",
+  "final": "Los Angeles Kings 5, Anaheim Ducks 3",
+  "close": "LA -122",
+  "clv": -1.7,
   "review": "HOLD",
   "review_log": [
    "11/27 12:22 AM: checked line and injuries - no change"
-  ]
+  ],
+  "units": -1.0,
+  "pl": 0.0
  },
  {
   "learned": null,
@@ -48660,5 +48666,83 @@
   ],
   "units": 0.87,
   "pl": 0.0
+ },
+ {
+  "learned": null,
+  "learned_caution": null,
+  "id": "401909328",
+  "sport": "NBA",
+  "game": "Philadelphia 76ers @ Indiana Pacers",
+  "home": "Indiana Pacers",
+  "away": "Philadelphia 76ers",
+  "start": "2026-11-28T00:30Z",
+  "pick": "Indiana Pacers +4.5",
+  "decision": "WATCH",
+  "stake": null,
+  "conf": 5.2,
+  "components": {
+   "efficiency": 0.59,
+   "veto": 1.5,
+   "models": 0.5,
+   "starters": 0.75,
+   "coaching": 0.5,
+   "against": 0.65,
+   "price": 0.0,
+   "situational": 0.5,
+   "our history": 0.25
+  },
+  "gap_a": 3.9,
+  "gap_b": 5.3,
+  "gap_min": 5.3,
+  "price": -113,
+  "fair_line": -0.1,
+  "playable_to": null,
+  "side": "home",
+  "home_line": 4.5,
+  "home_ml": 160,
+  "away_ml": -191,
+  "flags": [
+   "Star Jaylen Brown (Philadelphia 76ers) Out"
+  ],
+  "against": [
+   "Last 5 games point the other way (our side -6.6 a game, theirs +2.0)"
+  ],
+  "invalidation": [
+   "A star on either team changes status (questionable to out or back in)"
+  ],
+  "reason": "Only one model clears the bar - never a bet by itself.",
+  "model_a": -0.6,
+  "model_b": 0.8,
+  "model_a_name": "Ratings",
+  "model_b_name": "Last 10",
+  "test_record": {
+   "w": 57,
+   "l": 68,
+   "n": 125,
+   "win": 0.456
+  },
+  "tier": null,
+  "day": null,
+  "book": "DraftKings",
+  "goalies": [
+   null,
+   null
+  ],
+  "history": {
+   "adj": 0.25,
+   "key": "NBA spread dog",
+   "w": 15,
+   "l": 7,
+   "text": "Our record on NBA spread dog: 15-7 (last 60 days, recent counts more) -> +0.25 to confidence"
+  },
+  "date": "2026-11-27",
+  "line_at_pick": "PHI -4.5",
+  "logged_at": "18:30",
+  "result": null,
+  "final": null,
+  "close": null,
+  "clv": null,
+  "review": "HOLD",
+  "review_log": []
  }
 ]
