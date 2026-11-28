@@ -9,11 +9,11 @@
    "status": "learning"
   },
   "CFB conf 6-6.9": {
-   "w": 14,
+   "w": 15,
    "l": 28,
-   "units": -15.36,
-   "be": 0.5241,
-   "shrunk": 0.4239,
+   "units": -14.47,
+   "be": 0.5242,
+   "shrunk": 0.4301,
    "status": "proven loser"
   },
   "CFB fav": {
@@ -25,20 +25,20 @@
    "status": "learning"
   },
   "CBB dog under 10": {
-   "w": 87,
+   "w": 88,
    "l": 61,
-   "units": 16.78,
+   "units": 17.67,
    "be": 0.5281,
-   "shrunk": 0.5657,
+   "shrunk": 0.5678,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 135,
+   "w": 136,
    "l": 110,
-   "units": 10.45,
+   "units": 11.34,
    "be": 0.5282,
-   "shrunk": 0.5424,
-   "status": "learning"
+   "shrunk": 0.5439,
+   "status": "proven winner"
   },
   "CBB dog 20+": {
    "w": 34,
@@ -49,44 +49,44 @@
    "status": "proven winner"
   },
   "CBB dog 10-20": {
-   "w": 56,
+   "w": 57,
    "l": 47,
-   "units": 2.93,
-   "be": 0.5278,
-   "shrunk": 0.5294,
+   "units": 3.78,
+   "be": 0.528,
+   "shrunk": 0.5325,
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
-   "w": 47,
+   "w": 48,
    "l": 28,
-   "units": 14.56,
-   "be": 0.5256,
-   "shrunk": 0.576,
+   "units": 15.4,
+   "be": 0.5258,
+   "shrunk": 0.5794,
    "status": "proven winner"
   },
   "NHL ML fav": {
    "w": 37,
-   "l": 35,
-   "units": -10.74,
-   "be": 0.6014,
-   "shrunk": 0.5082,
+   "l": 37,
+   "units": -12.74,
+   "be": 0.6026,
+   "shrunk": 0.5,
    "status": "proven loser"
   },
   "NHL conf 7-7.9": {
    "w": 7,
-   "l": 8,
-   "units": 0.38,
-   "be": 0.4849,
-   "shrunk": 0.4923,
+   "l": 9,
+   "units": -0.62,
+   "be": 0.4975,
+   "shrunk": 0.4848,
    "status": "learning"
   },
   "NHL conf 6-6.9": {
    "w": 33,
-   "l": 25,
-   "units": 2.91,
-   "be": 0.5626,
-   "shrunk": 0.537,
-   "status": "learning"
+   "l": 26,
+   "units": 1.91,
+   "be": 0.5634,
+   "shrunk": 0.5321,
+   "status": "proven loser"
   },
   "NHL conf 5.5-5.9": {
    "w": 12,
@@ -137,11 +137,11 @@
    "status": "learning"
   },
   "CFB dog 10-20": {
-   "w": 11,
+   "w": 12,
    "l": 12,
-   "units": -1.99,
-   "be": 0.5238,
-   "shrunk": 0.4932,
+   "units": -1.1,
+   "be": 0.524,
+   "shrunk": 0.5,
    "status": "learning"
   },
   "NBA dog under 10": {
@@ -429,6 +429,20 @@
    "from": "learning",
    "to": "proven winner",
    "text": "NHL ML dog: 15-15 (50%, +5.3 units). Counted as 50.0% after the pull toward 50/50; break-even 44.2%. Now proven winner - lower-graded picks of this kind can be played at $10."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "CBB conf 6-6.9",
+   "from": "learning",
+   "to": "proven winner",
+   "text": "CBB conf 6-6.9: 136-110 (55%, +11.3 units). Counted as 54.4% after the pull toward 50/50; break-even 52.8%. Now proven winner - lower-graded picks of this kind can be played at $10."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "NHL conf 6-6.9",
+   "from": "learning",
+   "to": "proven loser",
+   "text": "NHL conf 6-6.9: 33-26 (56%, +1.9 units). Counted as 53.2% after the pull toward 50/50; break-even 56.3%. Now proven loser - cash picks of this kind drop to $10."
   }
  ],
  "learned": {
@@ -1415,5 +1429,5 @@
    "strong": false
   }
  },
- "updated": "11/27 09:51 PM"
+ "updated": "11/27 10:16 PM"
 }
