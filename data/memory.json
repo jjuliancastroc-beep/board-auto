@@ -25,27 +25,27 @@
    "status": "learning"
   },
   "CBB dog under 10": {
-   "w": 86,
+   "w": 87,
    "l": 61,
-   "units": 15.85,
-   "be": 0.5282,
-   "shrunk": 0.5635,
+   "units": 16.78,
+   "be": 0.5281,
+   "shrunk": 0.5657,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 134,
+   "w": 135,
    "l": 110,
-   "units": 9.52,
+   "units": 10.45,
    "be": 0.5282,
-   "shrunk": 0.5408,
+   "shrunk": 0.5424,
    "status": "learning"
   },
   "CBB dog 20+": {
-   "w": 33,
+   "w": 34,
    "l": 22,
-   "units": 7.8,
-   "be": 0.5256,
-   "shrunk": 0.5524,
+   "units": 8.69,
+   "be": 0.5257,
+   "shrunk": 0.5566,
    "status": "proven winner"
   },
   "CBB dog 10-20": {
@@ -57,11 +57,11 @@
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
-   "w": 46,
+   "w": 47,
    "l": 28,
-   "units": 13.66,
+   "units": 14.56,
    "be": 0.5256,
-   "shrunk": 0.5726,
+   "shrunk": 0.576,
    "status": "proven winner"
   },
   "NHL ML fav": {
@@ -81,12 +81,12 @@
    "status": "learning"
   },
   "NHL conf 6-6.9": {
-   "w": 32,
+   "w": 33,
    "l": 25,
-   "units": 1.77,
-   "be": 0.5643,
-   "shrunk": 0.5327,
-   "status": "proven loser"
+   "units": 2.91,
+   "be": 0.5626,
+   "shrunk": 0.537,
+   "status": "learning"
   },
   "NHL conf 5.5-5.9": {
    "w": 12,
@@ -97,27 +97,27 @@
    "status": "learning"
   },
   "NHL ML dog": {
-   "w": 14,
+   "w": 15,
    "l": 15,
-   "units": 4.19,
-   "be": 0.4416,
-   "shrunk": 0.4937,
-   "status": "learning"
+   "units": 5.33,
+   "be": 0.4424,
+   "shrunk": 0.5,
+   "status": "proven winner"
   },
   "NBA fav": {
-   "w": 17,
+   "w": 18,
    "l": 18,
-   "units": -2.61,
-   "be": 0.5235,
-   "shrunk": 0.4941,
+   "units": -1.71,
+   "be": 0.5237,
+   "shrunk": 0.5,
    "status": "learning"
   },
   "NBA conf 6-6.9": {
-   "w": 13,
+   "w": 14,
    "l": 6,
-   "units": 5.68,
-   "be": 0.5261,
-   "shrunk": 0.5507,
+   "units": 6.58,
+   "be": 0.5262,
+   "shrunk": 0.5571,
    "status": "learning"
   },
   "CBB conf 7-7.9": {
@@ -146,10 +146,10 @@
   },
   "NBA dog under 10": {
    "w": 13,
-   "l": 6,
-   "units": 5.89,
-   "be": 0.5229,
-   "shrunk": 0.5507,
+   "l": 8,
+   "units": 3.89,
+   "be": 0.5236,
+   "shrunk": 0.5352,
    "status": "learning"
   },
   "CFB conf 7-7.9": {
@@ -194,10 +194,10 @@
   },
   "NBA conf under 5.5": {
    "w": 7,
-   "l": 6,
-   "units": 0.49,
-   "be": 0.5237,
-   "shrunk": 0.5079,
+   "l": 8,
+   "units": -1.51,
+   "be": 0.5244,
+   "shrunk": 0.4923,
    "status": "learning"
   },
   "NFL fav": {
@@ -415,28 +415,42 @@
    "from": "proven winner",
    "to": "learning",
    "text": "CBB conf 6-6.9: 134-110 (55%, +9.5 units). Counted as 54.1% after the pull toward 50/50; break-even 52.8%. Now learning - back to watching."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "NHL conf 6-6.9",
+   "from": "proven loser",
+   "to": "learning",
+   "text": "NHL conf 6-6.9: 33-25 (57%, +2.9 units). Counted as 53.7% after the pull toward 50/50; break-even 56.3%. Now learning - back to watching."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "NHL ML dog",
+   "from": "learning",
+   "to": "proven winner",
+   "text": "NHL ML dog: 15-15 (50%, +5.3 units). Counted as 50.0% after the pull toward 50/50; break-even 44.2%. Now proven winner - lower-graded picks of this kind can be played at $10."
   }
  ],
  "learned": {
-  "w": 5,
+  "w": 6,
   "l": 6,
-  "units": -1.55
+  "units": -0.66
  },
  "paused_until": null,
  "props": {
   "CBB assists higher": {
-   "n": 258,
-   "hit": 0.4612,
-   "said": 0.4728,
-   "gap": -0.0083,
+   "n": 260,
+   "hit": 0.4615,
+   "said": 0.4724,
+   "gap": -0.0079,
    "status": "learning",
    "strong": false
   },
   "CBB assists lower": {
-   "n": 258,
-   "hit": 0.5388,
-   "said": 0.5272,
-   "gap": 0.0083,
+   "n": 260,
+   "hit": 0.5385,
+   "said": 0.5276,
+   "gap": 0.0079,
    "status": "learning",
    "strong": false
   },
@@ -473,34 +487,34 @@
    "strong": false
   },
   "CBB points higher": {
-   "n": 423,
-   "hit": 0.4374,
-   "said": 0.4899,
-   "gap": -0.0425,
+   "n": 426,
+   "hit": 0.4343,
+   "said": 0.49,
+   "gap": -0.0451,
    "status": "learning",
    "strong": false
   },
   "CBB points lower": {
-   "n": 423,
-   "hit": 0.5626,
-   "said": 0.5101,
-   "gap": 0.0425,
+   "n": 426,
+   "hit": 0.5657,
+   "said": 0.51,
+   "gap": 0.0451,
    "status": "proven winner",
    "strong": false
   },
   "CBB three_points_made higher": {
-   "n": 222,
-   "hit": 0.3694,
-   "said": 0.4655,
-   "gap": -0.0663,
+   "n": 225,
+   "hit": 0.3689,
+   "said": 0.4653,
+   "gap": -0.0667,
    "status": "learning",
    "strong": false
   },
   "CBB three_points_made lower": {
-   "n": 222,
-   "hit": 0.6306,
-   "said": 0.5345,
-   "gap": 0.0663,
+   "n": 225,
+   "hit": 0.6311,
+   "said": 0.5347,
+   "gap": 0.0667,
    "status": "learning",
    "strong": false
   },
@@ -1337,10 +1351,10 @@
    "strong": false
   },
   "CBB conf under 5.5 leaned side": {
-   "n": 896,
-   "hit": 0.4152,
-   "said": 0.4805,
-   "gap": -0.0587,
+   "n": 904,
+   "hit": 0.4137,
+   "said": 0.4803,
+   "gap": -0.06,
    "status": "learning",
    "strong": false
   },
@@ -1401,5 +1415,5 @@
    "strong": false
   }
  },
- "updated": "11/27 09:26 PM"
+ "updated": "11/27 09:51 PM"
 }
