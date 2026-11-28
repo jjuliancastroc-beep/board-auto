@@ -6,142 +6,8 @@
  },
  {
   "sport": "CFB",
-  "games": [
-   {
-    "id": "401856880",
-    "sport": "CFB",
-    "game": "West Virginia Mountaineers @ Utah Utes",
-    "home": "Utah Utes",
-    "away": "West Virginia Mountaineers",
-    "time": "Fri 8:00 PM CT",
-    "start": "2026-11-28T02:00Z",
-    "book": "Draft Kings",
-    "line": "UTAH -23.5",
-    "home_line": -23.5,
-    "home_line_open": -20.5,
-    "spread_odds": [
-     -102,
-     -118
-    ],
-    "total": 65.5,
-    "total_open": 68.5,
-    "home_ml": -2100,
-    "away_ml": 1100,
-    "model_a_name": "FPI",
-    "model_b_name": "Ratings",
-    "model_a": 20.6,
-    "model_b": 16.5,
-    "games_played": [
-     11,
-     11
-    ],
-    "neutral": false,
-    "records": [
-     "5-6",
-     "11-0"
-    ],
-    "venue": "Rice-Eccles Stadium",
-    "tv": "Fox",
-    "indoor": false,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Cam Cook",
-      "DJ Epps",
-      "Michael Hawkins Jr."
-     ],
-     [
-      "Braden Pegan",
-      "Devon Dampier",
-      "Wayshawn Parker"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     6
-    ],
-    "form5": [
-     -4.8,
-     12.4
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "L-1112-1: midweek or small-conference game - no $25 single (8.0+ only)"
-    ],
-    "factors": [
-     "Rest: Mountaineers 6 day(s), Utes 6 day(s)",
-     "Line moved 3 pts toward Utah Utes since open (-20.5 to -23.5 home)",
-     "Kickoff forecast: wind 2 mph (gusts 3), 45F, rain chance 2%",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side -4.8 a game, theirs +12.4)"
-    ],
-    "invalidation": [
-     "Either starting QB is ruled out or downgraded"
-    ],
-    "tier": "P4vP4",
-    "day": "Midweek",
-    "wind": {
-     "wind": 1.7,
-     "gust": 2.7,
-     "rain": 2,
-     "temp": 44.8,
-     "src": "Open-Meteo"
-    },
-    "weather": {
-     "text": "7",
-     "temp": 48
-    },
-    "total_model": 62.8,
-    "gap_a": -2.9,
-    "gap_b": -7.0,
-    "gap_min": 7.0,
-    "pick": "West Virginia Mountaineers +23.5",
-    "price": -102,
-    "side": "away",
-    "fair_line": 18.5,
-    "playable_to": null,
-    "sim_cover": 0.622,
-    "history": {
-     "adj": -0.24,
-     "key": "CFB spread dog",
-     "w": 25,
-     "l": 31,
-     "text": "Our record on CFB spread dog: 25-31 (last 60 days, recent counts more) -> -0.24 to confidence"
-    },
-    "test_record": {
-     "w": 12,
-     "l": 10,
-     "n": 22,
-     "win": 0.545
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 6.9,
-    "components": {
-     "efficiency": 2.0,
-     "veto": 1.5,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.5,
-     "situational": 0.5,
-     "our history": -0.24
-    },
-    "total_gap": -2.7
-   }
-  ],
-  "n_past": 825,
-  "model_note": "FPI and an opponent-adjusted ratings model from every FBS game this season. Checks QB status, weather and wind, conference tier and weekday (L-1112-1), key numbers."
+  "games": [],
+  "note": "No games today."
  },
  {
   "sport": "NBA",
@@ -162,7 +28,7 @@
      -112,
      -108
     ],
-    "total": 232.5,
+    "total": 231.5,
     "total_open": 228.5,
     "home_ml": 322,
     "away_ml": -410,
@@ -274,7 +140,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": -5.1,
+    "total_gap": -4.1,
     "stake": 25,
     "now_says": "PAPER Utah Jazz +9.5 6.9",
     "locked": true
@@ -804,11 +670,11 @@
     "playable_to": null,
     "sim_cover": 0.59,
     "history": {
-     "adj": 0.2,
+     "adj": 0.19,
      "key": "CBB spread dog",
      "w": 174,
-     "l": 128,
-     "text": "Our record on CBB spread dog: 174-128 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "l": 129,
+     "text": "Our record on CBB spread dog: 174-129 (last 60 days, recent counts more) -> +0.19 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -819,7 +685,7 @@
     "models_agree": false,
     "one_model": true,
     "veto": false,
-    "conf": 6.4,
+    "conf": 6.3,
     "components": {
      "efficiency": 0.66,
      "veto": 1.5,
@@ -829,7 +695,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.19
     },
     "total_gap": 0.4
    },
@@ -920,11 +786,11 @@
     "playable_to": null,
     "sim_cover": 0.637,
     "history": {
-     "adj": 0.2,
+     "adj": 0.19,
      "key": "CBB spread dog",
      "w": 174,
-     "l": 128,
-     "text": "Our record on CBB spread dog: 174-128 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "l": 129,
+     "text": "Our record on CBB spread dog: 174-129 (last 60 days, recent counts more) -> +0.19 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -945,7 +811,7 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.19
     },
     "total_gap": -5.7
    },
