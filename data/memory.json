@@ -26,19 +26,19 @@
   },
   "CBB dog under 10": {
    "w": 86,
-   "l": 59,
-   "units": 17.85,
-   "be": 0.5284,
-   "shrunk": 0.5692,
+   "l": 61,
+   "units": 15.85,
+   "be": 0.5282,
+   "shrunk": 0.5635,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
    "w": 134,
-   "l": 108,
-   "units": 11.52,
-   "be": 0.5283,
-   "shrunk": 0.5445,
-   "status": "proven winner"
+   "l": 110,
+   "units": 9.52,
+   "be": 0.5282,
+   "shrunk": 0.5408,
+   "status": "learning"
   },
   "CBB dog 20+": {
    "w": 33,
@@ -73,11 +73,11 @@
    "status": "proven loser"
   },
   "NHL conf 7-7.9": {
-   "w": 6,
+   "w": 7,
    "l": 8,
-   "units": -1.07,
-   "be": 0.4904,
-   "shrunk": 0.4844,
+   "units": 0.38,
+   "be": 0.4849,
+   "shrunk": 0.4923,
    "status": "learning"
   },
   "NHL conf 6-6.9": {
@@ -97,11 +97,11 @@
    "status": "learning"
   },
   "NHL ML dog": {
-   "w": 13,
+   "w": 14,
    "l": 15,
-   "units": 2.74,
-   "be": 0.4427,
-   "shrunk": 0.4872,
+   "units": 4.19,
+   "be": 0.4416,
+   "shrunk": 0.4937,
    "status": "learning"
   },
   "NBA fav": {
@@ -408,6 +408,13 @@
    "from": "learning",
    "to": "proven winner",
    "text": "CBB conf 6-6.9: 134-108 (55%, +11.5 units). Counted as 54.4% after the pull toward 50/50; break-even 52.8%. Now proven winner - lower-graded picks of this kind can be played at $10."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "CBB conf 6-6.9",
+   "from": "proven winner",
+   "to": "learning",
+   "text": "CBB conf 6-6.9: 134-110 (55%, +9.5 units). Counted as 54.1% after the pull toward 50/50; break-even 52.8%. Now learning - back to watching."
   }
  ],
  "learned": {
@@ -738,114 +745,114 @@
    "strong": false
   },
   "NHL points higher": {
-   "n": 855,
-   "hit": 0.4713,
-   "said": 0.4624,
-   "gap": 0.008,
+   "n": 900,
+   "hit": 0.4767,
+   "said": 0.4638,
+   "gap": 0.0116,
    "status": "learning",
    "strong": false
   },
   "NHL points lower": {
-   "n": 855,
-   "hit": 0.5287,
-   "said": 0.5376,
-   "gap": -0.008,
+   "n": 900,
+   "hit": 0.5233,
+   "said": 0.5362,
+   "gap": -0.0116,
    "status": "learning",
    "strong": false
   },
   "NHL shots higher": {
-   "n": 801,
-   "hit": 0.4694,
-   "said": 0.4919,
-   "gap": -0.02,
+   "n": 848,
+   "hit": 0.4788,
+   "said": 0.4922,
+   "gap": -0.012,
    "status": "learning",
    "strong": false
   },
   "NHL shots lower": {
-   "n": 801,
-   "hit": 0.5306,
-   "said": 0.5081,
-   "gap": 0.02,
+   "n": 848,
+   "hit": 0.5212,
+   "said": 0.5078,
+   "gap": 0.012,
    "status": "learning",
    "strong": false
   },
   "NHL assists higher": {
-   "n": 898,
-   "hit": 0.3385,
-   "said": 0.3507,
-   "gap": -0.0109,
+   "n": 943,
+   "hit": 0.3436,
+   "said": 0.3518,
+   "gap": -0.0074,
    "status": "learning",
    "strong": false
   },
   "NHL assists lower": {
-   "n": 898,
-   "hit": 0.6615,
-   "said": 0.6493,
-   "gap": 0.0109,
+   "n": 943,
+   "hit": 0.6564,
+   "said": 0.6482,
+   "gap": 0.0074,
    "status": "learning",
    "strong": false
   },
   "NHL power_play_points higher": {
-   "n": 495,
-   "hit": 0.2323,
-   "said": 0.2795,
-   "gap": -0.0393,
+   "n": 522,
+   "hit": 0.2318,
+   "said": 0.2803,
+   "gap": -0.0407,
    "status": "learning",
    "strong": false
   },
   "NHL power_play_points lower": {
-   "n": 495,
-   "hit": 0.7677,
-   "said": 0.7205,
-   "gap": 0.0393,
-   "status": "learning",
+   "n": 522,
+   "hit": 0.7682,
+   "said": 0.7197,
+   "gap": 0.0407,
+   "status": "proven winner",
    "strong": false
   },
   "NHL goals higher": {
-   "n": 643,
-   "hit": 0.2613,
-   "said": 0.27,
-   "gap": -0.0076,
+   "n": 682,
+   "hit": 0.261,
+   "said": 0.2702,
+   "gap": -0.008,
    "status": "learning",
    "strong": false
   },
   "NHL goals lower": {
-   "n": 643,
-   "hit": 0.7387,
-   "said": 0.73,
-   "gap": 0.0076,
+   "n": 682,
+   "hit": 0.739,
+   "said": 0.7298,
+   "gap": 0.008,
    "status": "learning",
    "strong": false
   },
   "NHL saves higher": {
-   "n": 96,
-   "hit": 0.4688,
-   "said": 0.4999,
-   "gap": -0.0153,
+   "n": 102,
+   "hit": 0.4706,
+   "said": 0.4986,
+   "gap": -0.0141,
    "status": "learning",
    "strong": false
   },
   "NHL saves lower": {
-   "n": 96,
-   "hit": 0.5312,
-   "said": 0.5001,
-   "gap": 0.0153,
+   "n": 102,
+   "hit": 0.5294,
+   "said": 0.5014,
+   "gap": 0.0141,
    "status": "learning",
    "strong": false
   },
   "NHL goals_against higher": {
-   "n": 96,
-   "hit": 0.5417,
-   "said": 0.4973,
-   "gap": 0.0217,
+   "n": 102,
+   "hit": 0.549,
+   "said": 0.4983,
+   "gap": 0.0256,
    "status": "learning",
    "strong": false
   },
   "NHL goals_against lower": {
-   "n": 96,
-   "hit": 0.4583,
-   "said": 0.5027,
-   "gap": -0.0217,
+   "n": 102,
+   "hit": 0.451,
+   "said": 0.5017,
+   "gap": -0.0256,
    "status": "learning",
    "strong": false
   },
@@ -1282,26 +1289,26 @@
    "strong": false
   },
   "NHL conf 5.5-5.9 leaned side": {
-   "n": 186,
-   "hit": 0.6022,
-   "said": 0.6065,
-   "gap": -0.0028,
+   "n": 197,
+   "hit": 0.599,
+   "said": 0.6057,
+   "gap": -0.0045,
    "status": "learning",
    "strong": false
   },
   "NHL conf under 5.5 leaned side": {
-   "n": 3439,
-   "hit": 0.4094,
-   "said": 0.4075,
-   "gap": 0.0018,
+   "n": 3632,
+   "hit": 0.4138,
+   "said": 0.4085,
+   "gap": 0.0052,
    "status": "learning",
    "strong": false
   },
   "NHL conf 6-6.9 leaned side": {
-   "n": 227,
-   "hit": 0.6256,
-   "said": 0.6402,
-   "gap": -0.0102,
+   "n": 238,
+   "hit": 0.6218,
+   "said": 0.6382,
+   "gap": -0.0115,
    "status": "learning",
    "strong": false
   },
@@ -1394,5 +1401,5 @@
    "strong": false
   }
  },
- "updated": "11/27 07:20 PM"
+ "updated": "11/27 07:45 PM"
 }
