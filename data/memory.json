@@ -26,18 +26,18 @@
   },
   "CBB dog under 10": {
    "w": 84,
-   "l": 58,
-   "units": 17.12,
-   "be": 0.5284,
-   "shrunk": 0.5677,
+   "l": 59,
+   "units": 16.12,
+   "be": 0.5282,
+   "shrunk": 0.5648,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 130,
-   "l": 107,
-   "units": 8.99,
-   "be": 0.5284,
-   "shrunk": 0.5401,
+   "w": 131,
+   "l": 108,
+   "units": 8.9,
+   "be": 0.5282,
+   "shrunk": 0.5398,
    "status": "learning"
   },
   "CBB dog 20+": {
@@ -129,12 +129,12 @@
    "status": "learning"
   },
   "CBB fav": {
-   "w": 17,
+   "w": 18,
    "l": 18,
-   "units": -2.61,
+   "units": -1.7,
    "be": 0.5269,
-   "shrunk": 0.4941,
-   "status": "proven loser"
+   "shrunk": 0.5,
+   "status": "learning"
   },
   "CFB dog 10-20": {
    "w": 11,
@@ -394,6 +394,13 @@
    "from": "learning",
    "to": "proven loser",
    "text": "NHL conf 6-6.9: 32-25 (56%, +1.8 units). Counted as 53.3% after the pull toward 50/50; break-even 56.4%. Now proven loser - cash picks of this kind drop to $10."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "CBB fav",
+   "from": "proven loser",
+   "to": "learning",
+   "text": "CBB fav: 18-18 (50%, -1.7 units). Counted as 50.0% after the pull toward 50/50; break-even 52.7%. Now learning - back to watching."
   }
  ],
  "learned": {
@@ -452,19 +459,19 @@
    "strong": false
   },
   "CBB points higher": {
-   "n": 399,
-   "hit": 0.4361,
-   "said": 0.4901,
-   "gap": -0.0432,
+   "n": 401,
+   "hit": 0.4364,
+   "said": 0.4899,
+   "gap": -0.0428,
    "status": "learning",
    "strong": false
   },
   "CBB points lower": {
-   "n": 399,
-   "hit": 0.5639,
-   "said": 0.5099,
-   "gap": 0.0432,
-   "status": "learning",
+   "n": 401,
+   "hit": 0.5636,
+   "said": 0.5101,
+   "gap": 0.0428,
+   "status": "proven winner",
    "strong": false
   },
   "CBB three_points_made higher": {
@@ -484,82 +491,82 @@
    "strong": false
   },
   "CFB passing_tds higher": {
-   "n": 76,
-   "hit": 0.3684,
-   "said": 0.4939,
-   "gap": -0.0542,
+   "n": 79,
+   "hit": 0.3544,
+   "said": 0.4901,
+   "gap": -0.0599,
    "status": "learning",
    "strong": false
   },
   "CFB passing_tds lower": {
-   "n": 76,
-   "hit": 0.6316,
-   "said": 0.5061,
-   "gap": 0.0542,
+   "n": 79,
+   "hit": 0.6456,
+   "said": 0.5099,
+   "gap": 0.0599,
    "status": "learning",
    "strong": false
   },
   "CFB passing_yds higher": {
-   "n": 75,
-   "hit": 0.4667,
+   "n": 79,
+   "hit": 0.4557,
    "said": 0.5,
-   "gap": -0.0143,
+   "gap": -0.0196,
    "status": "learning",
    "strong": false
   },
   "CFB passing_yds lower": {
-   "n": 75,
-   "hit": 0.5333,
+   "n": 79,
+   "hit": 0.5443,
    "said": 0.5,
-   "gap": 0.0143,
+   "gap": 0.0196,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds higher": {
-   "n": 161,
-   "hit": 0.4348,
+   "n": 170,
+   "hit": 0.4235,
    "said": 0.4998,
-   "gap": -0.0401,
+   "gap": -0.048,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds lower": {
-   "n": 161,
-   "hit": 0.5652,
+   "n": 170,
+   "hit": 0.5765,
    "said": 0.5002,
-   "gap": 0.0401,
+   "gap": 0.048,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds higher": {
-   "n": 259,
-   "hit": 0.4981,
-   "said": 0.5005,
-   "gap": -0.0017,
+   "n": 273,
+   "hit": 0.4908,
+   "said": 0.5004,
+   "gap": -0.007,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds lower": {
-   "n": 259,
-   "hit": 0.5019,
-   "said": 0.4995,
-   "gap": 0.0017,
+   "n": 273,
+   "hit": 0.5092,
+   "said": 0.4996,
+   "gap": 0.007,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec higher": {
-   "n": 181,
-   "hit": 0.4199,
-   "said": 0.4827,
-   "gap": -0.0405,
+   "n": 190,
+   "hit": 0.4263,
+   "said": 0.4836,
+   "gap": -0.0375,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec lower": {
-   "n": 181,
-   "hit": 0.5801,
-   "said": 0.5173,
-   "gap": 0.0405,
+   "n": 190,
+   "hit": 0.5737,
+   "said": 0.5164,
+   "gap": 0.0375,
    "status": "learning",
    "strong": false
   },
@@ -1244,26 +1251,26 @@
    "strong": false
   },
   "CFB conf 6-6.9 leaned side": {
-   "n": 23,
-   "hit": 0.3478,
-   "said": 0.5144,
-   "gap": -0.0312,
+   "n": 27,
+   "hit": 0.3333,
+   "said": 0.5169,
+   "gap": -0.039,
    "status": "learning",
    "strong": false
   },
   "CFB conf 5.5-5.9 leaned side": {
-   "n": 28,
-   "hit": 0.4643,
-   "said": 0.5142,
-   "gap": -0.0109,
+   "n": 29,
+   "hit": 0.4483,
+   "said": 0.5167,
+   "gap": -0.0154,
    "status": "learning",
    "strong": false
   },
   "CFB conf under 5.5 leaned side": {
-   "n": 605,
-   "hit": 0.4777,
-   "said": 0.4936,
-   "gap": -0.0137,
+   "n": 639,
+   "hit": 0.471,
+   "said": 0.4931,
+   "gap": -0.0191,
    "status": "learning",
    "strong": false
   },
@@ -1316,10 +1323,10 @@
    "strong": false
   },
   "CBB conf under 5.5 leaned side": {
-   "n": 850,
-   "hit": 0.4165,
-   "said": 0.4806,
-   "gap": -0.0574,
+   "n": 852,
+   "hit": 0.4167,
+   "said": 0.4805,
+   "gap": -0.0571,
    "status": "learning",
    "strong": false
   },
@@ -1380,5 +1387,5 @@
    "strong": false
   }
  },
- "updated": "11/27 06:30 PM"
+ "updated": "11/27 06:55 PM"
 }
