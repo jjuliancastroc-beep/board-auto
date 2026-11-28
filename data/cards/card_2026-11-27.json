@@ -25,8 +25,8 @@
     ],
     "total": 65.5,
     "total_open": 68.5,
-    "home_ml": -2800,
-    "away_ml": 1300,
+    "home_ml": -2400,
+    "away_ml": 1200,
     "model_a_name": "FPI",
     "model_b_name": "Ratings",
     "model_a": 20.6,
@@ -78,7 +78,7 @@
     "factors": [
      "Rest: Mountaineers 6 day(s), Utes 6 day(s)",
      "Line moved 5 pts toward Utah Utes since open (-20.5 to -25.5 home)",
-     "Kickoff forecast: wind 4 mph (gusts 4), 44F, rain chance 2%",
+     "Kickoff forecast: wind 4 mph (gusts 5), 47F, rain chance 2%",
      "Market moved toward this side since open (we get a worse number than early bettors)"
     ],
     "against": [
@@ -91,10 +91,10 @@
     "tier": "P4vP4",
     "day": "Midweek",
     "wind": {
-     "wind": 3.6,
-     "gust": 3.6,
+     "wind": 4.5,
+     "gust": 5.4,
      "rain": 2,
-     "temp": 44.1,
+     "temp": 47.1,
      "src": "Open-Meteo"
     },
     "weather": {
@@ -311,7 +311,7 @@
      -108,
      -112
     ],
-    "total": 219.5,
+    "total": 220.5,
     "total_open": 223.5,
     "home_ml": -148,
     "away_ml": 124,
@@ -358,11 +358,6 @@
       "player": "Isaiah Stewart",
       "pos": "C",
       "status": "Out"
-     },
-     {
-      "player": "Zach Edey",
-      "pos": "C",
-      "status": "Day-To-Day"
      },
      {
       "player": "Scotty Pippen Jr.",
@@ -463,153 +458,7 @@
      "situational": 0.5,
      "our history": 0.25
     },
-    "total_gap": 6.9,
-    "total_lean": "Over 219.5 (season scoring says 226.4) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401909330",
-    "sport": "NBA",
-    "game": "Atlanta Hawks @ Boston Celtics",
-    "home": "Boston Celtics",
-    "away": "Atlanta Hawks",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "BOS -9.5",
-    "home_line": -9.5,
-    "home_line_open": -9.5,
-    "spread_odds": [
-     -118,
-     -103
-    ],
-    "total": 224.5,
-    "total_open": 222.5,
-    "home_ml": -378,
-    "away_ml": 300,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 7.1,
-    "model_b": 8.4,
-    "games_played": [
-     17,
-     18
-    ],
-    "neutral": false,
-    "records": [
-     "11-6",
-     "12-6"
-    ],
-    "venue": "TD Garden",
-    "tv": "",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Mitchell Robinson",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [
-     {
-      "player": "Jock Landale",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Asa Newell",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "CJ McCollum",
-      "pos": "G",
-      "status": "Out"
-     },
-     {
-      "player": "Mouhamed Gueye",
-      "pos": "F",
-      "status": "Out"
-     },
-     {
-      "player": "Henri Veesaar",
-      "pos": "C",
-      "status": "Out"
-     }
-    ],
-    "stars": [
-     [
-      "Jalen Johnson",
-      "Nickeil Alexander-Walker"
-     ],
-     [
-      "Jayson Tatum",
-      "Neemias Queta",
-      "Paul George"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     5,
-     3
-    ],
-    "form5": [
-     5.6,
-     -0.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Hawks 5 day(s), Celtics 3 day(s)",
-     "Indoors - weather does not matter",
-     "Last 5 games agree (our side +5.6 a game, theirs -0.2)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A star on either team changes status (questionable to out or back in)"
-    ],
-    "total_model": 222.8,
-    "gap_a": -2.4,
-    "gap_b": -1.1,
-    "gap_min": 2.4,
-    "pick": "Atlanta Hawks +9.5",
-    "price": -118,
-    "side": "away",
-    "fair_line": 7.7,
-    "playable_to": null,
-    "sim_cover": 0.556,
-    "history": {
-     "adj": 0.25,
-     "key": "NBA spread dog",
-     "w": 15,
-     "l": 7,
-     "text": "Our record on NBA spread dog: 15-7 (last 60 days, recent counts more) -> +0.25 to confidence"
-    },
-    "test_record": {
-     "w": 57,
-     "l": 68,
-     "n": 125,
-     "win": 0.456
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.27,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.25
-    },
-    "total_gap": -1.7
+    "total_gap": 5.9
    },
    {
     "id": "401909334",
@@ -1306,11 +1155,11 @@
     "playable_to": 0.9,
     "sim_cover": 0.754,
     "history": {
-     "adj": 0.2,
+     "adj": 0.22,
      "key": "CBB spread dog",
-     "w": 171,
+     "w": 174,
      "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "text": "Our record on CBB spread dog: 174-126 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1331,7 +1180,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.22
     },
     "total_gap": -1.1,
     "stake": 0
@@ -1352,10 +1201,10 @@
      -105,
      -115
     ],
-    "total": 142.5,
+    "total": 141.5,
     "total_open": 141.5,
-    "home_ml": -380,
-    "away_ml": 300,
+    "home_ml": -395,
+    "away_ml": 310,
     "model_a_name": "BPI",
     "model_b_name": "Ratings",
     "model_a": 9.4,
@@ -1421,11 +1270,11 @@
     "playable_to": null,
     "sim_cover": 0.59,
     "history": {
-     "adj": 0.2,
+     "adj": 0.22,
      "key": "CBB spread dog",
-     "w": 171,
+     "w": 174,
      "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "text": "Our record on CBB spread dog: 174-126 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1446,9 +1295,9 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.22
     },
-    "total_gap": -0.6
+    "total_gap": 0.4
    },
    {
     "id": "401919033",
@@ -1538,11 +1387,11 @@
     "playable_to": null,
     "sim_cover": 0.608,
     "history": {
-     "adj": 0.2,
+     "adj": 0.22,
      "key": "CBB spread dog",
-     "w": 171,
+     "w": 174,
      "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "text": "Our record on CBB spread dog: 174-126 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1563,7 +1412,7 @@
      "against": 1.0,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.22
     },
     "total_gap": -1.1
    },
@@ -1654,11 +1503,11 @@
     "playable_to": null,
     "sim_cover": 0.637,
     "history": {
-     "adj": 0.2,
+     "adj": 0.22,
      "key": "CBB spread dog",
-     "w": 171,
+     "w": 174,
      "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
+     "text": "Our record on CBB spread dog: 174-126 (last 60 days, recent counts more) -> +0.22 to confidence"
     },
     "test_record": {
      "w": 239,
@@ -1679,587 +1528,9 @@
      "against": 0.65,
      "price": 0.0,
      "situational": 0.5,
-     "our history": 0.2
+     "our history": 0.22
     },
     "total_gap": -5.7
-   },
-   {
-    "id": "401922264",
-    "sport": "CBB",
-    "game": "Idaho Vandals @ Washington State Cougars",
-    "home": "Washington State Cougars",
-    "away": "Idaho Vandals",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "WSU -11.5",
-    "home_line": -11.5,
-    "home_line_open": -12.5,
-    "spread_odds": [
-     -103,
-     -117
-    ],
-    "total": 148.5,
-    "total_open": 148.5,
-    "home_ml": -800,
-    "away_ml": 550,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 9.3,
-    "model_b": 4.0,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "4-3",
-     "3-4"
-    ],
-    "venue": "Beasley Coliseum",
-    "tv": "YouTube",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Hudson Ward",
-      "Kase Wynott",
-      "Miles Klapper"
-     ],
-     [
-      "Jaylen Harrell",
-      "Ladji Dembele",
-      "Lazerek Houston"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     3
-    ],
-    "form5": [
-     7.4,
-     9.6
-    ],
-    "decision": "WATCH",
-    "reason": "Only one model clears the bar - never a bet by itself.",
-    "flags": [
-     "A model is 7+ points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Vandals 4 day(s), Cougars 3 day(s)",
-     "Line moved 1 pts toward Idaho Vandals since open (-12.5 to -11.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 156.3,
-    "gap_a": -2.2,
-    "gap_b": -7.5,
-    "gap_min": 7.5,
-    "pick": "Idaho Vandals +11.5",
-    "price": -103,
-    "side": "away",
-    "fair_line": 6.7,
-    "playable_to": null,
-    "sim_cover": 0.67,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 171,
-     "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": true,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 0.83,
-     "veto": 1.0,
-     "models": 0.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 7.8,
-    "total_lean": "Over 148.5 (season scoring says 156.3) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401928624",
-    "sport": "CBB",
-    "game": "Missouri State Bears @ Oral Roberts Golden Eagles",
-    "home": "Oral Roberts Golden Eagles",
-    "away": "Missouri State Bears",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "ORU -4.5",
-    "home_line": -4.5,
-    "home_line_open": -2.5,
-    "spread_odds": [
-     -114,
-     -106
-    ],
-    "total": 142.5,
-    "total_open": 143.5,
-    "home_ml": -192,
-    "away_ml": 160,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 7.4,
-    "model_b": 0.0,
-    "games_played": [
-     5,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "5-0",
-     "4-3"
-    ],
-    "venue": "Mabee Center",
-    "tv": "Summit League Network, Midco Sports Plus",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Andrej Acimovic",
-      "Trey Williams Jr."
-     ],
-     [
-      "Cal Furnish",
-      "Luke Gray"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     6,
-     3
-    ],
-    "form5": [
-     16.6,
-     5.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bears 6 day(s), Eagles 3 day(s)",
-     "Line moved 2 pts toward Oral Roberts Golden Eagles since open (-2.5 to -4.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)",
-     "Last 5 games agree (our side +16.6 a game, theirs +5.0)"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 143.0,
-    "gap_a": 2.9,
-    "gap_b": -4.5,
-    "gap_min": 4.5,
-    "pick": "Missouri State Bears +4.5",
-    "price": -114,
-    "side": "away",
-    "fair_line": 3.7,
-    "playable_to": null,
-    "sim_cover": 0.528,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 171,
-     "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.7,
-    "components": {
-     "efficiency": 0.49,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 0.5
-   },
-   {
-    "id": "401920737",
-    "sport": "CBB",
-    "game": "Northeastern Huskies @ Northwestern Wildcats",
-    "home": "Northwestern Wildcats",
-    "away": "Northeastern Huskies",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "NU -12.5",
-    "home_line": -12.5,
-    "home_line_open": -12.5,
-    "spread_odds": [
-     -106,
-     -114
-    ],
-    "total": 147.5,
-    "total_open": 149.5,
-    "home_ml": -950,
-    "away_ml": 625,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 14.1,
-    "model_b": 9.6,
-    "games_played": [
-     7,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     "2-5",
-     "4-3"
-    ],
-    "venue": "Welsh-Ryan Arena",
-    "tv": "BTN",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Mike Loughnane",
-      "Rashad King"
-     ],
-     [
-      "Angelo Ciaravino",
-      "Jake West"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     2,
-     5
-    ],
-    "form5": [
-     -7.0,
-     -3.6
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Huskies 2 day(s), Wildcats 5 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 148.6,
-    "gap_a": 1.6,
-    "gap_b": -2.9,
-    "gap_min": 2.9,
-    "pick": "Northeastern Huskies +12.5",
-    "price": -106,
-    "side": "away",
-    "fair_line": 11.9,
-    "playable_to": null,
-    "sim_cover": 0.523,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 171,
-     "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.5,
-    "components": {
-     "efficiency": 0.32,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 1.1
-   },
-   {
-    "id": "401925829",
-    "sport": "CBB",
-    "game": "North Dakota State Bison @ North Texas Mean Green",
-    "home": "North Texas Mean Green",
-    "away": "North Dakota State Bison",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "UNT -5.5",
-    "home_line": -5.5,
-    "home_line_open": -6.5,
-    "spread_odds": [
-     -107,
-     -112
-    ],
-    "total": 141.5,
-    "total_open": 143.5,
-    "home_ml": -250,
-    "away_ml": 205,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": 8.6,
-    "model_b": 1.1,
-    "games_played": [
-     8,
-     5
-    ],
-    "neutral": true,
-    "records": [
-     "3-5",
-     "3-2"
-    ],
-    "venue": "Mountain America Center",
-    "tv": "YouTube",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Kaden Tate",
-      "Riley Massey",
-      "Rob Diaz III"
-     ],
-     [
-      "Cash Chavis",
-      "Je'Shawn Stevenson",
-      "Reece Robinson"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     4,
-     7
-    ],
-    "form5": [
-     1.8,
-     6.0
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Bison 4 day(s), Green 7 day(s)",
-     "Line moved 1 pts toward North Dakota State Bison since open (-6.5 to -5.5 home)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [
-     "Market moved away from this side since open"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 150.7,
-    "gap_a": 3.1,
-    "gap_b": -4.4,
-    "gap_min": 4.4,
-    "pick": "North Dakota State Bison +5.5",
-    "price": -107,
-    "side": "away",
-    "fair_line": 4.8,
-    "playable_to": null,
-    "sim_cover": 0.524,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 171,
-     "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.3,
-    "components": {
-     "efficiency": 0.49,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 9.2,
-    "total_lean": "Over 141.5 (season scoring says 150.7) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401911524",
-    "sport": "CBB",
-    "game": "Pacific Tigers @ UC Davis Aggies",
-    "home": "UC Davis Aggies",
-    "away": "Pacific Tigers",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "PAC -6.5",
-    "home_line": 6.5,
-    "home_line_open": 4.5,
-    "spread_odds": [
-     -108,
-     -112
-    ],
-    "total": 137.5,
-    "total_open": 138.5,
-    "home_ml": 220,
-    "away_ml": -270,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": -3.7,
-    "model_b": -3.8,
-    "games_played": [
-     8,
-     7
-    ],
-    "neutral": true,
-    "records": [
-     "6-2",
-     "5-2"
-    ],
-    "venue": "Resorts World Event Center",
-    "tv": "FloSports",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Adriel Nyorha",
-      "Gavin Ripp",
-      "Jaion Pitt"
-     ],
-     [
-      "Chase Rawlins",
-      "Jalen Stokes",
-      "Veniamin Abosi"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     1,
-     1
-    ],
-    "form5": [
-     11.4,
-     6.2
-    ],
-    "decision": "PASS",
-    "reason": "Neither model clears the bar.",
-    "flags": [],
-    "factors": [
-     "Rest: Tigers 1 day(s), Aggies 1 day(s)",
-     "Line moved 2 pts toward Pacific Tigers since open (+4.5 to +6.5 home)",
-     "Indoors - weather does not matter",
-     "Market moved toward this side since open (we get a worse number than early bettors)"
-    ],
-    "against": [
-     "Last 5 games point the other way (our side +6.2 a game, theirs +11.4)"
-    ],
-    "invalidation": [
-     "Key starter news (CBB injury reports are thin - check before tip)"
-    ],
-    "total_model": 139.1,
-    "gap_a": 2.8,
-    "gap_b": 2.7,
-    "gap_min": 2.8,
-    "pick": "UC Davis Aggies +6.5",
-    "price": -112,
-    "side": "home",
-    "fair_line": 3.7,
-    "playable_to": null,
-    "sim_cover": 0.599,
-    "history": {
-     "adj": 0.2,
-     "key": "CBB spread dog",
-     "w": 171,
-     "l": 126,
-     "text": "Our record on CBB spread dog: 171-126 (last 60 days, recent counts more) -> +0.20 to confidence"
-    },
-    "test_record": {
-     "w": 239,
-     "l": 225,
-     "n": 464,
-     "win": 0.515
-    },
-    "models_agree": false,
-    "one_model": false,
-    "veto": false,
-    "conf": 5.2,
-    "components": {
-     "efficiency": 0.31,
-     "veto": 1.5,
-     "models": 0.0,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 0.65,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": 0.2
-    },
-    "total_gap": 1.6
    },
    {
     "id": "401926783",
@@ -2270,12 +1541,12 @@
     "time": "Fri 9:30 PM CT",
     "start": "2026-11-28T03:30Z",
     "book": "DraftKings",
-    "line": "JXST -5.5",
-    "home_line": 5.5,
+    "line": "JXST -4.5",
+    "home_line": 4.5,
     "home_line_open": 7.5,
     "spread_odds": [
-     -107,
-     -113
+     null,
+     -102
     ],
     "total": 138.5,
     "total_open": 144.5,
@@ -2328,7 +1599,7 @@
     "flags": [],
     "factors": [
      "Rest: Gamecocks 1 day(s), Mavericks 1 day(s)",
-     "Line moved 2 pts toward Omaha Mavericks since open (+7.5 to +5.5 home)",
+     "Line moved 3 pts toward Omaha Mavericks since open (+7.5 to +4.5 home)",
      "Indoors - weather does not matter",
      "Market moved toward this side since open (we get a worse number than early bettors)",
      "Last 5 games agree (our side +1.0 a game, theirs -3.6)"
@@ -2338,15 +1609,15 @@
      "Key starter news (CBB injury reports are thin - check before tip)"
     ],
     "total_model": 149.8,
-    "gap_a": -2.0,
-    "gap_b": 0.0,
-    "gap_min": 2.0,
-    "pick": "Jacksonville State Gamecocks -5.5",
-    "price": -107,
+    "gap_a": -3.0,
+    "gap_b": -1.0,
+    "gap_min": 3.0,
+    "pick": "Jacksonville State Gamecocks -4.5",
+    "price": -110,
     "side": "away",
     "fair_line": -6.5,
     "playable_to": null,
-    "sim_cover": 0.536,
+    "sim_cover": 0.572,
     "history": {
      "adj": -0.05,
      "key": "CBB spread fav",
@@ -2363,9 +1634,9 @@
     "models_agree": false,
     "one_model": false,
     "veto": false,
-    "conf": 5.2,
+    "conf": 5.3,
     "components": {
-     "efficiency": 0.22,
+     "efficiency": 0.33,
      "veto": 1.5,
      "models": 0.0,
      "starters": 1.5,
@@ -2492,79 +1763,6 @@
     },
     "total_gap": -6.8,
     "total_lean": "Under 168.5 (season scoring says 161.7) - WATCH only, totals have no past-games test yet"
-   },
-   {
-    "id": "401929381",
-    "sport": "CBB",
-    "game": "Lane College Dragons @ Little Rock Trojans",
-    "home": "Little Rock Trojans",
-    "away": "Lane College Dragons",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": null,
-    "line": null,
-    "home_line": null,
-    "home_line_open": null,
-    "spread_odds": [
-     null,
-     null
-    ],
-    "total": null,
-    "total_open": null,
-    "home_ml": null,
-    "away_ml": null,
-    "model_a_name": "BPI",
-    "model_b_name": "Ratings",
-    "model_a": null,
-    "model_b": 6.9,
-    "games_played": [
-     1,
-     7
-    ],
-    "neutral": false,
-    "records": [
-     null,
-     "3-4"
-    ],
-    "venue": "Jack Stephens Center",
-    "tv": "ESPN+",
-    "indoor": true,
-    "inj_home": [],
-    "inj_away": [],
-    "stars": [
-     [
-      "Jordan Franklin",
-      "Randy Emerson",
-      "Taber Brown"
-     ],
-     [
-      "Bradyn Hubbard",
-      "Jah'Likai King",
-      "Tyrese Lacey"
-     ]
-    ],
-    "goalies": [
-     null,
-     null
-    ],
-    "rest": [
-     25,
-     3
-    ],
-    "form5": [
-     null,
-     0.0
-    ],
-    "decision": "PASS",
-    "reason": "Missing line or a model number - no call.",
-    "flags": [],
-    "factors": [
-     "Rest: Dragons 25 day(s), Trojans 3 day(s)",
-     "Indoors - weather does not matter"
-    ],
-    "against": [],
-    "invalidation": [],
-    "total_model": 166.4
    }
   ],
   "n_past": 1447,
@@ -2572,273 +1770,7 @@
  },
  {
   "sport": "NHL",
-  "games": [
-   {
-    "id": "401892809",
-    "sport": "NHL",
-    "game": "Seattle Kraken @ Edmonton Oilers",
-    "home": "Edmonton Oilers",
-    "away": "Seattle Kraken",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "EDM -218",
-    "home_line": -218.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -135,
-     114
-    ],
-    "total": 6.5,
-    "total_open": 6.5,
-    "home_ml": -218,
-    "away_ml": 180,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 1.4,
-    "model_b": 1.5,
-    "games_played": [
-     19,
-     24
-    ],
-    "neutral": false,
-    "records": [
-     "11-10-1",
-     "17-6-4"
-    ],
-    "venue": "Rogers Place",
-    "tv": "ESPN+, KONG, Prime Video (Local)",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Filip Hallander",
-      "pos": "C",
-      "status": "Out"
-     },
-     {
-      "player": "Zach Hyman",
-      "pos": "LW",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [],
-    "stars": [
-     [
-      "Berkly Catton",
-      "Brandon Montour"
-     ],
-     [
-      "Connor McDavid",
-      "Leon Draisaitl"
-     ]
-    ],
-    "goalies": [
-     "Philipp Grubauer",
-     "Tristan Jarry"
-    ],
-    "rest": [
-     2,
-     3
-    ],
-    "form5": [
-     -0.4,
-     -1.0
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'). Past-games test for this kind of pick: 47.3% over 332.",
-    "flags": [],
-    "factors": [
-     "Rest: Kraken 2 day(s), Oilers 3 day(s)",
-     "Line moved 216.5 pts toward Edmonton Oilers since open (-1.5 to -218 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Philipp Grubauer (Kraken), Tristan Jarry (Oilers)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past -273 (our fair price)"
-    ],
-    "total_model": 6.6,
-    "gap_a": 7.0,
-    "gap_b": 7.8,
-    "win_prob": [
-     0.268,
-     0.732
-    ],
-    "market_prob": [
-     0.343,
-     0.657
-    ],
-    "pick": "Edmonton Oilers ML (-218)",
-    "price": -218,
-    "side": "home",
-    "gap_min": 7.0,
-    "fair_line": -273,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.06,
-     "key": "NHL ml",
-     "w": 50,
-     "l": 50,
-     "text": "Our record on NHL ml: 50-50 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "conf": 7.1,
-    "components": {
-     "efficiency": 0.7,
-     "veto": 1.5,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "stake": 0
-   },
-   {
-    "id": "401892808",
-    "sport": "NHL",
-    "game": "Pittsburgh Penguins @ Buffalo Sabres",
-    "home": "Buffalo Sabres",
-    "away": "Pittsburgh Penguins",
-    "time": "Fri 7:00 PM CT",
-    "start": "2026-11-28T01:00Z",
-    "book": "DraftKings",
-    "line": "BUF -130",
-    "home_line": -130.0,
-    "home_line_open": -1.5,
-    "spread_odds": [
-     -198,
-     164
-    ],
-    "total": 6.5,
-    "total_open": 6.5,
-    "home_ml": -130,
-    "away_ml": 110,
-    "model_a_name": "Ratings",
-    "model_b_name": "Last 10",
-    "model_a": 0.9,
-    "model_b": 1.9,
-    "games_played": [
-     21,
-     23
-    ],
-    "neutral": false,
-    "records": [
-     "7-15-2",
-     "11-10-4"
-    ],
-    "venue": "KeyBank Center",
-    "tv": "TNT, truTV",
-    "indoor": true,
-    "inj_home": [
-     {
-      "player": "Zach Benson",
-      "pos": "LW",
-      "status": "Out"
-     }
-    ],
-    "inj_away": [],
-    "stars": [
-     [
-      "Erik Karlsson",
-      "Evgeni Malkin",
-      "Tommy Novak"
-     ],
-     [
-      "Owen Power",
-      "Tage Thompson"
-     ]
-    ],
-    "goalies": [
-     "Sergei Murashov",
-     "Ukko-Pekka Luukkonen"
-    ],
-    "rest": [
-     2,
-     2
-    ],
-    "form5": [
-     -2.2,
-     1.8
-    ],
-    "decision": "PAPER",
-    "reason": "Both models agree, but NHL is a paper sport until you graduate it ('approve NHL'); confidence 6.9 is under 7.0. Past-games test for this kind of pick: 47.3% over 332.",
-    "flags": [
-     "A model is 12+ win-chance points from the market - re-check warning, not a reason to bet"
-    ],
-    "factors": [
-     "Rest: Penguins 2 day(s), Sabres 2 day(s)",
-     "Line moved 128.5 pts toward Buffalo Sabres since open (-1.5 to -130 home)",
-     "Indoors - weather does not matter",
-     "Probable goalies: Sergei Murashov (Penguins), Ukko-Pekka Luukkonen (Sabres)"
-    ],
-    "against": [],
-    "invalidation": [
-     "A different goalie starts for either team",
-     "Price moves past -259 (our fair price)"
-    ],
-    "total_model": 6.4,
-    "gap_a": 11.1,
-    "gap_b": 24.7,
-    "win_prob": [
-     0.278,
-     0.722
-    ],
-    "market_prob": [
-     0.457,
-     0.543
-    ],
-    "pick": "Buffalo Sabres ML (-130)",
-    "price": -130,
-    "side": "home",
-    "gap_min": 11.1,
-    "fair_line": -259,
-    "models_agree": true,
-    "one_model": false,
-    "veto": false,
-    "test_record": {
-     "w": 157,
-     "l": 175,
-     "n": 332,
-     "win": 0.473,
-     "units": -9.79,
-     "roi": -0.029
-    },
-    "history": {
-     "adj": -0.06,
-     "key": "NHL ml",
-     "w": 50,
-     "l": 50,
-     "text": "Our record on NHL ml: 50-50 (last 60 days, recent counts more) -> -0.06 to confidence"
-    },
-    "conf": 6.9,
-    "components": {
-     "efficiency": 1.0,
-     "veto": 1.0,
-     "models": 1.5,
-     "starters": 1.5,
-     "coaching": 0.5,
-     "against": 1.0,
-     "price": 0.0,
-     "situational": 0.5,
-     "our history": -0.06
-    },
-    "stake": 0
-   }
-  ],
-  "n_past": 356,
-  "model_note": "Ratings model (goal margin) and last-10 form turned into win chances vs the moneyline. Checks probable starting goalies and back-to-backs. Tracking only."
+  "games": [],
+  "note": "No games today."
  }
 ]

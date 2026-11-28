@@ -25,20 +25,20 @@
    "status": "learning"
   },
   "CBB dog under 10": {
-   "w": 84,
+   "w": 86,
    "l": 59,
-   "units": 16.12,
-   "be": 0.5282,
-   "shrunk": 0.5648,
+   "units": 17.85,
+   "be": 0.5284,
+   "shrunk": 0.5692,
    "status": "proven winner"
   },
   "CBB conf 6-6.9": {
-   "w": 131,
+   "w": 134,
    "l": 108,
-   "units": 8.9,
-   "be": 0.5282,
-   "shrunk": 0.5398,
-   "status": "learning"
+   "units": 11.52,
+   "be": 0.5283,
+   "shrunk": 0.5445,
+   "status": "proven winner"
   },
   "CBB dog 20+": {
    "w": 33,
@@ -49,11 +49,11 @@
    "status": "proven winner"
   },
   "CBB dog 10-20": {
-   "w": 54,
+   "w": 55,
    "l": 46,
-   "units": 2.17,
+   "units": 3.06,
    "be": 0.5278,
-   "shrunk": 0.5267,
+   "shrunk": 0.5298,
    "status": "learning"
   },
   "CBB conf 5.5-5.9": {
@@ -401,6 +401,13 @@
    "from": "proven loser",
    "to": "learning",
    "text": "CBB fav: 18-18 (50%, -1.7 units). Counted as 50.0% after the pull toward 50/50; break-even 52.7%. Now learning - back to watching."
+  },
+  {
+   "date": "2026-11-27",
+   "what": "CBB conf 6-6.9",
+   "from": "learning",
+   "to": "proven winner",
+   "text": "CBB conf 6-6.9: 134-108 (55%, +11.5 units). Counted as 54.4% after the pull toward 50/50; break-even 52.8%. Now proven winner - lower-graded picks of this kind can be played at $10."
   }
  ],
  "learned": {
@@ -507,66 +514,66 @@
    "strong": false
   },
   "CFB passing_yds higher": {
-   "n": 79,
-   "hit": 0.4557,
+   "n": 80,
+   "hit": 0.4625,
    "said": 0.5,
-   "gap": -0.0196,
+   "gap": -0.0167,
    "status": "learning",
    "strong": false
   },
   "CFB passing_yds lower": {
-   "n": 79,
-   "hit": 0.5443,
+   "n": 80,
+   "hit": 0.5375,
    "said": 0.5,
-   "gap": 0.0196,
+   "gap": 0.0167,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds higher": {
-   "n": 170,
-   "hit": 0.4235,
+   "n": 172,
+   "hit": 0.4302,
    "said": 0.4998,
-   "gap": -0.048,
+   "gap": -0.044,
    "status": "learning",
    "strong": false
   },
   "CFB rushing_yds lower": {
-   "n": 170,
-   "hit": 0.5765,
+   "n": 172,
+   "hit": 0.5698,
    "said": 0.5002,
-   "gap": 0.048,
+   "gap": 0.044,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds higher": {
-   "n": 273,
-   "hit": 0.4908,
-   "said": 0.5004,
-   "gap": -0.007,
+   "n": 275,
+   "hit": 0.4945,
+   "said": 0.5005,
+   "gap": -0.0043,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_yds lower": {
-   "n": 273,
-   "hit": 0.5092,
-   "said": 0.4996,
-   "gap": 0.007,
+   "n": 275,
+   "hit": 0.5055,
+   "said": 0.4995,
+   "gap": 0.0043,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec higher": {
-   "n": 190,
-   "hit": 0.4263,
-   "said": 0.4836,
-   "gap": -0.0375,
+   "n": 191,
+   "hit": 0.4293,
+   "said": 0.4838,
+   "gap": -0.0358,
    "status": "learning",
    "strong": false
   },
   "CFB receiving_rec lower": {
-   "n": 190,
-   "hit": 0.5737,
-   "said": 0.5164,
-   "gap": 0.0375,
+   "n": 191,
+   "hit": 0.5707,
+   "said": 0.5162,
+   "gap": 0.0358,
    "status": "learning",
    "strong": false
   },
@@ -1267,10 +1274,10 @@
    "strong": false
   },
   "CFB conf under 5.5 leaned side": {
-   "n": 639,
-   "hit": 0.471,
-   "said": 0.4931,
-   "gap": -0.0191,
+   "n": 645,
+   "hit": 0.476,
+   "said": 0.4933,
+   "gap": -0.015,
    "status": "learning",
    "strong": false
   },
@@ -1387,5 +1394,5 @@
    "strong": false
   }
  },
- "updated": "11/27 06:55 PM"
+ "updated": "11/27 07:20 PM"
 }
